@@ -1,0 +1,19 @@
+INDEX (v2.4 embedded)
+
+The following MASTER files together contain every file from Nova_Roma_Full_Canon_v2.4.zip.
+
+- CANON_MASTER__GRID_AND_OVERLAYS.txt
+- CANON_MASTER__SHORELINES_AND_HYDROGRAPHY.txt
+- CANON_MASTER__RULES_AND_TEMPLATES.txt
+- CANON_MASTER__OTHER_TEXT.txt
+- CANON_MASTER__BINARY_BASE64.txt (only if any binary existed)
+
+Each embedded original file is wrapped with:
+===== FILE: <original filename> =====
+SHA256: <sha256>
+SIZE: <bytes>
+-----BEGIN-----
+...content...
+-----END-----
+
+Use the MANIFEST__V2.4_FILES.csv to locate filenames quickly.

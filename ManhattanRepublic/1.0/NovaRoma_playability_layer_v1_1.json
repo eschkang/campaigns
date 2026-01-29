@@ -1,0 +1,607 @@
+{
+  "playability_layer_version": "1.1",
+  "name": "NovaRoma_Playability_Layer_Extended",
+  "applies_to": {
+    "canon_file": "CANON_MASTER__RULES_AND_TEMPLATES.json",
+    "map_file": "METRO__shoreline_metro_robust.json"
+  },
+  "core_loop": {
+    "player_role": "Colonial Senate & Magistrates",
+    "command_cycle": [
+      "DECIDE",
+      "AUTHORIZE",
+      "LOG",
+      "ADVANCE_TIME",
+      "REPORT"
+    ],
+    "default_command_aliases": {
+      "Next": "ADVANCE:3D",
+      "Status": "STATUS",
+      "Site Report": "SITE_REPORT",
+      "Milestones Report": "MILESTONES_REPORT",
+      "Render Grid": "RENDER_GRID"
+    }
+  },
+  "state_model": {
+    "campaign_id": "NovaRoma-509BCE",
+    "calendar": {
+      "date_format": "MMM D, YYYY",
+      "current_date": "Mar 1, 509 BCE",
+      "next_advance_days": 3
+    },
+    "entities": {
+      "sites": [],
+      "initiatives": [],
+      "milestones": [],
+      "trackers": {
+        "strategic_materials": {
+          "entries": []
+        },
+        "fish_shellfish": {
+          "entries": []
+        }
+      }
+    },
+    "maps": {
+      "active_map": "NovaRoma_UGRID35",
+      "subgrid_mapping_key": "NovaRoma_UGRID35",
+      "grid_origin": {
+        "row": 0,
+        "col": 0,
+        "meaning": "SW corner"
+      },
+      "cell_size_m": 100
+    },
+    "audit": {
+      "canon_version_expected": "2.4",
+      "log": []
+    }
+  },
+  "commands": {
+    "STATUS": {
+      "description": "Summarize governance/pop/ops/risks/summary for an entity or site.",
+      "args_schema": {
+        "target": "string"
+      },
+      "outputs": [
+        "status_report"
+      ]
+    },
+    "SITE_REPORT": {
+      "description": "Generate the standard site report with North/Central/South District tables + Top 3 Issues/Risks.",
+      "args_schema": {
+        "scope": "string",
+        "districts": [
+          "North",
+          "Central",
+          "South"
+        ]
+      },
+      "outputs": [
+        "site_report"
+      ]
+    },
+    "INITIATIVE_CREATE": {
+      "description": "Create a new initiative with goals, constraints, and optional first milestones.",
+      "args_schema": {
+        "name": "string",
+        "owner": "string",
+        "purpose": "string",
+        "constraints": [
+          "string"
+        ],
+        "initial_milestones": "array"
+      },
+      "outputs": [
+        "initiative_record",
+        "milestone_records_optional"
+      ]
+    },
+    "MILESTONE_ADD": {
+      "description": "Add milestones to an initiative. IDs follow <year>-<serial> within initiative start year counting.",
+      "args_schema": {
+        "initiative": "string",
+        "milestones": "array"
+      },
+      "outputs": [
+        "milestone_records"
+      ]
+    },
+    "ADVANCE:3D": {
+      "description": "Advance in-campaign time by 3 days and report completed milestones during the window.",
+      "args_schema": {},
+      "effects": [
+        "calendar.current_date += 3 days",
+        "milestones progress",
+        "emit milestones_report"
+      ]
+    },
+    "MILESTONES_REPORT": {
+      "description": "Render the milestones report (COMPLETED / IN PROGRESS / PLANNED grouped by initiative / SUMMARY / FOOTER).",
+      "args_schema": {
+        "range": "string_optional"
+      },
+      "outputs": [
+        "milestones_report"
+      ]
+    },
+    "RENDER_GRID": {
+      "description": "Render ASCII/emoji map slices from METRO or NovaRoma subgrid using shoreline segments and offsets.",
+      "args_schema": {
+        "map": "string",
+        "row_range": {
+          "start": "int",
+          "end": "int"
+        },
+        "col_range": {
+          "start": "int",
+          "end": "int"
+        },
+        "mask": "string_optional"
+      },
+      "outputs": [
+        "grid_render"
+      ]
+    }
+  },
+  "numeric_generation_policy": {
+    "intent": "Allow generating numbers ONLY for newly created entities or newly initiated estimates, while preserving non-invention for existing facts.",
+    "rules": [
+      {
+        "rule_id": "NUM-1",
+        "name": "No invention for existing entities",
+        "text": "If an entity already exists in state or canon, do not generate new population/GDP/capacity/tech values unless sourced from an explicit measurement milestone result."
+      },
+      {
+        "rule_id": "NUM-2",
+        "name": "Allowed for new creations",
+        "text": "When creating a new site/asset/initiative output that requires a number (e.g., initial pop, area, weekly output), you may generate a value IF it is explicitly labeled as an estimate and accompanied by a rationale and range."
+      },
+      {
+        "rule_id": "NUM-3",
+        "name": "Estimate labeling",
+        "text": "Generated numbers must be tagged with 'est' and include: basis, plausible range, and confidence (low/med/high)."
+      },
+      {
+        "rule_id": "NUM-4",
+        "name": "Anchoring and constraints",
+        "text": "Generated numbers must respect the campaign tech constraints (Late Iron Age) and local geography. Avoid implausible scaling; prefer conservative outputs."
+      },
+      {
+        "rule_id": "NUM-5",
+        "name": "Determinism option",
+        "text": "If a random draw is used, record RNG method and seed in audit.log so results are repeatable."
+      }
+    ],
+    "estimate_object_schema": {
+      "value": "number",
+      "unit": "string",
+      "label": "est",
+      "range": {
+        "min": "number",
+        "max": "number"
+      },
+      "basis": "string",
+      "confidence": "low|med|high",
+      "rng": {
+        "method": "string_optional",
+        "seed": "string_optional",
+        "draw": "string_optional"
+      }
+    },
+    "default_generators": {
+      "rng": {
+        "method": "xorshift32",
+        "seed": "NovaRoma-509BCE-0001"
+      },
+      "patterns": {
+        "new_outpost_population": {
+          "unit": "people",
+          "range": [
+            50,
+            350
+          ],
+          "basis": "Small shore outpost sized for a few extended families + laborers; constrained by food storage and shelter capacity.",
+          "confidence": "med"
+        },
+        "weekly_fish_catch": {
+          "unit": "kg/week",
+          "range": [
+            300,
+            1800
+          ],
+          "basis": "Beach-seine + hook-and-line with limited preservation; scales with boats, nets, and labor hours.",
+          "confidence": "low"
+        },
+        "charcoal_output": {
+          "unit": "kg/week",
+          "range": [
+            200,
+            1200
+          ],
+          "basis": "Earth-mound kilns; output depends on timber supply and burn management; early ramp conservative.",
+          "confidence": "low"
+        }
+      }
+    }
+  },
+  "report_contracts": {
+    "milestones_report": {
+      "title_format": "Milestones Report (Mon DD–DD, YYYY)",
+      "sections": [
+        "COMPLETED",
+        "IN PROGRESS",
+        "PLANNED (Grouped by Initiative)",
+        "SUMMARY",
+        "FOOTER"
+      ],
+      "footer": [
+        "Pop: Δ <value | unknown | est>",
+        "GDP: Δ <value | est>"
+      ]
+    },
+    "site_report": {
+      "title_format": "<Country> Site Report (MMM D, YYYY)",
+      "sections": [
+        "North District",
+        "Central District",
+        "South District",
+        "Top 3 Issues/Risks"
+      ],
+      "columns": [
+        "Site",
+        "Area",
+        "Population",
+        "Pop GR",
+        "GDP GR",
+        "GRD",
+        "TMH %",
+        "Primary Role",
+        "Status Notes"
+      ]
+    },
+    "status_report": {
+      "format": "Status — <Entity / Site / Group>",
+      "sections": [
+        "Governance / Authority",
+        "Population",
+        "Operations",
+        "Risks",
+        "Summary"
+      ]
+    }
+  },
+  "map_contracts": {
+    "metro_grid": {
+      "grid_name": "METRO-UGRID-520",
+      "rows": 520,
+      "cols": 520,
+      "cell_size_m": 100,
+      "origin": "SW corner is (row=0,col=0)",
+      "rendering": {
+        "land_char": ".",
+        "water_char": "~"
+      }
+    },
+    "ugrid_generation_rules": [
+      "UGRID(MANHATTAN): use only segments where name=='Manhattan'.",
+      "UGRID(LAND_ALL): union segments for all landmasses (already non-overlapping).",
+      "Waterways are implicit as any cell not covered by a land segment."
+    ]
+  },
+  "repo_integration": {
+    "intent": "Provide Copilot enough structure to implement the playability layer as code in a GitHub repo.",
+    "recommended_repo_layout": {
+      "README.md": "How to run the campaign engine; command examples; canon links.",
+      "canon/": {
+        "CANON_MASTER__RULES_AND_TEMPLATES.json": "Canonical reporting/rules/templates.",
+        "NovaRoma_playability_layer.json": "This playability layer spec."
+      },
+      "maps/": {
+        "METRO__shoreline_metro_robust.json": "Shoreline segments + constraints + subgrid mapping."
+      },
+      "state/": {
+        "state.json": "Mutable campaign facts (sites, initiatives, milestones, trackers).",
+        "event_log.jsonl": "Append-only event log (one JSON object per line)."
+      },
+      "engine/": {
+        "commands.ts": "Command grammar + parser.",
+        "reducers.ts": "Pure functions that transform state based on commands/events.",
+        "renderers.ts": "Report renderers (Status, Site Report, Milestones Report, Trackers).",
+        "maps.ts": "Grid render utilities using shoreline segments."
+      },
+      "tests/": {
+        "canon_rules.test.ts": "Tests that enforce non-invention rules, formatting rules.",
+        "reports_snapshot.test.ts": "Golden-file snapshots for report outputs."
+      }
+    },
+    "runtime_contracts": {
+      "inputs": [
+        "canon json",
+        "map json",
+        "state json",
+        "command string"
+      ],
+      "outputs": [
+        "updated state json",
+        "event log entries",
+        "markdown report(s)",
+        "optional rendered grid text"
+      ]
+    }
+  },
+  "state_files": {
+    "state_json_schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "NovaRomaCampaignState",
+      "type": "object",
+      "required": [
+        "meta",
+        "calendar",
+        "entities",
+        "trackers",
+        "audit"
+      ],
+      "properties": {
+        "meta": {
+          "type": "object",
+          "required": [
+            "campaign_id",
+            "setting",
+            "language",
+            "tech_constraints"
+          ],
+          "properties": {
+            "campaign_id": {
+              "type": "string"
+            },
+            "setting": {
+              "type": "string"
+            },
+            "language": {
+              "type": "string"
+            },
+            "tech_constraints": {
+              "type": "string"
+            }
+          }
+        },
+        "calendar": {
+          "type": "object",
+          "required": [
+            "current_date",
+            "date_format",
+            "next_advance_days"
+          ],
+          "properties": {
+            "current_date": {
+              "type": "string"
+            },
+            "date_format": {
+              "type": "string"
+            },
+            "next_advance_days": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "entities": {
+          "type": "object",
+          "required": [
+            "sites",
+            "initiatives",
+            "milestones"
+          ],
+          "properties": {
+            "sites": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "initiatives": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "milestones": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "trackers": {
+          "type": "object",
+          "properties": {
+            "strategic_materials": {
+              "type": "object"
+            },
+            "fish_shellfish": {
+              "type": "object"
+            },
+            "agriculture": {
+              "type": "object"
+            }
+          }
+        },
+        "audit": {
+          "type": "object",
+          "required": [
+            "canon_version_expected",
+            "log"
+          ],
+          "properties": {
+            "canon_version_expected": {
+              "type": "string"
+            },
+            "log": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "event_log_jsonl_schema": {
+      "one_event_per_line": true,
+      "fields": {
+        "ts": "ISO-8601 timestamp (real-world) for debugging only",
+        "campaign_date": "in-campaign date string",
+        "event_type": "COMMAND|MILESTONE|MEASUREMENT|NOTE|ERROR",
+        "command": "string",
+        "payload": "object"
+      }
+    }
+  },
+  "command_grammar": {
+    "examples": [
+      "status nr",
+      "status agriculture",
+      "site report",
+      "milestones report",
+      "next",
+      "initiative create \"Harbor Works\" purpose=\"Build durable docks\"",
+      "milestone add initiative=\"Explore\" name=\"Freshwater Survey\" target_date=\"Mar 4, 509 BCE\""
+    ],
+    "normalization_rules": [
+      "Trim, lowercase for parsing; preserve original for audit.",
+      "Allow shorthand targets: nr -> Nova Roma; agri -> agriculture.",
+      "If command is unrecognized, return help with nearest matches."
+    ],
+    "parsing_contract": {
+      "output_ast_shape": {
+        "verb": "string",
+        "args": "object",
+        "raw": "string"
+      }
+    }
+  },
+  "validation_and_tests": {
+    "non_invention_guards": [
+      "Existing entities: do not overwrite population/GDP/capacity/tech unless measurement event references a milestone result.",
+      "Generated numbers for new creations must use estimate_object_schema and include est label, range, basis, confidence."
+    ],
+    "format_guards": [
+      "Milestone IDs must match ^\\d+-\\d+$",
+      "Dates must be MMM D, YYYY with BCE/CE when relevant",
+      "Milestones Report sections and columns must match canon"
+    ],
+    "golden_snapshots": [
+      "status_report.md",
+      "site_report.md",
+      "milestones_report.md",
+      "agriculture_tracker.md"
+    ]
+  },
+  "tracker_contracts": {
+    "agriculture": {
+      "title": "Agriculture Output Report",
+      "defaults": {
+        "area": "unknown",
+        "yield": "unknown",
+        "value": "est"
+      },
+      "table_columns": [
+        "Product",
+        "Area Under Cultivation",
+        "Yield",
+        "Unit",
+        "Value (est)",
+        "Notes"
+      ],
+      "products": [
+        {
+          "product": "Maize",
+          "unit": "kg/season",
+          "notes": "Indigenous staple; high yield; stores well"
+        },
+        {
+          "product": "Beans",
+          "unit": "kg/season",
+          "notes": "Protein + nitrogen fixer"
+        },
+        {
+          "product": "Squash",
+          "unit": "kg/season",
+          "notes": "Storage vegetable"
+        },
+        {
+          "product": "Barley",
+          "unit": "kg/season",
+          "notes": "Hardy; porridge/beer"
+        },
+        {
+          "product": "Emmer/Einkorn Wheat",
+          "unit": "kg/season",
+          "notes": "Trial plots; acclimation uncertain"
+        },
+        {
+          "product": "Turnips",
+          "unit": "kg/season",
+          "notes": "Winter cellar crop; fodder"
+        },
+        {
+          "product": "Onions/Alliums",
+          "unit": "kg/season",
+          "notes": "Preservation + flavor"
+        },
+        {
+          "product": "Wild Grapes",
+          "unit": "kg/season",
+          "notes": "Wine/vinegar trials"
+        },
+        {
+          "product": "Plums/Native Stonefruit",
+          "unit": "kg/season",
+          "notes": "Drying potential"
+        },
+        {
+          "product": "Sunflower",
+          "unit": "kg/season",
+          "notes": "Oilseed + meal"
+        },
+        {
+          "product": "Pawpaw",
+          "unit": "kg/season",
+          "notes": "Native fruit; calorie dense"
+        },
+        {
+          "product": "Apples",
+          "unit": "kg/season",
+          "notes": "Orchard; cider/vinegar"
+        },
+        {
+          "product": "Chestnuts",
+          "unit": "kg/season",
+          "notes": "Starch tree crop; flour substitute"
+        },
+        {
+          "product": "Acorns",
+          "unit": "kg/season",
+          "notes": "Forest mast; leaching required"
+        },
+        {
+          "product": "Berries",
+          "unit": "kg/season",
+          "notes": "Foraging to cultivation"
+        },
+        {
+          "product": "Soybeans",
+          "unit": "kg/season",
+          "notes": "Protein + oil; soil benefits"
+        },
+        {
+          "product": "Potatoes",
+          "unit": "kg/season",
+          "notes": "High calories per area; cool tolerant"
+        }
+      ]
+    }
+  }
+}

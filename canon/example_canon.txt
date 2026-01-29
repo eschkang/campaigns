@@ -1,0 +1,9 @@
+Title: The Fall of Greyspire
+
+Summary:
+The city of Greyspire fell when the northern lights turned to ash. Important NPCs:
+- Mira Bright: scholar and chronicler
+- Lord Harkan: fallen steward
+
+Notes:
+Store each canonical entry as a separate text file so transfers remain clear.

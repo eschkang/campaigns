@@ -1,0 +1,37 @@
+# Agriculture Tracker (AGRI) — Status & Metrics (Jan 27, 2026)
+
+Milestone:
+- Launch Agriculture Tracker (ID: Y-1)
+- Target: Organize food resource development
+
+Top 3 Food Resource Areas:
+1. Militia (450) — food gathering, security
+   - Status: Active; militia assigned to food gathering and security patrols.
+   - Metric: Daily food gathered per militia (kg)
+2. Sailors & Fishermen (350) — fishing, water-based supply
+   - Status: Active; regular fishing expeditions underway, supply stable.
+   - Metric: Average daily fish catch (kg)
+3. Civilians & Families (800) — household agriculture
+   - Status: Active; households engaged in small-scale crop cultivation.
+   - Metric: Household crop yield per week (kg)
+
+Areas to Track:
+- FISH: Fishing operations ongoing, catch rates stable.
+  - Metric: Total fish catch per week (kg)
+- GRAIN: Initial planting underway, awaiting first growth.
+  - Metric: Acres planted and expected yield (kg)
+- SOYBEANS: Not yet planted, planned for next cycle.
+  - Metric: Planned acreage and projected yield (kg)
+- FRUIT: Orchard sites identified, planting scheduled.
+  - Metric: Number of fruit trees planted
+- HEMP: Trial plots established, monitoring growth.
+  - Metric: Area under cultivation (acres) and fiber yield (kg)
+
+Risks:
+- Weather risk to crops and fishing
+- Labor allocation between security and food
+
+Summary:
+- All areas are tracked and updated; operations are active or planned.
+- Metrics provide actionable insight for each area.
+- Updates are logged in Changes.txt (not canon).

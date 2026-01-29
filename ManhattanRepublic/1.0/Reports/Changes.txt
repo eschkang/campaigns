@@ -1,0 +1,9 @@
+# Change Log for Campaign Requests
+# Not a canon file. Stores user-driven requests/changes.
+
+## January 27, 2026
+- Started Agriculture Tracker to focus on food and development of food resources.
+- Identified top 3 current areas for food resources: Militia, Sailors & Fishermen, Civilians & Families.
+- Renamed 'AGRI' initiative to 'Agriculture Tracker' in milestone report format.
+- All future user-driven requests/changes will be logged here instead of canon files.
+- Dispatched survey teams to the eastern shore to identify food, freshwater, salt resources, and other notable findings.

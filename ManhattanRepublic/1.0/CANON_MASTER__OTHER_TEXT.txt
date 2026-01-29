@@ -1,0 +1,191 @@
+V2.4 OTHER TEXT MASTER
+
+
+===== FILE: SETTING_ROMAN_REPUBLIC_PREMISE.txt =====
+SHA256: abac8d8da2f4c2ed694c6681bd6c002fd4efe39f84b54f0cbf646a2614c0fee5
+SIZE: 2974 bytes
+-----BEGIN-----
+NOVA ROMA — LIGHT SETTING PREMISE (v2.3)
+
+Premise:
+An alternate history in which an offshoot of the Roman Republic reaches North America and
+establishes an ACTUAL Roman-style republican colony on the southern tip of Manhattan Island
+around 509 BC. This is not "Roman aesthetic" fantasy: institutions, language, and norms are
+explicitly modeled on the early Republic and adapted pragmatically to local conditions.
+
+Population at start:
+- ~2,000 people total (including citizens, clients, non-citizen residents, dependents, and bonded labor).
+- Initial settlement footprint concentrated in Lower Manhattan (Battery region), expanding northward.
+
+Language & records:
+- Administrative language: Latin (with practical loanwords for local geography/materials).
+- Written records exist and are used for laws, censuses, contracts, and engineering notes.
+- Literacy is uneven but present among magistrates, scribes, merchants, and priests.
+
+Government (high level):
+- Roman republican framework: magistrates, senate, assemblies (adapted for a small colony).
+- Senate exists as a deliberative body of leading households (size to be determined by campaign rules),
+  advising magistrates on law, war, trade, and public works.
+- Customs and civic religion broadly Roman: public rites, calendars, oaths, patronage, and legalism.
+
+Economy & customs:
+- Mediterranean-style household production + trade/logistics focus.
+- Customs duties are levied at docks/landings; permits and tariffs exist for controlled goods.
+- Standard weights/measures are used; coinage may be limited early and supplemented by bullion and ledgers.
+
+Technology level (hard constraints):
+- Baseline tech = late Iron Age / early Roman Republic capabilities.
+- Allowed: ironworking (bloomeries), simple steel (limited), carpentry, masonry, lime mortar,
+  pottery/brick, rope/sailmaking, basic hydraulics, roadbuilding, surveying, navigation by sun/stars,
+  simple machines (pulleys, winches), animal power, watermills ONLY after suitable build-out and know-how.
+- NOT allowed (hard constraint): electricity generation, internal combustion, steam power, gunpowder,
+  advanced chemistry (industrial acids/alkalis at scale), modern optics, germ theory medicine,
+  precision machining, semiconductors, modern explosives, telegraph/radio.
+- “Research” can exist, but breakthroughs must be plausible from this baseline and constrained by:
+  (1) available materials, (2) energy sources, (3) tool precision, (4) labor organization, (5) time.
+
+Tone & focus:
+- Plausible-alt-history rather than mythic fantasy.
+- Emphasis on logistics, surveying, governance, trade, diplomacy with Indigenous polities,
+  and incremental infrastructure.
+- Exploration and negotiation matter as much as warfare.
+
+This file is intentionally compact: it defines the premise + constraints only.
+All further institutions, factions, and timelines should be generated consistently with this starting point
+and the accompanying grid/shoreline canon.
+
+-----END-----
+
+
+
+===== FILE: SETTING_premise_alt_history.txt =====
+SHA256: abac8d8da2f4c2ed694c6681bd6c002fd4efe39f84b54f0cbf646a2614c0fee5
+SIZE: 2974 bytes
+-----BEGIN-----
+NOVA ROMA — LIGHT SETTING PREMISE (v2.3)
+
+Premise:
+An alternate history in which an offshoot of the Roman Republic reaches North America and
+establishes an ACTUAL Roman-style republican colony on the southern tip of Manhattan Island
+around 509 BC. This is not "Roman aesthetic" fantasy: institutions, language, and norms are
+explicitly modeled on the early Republic and adapted pragmatically to local conditions.
+
+Population at start:
+- ~2,000 people total (including citizens, clients, non-citizen residents, dependents, and bonded labor).
+- Initial settlement footprint concentrated in Lower Manhattan (Battery region), expanding northward.
+
+Language & records:
+- Administrative language: Latin (with practical loanwords for local geography/materials).
+- Written records exist and are used for laws, censuses, contracts, and engineering notes.
+- Literacy is uneven but present among magistrates, scribes, merchants, and priests.
+
+Government (high level):
+- Roman republican framework: magistrates, senate, assemblies (adapted for a small colony).
+- Senate exists as a deliberative body of leading households (size to be determined by campaign rules),
+  advising magistrates on law, war, trade, and public works.
+- Customs and civic religion broadly Roman: public rites, calendars, oaths, patronage, and legalism.
+
+Economy & customs:
+- Mediterranean-style household production + trade/logistics focus.
+- Customs duties are levied at docks/landings; permits and tariffs exist for controlled goods.
+- Standard weights/measures are used; coinage may be limited early and supplemented by bullion and ledgers.
+
+Technology level (hard constraints):
+- Baseline tech = late Iron Age / early Roman Republic capabilities.
+- Allowed: ironworking (bloomeries), simple steel (limited), carpentry, masonry, lime mortar,
+  pottery/brick, rope/sailmaking, basic hydraulics, roadbuilding, surveying, navigation by sun/stars,
+  simple machines (pulleys, winches), animal power, watermills ONLY after suitable build-out and know-how.
+- NOT allowed (hard constraint): electricity generation, internal combustion, steam power, gunpowder,
+  advanced chemistry (industrial acids/alkalis at scale), modern optics, germ theory medicine,
+  precision machining, semiconductors, modern explosives, telegraph/radio.
+- “Research” can exist, but breakthroughs must be plausible from this baseline and constrained by:
+  (1) available materials, (2) energy sources, (3) tool precision, (4) labor organization, (5) time.
+
+Tone & focus:
+- Plausible-alt-history rather than mythic fantasy.
+- Emphasis on logistics, surveying, governance, trade, diplomacy with Indigenous polities,
+  and incremental infrastructure.
+- Exploration and negotiation matter as much as warfare.
+
+This file is intentionally compact: it defines the premise + constraints only.
+All further institutions, factions, and timelines should be generated consistently with this starting point
+and the accompanying grid/shoreline canon.
+
+-----END-----
+
+
+
+===== FILE: campaign_start_state.txt =====
+SHA256: 355c3783fa4a6820b1c68395647b7d471f7e12badb2473dc9bac4c12cb50b620
+SIZE: 134 bytes
+-----BEGIN-----
+Nova Roma 509BC: Roman Republic colony in Lower Manhattan; pop~2000; language=Latin; Senate/customs active; time paused; turn=3 days.
+
+-----END-----
+
+
+
+===== FILE: macro_cell_helper.py =====
+SHA256: 85569de119bba37104946794596cf9a2d1f0934b274ba98efaf4c0f086eb2872
+SIZE: 467 bytes
+-----BEGIN-----
+# macro_cell_helper.py
+# Compute MGRD-300 macro indices from a base 100m grid coordinate.
+# Usage examples:
+#   python macro_cell_helper.py 10 12
+#   python macro_cell_helper.py 255 301
+
+import sys
+if len(sys.argv) != 3:
+    print("Usage: python macro_cell_helper.py <base_row_int> <base_col_int>")
+    raise SystemExit(2)
+
+r = int(sys.argv[1]); c = int(sys.argv[2])
+mr = r // 3
+mc = c // 3
+print(f"Base {r:03d}-{c:03d} -> Macro MR={mr:03d}, MC={mc:03d} (MGRD-300)")
+
+-----END-----
+
+
+
+===== FILE: tech_constraints_v2.3.txt =====
+SHA256: 57ec08e7c01bd5055646655200e3dc17427da050138168dfff97fd9e7720e23d
+SIZE: 962 bytes
+-----BEGIN-----
+TECH CONSTRAINTS (v2.3)
+
+Baseline: Late Iron Age / early Roman Republic (circa 509 BC), adapted to local materials.
+
+Hard NOT-ALLOWED:
+- Electricity generation or distribution
+- Steam power (boilers/engines)
+- Internal combustion engines
+- Gunpowder / firearms / modern explosives
+- Modern industrial chemistry (large-scale acids/alkalis, petroleum refining)
+- Telegraph/radio, electronics, semiconductors
+- Precision machining beyond period capability
+- Germ theory dependent medicine, vaccines as modern practice
+
+Allowed (examples):
+- Iron blooms, forging, limited carburized steel
+- Carpentry, shipbuilding, rope/sail, navigation by sun/stars
+- Masonry, lime mortar, brick/pottery
+- Surveying, roadbuilding, aqueduct-style hydraulics
+- Simple machines: pulleys, winches, screws
+- Animal power; watermills only when plausibly engineered and supplied
+
+Principle:
+Any tech advance must be justified by materials + energy + tool precision + organization + time.
+
+-----END-----
+
+
+
+===== FILE: turn_system.txt =====
+SHA256: bc46a9c90b1a7a2f1d988b8220982c8f8f3264dcd3fead076afeefd559799677
+SIZE: 25 bytes
+-----BEGIN-----
+Each turn equals 3 days.
+
+-----END-----
