@@ -1,0 +1,37 @@
+{
+  "$schema": "./tech_tracker_report_contract.schema.json",
+  "report_contract": {
+    "report_type": "tech_tracker",
+    "version": "v1.0",
+    "title": "Technology Development Tracker Report",
+    "date_field": "game_date",
+    "technologies_columns": [
+      "Domain",
+      "Technology",
+      "Status",
+      "Progress (%)",
+      "Last Updated",
+      "Notes"
+    ],
+    "sections": [
+      "Technologies",
+      "Strategic Advise",
+      "Summary"
+    ],
+    "strategic_advise_guidance": [
+      "Prioritize completion of critical technologies to boost production and efficiency.",
+      "Allocate resources to projects with the highest impact on community well-being.",
+      "Encourage cross-domain collaboration to accelerate progress.",
+      "Document and share best practices from completed technologies for future projects."
+    ],
+    "summary_fields": [
+      "Total technologies tracked",
+      "Completed",
+      "In Progress",
+      "Planned",
+      "Key focus"
+    ],
+    "format_version_label": "tech_tracker v.1.0",
+    "format_standards": "Always use the combined INIT+ID format (e.g., AGEX-1-2) for Initiative references in reports. Never separate initiative code and ID into different columns or fields."
+  }
+}

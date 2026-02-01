@@ -1,0 +1,1153 @@
+{
+  "playability_layer_version": "1.6",
+  "name": "NovaRoma_Playability_Layer_FullFixturesPlus_BootstrapDefaults",
+  "applies_to": {
+    "canon_file": "CANON_MASTER__RULES_AND_TEMPLATES.json",
+    "map_file": "METRO__shoreline_metro_robust.json"
+  },
+  "core_loop": {
+    "player_role": "Colonial Senate & Magistrates",
+    "command_cycle": [
+      "DECIDE",
+      "AUTHORIZE",
+      "LOG",
+      "ADVANCE_TIME",
+      "REPORT"
+    ],
+    "default_command_aliases": {
+      "Next": "ADVANCE:3D",
+      "Status": "STATUS",
+      "Site Report": "SITE_REPORT",
+      "Milestones Report": "MILESTONES_REPORT",
+      "Render Grid": "RENDER_GRID"
+    }
+  },
+  "state_model": {
+    "campaign_id": "NovaRoma-509BCE",
+    "calendar": {
+      "date_format": "MMM D, YYYY",
+      "current_date": "Mar 1, 509 BCE",
+      "next_advance_days": 3
+    },
+    "entities": {
+      "sites": [],
+      "initiatives": [],
+      "milestones": [],
+      "trackers": {
+        "strategic_materials": {
+          "entries": []
+        },
+        "fish_shellfish": {
+          "entries": []
+        }
+      }
+    },
+    "maps": {
+      "active_map": "NovaRoma_UGRID35",
+      "subgrid_mapping_key": "NovaRoma_UGRID35",
+      "grid_origin": {
+        "row": 0,
+        "col": 0,
+        "meaning": "SW corner"
+      },
+      "cell_size_m": 100
+    },
+    "audit": {
+      "canon_version_expected": "2.4",
+      "log": []
+    }
+  },
+  "commands": {
+    "STATUS": {
+      "description": "Summarize governance/pop/ops/risks/summary for an entity or site.",
+      "args_schema": {
+        "target": "string"
+      },
+      "outputs": [
+        "status_report"
+      ]
+    },
+    "SITE_REPORT": {
+      "description": "Generate the standard site report with North/Central/South District tables + Top 3 Issues/Risks.",
+      "args_schema": {
+        "scope": "string",
+        "districts": [
+          "North",
+          "Central",
+          "South"
+        ]
+      },
+      "outputs": [
+        "site_report"
+      ]
+    },
+    "INITIATIVE_CREATE": {
+      "description": "Create a new initiative with goals, constraints, and optional first milestones.",
+      "args_schema": {
+        "name": "string",
+        "owner": "string",
+        "purpose": "string",
+        "constraints": [
+          "string"
+        ],
+        "initial_milestones": "array"
+      },
+      "outputs": [
+        "initiative_record",
+        "milestone_records_optional"
+      ]
+    },
+    "MILESTONE_ADD": {
+      "description": "Add milestones to an initiative. IDs follow <year>-<serial> within initiative start year counting.",
+      "args_schema": {
+        "initiative": "string",
+        "milestones": "array"
+      },
+      "outputs": [
+        "milestone_records"
+      ]
+    },
+    "ADVANCE:3D": {
+      "description": "Advance in-campaign time by 3 days and report completed milestones during the window.",
+      "args_schema": {},
+      "effects": [
+        "calendar.current_date += 3 days",
+        "milestones progress",
+        "emit milestones_report"
+      ]
+    },
+    "MILESTONES_REPORT": {
+      "description": "Render the milestones report (COMPLETED / IN PROGRESS / PLANNED grouped by initiative / SUMMARY / FOOTER).",
+      "args_schema": {
+        "range": "string_optional"
+      },
+      "outputs": [
+        "milestones_report"
+      ]
+    },
+    "RENDER_GRID": {
+      "description": "Render ASCII/emoji map slices from METRO or NovaRoma subgrid using shoreline segments and offsets.",
+      "args_schema": {
+        "map": "string",
+        "row_range": {
+          "start": "int",
+          "end": "int"
+        },
+        "col_range": {
+          "start": "int",
+          "end": "int"
+        },
+        "mask": "string_optional"
+      },
+      "outputs": [
+        "grid_render"
+      ]
+    }
+  },
+  "numeric_generation_policy": {
+    "intent": "Allow generating numbers ONLY for newly created entities or newly initiated estimates, while preserving non-invention for existing facts.",
+    "rules": [
+      {
+        "rule_id": "NUM-1",
+        "name": "No invention for existing entities",
+        "text": "If an entity already exists in state or canon, do not generate new population/GDP/capacity/tech values unless sourced from an explicit measurement milestone result."
+      },
+      {
+        "rule_id": "NUM-2",
+        "name": "Allowed for new creations",
+        "text": "When creating a new site/asset/initiative output that requires a number (e.g., initial pop, area, weekly output), you may generate a value IF it is explicitly labeled as an estimate and accompanied by a rationale and range."
+      },
+      {
+        "rule_id": "NUM-3",
+        "name": "Estimate labeling",
+        "text": "Generated numbers must be tagged with 'est' and include: basis, plausible range, and confidence (low/med/high)."
+      },
+      {
+        "rule_id": "NUM-4",
+        "name": "Anchoring and constraints",
+        "text": "Generated numbers must respect the campaign tech constraints (Late Iron Age) and local geography. Avoid implausible scaling; prefer conservative outputs."
+      },
+      {
+        "rule_id": "NUM-5",
+        "name": "Determinism option",
+        "text": "If a random draw is used, record RNG method and seed in audit.log so results are repeatable."
+      }
+    ],
+    "estimate_object_schema": {
+      "value": "number",
+      "unit": "string",
+      "label": "est",
+      "range": {
+        "min": "number",
+        "max": "number"
+      },
+      "basis": "string",
+      "confidence": "low|med|high",
+      "rng": {
+        "method": "string_optional",
+        "seed": "string_optional",
+        "draw": "string_optional"
+      }
+    },
+    "default_generators": {
+      "rng": {
+        "method": "xorshift32",
+        "seed": "NovaRoma-509BCE-0001"
+      },
+      "patterns": {
+        "new_outpost_population": {
+          "unit": "people",
+          "range": [
+            50,
+            350
+          ],
+          "basis": "Small shore outpost sized for a few extended families + laborers; constrained by food storage and shelter capacity.",
+          "confidence": "med"
+        },
+        "weekly_fish_catch": {
+          "unit": "kg/week",
+          "range": [
+            300,
+            1800
+          ],
+          "basis": "Beach-seine + hook-and-line with limited preservation; scales with boats, nets, and labor hours.",
+          "confidence": "low"
+        },
+        "charcoal_output": {
+          "unit": "kg/week",
+          "range": [
+            200,
+            1200
+          ],
+          "basis": "Earth-mound kilns; output depends on timber supply and burn management; early ramp conservative.",
+          "confidence": "low"
+        }
+      }
+    }
+  },
+  "report_contracts": {
+    "milestones_report": {
+      "title_format": "Milestones Report (Mon DD–DD, YYYY)",
+      "sections": [
+        "COMPLETED",
+        "IN PROGRESS",
+        "PLANNED (Grouped by Initiative)",
+        "SUMMARY",
+        "FOOTER"
+      ],
+      "footer": [
+        "Pop: Δ <value | unknown | est>",
+        "GDP: Δ <value | est>"
+      ]
+    },
+    "site_report": {
+      "title_format": "<Country> Site Report (MMM D, YYYY)",
+      "sections": [
+        "North District",
+        "Central District",
+        "South District",
+        "Top 3 Issues/Risks"
+      ],
+      "columns": [
+        "Site",
+        "Area",
+        "Population",
+        "Pop GR",
+        "GDP GR",
+        "GRD",
+        "TMH %",
+        "Primary Role",
+        "Status Notes"
+      ]
+    },
+    "status_report": {
+      "format": "Status — <Entity / Site / Group>",
+      "sections": [
+        "Governance / Authority",
+        "Population",
+        "Operations",
+        "Risks",
+        "Summary"
+      ]
+    }
+  },
+  "map_contracts": {
+    "metro_grid": {
+      "grid_name": "METRO-UGRID-520",
+      "rows": 520,
+      "cols": 520,
+      "cell_size_m": 100,
+      "origin": "SW corner is (row=0,col=0)",
+      "rendering": {
+        "land_char": ".",
+        "water_char": "~"
+      }
+    },
+    "ugrid_generation_rules": [
+      "UGRID(MANHATTAN): use only segments where name=='Manhattan'.",
+      "UGRID(LAND_ALL): union segments for all landmasses (already non-overlapping).",
+      "Waterways are implicit as any cell not covered by a land segment."
+    ]
+  },
+  "repo_integration": {
+    "intent": "Provide Copilot enough structure to implement the playability layer as code in a GitHub repo.",
+    "recommended_repo_layout": {
+      "README.md": "How to run the campaign engine; command examples; canon links.",
+      "canon/": {
+        "CANON_MASTER__RULES_AND_TEMPLATES.json": "Canonical reporting/rules/templates.",
+        "NovaRoma_playability_layer.json": "This playability layer spec."
+      },
+      "maps/": {
+        "METRO__shoreline_metro_robust.json": "Shoreline segments + constraints + subgrid mapping."
+      },
+      "state/": {
+        "state.json": "Mutable campaign facts (sites, initiatives, milestones, trackers).",
+        "event_log.jsonl": "Append-only event log (one JSON object per line)."
+      },
+      "engine/": {
+        "commands.ts": "Command grammar + parser.",
+        "reducers.ts": "Pure functions that transform state based on commands/events.",
+        "renderers.ts": "Report renderers (Status, Site Report, Milestones Report, Trackers).",
+        "maps.ts": "Grid render utilities using shoreline segments."
+      },
+      "tests/": {
+        "canon_rules.test.ts": "Tests that enforce non-invention rules, formatting rules.",
+        "reports_snapshot.test.ts": "Golden-file snapshots for report outputs."
+      }
+    },
+    "runtime_contracts": {
+      "inputs": [
+        "canon json",
+        "map json",
+        "state json",
+        "command string"
+      ],
+      "outputs": [
+        "updated state json",
+        "event log entries",
+        "markdown report(s)",
+        "optional rendered grid text"
+      ]
+    }
+  },
+  "state_files": {
+    "state_json_schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "NovaRomaCampaignState",
+      "type": "object",
+      "required": [
+        "meta",
+        "calendar",
+        "entities",
+        "trackers",
+        "audit"
+      ],
+      "properties": {
+        "meta": {
+          "type": "object",
+          "required": [
+            "campaign_id",
+            "setting",
+            "language",
+            "tech_constraints"
+          ],
+          "properties": {
+            "campaign_id": {
+              "type": "string"
+            },
+            "setting": {
+              "type": "string"
+            },
+            "language": {
+              "type": "string"
+            },
+            "tech_constraints": {
+              "type": "string"
+            }
+          }
+        },
+        "calendar": {
+          "type": "object",
+          "required": [
+            "current_date",
+            "date_format",
+            "next_advance_days"
+          ],
+          "properties": {
+            "current_date": {
+              "type": "string"
+            },
+            "date_format": {
+              "type": "string"
+            },
+            "next_advance_days": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "entities": {
+          "type": "object",
+          "required": [
+            "sites",
+            "initiatives",
+            "milestones"
+          ],
+          "properties": {
+            "sites": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "initiatives": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "milestones": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "trackers": {
+          "type": "object",
+          "properties": {
+            "strategic_materials": {
+              "type": "object"
+            },
+            "fish_shellfish": {
+              "type": "object"
+            },
+            "agriculture": {
+              "type": "object"
+            }
+          }
+        },
+        "audit": {
+          "type": "object",
+          "required": [
+            "canon_version_expected",
+            "log"
+          ],
+          "properties": {
+            "canon_version_expected": {
+              "type": "string"
+            },
+            "log": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "event_log_jsonl_schema": {
+      "one_event_per_line": true,
+      "fields": {
+        "ts": "ISO-8601 timestamp (real-world) for debugging only",
+        "campaign_date": "in-campaign date string",
+        "event_type": "COMMAND|MILESTONE|MEASUREMENT|NOTE|ERROR",
+        "command": "string",
+        "payload": "object"
+      }
+    }
+  },
+  "command_grammar": {
+    "examples": [
+      "status nr",
+      "status agriculture",
+      "site report",
+      "milestones report",
+      "next",
+      "initiative create \"Harbor Works\" purpose=\"Build durable docks\"",
+      "milestone add initiative=\"Explore\" name=\"Freshwater Survey\" target_date=\"Mar 4, 509 BCE\""
+    ],
+    "normalization_rules": [
+      "Trim, lowercase for parsing; preserve original for audit.",
+      "Allow shorthand targets: nr -> Nova Roma; agri -> agriculture.",
+      "If command is unrecognized, return help with nearest matches."
+    ],
+    "parsing_contract": {
+      "output_ast_shape": {
+        "verb": "string",
+        "args": "object",
+        "raw": "string"
+      }
+    }
+  },
+  "validation_and_tests": {
+    "non_invention_guards": [
+      "Existing entities: do not overwrite population/GDP/capacity/tech unless measurement event references a milestone result.",
+      "Generated numbers for new creations must use estimate_object_schema and include est label, range, basis, confidence."
+    ],
+    "format_guards": [
+      "Milestone IDs must match ^\\d+-\\d+$",
+      "Dates must be MMM D, YYYY with BCE/CE when relevant",
+      "Milestones Report sections and columns must match canon"
+    ],
+    "golden_snapshots": [
+      "status_report.md",
+      "site_report.md",
+      "milestones_report.md",
+      "agriculture_tracker.md"
+    ]
+  },
+  "tracker_contracts": {
+    "agriculture": {
+      "title": "Agriculture Output Report",
+      "defaults": {
+        "area": "unknown",
+        "yield": "unknown",
+        "value": "est"
+      },
+      "table_columns": [
+        "Product",
+        "Area Under Cultivation",
+        "Yield",
+        "Unit",
+        "Value (est)",
+        "Notes"
+      ],
+      "products": [
+        {
+          "product": "Maize",
+          "unit": "kg/season",
+          "notes": "Indigenous staple; high yield; stores well"
+        },
+        {
+          "product": "Beans",
+          "unit": "kg/season",
+          "notes": "Protein + nitrogen fixer"
+        },
+        {
+          "product": "Squash",
+          "unit": "kg/season",
+          "notes": "Storage vegetable"
+        },
+        {
+          "product": "Barley",
+          "unit": "kg/season",
+          "notes": "Hardy; porridge/beer"
+        },
+        {
+          "product": "Emmer/Einkorn Wheat",
+          "unit": "kg/season",
+          "notes": "Trial plots; acclimation uncertain"
+        },
+        {
+          "product": "Turnips",
+          "unit": "kg/season",
+          "notes": "Winter cellar crop; fodder"
+        },
+        {
+          "product": "Onions/Alliums",
+          "unit": "kg/season",
+          "notes": "Preservation + flavor"
+        },
+        {
+          "product": "Wild Grapes",
+          "unit": "kg/season",
+          "notes": "Wine/vinegar trials"
+        },
+        {
+          "product": "Plums/Native Stonefruit",
+          "unit": "kg/season",
+          "notes": "Drying potential"
+        },
+        {
+          "product": "Sunflower",
+          "unit": "kg/season",
+          "notes": "Oilseed + meal"
+        },
+        {
+          "product": "Pawpaw",
+          "unit": "kg/season",
+          "notes": "Native fruit; calorie dense"
+        },
+        {
+          "product": "Apples",
+          "unit": "kg/season",
+          "notes": "Orchard; cider/vinegar"
+        },
+        {
+          "product": "Chestnuts",
+          "unit": "kg/season",
+          "notes": "Starch tree crop; flour substitute"
+        },
+        {
+          "product": "Acorns",
+          "unit": "kg/season",
+          "notes": "Forest mast; leaching required"
+        },
+        {
+          "product": "Berries",
+          "unit": "kg/season",
+          "notes": "Foraging to cultivation"
+        },
+        {
+          "product": "Soybeans",
+          "unit": "kg/season",
+          "notes": "Protein + oil; soil benefits"
+        },
+        {
+          "product": "Potatoes",
+          "unit": "kg/season",
+          "notes": "High calories per area; cool tolerant"
+        }
+      ]
+    }
+  },
+  "reference_reducers": {
+    "notes": [
+      "Reference reducers are canonical, correctness-first state transitions expressed as structured pseudocode.",
+      "They are designed to be easy for Copilot to translate into real code (e.g., TypeScript reducers).",
+      "Reducers should be pure: no I/O. I/O (printing reports, writing files) happens in a thin runtime wrapper."
+    ],
+    "common_conventions": {
+      "purity": "Reducers return {new_state, emitted_events, outputs}. They do not write files directly.",
+      "event_log": "Runtime appends emitted_events into event_log.jsonl.",
+      "date_handling": "Use an in-campaign date library or a deterministic date-table; preserve MMM D, YYYY formatting."
+    },
+    "reducers": {
+      "STATUS": {
+        "handles": [
+          "status <target>",
+          "STATUS"
+        ],
+        "inputs": [
+          "state",
+          "canon",
+          "command_ast (verb='STATUS', args.target)"
+        ],
+        "outputs": [
+          "status_report_markdown"
+        ],
+        "touched_state_paths": [
+          "audit.log (append only, optional)"
+        ],
+        "invariants": [
+          "Do not modify entities, trackers, or milestones as a result of STATUS.",
+          "Respect non-invention rules: do not fabricate new factual numbers for existing entities."
+        ],
+        "steps": [
+          "Normalize target (e.g., 'nr' -> 'Nova Roma', 'agri' -> 'agriculture').",
+          "Resolve target to an entity/tracker known in state or canon.",
+          "Render sections per canon: Governance/Authority, Population, Operations, Risks, Summary.",
+          "If data absent, render 'unknown' or omit numeric detail (unless it is a permitted estimate already stored in state).",
+          "Optionally append an audit.log entry noting the query (no state change required)."
+        ],
+        "emit_events": [
+          {
+            "event_type": "COMMAND",
+            "command": "STATUS",
+            "payload_keys": [
+              "target"
+            ]
+          }
+        ],
+        "example": {
+          "input": {
+            "state.calendar.current_date": "Mar 1, 509 BCE",
+            "command": "status nr"
+          },
+          "output": {
+            "status_report_contains": [
+              "Status — Nova Roma",
+              "Date: Mar 1, 509 BCE"
+            ],
+            "state_changes": "none (except optional audit.log append)"
+          }
+        }
+      },
+      "SITE_REPORT": {
+        "handles": [
+          "site report",
+          "SITE_REPORT"
+        ],
+        "inputs": [
+          "state",
+          "canon",
+          "command_ast (verb='SITE_REPORT', args.scope optional)"
+        ],
+        "outputs": [
+          "site_report_markdown"
+        ],
+        "touched_state_paths": [
+          "audit.log (append only, optional)"
+        ],
+        "invariants": [
+          "Do not create or mutate sites; SITE_REPORT only renders what's in state.",
+          "Unknowns are valid; do not invent populations/GDP/capacity/technology."
+        ],
+        "steps": [
+          "Collect sites from state.entities.sites.",
+          "Partition into North/Central/South districts using site.district if present; else default all to 'Central' (or render 'unknown district').",
+          "Sort within district by population if known; otherwise stable sort by name.",
+          "Render table columns exactly as canon site_report.table_columns.",
+          "Render Top 3 Issues/Risks using available state.risks or infer as 'unknown' without fabricating numbers."
+        ],
+        "emit_events": [
+          {
+            "event_type": "COMMAND",
+            "command": "SITE_REPORT",
+            "payload_keys": [
+              "scope_optional"
+            ]
+          }
+        ],
+        "example": {
+          "input": {
+            "command": "site report"
+          },
+          "output": {
+            "site_report_sections": [
+              "North District",
+              "Central District",
+              "South District",
+              "Top 3 Issues/Risks"
+            ]
+          }
+        }
+      },
+      "INITIATIVE_CREATE": {
+        "handles": [
+          "initiative create ...",
+          "INITIATIVE_CREATE"
+        ],
+        "inputs": [
+          "state",
+          "canon",
+          "command_ast (verb='INITIATIVE_CREATE', args)"
+        ],
+        "outputs": [
+          "initiative_record",
+          "optional_milestone_records"
+        ],
+        "touched_state_paths": [
+          "entities.initiatives (append)",
+          "entities.milestones (append, optional)",
+          "audit.log (append)"
+        ],
+        "invariants": [
+          "Initiative names must be unique (case-insensitive) within state.",
+          "Do not alter existing initiatives/milestones; only append new ones.",
+          "If initial milestones are included, they must comply with milestone id/date rules."
+        ],
+        "steps": [
+          "Validate required args: name, purpose (and optionally owner, constraints, initial_milestones).",
+          "Ensure initiative name does not already exist.",
+          "Create initiative object with fields: name, purpose, owner (default: player_role), constraints[], created_on (campaign date), start_year_index (see id generation).",
+          "Append to state.entities.initiatives.",
+          "If initial_milestones provided: call MILESTONE_ADD reducer logic to append them with correct IDs and status=PLANNED.",
+          "Append audit.log entry noting creation."
+        ],
+        "emit_events": [
+          {
+            "event_type": "COMMAND",
+            "command": "INITIATIVE_CREATE",
+            "payload_keys": [
+              "name",
+              "purpose"
+            ]
+          },
+          {
+            "event_type": "NOTE",
+            "command": "INITIATIVE_CREATED",
+            "payload_keys": [
+              "initiative_name"
+            ]
+          }
+        ],
+        "example": {
+          "input": {
+            "command": "initiative create \"Harbor Works\" purpose=\"Build durable docks\"",
+            "state.entities.initiatives.length": 0
+          },
+          "output": {
+            "state.entities.initiatives.length": 1,
+            "state.entities.initiatives[0].name": "Harbor Works"
+          }
+        }
+      },
+      "MILESTONE_ADD": {
+        "handles": [
+          "milestone add ...",
+          "MILESTONE_ADD"
+        ],
+        "inputs": [
+          "state",
+          "canon",
+          "command_ast (verb='MILESTONE_ADD', args)"
+        ],
+        "outputs": [
+          "milestone_records"
+        ],
+        "touched_state_paths": [
+          "entities.milestones (append)",
+          "audit.log (append)"
+        ],
+        "invariants": [
+          "Milestone IDs follow ^\\d+-\\d+$ and are unique within an initiative.",
+          "Only milestones receive IDs (no IDs for initiatives or reports).",
+          "Target dates must follow canon date format."
+        ],
+        "id_generation": {
+          "rule": "Within each initiative, compute year_index = floor(days_since_initiative_start / 365) + 1. serial = count(existing milestones in same year_index) + 1. id = f\"{year_index}-{serial}\".",
+          "note": "If campaign uses BCE/CE, year_index is relative to initiative start, not absolute calendar year."
+        },
+        "steps": [
+          "Resolve initiative by name; if not found, error.",
+          "For each new milestone draft: validate name/description, target_date string, impact.",
+          "Generate milestone id per rule (unless explicitly provided AND valid AND non-colliding).",
+          "Set status=PLANNED, progress=0, created_on=current campaign date.",
+          "Append to state.entities.milestones.",
+          "Append audit.log entry and emit events."
+        ],
+        "emit_events": [
+          {
+            "event_type": "COMMAND",
+            "command": "MILESTONE_ADD",
+            "payload_keys": [
+              "initiative",
+              "count"
+            ]
+          },
+          {
+            "event_type": "MILESTONE",
+            "command": "MILESTONE_PLANNED",
+            "payload_keys": [
+              "initiative",
+              "milestone_id"
+            ]
+          }
+        ],
+        "example": {
+          "input": {
+            "state.calendar.current_date": "Mar 1, 509 BCE",
+            "command": "milestone add initiative=\"Explore\" name=\"Freshwater Survey\" target_date=\"Mar 4, 509 BCE\" impact=\"Maps springs\""
+          },
+          "output": {
+            "new_milestone_fields": [
+              "id (e.g., 1-2)",
+              "initiative",
+              "name",
+              "target_date",
+              "impact",
+              "status=PLANNED"
+            ]
+          }
+        }
+      },
+      "ADVANCE:3D": {
+        "handles": [
+          "next",
+          "ADVANCE:3D"
+        ],
+        "inputs": [
+          "state",
+          "canon",
+          "command_ast (verb='ADVANCE', args.days=3)"
+        ],
+        "outputs": [
+          "milestones_report_markdown"
+        ],
+        "touched_state_paths": [
+          "calendar.current_date (update)",
+          "entities.milestones[*].status (update if completed)",
+          "entities.milestones[*].progress (optional update)",
+          "audit.log (append)"
+        ],
+        "invariants": [
+          "Never fabricate measurement results; only milestone statuses can change based on time passing.",
+          "If a milestone becomes COMPLETED, it must appear in the next milestones report COMPLETED section."
+        ],
+        "steps": [
+          "Compute new campaign date = current_date + 3 days.",
+          "For each milestone with target_date within (old_date, new_date] and status in {PLANNED, IN_PROGRESS}: set status=COMPLETED and progress=100.",
+          "Optionally advance IN_PROGRESS milestones toward completion if you maintain a work model; otherwise leave progress unchanged.",
+          "Set state.calendar.current_date = new_date.",
+          "Append audit.log entry recording the advance window.",
+          "Call MILESTONES_REPORT rendering logic for the same window and return it as output."
+        ],
+        "emit_events": [
+          {
+            "event_type": "COMMAND",
+            "command": "ADVANCE:3D",
+            "payload_keys": [
+              "from",
+              "to"
+            ]
+          },
+          {
+            "event_type": "MILESTONE",
+            "command": "MILESTONE_COMPLETED",
+            "payload_keys": [
+              "milestone_id"
+            ],
+            "repeat": "for each completed"
+          }
+        ],
+        "example": {
+          "input": {
+            "state.calendar.current_date": "Mar 1, 509 BCE",
+            "milestone.target_date": "Mar 4, 509 BCE",
+            "command": "next"
+          },
+          "output": {
+            "state.calendar.current_date": "Mar 4, 509 BCE",
+            "milestone.status": "COMPLETED"
+          }
+        }
+      },
+      "MILESTONES_REPORT": {
+        "handles": [
+          "milestones report",
+          "MILESTONES_REPORT"
+        ],
+        "inputs": [
+          "state",
+          "canon",
+          "command_ast (verb='MILESTONES_REPORT', args.range optional)"
+        ],
+        "outputs": [
+          "milestones_report_markdown"
+        ],
+        "touched_state_paths": [
+          "audit.log (append only, optional)"
+        ],
+        "invariants": [
+          "Report must contain canon sections and columns exactly.",
+          "Do not alter milestone status within this reducer; it only renders."
+        ],
+        "steps": [
+          "Partition milestones into COMPLETED / IN_PROGRESS / PLANNED.",
+          "Render COMPLETED and IN_PROGRESS as tables using canon columns.",
+          "Render PLANNED grouped by initiative; each initiative gets its own table.",
+          "Render SUMMARY: high-level notes from state (no fabricated stats).",
+          "Render FOOTER with Pop and GDP deltas as unknown/est unless state contains permitted estimates."
+        ],
+        "emit_events": [
+          {
+            "event_type": "COMMAND",
+            "command": "MILESTONES_REPORT",
+            "payload_keys": [
+              "range_optional"
+            ]
+          }
+        ]
+      },
+      "RENDER_GRID": {
+        "handles": [
+          "render grid ...",
+          "RENDER_GRID"
+        ],
+        "inputs": [
+          "state",
+          "map_file",
+          "command_ast (verb='RENDER_GRID', args.row_range/col_range/map)"
+        ],
+        "outputs": [
+          "grid_render_text"
+        ],
+        "touched_state_paths": [
+          "audit.log (append only, optional)"
+        ],
+        "invariants": [
+          "Rendering uses shoreline segments; land = '.', water = '~' per map meta.",
+          "Origin must be SW (row=0,col=0), row increases north, col increases east."
+        ],
+        "steps": [
+          "Select map: METRO (full) or NovaRoma_UGRID35 (subgrid).",
+          "If subgrid: convert requested ugrid rows/cols to metro rows/cols using offsets from map.subgrid_mapping.",
+          "For each row in requested range: initialize all cells as water.",
+          "Mark land cells where west<=col<=east for segments matching mask (e.g., Manhattan only) or union for all landmasses.",
+          "Emit text lines; optional coordinate ruler is allowed but must not change the underlying cell characters."
+        ],
+        "emit_events": [
+          {
+            "event_type": "COMMAND",
+            "command": "RENDER_GRID",
+            "payload_keys": [
+              "map",
+              "row_range",
+              "col_range",
+              "mask_optional"
+            ]
+          }
+        ],
+        "example": {
+          "input": {
+            "command": "render grid map=NovaRoma_UGRID35 row_range=0..10 col_range=0..60 mask=Manhattan"
+          },
+          "output": {
+            "grid_render_text_contains": [
+              "~",
+              "."
+            ]
+          }
+        }
+      }
+    }
+  },
+  "fixtures": {
+    "example_states": {
+      "after_one_turn": {
+        "calendar": {
+          "current_date": "Mar 4, 509 BCE"
+        },
+        "entities": {
+          "initiatives": [
+            {
+              "name": "Explore",
+              "purpose": "Map shoreline and freshwater"
+            }
+          ],
+          "milestones": [
+            {
+              "id": "1-1",
+              "initiative": "Explore",
+              "name": "Eastern Shore Resource Survey",
+              "target_date": "Mar 4, 509 BCE",
+              "status": "COMPLETED"
+            }
+          ]
+        }
+      }
+    },
+    "example_reports": {
+      "milestones_report": "Milestones Report (Mar 1–4, 509 BCE)\n\nCOMPLETED:\n|ID|Initiative|Description|Target Date|Cost|Work-hours|Status|\n|1-1|Explore|Eastern Shore Resource Survey|Mar 4, 509 BCE|unknown|unknown|COMPLETED|\n\nSUMMARY:\nSurvey finished; mapping phase unlocked.\n\nFOOTER:\nPop: Δ unknown\nGDP: Δ est",
+      "site_report": "Nova Roma Site Report (Mar 4, 509 BCE)\n\nCentral District\n|Site|Area|Population|Pop GR|GDP GR|GRD|TMH %|Primary Role|Status Notes|\n|Forum Shore|unknown|unknown|unknown|unknown|unknown|unknown|Landing + Customs|Temporary docks; survey teams staged|\n\nTop 3 Issues/Risks\n1. Freshwater unmapped\n2. Storm exposure\n3. Limited kiln capacity\n"
+    },
+    "example_event_log": [
+      {
+        "ts": "2026-01-28T02:00:00Z",
+        "campaign_date": "Mar 1, 509 BCE",
+        "event_type": "COMMAND",
+        "command": "NEXT",
+        "payload": {
+          "from": "Mar 1, 509 BCE",
+          "to": "Mar 4, 509 BCE"
+        }
+      },
+      {
+        "ts": "2026-01-28T02:00:01Z",
+        "campaign_date": "Mar 4, 509 BCE",
+        "event_type": "MILESTONE",
+        "command": "MILESTONE_COMPLETED",
+        "payload": {
+          "initiative": "Explore",
+          "milestone_id": "1-1"
+        }
+      }
+    ],
+    "example_tracker_reports": {
+      "agriculture": "Agriculture Output Report (Mar 4, 509 BCE)\n\n|Product|Area Under Cultivation|Yield|Unit|Value (est)|Notes|\n|Maize|20|1200|kg/season|est|Trial fields near creek|\n|Beans|10|400|kg/season|est|Intercropped|\n|Squash|6|300|kg/season|est|Storage pits dug|\n",
+      "strategic_materials": "Strategic Materials Report (Mar 4, 509 BCE)\n\n|Material|Amount (kg/week)|Money Value (est)|Notes|\n|Timber|800|est|Clearing inland plots|\n|Charcoal|200|est|One earth kiln|\n"
+    },
+    "example_grid_render": "Row 0..5, Col 0..30 (NovaRoma_UGRID35)\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n~~~~~~~.............~~~~~~~~~~\n~~~~~~~.............~~~~~~~~~~\n~~~~~~~.............~~~~~~~~~~\n",
+    "example_measurement_milestone": {
+      "milestone": {
+        "id": "1-2",
+        "initiative": "Explore",
+        "name": "Freshwater Spring Survey",
+        "target_date": "Mar 7, 509 BCE",
+        "status": "COMPLETED",
+        "results": {
+          "springs_found": 2,
+          "flow_rate_l_per_day": {
+            "value": 12000,
+            "label": "est",
+            "range": {
+              "min": 8000,
+              "max": 16000
+            }
+          }
+        }
+      }
+    },
+    "example_error_response": {
+      "error": "INITIATIVE_CREATE failed",
+      "reason": "Initiative name already exists",
+      "suggestions": [
+        "Use a new name",
+        "List initiatives"
+      ]
+    },
+    "example_population_change_event": {
+      "event": {
+        "event_type": "MEASUREMENT",
+        "command": "CENSUS_RESULT",
+        "payload": {
+          "before": 2000,
+          "after": 2075,
+          "delta": 75,
+          "label": "measured"
+        }
+      }
+    },
+    "example_construction_asset_state": {
+      "asset": {
+        "name": "South Wharf",
+        "type": "Dock",
+        "location": {
+          "map": "NovaRoma_UGRID35",
+          "row": 12,
+          "col": 5
+        },
+        "status": "UNDER_CONSTRUCTION",
+        "materials_required": {
+          "timber": 300,
+          "nails": 40
+        }
+      }
+    },
+    "example_trade_route_state": {
+      "route": {
+        "name": "Hudson Fish Run",
+        "origin": "Nova Roma",
+        "destination": "River Settlements",
+        "cargo": [
+          "Salted Fish",
+          "Timber"
+        ],
+        "status": "ACTIVE"
+      }
+    },
+    "example_diplomacy_event": {
+      "event": {
+        "event_type": "DIPLOMACY",
+        "command": "TREATY_SIGNED",
+        "payload": {
+          "party": "Lenape",
+          "terms": "Fishing access + mutual warning signals"
+        }
+      }
+    }
+  },
+  "bootstrap_defaults": {
+    "starting_population": 2000,
+    "starting_entity_type": "settlement",
+    "starting_site": {
+      "id": "site_novaroma_core",
+      "name": "Nova Roma",
+      "role": "Settlement Capital",
+      "district": "Central",
+      "population": 2000,
+      "area": "unknown",
+      "gdp": "unknown",
+      "notes": "Established settlement; new leadership pivoting outward."
+    },
+    "notes": "Bootstrap should create state/state.json from state_templates/state.json by copying. Templates remain immutable.",
+    "starting_site_population": 2000
+  },
+  "notes": [
+    "Canon Impact (CI) labels should be human-readable; avoid JSON-path labels in CI middle segment."
+  ]
+}

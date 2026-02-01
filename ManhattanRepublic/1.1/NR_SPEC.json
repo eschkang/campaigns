@@ -1,0 +1,48 @@
+{
+  "spec_name": "Nova Roma Hard-Spec",
+  "spec_version": "1.0",
+  "bundle_version": "v1.1.1",
+  "critical_invariants": {
+    "starting_population": 500,
+    "starting_entity_type": "settlement",
+    "milestone_id_format": "<year>-<serial>",
+    "milestone_id_regex": "^[0-9]+-[0-9]+$",
+    "msr_alias": "msr",
+    "msr_contract": "milestone_status_report",
+    "tech_domain_count": 50,
+    "technology_domains_path": "novaroma_canon.json#/technology_domains",
+    "report_aliases_path": "novaroma_canon.json#/report_aliases",
+    "report_contracts_path": "novaroma_canon.json#/report_contracts"
+  },
+  "required_protocol": {
+    "proof_of_load": {
+      "required": true,
+      "must_echo_fields": [
+        "bundle_version",
+        "starting_population",
+        "milestone_id_format",
+        "msr_contract",
+        "tech_domain_count"
+      ],
+      "format_example": "Loaded: version=<bundle_version>, starting_population=<N>, milestone_id_format=<...>, msr_contract=<...>, tech_domains=<count>"
+    },
+    "self_check": {
+      "required": true,
+      "checks": [
+        {
+          "name": "milestone_id_regex",
+          "rule": "All milestone_id values must match milestone_id_regex."
+        },
+        {
+          "name": "report_contract_columns",
+          "rule": "Report outputs must match the referenced report_contract columns exactly."
+        },
+        {
+          "name": "ci_line_msr",
+          "rule": "MSR CI lines must follow ci_line_format in the MSR report_contract."
+        }
+      ],
+      "failure_behavior": "If any check fails, regenerate output immediately before presenting it."
+    }
+  }
+}

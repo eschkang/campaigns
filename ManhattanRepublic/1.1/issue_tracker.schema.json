@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nova Roma Issue/Update Tracker Schema",
+  "type": "object",
+  "required": ["schema_version", "tracker_name", "scope", "generated_utc", "updates"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "tracker_name": { "type": "string" },
+    "scope": { "type": "string" },
+    "generated_utc": { "type": "string", "format": "date-time" },
+    "updates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "update_id",
+          "title",
+          "status",
+          "summary",
+          "details",
+          "created_from",
+          "dependencies",
+          "applies_to",
+          "notes"
+        ],
+        "properties": {
+          "update_id": { "type": "string" },
+          "title": { "type": "string" },
+          "status": {
+            "type": "string",
+            "enum": ["Active", "Ready", "Deprecated"]
+          },
+          "summary": { "type": "string" },
+          "details": { "type": "string" },
+          "created_from": { "type": "string" },
+          "dependencies": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "applies_to": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "notes": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

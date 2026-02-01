@@ -1,0 +1,1490 @@
+{
+  "version": "2.8",
+  "context": {
+    "setting": "NOVA ROMA Roman Republic settlement in Lower Manhattan, ~509 BC",
+    "starting_population": 500,
+    "language": "Latin",
+    "institutions": [
+      "Senate",
+      "Magistrates",
+      "Assemblies",
+      "Customs Duties"
+    ],
+    "tech_constraints": "Late Iron Age / Early Roman Republic",
+    "starting_entity_type": "settlement",
+    "premise": "Established riverine settlement (~500 people); recently unified under a new leader and beginning cautious outward engagement after long isolation. Culture and language are locally evolved but Latin-like."
+  },
+  "maps": {
+    "UGRID35": "Manhattan-focused 100m grid",
+    "milestone_generation": "A request that results in an action or project should generate a milestone under an initiative. Each milestone must include an ID (Y-#), a target date, and an impact description.",
+    "METRO": "Borough-scale multi-segment shoreline model",
+    "MGRD-300": "300m macro overlay"
+  },
+  "reporting": {
+    "discipline": "Reports are displayed to the user and not saved as files by default.",
+    "milestone_id_format": "<year>-<serial> (year = years since initiative start, serial = milestone number within that year; e.g., 1-1, 1-2, 2-1)",
+    "milestone_id_rule": "Only milestones receive an ID. Do not use a 'Y' prefix.",
+    "date_format": "All milestone and report dates must use the format 'MMM D, YYYY' (e.g., Mar 1, 509 BCE)."
+  },
+  "milestones_report": {
+    "purpose": "Advance time and report milestone progress.",
+    "title_format": "Milestones Status Report (Mon DD–DD, YYYY)",
+    "ci_line": "CI: v<canon> | Version: <prev_version>→<new_version> | <change_type> – <short_reason>",
+    "sections": [
+      "News / Events",
+      "Completed / Imminent",
+      "In Progress",
+      "Planned (next 10 milestones)",
+      "Completed Audits",
+      "Metrics",
+      "Advisors"
+    ],
+    "news_presentation_rule": "News is written in newspaper-style headlines with parenthetical in-game effects.",
+    "completed_imminent_columns": [
+      "ID",
+      "Initiative",
+      "Description",
+      "Target Date",
+      "Cost",
+      "Work-hours",
+      "Effect/Impact",
+      "Status"
+    ],
+    "in_progress_columns": [
+      "ID",
+      "Initiative",
+      "Description",
+      "Target Date",
+      "Cost",
+      "Manhours",
+      "Status"
+    ],
+    "planned_columns": [
+      "ID",
+      "Description",
+      "Target Date",
+      "Cost",
+      "Work-hours",
+      "Status"
+    ],
+    "planned_limit": 10,
+    "completed_audits_format": "List of completed audits with brief notes.",
+    "metrics_columns": [
+      "Metric",
+      "Δ (delta)",
+      "Annualized"
+    ],
+    "metrics_gdp_row_position": 2,
+    "advisors_format": "Each advisor entry must include area of expertise, two sound actions, and one intentionally poor action.",
+    "table_format": "Markdown table format is used for all milestone sections."
+  },
+  "milestone_insight_report": {
+    "purpose": "Explain a decision, its constraints, impact, and risks.",
+    "format": "<N>️⃣ <DECISION TITLE>"
+  },
+  "site_report": {
+    "purpose": "Site status and details.",
+    "title_format": "<Country> Site Report (MMM D, YYYY)",
+    "sections": [
+      "North District",
+      "Central District",
+      "South District",
+      "Top 3 Issues/Risks"
+    ],
+    "table_columns": [
+      "Site",
+      "Area",
+      "Population",
+      "Pop GR",
+      "GDP GR",
+      "GRD",
+      "TMH %",
+      "Primary Role",
+      "Status Notes"
+    ],
+    "issues_risks_format": [
+      "1.",
+      "2.",
+      "3."
+    ]
+  },
+  "status_report": {
+    "purpose": "Answer 'Status X' questions.",
+    "format": "Status — <Entity / Site / Group>",
+    "sections": [
+      "Governance / Authority",
+      "Population",
+      "Operations",
+      "Risks",
+      "Summary"
+    ]
+  },
+  "rules": {
+    "do_not_invent": [
+      "population",
+      "GDP",
+      "capacity",
+      "technology"
+    ],
+    "unknown_is_valid": true,
+    "estimates_label": "est",
+    "population_source": "Global Population Table",
+    "date_usage": "Use in-campaign dates only for all reports and logs. Do not use real-world dates.",
+    "advance_next": "The command 'Next' always advances the campaign by 3 in-campaign days.",
+    "next_reporting": "When 'Next' is used, report on any milestones that completed during the timeline advance.",
+    "narrative_guardrails": [
+      "Trade narration must obey systems.trade.gating_rules (no assumed neighbors or built ships).",
+      "Campaign starts as a settlement (not a colony) with starting population=500 (campaign_default). Treat as established community; avoid 'colonial' framing unless explicitly introduced in state.",
+      "Canon Impact (CI) middle fields must be descriptive phrases, not schema keys."
+    ],
+    "canon_impact": {
+      "format": "CI: v<canon> | R<before>→R<after> | {REV|MINOR|MAJOR}",
+      "labeling_rule": "CI middle segment must use human-readable field labels (e.g., 'Starting Population') rather than internal JSON paths.",
+      "examples": [
+        "CI: v2.7 | RStart Conditions: settlement; RStarting Population: unspecified→500; RNarrative Framing: neutral→outward-focused | MAJOR"
+      ],
+      "middle_field_style": "Human-readable descriptive labels (e.g., 'Starting Population', 'Narrative Framing'), not JSON paths or internal keys."
+    },
+    "domain_governance": {
+      "target_range": "40–70",
+      "adding_domain_requires": "MAJOR CI + changelog entry",
+      "prefer_tier_advances": true
+    },
+    "technology_prerequisites": {
+      "Electricity": [
+        "Magnetism",
+        "Mechanics",
+        "Instrument Making",
+        "Energy Systems"
+      ],
+      "Steelmaking": [
+        "Ironworking (Proto)",
+        "Charcoal & Fuels"
+      ],
+      "Printing & Reproduction": [
+        "Papermaking",
+        "Instrument Making"
+      ],
+      "Harbor Engineering": [
+        "Shipbuilding & Watercraft",
+        "Roads & Earthworks"
+      ],
+      "Canal Construction": [
+        "Hydraulics & Irrigation",
+        "Roads & Earthworks"
+      ]
+    },
+    "era_gating": {
+      "current_era_default": "Iron Age (isolated settlement)",
+      "policy": "Domains whose era_min is later than the current era may exist but are capped at Tier 1 unless unlocked.",
+      "caps": {
+        "later_than_current_era": 1
+      },
+      "unlock_events": [
+        "ERA_ADVANCE",
+        "TECH_DOMAIN_UNLOCK"
+      ]
+    },
+    "technology_prerequisites_full": {
+      "Agriculture": [],
+      "Animal Husbandry": [
+        "Agriculture"
+      ],
+      "Fishing & Aquaculture": [],
+      "Salt Extraction": [],
+      "Brewing & Fermentation": [
+        "Agriculture",
+        "Food Preservation"
+      ],
+      "Food Preservation": [
+        "Salt Extraction",
+        "Clay & Ceramics"
+      ],
+      "Herbalism & Botany": [
+        "Agriculture"
+      ],
+      "Timber & Forestry": [],
+      "Stoneworking": [],
+      "Clay & Ceramics": [],
+      "Mining & Prospecting": [
+        "Stoneworking",
+        "Surveying & Geodesy"
+      ],
+      "Charcoal & Fuels": [
+        "Timber & Forestry"
+      ],
+      "Waterpower & Mills": [
+        "Hydraulics & Irrigation",
+        "Mechanics",
+        "Roads & Earthworks"
+      ],
+      "Metallurgy (Copper/Bronze)": [
+        "Mining & Prospecting",
+        "Charcoal & Fuels"
+      ],
+      "Ironworking (Proto)": [
+        "Mining & Prospecting",
+        "Charcoal & Fuels",
+        "Metallurgy (Copper/Bronze)"
+      ],
+      "Steelmaking": [
+        "Ironworking (Proto)",
+        "Charcoal & Fuels"
+      ],
+      "Glassmaking": [
+        "Clay & Ceramics",
+        "Charcoal & Fuels"
+      ],
+      "Lime & Cement": [
+        "Stoneworking",
+        "Charcoal & Fuels"
+      ],
+      "Chemical Processing": [
+        "Herbalism & Botany",
+        "Glassmaking",
+        "Lime & Cement"
+      ],
+      "Textiles & Weaving": [
+        "Agriculture"
+      ],
+      "Leatherworking": [
+        "Animal Husbandry"
+      ],
+      "Papermaking": [
+        "Textiles & Weaving",
+        "Chemical Processing"
+      ],
+      "Printing & Reproduction": [
+        "Papermaking",
+        "Writing & Recordkeeping",
+        "Instrument Making"
+      ],
+      "Instrument Making": [
+        "Metallurgy (Copper/Bronze)",
+        "Mathematics & Accounting",
+        "Glassmaking"
+      ],
+      "Roads & Earthworks": [],
+      "Hydraulics & Irrigation": [
+        "Roads & Earthworks"
+      ],
+      "Architecture & Fortification": [
+        "Stoneworking",
+        "Timber & Forestry"
+      ],
+      "Shipbuilding & Watercraft": [
+        "Timber & Forestry",
+        "Textiles & Weaving"
+      ],
+      "Harbor Engineering": [
+        "Shipbuilding & Watercraft",
+        "Stoneworking",
+        "Roads & Earthworks"
+      ],
+      "Canal Construction": [
+        "Hydraulics & Irrigation",
+        "Surveying & Geodesy",
+        "Roads & Earthworks"
+      ],
+      "Navigation & Cartography": [
+        "Mathematics & Accounting",
+        "Surveying & Geodesy"
+      ],
+      "Writing & Recordkeeping": [],
+      "Mathematics & Accounting": [],
+      "Astronomy": [
+        "Mathematics & Accounting",
+        "Instrument Making"
+      ],
+      "Timekeeping & Calendrics": [
+        "Astronomy",
+        "Instrument Making",
+        "Metallurgy (Copper/Bronze)"
+      ],
+      "Education & Scholarship": [
+        "Writing & Recordkeeping",
+        "Mathematics & Accounting"
+      ],
+      "Medicine & Sanitation": [
+        "Herbalism & Botany",
+        "Public Administration"
+      ],
+      "Public Administration": [
+        "Writing & Recordkeeping"
+      ],
+      "Law & Courts": [
+        "Writing & Recordkeeping",
+        "Public Administration"
+      ],
+      "Banking & Finance": [
+        "Mathematics & Accounting",
+        "Writing & Recordkeeping",
+        "Law & Courts"
+      ],
+      "Insurance & Risk Pools": [
+        "Banking & Finance",
+        "Mathematics & Accounting"
+      ],
+      "Optics": [
+        "Glassmaking",
+        "Instrument Making",
+        "Mathematics & Accounting"
+      ],
+      "Acoustics": [
+        "Mechanics",
+        "Mathematics & Accounting",
+        "Instrument Making"
+      ],
+      "Magnetism": [
+        "Instrument Making",
+        "Metallurgy (Copper/Bronze)",
+        "Mathematics & Accounting"
+      ],
+      "Electricity": [
+        "Magnetism",
+        "Mechanics",
+        "Instrument Making",
+        "Energy Systems",
+        "Chemical Processing"
+      ],
+      "Thermodynamics": [
+        "Mechanics",
+        "Energy Systems",
+        "Chemical Processing"
+      ],
+      "Mechanics": [
+        "Mathematics & Accounting",
+        "Instrument Making"
+      ],
+      "Meteorology & Climate": [
+        "Astronomy",
+        "Instrument Making",
+        "Mathematics & Accounting"
+      ],
+      "Surveying & Geodesy": [
+        "Mathematics & Accounting",
+        "Instrument Making"
+      ],
+      "Energy Systems": [
+        "Charcoal & Fuels",
+        "Mechanics",
+        "Waterpower & Mills"
+      ]
+    },
+    "protocol": {
+      "proof_of_load": {
+        "required": true,
+        "source": "NR_SPEC.json#/required_protocol/proof_of_load",
+        "rule": "Before answering the first command in a new chat, echo the one-line proof-of-load string from NR_SPEC.json."
+      },
+      "self_check": {
+        "required": true,
+        "source": "NR_SPEC.json#/required_protocol/self_check",
+        "rule": "Before finalizing any report/milestone output, run NR_SPEC self-checks and regenerate on failure."
+      }
+    }
+  },
+  "trackers": {
+    "strategic_materials": {
+      "title": "Strategic Materials Report",
+      "categories": [
+        {
+          "name": "Raw Materials",
+          "items": [
+            {
+              "material": "Timber",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Construction + fuel feedstock"
+            },
+            {
+              "material": "Firewood",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Cooking + process heat"
+            },
+            {
+              "material": "Stone (fieldstone)",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Foundations, retaining, paving"
+            },
+            {
+              "material": "Lime-bearing shell/stone",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Feedstock for lime (mortar/sanitation)"
+            },
+            {
+              "material": "Sand / silica sand",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Mortar + glass feedstock"
+            },
+            {
+              "material": "Clay",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Input for pottery/brick"
+            },
+            {
+              "material": "Iron (ore/bog iron)",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Smelting feedstock; availability TBD"
+            },
+            {
+              "material": "Copper (ore)",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Tools/fittings; alloy base"
+            },
+            {
+              "material": "Tin (ore)",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Bronze alloy; may be rare/unknown locally"
+            },
+            {
+              "material": "Lead (ore)",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Weights, roofing, fittings; toxic handling risks"
+            },
+            {
+              "material": "Zinc (ore)",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Identification/separation constraints"
+            },
+            {
+              "material": "Sulfur / pyrite",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Chemistry + some metallurgy; uncertain availability"
+            },
+            {
+              "material": "Pitch/tar/resins",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Waterproofing, sealing, cordage treatment"
+            },
+            {
+              "material": "Freshwater (potable/process)",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Managed resource; critical constraint"
+            },
+            {
+              "material": "Fibers (flax/nettle/wool)",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Textiles, sacks, cordage base"
+            },
+            {
+              "material": "Hides/leather",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Belts, shoes, harness, armor components"
+            },
+            {
+              "material": "Bones/horns",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Tools, needles, glue feedstock"
+            },
+            {
+              "material": "Salt",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Preservation + health; output TBD"
+            }
+          ]
+        },
+        {
+          "name": "Processed Materials",
+          "items": [
+            {
+              "material": "Charcoal",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Smelting/kilns; produced input from wood"
+            },
+            {
+              "material": "Bricks/tiles (fired clay)",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Roofing, durable construction"
+            },
+            {
+              "material": "Pottery/ceramics (storage)",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Amphorae, jars; preservation/logistics multiplier"
+            },
+            {
+              "material": "Lime (quicklime/slaked)",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Mortar, plaster, sanitation"
+            },
+            {
+              "material": "Iron bloom/bars",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Tool/fastener feedstock"
+            },
+            {
+              "material": "Nails/fasteners",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Construction multiplier"
+            },
+            {
+              "material": "Bronze goods (if copper+tin)",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Tools, fittings; depends on tin"
+            },
+            {
+              "material": "Rope/cordage",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Rigging, lifting, hauling"
+            },
+            {
+              "material": "Sailcloth",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Shipping/fishing capacity"
+            },
+            {
+              "material": "Nets",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Fishing efficiency multiplier"
+            },
+            {
+              "material": "Glass",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Needs consistent high heat + silica; status unknown"
+            },
+            {
+              "material": "Soap/lye",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Hygiene; requires fat + alkali source"
+            },
+            {
+              "material": "Preserved foods (salted/smoked/dried)",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Strategic store stability driver"
+            }
+          ]
+        }
+      ],
+      "table_columns": [
+        "Material",
+        "Amount (kg/week)",
+        "Money Value (est)",
+        "Notes"
+      ],
+      "defaults": {
+        "amount_kg_per_week": "unknown",
+        "money_value": "est"
+      }
+    },
+    "fish_shellfish": {
+      "explore": {
+        "title": "Explore Initiative",
+        "milestones": [
+          {
+            "id": "1-1",
+            "name": "Eastern Shore Resource Survey",
+            "target_date": "Mar 4, 509 BCE",
+            "impact": "Enables resource mapping, supports food/water/salt planning, and identifies new opportunities or risks for Nova Roma."
+          }
+        ]
+      },
+      "title": "Fishing & Shellfish Catch Report",
+      "categories": [
+        {
+          "name": "Major Food Sources",
+          "items": [
+            {
+              "species": "Striped Bass",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Most abundant"
+            },
+            {
+              "species": "American Shad",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Seasonal"
+            },
+            {
+              "species": "Bluefish",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Common"
+            },
+            {
+              "species": "Oyster",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Common, foraged"
+            },
+            {
+              "species": "Clam",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Soft-shell, hard-shell"
+            }
+          ]
+        },
+        {
+          "name": "Other Food Sources",
+          "items": [
+            {
+              "species": "Atlantic Sturgeon",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Larger, less frequent"
+            },
+            {
+              "species": "Eel",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Supplementary"
+            },
+            {
+              "species": "Mussel",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Found in tidal areas"
+            },
+            {
+              "species": "Scallop",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Less common, deeper water"
+            },
+            {
+              "species": "Crab",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Seasonal"
+            },
+            {
+              "species": "Lobster",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Rare, deeper water"
+            },
+            {
+              "species": "Snail (Periwinkle)",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Supplementary, foraged"
+            },
+            {
+              "species": "Shrimp",
+              "amount_kg_per_week": "unknown",
+              "money_value": "est",
+              "notes": "Small, estuarine"
+            }
+          ]
+        }
+      ],
+      "table_columns": [
+        "Species",
+        "Amount (kg/week)",
+        "Money Value (est)",
+        "Notes"
+      ],
+      "defaults": {
+        "amount_kg_per_week": "unknown",
+        "money_value": "est"
+      }
+    }
+  },
+  "systems": {
+    "trade": {
+      "purpose": "Prevent overstating trade before contacts, routes, and shipbuilding exist.",
+      "definitions": {
+        "proto_trade": "Incidental barter with transient/unidentified parties. No mapped partners, no formal routes, no treaties.",
+        "contacted_partner": "A partner confirmed via a completed contact/diplomacy milestone and recorded in state.",
+        "trade_route": "A recurring exchange with origin/destination/cargo recorded in state and enabled by a completed route charter milestone."
+      },
+      "gating_rules": [
+        "Do not describe organized external trade (exports/imports with named partners or routes) unless at least one contacted_partner exists.",
+        "Do not describe ship-based commerce beyond skiffs/fishing craft unless a shipbuilding milestone (yard/slipway/hull completion) is COMPLETED.",
+        "Before contacts exist, STATUS trade must use proto_trade language only.",
+        "Customs duties may exist internally, but do not imply high volumes or stable merchant queues before routes and infrastructure milestones."
+      ],
+      "status_report_guidance": {
+        "trade_status_phrasing": {
+          "before_contact": "Trade is embryonic and opportunistic (proto-trade). Occasional passing craft may barter at the shoreline; no mapped partners, routes, or treaties exist.",
+          "after_contact_before_routes": "Trade is emerging with known partners but remains ad hoc; no chartered routes yet.",
+          "after_routes": "Trade is active with chartered routes; throughput depends on infrastructure and preservation."
+        }
+      }
+    }
+  },
+  "report_contracts": {
+    "common": {
+      "date_format": "MMM D, YYYY",
+      "unknown_token": "unknown",
+      "estimate_token": "est",
+      "districts": [
+        "North",
+        "Central",
+        "South"
+      ]
+    },
+    "status_report": {
+      "title_format": "Status — <Target>",
+      "sections": [
+        "Governance / Authority",
+        "Population",
+        "Operations",
+        "Risks",
+        "Summary"
+      ],
+      "rules": [
+        "Do not invent factual numbers for existing entities.",
+        "Apply systems.* gating rules for phrasing (e.g., systems.trade)."
+      ]
+    },
+    "site_report": {
+      "title_format": "<Polity> Site Report (<Date>)",
+      "sections": [
+        "North District",
+        "Central District",
+        "South District",
+        "Top 3 Issues / Risks"
+      ],
+      "table_columns": [
+        "Site",
+        "Area",
+        "Population",
+        "Pop GR",
+        "GDP GR",
+        "GRD",
+        "TMH %",
+        "Primary Role",
+        "Status Notes"
+      ],
+      "sorting": {
+        "district_sort": [
+          "North",
+          "Central",
+          "South"
+        ],
+        "within_district": "population_known_desc_then_name_asc"
+      },
+      "rules": [
+        "If a core settlement exists in state (e.g., Nova Roma), it must always appear in the Site Report.",
+        "Unknown values are valid; use common.unknown_token and common.estimate_token."
+      ]
+    },
+    "milestones_report": {
+      "title_format": "Milestones Report (<From>–<To>, <Year>)",
+      "sections": [
+        "COMPLETED",
+        "IN PROGRESS",
+        "PLANNED (Grouped by Initiative)",
+        "SUMMARY",
+        "FOOTER"
+      ],
+      "columns": [
+        "ID",
+        "Initiative",
+        "Description",
+        "Target Date",
+        "Cost",
+        "Work-hours",
+        "Status"
+      ],
+      "footer_format": [
+        "Pop: Δ <unknown|est|value>",
+        "GDP: Δ <unknown|est|value>"
+      ]
+    },
+    "tracker_reports": {
+      "strategic_materials": {
+        "title_format": "Strategic Materials Report (<Date>)",
+        "columns": [
+          "Material",
+          "Amount (kg/week)",
+          "Money Value (est)",
+          "Notes"
+        ],
+        "defaults": {
+          "amount_kg_per_week": "unknown",
+          "money_value": "est"
+        }
+      },
+      "fish_shellfish": {
+        "title_format": "Fishing & Shellfish Report (<Date>)",
+        "columns": [
+          "Species",
+          "Amount (kg/week)",
+          "Money Value (est)",
+          "Notes"
+        ],
+        "defaults": {
+          "amount_kg_per_week": "unknown",
+          "money_value": "est"
+        }
+      },
+      "agriculture": {
+        "title_format": "Agriculture Output Report (<Date>)",
+        "columns": [
+          "Product",
+          "Area Under Cultivation",
+          "Yield",
+          "Unit",
+          "Value (est)",
+          "Notes"
+        ],
+        "defaults": {
+          "area": "unknown",
+          "yield": "unknown",
+          "value": "est"
+        }
+      }
+    },
+    "milestone_status_report": {
+      "title_format": "Milestone Status Report (<DateRange>)",
+      "columns": [],
+      "auto_sections": {
+        "tech_deltas": {
+          "enabled": true,
+          "source_prior": "state.json#/snapshots/technology_levels_last_msr",
+          "snapshot_update_rule": "After MSR, set snapshots.technology_levels_last_msr = current domain→tier map and snapshots.last_msr_date = MSR end date."
+        }
+      },
+      "validation": {
+        "milestone_id_regex": "^[0-9]+-[0-9]+$",
+        "milestone_id_format": "<year>-<serial>"
+      }
+    }
+  },
+  "deprecations": {
+    "notes": [
+      "v2.6: report templates are normalized under report_contracts.*. Older scattered template fields (if present) remain for backward compatibility but should be treated as deprecated."
+    ]
+  },
+  "campaign_defaults": {
+    "starting_population": 500,
+    "starting_entity_type": "settlement",
+    "premise": "A mature settlement of ~500 people has gained a new leader who wants to look outward and improve the world through trade, diplomacy, and infrastructure (no militarization without explicit approval)."
+  },
+  "technology_domains": [
+    "Agriculture",
+    "Animal Husbandry",
+    "Fishing & Aquaculture",
+    "Salt Extraction",
+    "Brewing & Fermentation",
+    "Food Preservation",
+    "Herbalism & Botany",
+    "Timber & Forestry",
+    "Stoneworking",
+    "Clay & Ceramics",
+    "Mining & Prospecting",
+    "Charcoal & Fuels",
+    "Waterpower & Mills",
+    "Metallurgy (Copper/Bronze)",
+    "Ironworking (Proto)",
+    "Steelmaking",
+    "Glassmaking",
+    "Lime & Cement",
+    "Chemical Processing",
+    "Textiles & Weaving",
+    "Leatherworking",
+    "Papermaking",
+    "Printing & Reproduction",
+    "Instrument Making",
+    "Roads & Earthworks",
+    "Hydraulics & Irrigation",
+    "Architecture & Fortification",
+    "Shipbuilding & Watercraft",
+    "Harbor Engineering",
+    "Canal Construction",
+    "Navigation & Cartography",
+    "Writing & Recordkeeping",
+    "Mathematics & Accounting",
+    "Astronomy",
+    "Timekeeping & Calendrics",
+    "Education & Scholarship",
+    "Medicine & Sanitation",
+    "Public Administration",
+    "Law & Courts",
+    "Banking & Finance",
+    "Insurance & Risk Pools",
+    "Optics",
+    "Acoustics",
+    "Magnetism",
+    "Electricity",
+    "Thermodynamics",
+    "Mechanics",
+    "Meteorology & Climate",
+    "Surveying & Geodesy",
+    "Energy Systems"
+  ],
+  "technology_domain_catalog": [
+    {
+      "name": "Agriculture",
+      "category": "Food & Biology",
+      "tags": [
+        "subsistence",
+        "food"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Animal Husbandry",
+      "category": "Food & Biology",
+      "tags": [
+        "subsistence",
+        "food"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Fishing & Aquaculture",
+      "category": "Food & Biology",
+      "tags": [
+        "subsistence",
+        "food"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Salt Extraction",
+      "category": "Food & Biology",
+      "tags": [
+        "preservation",
+        "food"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Brewing & Fermentation",
+      "category": "Food & Biology",
+      "tags": [
+        "food",
+        "culture"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Food Preservation",
+      "category": "Food & Biology",
+      "tags": [
+        "food",
+        "logistics"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Herbalism & Botany",
+      "category": "Food & Biology",
+      "tags": [
+        "knowledge",
+        "medicine"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Timber & Forestry",
+      "category": "Resources",
+      "tags": [
+        "materials",
+        "construction"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Stoneworking",
+      "category": "Resources",
+      "tags": [
+        "materials",
+        "construction"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Clay & Ceramics",
+      "category": "Resources",
+      "tags": [
+        "materials",
+        "household"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Mining & Prospecting",
+      "category": "Resources",
+      "tags": [
+        "materials",
+        "extraction"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Charcoal & Fuels",
+      "category": "Resources",
+      "tags": [
+        "energy",
+        "materials"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Waterpower & Mills",
+      "category": "Environment & Energy",
+      "tags": [
+        "energy",
+        "production"
+      ],
+      "era_min": "Classical",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Metallurgy (Copper/Bronze)",
+      "category": "Metals & Materials",
+      "tags": [
+        "materials",
+        "tools"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Ironworking (Proto)",
+      "category": "Metals & Materials",
+      "tags": [
+        "materials",
+        "tools"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Steelmaking",
+      "category": "Metals & Materials",
+      "tags": [
+        "materials",
+        "tools"
+      ],
+      "era_min": "Medieval",
+      "future_facing": false,
+      "notes": "Represents controlled higher-carbon iron/steel production."
+    },
+    {
+      "name": "Glassmaking",
+      "category": "Metals & Materials",
+      "tags": [
+        "materials",
+        "instruments"
+      ],
+      "era_min": "Classical",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Lime & Cement",
+      "category": "Metals & Materials",
+      "tags": [
+        "construction",
+        "materials"
+      ],
+      "era_min": "Classical",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Chemical Processing",
+      "category": "Metals & Materials",
+      "tags": [
+        "chemistry",
+        "materials"
+      ],
+      "era_min": "Early Modern",
+      "future_facing": true,
+      "notes": ""
+    },
+    {
+      "name": "Textiles & Weaving",
+      "category": "Manufactures",
+      "tags": [
+        "clothing",
+        "trade"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Leatherworking",
+      "category": "Manufactures",
+      "tags": [
+        "clothing",
+        "tools"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Papermaking",
+      "category": "Manufactures",
+      "tags": [
+        "knowledge",
+        "bureaucracy"
+      ],
+      "era_min": "Medieval",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Printing & Reproduction",
+      "category": "Manufactures",
+      "tags": [
+        "knowledge",
+        "communication"
+      ],
+      "era_min": "Early Modern",
+      "future_facing": true,
+      "notes": ""
+    },
+    {
+      "name": "Instrument Making",
+      "category": "Manufactures",
+      "tags": [
+        "precision",
+        "science"
+      ],
+      "era_min": "Early Modern",
+      "future_facing": true,
+      "notes": ""
+    },
+    {
+      "name": "Roads & Earthworks",
+      "category": "Civil Works & Transport",
+      "tags": [
+        "infrastructure",
+        "logistics"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Hydraulics & Irrigation",
+      "category": "Civil Works & Transport",
+      "tags": [
+        "infrastructure",
+        "water"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Architecture & Fortification",
+      "category": "Civil Works & Transport",
+      "tags": [
+        "construction",
+        "security"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Shipbuilding & Watercraft",
+      "category": "Civil Works & Transport",
+      "tags": [
+        "transport",
+        "logistics"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Harbor Engineering",
+      "category": "Civil Works & Transport",
+      "tags": [
+        "infrastructure",
+        "trade"
+      ],
+      "era_min": "Classical",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Canal Construction",
+      "category": "Civil Works & Transport",
+      "tags": [
+        "infrastructure",
+        "logistics"
+      ],
+      "era_min": "Classical",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Navigation & Cartography",
+      "category": "Knowledge Systems",
+      "tags": [
+        "navigation",
+        "measurement"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Writing & Recordkeeping",
+      "category": "Knowledge Systems",
+      "tags": [
+        "bureaucracy",
+        "knowledge"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Mathematics & Accounting",
+      "category": "Knowledge Systems",
+      "tags": [
+        "measurement",
+        "finance"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Astronomy",
+      "category": "Knowledge Systems",
+      "tags": [
+        "science",
+        "navigation"
+      ],
+      "era_min": "Classical",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Timekeeping & Calendrics",
+      "category": "Knowledge Systems",
+      "tags": [
+        "science",
+        "administration"
+      ],
+      "era_min": "Classical",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Education & Scholarship",
+      "category": "Knowledge Systems",
+      "tags": [
+        "institutions",
+        "knowledge"
+      ],
+      "era_min": "Classical",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Medicine & Sanitation",
+      "category": "Institutions & Public Health",
+      "tags": [
+        "health",
+        "public_works"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Public Administration",
+      "category": "Institutions & Public Health",
+      "tags": [
+        "governance",
+        "bureaucracy"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Law & Courts",
+      "category": "Institutions & Public Health",
+      "tags": [
+        "governance",
+        "justice"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Banking & Finance",
+      "category": "Institutions & Public Health",
+      "tags": [
+        "finance",
+        "markets"
+      ],
+      "era_min": "Iron Age",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Insurance & Risk Pools",
+      "category": "Institutions & Public Health",
+      "tags": [
+        "finance",
+        "risk"
+      ],
+      "era_min": "Classical",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Optics",
+      "category": "Natural Philosophy",
+      "tags": [
+        "science",
+        "instruments"
+      ],
+      "era_min": "Early Modern",
+      "future_facing": true,
+      "notes": ""
+    },
+    {
+      "name": "Acoustics",
+      "category": "Natural Philosophy",
+      "tags": [
+        "science"
+      ],
+      "era_min": "Early Modern",
+      "future_facing": true,
+      "notes": ""
+    },
+    {
+      "name": "Magnetism",
+      "category": "Natural Philosophy",
+      "tags": [
+        "science",
+        "instruments"
+      ],
+      "era_min": "Early Modern",
+      "future_facing": true,
+      "notes": ""
+    },
+    {
+      "name": "Electricity",
+      "category": "Natural Philosophy",
+      "tags": [
+        "science",
+        "energy"
+      ],
+      "era_min": "Industrial",
+      "future_facing": true,
+      "notes": ""
+    },
+    {
+      "name": "Thermodynamics",
+      "category": "Natural Philosophy",
+      "tags": [
+        "science",
+        "energy"
+      ],
+      "era_min": "Industrial",
+      "future_facing": true,
+      "notes": ""
+    },
+    {
+      "name": "Mechanics",
+      "category": "Natural Philosophy",
+      "tags": [
+        "science",
+        "engineering"
+      ],
+      "era_min": "Classical",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Meteorology & Climate",
+      "category": "Environment & Energy",
+      "tags": [
+        "science",
+        "planning"
+      ],
+      "era_min": "Early Modern",
+      "future_facing": true,
+      "notes": ""
+    },
+    {
+      "name": "Surveying & Geodesy",
+      "category": "Environment & Energy",
+      "tags": [
+        "measurement",
+        "planning"
+      ],
+      "era_min": "Classical",
+      "future_facing": false,
+      "notes": ""
+    },
+    {
+      "name": "Energy Systems",
+      "category": "Environment & Energy",
+      "tags": [
+        "energy",
+        "infrastructure"
+      ],
+      "era_min": "Industrial",
+      "future_facing": true,
+      "notes": ""
+    }
+  ]
+}

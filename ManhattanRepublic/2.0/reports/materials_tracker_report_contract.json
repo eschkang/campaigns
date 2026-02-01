@@ -1,0 +1,32 @@
+{
+  "$schema": "./materials_tracker_report_contract.schema.json",
+  "report_contract": {
+    "report_type": "materials_tracker",
+    "version": "v1.0",
+    "title": "Strategic Materials Tracker Report",
+    "date_field": "game_date",
+    "sections": [
+      "Metals",
+      "Non-metals",
+      "Processed",
+      "Strategic Advise",
+      "Summary"
+    ],
+    "metals_columns": ["Material", "Qty", "Location", "Notes"],
+    "non_metals_columns": ["Material", "Qty", "Location", "Notes"],
+    "processed_columns": ["Material", "Qty", "Source/Location", "Notes"],
+    "strategic_advise_guidance": [
+      "Prioritize stockpiling charcoal and iron ore for tool and weapon production.",
+      "Monitor timber and clay usage to ensure sustainable building practices.",
+      "Expand processing capacity for bricks, lime, and glass to support infrastructure.",
+      "Encourage preservation of animal hides and hemp fiber for trade and equipment.",
+      "Rotate quarry and sand extraction sites to prevent resource depletion."
+    ],
+    "summary_fields": [
+      "Combined total quantity",
+      "Resource status"
+    ],
+    "format_version_label": "materials_tracker v.1.0",
+    "format_standards": "Always use the combined INIT+ID format (e.g., AGEX-1-2) for Initiative references in reports. Never separate initiative code and ID into different columns or fields."
+  }
+}

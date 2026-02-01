@@ -1,0 +1,58 @@
+{
+  "bundle": "NRCore_v1_1_0",
+  "generated_utc": "2026-01-29T05:30:32Z",
+  "authoritative": {
+    "state": "state.json",
+    "event_log": "event_log.jsonl"
+  },
+  "templates": {
+    "state": "state.template.json",
+    "event_log": "event_log.template.jsonl"
+  },
+  "starting_population": 2000,
+  "starting_entity_type": "settlement",
+  "canon_version": "2.8",
+  "playability_version": "1.6",
+  "reading_order": [
+    "manifest.json",
+    "novaroma_canon.json",
+    "novaroma_playability.json",
+    "novaroma_map_shoreline.json",
+    "state.json"
+  ],
+  "notes": [
+    "Do not treat templates as authoritative state.",
+    "If initializing a new run, COPY templates to your runtime state folder and then edit the copies."
+  ],
+  "changes": [
+    {
+      "id": 1,
+      "version": "v1.1.0",
+      "type": "CANON",
+      "desc": "Added canonical 50-domain technology registry, governance rules, prerequisites, and seeded baseline tiers for 500‑person Nova Roma.",
+      "date_utc": "2026-01-29T00:09:46Z"
+    },
+    {
+      "id": 2,
+      "version": "v1.1.0",
+      "type": "PLAYABILITY",
+      "desc": "Added domain metadata (category/tags/era), full prerequisite graph, era gating rules, and MSR tech-delta snapshot policy.",
+      "date_utc": "2026-01-29T00:55:06Z"
+    },
+    {
+      "id": 3,
+      "version": "v1.1.0",
+      "type": "BUGFIX",
+      "desc": "Corrected canon starting_population and premise to ~500-person isolated settlement; removed stale 2000-person defaults.",
+      "date_utc": "2026-01-29T01:52:11Z"
+    },
+    {
+      "id": 4,
+      "version": "v1.1.1",
+      "type": "BUGFIX",
+      "desc": "Restored NR_SPEC.json hard-spec and reattached proof-of-load/self-check protocol hooks after v1.1.1 regen dropped the file.",
+      "date_utc": "2026-01-29T05:30:32Z"
+    }
+  ],
+  "version": "v1.1.1"
+}

@@ -1,0 +1,68 @@
+  "news_metric_format": "Keep the news metric short, e.g., 'Population +15' or 'GDP +500'.",
+{
+  "$schema": "./msr_report_contract.schema.json",
+  "report_contract": {
+    "report_type": "milestone_status_report",
+    "ci_line_format": "CI: v{canon_version} | R{before_revision}\u2192R{after_revision} | {REV|MINOR|MAJOR}",
+    "date_range_format": "{start_date}\u2013{end_date}, {year}",
+    "sections": [
+      "NEWS",
+      "COMPLETED",
+      "IN PROGRESS",
+      "PLANNED (Grouped by Initiative)",
+      "STRATEGIC ADVISE",
+      "METRICS",
+      "SUMMARY",
+      "FOOTER"
+    ],
+    "completed_columns": [
+      "Milestone",
+      "Description",
+      "Target Date",
+      "Cost",
+      "Work-hours",
+      "Status"
+    ],
+    "in_progress_columns": [
+      "Milestone",
+      "Description",
+      "Days Left",
+      "Cost",
+      "Work-hours",
+      "Status"
+    ],
+    "planned_columns": [
+      "Milestone",
+      "Description",
+      "Target Date"
+    ],
+    "summary_fields": [
+      "total_completed",
+      "total_in_progress",
+      "total_planned",
+      "combined_work_hours"
+    ],
+    "news_fields": [
+      "headline",
+      "blurb",
+      "metric_change"
+    ],
+    "metrics_columns": [
+      "Metric",
+      "Value",
+      "Delta",
+      "Annualized"
+    ],
+    "metrics_rows": [
+      "Population",
+      "GDP"
+    ],
+    "strategic_advise_guidance": [
+      "Continue expanding agricultural land to ensure food security.",
+      "Prioritize water management milestones to support crop growth.",
+      "Monitor resource allocation to avoid bottlenecks in construction."
+    ],
+    "footer_note": "Report generated per MSR contract v1.0. All milestone IDs follow <year>-<serial> format.",
+    "format_standards": "Always use the combined INIT+ID format (e.g., AGEX-1-2) for Initiative references in reports. Never separate initiative code and ID into different columns or fields. Target Date is auto-estimated by AI (best effort) and may be revised as more information becomes available."
+  }
+}
