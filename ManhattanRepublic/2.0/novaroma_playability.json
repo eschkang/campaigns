@@ -1147,6 +1147,9 @@
     "notes": "Bootstrap should create state/state.json from state_templates/state.json by copying. Templates remain immutable.",
     "starting_site_population": 2000
   },
+  "general_engine_rules": [
+    "The engine is allowed to auto-estimate annualized values, GDP splits, and time-to-relief using defined formulas instead of manual inputs."
+  ],
   "notes": [
     "Canon Impact (CI) labels should be human-readable; avoid JSON-path labels in CI middle segment."
   ]

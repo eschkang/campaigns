@@ -2,7 +2,7 @@
   "$schema": "./sites_report_contract.schema.json",
   "report_contract": {
     "report_type": "sites_report",
-    "version": "v1.0",
+    "version": "2.0.0",
     "title": "Sites Status Report",
     "date_field": "game_date",
     "sites_columns": [

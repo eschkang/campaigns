@@ -22,7 +22,8 @@
   ],
   "notes": [
     "Do not treat templates as authoritative state.",
-    "If initializing a new run, COPY templates to your runtime state folder and then edit the copies."
+    "If initializing a new run, COPY templates to your runtime state folder and then edit the copies.",
+    "This scenario is a convergent Rome-like settlement (Nova Roma) with no historical or political connection to actual Rome."
   ],
   "changes": [
     {
@@ -53,6 +54,56 @@
       "desc": "Restored NR_SPEC.json hard-spec and reattached proof-of-load/self-check protocol hooks after v1.1.1 regen dropped the file.",
       "date_utc": "2026-01-29T05:30:32Z"
     }
+    ,
+    {
+      "id": 5,
+      "version": "2.0.0",
+      "type": "CHANGE",
+      "desc": "Added an optional 'ADVISOR' section to the MSR report contract, positioned after 'METRICS' and before 'SUMMARY'.",
+      "date_utc": "2026-02-01T00:00:00Z"
+    },
+    {
+      "id": 6,
+      "version": "2.0.0",
+      "type": "CHANGE",
+      "desc": "Updated news entry format in the MSR contract: Headline → follow-up line → metric in parentheses at end of follow-up, with no labels.",
+      "date_utc": "2026-02-01T00:00:00Z"
+    },
+    {
+      "id": 7,
+      "version": "2.0.0",
+      "type": "CHANGE",
+      "desc": "Specified that codes (milestone IDs, initiative codes, UGRID cells, bank tags) must be rendered in fixed-width font.",
+      "date_utc": "2026-02-01T00:00:00Z"
+    },
+    {
+      "id": 8,
+      "version": "2.0.0",
+      "type": "CHANGE",
+      "desc": "Allowed the engine to auto-estimate annualized values, GDP splits, and time-to-relief using defined formulas instead of manual inputs.",
+      "date_utc": "2026-02-01T00:00:00Z"
+    },
+    {
+      "id": 9,
+      "version": "2.0.0",
+      "type": "CHANGE",
+      "desc": "Moved the auto-estimation rule from the MSR contract to the global playability file (novaroma_playability.json) so it applies to all outputs.",
+      "date_utc": "2026-02-01T00:00:00Z"
+    },
+    {
+      "id": 10,
+      "version": "2.0.0",
+      "type": "CHANGE",
+      "desc": "Updated all version fields in 2.0 JSON files to '2.0.0'.",
+      "date_utc": "2026-02-01T00:00:00Z"
+    },
+    {
+      "id": 11,
+      "version": "2.0.0",
+      "type": "CHANGE",
+      "desc": "Reverted the version fields under the 'changes' array in manifest.json to their previous values, keeping only the top-level version as '2.0.0'.",
+      "date_utc": "2026-02-01T00:00:00Z"
+    }
   ],
-  "version": "v1.1.1"
+  "version": "2.0.0"
 }

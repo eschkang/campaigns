@@ -2,7 +2,7 @@
   "$schema": "./tech_tracker_report_contract.schema.json",
   "report_contract": {
     "report_type": "tech_tracker",
-    "version": "v1.0",
+    "version": "2.0.0",
     "title": "Technology Development Tracker Report",
     "date_field": "game_date",
     "technologies_columns": [
