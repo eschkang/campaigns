@@ -1,0 +1,1793 @@
+{
+  "start_here": {
+    "critical": {
+      "note": "Hard-Spec + Proof-of-Load (do not skip)",
+      "read_first": "NR_SPEC.json",
+      "proof_of_load_message": "Loaded: version=v1.1.1, starting_population=500, milestone_id_format=<year>-<serial>, msr_contract=milestone_status_report, tech_domains=50",
+      "milestone_id_regex": "^[0-9]+-[0-9]+$",
+      "milestone_id_examples": ["0-1", "0-2", "1-1"]
+    },
+    "summary": {
+      "title": "START HERE",
+      "description": [
+        "Nova Roma is NOT a colony.",
+        "An established settlement of ~500 people",
+        "New outward-looking leadership"
+      ]
+    },
+    "what_to_read_first": [
+      "manifest.json",
+      "state.json",
+      "novaroma_canon.json"
+    ],
+    "authoritative_facts": "The authoritative starting facts live in state.json.",
+    "no_infer_from_templates": "Do NOT infer starting conditions from templates or schema files.",
+    "template_note": "Templates (state.template.json) are copy-only starters and are not the active run.",
+    "technology_registry": "Tech registry: 50 canonical domains with tags, era gating, and full prerequisites are defined in canon."
+  },
+  "manifest": {
+    "map_rules": {
+      "map_id": "map_p1",
+      "source": {
+        "container": "zip",
+        "zip_filename": "2.0.zip",
+        "internal_path": "2.0/map_p1",
+        "format": "ascii_grid_text",
+        "encoding": "utf-8",
+        "line_endings": "preserve_as_stored"
+      },
+      "rendering_rules": {
+        "verbatim_required": true,
+        "no_regeneration": true,
+        "no_reflow": true,
+        "no_trimming": true,
+        "no_normalization": true,
+        "preserve_whitespace": true,
+        "preserve_line_count_and_order": true,
+        "preserve_each_line_length": true,
+        "output_mode": "monospace_text_block_only",
+        "forbidden_transforms": [
+          "wrapping_lines",
+          "reindenting",
+          "aligning_columns",
+          "compressing_spaces",
+          "converting_tabs",
+          "replacing_characters",
+          "adding_labels_inside_map",
+          "cropping",
+          "padding",
+          "mirroring",
+          "rotating",
+          "rescaling"
+        ]
+      },
+      "coordinate_system": {
+        "origin": {
+          "label": "southwest_corner",
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    "version": "3.0.0",
+    "report_rendering_mode": "strict_contract",
+    "strict_contract": {
+      "enabled": true,
+      "enforcement": "hard_gate",
+      "on_violation": "fatal_error",
+      "forbid_best_effort_render": true,
+      "forbid_contract_paraphrase": true,
+      "forbid_report_structure_inference": true,
+      "require_contract_reference_for_reports": true
+    },
+    "report_contract_index": {
+      "milestone_status_report": "2.0/reports/msr_report_contract.json",
+      "sites_report": "2.0/reports/sites_report_contract.json",
+      "tech_tracker": "2.0/reports/tech_tracker_report_contract.json",
+      "materials_tracker": "2.0/reports/materials_tracker_report_contract.json",
+      "fish_tracker": "2.0/reports/fish_tracker_report_contract.json"
+    },
+    "report_validation": {
+      "run_pre_output_validation": true,
+      "validation_level": "strict",
+      "fail_behavior": "fatal_error",
+      "error_only_output": true,
+      "require_proof_line": true,
+      "proof_line_template": "PROOF: contract={contract_path} sections_ok={section_names_exact}/{section_order_exact} tables_ok={table_headers_exact}/{table_order_exact} ci_ok={ci_line_template_exact} ids_ok={milestone_id_format_exact}"
+    },
+    "initiative_code_enforcement": {
+      "required_code_length": 4,
+      "validation": {
+        "enabled": true,
+        "on_failure": "fail_report",
+        "failure_message": "Non-compliant Init ID"
+      },
+      "instructions": [
+        "New initiatives must have a 4-character code for use in reports and tracking.",
+        "Validate all reports to ensure each initiative uses a 4-character code.",
+        "Fail report generation with 'Non-compliant Init ID' if any initiative code does not meet this requirement."
+      ]
+    },
+    "map_definition": {
+      "source_grid": "map_p1",
+      "resolution_m": 100
+    },
+    "land_definition": {
+      "scope": "grid_range",
+      "include_cells_where": {
+        "char_equals": "M"
+      }
+    },
+    "mandatory_instructions": {
+      "ugrid_map_generation": "The engine must generate a UGRID map for the scenario, ensuring all spatial domains are covered and cell IDs are unique and 4-character codes. The engine must follow only the UGRID map generation rules and constraints as defined in this scenario's JSON files (manifest, playability, canon, and map files). Do not invent, substitute, or infer any rules or logic not explicitly specified in these files.",
+      "initiative_milestone_generation": "When an initiative is created, the engine must automatically generate 5 milestones for that initiative, each with a unique ID and default description based on the initiative's purpose.",
+      "report_format_loading": "The engine must load and validate all report contract formats listed in 'report_contract_index' before any report generation or output. Report generation must fail if any contract cannot be loaded or validated.",
+      "zip_file_persistence": "The engine must load the scenario zip file (2.0.zip) at startup and keep it open and accessible for the entire session. Do not close, unload, or lose access to the zip file at any point during scenario execution.",
+      "no_unapproved_content": "Do not make up any content or response type without preapproval. See no_unapproved_content_exceptions for allowed exceptions.",
+      "no_unapproved_content_exceptions": [
+        "Narrative responses are allowed without preapproval.",
+        "Target Date Calculation = use best estimate is allowed without preapproval.",
+        "Workforce pools may be created and managed as approved content.",
+        "Worker assignment counters may be created and managed as approved content.",
+        "Material stockpiles may be created and managed as approved content.",
+        "Food stockpiles may be created and managed as approved content.",
+        "Trade good stockpiles may be created and managed as approved content.",
+        "Consumption rates may be created and managed as approved content.",
+        "Capacity formulas may be created and managed as approved content.",
+        "Blocking logic based on shortages may be created and managed as approved content.",
+        "Neighbor Polities and Groups may be created and managed as approved content.",
+        "Diplomatic State may be created and managed as approved content.",
+        "Trade systems may be created and managed as approved content.",
+        "Economic effects may be created and managed as approved content."
+      ]
+    }
+  },
+  "playability": {
+    "playability_layer": {
+      "playability_layer_version": "1.6",
+      "name": "NovaRoma_Playability_Layer_FullFixturesPlus_BootstrapDefaults",
+      "applies_to": {
+        "canon_file": "CANON_MASTER__RULES_AND_TEMPLATES.json",
+        "map_file": "map"
+      },
+      "milestone_generation_policy": "When a new initiative is created, generate an initial milestone with a deterministic ID and a default description based on the initiative's purpose.",
+      "core_loop": {
+        "player_role": "Colonial Senate & Magistrates",
+        "command_cycle": [
+          "DECIDE",
+          "AUTHORIZE",
+          "LOG",
+          "ADVANCE_TIME",
+          "REPORT"
+        ],
+        "default_command_aliases": {
+          "Next": "ADVANCE:3D",
+          "Status": "STATUS",
+          "Site Report": "SITE_REPORT",
+          "Milestones Report": "MILESTONES_REPORT",
+          "Render Grid": "RENDER_GRID"
+        }
+      },
+      "state_model": {
+        "campaign_id": "NovaRoma-509BCE",
+        "calendar": {
+          "date_format": "MMM D, YYYY",
+          "current_date": "Mar 1, 509 BCE",
+          "next_advance_days": 3
+        },
+        "entities": {
+          "sites": [],
+          "initiatives": [],
+          "milestones": [],
+          "trackers": {
+            "strategic_materials": {
+              "entries": []
+            },
+            "fish_shellfish": {
+              "entries": []
+            }
+          }
+        },
+        "maps": {
+          "active_map": "NovaRoma_UGRID35",
+          "subgrid_mapping_key": "NovaRoma_UGRID35",
+          "grid_origin": {
+            "row": 0,
+            "col": 0,
+            "meaning": "SW corner"
+          },
+          "cell_size_m": 100
+        },
+        "audit": {
+          "canon_version_expected": "2.4",
+          "log": []
+        }
+      },
+      "commands": {
+        "STATUS": {
+          "description": "Summarize governance/pop/ops/risks/summary for an entity or site.",
+          "args_schema": {
+            "target": "string"
+          },
+          "outputs": [
+            "status_report"
+          ]
+        },
+        "SITE_REPORT": {
+          "description": "Generate the standard site report with North/Central/South District tables + Top 3 Issues/Risks.",
+          "args_schema": {
+            "scope": "string",
+            "districts": [
+              "North",
+              "Central",
+              "South"
+            ]
+          },
+          "outputs": [
+            "site_report"
+          ]
+        },
+        "INITIATIVE_CREATE": {
+          "description": "Create a new initiative with goals, constraints, and optional first milestones.",
+          "args_schema": {
+            "name": "string",
+            "owner": "string",
+            "purpose": "string",
+            "constraints": [
+              "string"
+            ],
+            "initial_milestones": "array"
+          },
+          "outputs": [
+            "initiative_record",
+            "milestone_records_optional"
+          ]
+        },
+        "MILESTONE_ADD": {
+          "description": "Add milestones to an initiative. IDs follow <year>-<serial> within initiative start year counting.",
+          "args_schema": {
+            "initiative": "string",
+            "milestones": "array"
+          },
+          "outputs": [
+            "milestone_records"
+          ]
+        },
+        "ADVANCE:3D": {
+          "description": "Advance in-campaign time by 3 days and report completed milestones during the window.",
+          "args_schema": {},
+          "effects": [
+            "calendar.current_date += 3 days",
+            "milestones progress",
+            "emit milestones_report"
+          ]
+        },
+        "MILESTONES_REPORT": {
+          "description": "Render the milestones report (COMPLETED / IN PROGRESS / PLANNED grouped by initiative / SUMMARY / FOOTER).",
+          "args_schema": {
+            "range": "string_optional"
+          },
+          "outputs": [
+            "milestones_report"
+          ]
+        },
+        "RENDER_GRID": {
+          "description": "Render ASCII/emoji map slices from METRO or NovaRoma subgrid using shoreline segments and offsets.",
+          "args_schema": {
+            "map": "string",
+            "row_range": {
+              "start": "int",
+              "end": "int"
+            },
+            "col_range": {
+              "start": "int",
+              "end": "int"
+            },
+            "mask": "string_optional"
+          },
+          "outputs": [
+            "grid_render"
+          ]
+        }
+      },
+      "numeric_generation_policy": {
+        "intent": "Allow generating numbers ONLY for newly created entities or newly initiated estimates, while preserving non-invention for existing facts.",
+        "rules": [
+          {
+            "rule_id": "NUM-1",
+            "name": "No invention for existing entities",
+            "text": "If an entity already exists in state or canon, do not generate new population/GDP/capacity/tech values unless sourced from an explicit measurement milestone result."
+          },
+          {
+            "rule_id": "NUM-2",
+            "name": "Allowed for new creations",
+            "text": "When creating a new site/asset/initiative output that requires a number (e.g., initial pop, area, weekly output), you may generate a value IF it is explicitly labeled as an estimate and accompanied by a rationale and range."
+          },
+          {
+            "rule_id": "NUM-3",
+            "name": "Estimate labeling",
+            "text": "Generated numbers must be tagged with 'est' and include: basis, plausible range, and confidence (low/med/high)."
+          },
+          {
+            "rule_id": "NUM-4",
+            "name": "Anchoring and constraints",
+            "text": "Generated numbers must respect the campaign tech constraints (Late Iron Age) and local geography. Avoid implausible scaling; prefer conservative outputs."
+          },
+          {
+            "rule_id": "NUM-5",
+            "name": "Determinism option",
+            "text": "If a random draw is used, record RNG method and seed in audit.log so results are repeatable."
+          }
+        ],
+        "estimate_object_schema": {
+          "value": "number",
+          "unit": "string",
+          "label": "est",
+          "range": {
+            "min": "number",
+            "max": "number"
+          },
+          "basis": "string",
+          "confidence": "low|med|high",
+          "rng": {
+            "method": "string_optional",
+            "seed": "string_optional",
+            "draw": "string_optional"
+          }
+        },
+        "default_generators": {
+          "rng": {
+            "method": "xorshift32",
+            "seed": "NovaRoma-509BCE-0001"
+          },
+          "patterns": {
+            "new_outpost_population": {
+              "unit": "people",
+              "range": [
+                50,
+                350
+              ],
+              "basis": "Small shore outpost sized for a few extended families + laborers; constrained by food storage and shelter capacity.",
+              "confidence": "med"
+            },
+            "weekly_fish_catch": {
+              "unit": "kg/week",
+              "range": [
+                300,
+                1800
+              ],
+              "basis": "Beach-seine + hook-and-line with limited preservation; scales with boats, nets, and labor hours.",
+              "confidence": "low"
+            },
+            "charcoal_output": {
+              "unit": "kg/week",
+              "range": [
+                200,
+                1200
+              ],
+              "basis": "Earth-mound kilns; output depends on timber supply and burn management; early ramp conservative.",
+              "confidence": "low"
+            }
+          }
+        }
+      }
+    }
+  },
+  "canon": {
+            
+        
+    "version": "3.0.0",
+    "context": {
+      "setting": "NOVA ROMA established Roman Republic settlement, ~509 BC",
+      "starting_population": 500,
+      "language": "Latin",
+      "institutions": [
+        "Senate",
+        "Magistrates",
+        "Assemblies",
+        "Customs Duties"
+      ],
+      "tech_constraints": "Late Iron Age / Early Roman Republic",
+      "starting_entity_type": "settlement",
+      "premise": "Established riverine settlement (~500 people); recently unified under a new leader and beginning cautious outward engagement after long isolation. Culture and language are locally evolved but Latin-like."
+    },
+    "maps": {
+      "UGRID35": "Manhattan-focused 100m grid",
+      "milestone_generation": "A request that results in an action or project should generate a milestone under an initiative. Each milestone must include an ID (Y-#), a target date, and an impact description.",
+      "METRO": "Borough-scale multi-segment shoreline model",
+      "MGRD-300": "300m macro overlay"
+    },
+    "reporting": {
+      "discipline": "Reports are displayed to the user and not saved as files by default.",
+      "milestone_id_format": "<year>-<serial> (year = years since initiative start, serial = milestone number within that year; e.g., 1-1, 1-2, 2-1)",
+      "milestone_id_rule": "Only milestones receive an ID. Do not use a 'Y' prefix.",
+      "date_format": "All milestone and report dates must use the format 'MMM D, YYYY' (e.g., Mar 1, 509 BCE)."
+    },
+    "milestones_report": {
+      "purpose": "Advance time and report milestone progress.",
+      "title_format": "Milestones Report (Mon DD–DD, YYYY)",
+      "ci_line": "CI: v<canon> | R<before>→R<after> | {REV|MINOR|MAJOR}",
+      "sections": [
+        "COMPLETED",
+        "IN PROGRESS",
+        "PLANNED (Grouped by Initiative)",
+        "SUMMARY",
+        "FOOTER"
+      ],
+      "completed_columns": [
+        "ID",
+        "Initiative",
+        "Description",
+        "Target Date",
+        "Cost",
+        "Work-hours",
+        "Status"
+      ],
+      "in_progress_columns": [
+        "ID",
+        "Initiative",
+        "Description",
+        "Target Date",
+        "Cost",
+        "Work-hours",
+        "Status"
+      ],
+      "planned_grouping_rule": "Planned milestones are grouped by their parent Initiative. Each group is presented as a separate table.",
+      "planned_columns": [
+        "ID",
+        "Description",
+        "Target Date",
+        "Cost",
+        "Work-hours",
+        "Status"
+      ],
+      "table_format": "Markdown table format is used for all milestone sections.",
+      "footer": [
+        "Pop: Δ <value | unknown | est>",
+        "GDP: Δ <value | est>"
+      ]
+    },
+    "milestone_insight_report": {
+      "purpose": "Explain a decision, its constraints, impact, and risks.",
+      "format": "<N>️⃣ <DECISION TITLE>"
+    },
+    "site_report": {
+      "purpose": "Site status and details.",
+      "title_format": "<Country> Site Report (MMM D, YYYY)",
+      "sections": [
+        "North District",
+        "Central District",
+        "South District",
+        "Top 3 Issues/Risks"
+      ],
+      "table_columns": [
+        "Site",
+        "Area",
+        "Population",
+        "Pop GR",
+        "GDP GR",
+        "GRD",
+        "TMH %",
+        "Primary Role",
+        "Status Notes"
+      ],
+      "issues_risks_format": [
+        "1.",
+        "2.",
+        "3."
+      ]
+    },
+    "status_report": {
+      "purpose": "Answer 'Status X' questions.",
+      "format": "Status — <Entity / Site / Group>",
+      "sections": [
+        "Governance / Authority",
+        "Population",
+        "Operations",
+        "Risks",
+        "Summary"
+      ]
+    },
+    "rules": {
+      "do_not_invent": [
+        "population",
+        "GDP",
+        "capacity",
+        "technology"
+      ],
+      "unknown_is_valid": true,
+      "estimates_label": "est",
+      "population_source": "Global Population Table",
+      "date_usage": "Use in-campaign dates only for all reports and logs. Do not use real-world dates.",
+      "advance_next": "The command 'Next' always advances the campaign by 3 in-campaign days.",
+      "next_reporting": "When 'Next' is used, report on any milestones that completed during the timeline advance.",
+      "narrative_guardrails": [
+        "Trade narration must obey systems.trade.gating_rules (no assumed neighbors or built ships).",
+        "Campaign starts as an established settlement with starting population=500 (campaign_default). Treat as established community; avoid 'colonial' framing.",
+        "Canon Impact (CI) middle fields must be descriptive phrases, not schema keys."
+      ],
+      "canon_impact": {
+        "format": "CI: v<canon> | R<before>→R<after> | {REV|MINOR|MAJOR}",
+        "labeling_rule": "CI middle segment must use human-readable field labels (e.g., 'Starting Population') rather than internal JSON paths.",
+        "examples": [
+          "CI: v2.7 | RStart Conditions: settlement; RStarting Population: unspecified→500; RNarrative Framing: neutral→outward-focused | MAJOR"
+        ],
+        "middle_field_style": "Human-readable descriptive labels (e.g., 'Starting Population', 'Narrative Framing'), not JSON paths or internal keys."
+      },
+      "domain_governance": {
+        "target_range": "40–70",
+        "adding_domain_requires": "MAJOR CI + changelog entry",
+        "prefer_tier_advances": true
+      },
+      "technology_prerequisites": {
+        "Electricity": [
+          "Magnetism",
+          "Mechanics",
+          "Instrument Making",
+          "Energy Systems"
+        ],
+        "Steelmaking": [
+          "Ironworking (Proto)",
+          "Charcoal & Fuels"
+        ],
+        "Printing & Reproduction": [
+          "Papermaking",
+          "Instrument Making"
+        ],
+        "Harbor Engineering": [
+          "Shipbuilding & Watercraft",
+          "Roads & Earthworks"
+        ],
+        "Canal Construction": [
+          "Hydraulics & Irrigation",
+          "Roads & Earthworks"
+        ]
+      },
+      "era_gating": {
+        "current_era_default": "Iron Age (isolated settlement)",
+        "policy": "Domains whose era_min is later than the current era may exist but are capped at Tier 1 unless unlocked.",
+        "caps": {
+          "later_than_current_era": 1
+        },
+        "unlock_events": [
+          "ERA_ADVANCE",
+          "TECH_DOMAIN_UNLOCK"
+        ]
+      },
+      "technology_prerequisites_full": {
+        "Agriculture": [],
+        "Animal Husbandry": [
+          "Agriculture"
+        ],
+        "Fishing & Aquaculture": [],
+        "Salt Extraction": [],
+        "Brewing & Fermentation": [
+          "Agriculture",
+          "Food Preservation"
+        ],
+        "Food Preservation": [
+          "Salt Extraction",
+          "Clay & Ceramics"
+        ],
+        "Herbalism & Botany": [
+          "Agriculture"
+        ],
+        "Timber & Forestry": [],
+        "Stoneworking": [],
+        "Clay & Ceramics": [],
+        "Mining & Prospecting": [
+          "Stoneworking",
+          "Surveying & Geodesy"
+        ],
+        "Charcoal & Fuels": [
+          "Timber & Forestry"
+        ],
+        "Waterpower & Mills": [
+          "Hydraulics & Irrigation",
+          "Mechanics",
+          "Roads & Earthworks"
+        ],
+        "Metallurgy (Copper/Bronze)": [
+          "Mining & Prospecting",
+          "Charcoal & Fuels"
+        ],
+        "Ironworking (Proto)": [
+          "Mining & Prospecting",
+          "Charcoal & Fuels",
+          "Metallurgy (Copper/Bronze)"
+        ],
+        "Steelmaking": [
+          "Ironworking (Proto)",
+          "Charcoal & Fuels"
+        ],
+        "Glassmaking": [
+          "Clay & Ceramics",
+          "Charcoal & Fuels"
+        ],
+        "Lime & Cement": [
+          "Stoneworking",
+          "Charcoal & Fuels"
+        ],
+        "Chemical Processing": [
+          "Herbalism & Botany",
+          "Glassmaking",
+          "Lime & Cement"
+        ],
+        "Textiles & Weaving": [
+          "Agriculture"
+        ],
+        "Leatherworking": [
+          "Animal Husbandry"
+        ],
+        "Papermaking": [
+          "Textiles & Weaving",
+          "Chemical Processing"
+        ],
+        "Printing & Reproduction": [
+          "Papermaking",
+          "Writing & Recordkeeping",
+          "Instrument Making"
+        ],
+        "Instrument Making": [
+          "Metallurgy (Copper/Bronze)",
+          "Mathematics & Accounting",
+          "Glassmaking"
+        ],
+        "Roads & Earthworks": [],
+        "Hydraulics & Irrigation": [
+          "Roads & Earthworks"
+        ],
+        "Architecture & Fortification": [
+          "Stoneworking",
+          "Timber & Forestry"
+        ],
+        "Shipbuilding & Watercraft": [
+          "Timber & Forestry",
+          "Textiles & Weaving"
+        ],
+        "Harbor Engineering": [
+          "Shipbuilding & Watercraft",
+          "Stoneworking",
+          "Roads & Earthworks"
+        ],
+        "Canal Construction": [
+          "Hydraulics & Irrigation",
+          "Surveying & Geodesy",
+          "Roads & Earthworks"
+        ],
+        "Navigation & Cartography": [
+          "Mathematics & Accounting",
+          "Surveying & Geodesy"
+        ],
+        "Writing & Recordkeeping": [],
+        "Mathematics & Accounting": [],
+        "Astronomy": [
+          "Mathematics & Accounting",
+          "Instrument Making"
+        ],
+        "Timekeeping & Calendrics": [
+          "Astronomy",
+          "Instrument Making",
+          "Metallurgy (Copper/Bronze)"
+        ],
+        "Education & Scholarship": [
+          "Writing & Recordkeeping",
+          "Mathematics & Accounting"
+        ],
+        "Medicine & Sanitation": [
+          "Herbalism & Botany",
+          "Public Administration"
+        ],
+        "Public Administration": [
+          "Writing & Recordkeeping"
+        ],
+        "Law & Courts": [
+          "Writing & Recordkeeping",
+          "Public Administration"
+        ],
+        "Banking & Finance": [
+          "Mathematics & Accounting",
+          "Writing & Recordkeeping",
+          "Law & Courts"
+        ],
+        "Insurance & Risk Pools": [
+          "Banking & Finance",
+          "Mathematics & Accounting"
+        ],
+        "Optics": [
+          "Glassmaking",
+          "Instrument Making",
+          "Mathematics & Accounting"
+        ],
+        "Acoustics": [
+          "Mechanics",
+          "Mathematics & Accounting",
+          "Instrument Making"
+        ],
+        "Magnetism": [
+          "Instrument Making",
+          "Metallurgy (Copper/Bronze)",
+          "Mathematics & Accounting"
+        ],
+        "Electricity": [
+          "Magnetism",
+          "Mechanics",
+          "Instrument Making",
+          "Energy Systems",
+          "Chemical Processing"
+        ],
+        "Thermodynamics": [
+          "Mechanics",
+          "Energy Systems",
+          "Chemical Processing"
+        ],
+        "Mechanics": [
+          "Mathematics & Accounting",
+          "Instrument Making"
+        ],
+        "Meteorology & Climate": [
+          "Astronomy",
+          "Instrument Making",
+          "Mathematics & Accounting"
+        ],
+        "Surveying & Geodesy": [
+          "Mathematics & Accounting",
+          "Instrument Making"
+        ],
+        "Energy Systems": [
+          "Charcoal & Fuels",
+          "Mechanics",
+          "Waterpower & Mills"
+        ]
+      },
+      "protocol": {
+        "proof_of_load": {
+          "required": true,
+          "source": "NR_SPEC.json#/required_protocol/proof_of_load",
+          "rule": "Before answering the first command in a new chat, echo the one-line proof-of-load string from NR_SPEC.json."
+        },
+        "self_check": {
+          "required": true,
+          "source": "NR_SPEC.json#/required_protocol/self_check",
+          "rule": "Before finalizing any report/milestone output, run NR_SPEC self-checks and regenerate on failure."
+        }
+      }
+    },
+    "trackers": {
+      "strategic_materials": {
+        "title": "Strategic Materials Report",
+        "categories": [
+          {
+            "name": "Raw Materials",
+            "items": [
+              { "material": "Timber", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Construction + fuel feedstock" },
+              { "material": "Firewood", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Cooking + process heat" },
+              { "material": "Stone (fieldstone)", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Foundations, retaining, paving" },
+              { "material": "Lime-bearing shell/stone", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Feedstock for lime (mortar/sanitation)" },
+              { "material": "Sand / silica sand", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Mortar + glass feedstock" },
+              { "material": "Clay", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Input for pottery/brick" },
+              { "material": "Iron (ore/bog iron)", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Smelting feedstock; availability TBD" },
+              { "material": "Copper (ore)", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Tools/fittings; alloy base" },
+              { "material": "Tin (ore)", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Bronze alloy; may be rare/unknown locally" },
+              { "material": "Lead (ore)", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Weights, roofing, fittings; toxic handling risks" },
+              { "material": "Zinc (ore)", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Identification/separation constraints" },
+              { "material": "Sulfur / pyrite", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Chemistry + some metallurgy; uncertain availability" },
+              { "material": "Pitch/tar/resins", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Waterproofing, sealing, cordage treatment" },
+              { "material": "Freshwater (potable/process)", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Managed resource; critical constraint" },
+              { "material": "Fibers (flax/nettle/wool)", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Textiles, sacks, cordage base" },
+              { "material": "Hides/leather", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Belts, shoes, harness, armor components" },
+              { "material": "Bones/horns", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Tools, needles, glue feedstock" },
+              { "material": "Salt", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Preservation + health; output TBD" }
+            ]
+          },
+          {
+            "name": "Processed Materials",
+            "items": [
+              { "material": "Charcoal", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Smelting/kilns; produced input from wood" },
+              { "material": "Bricks/tiles (fired clay)", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Roofing, durable construction" },
+              { "material": "Pottery/ceramics (storage)", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Amphorae, jars; preservation/logistics multiplier" },
+              { "material": "Lime (quicklime/slaked)", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Mortar, plaster, sanitation" },
+              { "material": "Iron bloom/bars", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Tool/fastener feedstock" },
+              { "material": "Nails/fasteners", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Construction multiplier" },
+              { "material": "Bronze goods (if copper+tin)", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Tools, fittings; depends on tin" },
+              { "material": "Rope/cordage", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Rigging, lifting, hauling" },
+              { "material": "Sailcloth", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Shipping/fishing capacity" },
+              { "material": "Nets", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Fishing efficiency multiplier" },
+              { "material": "Glass", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Needs consistent high heat + silica; status unknown" },
+              { "material": "Soap/lye", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Hygiene; requires fat + alkali source" },
+              { "material": "Preserved foods (salted/smoked/dried)", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Strategic store stability driver" }
+            ]
+          }
+        ],
+        "table_columns": [
+          "Material",
+          "Amount (kg/week)",
+          "Money Value (est)",
+          "Notes"
+        ],
+        "defaults": {
+          "amount_kg_per_week": "unknown",
+          "money_value": "est"
+        }
+      },
+      "fish_shellfish": {
+        "explore": {
+          "title": "Explore Initiative",
+          "milestones": [
+            {
+              "id": "1-1",
+              "name": "Eastern Shore Resource Survey",
+              "target_date": "Mar 4, 509 BCE",
+              "impact": "Enables resource mapping, supports food/water/salt planning, and identifies new opportunities or risks for Nova Roma."
+            }
+          ]
+        },
+        "title": "Fishing & Shellfish Catch Report",
+        "categories": [
+          {
+            "name": "Major Food Sources",
+            "items": [
+              { "species": "Striped Bass", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Most abundant" },
+              { "species": "American Shad", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Seasonal" },
+              { "species": "Bluefish", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Common" },
+              { "species": "Oyster", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Common, foraged" },
+              { "species": "Clam", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Soft-shell, hard-shell" }
+            ]
+          },
+          {
+            "name": "Other Food Sources",
+            "items": [
+              { "species": "Atlantic Sturgeon", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Larger, less frequent" },
+              { "species": "Eel", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Supplementary" },
+              { "species": "Mussel", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Found in tidal areas" },
+              { "species": "Scallop", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Less common, deeper water" },
+              { "species": "Crab", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Seasonal" },
+              { "species": "Lobster", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Rare, deeper water" },
+              { "species": "Snail (Periwinkle)", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Supplementary, foraged" },
+              { "species": "Shrimp", "amount_kg_per_week": "unknown", "money_value": "est", "notes": "Small, estuarine" }
+            ]
+          }
+        ],
+        "table_columns": [
+          "Species",
+          "Amount (kg/week)",
+          "Money Value (est)",
+          "Notes"
+        ],
+        "defaults": {
+          "amount_kg_per_week": "unknown",
+          "money_value": "est"
+        }
+      }
+    },
+    "systems": {
+      "trade": {
+        "purpose": "Prevent overstating trade before contacts, routes, and shipbuilding exist.",
+        "definitions": {
+          "proto_trade": "Incidental barter with transient/unidentified parties. No mapped partners, no formal routes, no treaties.",
+          "contacted_partner": "A partner confirmed via a completed contact/diplomacy milestone and recorded in state.",
+          "trade_route": "A recurring exchange with origin/destination/cargo recorded in state and enabled by a completed route charter milestone."
+        },
+        "gating_rules": [
+          "Do not describe organized external trade (exports/imports with named partners or routes) unless at least one contacted_partner exists.",
+          "Do not describe ship-based commerce beyond skiffs/fishing craft unless a shipbuilding milestone (yard/slipway/hull completion) is COMPLETED.",
+          "Before contacts exist, STATUS trade must use proto_trade language only.",
+          "Customs duties may exist internally, but do not imply high volumes or stable merchant queues before routes and infrastructure milestones."
+        ],
+        "status_report_guidance": {
+          "trade_status_phrasing": {
+            "before_contact": "Trade is embryonic and opportunistic (proto-trade). Occasional passing craft may barter at the shoreline; no mapped partners, routes, or treaties exist.",
+            "after_contact_before_routes": "Trade is emerging with known partners but remains ad hoc; no chartered routes yet.",
+            "after_routes": "Trade is active with chartered routes; throughput depends on infrastructure and preservation."
+          }
+        }
+      }
+    },
+    "report_contracts": {
+      "common": {
+        "date_format": "MMM D, YYYY",
+        "unknown_token": "unknown",
+        "estimate_token": "est",
+        "districts": [
+          "North",
+          "Central",
+          "South"
+        ]
+      },
+      "status_report": {
+        "title_format": "Status — <Target>",
+        "sections": [
+          "Governance / Authority",
+          "Population",
+          "Operations",
+          "Risks",
+          "Summary"
+        ],
+        "rules": [
+          "Do not invent factual numbers for existing entities.",
+          "Apply systems.* gating rules for phrasing (e.g., systems.trade)."
+        ]
+      },
+      "site_report": {
+        "title_format": "<Polity> Site Report (<Date>)",
+        "sections": [
+          "North District",
+          "Central District",
+          "South District",
+          "Top 3 Issues / Risks"
+        ],
+        "table_columns": [
+          "Site",
+          "Area",
+          "Population",
+          "Pop GR",
+          "GDP GR",
+          "GRD",
+          "TMH %",
+          "Primary Role",
+          "Status Notes"
+        ],
+        "sorting": {
+          "district_sort": [
+            "North",
+            "Central",
+            "South"
+          ],
+          "within_district": "population_known_desc_then_name_asc"
+        },
+        "rules": [
+          "If a core settlement exists in state (e.g., Nova Roma), it must always appear in the Site Report.",
+          "Unknown values are valid; use common.unknown_token and common.estimate_token."
+        ]
+      },
+      "milestones_report": {
+        "title_format": "Milestones Report (<From>–<To>, <Year>)",
+        "sections": [
+          "COMPLETED",
+          "IN PROGRESS",
+          "PLANNED (Grouped by Initiative)",
+          "SUMMARY",
+          "FOOTER"
+        ],
+        "columns": [
+          "ID",
+          "Initiative",
+          "Description",
+          "Target Date",
+          "Cost",
+          "Work-hours",
+          "Status"
+        ],
+        "footer_format": [
+          "Pop: Δ <unknown|est|value>",
+          "GDP: Δ <unknown|est|value>"
+        ]
+      },
+      "tracker_reports": {
+        "strategic_materials": {
+          "title_format": "Strategic Materials Report (<Date>)",
+          "columns": [
+            "Material",
+            "Amount (kg/week)",
+            "Money Value (est)",
+            "Notes"
+          ],
+          "defaults": {
+            "amount_kg_per_week": "unknown",
+            "money_value": "est"
+          }
+        },
+        "fish_shellfish": {
+          "title_format": "Fishing & Shellfish Report (<Date>)",
+          "columns": [
+            "Species",
+            "Amount (kg/week)",
+            "Money Value (est)",
+            "Notes"
+          ],
+          "defaults": {
+            "amount_kg_per_week": "unknown",
+            "money_value": "est"
+          }
+        },
+        "agriculture": {
+          "title_format": "Agriculture Output Report (<Date>)",
+          "columns": [
+            "Product",
+            "Area Under Cultivation",
+            "Yield",
+            "Unit",
+            "Value (est)",
+            "Notes"
+          ],
+          "defaults": {
+            "area": "unknown",
+            "yield": "unknown",
+            "value": "est"
+          }
+        }
+      }
+    },
+    "deprecations": {
+      "notes": [
+        "v2.6: report templates are normalized under report_contracts.*. Older scattered template fields (if present) remain for backward compatibility but should be treated as deprecated."
+      ]
+    },
+    "campaign_defaults": {
+      "starting_population": 500,
+      "starting_entity_type": "settlement",
+      "premise": "A mature settlement of ~500 people has gained a new leader who wants to look outward and improve the world through trade, diplomacy, and infrastructure (no militarization without explicit approval)."
+    },
+    "deposits": [
+      {
+        "type": "halite",
+        "description": "Near-surface halite (salt) deposit",
+        "ugrid_cell": [45, 30],
+        "notes": "Accessible for early salt extraction and preservation."
+      }
+    ]
+  },
+  "reports": {
+    "fish_tracker_report_contract": {
+      "report_contract": {
+        "report_type": "fish_tracker",
+        "version": "3.0.0",
+        "title": "Fish & Shellfish Tracker Report",
+        "date_field": "game_date",
+        "table_columns": [
+          "Species",
+          "Qty",
+          "Notes"
+        ],
+        "sections": [
+          "Strategic Advise",
+          "Summary"
+        ],
+        "strategic_advise_guidance": [
+          "Consider increasing preservation efforts (salting/smoking) to extend shelf life of surplus catches.",
+          "Monitor sturgeon and eel populations for sustainability; avoid overharvesting rare species.",
+          "Explore new collection sites to diversify sources and reduce pressure on current locations.",
+          "Encourage community participation in shellfish gathering for improved yields and knowledge sharing."
+        ],
+        "summary_fields": [
+          "Combined total quantity",
+          "Processing breakdown"
+        ],
+        "processing_breakdown_example": {
+          "Fresh": "120 kg",
+          "Salted": "80 kg",
+          "Smoked": "77 kg"
+        },
+        "format_version_label": "fish_tracker v.1.0",
+        "format_standards": "Always use the combined INIT+ID format (e.g., AGEX-1-2) for Initiative references in reports. Never separate initiative code and ID into different columns or fields."
+      }
+    },
+    "msr_report_contract": {
+      "report_contract": {
+        "report_type": "milestone_status_report",
+        "ci_line_format": "CI: v{canon_version} | R{before_revision}\u2192R{after_revision} | {REV|MINOR|MAJOR}",
+        "date_range_format": "{start_date}\u2013{end_date}, {year}",
+        "sections": [
+          "NEWS",
+          "COMPLETED",
+          "IN PROGRESS",
+          "PLANNED (Grouped by Initiative)",
+          "STRATEGIC ADVISE",
+          "METRICS",
+          "ADVISOR (optional)",
+          "SUMMARY",
+          "FOOTER"
+        ],
+        "completed_columns": [
+          "Milestone",
+          "Description",
+          "Target Date",
+          "Cost",
+          "Work-hours",
+          "Status"
+        ],
+        "in_progress_columns": [
+          "Milestone",
+          "Description",
+          "Days Left",
+          "Cost",
+          "Work-hours",
+          "Status"
+        ],
+        "planned_columns": [
+          "Milestone",
+          "Description",
+          "Target Date"
+        ],
+        "summary_fields": [
+          "total_completed",
+          "total_in_progress",
+          "total_planned",
+          "combined_work_hours"
+        ],
+        "news_fields": [
+          "headline",
+          "follow_up",
+          "metric"
+        ],
+        "metrics_columns": [
+          "Metric",
+          "Value",
+          "Delta",
+          "Annualized"
+        ],
+        "metrics_rows": [
+          "Population",
+          "GDP"
+        ],
+        "strategic_advise_guidance": [
+          "Continue expanding agricultural land to ensure food security.",
+          "Prioritize water management milestones to support crop growth.",
+          "Monitor resource allocation to avoid bottlenecks in construction."
+        ],
+        "footer_note": "Report generated per MSR contract v1.0. All milestone IDs follow <year>-<serial> format.",
+        "format_standards": {
+          "init_id_format": "Always use the combined INIT+ID format (e.g., AGEX-1-2) for Initiative references in reports.",
+          "no_split_id": "Never separate initiative code and ID into different columns or fields.",
+          "target_date": "Target Date is auto-estimated by AI (best effort) and may be revised as more information becomes available.",
+          "advisor_section": "The ADVISOR section is optional and, if present, must be positioned after METRICS and before SUMMARY.",
+          "fixed_width_codes": "Any codes (milestone IDs, initiative codes, UGRID cells, bank tags) must be rendered in fixed-width font (e.g., monospace/code style).",
+          "news": {
+            "headline": "Should be a punchy newspaper-style headline.",
+            "blurb": "Must be exactly ten words.",
+            "metric": "Should be a short, insightful number or fact with no labels and must not simply repeat the headline.",
+            "no_labels": "Do not include field labels anywhere in the news section; only the content.",
+            "no_separate_insight": "Do not include a separate insight text."
+          }
+        }
+      }
+    },
+    "sites_report_contract": {
+      "report_contract": {
+        "report_type": "sites_report",
+        "version": "2.0.0",
+        "title": "Sites Status Report",
+        "date_field": "game_date",
+        "sites_columns": [
+          "Site ID",
+          "Name",
+          "Type",
+          "Location",
+          "Status",
+          "Population",
+          "Notes"
+        ],
+        "sections": [
+          "Sites",
+          "Strategic Advise",
+          "Summary"
+        ],
+        "strategic_advise_guidance": [
+          "Prioritize completion of new outposts to expand resource access.",
+          "Monitor population distribution to ensure adequate support at all sites.",
+          "Rotate resource extraction to prevent site depletion and maintain sustainability.",
+          "Consider reactivating dormant sites as demand increases."
+        ],
+        "summary_fields": [
+          "Total sites",
+          "Active",
+          "Under Construction",
+          "Dormant",
+          "Combined population"
+        ],
+        "format_version_label": "sites_report v.1.0",
+        "format_standards": "Always use the combined INIT+ID format (e.g., AGEX-1-2) for Initiative references in reports. Never separate initiative code and ID into different columns or fields."
+      }
+    },
+    "materials_tracker_report_contract": {
+      "report_contract": {
+        "report_type": "materials_tracker",
+        "version": "2.0.0",
+        "title": "Strategic Materials Tracker Report",
+        "date_field": "game_date",
+        "sections": [
+          "Metals",
+          "Non-metals",
+          "Processed",
+          "Strategic Advise",
+          "Summary"
+        ],
+        "metals_columns": ["Material", "Qty", "Location", "Notes"],
+        "non_metals_columns": ["Material", "Qty", "Location", "Notes"],
+        "processed_columns": ["Material", "Qty", "Source/Location", "Notes"],
+        "strategic_advise_guidance": [
+          "Prioritize stockpiling charcoal and iron ore for tool and weapon production.",
+          "Monitor timber and clay usage to ensure sustainable building practices.",
+          "Expand processing capacity for bricks, lime, and glass to support infrastructure.",
+          "Encourage preservation of animal hides and hemp fiber for trade and equipment.",
+          "Rotate quarry and sand extraction sites to prevent resource depletion."
+        ],
+        "summary_fields": [
+          "Combined total quantity",
+          "Resource status"
+        ],
+        "format_version_label": "materials_tracker v.1.0",
+        "format_standards": "Always use the combined INIT+ID format (e.g., AGEX-1-2) for Initiative references in reports. Never separate initiative code and ID into different columns or fields."
+      }
+    },
+    "tech_tracker_report_contract": {
+      "report_contract": {
+        "report_type": "tech_tracker",
+        "version": "2.0.0",
+        "title": "Technology Development Tracker Report",
+        "date_field": "game_date",
+        "technologies_columns": [
+          "Domain",
+          "Technology",
+          "Status",
+          "Progress (%)",
+          "Last Updated",
+          "Notes"
+        ],
+        "sections": [
+          "Technologies",
+          "Strategic Advise",
+          "Summary"
+        ],
+        "strategic_advise_guidance": [
+          "Prioritize completion of critical technologies to boost production and efficiency.",
+          "Allocate resources to projects with the highest impact on community well-being.",
+          "Encourage cross-domain collaboration to accelerate progress.",
+          "Document and share best practices from completed technologies for future projects."
+        ],
+        "summary_fields": [
+          "Total technologies tracked",
+          "Completed",
+          "In Progress",
+          "Planned",
+          "Key focus"
+        ],
+        "format_version_label": "tech_tracker v.1.0",
+        "format_standards": "Always use the combined INIT+ID format (e.g., AGEX-1-2) for Initiative references in reports. Never separate initiative code and ID into different columns or fields."
+      }
+    }
+  },
+  "map": {
+    "map_p1": {
+      "map_id": "manhattan_grid_phase1_annotated",
+      "origin": {
+        "corner": "southwest",
+        "coordinate": [0, 0]
+      },
+      "axes": {
+        "x_direction": "east",
+        "y_direction": "north"
+      },
+      "legend": {
+        "#": "land",
+        " ": "water",
+        "X": "settlement_start"
+      },
+      "row_label_format": "rXX",
+      "column_label_rule": "bottom_only_last_digit",
+      "dimensions": {
+        "rows": 40,
+        "cols": 70
+      },
+      "rows_top_to_bottom": [
+        "            ###################################           ############",
+        "            ###################################           ############",
+        "            ####################################          ############",
+        "         ########################################         ############",
+        "         ########################################          ###########",
+        "           ######################################          ###########",
+        "            #####################################         ############",
+        "        ##  #####################################         ############",
+        "            #####################################          ###########",
+        "           #####################################          ##  ########",
+        "           #####################################         #############",
+        "           #####################################         #############",
+        "           #####################################         #############",
+        "           #####################################        ##############",
+        "       #  ######################################      # ##############",
+        "          #####################################        ###############",
+        "          #####################################        ###############",
+        "       ########################################       ################",
+        "       ########################################      #################",
+        "       #######################################       #################",
+        "      ########################################      ##################",
+        "      ########################################      ##################",
+        "      #######################################       ##################",
+        "       ######################################       ##################",
+        "      #######################################      ###################",
+        "      ######################################       ###################",
+        "     ######################################        ###################",
+        "     ##########################  ######            ###################",
+        "     #####################                        ####################",
+        "     ##################                         # ####################",
+        "     #################                           # ###################",
+        "    #################                           ## ###################",
+        "     ############## ##              ######     ### ###################",
+        "     ############# #        ## ############ #   ### ##################",
+        "      ##########           #################    #### #################",
+        "      #########           ##################    # ####################",
+        "       #######           ####################    # ###################",
+        "        ####             ######################## ####################",
+        "          X              #################### #### ###################",
+        "                      ################################################"
+      ],
+      "start_tile": {
+        "symbol": "X",
+        "ugrid": "g-1001"
+      }
+    }
+  },
+  "state.template": {
+    "$schema": "novaroma_playability.json#/state_files/state_json_schema",
+    "state_version": "1.1",
+    "meta": {
+      "campaign_id": "novaroma",
+      "campaign_name": "Nova Roma",
+      "setting": "Nova Roma (Established settlement on Manhattan shoreline; new leadership looking outward)",
+      "language": "Latin (administrative), with multilingual trade pidgin emerging",
+      "tech_constraints": "Late Iron Age; no anachronistic industrial systems without explicit milestones",
+      "seed_policy": {
+        "deterministic_ids": true,
+        "id_namespace": "novaroma",
+        "notes": "Use deterministic ID generation for initiatives/milestones when possible to support replayable logs."
+      },
+      "starting_population": { "$ref": "manifest.json#/starting_population" },
+      "starting_entity_type": "settlement",
+      "premise": "Established settlement (~500 people); new leader seeks outward engagement to improve the world.",
+      "template": true,
+      "template_notes": "Copy this file to state/state.json to start a new run. Do not edit this template in place."
+    },
+    "runtime": {
+      "locale": "en-US",
+      "timezone": "America/New_York",
+      "created_utc": "__FILL_ON_COPY__",
+      "last_updated_utc": "__FILL_ON_COPY__",
+      "generator": {
+        "name": "novaroma-bootstrap",
+        "version": "2.0.0",
+        "notes": "Bootstrap copies state templates into working state folder. Templates remain immutable."
+      }
+    },
+    "calendar": {
+      "current_date": "Mar 1, 509 BCE",
+      "date_format": "MMM D, YYYY",
+      "next_advance_days": 3,
+      "timekeeping": {
+        "model": "day_step",
+        "notes": "ADVANCE uses next_advance_days by default unless overridden by command."
+      }
+    },
+    "files": {
+      "state_file": "state/state.json",
+      "event_log_file": "state/event_log.jsonl",
+      "snapshots_dir": "state/snapshots",
+      "reports_dir": "reports",
+      "notes": "Engine should create missing directories/files on first run if permitted."
+    },
+    "maps": {
+      "active_map": "map_p1",
+      "render_conventions": {
+        "land_char": ".",
+        "water_char": "~",
+        "origin": {
+          "x": 0,
+          "y": 0,
+          "corner": "NW"
+        },
+        "axes": {
+          "row_increases": "south",
+          "col_increases": "east"
+        }
+      },
+      "survey": {
+        "surveyed_cells": [],
+        "surveyed_features": [],
+        "notes": "Store discovered springs/salterns/channels here with provenance."
+      }
+    },
+    "entities": {
+      "sites": [
+        {
+          "id": "site_novaroma_core",
+          "name": "Nova Roma",
+          "role": "Settlement Capital",
+          "district": "Central",
+          "population": { "$ref": "manifest.json#/starting_population" },
+          "area": "unknown",
+          "gdp": "unknown",
+          "notes": "Established settlement; new leader intends to look outward and improve the world."
+        }
+      ],
+      "initiatives": [
+        {
+          "code": "HOUS",
+          "name": "Housing",
+          "description": "Establish and improve shelter for all residents.",
+          "auto_start": true
+        },
+        {
+          "code": "FISH",
+          "name": "Fishing",
+          "description": "Organize fishing operations for food supply.",
+          "auto_start": true
+        },
+        {
+          "code": "SURV",
+          "name": "Survey",
+          "description": "Survey land and resources for planning.",
+          "auto_start": true
+        },
+        {
+          "code": "AGRI",
+          "name": "Agriculture",
+          "description": "Begin agricultural activities for food security.",
+          "auto_start": true
+        }
+      ],
+      "milestones": [],
+      "actors": [
+        {
+          "id": "actor_leader_1",
+          "name": "New Leader",
+          "role": "Civic Executive",
+          "notes": "Mandate: outward engagement, trade, diplomacy, infrastructure; no militarization without explicit approval."
+        }
+      ],
+      "assets": [],
+      "routes": []
+    },
+    "measurements": {
+      "policy": {
+        "non_invention": true,
+        "estimate_object_required_for_generated_numbers": true,
+        "estimate_object_schema_hint": {
+          "label": "est",
+          "range": {
+            "min": 0,
+            "max": 0
+          },
+          "basis": "string",
+          "confidence": "low|medium|high"
+        }
+      },
+      "facts": {
+        "population": 500,
+        "gdp": "unknown"
+      },
+      "logs": [
+        {
+          "type": "STARTING_POPULATION",
+          "value": 500,
+          "label": "set",
+          "basis": "Campaign default starting settlement size",
+          "confidence": "high",
+          "date": "Mar 1, 509 BCE"
+        }
+      ]
+    },
+    "trackers": {
+      "strategic_materials": {
+        "entries": [],
+        "units": {
+          "default_flow": "kg/week"
+        }
+      },
+      "fish_shellfish": {
+        "entries": [],
+        "units": {
+          "default_flow": "kg/week"
+        }
+      },
+      "agriculture": {
+        "entries": [],
+        "units": {
+          "default_yield": "kg/season"
+        }
+      },
+      "technology": {
+        "domains": [
+          "Agriculture",
+          "Animal Husbandry",
+          "Fishing & Aquaculture",
+          "Salt Extraction",
+          "Brewing & Fermentation",
+          "Food Preservation",
+          "Herbalism & Botany",
+          "Timber & Forestry",
+          "Stoneworking",
+          "Clay & Ceramics",
+          "Mining & Prospecting",
+          "Charcoal & Fuels",
+          "Waterpower & Mills",
+          "Metallurgy (Copper/Bronze)",
+          "Ironworking (Proto)",
+          "Steelmaking",
+          "Glassmaking",
+          "Lime & Cement",
+          "Chemical Processing",
+          "Textiles & Weaving",
+          "Leatherworking",
+          "Papermaking",
+          "Printing & Reproduction",
+          "Instrument Making",
+          "Roads & Earthworks",
+          "Hydraulics & Irrigation",
+          "Architecture & Fortification",
+          "Shipbuilding & Watercraft",
+          "Harbor Engineering",
+          "Canal Construction",
+          "Navigation & Cartography",
+          "Writing & Recordkeeping",
+          "Mathematics & Accounting",
+          "Astronomy",
+          "Timekeeping & Calendrics",
+          "Education & Scholarship",
+          "Medicine & Sanitation",
+          "Public Administration",
+          "Law & Courts",
+          "Banking & Finance",
+          "Insurance & Risk Pools",
+          "Optics",
+          "Acoustics",
+          "Magnetism",
+          "Electricity",
+          "Thermodynamics",
+          "Mechanics",
+          "Meteorology & Climate",
+          "Surveying & Geodesy",
+          "Energy Systems"
+        ],
+        "entries": [
+          {
+            "domain": "Agriculture",
+            "level": 3,
+            "date": "Mar 1, 509 BCE",
+            "basis": "Starting settlement capability (500‑person Nova Roma)",
+            "confidence": "medium"
+          },
+          {
+            "domain": "Animal Husbandry",
+            "level": 2,
+            "date": "Mar 1, 509 BCE",
+            "basis": "Starting settlement capability (500‑person Nova Roma)",
+            "confidence": "medium"
+          },
+          {
+            "domain": "Fishing & Aquaculture",
+            "level": 3,
+            "date": "Mar 1, 509 BCE",
+            "basis": "Starting settlement capability (500‑person Nova Roma)",
+            "confidence": "medium"
+          },
+          {
+            "domain": "Salt Extraction",
+            "level": 3,
+            "date": "Mar 1, 509 BCE",
+            "basis": "Starting settlement capability (500‑person Nova Roma)",
+            "confidence": "medium"
+          },
+          {
+            "domain": "Timber & Forestry",
+            "level": 3,
+            "date": "Mar 1, 509 BCE",
+            "basis": "Starting settlement capability (500‑person Nova Roma)",
+            "confidence": "medium"
+          },
+          {
+            "domain": "Stoneworking",
+            "level": 2,
+            "date": "Mar 1, 509 BCE",
+            "basis": "Starting settlement capability (500‑person Nova Roma)",
+            "confidence": "medium"
+          },
+          {
+            "domain": "Clay & Ceramics",
+            "level": 3,
+            "date": "Mar 1, 509 BCE",
+            "basis": "Starting settlement capability (500‑person Nova Roma)",
+            "confidence": "medium"
+          },
+          {
+            "domain": "Charcoal & Fuels",
+            "level": 2,
+            "date": "Mar 1, 509 BCE",
+            "basis": "Starting settlement capability (500‑person Nova Roma)",
+            "confidence": "medium"
+          },
+          {
+            "domain": "Metallurgy (Copper/Bronze)",
+            "level": 2,
+            "date": "Mar 1, 509 BCE",
+            "basis": "Starting settlement capability (500‑person Nova Roma)",
+            "confidence": "medium"
+          },
+          {
+            "domain": "Ironworking (Proto)",
+            "level": 1,
+            "date": "Mar 1, 509 BCE",
+            "basis": "Starting settlement capability (500‑person Nova Roma)",
+            "confidence": "medium"
+          },
+          {
+            "domain": "Textiles & Weaving",
+            "level": 3,
+            "date": "Mar 1, 509 BCE",
+            "basis": "Starting settlement capability (500‑person Nova Roma)",
+            "confidence": "medium"
+          },
+          {
+            "domain": "Leatherworking",
+            "level": 2,
+            "date": "Mar 1, 509 BCE",
+            "basis": "Starting settlement capability (500‑person Nova Roma)",
+            "confidence": "medium"
+          },
+          {
+            "domain": "Roads & Earthworks",
+            "level": 2,
+            "date": "Mar 1, 509 BCE",
+            "basis": "Starting settlement capability (500‑person Nova Roma)",
+            "confidence": "medium"
+          },
+          {
+            "domain": "Hydraulics & Irrigation",
+            "level": 1,
+            "date": "Mar 1, 509 BCE",
+            "basis": "Starting settlement capability (500‑person Nova Roma)",
+            "confidence": "medium"
+          },
+          {
+            "domain": "Architecture & Fortification",
+            "level": 1,
+            "date": "Mar 1, 509 BCE",
+            "basis": "Starting settlement capability (500‑person Nova Roma)",
+            "confidence": "medium"
+          },
+          {
+            "domain": "Shipbuilding & Watercraft",
+            "level": 2,
+            "date": "Mar 1, 509 BCE",
+            "basis": "Starting settlement capability (500‑person Nova Roma)",
+            "confidence": "medium"
+          },
+          {
+            "domain": "Navigation & Cartography",
+            "level": 1,
+            "date": "Mar 1, 509 BCE",
+            "basis": "Starting settlement capability (500‑person Nova Roma)",
+            "confidence": "medium"
+          },
+          {
+            "domain": "Writing & Recordkeeping",
+            "level": 2,
+            "date": "Mar 1, 509 BCE",
+            "basis": "Starting settlement capability (500‑person Nova Roma)",
+            "confidence": "medium"
+          },
+          {
+            "domain": "Mathematics & Accounting",
+            "level": 2,
+            "date": "Mar 1, 509 BCE",
+            "basis": "Starting settlement capability (500‑person Nova Roma)",
+            "confidence": "medium"
+          },
+          {
+            "domain": "Medicine & Sanitation",
+            "level": 2,
+            "date": "Mar 1, 509 BCE",
+            "basis": "Starting settlement capability (500‑person Nova Roma)",
+            "confidence": "medium"
+          }
+        ],
+        "scale": {
+          "0": "unknown",
+          "1": "experimental",
+          "2": "workshop-scale",
+          "3": "settlement-standard",
+          "4": "regional-export",
+          "5": "breakthrough"
+        }
+      }
+    },
+    "rules_runtime": {
+      "report_contracts_source": "canon/report_contracts",
+      "trade_gating_source": "canon/systems/trade",
+      "canon_impact_enabled": true,
+      "notes": "Render reports using canon.report_contracts; obey systems.* gating (e.g., trade)."
+    },
+    "audit": {
+      "canon_version_expected": "2.8",
+      "log": [],
+      "replay": {
+        "enabled": true,
+        "event_log_integrity": {
+          "mode": "append_only",
+          "sha256_chain_enabled": false,
+          "notes": "Optional: chain event hashes to detect tampering."
+        }
+      }
+    },
+    "population_total": { "$ref": "manifest.json#/starting_population" },
+    "population": {
+      "total": { "$ref": "manifest.json#/starting_population" },
+      "notes": "Alias fields for tooling; canonical fact also stored on site and measurements.facts.population."
+    },
+    "snapshots": {
+      "technology_levels_last_msr": {},
+      "last_msr_date": null
+    }
+  },
+  "spec": {
+    "spec_name": "Nova Roma Hard-Spec",
+    "spec_version": "2.0.1",
+    "bundle_version": "v1.1.1",
+    "critical_invariants": {
+      "starting_population": 500,
+      "starting_entity_type": "settlement",
+      "milestone_id_format": "<year>-<serial>",
+      "milestone_id_regex": "^[0-9]+-[0-9]+$",
+      "msr_alias": "msr",
+      "msr_contract": "milestone_status_report",
+      "tech_domain_count": 50,
+      "technology_domains_path": "canon/technology_domains",
+      "report_aliases_path": "canon/report_aliases",
+      "report_contracts_path": "canon/report_contracts",
+      "msr_report_contract_path": "reports/msr_report_contract.json"
+    },
+    "required_protocol": {
+      "proof_of_load": {
+        "required": true,
+        "must_echo_fields": [
+          "bundle_version",
+          "starting_population",
+          "milestone_id_format",
+          "msr_contract",
+          "tech_domain_count"
+        ],
+        "format_example": "Loaded: version=<bundle_version>, starting_population=<N>, milestone_id_format=<...>, msr_contract=<...>, tech_domains=<count>"
+      },
+      "self_check": {
+        "required": true,
+        "checks": [
+          {
+            "name": "milestone_id_regex",
+            "rule": "All milestone_id values must match milestone_id_regex."
+          },
+          {
+            "name": "report_contract_columns",
+            "rule": "Report outputs must match the referenced report_contract columns exactly."
+          },
+          {
+            "name": "ci_line_msr",
+            "rule": "MSR CI lines must follow ci_line_format in the MSR report_contract."
+          }
+        ],
+        "failure_behavior": "If any check fails, regenerate output immediately before presenting it."
+      }
+    }
+  },
+  "Readme": {
+    "title": "NRCore Bundle (Templates + Runtime State)",
+    "read_this_first": "Open manifest.json first. It declares which files are authoritative.",
+    "premise": "Nova Roma begins as an established settlement (~500 people) with new leadership aiming to look outward and make the world better through trade, diplomacy, and infrastructure.",
+    "authoritative_files": [
+      "state.json (authoritative starting state in this bundle)",
+      "event_log.jsonl (authoritative event log; empty on first boot)"
+    ],
+    "templates": [
+      "state.template.json",
+      "event_log.template.jsonl"
+    ],
+    "workflow": [
+      "Copy templates into your runtime folder if you want a fresh run:",
+      "state.template.json -> state/state.json",
+      "event_log.template.jsonl -> state/event_log.jsonl",
+      "Edit only the copied runtime files, never the templates."
+    ],
+    "canon_impact_convention": "CI middle segment must use human-readable labels, not internal JSON paths.",
+    "canon_impact_example": "CI: v2.7 | RStart Conditions: colony→settlement; RStarting Population: unspecified→500; RNarrative Framing: neutral→outward-focused | MAJOR",
+    "bundle_naming": "Going forward, bundles follow: NRCore_v<major>_<minor>_<patch>.zip",
+    "technology_registry": "Tech registry: 50 canonical domains with tags, era gating, and full prerequisites are defined in canon.",
+    "hard_spec": "NR_SPEC.json contains non-skippable invariants plus proof-of-load and self-check protocol."
+  }
+}

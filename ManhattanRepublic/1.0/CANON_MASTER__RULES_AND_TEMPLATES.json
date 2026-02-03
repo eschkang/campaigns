@@ -1,7 +1,7 @@
 {
   "version": "2.4",
   "context": {
-    "setting": "NOVA ROMA Roman Republic colony in Lower Manhattan, ~509 BC",
+    "setting": "NOVA ROMA Roman Republic colony, ~509 BC",
     "starting_population": 2000,
     "language": "Latin",
     "institutions": ["Senate", "Magistrates", "Assemblies", "Customs Duties"],

@@ -12,7 +12,7 @@ Nova Roma is **NOT a colony**.
 
 This bundle begins with:
 
-• An established settlement of ~2000 people  
+• An established settlement of ~500 people  
 • New outward-looking leadership  
 • Focus on trade, diplomacy, and infrastructure  
 • No militarization without explicit approval  

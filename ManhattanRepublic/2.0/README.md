@@ -4,7 +4,7 @@
 Open `manifest.json` first. It declares which files are authoritative.
 
 ## Premise
-Nova Roma begins as an established settlement (~2000 people) with new leadership aiming to look outward and make the world better through trade, diplomacy, and infrastructure.
+Nova Roma begins as an established settlement (~500 people) with new leadership aiming to look outward and make the world better through trade, diplomacy, and infrastructure.
 
 ## Authoritative files
 - `state.json` (authoritative starting state in this bundle)
@@ -25,7 +25,7 @@ Workflow:
 CI middle segment must use human-readable labels, not internal JSON paths.
 
 Example:
-CI: v2.7 | RStart Conditions: colony→settlement; RStarting Population: unspecified→2000; RNarrative Framing: neutral→outward-focused | MAJOR
+CI: v2.7 | RStart Conditions: colony→settlement; RStarting Population: unspecified→500; RNarrative Framing: neutral→outward-focused | MAJOR
 
 ## Bundle naming
 Going forward, bundles follow: NRCore_v<major>_<minor>_<patch>.zip

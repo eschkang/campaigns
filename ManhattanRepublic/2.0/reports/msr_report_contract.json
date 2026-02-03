@@ -1,5 +1,5 @@
-  "news_metric_format": "News entries must follow: Headline → follow-up line → metric in parentheses at end of follow-up. No labels for follow-up or metric. Example: 'Population reaches new high. Growth continues steadily (Population +15)'.",
 {
+  "news_metric_format": "News entries must follow: Headline → follow-up line → metric in parentheses at end of follow-up. No labels for follow-up or metric. Example: 'Population reaches new high. Growth continues steadily (Population +15)'.",
   "$schema": "./msr_report_contract.schema.json",
   "report_contract": {
     "report_type": "milestone_status_report",
@@ -64,6 +64,6 @@
       "Monitor resource allocation to avoid bottlenecks in construction."
     ],
     "footer_note": "Report generated per MSR contract v1.0. All milestone IDs follow <year>-<serial> format.",
-    "format_standards": "Always use the combined INIT+ID format (e.g., AGEX-1-2) for Initiative references in reports. Never separate initiative code and ID into different columns or fields. Target Date is auto-estimated by AI (best effort) and may be revised as more information becomes available. The ADVISOR section is optional and, if present, must be positioned after METRICS and before SUMMARY. Any codes (milestone IDs, initiative codes, UGRID cells, bank tags) must be rendered in fixed-width font (e.g., monospace/code style).",
+    "format_standards": "Always use the combined INIT+ID format (e.g., AGEX-1-2) for Initiative references in reports. Never separate initiative code and ID into different columns or fields. Target Date is auto-estimated by AI (best effort) and may be revised as more information becomes available. The ADVISOR section is optional and, if present, must be positioned after METRICS and before SUMMARY. Any codes (milestone IDs, initiative codes, UGRID cells, bank tags) must be rendered in fixed-width font (e.g., monospace/code style)."
   }
 }

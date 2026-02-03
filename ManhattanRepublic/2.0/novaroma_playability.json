@@ -5,6 +5,7 @@
     "canon_file": "CANON_MASTER__RULES_AND_TEMPLATES.json",
     "map_file": "METRO__shoreline_metro_robust.json"
   },
+  "milestone_generation_policy": "When a new initiative is created, generate an initial milestone with a deterministic ID and a default description based on the initiative's purpose.",
   "core_loop": {
     "player_role": "Colonial Senate & Magistrates",
     "command_cycle": [
@@ -486,13 +487,8 @@
     "non_invention_guards": [
       "Existing entities: do not overwrite population/GDP/capacity/tech unless measurement event references a milestone result.",
       "Generated numbers for new creations must use estimate_object_schema and include est label, range, basis, confidence."
-    ],
-    "format_guards": [
-      "Milestone IDs must match ^\\d+-\\d+$",
-      "Dates must be MMM D, YYYY with BCE/CE when relevant",
-      "Milestones Report sections and columns must match canon"
-    ],
-    "golden_snapshots": [
+      ],
+      "golden_snapshots": [
       "status_report.md",
       "site_report.md",
       "milestones_report.md",
@@ -1085,7 +1081,7 @@
         "event_type": "MEASUREMENT",
         "command": "CENSUS_RESULT",
         "payload": {
-          "before": 2000,
+          "before": 500,
           "after": 2075,
           "delta": 75,
           "label": "measured"
@@ -1132,20 +1128,20 @@
     }
   },
   "bootstrap_defaults": {
-    "starting_population": 2000,
+    "starting_population": 500,
     "starting_entity_type": "settlement",
     "starting_site": {
       "id": "site_novaroma_core",
       "name": "Nova Roma",
       "role": "Settlement Capital",
       "district": "Central",
-      "population": 2000,
+      "population": 500,
       "area": "unknown",
       "gdp": "unknown",
       "notes": "Established settlement; new leadership pivoting outward."
     },
     "notes": "Bootstrap should create state/state.json from state_templates/state.json by copying. Templates remain immutable.",
-    "starting_site_population": 2000
+    "starting_site_population": 500
   },
   "general_engine_rules": [
     "The engine is allowed to auto-estimate annualized values, GDP splits, and time-to-relief using defined formulas instead of manual inputs."

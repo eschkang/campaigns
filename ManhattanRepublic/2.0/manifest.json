@@ -1,109 +1,117 @@
 {
-  "bundle": "NRCore_v1_1_0",
-  "generated_utc": "2026-01-29T05:30:32Z",
-  "authoritative": {
-    "state": "state.json",
-    "event_log": "event_log.jsonl"
-  },
-  "templates": {
-    "state": "state.template.json",
-    "event_log": "event_log.template.jsonl"
-  },
-  "starting_population": 2000,
-  "starting_entity_type": "settlement",
-  "canon_version": "2.8",
-  "playability_version": "1.6",
-  "reading_order": [
-    "manifest.json",
-    "novaroma_canon.json",
-    "novaroma_playability.json",
-    "novaroma_map_shoreline.json",
-    "state.json"
-  ],
-  "notes": [
-    "Do not treat templates as authoritative state.",
-    "If initializing a new run, COPY templates to your runtime state folder and then edit the copies.",
-    "This scenario is a convergent Rome-like settlement (Nova Roma) with no historical or political connection to actual Rome."
-  ],
-  "changes": [
-    {
-      "id": 1,
-      "version": "v1.1.0",
-      "type": "CANON",
-      "desc": "Added canonical 50-domain technology registry, governance rules, prerequisites, and seeded baseline tiers for 500‑person Nova Roma.",
-      "date_utc": "2026-01-29T00:09:46Z"
+  "map_rules": {
+    "map_id": "map_p1",
+    "source": {
+      "container": "zip",
+      "zip_filename": "2.0.zip",
+      "internal_path": "2.0/map_p1.json",
+      "format": "ascii_grid_text",
+      "encoding": "utf-8",
+      "line_endings": "preserve_as_stored"
     },
-    {
-      "id": 2,
-      "version": "v1.1.0",
-      "type": "PLAYABILITY",
-      "desc": "Added domain metadata (category/tags/era), full prerequisite graph, era gating rules, and MSR tech-delta snapshot policy.",
-      "date_utc": "2026-01-29T00:55:06Z"
+    "rendering_rules": {
+      "verbatim_required": true,
+      "no_regeneration": true,
+      "no_reflow": true,
+      "no_trimming": true,
+      "no_normalization": true,
+      "preserve_whitespace": true,
+      "preserve_line_count_and_order": true,
+      "preserve_each_line_length": true,
+      "output_mode": "monospace_text_block_only",
+      "forbidden_transforms": [
+        "wrapping_lines",
+        "reindenting",
+        "aligning_columns",
+        "compressing_spaces",
+        "converting_tabs",
+        "replacing_characters",
+        "adding_labels_inside_map",
+        "cropping",
+        "padding",
+        "mirroring",
+        "rotating",
+        "rescaling"
+      ]
     },
-    {
-      "id": 3,
-      "version": "v1.1.0",
-      "type": "BUGFIX",
-      "desc": "Corrected canon starting_population and premise to ~500-person isolated settlement; removed stale 2000-person defaults.",
-      "date_utc": "2026-01-29T01:52:11Z"
-    },
-    {
-      "id": 4,
-      "version": "v1.1.1",
-      "type": "BUGFIX",
-      "desc": "Restored NR_SPEC.json hard-spec and reattached proof-of-load/self-check protocol hooks after v1.1.1 regen dropped the file.",
-      "date_utc": "2026-01-29T05:30:32Z"
+    "coordinate_system": {
+      "origin": {
+        "label": "southwest_corner",
+        "x": 0,
+        "y": 0
+      }
     }
-    ,
-    {
-      "id": 5,
-      "version": "2.0.0",
-      "type": "CHANGE",
-      "desc": "Added an optional 'ADVISOR' section to the MSR report contract, positioned after 'METRICS' and before 'SUMMARY'.",
-      "date_utc": "2026-02-01T00:00:00Z"
+  },
+  "version": "2.0.1",
+  "report_rendering_mode": "strict_contract",
+  "strict_contract": {
+    "enabled": true,
+    "enforcement": "hard_gate",
+    "on_violation": "fatal_error",
+    "forbid_best_effort_render": true,
+    "forbid_contract_paraphrase": true,
+    "forbid_report_structure_inference": true,
+    "require_contract_reference_for_reports": true
+  },
+  "report_contract_index": {
+    "milestone_status_report": "2.0/reports/msr_report_contract.json",
+    "sites_report": "2.0/reports/sites_report_contract.json",
+    "tech_tracker": "2.0/reports/tech_tracker_report_contract.json",
+    "materials_tracker": "2.0/reports/materials_tracker_report_contract.json",
+    "fish_tracker": "2.0/reports/fish_tracker_report_contract.json"
+  },
+  "report_validation": {
+    "run_pre_output_validation": true,
+    "validation_level": "strict",
+    "fail_behavior": "fatal_error",
+    "error_only_output": true,
+    "require_proof_line": true,
+    "proof_line_template": "PROOF: contract={contract_path} sections_ok={section_names_exact}/{section_order_exact} tables_ok={table_headers_exact}/{table_order_exact} ci_ok={ci_line_template_exact} ids_ok={milestone_id_format_exact}"
+  },
+  "initiative_code_enforcement": {
+    "required_code_length": 4,
+    "validation": {
+      "enabled": true,
+      "on_failure": "fail_report",
+      "failure_message": "Non-compliant Init ID"
     },
-    {
-      "id": 6,
-      "version": "2.0.0",
-      "type": "CHANGE",
-      "desc": "Updated news entry format in the MSR contract: Headline → follow-up line → metric in parentheses at end of follow-up, with no labels.",
-      "date_utc": "2026-02-01T00:00:00Z"
-    },
-    {
-      "id": 7,
-      "version": "2.0.0",
-      "type": "CHANGE",
-      "desc": "Specified that codes (milestone IDs, initiative codes, UGRID cells, bank tags) must be rendered in fixed-width font.",
-      "date_utc": "2026-02-01T00:00:00Z"
-    },
-    {
-      "id": 8,
-      "version": "2.0.0",
-      "type": "CHANGE",
-      "desc": "Allowed the engine to auto-estimate annualized values, GDP splits, and time-to-relief using defined formulas instead of manual inputs.",
-      "date_utc": "2026-02-01T00:00:00Z"
-    },
-    {
-      "id": 9,
-      "version": "2.0.0",
-      "type": "CHANGE",
-      "desc": "Moved the auto-estimation rule from the MSR contract to the global playability file (novaroma_playability.json) so it applies to all outputs.",
-      "date_utc": "2026-02-01T00:00:00Z"
-    },
-    {
-      "id": 10,
-      "version": "2.0.0",
-      "type": "CHANGE",
-      "desc": "Updated all version fields in 2.0 JSON files to '2.0.0'.",
-      "date_utc": "2026-02-01T00:00:00Z"
-    },
-    {
-      "id": 11,
-      "version": "2.0.0",
-      "type": "CHANGE",
-      "desc": "Reverted the version fields under the 'changes' array in manifest.json to their previous values, keeping only the top-level version as '2.0.0'.",
-      "date_utc": "2026-02-01T00:00:00Z"
+    "instructions": [
+      "New initiatives must have a 4-character code for use in reports and tracking.",
+      "Validate all reports to ensure each initiative uses a 4-character code.",
+      "Fail report generation with 'Non-compliant Init ID' if any initiative code does not meet this requirement."
+    ]
+  },
+  "map_definition": {
+    "source_grid": "map_p1.json",
+    "resolution_m": 100
+  },
+  "land_definition": {
+    "scope": "grid_range",
+    "include_cells_where": {
+      "char_equals": "M"
     }
-  ],
-  "version": "2.0.0"
+  },
+  "mandatory_instructions": {
+    "ugrid_map_generation": "The engine must generate a UGRID map for the scenario, ensuring all spatial domains are covered and cell IDs are unique and 4-character codes. The engine must follow only the UGRID map generation rules and constraints as defined in this scenario's JSON files (manifest, playability, canon, and map files). Do not invent, substitute, or infer any rules or logic not explicitly specified in these files.",
+    "initiative_milestone_generation": "When an initiative is created, the engine must automatically generate 5 milestones for that initiative, each with a unique ID and default description based on the initiative's purpose.",
+    "report_format_loading": "The engine must load and validate all report contract formats listed in 'report_contract_index' before any report generation or output. Report generation must fail if any contract cannot be loaded or validated.",
+    "zip_file_persistence": "The engine must load the scenario zip file (2.0.zip) at startup and keep it open and accessible for the entire session. Do not close, unload, or lose access to the zip file at any point during scenario execution.",
+    "no_unapproved_content": "Do not make up any content or response type without preapproval. See no_unapproved_content_exceptions for allowed exceptions.",
+    "no_unapproved_content_exceptions": [
+      "Narrative responses are allowed without preapproval.",
+      "Target Date Calculation = use best estimate is allowed without preapproval.",
+      "Workforce pools may be created and managed as approved content.",
+      "Worker assignment counters may be created and managed as approved content.",
+      "Material stockpiles may be created and managed as approved content.",
+      "Food stockpiles may be created and managed as approved content.",
+      "Trade good stockpiles may be created and managed as approved content.",
+      "Consumption rates may be created and managed as approved content.",
+      "Capacity formulas may be created and managed as approved content.",
+      "Blocking logic based on shortages may be created and managed as approved content.",
+      "Neighbor Polities and Groups may be created and managed as approved content.",
+      "Diplomatic State may be created and managed as approved content.",
+      "Trade systems may be created and managed as approved content.",
+      "Economic effects may be created and managed as approved content."
+    ]
+  }
 }

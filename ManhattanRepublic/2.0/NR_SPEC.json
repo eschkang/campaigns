@@ -1,6 +1,6 @@
 {
   "spec_name": "Nova Roma Hard-Spec",
-  "spec_version": "1.0",
+  "spec_version": "2.0.1",
   "bundle_version": "v1.1.1",
   "critical_invariants": {
     "starting_population": 500,
@@ -46,4 +46,4 @@
       "failure_behavior": "If any check fails, regenerate output immediately before presenting it."
     }
   }
-}
+  }

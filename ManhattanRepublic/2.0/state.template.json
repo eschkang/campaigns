@@ -12,9 +12,9 @@
       "id_namespace": "novaroma",
       "notes": "Use deterministic ID generation for initiatives/milestones when possible to support replayable logs."
     },
-    "starting_population": 2000,
+    "starting_population": { "$ref": "manifest.json#/starting_population" },
     "starting_entity_type": "settlement",
-    "premise": "Established settlement (~2000 people); new leader seeks outward engagement to improve the world.",
+    "premise": "Established settlement (~500 people); new leader seeks outward engagement to improve the world.",
     "template": true,
     "template_notes": "Copy this file to state/state.json to start a new run. Do not edit this template in place."
   },
@@ -41,10 +41,10 @@
       "sha256": ""
     },
     "map": {
-      "file": "novaroma_map_shoreline.json",
+      "file": "map_p1.json",
       "sha256": "",
       "active_map_key": "METRO_SHORELINE",
-      "grid_origin_corner": "SW"
+      "grid_origin_corner": "NW"
     },
     "strict_mode": true,
     "notes": "If strict_mode=true, engine should refuse to run if expected_version mismatches or sha256 is non-empty and does not match."
@@ -66,17 +66,17 @@
     "notes": "Engine should create missing directories/files on first run if permitted."
   },
   "maps": {
-    "active_map": "novaroma_map_shoreline.json",
+    "active_map": "map_p1.json",
     "render_conventions": {
       "land_char": ".",
       "water_char": "~",
       "origin": {
         "x": 0,
         "y": 0,
-        "corner": "SW"
+        "corner": "NW"
       },
       "axes": {
-        "row_increases": "north",
+        "row_increases": "south",
         "col_increases": "east"
       }
     },
@@ -93,7 +93,7 @@
         "name": "Nova Roma",
         "role": "Settlement Capital",
         "district": "Central",
-        "population": 2000,
+        "population": { "$ref": "manifest.json#/starting_population" },
         "area": "unknown",
         "gdp": "unknown",
         "notes": "Established settlement; new leader intends to look outward and improve the world."
@@ -126,15 +126,6 @@
       }
     ],
     "milestones": [
-      // Example milestone object:
-      // {
-      //   "id": "INIT-1-1",
-      //   "name": "First Crop Harvested",
-      //   "description": "Complete the first successful crop cycle.",
-      //   "target_date": "Apr 1, 509 BCE", // Target date is auto-estimated by AI (best effort) and may be revised.
-      //   "status": "planned|in_progress|completed",
-      //   "notes": ""
-      // }
     ],
     "actors": [
       {
@@ -418,9 +409,9 @@
       }
     }
   },
-  "population_total": 2000,
+  "population_total": { "$ref": "manifest.json#/starting_population" },
   "population": {
-    "total": 2000,
+    "total": { "$ref": "manifest.json#/starting_population" },
     "notes": "Alias fields for tooling; canonical fact also stored on site and measurements.facts.population."
   },
   "snapshots": {
