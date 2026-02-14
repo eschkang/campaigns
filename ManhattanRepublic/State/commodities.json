@@ -1,0 +1,54 @@
+{
+  "commodity_master_ledger": {
+    "logistics_state": "Daylight / Unrestricted / Tax-Exempt",
+    "transit_baseline": "15 Miles (Coastal/Regional to District)",
+    "currency": "Marks",
+    "unit_measure": "1 Metric Ton (1,000 kg)"
+  },
+  "saline_products": {
+    "commodity": "Salt (Sal)",
+    "landed_cost": 9.70,
+    "cost_breakdown": {
+      "production_labor_60h": 6.00,
+      "maintenance_tools": 1.50,
+      "loading_unloading": 1.00,
+      "transit_15_miles": 1.20
+    },
+    "market_data": {
+      "city_wholesale_price": 15.00,
+      "district_retail_potential": 25.00,
+      "profit_margin_retail": "157%"
+    }
+  },
+  "ferrous_products": {
+    "commodity": "Iron Ore (Ferrum)",
+    "grades": {
+      "level_1_hematite": {
+        "purity": "50-70% Fe",
+        "landed_cost_ore": 26.00,
+        "smelting_efficiency": "High",
+        "charcoal_required_tons": 4.0,
+        "yield_finished_iron": "500 kg"
+      },
+      "level_2_limonite": {
+        "purity": "30-50% Fe",
+        "landed_cost_ore": 18.00,
+        "smelting_efficiency": "Medium",
+        "charcoal_required_tons": 7.0,
+        "yield_finished_iron": "350 kg"
+      },
+      "level_3_siderite": {
+        "purity": "20-30% Fe",
+        "landed_cost_ore": 12.00,
+        "smelting_efficiency": "Low",
+        "charcoal_required_tons": 10.0,
+        "yield_finished_iron": "200 kg"
+      }
+    }
+  },
+  "resource_dependencies": {
+    "critical_fuel": "Silva Carbonaria (Charcoal Forest)",
+    "logistics_hub": "City Port (Emporium)",
+    "primary_labor": "Unskilled (Extraction) / Specialized (Smelting)"
+  }
+}
