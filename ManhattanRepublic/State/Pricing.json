@@ -1,0 +1,164 @@
+{
+  "uss_scranton": {
+    "as_of": "590 BCE-07-18",
+    "pricing_model": {
+      "model_id": "USS_BL1_cost_model_v1",
+      "currency": "mark",
+      "product": "merchant_billets_BL1",
+      "assumed_output_tons_per_month_at_80pct": 60,
+      "trial_price_mark_per_ton": 400,
+      "costs_mark_per_ton_variable": {
+        "iron_input_ore_plus_losses": 140,
+        "coke_fuel_including_coke_ops_share": 70,
+        "flux_additives": 15,
+        "variable_labor": 45,
+        "consumables_refractory_wear": 20,
+        "handling_yard_packaging": 10
+      },
+      "costs_mark_per_month_fixed": {
+        "core_staffing_maintenance_security_baseline": 2400,
+        "admin_spares_routine_upkeep_reserve": 600
+      },
+      "computed": {
+        "variable_cost_mark_per_ton": 300,
+        "fixed_cost_mark_per_month": 3000,
+        "fixed_cost_mark_per_ton_at_assumed_output": 50,
+        "all_in_cost_mark_per_ton_at_assumed_output": 350,
+        "margin_mark_per_ton_at_trial_price": 50,
+        "gross_margin_mark_per_month_at_assumed_output": 3000,
+        "break_even_price_mark_per_ton_at_assumed_output": 350
+      },
+      "stress_tests": [
+        {
+          "case": "lower_output_40_tpm",
+          "tons_per_month": 40,
+          "fixed_per_ton": 75,
+          "all_in_cost_per_ton": 375,
+          "margin_per_ton_at_400": 25
+        },
+        {
+          "case": "higher_scrap_variable_plus_40",
+          "tons_per_month": 60,
+          "variable_per_ton": 340,
+          "fixed_per_ton": 50,
+          "all_in_cost_per_ton": 390,
+          "margin_per_ton_at_400": 10
+        },
+        {
+          "case": "both_bad_40_tpm_and_variable_plus_40",
+          "tons_per_month": 40,
+          "variable_per_ton": 340,
+          "fixed_per_ton": 75,
+          "all_in_cost_per_ton": 415,
+          "margin_per_ton_at_400": -15
+        }
+      ],
+      "notes": [
+        "This is a planning model only; replaces missing accounting with internally consistent assumptions.",
+        "If commissioning stability (Gate G1) holds and BL1 repeatability (Gate G2) is met, variable scrap/rework should fall, improving margin at the same price."
+      ]
+    }
+  },
+  "cola_cpi": {
+    "as_of": "590 BCE-08-22",
+    "policy": {
+      "min_wage_mark_per_month": 16,
+      "cola_frequency_months": 6,
+      "components_included": ["food", "consumer_goods"],
+      "excluded": ["rent", "fuel", "utilities"],
+      "application_scope": "all_pusheen_holdings",
+      "note": "CPI basket is used only for COLA adjustments; rent is held flat for now."
+    },
+    "denominations": {
+      "mark": "unit_of_account",
+      "coin_structure_reference": {
+        "assumption": "1 mark = 20 silver; 1 silver = 10 copper",
+        "note": "Coin ratios are informational for change-making; CPI prices are expressed in marks."
+      }
+    },
+    "index_math": {
+      "index_definition": "CPI_t = (sum(weight_i * price_i_t)) / (sum(weight_i * price_i_base))",
+      "base_date": "590 BCE-08-22",
+      "weights_sum_to": 1.0
+    },
+    "basket": {
+      "food": {
+        "weight_total": 0.62,
+        "items": [
+          { "id": "FOOD_BREAD_LOAF", "name": "Bread loaf", "unit": "loaf", "base_price_mark": 0.03, "weight": 0.10 },
+          { "id": "FOOD_FLOUR", "name": "Flour", "unit": "stone_sack", "base_price_mark": 0.55, "weight": 0.05 },
+          { "id": "FOOD_GRAIN", "name": "Grain", "unit": "bushel", "base_price_mark": 0.28, "weight": 0.07 },
+          { "id": "FOOD_BEANS", "name": "Beans/legumes", "unit": "bushel", "base_price_mark": 0.34, "weight": 0.04 },
+          { "id": "FOOD_RICE_OR_OATS", "name": "Oats (or rice if imported)", "unit": "bushel", "base_price_mark": 0.31, "weight": 0.03 },
+          { "id": "FOOD_SALT", "name": "Salt", "unit": "small_sack", "base_price_mark": 0.18, "weight": 0.03 },
+          { "id": "FOOD_VEGETABLES", "name": "Mixed vegetables", "unit": "market_basket", "base_price_mark": 0.09, "weight": 0.05 },
+          { "id": "FOOD_FRUIT", "name": "Seasonal fruit", "unit": "market_basket", "base_price_mark": 0.12, "weight": 0.03 },
+          { "id": "FOOD_MILK", "name": "Milk", "unit": "jug", "base_price_mark": 0.06, "weight": 0.03 },
+          { "id": "FOOD_EGGS", "name": "Eggs", "unit": "dozen", "base_price_mark": 0.10, "weight": 0.03 },
+          { "id": "FOOD_FISH_COMMON", "name": "Common fish", "unit": "lb_bundle", "base_price_mark": 0.08, "weight": 0.04 },
+          { "id": "FOOD_PORK", "name": "Pork", "unit": "lb_bundle", "base_price_mark": 0.11, "weight": 0.04 },
+          { "id": "FOOD_POULTRY", "name": "Poultry", "unit": "bird", "base_price_mark": 0.20, "weight": 0.03 },
+          { "id": "FOOD_OIL_OR_FAT", "name": "Cooking oil or rendered fat", "unit": "flask", "base_price_mark": 0.16, "weight": 0.03 },
+          { "id": "FOOD_CHEESE", "name": "Cheese", "unit": "small_wheel", "base_price_mark": 0.26, "weight": 0.02 },
+          { "id": "FOOD_SPICES_BASIC", "name": "Basic spices (onion/garlic/dried herbs)", "unit": "bundle", "base_price_mark": 0.05, "weight": 0.01 }
+        ]
+      },
+      "consumer_goods": {
+        "weight_total": 0.38,
+        "items": [
+          { "id": "CG_SOAP", "name": "Soap (basic)", "unit": "bar", "base_price_mark": 0.05, "weight": 0.05 },
+          { "id": "CG_CANDLES", "name": "Candles (tallow)", "unit": "dozen", "base_price_mark": 0.22, "weight": 0.03 },
+          { "id": "CG_LAMP_OIL", "name": "Lamp oil", "unit": "flask", "base_price_mark": 0.14, "weight": 0.03 },
+          { "id": "CG_CLOTH_COARSE", "name": "Coarse cloth (hemp/linen blend)", "unit": "yard", "base_price_mark": 0.10, "weight": 0.04 },
+          { "id": "CG_CLOTH_FINE", "name": "Fine cloth", "unit": "yard", "base_price_mark": 0.22, "weight": 0.02 },
+          { "id": "CG_SHOES_BASIC", "name": "Shoes (basic pair)", "unit": "pair", "base_price_mark": 0.80, "weight": 0.05 },
+          { "id": "CG_REPAIR_LEATHER", "name": "Leather repair kit (basic)", "unit": "kit", "base_price_mark": 0.20, "weight": 0.02 },
+          { "id": "CG_POTTERY", "name": "Pottery bowl/cup set (basic)", "unit": "set", "base_price_mark": 0.18, "weight": 0.02 },
+          { "id": "CG_COOKWARE_TINNED", "name": "Cookware (tinned/iron small pot)", "unit": "item", "base_price_mark": 0.45, "weight": 0.03 },
+          { "id": "CG_KNIFE_BASIC", "name": "Knife (basic)", "unit": "item", "base_price_mark": 0.30, "weight": 0.03 },
+          { "id": "CG_NEEDLES_THREAD", "name": "Needles + thread bundle", "unit": "bundle", "base_price_mark": 0.06, "weight": 0.02 },
+          { "id": "CG_PAPER_WRITING", "name": "Writing paper (Ferron standard)", "unit": "sheet_bundle", "base_price_mark": 0.08, "weight": 0.02 },
+          { "id": "CG_INK", "name": "Ink (basic)", "unit": "vial", "base_price_mark": 0.07, "weight": 0.01 },
+          { "id": "CG_BLANKET", "name": "Blanket (coarse)", "unit": "item", "base_price_mark": 0.60, "weight": 0.03 },
+          { "id": "CG_SIMPLE_FURNITURE", "name": "Simple stool/chair", "unit": "item", "base_price_mark": 0.55, "weight": 0.02 },
+          { "id": "CG_CLAY_LIME", "name": "Lime/clay for small repairs", "unit": "small_sack", "base_price_mark": 0.12, "weight": 0.02 }
+        ]
+      }
+    },
+    "validation": {
+      "weights_check": {
+        "food_weight_total": 0.62,
+        "consumer_goods_weight_total": 0.38,
+        "grand_total": 1.0
+      },
+      "note": "If you want a larger basket, we can expand to 50+ items, but this set is already stable across food and consumer tiers."
+    }
+  },
+  "transport_rates": {
+    "handwagon": {
+      "per_mile_mark_per_ton": [2.0, 3.0],
+      "loading_unloading_overhead_mark_per_ton": [15, 20],
+      "notes": "Very short haul, manual labor"
+    },
+    "wagon": {
+      "per_mile_mark_per_ton": [1.0, 1.5],
+      "loading_unloading_overhead_mark_per_ton": [10, 15],
+      "notes": "Animal/early mechanical, short haul"
+    },
+    "truck": {
+      "per_mile_mark_per_ton": [0.8, 1.2],
+      "loading_unloading_overhead_mark_per_ton": [10, 15],
+      "notes": "Motorized, flexible, moderate speed"
+    },
+    "rail": {
+      "per_mile_mark_per_ton": [0.5, 0.8],
+      "loading_unloading_overhead_mark_per_ton": [8, 12],
+      "notes": "Bulk, efficient for long hauls"
+    },
+    "barge": {
+      "per_mile_mark_per_ton": [0.3, 0.6],
+      "loading_unloading_overhead_mark_per_ton": [12, 18],
+      "notes": "Cheapest per mile, higher handling"
+    }
+  }
+}
