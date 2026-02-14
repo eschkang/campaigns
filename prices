@@ -1,0 +1,70 @@
+{
+  "report_date": "February 14, 2026",
+  "currency_unit": "Mark",
+  "monthly_baseline_income": 12.0,
+  "housing_system": {
+    "model": "Premium Integrated Insula",
+    "rules": {
+      "dining": "Full-board; all meals prepared/served by building staff.",
+      "services": "Integrated clinic, childcare, and baths included in flat rate.",
+      "auditing": "Occupancy monitored via dining hall headcount.",
+      "banking": "On-site branch for secure deposits and resident-rate tool loans."
+    },
+    "unit_tiers": [
+      {
+        "type": "Studio",
+        "capacity": "1 Adult",
+        "monthly_rent": 10.0,
+        "disposable_income_at_12_marks": 2.0
+      },
+      {
+        "type": "1-Bedroom",
+        "capacity": "2 Adults, 1 Child",
+        "monthly_rent": 15.0,
+        "disposable_income_at_24_marks": 9.0
+      },
+      {
+        "type": "2-Bedroom",
+        "capacity": "3 Adults, 5 Children",
+        "monthly_rent": 20.0,
+        "disposable_income_at_36_marks": 16.0
+      }
+    ]
+  },
+  "market_index": {
+    "top_20_foods": [
+      {"item": "Wheat (Grain)", "unit": "1 Liter", "price": 0.18},
+      {"item": "Barley", "unit": "1 Liter", "price": 0.11},
+      {"item": "Dried Lentils", "unit": "1 kg", "price": 0.42},
+      {"item": "Broad Beans (Fava)", "unit": "1 kg", "price": 0.38},
+      {"item": "Olive Oil (Lamp)", "unit": "1 Liter", "price": 0.85},
+      {"item": "Common Wine", "unit": "1 Liter", "price": 0.28},
+      {"item": "Sea Salt", "unit": "1 kg", "price": 0.60},
+      {"item": "Onions/Garlic", "unit": "1 kg", "price": 0.25},
+      {"item": "Cabbage/Greens", "unit": "1 kg", "price": 0.20},
+      {"item": "Dried Figs", "unit": "1 kg", "price": 0.55},
+      {"item": "Sheep’s Cheese", "unit": "1 kg", "price": 1.20},
+      {"item": "Pork Scraps", "unit": "1 kg", "price": 1.80},
+      {"item": "Salted Fish Bits", "unit": "1 kg", "price": 2.10},
+      {"item": "Honey", "unit": "1 Liter", "price": 3.50},
+      {"item": "Beef (Tough)", "unit": "1 kg", "price": 2.80},
+      {"item": "Chickpeas", "unit": "1 kg", "price": 0.40},
+      {"item": "Leeks", "unit": "1 kg", "price": 0.22},
+      {"item": "Turnips", "unit": "1 kg", "price": 0.15},
+      {"item": "Vinegar", "unit": "1 Liter", "price": 0.12},
+      {"item": "Goat Meat", "unit": "1 kg", "price": 1.50}
+    ],
+    "top_10_consumer_goods": [
+      {"item": "Iron Shovel", "price": 4.50},
+      {"item": "Heavy Wool Cloak", "price": 6.00},
+      {"item": "Leather Sandals", "price": 1.80},
+      {"item": "Simple Wool Tunic", "price": 2.50},
+      {"item": "Iron Hand-Saw", "price": 5.50},
+      {"item": "Ceramic Cooking Pot", "price": 0.60},
+      {"item": "Iron Knife", "price": 1.20},
+      {"item": "Oil Lamp", "price": 0.40},
+      {"item": "Wicker Basket", "price": 0.50},
+      {"item": "Sharpening Stone", "price": 0.80}
+    ]
+  }
+}
