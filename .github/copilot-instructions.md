@@ -1,4 +1,62 @@
-<!-- Use this file to provide workspace-specific custom instructions to Copilot. For more details, visit https://code.visualstudio.com/docs/copilot/copilot-customization#_use-a-githubcopilotinstructionsmd-file -->
+# Copilot Instructions for CampaignCanon Workspace
+
+## Project Overview
+This workspace manages canonical campaign text files and scenario logic for AI-driven simulation and reporting. Major components:
+- `canon/`: Canonical text files (one per item/scene/entry)
+- `ManhattanRepublic/3.0/campaign.json`: Hard-spec scenario contract, rules, and report formats
+- `tools/transfer.py`: Bundles canon/ into a ZIP for transfer
+
+## Key Workflows
+- **Bundle Canon Files:**
+	- Run: `python tools/transfer.py canon mycanon.zip`
+	- No external dependencies required for transfer.py (see requirements.txt)
+- **Build/Run Engine:**
+	- Build: `npm run build` (TypeScript)
+	- Start: `npm start` (runs dist/initialize_novaroma_engine.js)
+	- Task: `npm run init` (see .vscode/tasks.json)
+
+## Scenario/Report Conventions (campaign.json)
+- **Do NOT invent or infer rules/logic not explicitly specified in scenario files.**
+- **Milestone IDs:** Format `<year>-<serial>`, e.g., `1-1`. No 'Y' prefix.
+- **Initiative IDs:** Always use combined INIT+ID, e.g., `AGEX-1-2`. Never split code/ID into separate fields.
+- **Date Format:** `MMM D, YYYY` (e.g., Mar 1, 509 BCE)
+- **UGRID Map:** All cell IDs must be unique 4-char codes. Only generate per scenario JSON rules.
+- **Report Contracts:**
+	- All report outputs must match referenced contract columns/sections exactly.
+	- Proof line required: `PROOF: contract={contract_path} ...`
+	- Regenerate output if any contract check fails.
+- **No Unapproved Content:** Only generate content types listed in scenario JSON. Narrative responses are allowed; see `no_unapproved_content_exceptions` in campaign.json.
+- **Templates:** Never edit template files in place. Copy to runtime folder before use.
+
+## Data Flow & Integration
+- **Scenario Load:** Engine must load scenario ZIP at startup and keep it open for the session.
+- **Authoritative Data:**
+	- `state.json` (starting state)
+	- `event_log.jsonl` (event log)
+	- `canon/` (domain knowledge)
+- **Map/Report Rendering:** Use only scenario/canon rules for rendering, formatting, and gating (e.g., trade, tech, materials).
+
+## Project-Specific Patterns
+- **Strict Validation:**
+	- All report generation must validate against contract formats before output.
+	- Failures are fatal; output only error if validation fails.
+- **Audit/Replay:**
+	- Audit logs and replay are supported (see campaign.json: audit, replay)
+- **Naming:**
+	- Bundles: `NRCore_v<major>_<minor>_<patch>.zip`
+	- Canon versioning: see `canon_version_expected` in campaign.json
+
+## References
+- See `README.md` for quickstart and structure
+- See `ManhattanRepublic/3.0/campaign.json` for scenario rules, contracts, and invariants
+- See `CHANGELOG.md` for scenario changes
+
+## AI Agent Guidance
+- Always check scenario JSON for explicit rules before generating logic or content
+- Never invent new report types, fields, or logic unless listed in scenario files
+- Use only the formats, IDs, and conventions specified in scenario JSON and canon/
+- Regenerate outputs if contract validation fails
+- When in doubt, prefer strictness and explicitness over flexibility
 - [ ] Verify that the copilot-instructions.md file in the .github directory is created.
 
 - [ ] Clarify Project Requirements

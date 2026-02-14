@@ -1,0 +1,400 @@
+
+{
+  "as_of": "590 BCE-08-22",
+  "units_conventions": {
+    "weight": "ton",
+    "bulk_ag": "bushel",
+    "timber": "cord",
+    "stone": "ton",
+    "notes": "Prices are source-gate (at origin). Delivered price depends on transport corridor + handling + warehousing. Production is steady-state capacity, not guaranteed output."
+  },
+  "raw_materials": [
+    {
+      "id": "RM_COPPER_INGOT",
+      "name": "Copper (rough ingot)",
+      "category": "metal_raw",
+      "unit": "ton",
+      "source": {
+        "type": "mine",
+        "site": "Nova_Roma_Jersey_Highlands_Copper_Mine",
+        "region": "Jersey Highlands",
+        "owner_or_controller": "Nova Roma (mine); export allotment to Philly via trade"
+      },
+      "source_price_mark_per_unit": 1200,
+      "production_capacity_per_30d": 18,
+      "export_to_philly_capacity_per_30d": 8,
+      "delivered_to_philly_estimate": {
+        "transport_mark_per_unit": 60,
+        "handling_mark_per_unit": 25,
+        "warehouse_mark_per_unit": 15,
+        "delivered_mark_per_unit": 1300
+      },
+      "notes": "Primary feedstock for Philly bronze foundries, bearings, valves, and small-coin metal when needed."
+    },
+    {
+      "id": "RM_TIN_INGOT",
+      "name": "Tin (ingot)",
+      "category": "metal_raw",
+      "unit": "ton",
+      "source": {
+        "type": "import",
+        "site": "Coastal_Trade_Network",
+        "region": "Atlantic merchants",
+        "owner_or_controller": "Market (imported)"
+      },
+      "source_price_mark_per_unit": 2200,
+      "production_capacity_per_30d": null,
+      "import_capacity_per_30d": 3,
+      "delivered_to_philly_estimate": {
+        "transport_mark_per_unit": 120,
+        "handling_mark_per_unit": 40,
+        "warehouse_mark_per_unit": 20,
+        "delivered_mark_per_unit": 2380
+      },
+      "notes": "Constraining input for bronze volume. Keep strategic stock."
+    },
+    {
+      "id": "RM_IRON_ORE",
+      "name": "Iron ore",
+      "category": "metal_raw",
+      "unit": "ton",
+      "source": {
+        "type": "mine",
+        "site": "Scranton_Iron_District",
+        "region": "Scranton hinterlands",
+        "owner_or_controller": "USS supply network (contracts)"
+      },
+      "source_price_mark_per_unit": 120,
+      "production_capacity_per_30d": 900,
+      "allocated_to_uss_per_30d": 520,
+      "delivered_to_uss_estimate": {
+        "transport_mark_per_unit": 10,
+        "handling_mark_per_unit": 3,
+        "delivered_mark_per_unit": 133
+      },
+      "notes": "Ore quality varies; UOP/Physics magnet sorting trials can reduce slag load and improve consistency."
+    },
+    {
+      "id": "RM_LIMESTONE",
+      "name": "Limestone (flux)",
+      "category": "industrial_mineral",
+      "unit": "ton",
+      "source": {
+        "type": "quarry",
+        "site": "Scranton_Lime_Quarries",
+        "region": "Scranton",
+        "owner_or_controller": "USS supply network (contracts)"
+      },
+      "source_price_mark_per_unit": 25,
+      "production_capacity_per_30d": 260,
+      "delivered_to_uss_estimate": {
+        "transport_mark_per_unit": 6,
+        "handling_mark_per_unit": 2,
+        "delivered_mark_per_unit": 33
+      },
+      "notes": "Critical for slag chemistry and consistent taps."
+    },
+    {
+      "id": "RM_COAL",
+      "name": "Coal",
+      "category": "fuel_raw",
+      "unit": "ton",
+      "source": {
+        "type": "mine",
+        "site": "Scranton_Coalfields",
+        "region": "Scranton",
+        "owner_or_controller": "USS supply network (contracts)"
+      },
+      "source_price_mark_per_unit": 55,
+      "production_capacity_per_30d": 1400,
+      "allocated_to_coke_and_power_per_30d": 820,
+      "delivered_to_uss_estimate": {
+        "transport_mark_per_unit": 8,
+        "handling_mark_per_unit": 3,
+        "delivered_mark_per_unit": 66
+      },
+      "notes": "Inputs to coke/charcoal blend spec; biggest operating lever for USS cost control."
+    },
+    {
+      "id": "RM_COKE",
+      "name": "Coke",
+      "category": "fuel_processed",
+      "unit": "ton",
+      "source": {
+        "type": "battery",
+        "site": "USS_Coke_Battery_Row_1",
+        "region": "Scranton",
+        "owner_or_controller": "USS"
+      },
+      "source_price_mark_per_unit": 95,
+      "production_capacity_per_30d": 520,
+      "allocated_to_bf1_per_30d": 360,
+      "notes": "Internal transfer price for USS cost accounting. If bought externally (rare), add +20–30% premium."
+    },
+    {
+      "id": "RM_CHARCOAL",
+      "name": "Charcoal",
+      "category": "fuel_processed",
+      "unit": "ton",
+      "source": {
+        "type": "kiln_network",
+        "site": "Regional_Charcoal_Contracts",
+        "region": "Philly/Scranton hinterlands",
+        "owner_or_controller": "Market + contracted producers"
+      },
+      "source_price_mark_per_unit": 130,
+      "production_capacity_per_30d": 180,
+      "notes": "Used for specialty heats and quality control; limited capacity."
+    },
+    {
+      "id": "RM_MANGANESE_ORE",
+      "name": "Manganese ore (dark ore)",
+      "category": "metal_raw",
+      "unit": "ton",
+      "source": {
+        "type": "trade_samples",
+        "site": "Unspecified_Ore_Traders",
+        "region": "Appalachian trade belt (probable)",
+        "owner_or_controller": "Market"
+      },
+      "source_price_mark_per_unit": 180,
+      "production_capacity_per_30d": null,
+      "import_capacity_per_30d": 5,
+      "notes": "Not yet a formalized supply node. UOP MMRC running controlled melt trials; treat as limited experimental input until a named source is contracted."
+    },
+    {
+      "id": "RM_CLAY",
+      "name": "Clay",
+      "category": "construction_raw",
+      "unit": "ton",
+      "source": {
+        "type": "local_pit",
+        "site": "Philly_Clay_Pits",
+        "region": "Philly",
+        "owner_or_controller": "Market/local pits"
+      },
+      "source_price_mark_per_unit": 8,
+      "production_capacity_per_30d": 900,
+      "notes": "Bricks, tiles, mortar additives; abundant."
+    },
+    {
+      "id": "RM_SAND",
+      "name": "Sand",
+      "category": "construction_raw",
+      "unit": "ton",
+      "source": {
+        "type": "river_dredge",
+        "site": "Delaware_Schuylkill_Sand",
+        "region": "Philly",
+        "owner_or_controller": "City/contractors"
+      },
+      "source_price_mark_per_unit": 6,
+      "production_capacity_per_30d": 1100,
+      "notes": "Concrete/mortar, glass feedstock with proper processing."
+    },
+    {
+      "id": "RM_TIMBER",
+      "name": "Timber (construction)",
+      "category": "forestry_raw",
+      "unit": "cord",
+      "source": {
+        "type": "forest",
+        "site": "Philly_Hinterland_Timberlands",
+        "region": "Philly hinterlands",
+        "owner_or_controller": "Market + contractors"
+      },
+      "source_price_mark_per_unit": 12,
+      "production_capacity_per_30d": 420,
+      "notes": "Primary structural material for 3-story builds; steel beams not assumed."
+    },
+    {
+      "id": "RM_STONE",
+      "name": "Stone (building stone)",
+      "category": "construction_raw",
+      "unit": "ton",
+      "source": {
+        "type": "quarry",
+        "site": "Regional_Stone_Quarries",
+        "region": "Philly/Scranton corridor",
+        "owner_or_controller": "Market"
+      },
+      "source_price_mark_per_unit": 14,
+      "production_capacity_per_30d": 650,
+      "notes": "Foundations, roads, civic cores."
+    },
+    {
+      "id": "RM_LIME",
+      "name": "Lime (construction binder)",
+      "category": "construction_processed",
+      "unit": "ton",
+      "source": {
+        "type": "kiln",
+        "site": "Philly_Lime_Kilns",
+        "region": "Philly",
+        "owner_or_controller": "Market/contract kilns"
+      },
+      "source_price_mark_per_unit": 35,
+      "production_capacity_per_30d": 140,
+      "notes": "Mortar/plaster; future waste-heat plants can lower effective fuel cost for kilns."
+    },
+    {
+      "id": "RM_HEMP_FIBER",
+      "name": "Hemp fiber",
+      "category": "ag_raw",
+      "unit": "ton",
+      "source": {
+        "type": "farm",
+        "site": "Philly_Region_Farms",
+        "region": "Philly",
+        "owner_or_controller": "Market"
+      },
+      "source_price_mark_per_unit": 95,
+      "production_capacity_per_30d": 35,
+      "notes": "Rope, coarse cloth blends; strategic for docks."
+    },
+    {
+      "id": "RM_FLAX",
+      "name": "Flax",
+      "category": "ag_raw",
+      "unit": "ton",
+      "source": {
+        "type": "farm",
+        "site": "Philly_Region_Farms",
+        "region": "Philly",
+        "owner_or_controller": "Market"
+      },
+      "source_price_mark_per_unit": 110,
+      "production_capacity_per_30d": 28,
+      "notes": "Linen inputs; complements Ferron paper economy."
+    },
+    {
+      "id": "RM_WOOL",
+      "name": "Wool (raw fleece)",
+      "category": "ag_raw",
+      "unit": "ton",
+      "source": {
+        "type": "ranch",
+        "site": "Regional_Wool_Supply",
+        "region": "Philly hinterlands",
+        "owner_or_controller": "Market"
+      },
+      "source_price_mark_per_unit": 160,
+      "production_capacity_per_30d": 18,
+      "notes": "Clothing and blankets; consumer CPI component."
+    },
+    {
+      "id": "RM_HIDES",
+      "name": "Hides/leather (raw)",
+      "category": "ag_raw",
+      "unit": "ton",
+      "source": {
+        "type": "butchery_stream",
+        "site": "Philly_Meat_Stream",
+        "region": "Philly",
+        "owner_or_controller": "Market"
+      },
+      "source_price_mark_per_unit": 210,
+      "production_capacity_per_30d": 12,
+      "notes": "Shoes and repair goods; consumer CPI component."
+    },
+    {
+      "id": "RM_GRAIN",
+      "name": "Grain (mixed)",
+      "category": "ag_raw",
+      "unit": "bushel",
+      "source": {
+        "type": "farm",
+        "site": "Philly_Region_Grainbelt",
+        "region": "Philly",
+        "owner_or_controller": "Market"
+      },
+      "source_price_mark_per_unit": 0.28,
+      "production_capacity_per_30d": 22000,
+      "notes": "Staple input; warehouse velocity matters. Use MSC upgraded warehouses to reduce spoilage and price spikes."
+    },
+    {
+      "id": "RM_SALT",
+      "name": "Salt",
+      "category": "food_raw",
+      "unit": "ton",
+      "source": {
+        "type": "trade",
+        "site": "Coastal_Saltworks",
+        "region": "Coastal trade",
+        "owner_or_controller": "Market"
+      },
+      "source_price_mark_per_unit": 180,
+      "production_capacity_per_30d": null,
+      "import_capacity_per_30d": 20,
+      "notes": "Preservation, food; also process uses."
+    },
+    {
+      "id": "RM_FISH_COMMON",
+      "name": "Fish (common catch, landed)",
+      "category": "food_raw",
+      "unit": "ton",
+      "source": {
+        "type": "fishery",
+        "site": "Delaware_Estuary_Fleet",
+        "region": "Philly waters",
+        "owner_or_controller": "Market/fleet"
+      },
+      "source_price_mark_per_unit": 95,
+      "production_capacity_per_30d": 120,
+      "notes": "High variance seasonal. Keep as raw supply; retail price tracked in CPI basket separately."
+    },
+    {
+      "id": "RM_TALLOW",
+      "name": "Tallow",
+      "category": "consumer_input",
+      "unit": "ton",
+      "source": {
+        "type": "rendering",
+        "site": "Philly_Rendering_Shops",
+        "region": "Philly",
+        "owner_or_controller": "Market"
+      },
+      "source_price_mark_per_unit": 260,
+      "production_capacity_per_30d": 10,
+      "notes": "Candles and soap feedstock."
+    },
+    {
+      "id": "RM_PITCH_TAR",
+      "name": "Pitch/tar",
+      "category": "industrial_input",
+      "unit": "ton",
+      "source": {
+        "type": "kiln",
+        "site": "Regional_Pitch_Kilns",
+        "region": "Philly hinterlands",
+        "owner_or_controller": "Market"
+      },
+      "source_price_mark_per_unit": 140,
+      "production_capacity_per_30d": 14,
+      "notes": "Rope waterproofing, hull sealing."
+    },
+    {
+      "id": "RM_WATER",
+      "name": "Potable water (bulk supply)",
+      "category": "utility_raw",
+      "unit": "million_gallons",
+      "source": {
+        "type": "utility",
+        "site": "Philly_Waterworks",
+        "region": "Philly",
+        "owner_or_controller": "City + projects"
+      },
+      "source_price_mark_per_unit": 0.0,
+      "production_capacity_per_30d": null,
+      "notes": "Utility service; priced via tariffs/rents, not as raw commodity in this model."
+    }
+  ],
+  "raw_materials_pricing_notes": {
+    "delivered_price_model": "delivered = source + transport + handling + warehousing",
+    "msc_role": "MSC warehouses reduce spoilage and increase turnover; may allow slight premium for velocity but should be justified by cargo mix.",
+    "steel_reference": {
+      "billet_price_mark_per_ton_trial": 4000,
+      "note": "Steel is treated as a processed product (not raw material) and is priced separately in the pricing model."
+    }
+  }
+}

@@ -1,64 +1,4 @@
 {
-  "uss_scranton": {
-    "as_of": "590 BCE-07-18",
-    "pricing_model": {
-      "model_id": "USS_BL1_cost_model_v1",
-      "currency": "mark",
-      "product": "merchant_billets_BL1",
-      "assumed_output_tons_per_month_at_80pct": 60,
-      "trial_price_mark_per_ton": 400,
-      "costs_mark_per_ton_variable": {
-        "iron_input_ore_plus_losses": 140,
-        "coke_fuel_including_coke_ops_share": 70,
-        "flux_additives": 15,
-        "variable_labor": 45,
-        "consumables_refractory_wear": 20,
-        "handling_yard_packaging": 10
-      },
-      "costs_mark_per_month_fixed": {
-        "core_staffing_maintenance_security_baseline": 2400,
-        "admin_spares_routine_upkeep_reserve": 600
-      },
-      "computed": {
-        "variable_cost_mark_per_ton": 300,
-        "fixed_cost_mark_per_month": 3000,
-        "fixed_cost_mark_per_ton_at_assumed_output": 50,
-        "all_in_cost_mark_per_ton_at_assumed_output": 350,
-        "margin_mark_per_ton_at_trial_price": 50,
-        "gross_margin_mark_per_month_at_assumed_output": 3000,
-        "break_even_price_mark_per_ton_at_assumed_output": 350
-      },
-      "stress_tests": [
-        {
-          "case": "lower_output_40_tpm",
-          "tons_per_month": 40,
-          "fixed_per_ton": 75,
-          "all_in_cost_per_ton": 375,
-          "margin_per_ton_at_400": 25
-        },
-        {
-          "case": "higher_scrap_variable_plus_40",
-          "tons_per_month": 60,
-          "variable_per_ton": 340,
-          "fixed_per_ton": 50,
-          "all_in_cost_per_ton": 390,
-          "margin_per_ton_at_400": 10
-        },
-        {
-          "case": "both_bad_40_tpm_and_variable_plus_40",
-          "tons_per_month": 40,
-          "variable_per_ton": 340,
-          "fixed_per_ton": 75,
-          "all_in_cost_per_ton": 415,
-          "margin_per_ton_at_400": -15
-        }
-      ],
-      "notes": [
-        "This is a planning model only; replaces missing accounting with internally consistent assumptions.",
-        "If commissioning stability (Gate G1) holds and BL1 repeatability (Gate G2) is met, variable scrap/rework should fall, improving margin at the same price."
-      ]
-    }
-  },
   "cola_cpi": {
     "as_of": "590 BCE-08-22",
     "policy": {
@@ -133,5 +73,5 @@
       },
       "note": "If you want a larger basket, we can expand to 50+ items, but this set is already stable across food and consumer tiers."
     }
-  },
+  }
 }

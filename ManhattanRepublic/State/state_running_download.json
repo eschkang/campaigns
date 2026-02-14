@@ -1,0 +1,375 @@
+{
+  "time": {
+    "campaign_label": "Week 12 (Tick=7 days fixed); do not advance >3 days without confirmation.",
+    "tick_days": 7,
+    "notes": [
+      "Current time anchor is Week 12.",
+      "Advance time only on explicit request. 'Next' = +7 days.",
+      "Never advance more than 3 days without explicit confirmation unless user explicitly requests larger."
+    ],
+    "anchor_date_label": "590 BCE-07-18"
+  },
+  "player": {
+    "name": "Pusheen",
+    "location": "Philadelphia (Philly) + Hudson Basin north of Nyack + Scranton works",
+    "notes": [
+      "Focus: continuity of projects/investments, infrastructure buildout, and economic signals."
+    ]
+  },
+  "open_decisions_queue": [
+    "PH Housing Trust: obtain final occupancy certification for the private TMH cross showcase; begin move-ins once certified.",
+    "Hudson Basin: receive population + economic condition reports from the 5 clinic nodes (Peekskill, Newburgh, Poughkeepsie, Kingston, Albany); decide first dock/warehouse leases based on congestion signals.",
+    "USS Scranton Line-1: confirm 3-shift staffing and maintain ore/coke/flux buffers through Furnace #1 ignition; prepare bond circular release after first pig shipment."
+  ],
+  "world": {
+    "primary_city": {
+      "name": "Philadelphia",
+      "population_anchor": 3500,
+      "regions": [
+        "River Region",
+        "Market Region",
+        "West Region",
+        "North Region"
+      ]
+    },
+    "scope_notes": [
+      "Campaign is Philly-based. Hudson Basin operations are north of Nyack lock.",
+      "Scranton works is an external industrial node feeding Philly economy via river export."
+    ]
+  },
+  "running_state": {
+    "as_of": "590 BCE-07-18",
+    "currency": "mark",
+    "personal_finance": {
+      "liquid_capital": {
+        "cash_and_clearing": 191.2,
+        "short_notes_and_deposits": 32.1,
+        "total_liquid": 223.3
+      },
+      "monthly_cashflow_to_pusheen": {
+        "TM_insurance": 3.5,
+        "TU_consumer_banking": 6.8,
+        "PhillyEats": 17.9,
+        "Philly_Water_Phase1": 1.67,
+        "total_monthly_inflow": 75.07,
+        "PH_Housing_Trust_distribution": 45.2
+      },
+      "pending_transfers": {
+        "NR_blind_trust_TB_transfer": {
+          "amount_TB": 17.7,
+          "tb_to_mark": 1000,
+          "mark_equivalent": 17700,
+          "status": "pending_NR_senate_vote",
+          "destination": "Pusheen_assets"
+        }
+      }
+    },
+    "entities": {
+      "TU_consumer_banking": {
+        "ownership": {
+          "Pusheen": 1.0
+        },
+        "active_accounts": 1452,
+        "retail_deposits": 620,
+        "branches_open": 5,
+        "branches_building": 4,
+        "monthly_net_profit": 6.8
+      },
+      "TT_trinity_trust_commercial_bank": {
+        "ownership": {
+          "Pusheen": 0.6,
+          "Lucia": 0.2,
+          "Sabine": 0.2
+        },
+        "scope_note": "Commercial banking and paper-based processing backbone; separate from Pusheen personal PBC unless distributions declared."
+      },
+      "MSC_docks": {
+        "capital_pool": 105.1,
+        "warehouses_operating": 1,
+        "warehouses_rebuilding": 1,
+        "monthly_net": 8.0,
+        "warehouse_upgrade_program": {
+          "policy": "reinvest_100_percent_of_MSC_net_into_warehouse_acquisition_and_upgrades",
+          "monthly_reinvestment_mark": 8.0,
+          "program_fund_flow": {
+            "source": "MSC_docks_monthly_net",
+            "destination": "MSC_warehouse_upgrade_program_fund"
+          }
+        },
+        "monthly_net_retained_for_upgrades": 8.0
+      },
+      "TM_insurance": {
+        "reserve_pool_seed": 100,
+        "premium_runrate_monthly": 9.9,
+        "net_margin": 0.35,
+        "monthly_net_estimate": 3.5,
+        "active_hull_policies": 8,
+        "scope": "Philly_only"
+      },
+      "Ferron_paper": {
+        "utilization": 1.0,
+        "backlog_weeks": 5.3,
+        "monthly_net_profit": 13.1,
+        "export_active": true,
+        "distribution_policy": {
+          "status": "reinvesting",
+          "distribution_to_pusheen_monthly": 0.0,
+          "notes": "All net profit retained for capacity expansion and ramp-up to meet demand."
+        }
+      },
+      "PhillyEats": {
+        "locations": 25,
+        "monthly_net_profit": 17.9
+      },
+      "USS_Scranton_SPV": {
+        "cash_on_hand": 26,
+        "land_owned_20ha_value": 96,
+        "land_option_50ha_deposit": 6,
+        "coke_battery_capex": 38,
+        "blast_furnace_1": {
+          "shell_complete": true,
+          "lining_percent": 82
+        }
+      }
+    },
+    "utilities": {
+      "philly_water": {
+        "system_name": "Dual-River Water Works",
+        "phase_1": {
+          "status": "certified_operational",
+          "region_served": "Region 1",
+          "households_served": 200,
+          "annual_financials": {
+            "revenue_mark": 200,
+            "opex_estimate_mark": 180,
+            "net_mark": 20
+          }
+        },
+        "phase_2": {
+          "status": "built_certified",
+          "region_served": "Region 2",
+          "households_served_estimate": 600
+        },
+        "phase_3": {
+          "status": "construction_started",
+          "target": "serve_remaining_half_city",
+          "households_target_estimate": 800
+        }
+      }
+    },
+    "tmh": {
+      "rents_all_inclusive": true,
+      "rent_table_monthly": {
+        "studio": 10,
+        "one_bed": 15,
+        "two_bed": 20,
+        "affordable_cap": {
+          "monthly": 4,
+          "income_fraction": 0.4
+        }
+      },
+      "pilot_cross_last_30_days_ledger": {
+        "period_days": 30,
+        "units": 400,
+        "revenue": {
+          "rents_collected": 6000.0,
+          "total_revenue": 6000.0
+        },
+        "opex": {
+          "food_system": {
+            "raw_food_inputs": 1150.0,
+            "kitchen_labor": 500.0,
+            "storage_spoilage": 120.0,
+            "subtotal": 1770.0
+          },
+          "utilities": {
+            "fuel_coal_char_mix": 420.0,
+            "heat_staff_wages": 110.0,
+            "mechanical_maintenance": 45.0,
+            "water_internal_transfer": 25.0,
+            "misc_utilities": 30.0,
+            "subtotal": 630.0
+          },
+          "bath_and_laundry_ops_nonfuel": {
+            "laundry_staff": 180.0,
+            "bath_attendants": 120.0,
+            "soap_linen": 90.0,
+            "subtotal": 390.0
+          },
+          "maintenance_and_admin": {
+            "building_maintenance_crew": 450.0,
+            "admin_and_leasing": 300.0,
+            "contingency_buffer": 200.0,
+            "subtotal": 950.0
+          },
+          "total_opex": 3740.0
+        },
+        "net_operating_income": 2260.0,
+        "distribution_policy": {
+          "recipient": "Pusheen",
+          "rate_of_net_income": 0.02,
+          "auto": true,
+          "distributed_amount": 45.2,
+          "retained_earnings_amount": 2214.8
+        }
+      }
+    },
+    "ax_exchange": {
+      "listed_bonds": [
+        {
+          "ticker": "PHH-1",
+          "issuer": "PH_Housing_Trust",
+          "issue_size_mark": 240,
+          "term_years": 10,
+          "coupon_rate": 0.065,
+          "status": "listed_trading"
+        },
+        {
+          "ticker": "HBTLC-1",
+          "issuer": "Hudson_Basin_TLC",
+          "issue_size_mark": 300,
+          "term_years": 8,
+          "coupon_rate": 0.0725,
+          "status": "listed_trading"
+        },
+        {
+          "ticker": "PWW-2",
+          "issuer": "Philly_Water_Concession",
+          "issue_size_mark": 180,
+          "term_years": 7,
+          "coupon_rate": 0.06,
+          "status": "listed_trading"
+        },
+        {
+          "ticker": "MSC-WH1",
+          "issuer": "MSC_Docks",
+          "issue_size_mark": 120,
+          "term_years": 5,
+          "coupon_rate": 0.0675,
+          "status": "listed_trading"
+        },
+        {
+          "ticker": "UOP-1",
+          "issuer": "University_of_Philadelphia_Endowment_Board",
+          "issue_size_mark": 200,
+          "term_years": 12,
+          "coupon_rate": 0.0625,
+          "status": "listed_trading"
+        },
+        {
+          "ticker": "PH-RD1",
+          "issuer": "Philadelphia_Public_Works",
+          "issue_size_mark": 90,
+          "term_years": 6,
+          "coupon_rate": 0.065,
+          "status": "listed_trading"
+        },
+        {
+          "ticker": "TT-REGN",
+          "issuer": "TT_Registry",
+          "issue_size_mark": 60,
+          "term_years": 2,
+          "coupon_rate": 0.0575,
+          "status": "listed_trading"
+        }
+      ],
+      "activity_rolling_30d": {
+        "window_days": 30,
+        "totals": {
+          "volume_30d_par_mark": 4050,
+          "trades_30d_count": 2235
+        },
+        "bonds": [
+          {
+            "ticker": "PHH-1",
+            "last_price_pct": 101.2,
+            "bid_ask_spread_pts": 0.4,
+            "volume_30d_par_mark": 820,
+            "trades_30d_count": 410,
+            "last_updated_as_of": "590 BCE-07-18"
+          },
+          {
+            "ticker": "HBTLC-1",
+            "last_price_pct": 99.1,
+            "bid_ask_spread_pts": 0.8,
+            "volume_30d_par_mark": 760,
+            "trades_30d_count": 300,
+            "last_updated_as_of": "590 BCE-07-18"
+          },
+          {
+            "ticker": "PWW-2",
+            "last_price_pct": 100.4,
+            "bid_ask_spread_pts": 0.6,
+            "volume_30d_par_mark": 520,
+            "trades_30d_count": 240,
+            "last_updated_as_of": "590 BCE-07-18"
+          },
+          {
+            "ticker": "MSC-WH1",
+            "last_price_pct": 100.0,
+            "bid_ask_spread_pts": 0.8,
+            "volume_30d_par_mark": 360,
+            "trades_30d_count": 160,
+            "last_updated_as_of": "590 BCE-07-18"
+          },
+          {
+            "ticker": "UOP-1",
+            "last_price_pct": 98.6,
+            "bid_ask_spread_pts": 1.0,
+            "volume_30d_par_mark": 310,
+            "trades_30d_count": 140,
+            "last_updated_as_of": "590 BCE-07-18"
+          },
+          {
+            "ticker": "PH-RD1",
+            "last_price_pct": 99.7,
+            "bid_ask_spread_pts": 1.4,
+            "volume_30d_par_mark": 180,
+            "trades_30d_count": 85,
+            "last_updated_as_of": "590 BCE-07-18"
+          },
+          {
+            "ticker": "TT-REGN",
+            "last_price_pct": 100.3,
+            "bid_ask_spread_pts": 0.2,
+            "volume_30d_par_mark": 1100,
+            "trades_30d_count": 900,
+            "last_updated_as_of": "590 BCE-07-18"
+          }
+        ]
+      }
+    },
+    "infrastructure_plans": {
+      "region2_district_heat": {
+        "capacity_crosses": 8,
+        "hot_water_storage_gallons": {
+          "tanks": 2,
+          "each": 10000,
+          "total": 20000
+        },
+        "deltaT_F": 70,
+        "peak_hot_water_gph_estimate": 10000,
+        "boiler_peak_output_MMBTU_per_hr_estimate": 6.0,
+        "fuel_policy": {
+          "fuel": "coal_only",
+          "yard_reserve_tons_target": 22,
+          "delivery_mode": "wagon",
+          "cadence": "2x_per_week",
+          "tons_per_delivery": 9.5,
+          "wagon_load_tons_assumptions": [
+            0.5,
+            1.0
+          ]
+        },
+        "rail_ready": true
+      },
+      "corridor_reservations": {
+        "region2_industrial_spine_width_ft": 40,
+        "region3_freight_corridor_width_ft": 40,
+        "region4_freight_corridor_width_ft": 40,
+        "region3_4_cross_connector_width_ft": 25,
+        "tram_electrification_ready": true
+      }
+    }
+  }
+}

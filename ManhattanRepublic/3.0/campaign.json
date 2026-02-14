@@ -1,11 +1,22 @@
 {
+  "section_index": [
+    "start_here",
+    "manifest",
+    "playability",
+    "canon",
+    "reports",
+    "map",
+    "state.template",
+    "spec",
+    "Readme"
+  ],
   "start_here": {
     "critical": {
       "note": "Hard-Spec + Proof-of-Load (do not skip)",
-      "read_first": "NR_SPEC.json",
-      "proof_of_load_message": "Loaded: version=v1.1.1, starting_population=500, milestone_id_format=<year>-<serial>, msr_contract=milestone_status_report, tech_domains=50",
-      "milestone_id_regex": "^[0-9]+-[0-9]+$",
-      "milestone_id_examples": ["0-1", "0-2", "1-1"]
+      "read_first": "start_here.critical",
+      "proof_of_load_message": "Loaded: version=v1.1.1, starting_population=500, milestone_id_format=<INIT>-<Y>-<#>, msr_contract=milestone_status_report, tech_domains=50",
+        "milestone_id_regex": "^[A-Z]{4}-[0-9]+-[0-9]+$",
+      "milestone_id_examples": ["AGEX-1-1", "FISH-2-3"]
     },
     "summary": {
       "title": "START HERE",
@@ -16,15 +27,16 @@
       ]
     },
     "what_to_read_first": [
-      "manifest.json",
-      "state.json",
-      "novaroma_canon.json"
+      "manifest",
+      "state",
+      "canon"
     ],
-    "authoritative_facts": "The authoritative starting facts live in state.json.",
+    "authoritative_facts": "The authoritative starting facts live in state.",
     "no_infer_from_templates": "Do NOT infer starting conditions from templates or schema files.",
-    "template_note": "Templates (state.template.json) are copy-only starters and are not the active run.",
+    "template_note": "Templates (state.template) are copy-only starters and are not the active run.",
     "technology_registry": "Tech registry: 50 canonical domains with tags, era gating, and full prerequisites are defined in canon."
   },
+  
   "manifest": {
     "map_rules": {
       "map_id": "map_p1",
@@ -71,6 +83,7 @@
     },
     "version": "3.0.0",
     "report_rendering_mode": "strict_contract",
+    "ai_report_format_guardrails": "AI must not invent, infer, or generate any report formats, sections, columns, or content types not explicitly listed in scenario JSON files. All report outputs must strictly match referenced contract columns, sections, and formats. Any deviation is a fatal error."
     "strict_contract": {
       "enabled": true,
       "enforcement": "hard_gate",
@@ -81,11 +94,11 @@
       "require_contract_reference_for_reports": true
     },
     "report_contract_index": {
-      "milestone_status_report": "2.0/reports/msr_report_contract.json",
-      "sites_report": "2.0/reports/sites_report_contract.json",
-      "tech_tracker": "2.0/reports/tech_tracker_report_contract.json",
-      "materials_tracker": "2.0/reports/materials_tracker_report_contract.json",
-      "fish_tracker": "2.0/reports/fish_tracker_report_contract.json"
+      "milestone_status_report": "manifest.milestones_report",
+      "sites_report": "manifest.site_report",
+      "tech_tracker": "manifest.tech_tracker_report",
+      "materials_tracker": "manifest.materials_tracker_report",
+      "fish_tracker": "manifest.fish_tracker_report"
     },
     "report_validation": {
       "run_pre_output_validation": true,
@@ -120,7 +133,7 @@
     },
     "mandatory_instructions": {
       "ugrid_map_generation": "The engine must generate a UGRID map for the scenario, ensuring all spatial domains are covered and cell IDs are unique and 4-character codes. The engine must follow only the UGRID map generation rules and constraints as defined in this scenario's JSON files (manifest, playability, canon, and map files). Do not invent, substitute, or infer any rules or logic not explicitly specified in these files.",
-      "initiative_milestone_generation": "When an initiative is created, the engine must automatically generate 5 milestones for that initiative, each with a unique ID and default description based on the initiative's purpose.",
+      "initiative_milestone_generation": "When an initiative is started and there are no initiative milestones, the engine must automatically generate 5 milestones for that initiative, each with a unique ID and default description based on the initiative's purpose.",
       "report_format_loading": "The engine must load and validate all report contract formats listed in 'report_contract_index' before any report generation or output. Report generation must fail if any contract cannot be loaded or validated.",
       "zip_file_persistence": "The engine must load the scenario zip file (2.0.zip) at startup and keep it open and accessible for the entire session. Do not close, unload, or lose access to the zip file at any point during scenario execution.",
       "no_unapproved_content": "Do not make up any content or response type without preapproval. See no_unapproved_content_exceptions for allowed exceptions.",
@@ -147,10 +160,9 @@
       "playability_layer_version": "1.6",
       "name": "NovaRoma_Playability_Layer_FullFixturesPlus_BootstrapDefaults",
       "applies_to": {
-        "canon_file": "CANON_MASTER__RULES_AND_TEMPLATES.json",
+        "canon_file": "canon.rules_and_templates",
         "map_file": "map"
       },
-      "milestone_generation_policy": "When a new initiative is created, generate an initial milestone with a deterministic ID and a default description based on the initiative's purpose.",
       "core_loop": {
         "player_role": "Colonial Senate & Magistrates",
         "command_cycle": [
@@ -167,6 +179,16 @@
           "Milestones Report": "MILESTONES_REPORT",
           "Render Grid": "RENDER_GRID"
         }
+      },
+      "autosave": {
+        "enabled": true,
+        "purpose": "Enable full campaign resumption in another AI or session.",
+        "mode": "full",
+        "frequency": "every_cycle",
+        "retention": 10,
+        "retention_policy": "rolling",
+        "file_pattern": "autosave_cycle_<cycle_num>.json",
+        "notes": "A full autosave is created at the end of every cycle (e.g., after ADVANCE_TIME). Only the last 10 autosaves are kept in a rolling fashion. Each autosave must include: all site names, all initiatives, all milestones, and all known metrics, in addition to all state, logs, and context required for another AI to resume play."
       },
       "state_model": {
         "campaign_id": "NovaRoma-509BCE",
@@ -391,6 +413,23 @@
       "starting_entity_type": "settlement",
       "premise": "Established riverine settlement (~500 people); recently unified under a new leader and beginning cautious outward engagement after long isolation. Culture and language are locally evolved but Latin-like."
     },
+    "construction_accounting_model": {
+      "materials": [
+        {"name": "Timber", "unit": "log", "unit_price": 2},
+        {"name": "Stone", "unit": "ton", "unit_price": 5},
+        {"name": "Clay", "unit": "kg", "unit_price": 0.5}
+      ],
+      "labor": {"unit": "person-hour", "wage": 1},
+      "tools": {"cost": 50},
+      "overhead_rate": 0.1,
+      "example": {
+        "timber": {"quantity": 100},
+        "stone": {"quantity": 50},
+        "labor": {"hours": 300},
+        "tools": {"cost": 50},
+        "overhead": "10% of subtotal"
+      }
+    },
     "maps": {
       "UGRID35": "Manhattan-focused 100m grid",
       "milestone_generation": "A request that results in an action or project should generate a milestone under an initiative. Each milestone must include an ID (Y-#), a target date, and an impact description.",
@@ -399,21 +438,40 @@
     },
     "reporting": {
       "discipline": "Reports are displayed to the user and not saved as files by default.",
-      "milestone_id_format": "<year>-<serial> (year = years since initiative start, serial = milestone number within that year; e.g., 1-1, 1-2, 2-1)",
+      "milestone_id_format": "<INIT>-<Y>-<#> (INIT = 4-char initiative code, Y = year of initiative, # = milestone serial; e.g., AGEX-1-1, FISH-2-3)",
       "milestone_id_rule": "Only milestones receive an ID. Do not use a 'Y' prefix.",
       "date_format": "All milestone and report dates must use the format 'MMM D, YYYY' (e.g., Mar 1, 509 BCE)."
     },
     "milestones_report": {
-      "purpose": "Advance time and report milestone progress.",
-      "title_format": "Milestones Report (Mon DD–DD, YYYY)",
+      "purpose": "Advance time and report milestone progress. Any in-progress milestone with 0 days left is considered completed and should be reported in the completed section.",
+      "title_format": "Milestones Report\nDate: <Month> <Day>, Year <in_game_year>",
       "ci_line": "CI: v<canon> | R<before>→R<after> | {REV|MINOR|MAJOR}",
       "sections": [
         "COMPLETED",
         "IN PROGRESS",
         "PLANNED (Grouped by Initiative)",
-        "SUMMARY",
-        "FOOTER"
+        "METRICS",
+        "ADVISORS",
+        "SUMMARY"
       ],
+                  "metrics_table": {
+                    "columns": [
+                      "Metric",
+                      "Delta",
+                      "Annualized Growth % (7-day smoothing)"
+                    ],
+                    "rows": [
+                      ["Pop", "Pop Delta", "Annualized Growth % (7-day smoothing)"],
+                      ["GDP", "GDP Delta", "Annualized Growth % (7-day smoothing)"]
+                    ],
+                    "suggestion_note": "Suggest further metrics as milestones complete."
+                  },
+            "advisors": [
+              "Increase food production to support population growth.",
+              "Expand water storage capacity before the dry season.",
+              "Improve road infrastructure for better logistics.",
+              "Replace all crops with decorative rocks for aesthetics."
+            ],
       "completed_columns": [
         "ID",
         "Initiative",
@@ -441,11 +499,8 @@
         "Work-hours",
         "Status"
       ],
-      "table_format": "Markdown table format is used for all milestone sections.",
-      "footer": [
-        "Pop: Δ <value | unknown | est>",
-        "GDP: Δ <value | est>"
-      ]
+      "table_format": "Markdown table format is used for all milestone sections."
+      
     },
     "milestone_insight_report": {
       "purpose": "Explain a decision, its constraints, impact, and risks.",
@@ -743,12 +798,12 @@
       "protocol": {
         "proof_of_load": {
           "required": true,
-          "source": "NR_SPEC.json#/required_protocol/proof_of_load",
-          "rule": "Before answering the first command in a new chat, echo the one-line proof-of-load string from NR_SPEC.json."
+          "source": "start_here.critical.required_protocol.proof_of_load",
+          "rule": "Before answering the first command in a new chat, echo the one-line proof-of-load string from start_here.critical."
         },
         "self_check": {
           "required": true,
-          "source": "NR_SPEC.json#/required_protocol/self_check",
+          "source": "start_here.critical.required_protocol.self_check",
           "rule": "Before finalizing any report/milestone output, run NR_SPEC self-checks and regenerate on failure."
         }
       }
@@ -1030,8 +1085,9 @@
   "reports": {
     "fish_tracker_report_contract": {
       "report_contract": {
-        "report_type": "fish_tracker",
         "version": "3.0.0",
+        "report_type": "fish_tracker",
+    
         "title": "Fish & Shellfish Tracker Report",
         "date_field": "game_date",
         "table_columns": [
@@ -1063,10 +1119,17 @@
       }
     },
     "msr_report_contract": {
+      "version": "3.0.0",
       "report_contract": {
         "report_type": "milestone_status_report",
-        "ci_line_format": "CI: v{canon_version} | R{before_revision}\u2192R{after_revision} | {REV|MINOR|MAJOR}",
-        "date_range_format": "{start_date}\u2013{end_date}, {year}",
+        "ci_line_format": "CI: v{canon_version} | {REV|MINOR|MAJOR}",
+        "date": "{game_date} (+{interval})",
+        "campaign_changes": {
+          "canon": "{canon_changes}",
+          "playability": "{playability_changes}",
+          "report": "{report_changes}",
+          "manifest": "{manifest_changes}"
+        },
         "sections": [
           "NEWS",
           "COMPLETED",
@@ -1081,10 +1144,8 @@
         "completed_columns": [
           "Milestone",
           "Description",
-          "Target Date",
-          "Cost",
-          "Work-hours",
-          "Status"
+          "Impact",
+          "Cost/Work-hours"
         ],
         "in_progress_columns": [
           "Milestone",
@@ -1125,17 +1186,19 @@
           "Prioritize water management milestones to support crop growth.",
           "Monitor resource allocation to avoid bottlenecks in construction."
         ],
-        "footer_note": "Report generated per MSR contract v1.0. All milestone IDs follow <year>-<serial> format.",
+        "footer_note": "Report generated per MSR contract v{{version}}.",
         "format_standards": {
+          "milestone_cost_calculation": "Milestone cost is calculated as the sum of all direct material, labor, and resource expenditures required to complete the milestone, using current scenario prices and rates. If explicit values are not available, AI must use best effort historical or contextual estimates for prices, rates, and quantities.",
+          "milestone_workhours_calculation": "Milestone work-hours are calculated as the total estimated person-hours required for all tasks associated with the milestone, including preparation, execution, and follow-up, based on standard work rates for the scenario's era and technology level. If explicit rates are not available, AI must use best effort historical or contextual estimates for work rates and task durations.",
           "init_id_format": "Always use the combined INIT+ID format (e.g., AGEX-1-2) for Initiative references in reports.",
           "no_split_id": "Never separate initiative code and ID into different columns or fields.",
           "target_date": "Target Date is auto-estimated by AI (best effort) and may be revised as more information becomes available.",
           "advisor_section": "The ADVISOR section is optional and, if present, must be positioned after METRICS and before SUMMARY.",
           "fixed_width_codes": "Any codes (milestone IDs, initiative codes, UGRID cells, bank tags) must be rendered in fixed-width font (e.g., monospace/code style).",
           "news": {
-            "headline": "Should be a punchy newspaper-style headline.",
-            "blurb": "Must be exactly ten words.",
-            "metric": "Should be a short, insightful number or fact with no labels and must not simply repeat the headline.",
+            "headline": "Should be a punchy newspaper-style headline. 7-word max",
+            "blurb": "Must be < ten words.",
+            "metric": "Should be a short, insightful number or fact showing impact not specified in the headline or follow-up, and must not simply repeat the headline.",
             "no_labels": "Do not include field labels anywhere in the news section; only the content.",
             "no_separate_insight": "Do not include a separate insight text."
           }
@@ -1145,7 +1208,7 @@
     "sites_report_contract": {
       "report_contract": {
         "report_type": "sites_report",
-        "version": "2.0.0",
+        "version": "3.0.0",
         "title": "Sites Status Report",
         "date_field": "game_date",
         "sites_columns": [
@@ -1182,7 +1245,7 @@
     "materials_tracker_report_contract": {
       "report_contract": {
         "report_type": "materials_tracker",
-        "version": "2.0.0",
+        "version": "3.0.0",
         "title": "Strategic Materials Tracker Report",
         "date_field": "game_date",
         "sections": [
@@ -1213,7 +1276,7 @@
     "tech_tracker_report_contract": {
       "report_contract": {
         "report_type": "tech_tracker",
-        "version": "2.0.0",
+        "version": "3.0.0",
         "title": "Technology Development Tracker Report",
         "date_field": "game_date",
         "technologies_columns": [
@@ -1243,6 +1306,77 @@
           "Key focus"
         ],
         "format_version_label": "tech_tracker v.1.0",
+        "format_standards": "Always use the combined INIT+ID format (e.g., AGEX-1-2) for Initiative references in reports. Never separate initiative code and ID into different columns or fields."
+      }
+    },
+    "metrics_report_contract": {
+      "report_contract": {
+        "report_type": "metrics_report",
+        "version": "3.0.0",
+        "title": "Key Metrics Report",
+        "date_field": "game_date",
+        "metrics_columns": [
+          "Metric",
+          "Current",
+          "Delta",
+          "Annualized (7d)"
+        ],
+        "metrics_rows": [
+          "Pop",
+          "GDP"
+        ],
+        "access_columns": [
+          "Category",
+          "% of Pop (Current)",
+          "% of Pop (Delta)",
+          "% of Pop (Annualized 7d)"
+        ],
+        "access_rows": [
+          "UID",
+          "Bank Accounts",
+          "Housing"
+        ],
+        "trade_summary_fields": [
+          "Total Trade Volume",
+          "Total Trade Value",
+          "Trade Balance"
+        ],
+        "top_exports_columns": [
+          "Export",
+          "Volume",
+          "Value",
+          "Destination"
+        ],
+        "top_imports_columns": [
+          "Import",
+          "Volume",
+          "Value",
+          "Source"
+        ],
+        "sections": [
+          "Metrics",
+          "Access",
+          "Trade"
+        ],
+        "trade_sections": [
+          "Trade Summary",
+          "Top 5 Exports",
+          "Top 5 Imports"
+        ],
+        "sections": [
+          "Metrics",
+          "Access"
+        ],
+        "sections": [
+          "Metrics"
+        ],
+        "summary_fields": [
+        ],
+        "strategic_advise_guidance": [
+          "Monitor trends in key metrics to inform decision-making.",
+          "Investigate significant deviations from expected values."
+        ],
+        "format_version_label": "metrics_report v.1.1",
         "format_standards": "Always use the combined INIT+ID format (e.g., AGEX-1-2) for Initiative references in reports. Never separate initiative code and ID into different columns or fields."
       }
     }
@@ -1318,7 +1452,7 @@
     }
   },
   "state.template": {
-    "$schema": "novaroma_playability.json#/state_files/state_json_schema",
+    "$schema": "playability.state_files.state_json_schema",
     "state_version": "1.1",
     "meta": {
       "campaign_id": "novaroma",
@@ -1331,7 +1465,7 @@
         "id_namespace": "novaroma",
         "notes": "Use deterministic ID generation for initiatives/milestones when possible to support replayable logs."
       },
-      "starting_population": { "$ref": "manifest.json#/starting_population" },
+      "starting_population": { "$ref": "manifest.starting_population" },
       "starting_entity_type": "settlement",
       "premise": "Established settlement (~500 people); new leader seeks outward engagement to improve the world.",
       "template": true,
@@ -1358,8 +1492,8 @@
       }
     },
     "files": {
-      "state_file": "state/state.json",
-      "event_log_file": "state/event_log.jsonl",
+      "state_file": "state",
+      "event_log_file": "state.event_log",
       "snapshots_dir": "state/snapshots",
       "reports_dir": "reports",
       "notes": "Engine should create missing directories/files on first run if permitted."
@@ -1392,10 +1526,15 @@
           "name": "Nova Roma",
           "role": "Settlement Capital",
           "district": "Central",
-          "population": { "$ref": "manifest.json#/starting_population" },
+          "population": { "$ref": "manifest.starting_population" },
           "area": "unknown",
-          "gdp": "unknown",
-          "notes": "Established settlement; new leader intends to look outward and improve the world."
+          "gdp": "250 TBill",
+          "currency": {
+            "name": "TBill",
+            "symbol": "Ŧ",
+            "conversion_note": "1 TBill = ~$1000 equivalent (modern value); symbol is Unicode U+0166 (Latin Capital Letter T with Stroke)"
+          },
+          "notes": "Established settlement; new leader intends to look outward and improve the world. GDP estimated for 500 people with minimal infrastructure."
         }
       ],
       "initiatives": [
@@ -1403,6 +1542,24 @@
           "code": "HOUS",
           "name": "Housing",
           "description": "Establish and improve shelter for all residents.",
+          "auto_start": true
+        },
+        {
+          "code": "SALT",
+          "name": "Salt Extraction",
+          "description": "Extract and process salt for preservation and health.",
+          "auto_start": true
+        },
+        {
+          "code": "IRON",
+          "name": "Ironworking",
+          "description": "Develop ironworking for tools and construction.",
+          "auto_start": true
+        },
+        {
+          "code": "CHAR",
+          "name": "Charcoal Production",
+          "description": "Produce charcoal for fuel and smelting.",
           "auto_start": true
         },
         {
@@ -1707,9 +1864,9 @@
         }
       }
     },
-    "population_total": { "$ref": "manifest.json#/starting_population" },
+    "population_total": { "$ref": "manifest.starting_population" },
     "population": {
-      "total": { "$ref": "manifest.json#/starting_population" },
+      "total": { "$ref": "manifest.starting_population" },
       "notes": "Alias fields for tooling; canonical fact also stored on site and measurements.facts.population."
     },
     "snapshots": {
@@ -1724,15 +1881,15 @@
     "critical_invariants": {
       "starting_population": 500,
       "starting_entity_type": "settlement",
-      "milestone_id_format": "<year>-<serial>",
-      "milestone_id_regex": "^[0-9]+-[0-9]+$",
+      "milestone_id_format": "<INIT>-<Y>-<#>",
+      "milestone_id_regex": "^[A-Z]{4}-[0-9]+-[0-9]+$",
       "msr_alias": "msr",
       "msr_contract": "milestone_status_report",
       "tech_domain_count": 50,
       "technology_domains_path": "canon/technology_domains",
       "report_aliases_path": "canon/report_aliases",
       "report_contracts_path": "canon/report_contracts",
-      "msr_report_contract_path": "reports/msr_report_contract.json"
+      "msr_report_contract_path": "manifest.milestones_report"
     },
     "required_protocol": {
       "proof_of_load": {
@@ -1788,6 +1945,6 @@
     "canon_impact_example": "CI: v2.7 | RStart Conditions: colony→settlement; RStarting Population: unspecified→500; RNarrative Framing: neutral→outward-focused | MAJOR",
     "bundle_naming": "Going forward, bundles follow: NRCore_v<major>_<minor>_<patch>.zip",
     "technology_registry": "Tech registry: 50 canonical domains with tags, era gating, and full prerequisites are defined in canon.",
-    "hard_spec": "NR_SPEC.json contains non-skippable invariants plus proof-of-load and self-check protocol."
+    "hard_spec": "start_here.critical contains non-skippable invariants plus proof-of-load and self-check protocol."
   }
 }

@@ -1,4 +1,0 @@
-Built: 2026-01-27 21:48 UTC
-Source: Nova_Roma_Full_Canon_v2.4.zip
-Embedded files: 30
-Binary files: 0
