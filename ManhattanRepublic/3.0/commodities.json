@@ -1,0 +1,505 @@
+{
+  "logistics": {
+    "per_mile_costs_modern": {
+        "diesel_truck": { "rate": "1.00 mREU/ton-mile (baseline: long haul, highway)", "transfer_mREU": 190 },
+        "container_ship": { "rate": "0.125 mREU/ton-mile (intercontinental, bulk)", "transfer_mREU": 100 },
+        "bulk_ore_ship": { "rate": "0.125 mREU/ton-mile (bulk ore carrier)", "transfer_mREU": 100 },
+        "air_freight": { "rate": "8.0 mREU/ton-mile (international, express)", "transfer_mREU": 1200 },
+        "freight_train": { "rate": "0.25 mREU/ton-mile (mainline, bulk)", "transfer_mREU": 400 },
+        "pipeline": { "rate": "0.02 mREU/ton-mile (liquids, continuous)", "transfer_mREU": 0.4 },
+        "urban_van": { "rate": "2.0 mREU/ton-mile (last mile, city)", "transfer_mREU": 200 }
+    },
+    "per_mile_costs_industrial": {
+        "rail_freight": { "rate": "1.00 iREU/ton-mile (baseline: mainline, bulk)", "transfer_iREU": 80 },
+        "canal_barge": { "rate": "1.3 iREU/ton-mile (engine-powered, inland canals)", "transfer_iREU": 45 },
+        "steam_truck": { "rate": "6.0 iREU/ton-mile (early road freight)", "transfer_iREU": 20 },
+        "horse_truck": { "rate": "50.0 iREU/ton-mile (urban, short haul)", "transfer_iREU": 10 },
+        "coastal_steamer": { "rate": "0.4 iREU/ton-mile (coastal, bulk)", "transfer_iREU": 140 },
+        "river_steamer": { "rate": "0.5 iREU/ton-mile (navigable rivers, bulk)", "transfer_iREU": 140 },
+        "sailing_ship": { "rate": "0.3 iREU/ton-mile (ocean/coastal, wind-powered)", "transfer_iREU": 140 }
+    },
+    "per_mile_costs": {
+        "ox_cart": { "rate": "1.00 REU/ton-mile (baseline: rural roads, moderate loads)", "transfer_REU": 30 },
+        "horse_cart": { "rate": "1.5 REU/ton-mile (faster, lighter loads)", "transfer_REU": 30 },
+        "mule_pack": { "rate": "2.0 REU/ton-mile (mountainous or rough terrain)", "transfer_REU": 20 },
+        "human_porter": { "rate": "5.0 REU/ton-mile (short distances, difficult terrain)", "transfer_REU": 10 },
+        "river_barge": { "rate": "0.03 REU/ton-mile (navigable rivers, bulk goods)", "transfer_REU": 150 },
+        "sea_coaster": { "rate": "0.001 REU/ton-mile (coastal shipping, large bulk)", "transfer_REU": 200 },
+        "camel_caravan": { "rate": "1.8 REU/ton-mile (arid/desert routes)", "transfer_REU": 30 }
+    },
+    "baseline_distance": "15 miles (Coastal/Regional to District) is the standard assumed transport distance for cost calculations.",
+    "unit_basis": "Logistics costs are calculated per metric ton (1,000 kg) unless otherwise specified.",
+    "modes": "Primary transport modes include cart, barge, and pack animal. Mode selection depends on terrain and infrastructure.",
+    "cost_components": "Logistics costs may include labor, animal feed, vehicle maintenance, tolls, and handling fees.",
+    "exclusions": "Logistics costs do not include taxes, tariffs, or extraordinary security costs unless noted.",
+    "markup": "A standard markup may be applied to logistics costs for market pricing, typically 10-20%.",
+    "fuel_default": "Charcoal",
+    "unit_conversions": {
+      "REU": "1 REU = 0.01 mark (classical)",
+      "iREU": "1 iREU = 0.001 mark (industrial)",
+      "mREU": "1 mREU = 0.10 dollar (modern)"
+    }
+  },
+  "assumptions": {
+    "currency": "All costs are denominated in marks (M), the scenario's base currency.",
+    "unit_basis": "Unless otherwise noted, costs and quantities are per metric ton (1,000 kg) of output.",
+    "labor_costs": "All 'direct_labor' and 'processing_labor' values represent the total labor cost in marks for producing one unit (e.g., 1 ton) of the commodity, including wages and time required.",
+    "MJ_per_unit": "'MJ_per_unit' values are in megajoules (MJ) required per unit output. To convert to marks, multiply by the cost per MJ of the fuel used (e.g., coal, wood, etc.).",
+    "tools_maintenance": "'tools_maintenance', 'kiln_maintenance', and similar fields are in marks per unit output, representing depreciation and upkeep of equipment.",
+    "input_costs": "Input quantities are in tons unless otherwise specified. Input costs are calculated by multiplying input quantity by the per-ton cost of the input material.",
+    "markup": "Market prices may include a markup over direct costs, typically 20% unless otherwise specified.",
+    "scope": "This file models direct production costs and does not include logistics, taxes, or externalities unless noted."
+  },
+  "raw_materials": {
+    "barley": {
+      "commodity": "Gypsum (Gypsus / 석고 / Yeso)",
+      "cost_breakdown": { "direct_labor": 0.5, "tools_maintenance": 0.8, "MJ_per_unit": 0.0, "overhead": 0.2 }
+    },
+    "clay": {
+      "commodity": "Halite (Halita / 암염 / Halita)",
+      "cost_breakdown": { "direct_labor": 0.8, "tools_maintenance": 2.0, "MJ_per_unit": 0.0, "overhead": 0.3 }
+    },
+    "coal": {
+      "commodity": "Hemp (Cannabis sativa / 대마 / Cáñamo)",
+      "cost_breakdown": { "direct_labor": 0.6, "tools_maintenance": 0.9, "MJ_per_unit": 0.0, "overhead": 0.4 },
+      "notes": "Types: anthracite/bituminous/lignite; values are extraction-only."
+    },
+    "grapes": {
+      "commodity": "Lead Ore (Plumbum / 납광석 / Mineral de plomo)",
+      "cost_breakdown": { "direct_labor": 0.7, "tools_maintenance": 1.5, "MJ_per_unit": 0.0, "overhead": 1.0 }
+    },
+    "gypsum": {
+      "commodity": "Limestone (Calx Petrosa / 석회암 / Piedra caliza)",
+      "cost_breakdown": { "direct_labor": 0.5, "tools_maintenance": 1.0, "MJ_per_unit": 0.0, "overhead": 0.15 }
+    },
+    "halite": {
+      "commodity": "Olives (Olea / 올리브 / Aceitunas)",
+      "cost_breakdown": { "direct_labor": 0.5, "tools_maintenance": 0.8, "MJ_per_unit": 0.0, "overhead": 0.45 }
+    },
+    "hemp": {
+      "commodity": "Sea Salt (Sal marina / 천일염 / Sal marina)",
+      "cost_breakdown": { "direct_labor": 0.6, "tools_maintenance": 1.5, "MJ_per_unit": 0.0, "overhead": 0.22 },
+      "notes": "Produced by solar evaporation; extraction-only costs."
+    },
+    "hides": {
+      "commodity": "Hides (Pellicula / 가죽원피 / Cuero crudo)",
+      "cost_breakdown": { "direct_labor": 0.7, "tools_maintenance": 1.2, "MJ_per_unit": 0.0, "overhead": 1.0 }
+    },
+    "honey_raw": {
+      "commodity": "Honey (Raw / 꿀 원물 / Miel cruda)",
+      "cost_breakdown": { "direct_labor": 0.4, "tools_maintenance": 0.5, "MJ_per_unit": 0.0, "overhead": 0.2 }
+    },
+    "iron_ore": {
+      "commodity": "Iron Ore (Ferrum / 철광석 / Mineral de hierro)",
+      "grades": { "level_1_hematite": { "purity": "50-70% Fe", "smelting_efficiency": "High" }, "level_2_limonite": { "purity": "30-50% Fe" } },
+      "cost_breakdown": { "direct_labor": 0.7, "tools_maintenance": 2.0, "MJ_per_unit": 0.0, "overhead": 0.2 }
+    },
+    "lead_ore": {
+      "commodity": "Sulfur (Sulphur / 황 / Azufre)",
+      "cost_breakdown": { "direct_labor": 0.6, "tools_maintenance": 1.0, "MJ_per_unit": 0.0, "overhead": 1.0 }
+    },
+    "limestone": {
+      "commodity": "Pitch/Tar (Pix / 역청 / Alquitrán)",
+      "cost_breakdown": { "direct_labor": 0.6, "tools_maintenance": 1.0, "MJ_per_unit": 0.0, "overhead": 0.5 }
+    },
+    "olives": {
+      "commodity": "Tin Ore (Stannum / 주석광석 / Mineral de estaño)",
+      "cost_breakdown": { "direct_labor": 0.7, "tools_maintenance": 1.75, "MJ_per_unit": 0.0, "overhead": 1.0 }
+    },
+    "salt": {
+      "commodity": "Wheat (Triticum / 밀 / Trigo)",
+      "cost_breakdown": { "direct_labor": 0.5, "tools_maintenance": 0.9, "MJ_per_unit": 0.0, "overhead": 0.8 },
+      "notes": "Produced by solar evaporation; extraction-only costs."
+    },
+    "sand": {
+      "commodity": "Sand (Arena / 모래 / Arena)",
+      "cost_breakdown": { "direct_labor": 3.0, "tools_maintenance": 0.5, "MJ_per_unit": 0.0, "overhead": 0.1 }
+    },
+    "shells": {
+      "commodity": "Shells (Mappa Conchae / 조개껍데기 / Conchas)",
+      "cost_breakdown": { "direct_labor": 4.0, "tools_maintenance": 0.5, "MJ_per_unit": 0.0, "overhead": 0.2 }
+    },
+    "stone": {
+      "commodity": "Building Stone (Lapis / 석재 / Piedra de construcción)",
+      "cost_breakdown": { "direct_labor": 7.0, "tools_maintenance": 2.0, "MJ_per_unit": 0.0, "overhead": 0.2 }
+    },
+    "sulfur": {
+      "commodity": "Sulfur (Sulphur / 황 / Azufre)",
+      "cost_breakdown": { "direct_labor": 6.0, "tools_maintenance": 1.0, "MJ_per_unit": 0.0, "overhead": 1.0 }
+    },
+    "pitch_tar": {
+      "commodity": "Pitch/Tar (Pix / 역청 / Alquitrán)",
+      "cost_breakdown": { "direct_labor": 5.5, "tools_maintenance": 1.0, "MJ_per_unit": 0.0, "overhead": 0.5 }
+    },
+    "tin_ore": {
+      "commodity": "Tin Ore (Stannum / 주석광석 / Mineral de estaño)",
+      "cost_breakdown": { "direct_labor": 6.5, "tools_maintenance": 1.75, "MJ_per_unit": 0.0, "overhead": 1.0 }
+    },
+    "wheat": {
+      "commodity": "Wheat (Triticum / 밀 / Trigo)",
+      "cost_breakdown": { "direct_labor": 4.5, "tools_maintenance": 0.9, "MJ_per_unit": 0.0, "overhead": 0.8 }
+    },
+    "wood": {
+      "commodity": "Wood (Lignum / 목재 / Madera)",
+      "cost_breakdown": { "direct_labor": 1.0, "tools_maintenance": 0.2, "MJ_per_unit": 0.0, "overhead": 0.25 },
+      "notes": "Estimates for felling, cutting, and delivering 1 ton of wood."
+    },
+    "wool": {
+      "commodity": "Wool (Villus / 양모 / Lana)",
+      "cost_breakdown": { "direct_labor": 6.0, "tools_maintenance": 0.7, "MJ_per_unit": 0.0, "overhead": 0.25 }
+    }
+  },
+  "processed_goods": {
+
+        "beeswax_honey": { "commodity": "Beeswax (Cera Apium / 밀랍 / Cera de abejas)",
+          "unit": "1 ton", "inputs": { "honey_clarified": 2.0 }, 
+          "cost_breakdown": { "processing_labor": 5.0, "extraction_maintenance": 1.0, "MJ_per_unit": 50.0 }, 
+          "notes": "Extracted from clarified honey." },
+        "beer_barley": { "commodity": "Beer (Cerevisia / 맥주 / Cerveza)",
+          "unit": "1 ton", "inputs": { "wort_barley": 1.1 }, 
+          "cost_breakdown": { "processing_labor": 5.0, "fermentation_vat_maintenance": 1.0, "MJ_per_unit": 80.0 }, 
+          "notes": "Ancient-style beer." },
+        "bread_wheat": { "commodity": "Bread (Panis / 빵 / Pan)",
+          "unit": "1 ton", "inputs": { "flour_wheat": 1.2, "water": 0.5 }, 
+          "cost_breakdown": { "processing_labor": 4.0, "oven_maintenance": 1.0, "MJ_per_unit": 200.0 }, 
+          "notes": "Leavened or flat bread." },
+        "candle_beeswax": { "commodity": "Candle (Beeswax) (Candela Cera Apium / 밀랍초 / Vela de cera)",
+          "unit": "100 pieces (~10kg)", "inputs": { "beeswax_honey": 0.01 }, 
+          "cost_breakdown": { "processing_labor": 1.2, "molding_maintenance": 0.2, "MJ_per_unit": 5.0 }, 
+          "notes": "Simple molded beeswax candles." },
+        "candle_tallow": { "commodity": "Candle (Tallow) (Candela Sevum / 수지초 / Vela de sebo)",
+          "unit": "100 pieces (~10kg)", "inputs": { "tallow_fat": 0.01 }, 
+          "cost_breakdown": { "processing_labor": 1.0, "molding_maintenance": 0.2, "MJ_per_unit": 5.0 }, 
+          "notes": "Simple molded tallow candles." },
+        "cloth_wool": { "commodity": "Cloth (Wool) (Pannus Villus / 양모직 / Paño de lana)",
+          "unit": "1 ton", "inputs": { "yarn_wool": 1.1 }, 
+          "cost_breakdown": { "processing_labor": 6.0, "loom_maintenance": 1.5, "MJ_per_unit": 100.0 }, 
+          "notes": "Woven wool cloth." },
+        "coke_coal": { "commodity": "Coke (Carbo Cocus / 코크스 / Coque)",
+          "unit": "1 ton", "inputs": { "coal": 1.5 }, 
+          "cost_breakdown": { "processing_labor": 5.0, "kiln_maintenance": 2.0, "MJ_per_unit": 2500.0 }, 
+          "notes": "Produced from bituminous coal in a coke oven. Used for smelting and metallurgy." },
+        "glassware_simple": { "commodity": "Glassware (Simple) (Vitrum Vas / 단순유리기 / Vidrio sencillo)",
+          "unit": "1 ton", "inputs": { "glass_ingot_sand": 1.0 }, 
+          "cost_breakdown": { "processing_labor": 6.0, "shaping_maintenance": 1.0, "MJ_per_unit": 500.0 }, 
+          "notes": "Blown or molded simple glassware." },
+        "ink_soot": { "commodity": "Ink (Atramentum / 먹 / Tinta)",
+          "unit": "100 liters", "inputs": { "charcoal_wood": 0.01, "water": 0.05 }, 
+          "cost_breakdown": { "processing_labor": 2.0, "mixing_maintenance": 0.2, "MJ_per_unit": 10.0 }, 
+          "notes": "Soot-based ink." },
+        "paper_hemp": { "commodity": "Paper (Hemp) (Charta Cannabis / 삼지 / Papel de cáñamo)",
+          "unit": "1 ton", "inputs": { "raw_material": "hemp", "raw_input_tons_per_output": 2.0 }, 
+          "cost_breakdown": { "processing_labor": 5.0, "mill_maintenance": 2.0, "MJ_per_unit": 300.0 }, 
+          "notes": "Hemp-based paper, ancient process." },
+        "paper_papyrus": { "commodity": "Paper (Papyrus) (Papyrus / 파피루스 / Papiro)",
+          "unit": "1 ton", "inputs": { "raw_material": "reeds", "raw_input_tons_per_output": 2.5 }, 
+          "cost_breakdown": { "processing_labor": 6.0, "press_maintenance": 1.0, "MJ_per_unit": 100.0 }, 
+          "notes": "Papyrus sheets from reeds." },
+        "parchment_hide": { "commodity": "Parchment (Pergamena / 양피지 / Pergamino)",
+          "unit": "1 ton", "inputs": { "raw_material": "hides", "raw_input_tons_per_output": 1.5 }, 
+          "cost_breakdown": { "processing_labor": 8.0, "scraping_maintenance": 1.5, "MJ_per_unit": 80.0 }, 
+          "notes": "Animal skin parchment." },
+        "soap_oliveoil": { "commodity": "Soap (Olive Oil) (Sapo Oleum Olivae / 올리브비누 / Jabón de aceite de oliva)",
+          "unit": "1 ton", "inputs": { "oil_olive": 0.8, "lime_limestone": 0.2 }, 
+          "cost_breakdown": { "processing_labor": 6.0, "boiling_maintenance": 1.0, "MJ_per_unit": 200.0 }, 
+          "notes": "Ancient lye soap from olive oil and lime." },
+        "tallow_fat": { "commodity": "Tallow (Sevum / 수지 / Sebo)",
+          "unit": "1 ton", "inputs": { "raw_material": "fresh_meat", "raw_input_tons_per_output": 1.5 }, 
+          "cost_breakdown": { "processing_labor": 4.0, "rendering_maintenance": 1.0, "MJ_per_unit": 80.0 }, 
+          "notes": "Rendered animal fat." },
+        "tool_bronze": { "commodity": "Tool (Bronze) (Instrumentum Aes / 청동도구 / Herramienta de bronce)",
+          "unit": "1 ton", "inputs": { "ingot_bronze": 1.0 }, 
+          "cost_breakdown": { "processing_labor": 7.0, "toolshop_maintenance": 1.5, "MJ_per_unit": 200.0 }, 
+          "notes": "Forged or cast bronze tools." },
+        "tool_iron": { "commodity": "Tool (Iron) (Instrumentum Ferrum / 철도구 / Herramienta de hierro)",
+          "unit": "1 ton", "inputs": { "bar_iron": 1.0 }, 
+          "cost_breakdown": { "processing_labor": 7.0, "toolshop_maintenance": 1.5, "MJ_per_unit": 200.0 }, 
+          "notes": "Forged or cast iron tools." },
+        "wire_copper": { "commodity": "Wire (Copper) (Filum Cupri / 동선 / Alambre de cobre)",
+          "unit": "1 ton", "inputs": { "ingot_copper": 1.02 }, 
+          "cost_breakdown": { "processing_labor": 5.0, "drawing_maintenance": 1.0, "MJ_per_unit": 150.0 }, 
+          "notes": "Drawn copper wire." },
+      "wine_grape": { "commodity": "Wine (Vinum / 포도주 / Vino)",
+        "unit": "1 ton", "inputs": { "raw_material": "grapes", "raw_input_tons_per_output": 1.5 }, 
+        "cost_breakdown": { "processing_labor": 5.0, "fermentation_vat_maintenance": 1.0, "MJ_per_unit": 50.0 } },
+      "glass_ingot_sand": { "commodity": "Glass Ingot (Vitrum / 유리괴 / Lingote de vidrio)",
+        "unit": "1 ton", "inputs": { "raw_material": "sand", "raw_input_tons_per_output": 1.8 }, 
+        "cost_breakdown": { "processing_labor": 4.0, "furnace_maintenance": 2.5, "MJ_per_unit": 5000.0 } },
+      "meat_cured": { "commodity": "Cured Meat (Carnis saltata / 염장육 / Carne curada)",
+        "unit": "1 ton", "inputs": { "raw_material": "fresh_meat", "raw_input_tons_per_output": 1.2 }, 
+        "cost_breakdown": { "processing_labor": 5.5, "curing_maintenance": 1.0, "MJ_per_unit": 100.0 } },
+      "tile_clay": { "commodity": "Tiles (Tegulae / 기와/타일 / Tejas)",
+        "unit": "1 ton", "inputs": { "raw_material": "clay", "raw_input_tons_per_output": 1.6 }, 
+        "cost_breakdown": { "processing_labor": 4.0, "kiln_maintenance": 2.0, "MJ_per_unit": 1200.0 } },
+      "ingot_brass": { "commodity": "Brass Ingot (Aes aurichalcum / 황동괴 / Lingote de latón)",
+        "unit": "1 ton", "inputs": { "copper_ore": 0.7, "zinc_ore": 0.3 }, 
+        "cost_breakdown": { "processing_labor": 7.0, "smelting_consumables": 4.5, "MJ_per_unit": 300000.0 } },
+      "ingot_bronze": { "commodity": "Bronze Ingot (Aes / 청동괴 / Lingote de bronce)",
+        "unit": "1 ton", "inputs": { "copper_ore": 0.9, "tin_ore": 0.1 }, 
+        "cost_breakdown": { "processing_labor": 7.0, "smelting_consumables": 4.5, "MJ_per_unit": 300000.0 } },
+      "cloth_linen": { "commodity": "Linen (Linoleum / 리넨 / Lino)",
+        "unit": "1 ton", "inputs": { "raw_material": "flax", "raw_input_tons_per_output": 1.4 }, 
+        "cost_breakdown": { "processing_labor": 6.0, "loom_maintenance": 1.5, "MJ_per_unit": 100.0 } },
+      "flour_wheat": { "commodity": "Flour (Farina / 밀가루 / Harina)",
+        "unit": "1 ton", "inputs": { "raw_material": "wheat", "raw_input_tons_per_output": 1.25 }, 
+        "cost_breakdown": { "processing_labor": 3.5, "mill_maintenance": 1.2, "MJ_per_unit": 80.0 } },
+      "leather_hide": { "commodity": "Leather (Corium / 가죽 / Cuero)",
+        "unit": "1 ton", "inputs": { "raw_material": "hides", "raw_input_tons_per_output": 1.3 }, 
+        "cost_breakdown": { "processing_labor": 8.0, "tannery_maintenance": 2.0, "MJ_per_unit": 150.0 } },
+      "yarn_wool": { "commodity": "Wool Yarn (Fila lana / 양모실 / Hilo de lana)",
+        "unit": "1 ton", "inputs": { "raw_material": "wool", "raw_input_tons_per_output": 1.2 }, 
+        "cost_breakdown": { "processing_labor": 5.0, "spinning_maintenance": 1.0, "MJ_per_unit": 60.0 } },
+      "salt_refined": { "commodity": "Salt (Refined / 정제염 / Sal refinada)",
+        "unit": "1 ton", "inputs": { "raw_material": "salt", "raw_input_tons_per_output": 1.0 }, 
+        "cost_breakdown": { "processing_labor": 2.0, "refinery_maintenance": 0.5, "MJ_per_unit": 20.0 } },
+      "pipe_sheet_lead": { "commodity": "Lead Pipes/Sheets (Plumbum lamina / 납관/판 / Tuberías/chapas de plomo)",
+        "unit": "1 ton", "inputs": { "raw_material": "lead_ore", "raw_input_tons_per_output": 1.5 }, 
+        "cost_breakdown": { "processing_labor": 6.5, "rolling_maintenance": 2.5, "MJ_per_unit": 200000.0 } },
+      "paper_wood": { "commodity": "Paper (Charta / 종이 / Papel)",
+        "unit": "1 ton", "inputs": { "raw_material": "wood", "raw_input_tons_per_output": 2.0 }, 
+        "cost_breakdown": { "processing_labor": 5.0, "mill_maintenance": 2.0, "MJ_per_unit": 300.0 } },
+      "pottery_clay": { "commodity": "Pottery (Figulus / 도자기 / Cerámica)",
+        "unit": "1 ton", "inputs": { "raw_material": "clay", "raw_input_tons_per_output": 1.4 }, 
+        "cost_breakdown": { "processing_labor": 4.5, "kiln_maintenance": 1.8, "MJ_per_unit": 900.0 } },
+      "dye_flax": { "commodity": "Dye (Tintura / 염료 / Tinte)",
+        "unit": "1 ton", "inputs": { "raw_material": "flax", "raw_input_tons_per_output": 2.0 }, 
+        "cost_breakdown": { "processing_labor": 5.0, "extraction_maintenance": 1.0, "MJ_per_unit": 120.0 } },
+      "solder_tin": { "commodity": "Solder (Stannum alloy / 땜납 / Estaño para soldar)",
+        "unit": "1 ton", "inputs": { "raw_material": "tin_ore", "raw_input_tons_per_output": 3.2 }, 
+        "cost_breakdown": { "processing_labor": 6.0, "smelting_consumables": 3.5, "MJ_per_unit": 120000.0 } },
+      "glue_hide": { "commodity": "Glue (Adhesum / 접착제 / Pegamento)",
+        "unit": "1 ton", "inputs": { "raw_material": "hides", "raw_input_tons_per_output": 2.5 }, 
+        "cost_breakdown": { "processing_labor": 4.0, "boiling_maintenance": 1.0, "MJ_per_unit": 80.0 } },
+      "vinegar_wine": { "commodity": "Vinegar (Acetum / 식초 / Vinagre)",
+        "unit": "1 ton", "inputs": { "raw_material": "wine_grape", "raw_input_tons_per_output": 1.0 }, 
+        "cost_breakdown": { "processing_labor": 2.0, "ferment_maintenance": 0.5, "MJ_per_unit": 10.0 } },
+      "wort_barley": { "commodity": "Malt/Wort (Maltum / 맥아/워트 / Malta/Mostiillo)",
+        "unit": "1 ton", "inputs": { "raw_material": "barley", "raw_input_tons_per_output": 1.2 }, 
+        "cost_breakdown": { "processing_labor": 4.0, "malt_house_maintenance": 1.0, "MJ_per_unit": 60.0 } },
+      "rope_hemp": { "commodity": "Rope (Funis / 밧줄 / Cuerda)",
+        "unit": "1 ton", "inputs": { "raw_material": "hemp", "raw_input_tons_per_output": 1.4 }, 
+        "cost_breakdown": { "processing_labor": 5.0, "twisting_maintenance": 1.0, "MJ_per_unit": 50.0 } },
+      "honey_clarified": { "commodity": "Honey (Clarified / 정제꿀 / Miel clarificada)",
+        "unit": "1 ton", "inputs": { "raw_material": "honey_raw", "raw_input_tons_per_output": 1.0 }, 
+        "cost_breakdown": { "processing_labor": 3.0, "filtration_maintenance": 0.5, "MJ_per_unit": 20.0 } },
+      "oil_olive": { "commodity": "Olive Oil (Oleum Olivae / 올리브유 / Aceite de oliva)",
+        "unit": "1 ton", "inputs": { "raw_material": "olives", "raw_input_tons_per_output": 5.0 }, 
+        "cost_breakdown": { "processing_labor": 4.5, "press_maintenance": 1.0, "MJ_per_unit": 200.0 } },
+      "timber_wood": { "commodity": "Timber (Ligna Processa / 제재목 / Madera aserrada)",
+        "unit": "1 cubic meter", "inputs": { "raw_material": "wood", "raw_input_tons_per_output": 1.428571 }, 
+        "cost_breakdown": { "processing_labor": 8.0, "sawmill_maintenance": 2.5, "MJ_per_unit": 150.0 } },
+      "bar_iron": { "commodity": "Iron Bar (Ferrum Barra / 철괴 / Barra de hierro)",
+        "unit": "1 ton", "inputs": { "raw_material": "iron_ore", "raw_input_tons_per_output": 2.0 }, 
+        "cost_breakdown": { "processing_labor": 6.0, "smelting_consumables": 4.0, "MJ_per_unit": 232000.0 } },
+      "ingot_copper": { "commodity": "Copper Ingot (Cuprum lateres / 구리괴 / Lingote de cobre)",
+        "unit": "1 ton", "inputs": { "raw_material": "copper_ore", "raw_input_tons_per_output": 2.5 }, 
+        "cost_breakdown": { "processing_labor": 6.5, "smelting_consumables": 5.0, "MJ_per_unit": 362500.0 } },
+      "charcoal_wood": { "commodity": "Charcoal (Carbo Processus / 목탄 / Carbón)",
+        "unit": "1 ton", "inputs": { "raw_material": "wood", "raw_input_tons_per_output": 3.333333 }, 
+        "cost_breakdown": { "processing_labor": 0.3, "kiln_maintenance": 0.3, "MJ_per_unit": 2000.0 } },
+      "ingot_tin": { "commodity": "Tin Ingot (Stannum lateres / 주석괴 / Lingote de estaño)",
+        "unit": "1 ton", "inputs": { "raw_material": "tin_ore", "raw_input_tons_per_output": 3.0 }, 
+        "cost_breakdown": { "processing_labor": 7.0, "smelting_consumables": 5.5, "MJ_per_unit": 522000.0 } },
+      "lime_limestone": { "commodity": "Lime (Calx / 석회 / Cal)",
+        "unit": "1 ton", "inputs": { "raw_material": "limestone", "raw_input_tons_per_output": 1.79 }, 
+        "cost_breakdown": { "processing_labor": 1.2, "kiln_maintenance": 0.3, "MJ_per_unit": 3400.0 } },
+      "cement_modern": { "commodity": "Cement (Caementum / 시멘트 / Cemento)",
+        "unit": "1 ton", "inputs": { "limestone": 1.3, "clay": 0.3, "gypsum": 0.05 }, 
+        "cost_breakdown": { "processing_labor": 5.0, "kiln_maintenance": 2.0, "MJ_per_unit": 4000.0 }, 
+        "notes": "Portland cement; rotary kiln process." },
+      "iron_pig": { "commodity": "Pig Iron (Ferrum crudum / 선철 / Arrabio)",
+        "unit": "1 ton", "inputs": { "iron_ore": 1.6, "coal": 0.7, "limestone": 0.3 }, 
+        "cost_breakdown": { "processing_labor": 7.0, "blast_furnace_maintenance": 2.5, "MJ_per_unit": 18000.0 } },
+      "billet_steel": { "commodity": "Steel Billet (Ferrum semi-productum / 강괴 / Tocho de acero)",
+        "unit": "1 ton", "inputs": { "pig_iron": 0.9, "scrap_steel": 0.1, "manganese_ore": 0.01 }, 
+        "cost_breakdown": { "processing_labor": 8.0, "converter_maintenance": 3.0, "MJ_per_unit": 22000.0 } },
+      "steel_rail": { "commodity": "Rail Steel (Ferrum viae / 레일강 / Acero para rieles)",
+        "unit": "1 ton", "inputs": { "steel_billet": 1.05, "vanadium_ore": 0.005 }, 
+        "cost_breakdown": { "processing_labor": 10.0, "rolling_mill_maintenance": 4.0, "MJ_per_unit": 25000.0 } }
+      },
+  "finished_goods": {
+        "amphora_pottery": {
+          "commodity": "Amphora (Pottery) (Amphora Figulus / 항아리 / Ánfora)",
+          "unit": "1 piece (~20kg)",
+          "inputs": { "pottery_clay": 0.02 },
+          "cost_breakdown": { "fabrication_labor": 0.5, "kiln_maintenance": 0.1, "MJ_per_unit": 10.0 },
+          "notes": "Large storage vessel."
+        },
+        "tile_roof_clay": {
+          "commodity": "Roof Tile (Tegulae / 기와 / Teja)",
+          "unit": "1 piece (~2kg)",
+          "inputs": { "tile_clay": 0.002 },
+          "cost_breakdown": { "fabrication_labor": 0.1, "kiln_maintenance": 0.02, "MJ_per_unit": 1.0 },
+          "notes": "Standard roof tile."
+        },
+        "brick_clay": {
+          "commodity": "Brick (Later / 벽돌 / Ladrillo)",
+          "unit": "1 piece (~3kg)",
+          "inputs": { "tile_clay": 0.003 },
+          "cost_breakdown": { "fabrication_labor": 0.1, "kiln_maintenance": 0.02, "MJ_per_unit": 1.0 },
+          "notes": "Standard fired brick."
+        },
+        "vessel_glass": {
+          "commodity": "Glass Vessel (Vitrum Vas / 유리용기 / Recipiente de vidrio)",
+          "unit": "1 piece (~1kg)",
+          "inputs": { "glassware_simple": 0.001 },
+          "cost_breakdown": { "fabrication_labor": 0.2, "shaping_maintenance": 0.05, "MJ_per_unit": 2.0 },
+          "notes": "Blown or molded glass vessel."
+        },
+        "vessel_pottery": {
+          "commodity": "Pottery Vessel (Figulus Vas / 도자기용기 / Recipiente de cerámica)",
+          "unit": "1 piece (~2kg)",
+          "inputs": { "pottery_clay": 0.002 },
+          "cost_breakdown": { "fabrication_labor": 0.1, "kiln_maintenance": 0.02, "MJ_per_unit": 1.0 },
+          "notes": "Standard pottery vessel."
+        },
+        "coil_rope_hemp": {
+          "commodity": "Rope Coil (Funis / 밧줄뭉치 / Rollo de cuerda)",
+          "unit": "1 coil (~10kg)",
+          "inputs": { "rope_hemp": 0.01 },
+          "cost_breakdown": { "fabrication_labor": 0.2, "twisting_maintenance": 0.05, "MJ_per_unit": 2.0 },
+          "notes": "Standard rope coil."
+        },
+        "tunic_wool": {
+          "commodity": "Tunic (Wool) (Tunica Villus / 양모 튜닉 / Túnica de lana)",
+          "unit": "1 piece (~1kg)",
+          "inputs": { "cloth_wool": 0.001 },
+          "cost_breakdown": { "fabrication_labor": 0.3, "loom_maintenance": 0.05, "MJ_per_unit": 1.0 },
+          "notes": "Simple woolen tunic."
+        },
+        "scroll_paper_hemp": {
+          "commodity": "Scroll (Hemp Paper) (Volumen Charta Cannabis / 삼지 두루마리 / Rollo de cáñamo)",
+          "unit": "1 piece (~0.5kg)",
+          "inputs": { "paper_hemp": 0.0005 },
+          "cost_breakdown": { "fabrication_labor": 0.1, "cutting_maintenance": 0.01, "MJ_per_unit": 0.5 },
+          "notes": "Scroll made from hemp paper."
+        },
+        "scroll_paper_papyrus": {
+          "commodity": "Scroll (Papyrus) (Volumen Papyrus / 파피루스 두루마리 / Rollo de papiro)",
+          "unit": "1 piece (~0.5kg)",
+          "inputs": { "paper_papyrus": 0.0005 },
+          "cost_breakdown": { "fabrication_labor": 0.1, "cutting_maintenance": 0.01, "MJ_per_unit": 0.5 },
+          "notes": "Scroll made from papyrus."
+        },
+        "scroll_parchment_hide": {
+          "commodity": "Scroll (Parchment) (Volumen Pergamena / 양피지 두루마리 / Rollo de pergamino)",
+          "unit": "1 piece (~0.5kg)",
+          "inputs": { "parchment_hide": 0.0005 },
+          "cost_breakdown": { "fabrication_labor": 0.1, "cutting_maintenance": 0.01, "MJ_per_unit": 0.5 },
+          "notes": "Scroll made from parchment."
+        },
+        "candle_tallow": {
+          "commodity": "Candle (Tallow) (Candela Sevum / 수지초 / Vela de sebo)",
+          "unit": "1 piece (~100g)",
+          "inputs": { "candle_tallow": 0.001 },
+          "cost_breakdown": { "fabrication_labor": 0.02, "molding_maintenance": 0.005, "MJ_per_unit": 0.1 },
+          "notes": "Single tallow candle."
+        },
+        "candle_beeswax": {
+          "commodity": "Candle (Beeswax) (Candela Cera Apium / 밀랍초 / Vela de cera)",
+          "unit": "1 piece (~100g)",
+          "inputs": { "candle_beeswax": 0.001 },
+          "cost_breakdown": { "fabrication_labor": 0.02, "molding_maintenance": 0.005, "MJ_per_unit": 0.1 },
+          "notes": "Single beeswax candle."
+        },
+        "soap_bar_oliveoil": {
+          "commodity": "Soap Bar (Olive Oil) (Sapo Bar Oleum Olivae / 올리브비누 / Barra de jabón de aceite de oliva)",
+          "unit": "1 piece (~200g)",
+          "inputs": { "soap_oliveoil": 0.0002 },
+          "cost_breakdown": { "fabrication_labor": 0.02, "cutting_maintenance": 0.005, "MJ_per_unit": 0.1 },
+          "notes": "Single bar of olive oil soap."
+        },
+        "loaf_bread_wheat": {
+          "commodity": "Loaf (Bread) (Panis / 빵 / Pan)",
+          "unit": "1 piece (~500g)",
+          "inputs": { "bread_wheat": 0.0005 },
+          "cost_breakdown": { "fabrication_labor": 0.01, "oven_maintenance": 0.002, "MJ_per_unit": 0.2 },
+          "notes": "Single loaf of bread."
+        },
+        "barrel_timber_wood": {
+          "commodity": "Barrel (Timber) (Doliolum Ligna / 목재통 / Barril de madera)",
+          "unit": "1 piece (~30kg)",
+          "inputs": { "timber_wood": 0.03 },
+          "cost_breakdown": { "fabrication_labor": 0.5, "coopering_maintenance": 0.1, "MJ_per_unit": 5.0 },
+          "notes": "Standard wooden barrel."
+        },
+        "basket_reed": {
+          "commodity": "Basket (Reed) (Corbis Arundo / 갈대바구니 / Cesta de caña)",
+          "unit": "1 piece (~2kg)",
+          "inputs": { "raw_material": "reeds", "raw_input_tons_per_output": 0.002 },
+          "cost_breakdown": { "fabrication_labor": 0.1, "weaving_maintenance": 0.02, "MJ_per_unit": 0.5 },
+          "notes": "Woven reed basket."
+        },
+    "rail_steel": {
+      "commodity": "Rail (Ferrivia / 철도레일 / Riel)",
+      "unit": "1 piece (25m, ~1 ton)",
+      "inputs": { "steel_rail": 1.0 },
+      "cost_breakdown": { "fabrication_labor": 2.0, "machining_maintenance": 0.5, "MJ_per_unit": 500.0 },
+      "notes": "Standard rail length; includes finishing, drilling, and inspection."
+    },
+    "ibeam_steel": {
+      "commodity": "I-Beam (Trabs H / H형강 / Viga I)",
+      "unit": "1 ton",
+      "inputs": { "billet_steel": 1.05 },
+      "cost_breakdown": { "rolling_labor": 3.0, "mill_maintenance": 1.0, "MJ_per_unit": 1200.0 },
+      "notes": "Standard structural I-beam for construction."
+    },
+    "piping_copper": {
+      "commodity": "Copper Piping (Tubus Cupri / 동관 / Tubería de cobre)",
+      "unit": "1 ton",
+      "inputs": { "ingot_copper": 1.03 },
+      "cost_breakdown": { "extrusion_labor": 2.5, "pipe_mill_maintenance": 0.8, "MJ_per_unit": 900.0 },
+      "notes": "Standard plumbing and industrial copper pipe. Includes extrusion, sizing, and finishing."
+    },
+    "concrete_modern": {
+      "commodity": "Concrete (Concretum / 콘크리트 / Hormigón)",
+      "unit": "1 cubic meter",
+      "inputs": { "cement_modern": 0.3, "sand": 0.7, "gravel": 1.2, "water": 0.18 },
+      "cost_breakdown": { "mixing_labor": 1.0, "batch_plant_maintenance": 0.5, "MJ_per_unit": 100.0 },
+      "notes": "Standard ready-mix concrete. Proportions by volume."
+    }
+  },
+  "commodity_cost_template": {
+    "commodity": "<Commodity Name> (Latin / Korean / Spanish)",
+    "unit": "<Unit, e.g. 1 ton>",
+    "cost_breakdown": {
+      "direct_labor": 6.0,
+      "tools_maintenance": 1.0,
+      "MJ_per_unit": 0.0,
+      "overhead": 1.0
+    },
+    "market_data": {
+      "profit_margin": "0%"
+    },
+    "notes": "Estimates for felling, cutting, and delivering 1 ton of wood. Labor includes felling and cutting; tools include axes and saws."
+  },
+  "commodity_master_ledger": {
+    "logistics_state": "Daylight / Unrestricted / Tax-Exempt",
+    "transit_baseline": "15 Miles (Coastal/Regional to District)",
+    "currency": "Marks",
+    "unit_measure": "1 Metric Ton (1,000 kg)"
+  },
+  "energy_unit": "MJ",
+  "fuel_heat_unit": "MJ/kg",
+  "fuel_heat_table": {
+    "charcoal": {
+      "heat_mj_per_kg": 29.0
+    },
+    "wood_dry": {
+      "heat_mj_per_kg": 16.0
+    },
+    "coal_anthracite": {
+      "heat_mj_per_kg": 32.0
+    },
+    "coal_bituminous": {
+      "heat_mj_per_kg": 26.0
+    },
+    "coal_lignite": {
+      "heat_mj_per_kg": 15.0
+    },
+    "electricity": {
+      "unit": "kWh",
+      "heat_mj_per_kwh": 3.6
+    }
+  }
+}
