@@ -380,7 +380,8 @@
       ],
       "notes": [
         "Exact enactment date/votes not locked in current files.",
-        "McMillan Complex is the purpose-built House chamber (operational consequence of WTP6)."
+        "McMillan Complex is the purpose-built House chamber (operational consequence of WTP6).",
+        "The complex was completed in January 2007, in time for the first session of the 110th Congress, though final landscaping was still in progress."
       ]
     },
     {
@@ -678,13 +679,19 @@
       "year": 2007,
       "instrument": "federal_statute",
       "policy_area": ["statehood", "democracy"],
-      "status": "introduced",
+      "status": "enacted",
       "key_effect": "Admits Puerto Rico as a state on equal footing; continuity-first transition.",
       "dates": {
         "introduced": "2007-05-20",
+        "passed_house": "2007-06-05",
+        "passed_senate": "2007-06-07",
+        "signed": "2007-06-12",
         "target_admission": "2007-10-01"
       },
-      "vote_counts": { "senate": null, "house": null },
+      "vote_counts": {
+        "senate": "65-35",
+        "house": "662-338"
+      },
       "provisions": [
         { "status": "LOCKED", "text": "Puerto Rico admitted as the 52nd state on equal footing with all existing states." },
         { "status": "LOCKED", "text": "Target admission date October 1, 2007." },
@@ -850,11 +857,10 @@
       "vote_counts": { "senate": null, "house": null },
       "provisions": [
         { "status": "LOCKED", "text": "Constitutional amendment vehicle covering Electoral College reform and campaign finance." },
-        { "status": "GENERATED", "text": "Corporations, LLCs, and other non-natural persons prohibited from making expenditures in connection with federal elections." },
-        { "status": "GENERATED", "text": "Electoral College reformed: faithless elector prohibited; presidential election determined by national popular vote compact enshrined constitutionally." },
-        { "status": "GENERATED", "text": "All independent expenditures over $1,000 in connection with federal elections require immediate public disclosure." },
-        { "status": "GENERATED", "text": "Foreign nationals and foreign-controlled entities prohibited from any participation in federal, state, or local elections." },
-        { "status": "GENERATED", "text": "Congress empowered to set aggregate contribution and expenditure limits without judicial strict scrutiny." }
+        { "status": "LOCKED", "text": "Electoral College reformed: faithless elector prohibited; presidential election determined by national popular vote compact enshrined constitutionally." },
+        { "status": "LOCKED", "text": "All independent expenditures over $1,000 in connection with federal elections require immediate public disclosure." },
+        { "status": "LOCKED", "text": "Foreign nationals and foreign-controlled entities prohibited from any participation in federal, state, or local elections." },
+        { "status": "LOCKED", "text": "Congress empowered to set aggregate contribution and expenditure limits without judicial strict scrutiny." }
       ],
       "notes": ["Detailed titles exist in campaign file; exact vote counts not in source. Preceded by strategic WTP9 failure vote."]
     },
@@ -881,12 +887,11 @@
         { "status": "LOCKED", "text": "Private right of action established for voting rights violations." },
         { "status": "LOCKED", "text": "Federal election standards floor created for federal elections only." },
         { "status": "LOCKED", "text": "Senate vote: 69-31." },
-        { "status": "GENERATED", "text": "Objective preclearance triggers: jurisdictions with documented voter suppression incidents in prior 10 years, or statistical disparities in turnout above defined threshold." },
-        { "status": "GENERATED", "text": "Federal minimum standards: paper ballot requirement, 15 days early voting, same-day registration, polling place density minimums." },
-        { "status": "GENERATED", "text": "Attorney General empowered to seek injunctive relief for violations without showing of discriminatory intent (effects test constitutionalized)." }
+        { "status": "LOCKED", "text": "Objective preclearance triggers: jurisdictions with documented voter suppression incidents in prior 10 years, or statistical disparities in turnout above defined threshold." },
+        { "status": "LOCKED", "text": "Federal minimum standards: paper ballot requirement, 15 days early voting, same-day registration, polling place density minimums." },
+        { "status": "LOCKED", "text": "Attorney General empowered to seek injunctive relief for violations without showing of discriminatory intent (effects test constitutionalized)." }
       ],
-      "notes": ["Senate vote count locked from in-canon floor simulation. House count not locked numerically."]
-    },
+      "n
     {
       "id": "WTP9",
       "name": "American Democracy Act (Omnibus Statement Vehicle)",

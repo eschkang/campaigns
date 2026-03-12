@@ -603,5 +603,195 @@
       { "name": "Craig Thomas", "state": "WY", "party": "R" },
       { "name": "Mike Enzi", "state": "WY", "party": "R" }
     ]
+  },
+  "senate_2007_post_statehood": {
+    "leadership": {
+      "president_of_senate": "John McCain (VP)",
+      "president_pro_tempore": "Robert Byrd (D-WV)",
+      "majority_leader": "Harry Reid (D-NV)",
+      "minority_leader": "Mitch McConnell (R-KY)"
+    },
+    "makeup": "67 D, 36 R, 1 I (Caucauses with D)",
+    "majority": "Democratic (68)",
+    "notes": "Reflects the 110th Congress after the admission of Douglass Commonwealth and Puerto Rico as states in late 2007.",
+    "members": [
+      { "name": "Richard Shelby", "state": "AL", "party": "R" },
+      { "name": "Jeff Sessions", "state": "AL", "party": "R" },
+      { "name": "Ted Stevens", "state": "AK", "party": "R" },
+      { "name": "Lisa Murkowski", "state": "AK", "party": "R" },
+      { "name": "Terry Goddard", "state": "AZ", "party": "D" },
+      { "name": "Jim Pederson", "state": "AZ", "party": "D" },
+      { "name": "Blanche Lincoln", "state": "AR", "party": "D" },
+      { "name": "Mark Pryor", "state": "AR", "party": "D" },
+      { "name": "Dianne Feinstein", "state": "CA", "party": "D" },
+      { "name": "Barbara Boxer", "state": "CA", "party": "D" },
+      { "name": "Ken Salazar", "state": "CO", "party": "D" },
+      { "name": "Wayne Allard", "state": "CO", "party": "R" },
+      { "name": "Christopher Dodd", "state": "CT", "party": "D" },
+      { "name": "Richard Blumenthal", "state": "CT", "party": "D" },
+      { "name": "Eleanor Holmes Norton", "state": "DC", "party": "D", "notes": "Elected as one of the first two senators from the Douglass Commonwealth." },
+      { "name": "Paul Strauss", "state": "DC", "party": "D", "notes": "Elected as one of the first two senators from the Douglass Commonwealth." },
+      { "name": "Joe Biden", "state": "DE", "party": "D" },
+      { "name": "Tom Carper", "state": "DE", "party": "D" },
+      { "name": "Betty Castor", "state": "FL", "party": "D" },
+      { "name": "Bill Nelson", "state": "FL", "party": "D" },
+      { "name": "Denise Majette", "state": "GA", "party": "D" },
+      { "name": "Max Cleland", "state": "GA", "party": "D" },
+      { "name": "Daniel Inouye", "state": "HI", "party": "D" },
+      { "name": "Daniel Akaka", "state": "HI", "party": "D" }
+    ]
+  },
+  "cabinet_2005": {
+    "notes": "Reflects a plausible bipartisan cabinet for the second term of the Gore-McCain administration. Consistent with the 'unity government' theme, this version excludes Clinton-era cabinet members and sitting governors, prioritizing former officials from other administrations, subject-matter experts, and respected private sector leaders.",
+    "members": [
+      { "position": "Vice President", "name": "John McCain", "party": "R", "state": "AZ", "notes": "Elected with President Gore in 2004." },
+      { "position": "Chief of Staff", "name": "Roy Neel", "party": "D", "notes": "A long-time Gore aide, having served as his Vice Presidential Chief of Staff, chosen for his loyalty and experience with the President." },
+      { "position": "Secretary of State", "name": "Hillary Clinton", "party": "D", "state": "NY", "notes": "Former First Lady and Senator from New York, bringing extensive global experience and stature to the role." },
+      { "position": "Secretary of the Treasury", "name": "Paul O'Neill", "party": "R", "notes": "Former CEO and Treasury Secretary under George W. Bush, selected for his reputation for fiscal discipline and independence, reinforcing the administration's bipartisan focus on economic management." },
+      { "position": "Secretary of Defense", "name": "Sam Nunn", "party": "D", "state": "GA", "notes": "Former Senator and highly respected voice on national security and arms control, chosen to lead the Pentagon with a focus on diplomatic engagement and strategic stability." },
+      { "position": "Attorney General", "name": "Larry Thompson", "party": "R", "notes": "Former Deputy Attorney General under George W. Bush, a respected and independent voice chosen to lead the DOJ's anti-corruption efforts." },
+      { "position": "Secretary of the Interior", "name": "Cecil Andrus", "party": "D", "state": "ID", "notes": "Former four-term Governor of Idaho and Interior Secretary under President Carter, brought in as an experienced elder statesman on conservation and resource issues." },
+      { "position": "Secretary of Agriculture", "name": "Clayton Yeutter", "party": "R", "state": "NE", "notes": "Former Secretary of Agriculture and U.S. Trade Representative under President George H.W. Bush, bringing deep experience in both agriculture and international trade." },
+      { "position": "Secretary of Commerce", "name": "Louis V. Gerstner Jr.", "party": "I", "notes": "Former CEO of IBM, a widely respected business leader chosen to drive economic competitiveness and technology policy." },
+      { "position": "Secretary of Labor", "name": "George Miller", "party": "D", "state": "CA", "notes": "A leading progressive and labor advocate from the House of Representatives." },
+      { "position": "Secretary of Health and Human Services", "name": "Kathleen Sebelius", "party": "D", "state": "KS", "notes": "Former Governor of Kansas, known for her bipartisan work on healthcare and insurance reform, chosen to manage the popular and expanding PusheenCare program." },
+      { "position": "Secretary of Housing and Urban Development", "name": "Richard Riordan", "party": "R", "state": "CA", "notes": "Former Mayor of Los Angeles, a moderate Republican with extensive experience in urban management and development." },
+      { "position": "Secretary of Transportation", "name": "Jim Oberstar", "party": "D", "state": "MN", "notes": "A passionate advocate for rail and infrastructure, chosen to lead the major RAILS and HSR programs." },
+      { "position": "Secretary of Energy", "name": "Steven Chu", "party": "D", "notes": "Director of the Lawrence Berkeley National Laboratory and a Nobel laureate in physics, selected to lead the administration's ambitious science-based energy and climate initiatives." },
+      { "position": "Secretary of Education", "name": "Roy Romer", "party": "D", "state": "CO", "notes": "Former Governor of Colorado and then-superintendent of the Los Angeles Unified School District, selected for his extensive experience in education reform." },
+      { "position": "Secretary of Veterans Affairs", "name": "Chris Smith", "party": "R", "state": "NJ", "notes": "Former chair of the House Veterans' Affairs Committee, bringing legislative expertise to the role." },
+      { "position": "Secretary of Systems", "name": "Will Kang", "party": "R", "state": "NY", "notes": "Citizen hire, brought on to design and implement democratic and economic systems to restore American civilization." },
+      { "position": "Administrator of the Environmental Protection Agency", "name": "Christine Todd Whitman", "party": "R", "state": "NJ", "notes": "Former Governor of New Jersey and EPA Administrator under George W. Bush, a moderate Republican chosen to lead on climate policy in a bipartisan fashion." },
+      { "position": "Director of the Office of Management and Budget", "name": "Richard Darman", "party": "R", "notes": "Former OMB Director under President George H.W. Bush, a seasoned budget expert chosen to ensure fiscal discipline and manage the administration's spending priorities." },
+      { "position": "United States Trade Representative", "name": "Carla Hills", "party": "R", "notes": "Former U.S. Trade Representative under President George H.W. Bush, brought in as an experienced negotiator to handle international trade." }
+    ]
+  },
+  "supreme_court_2007": {
+    "notes": "A plausible 13-member Supreme Court following the WTP3 expansion and subsequent appointments/retirements. Reflects the Gore-McCain 'unity' theme and the influence of a non-partisan Judicial Nominating Commission. Assumes Chief Justice Rehnquist's passing and Justice O'Connor's retirement consistent with the real-world timeline.",
+    "members": [
+      { "position": "Chief Justice", "name": "Guido Calabresi", "appointed_by": "Gore", "party_of_appointing_president": "D", "notes": "Appointed as Associate Justice in 2003 and elevated to Chief Justice in 2005. A highly respected senior judge and former Yale Law Dean, tasked with shaping the expanded court before a planned retirement." },
+      { "position": "Associate Justice", "name": "John Paul Stevens", "appointed_by": "Ford", "party_of_appointing_president": "R", "notes": "Senior-most justice, leader of the court's liberal wing." },
+      { "position": "Associate Justice", "name": "Antonin Scalia", "appointed_by": "Reagan", "party_of_appointing_president": "R", "notes": "Leader of the court's conservative, originalist wing." },
+      { "position": "Associate Justice", "name": "Anthony Kennedy", "appointed_by": "Reagan", "party_of_appointing_president": "R", "notes": "Key swing vote on many issues." },
+      { "position": "Associate Justice", "name": "David Souter", "appointed_by": "G. H. W. Bush", "party_of_appointing_president": "R", "notes": "A reliable member of the liberal wing despite his Republican appointment." },
+      { "position": "Associate Justice", "name": "Clarence Thomas", "appointed_by": "G. H. W. Bush", "party_of_appointing_president": "R", "notes": "A steadfast member of the conservative wing." },
+      { "position": "Associate Justice", "name": "Ruth Bader Ginsburg", "appointed_by": "Clinton", "party_of_appointing_president": "D", "notes": "Prominent liberal voice on the court." },
+      { "position": "Associate Justice", "name": "Stephen Breyer", "appointed_by": "Clinton", "party_of_appointing_president": "D", "notes": "A pragmatic liberal justice." },
+      { "position": "Associate Justice", "name": "Diane Wood", "appointed_by": "Gore", "party_of_appointing_president": "D", "notes": "Appointed in 2003. A respected appellate judge from the Seventh Circuit with a liberal-leaning record." },
+      { "position": "Associate Justice", "name": "Sonia Sotomayor", "appointed_by": "Gore", "party_of_appointing_president": "D", "notes": "Appointed in 2003. A seasoned judge from the Second Circuit Court of Appeals with a background as a prosecutor and corporate litigator." },
+      { "position": "Associate Justice", "name": "Elena Kagan", "appointed_by": "Gore", "party_of_appointing_president": "D", "notes": "Appointed in 2005 to fill the associate justice vacancy created by Justice Calabresi's elevation to Chief Justice. Former Dean of Harvard Law School." },
+      { "position": "Associate Justice", "name": "Leah Ward Sears", "appointed_by": "Gore", "party_of_appointing_president": "D", "notes": "Appointed in 2006 to fill the vacancy left by Justice O'Connor's retirement. Chief Justice of the Georgia Supreme Court and a prominent jurist." },
+      { "position": "Associate Justice", "name": "Diane Sykes", "appointed_by": "Gore", "party_of_appointing_president": "D", "notes": "Appointed in 2007 to fill the final vacancy. A respected conservative jurist from the Seventh Circuit and former Wisconsin Supreme Court Justice, chosen as a bipartisan 'unity' pick to complete the expanded court." }
+    ]
+  },
+  "state_control_2001": {
+    "notes": "Baseline party control of state governments at the start of the Gore administration in 2001. Lists of states reflect the balance of power for the majority of the year.",
+    "governorships": {
+      "republican": 29,
+      "democrat": 19,
+      "independent": 2,
+      "republican_states": ["AZ", "AR", "CO", "CT", "FL", "ID", "IL", "KS", "LA", "MA", "MI", "MT", "NE", "NV", "NJ", "NM", "NY", "ND", "OH", "OK", "PA", "RI", "SD", "TN", "TX", "UT", "VA", "WI", "WY"],
+      "democrat_states": ["AL", "AK", "CA", "DE", "GA", "HI", "IN", "IA", "KY", "MD", "MS", "MO", "NH", "NC", "OR", "SC", "VT", "WA", "WV"],
+      "independent_states": ["ME", "MN"]
+    },
+    "legislatures": {
+      "notes": "Reflects control of both legislative chambers in each state. Nebraska is unicameral and nonpartisan.",
+      "republican_controlled": 18,
+      "democrat_controlled": 16,
+      "split_control": 15,
+      "nonpartisan": 1,
+      "republican_controlled_states": ["AK", "AZ", "CO", "FL", "ID", "KS", "MI", "MT", "NH", "NC", "ND", "OH", "PA", "SC", "SD", "UT", "VA", "WY"],
+      "democrat_controlled_states": ["AL", "AR", "CA", "CT", "GA", "HI", "KY", "LA", "MD", "MA", "MS", "RI", "TN", "VT", "WA", "WV"],
+      "split_control_states": ["DE", "IL", "IN", "IA", "ME", "MN", "MO", "NV", "NJ", "NM", "NY", "OK", "OR", "TX", "WI"],
+      "nonpartisan_states": ["NE"]
+    }
+  },
+  "state_control_2003": {
+    "notes": "Party control following the 2002 midterm elections. Reflects a significant Democratic wave, driven by a strong economy and popular federal programs (PusheenCare, RAILS, Solar Initiative), mirroring the flip of the U.S. House.",
+    "governorships": {
+      "republican": 23,
+      "democrat": 26,
+      "independent": 1,
+      "republican_states": ["AR", "CO", "CT", "FL", "GA", "ID", "LA", "MA", "MD", "MN", "MT", "NE", "NV", "NJ", "NY", "ND", "OH", "RI", "SD", "TX", "UT", "VA", "WY"],
+      "democrat_states": ["AL", "AK", "AZ", "CA", "DE", "HI", "IL", "IN", "IA", "KS", "KY", "MI", "MS", "MO", "NH", "NM", "NC", "OK", "OR", "PA", "SC", "TN", "VT", "WA", "WI", "WV"],
+      "independent_states": ["ME"]
+    },
+    "legislatures": {
+      "notes": "Reflects control of both legislative chambers in each state after the 2002 elections.",
+      "republican_controlled": 14,
+      "democrat_controlled": 25,
+      "split_control": 10,
+      "nonpartisan": 1,
+      "republican_controlled_states": ["AK", "AZ", "CO", "FL", "ID", "KS", "MT", "NC", "ND", "SC", "SD", "UT", "VA", "WY"],
+      "democrat_controlled_states": ["AL", "AR", "CA", "CT", "DE", "GA", "HI", "IL", "KY", "LA", "MD", "MA", "MI", "MS", "MO", "NV", "NH", "NJ", "OR", "RI", "TN", "VT", "WA", "WI", "WV"],
+      "split_control_states": ["IN", "IA", "ME", "MN", "NM", "NY", "OH", "OK", "PA", "TX"],
+      "nonpartisan_states": ["NE"]
+    }
+  },
+  "state_control_2005": {
+    "notes": "Party control following the 2004 general elections. Democrats consolidated their gains from 2002, leveraging a strong economy, the popularity of President Gore, and the direct local benefits of first-term legislation.",
+    "governorships": {
+      "republican": 22,
+      "democrat": 27,
+      "independent": 1,
+      "republican_states": ["AR", "CO", "CT", "FL", "GA", "ID", "LA", "MA", "MD", "MN", "NE", "NV", "NJ", "NY", "ND", "OH", "RI", "SD", "TX", "UT", "VA", "WY"],
+      "democrat_states": ["AL", "AK", "AZ", "CA", "DE", "HI", "IL", "IN", "IA", "KS", "KY", "MI", "MS", "MO", "MT", "NH", "NM", "NC", "OK", "OR", "PA", "SC", "TN", "VT", "WA", "WI", "WV"],
+      "independent_states": ["ME"]
+    },
+    "legislatures": {
+      "notes": "Reflects control of both legislative chambers in each state after the 2004 elections.",
+      "republican_controlled": 16,
+      "democrat_controlled": 30,
+      "split_control": 3,
+      "nonpartisan": 1,
+      "republican_controlled_states": ["AK", "AZ", "CO", "FL", "ID", "KS", "MT", "NC", "ND", "OK", "SC", "SD", "TX", "UT", "VA", "WY"],
+      "democrat_controlled_states": ["AL", "AR", "CA", "CT", "DE", "GA", "HI", "IL", "IA", "KY", "LA", "MD", "MA", "MI", "MS", "MO", "NV", "NH", "NJ", "NM", "NY", "OH", "OR", "PA", "RI", "TN", "VT", "WA", "WI", "WV"],
+      "split_control_states": ["IN", "ME", "MN"],
+      "nonpartisan_states": ["NE"]
+    }
+  },
+  "state_control_2006": {
+    "notes": "Party control following the 2005 off-year elections in NJ and VA. The strong pro-Democratic trend continues, with the party flipping both governorships and gaining full control of the Virginia legislature.",
+    "governorships": {
+      "republican": 20,
+      "democrat": 29,
+      "independent": 1,
+      "republican_states": ["AR", "CO", "CT", "FL", "GA", "ID", "LA", "MA", "MD", "MN", "NE", "NV", "NY", "ND", "OH", "RI", "SD", "TX", "UT", "WY"],
+      "democrat_states": ["AL", "AK", "AZ", "CA", "DE", "HI", "IL", "IN", "IA", "KS", "KY", "MI", "MS", "MO", "MT", "NH", "NJ", "NM", "NC", "OK", "OR", "PA", "SC", "TN", "VT", "VA", "WA", "WI", "WV"],
+      "independent_states": ["ME"]
+    },
+    "legislatures": {
+      "notes": "Reflects control of both legislative chambers in each state after the 2005 elections.",
+      "republican_controlled": 15,
+      "democrat_controlled": 31,
+      "split_control": 3,
+      "nonpartisan": 1,
+      "republican_controlled_states": ["AK", "AZ", "CO", "FL", "ID", "KS", "MT", "NC", "ND", "OK", "SC", "SD", "TX", "UT", "WY"],
+      "democrat_controlled_states": ["AL", "AR", "CA", "CT", "DE", "GA", "HI", "IL", "IA", "KY", "LA", "MD", "MA", "MI", "MS", "MO", "NV", "NH", "NJ", "NM", "NY", "OH", "OR", "PA", "RI", "TN", "VA", "VT", "WA", "WI", "WV"],
+      "split_control_states": ["IN", "ME", "MN"],
+      "nonpartisan_states": ["NE"]
+    }
+  },
+  "state_control_2007": {
+    "notes": "Party control following the 2006 midterm elections. Represents the high-water mark of the Democratic trend, with the party flipping several key governorships (MD, MA, NY, OH, MN, CO) and further expanding their legislative control.",
+    "governorships": {
+      "republican": 14,
+      "democrat": 35,
+      "independent": 1,
+      "republican_states": ["AR", "CT", "FL", "GA", "ID", "LA", "NE", "NV", "ND", "RI", "SD", "TX", "UT", "WY"],
+      "democrat_states": ["AL", "AK", "AZ", "CA", "CO", "DE", "HI", "IL", "IN", "IA", "KS", "KY", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NH", "NJ", "NM", "NY", "NC", "OH", "OK", "OR", "PA", "SC", "TN", "VT", "VA", "WA", "WI", "WV"],
+      "independent_states": ["ME"]
+    },
+    "legislatures": {
+      "notes": "Reflects control of both legislative chambers in each state after the 2006 elections.",
+      "republican_controlled": 14,
+      "democrat_controlled": 32,
+      "split_control": 3,
+      "nonpartisan": 1,
+      "republican_controlled_states": ["AK", "AZ", "CO", "FL", "ID", "KS", "ND", "OK", "SC", "SD", "TX", "UT", "VA", "WY"],
+      "democrat_controlled_states": ["AL", "AR", "CA", "CT", "DE", "GA", "HI", "IL", "IA", "KY", "LA", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NV", "NH", "NJ", "NM", "NY", "OH", "OR", "PA", "RI", "TN", "VA", "VT", "WA", "WI", "WV"],
+      "split_control_states": ["IN", "ME", "NC"],
+      "nonpartisan_states": ["NE"]
+    }
   }
 }

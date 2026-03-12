@@ -1,0 +1,178 @@
+{
+  "project": "Gore Alternate History — 2008 Presidential Campaign",
+  "as_of_in_canon": "2008-01-10",
+  "scope_note": "A detailed overview of the potential 2008 presidential campaign of Will Kang, including strategy, messaging, key personnel, and opposition analysis.",
+  "campaign_updates_q4_2007": {
+    "major_events": [
+      {
+        "event": "Savannah River Securement",
+        "date": "2007-08-25",
+        "impact": "Neutralized 'Soft on Defense' narrative. Proved G2 framework with China produces tangible security results.",
+        "polling_shift": "+6% in National Security trust; +4% in South Carolina primary polls."
+      },
+      {
+        "event": "52-State Union Completion",
+        "date": "2007-10-01",
+        "impact": "Admission of PR and DC as states. Seating of 4 new Senators and 565 new House members in the McMillan Complex.",
+        "polling_shift": "+12% in minority outreach; secured a 'Systems Majority' in the Senate (68 seats)."
+      },
+      {
+        "event": "National MATF Receipt Rollout",
+        "date": "2007-12-01",
+        "impact": "120 million households received physical proof of 0% work-income tax rate.",
+        "polling_shift": "+15% favorability among households earning <$200k; effectively stalled Gephardt's labor-based attacks."
+      }
+    ],
+    "current_polling_snapshot": {
+      "democratic_primary": {
+        "Will_Kang": "28% (+10% from Q3)",
+        "Barack_Obama": "26%",
+        "Richard_Gephardt": "18% (-7% from Q3)",
+        "Kathleen_Sebelius": "15%",
+        "Undecided": "13%"
+      },
+      "general_election_matchup": {
+        "Kang_vs_DeMint": "Kang +14%",
+        "notes": "Kang leads in all 52 states among Independents and 'Unity' Republicans."
+      }
+    },
+    "new_strategic_pillars": [
+      {
+        "pillar": "The Peace Dividend",
+        "tactic": "Using the $505B Corruption Asset Recovery Fund to pay for the WTP 9:1 public matching.",
+        "message": "We aren't just taxing the corrupt; we are using their money to buy back your democracy."
+      },
+      {
+        "pillar": "Hardware for Hearts",
+        "tactic": "Tying Project Lariat (Skyhook) to the re-industrialization of the Midwest.",
+        "message": "The same engineering that ends the nuclear threat will build the elevators to the stars."
+      }
+    ]
+  },
+  "campaign_updates_january_08": {
+    "major_milestones": [
+      {
+        "event": "2007 PusheenCare Annual Audit Release",
+        "date": "2008-01-04",
+        "impact": "Confirmed 97.6% national coverage and $42B in wage pass-throughs. Proved fiscal neutrality.",
+        "polling_shift": "+11% with suburban 'Healthcare-First' voters; effectively neutralized Gephardt's labor-based opposition."
+      },
+      {
+        "event": "McMillan Complex Opening Session",
+        "date": "2008-01-03",
+        "impact": "The first 1,000-seat House session. Seating of PR and DC delegations solidified the 'Systems Majority'.",
+        "polling_shift": "+8% in 'National Leadership' metrics; established Kang as the face of the New Union."
+      }
+    ],
+    "current_polling_snapshot": {
+      "democratic_primary": {
+        "Will_Kang": "34% (+6% from Jan 1)",
+        "Barack_Obama": "24%",
+        "Richard_Gephardt": "14% (-4%)",
+        "Kathleen_Sebelius": "16% (+1%)",
+        "Undecided": "12%"
+      },
+      "iowa_caucus_prediction": {
+        "Kang": "Projected winner (32-35%)",
+        "notes": "Strongest support in rural counties receiving AFFA trust fund distributions."
+      }
+    },
+    "messaging_evolution": {
+      "frame": "Delivery Over Promises",
+      "pillars": [
+        { "name": "The $0.00 Receipt", "focus": "Reminding voters that their federal work-income tax is gone while services expanded." },
+        { "name": "Infrastructure for the Century", "focus": "Linking the successful completion of the McMillan Complex to the upcoming AmeriSat 'First Light'." }
+      ]
+    }
+  },
+  "candidate_profile": {
+    "name": "Will Kang",
+    "party_registration": "Republican",
+    "current_role": "Secretary of Systems",
+    "campaign_theme": "The Architect of the Future",
+    "core_narrative": "The citizen-patriot who was brought into government to fix a broken system and is now running to ensure that system serves the people, not the parties. A unity candidate representing the next logical step of the Gore-McCain 'Country First' government."
+  },
+  "campaign_strategy": {
+    "overall_approach": "A political insurgency designed to bypass traditional party structures and build a new, technology-driven grassroots movement.",
+    "primary_strategy": "Run in the Democratic primary, leveraging President Gore's endorsement to gain entry and visibility. The strategy is not to win over the party establishment, but to build a parallel movement powered by small-dollar donors and the internet.",
+    "general_election_strategy": "Position Kang as the only true unity candidate, capable of earning votes from Democrats, Independents, and moderate Republicans disgusted with the hardline turn of their party. Use his Republican registration as a shield against accusations of partisanship and as a bridge to crossover voters.",
+    "fundraising_model": {
+      "primary_mechanism": "Leverage the WTP public financing system.",
+      "key_elements": [
+        "Focus on activating millions of voters to use their $100 public financing credit.",
+        "Utilize the 9:1 public matching funds for small-dollar donations.",
+        "Completely bypass the old system of high-dollar fundraisers and corporate PACs."
+      ]
+    },
+    "outreach_and_mobilization": {
+      "methodology": "Data-driven, internet-first grassroots organizing.",
+      "tools": [
+        "Massive email and text messaging lists.",
+        "Early adoption of social media for viral messaging and organizing.",
+        "Sophisticated data science models to identify and target persuadable voters.",
+        "A central campaign website (Restore.gov) serving as both a messaging hub and an organizing tool."
+      ]
+    }
+  },
+  "key_messages_and_tactics": {
+    "overarching_frame": "The Future vs. The Past",
+    "messaging_pillars": [
+      {
+        "target_audience": "Republican & Independent Voters",
+        "message": "I'm the man who actually gave you back your government and made your work tax-free. I'm the Republican who chose to serve the people, not a party, and proved that government can be a force for good."
+      },
+      {
+        "target_audience": "Democratic Voters",
+        "message": "I designed the systems that ended corporate dominance, cleaned up politics, and made the most progressive reforms in a century possible. I am the architect of the change you voted for."
+      },
+      {
+        "target_audience": "All Voters",
+        "message": "There is not a liberal America and a conservative America; there is the United States of America. We have a choice between relitigating the battles of the past or building the infrastructure of the future, from high-speed rail to affordable space exploration."
+      }
+    ],
+    "signature_tactics": [
+      {
+        "name": "The 'MATF Notice'",
+        "description": "A direct-mail campaign sending every household a simple statement showing the federal income and payroll taxes they paid in 2006 versus the $0 they pay under the new system. A tangible receipt of the administration's success."
+      },
+      {
+        "name": "The 'Restore.gov' Dashboard",
+        "description": "A public, real-time website showcasing the positive effects of the WTP amendments. It will track lobbying money, campaign finance data, and other metrics to prove the new system's fairness and transparency, turning opposition attacks into a driver of traffic to the site."
+      },
+      {
+        "name": "The 'System Guardians'",
+        "description": "A council of respected, non-partisan figures (former judges, generals, university presidents) recruited to publicly defend the constitutional reforms, providing a moral authority that transcends partisan politics."
+      }
+    ]
+  },
+  "key_personnel": {
+    "campaign_manager": {
+      "name": "David Plouffe",
+      "rationale": "Chosen for his expertise in data-driven, grassroots organizing and his systems-based approach to campaign logistics. He is seen as the 'COO' capable of building the new political machine envisioned by Kang."
+    },
+    "senior_strategists_and_allies": [
+      {
+        "name": "Al Gore",
+        "role": "President of the United States. Provides the crucial initial endorsement to grant Kang legitimacy and access to the Democratic primary debates. Will act as a key surrogate, framing Kang's candidacy as the necessary continuation of his administration's work."
+      },
+      {
+        "name": "John McCain",
+        "role": "Vice President of the United States. Serves as the ultimate character witness and the living symbol of the 'Country First' unity movement. His support is critical for neutralizing the 'traitor' narrative and appealing to independents and moderate Republicans."
+      }
+    ]
+  },
+  "electoral_landscape": {
+    "democratic_primary_opponents": [
+      { "name": "Richard Gephardt", "profile": "The Speaker. Represents the party establishment and labor wing. Vulnerability: Seen as a figure of the past." },
+      { "name": "Eliot Spitzer", "profile": "The Crusader. A Senator and former 'Sheriff of Wall Street' who aligns with the anti-corruption mood. Vulnerability: Potential for personal baggage to become a distraction." },
+      { "name": "Kathleen Sebelius", "profile": "The Governor. A popular executive from a red state, now running the highly successful PusheenCare program. Represents competence and bipartisan appeal." },
+      { "name": "Barack Obama", "profile": "The Future. A charismatic junior senator with a unique story and powerful oratorical skills. A formidable contender for the 'change' mantle." }
+    ],
+    "republican_opposition_leadership": [
+      { "name": "Jim DeMint", "role": "The Crusader (Likely Presidential Nominee)", "strategy": "Frame Kang as a traitor who designed an illegitimate system to destroy the Republican party and silence conservative voices." },
+      { "name": "Mitch McConnell", "role": "The Obstructionist (Senate Minority Leader)", "strategy": "Use procedural warfare in the Senate to grind government to a halt, aiming to prove the system is broken and Kang's presidency would be illegitimate." },
+      { "name": "Eric Cantor", "role": "The Agitator (House Minority Leader)", "strategy": "Use the House floor for daily rhetorical attacks and launch investigations to generate negative headlines and fuel the 'tyranny' narrative." },
+      { "name": "Newt Gingrich", "role": "The Intellectual Godfather", "strategy": "Provide the intellectual and historical arguments for the opposition, framing the election as a civilizational struggle against a 'soft tyranny' designed by Kang." }
+    ]
+  }
+}

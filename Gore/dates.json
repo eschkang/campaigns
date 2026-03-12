@@ -1,6 +1,6 @@
 {
   "project": "Gore Alternate History — Key Dates",
-  "as_of_in_canon": "2008-02-28",
+  "as_of_in_canon": "2007-08-15",
   "scope_note": "A chronological list of significant dates from the canon, separated into historical and future events relative to the 'as_of_in_canon' date.",
   "historical_events": [
     { "date": "2001-03", "event": "We The People Act 1 (WTP1) signed into law.", "source": "leg.json" },
@@ -13,6 +13,7 @@
     { "date": "2004-08", "event": "America First Forever Act (AFFA) signed, establishing durable trust funds.", "source": "leg.json" },
     { "date": "2005-08", "event": "Financial Stability Act of 2005 signed, pre-emptively regulating subprime markets.", "source": "leg.json" },
     { "date": "2006-03", "event": "National High-Speed Rail Act of 2006 signed, establishing a permanent HSR program.", "source": "leg.json" },
+    { "date": "2007-01", "event": "McMillan Complex completed for the first session of the 110th Congress, though landscaping is ongoing.", "source": "leg.json" },
     { "date": "2007-01-06", "event": "Communications Evidence Preservation Act (CEPA) introduced.", "source": "leg.json" },
     { "date": "2007-01-22", "event": "CEPA and Gulf War Illness Recognition & Benefits Act signed into law.", "source": "leg.json" },
     { "date": "2007-01-23", "event": "President announces 'Make America Great Again — All of It' (MAGA AOI) and 'Make America Tax Free' (MATF) initiatives at SOTU.", "source": "leg.json" },
@@ -20,11 +21,12 @@
     { "date": "2007-05-21", "event": "SpaceX Strategic Integration Act introduced.", "source": "leg.json" },
     { "date": "2007-06-18", "event": "SpaceX Strategic Integration Act signed into law.", "source": "leg.json" },
     { "date": "2007-07-16", "event": "AmeriSat Act signed into law.", "source": "leg.json" },
-    { "date": "2007-11-28", "event": "Merchant Marine Modernization Act passes the Senate.", "source": "leg.json" },
-    { "date": "2008-02-28", "event": "Major contracts for AmeriSat satellite bus manufacturing and communications payloads awarded.", "source": "amerisat.json" },
-    { "date": "2007-10-09", "event": "President delivers 'For All Mankind' speech to a Joint Session of Congress, outlining the 10-year U.S. Space Strategy, including AmeriSat, Project Artemis (Moon), the Mars Program, and Project Lariat (Skyhook).", "source": "self" }
+    { "date": "2007-08-15", "event": "A stability council takes power in North Korea, agreeing to stand down and begin reunification talks.", "source": "foreign.json" }
   ],
   "future_events": [
+    { "date": "2007-10-09", "event": "President delivers 'For All Mankind' speech to a Joint Session of Congress, outlining the 10-year U.S. Space Strategy, including AmeriSat, Project Artemis (Moon), the Mars Program, and Project Lariat (Skyhook).", "source": "self" },
+    { "date": "2007-11-28", "event": "Merchant Marine Modernization Act passes the Senate.", "source": "leg.json" },
+    { "date": "2008-02-28", "event": "Major contracts for AmeriSat satellite bus manufacturing and communications payloads awarded.", "source": "amerisat.json" },
     { "date": "2009", "event": "AmeriSat Block 0 deployment scheduled to begin, providing initial service.", "source": "space.json" },
     { "date": "2010-2011", "event": "AmeriSat Block 1 deployment scheduled, aiming for full U.S. coverage.", "source": "space.json" },
     { "date": "2012", "event": "Administration's 'Debt-Free by 2012' goal target year.", "source": "budget.json" },
