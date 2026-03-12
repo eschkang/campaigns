@@ -1,2 +1,0 @@
-# No external dependencies required for the included `transfer.py` script.
-# Add libraries here if you later need them, e.g. pyyaml

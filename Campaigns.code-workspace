@@ -1,12 +1,7 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {
-		"chat.tools.terminal.autoApprove": {
-			"git pull": true
-		}
-	}
+    "folders": [
+        {
+            "path": "."
+        }
+    ]
 }

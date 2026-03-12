@@ -1,0 +1,6 @@
+{
+    "gemini.chat.model": "gemini-3-flash",
+    "gemini.codeassist.model": "gemini-3-flash",
+    "gemini.reasoning.effort": "low",
+    "gemini.auto_compact.enabled": true
+}

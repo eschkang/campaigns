@@ -1,0 +1,95 @@
+{
+  "canon_block_id": "labor_occupation_model_v1",
+  "name": "Occupation Cohorts & Skill Progression Model",
+  "version": "1.0",
+  "scope": "All cities unless overridden in state_local",
+  "definitions": {
+    "skill_tiers": {
+      "U": "Unskilled",
+      "S1": "Semi-skilled / helper",
+      "S2": "Skilled / journeyman",
+      "M": "Master"
+    },
+    "sectors": [
+      "agriculture",
+      "construction",
+      "dock_logistics",
+      "metal_iron",
+      "metal_steel",
+      "paper_milling",
+      "trade_clerical",
+      "civic_medical",
+      "other_services"
+    ]
+  },
+  "rules": {
+    "tier_progression": {
+      "U_to_S1_min_months": 6,
+      "S1_to_S2_min_months": 12,
+      "S2_to_M_min_months": 24,
+      "max_tier_jumps_per_12_months": 1
+    },
+    "sector_switching": {
+      "allowed_crosswalks": [
+        {
+          "from_sector": "metal_iron",
+          "from_tier": "S2",
+          "to_sector": "metal_steel",
+          "to_tier": "S1",
+          "reason": "related skill downgrade"
+        },
+        {
+          "from_sector": "construction",
+          "from_tier": "S2",
+          "to_sector": "metal_steel",
+          "to_tier": "S1",
+          "reason": "related skill downgrade"
+        },
+        {
+          "from_sector": "dock_logistics",
+          "from_tier": "S2",
+          "to_sector": "trade_clerical",
+          "to_tier": "S1",
+          "reason": "tally/records path"
+        }
+      ],
+      "default_switch_rule": "Switching sectors without an explicit crosswalk downgrades by 1 tier (min U) and resets progression timer."
+    },
+    "immigration_intake_defaults": {
+      "default_skill_mix": {
+        "U": 0.7,
+        "S1": 0.2,
+        "S2": 0.08,
+        "M": 0.02
+      },
+      "verification": {
+        "S2_requires": [
+          "practical_test_or_portfolio",
+          "or_sponsorship_by_existing_S2_or_M"
+        ],
+        "M_requires": [
+          "practical_masterpiece_test",
+          "endorsement_by_two_S2_or_one_M_or_council_assessor"
+        ],
+        "failure_downgrade": {
+          "M_to": "S2",
+          "S2_to": "S1"
+        }
+      }
+    },
+    "allocation_principles": [
+      "No individual-level tracking required; model uses cohort counts by (sector, tier).",
+      "Skilled roles cannot be filled by U without being placed into an apprenticeship/training slot.",
+      "Education-gated roles (civic_medical S2/M) require explicit training capacity in state."
+    ]
+  },
+  "recommended_reporting": {
+    "monthly_snapshot_fields": [
+      "workforce_total",
+      "cohorts_by_sector_and_tier",
+      "training_pipeline_in_progress",
+      "open_job_slots_by_sector",
+      "wage_pressure_flags"
+    ]
+  }
+}

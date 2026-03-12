@@ -1,0 +1,252 @@
+{
+  "district_name": "The Crux Urbana",
+  "configuration": "4 Towers + Central Civic Core",
+  "total_population": {
+    "adults": 700,
+    "children": "Variable (Managed via Census)",
+    "staff": 25
+  },
+  "economic_entities": {
+    "residential_towers": {
+      "count": 4,
+      "units_per_tower": 100,
+      "monthly_revenue_per_tower": 1518.75,
+      "note": "Includes rents plus laundry fees."
+    },
+    "regional_bank": {
+      "status": "Independent Tenant",
+      "location": "Civic Core",
+      "monthly_revenue": 168.60,
+      "opex": 52.00,
+      "net_profit": 116.60
+    },
+    "postal_bank": {
+      "status": "Postal Cooperative",
+      "location": "Mail Quarter",
+      "staffing_model": {
+        "min_staff_per_branch": 2,
+        "max_staff_per_branch": 4,
+        "notes": "OPEX budget works on 2-4 clerks/mail officers per branch."
+      },
+      "account_metrics": {
+        "num_accounts": null,
+        "account_fee": null,
+        "avg_balance": null,
+        "interest_rate_cap": null,
+        "interest_margin": null,
+        "per_mail_piece_price": null,
+        "premium_service_price": null,
+        "scribe_service_price": null,
+        "mail_piece_multiplier": null
+      },
+      "income_model": [
+        {
+          "source": "Account fees",
+          "formula": "num_accounts * account_fee"
+        },
+        {
+          "source": "Interest on savings",
+          "formula": "num_accounts * avg_balance * interest_rate_cap * interest_margin"
+        },
+        {
+          "source": "Mail piece handling",
+          "formula": "num_accounts * mail_piece_multiplier * per_mail_piece_price"
+        },
+        {
+          "source": "Premium services",
+          "formula": "num_accounts * 0.25 * premium_service_price"
+        },
+        {
+          "source": "Scribe services",
+          "formula": "num_accounts * 0.01 * scribe_service_price"
+        }
+      ],
+      "services": ["postal savings", "rural remittances", "money orders"],
+      "note": "Provides accessible banking tied to the mail network."
+    },
+    "steel_mill": {
+      "status": "Private Industry",
+      "location": "Industrial Belt",
+      "input_throughput_tons": null,
+      "unit_price_per_ton": null,
+      "labor_hours_per_ton": null,
+      "wage_rate": null,
+      "energy_cost_per_ton": null,
+      "maintenance_rate_per_ton": null,
+      "income_model": [
+        {
+          "source": "Steel sales",
+          "formula": "input_throughput_tons * unit_price_per_ton"
+        }
+      ],
+      "opex_model": [
+        {
+          "category": "Labor",
+          "formula": "input_throughput_tons * labor_hours_per_ton * wage_rate"
+        },
+        {
+          "category": "Energy",
+          "formula": "input_throughput_tons * energy_cost_per_ton"
+        },
+        {
+          "category": "Maintenance",
+          "formula": "input_throughput_tons * maintenance_rate_per_ton"
+        }
+      ],
+      "note": "Set throughput and pricing to whatever current plan demands; the formulas stay generic."
+    }
+  },
+    "priority_entities": {
+    "top_20": [
+      { "name": "Waterworks", "purpose": "Urban supply and utility management." },
+      { "name": "Granary", "purpose": "Food stock, spoilage control, and rationing." },
+      { "name": "Shipyard/Port", "purpose": "Trade handling, customs, and repair." },
+      { "name": "Craft Guilds", "purpose": "Sector-specific production and wages." },
+      { "name": "Market District", "purpose": "Central consumer pricing and tax capture." },
+      { "name": "Clinic/Apothecary", "purpose": "Public health and medicine revenue." },
+      { "name": "Academy/Scriptorium", "purpose": "Education, scribal output, and premium services." },
+      { "name": "Transport Hub", "purpose": "Logistics fees and toll income." },
+      { "name": "Energy Plant", "purpose": "Input supply for industry." },
+      { "name": "Infrastructure Fund", "purpose": "Maintenance, labor deployment, and capital." },
+      { "name": "Ag Cooperative", "purpose": "Crop aggregation and procurement." },
+      { "name": "Textile Mill", "purpose": "Fiber throughput and loom maintenance." },
+      { "name": "Mining Camp", "purpose": "Ore extraction and transport." },
+      { "name": "Caravan Guild", "purpose": "Overland freight safety and premiums." },
+      { "name": "Wholesale Hall", "purpose": "Stall fees and consumer volume." },
+      { "name": "Repair Depot", "purpose": "Infrastructure servicing." },
+      { "name": "Harbor Customs", "purpose": "Duties and enforcement staffing." },
+      { "name": "Fuel Depot", "purpose": "Energy provisioning and storage loss tracking." },
+      { "name": "Healthcare Clinic", "purpose": "Treatments, medicines, and staff payroll." },
+      { "name": "Education Center", "purpose": "Apprenticeships, tuition, and instructors." }
+    ],
+    "next_30": [
+      { "name": "Bond Market", "purpose": "Municipal/merchant debt, yield spreads, underwriting." },
+      { "name": "Commodities Exchange", "purpose": "Raw-material pricing and storage premiums." },
+      { "name": "Warehouse Network", "purpose": "Logistics, storage rents, spoilage accounting." },
+      { "name": "Insurance Consortium", "purpose": "Risk pooling for ships, mills, and guilds." },
+      { "name": "Toll Authority", "purpose": "Passage fees funding structural upkeep." },
+      { "name": "Trade Office", "purpose": "Tariffs, caravan escorts, diplomatic subsidies." },
+      { "name": "Labor Guild Hall", "purpose": "Negotiates wages, collects dues, funds relief." },
+      { "name": "Labor Depot", "purpose": "Bonded labor allocations and auction revenues." },
+      { "name": "Luxury Workshop", "purpose": "High-end production taxed at premium rates." },
+      { "name": "Saltworks", "purpose": "Mineral sales with evaporation costs." },
+      { "name": "Brewery", "purpose": "Grain throughput, aging/storage, excise, trade." },
+      { "name": "Dye House", "purpose": "Dye bath services, water usage, chemical inputs." },
+      { "name": "Clothing Market", "purpose": "Garment trade fees and fashion tax." },
+      { "name": "Armory", "purpose": "Weapon manufacture, armor refitting, premium expertise." },
+      { "name": "Ship Chandlery", "purpose": "Rigging, repair parts, dispatch services." },
+      { "name": "Survey Office", "purpose": "Charts, route scouts, mapping fees." },
+      { "name": "Border Outpost", "purpose": "Frontier trade security and tribute." },
+      { "name": "Apprentice Guild", "purpose": "Tuition, mentor stipends, certification fees." },
+      { "name": "Postal Relay", "purpose": "Mail legs billing, courier stipends, maintenance." },
+      { "name": "Bathhouse", "purpose": "Bathing services, laundering fees, sanitation labor." },
+      { "name": "Terrace Farming", "purpose": "Irrigated crops, water rights, upkeep charges." },
+      { "name": "Drydock Yard", "purpose": "Ship repair slots, materials, dock payroll." },
+      { "name": "Kiln Cluster", "purpose": "Pottery orders, clay inputs, kiln energy." },
+      { "name": "Quarry Guild", "purpose": "Cut stone sales, quarry dues, hauling charges." },
+      { "name": "Public Theater", "purpose": "Performances, sponsorships, staffing." },
+      { "name": "Boarding House", "purpose": "Rents, meals, schooling bundles." },
+      { "name": "Tax Office", "purpose": "Administer tax tiers, penalties, auditors." },
+      { "name": "Lock Authority", "purpose": "Canal tolls, lock wages, surge maintenance." },
+      { "name": "Merchant House", "purpose": "Embassy fees, trade guarantees, paperwork." },
+      { "name": "Innovation Workshop", "purpose": "Patents, prototypes, consultant labor." }
+    ]
+  },
+  "government_entities": [
+    { "name": "City Treasury", "purpose": "Tracks revenue allocations, manages reserves, issues bonds." },
+    { "name": "Planning Commission", "purpose": "Permits projects, enforces zoning, reviews development impacts." },
+    { "name": "Public Works Dept", "purpose": "Manages road/canal crews, disaster repairs, infrastructure inspections." },
+    { "name": "Tax Authority", "purpose": "Sets collection targets, runs audits, enforces compliance." },
+    { "name": "Civic Guard", "purpose": "Patrol coverage, incident response, recruitment training." },
+    { "name": "Diplomatic Office", "purpose": "Handles treaties, envoy support, and foreign subsidies." },
+    { "name": "Judicial Court", "purpose": "Processes disputes, levies fines, staffs legal officers." },
+    { "name": "Civil Registry", "purpose": "Records population, citizenship rolls, and citizen services." },
+    { "name": "Education Board", "purpose": "Allocates school funding, curriculum standards, teacher assignments." },
+    { "name": "Emergency Relief Fund", "purpose": "Coordinates disaster payouts, rationing, and shelters." }
+  ],
+  "semi_illegal_entities": [
+    { "name": "Smuggler Ring", "purpose": "Moves restricted goods past customs/quarantine." },
+    { "name": "Moonshine Guild", "purpose": "Operates unlicensed distilling and alcohol bribes." },
+    { "name": "Shadow Courier", "purpose": "Transports sensitive letters or contraband for patrons." },
+    { "name": "Black Market Exchange", "purpose": "Facilitates off-book trades and currency swaps." },
+    { "name": "Pirate Fleet", "purpose": "Raids shipping lanes and sells captured cargo." },
+    { "name": "Protection Racket", "purpose": "Exacts levies from small shops in exchange for safety." },
+    { "name": "Forgery Cell", "purpose": "Sleeves paperwork, bonds, and identity slips." },
+    { "name": "Subterranean Brewery", "purpose": "Runs wet markets and extra-legal tastings." },
+    { "name": "Gambling Den", "purpose": "Hosts high-stakes games with secret bookkeeping." },
+    { "name": "Fence Network", "purpose": "Processes stolen goods and redistributes them." },
+    { "name": "Kidnap Syndicate", "purpose": "Takes hostages for ransom, funds bribery." },
+    { "name": "Corrupt Scribe Circle", "purpose": "Adds false approvals, tax breaks, and land titles." },
+    { "name": "Illicit Labor Pool", "purpose": "Contracts unregistered workers on short notice." },
+    { "name": "Counterfeit Mint", "purpose": "Produces fake marks and manipulates coin supply." },
+    { "name": "Unlicensed Armorsmiths", "purpose": "Makes out-of-reg spec weapons and repairs." },
+    { "name": "Tavern Underground", "purpose": "Keeps banned performances, debates, or sedition." },
+    { "name": "Escapehouse", "purpose": "Shelters fugitives and forged docs." },
+    { "name": "Clandestine Bank", "purpose": "Holds dirty money, hides transfers from authorities." },
+    { "name": "Revolver Guild", "purpose": "Trains private enforcers outside city ordinances." },
+    { "name": "Forgery Mint", "purpose": "Distributes counterfeit metals and false seals." }
+  ],
+  "illegal_entities": [
+    { "name": "Highwaymen Band", "purpose": "Violent robbers attacking caravans and travelers." },
+    { "name": "Assassin Hall", "purpose": "Offers murder-for-hire, political eliminations." },
+    { "name": "Slave Traders", "purpose": "Traffics people in complete defiance of laws." },
+    { "name": "Drug Cartel", "purpose": "Manufactures and distributes banned narcotics." },
+    { "name": "Torture House", "purpose": "Detains and tortures for ransom or interrogation." },
+    { "name": "Pyre Cult", "purpose": "Organizes ritual killings and arson crimes." },
+    { "name": "Kidnap Syndicate", "purpose": "Captures hostages for ransom, ignoring bans." },
+    { "name": "Heretic Circle", "purpose": "Spreads forbidden doctrines and plots." },
+    { "name": "Witchburn Site", "purpose": "Executes witch trials and tortures accused magicians." },
+    { "name": "Revolution Core", "purpose": "Plans violent uprisings and sabotage." }
+  ],
+  "superpower_models": [
+    { "name": "Imperial Bureaucracy", "purpose": "Centralized empire with tribute provinces and imperial clerks." },
+    { "name": "Federal Republic", "purpose": "Layered state where regional rulers keep autonomy under federal law." },
+    { "name": "Technocratic Directorate", "purpose": "Expert councils run ministries, prioritize planning/data." },
+    { "name": "Military Junta", "purpose": "Warlord-led regime holding power through armed garrison oversight." },
+    { "name": "Merchant Oligarchy", "purpose": "Trade families control legislature to maximize commerce." },
+    { "name": "Theocratic Synod", "purpose": "Priesthood governs using divine mandates and ritual law." },
+    { "name": "Confederated City-States", "purpose": "Autonomous cities cooperate on defense/tariffs but keep own courts." },
+    { "name": "Dictatorial Party-State", "purpose": "Single party concentrates authority, channels propaganda, purges rivals." },
+    { "name": "Collegial Council", "purpose": "Rotating collective leadership rotates spokes and sectors." },
+    { "name": "Imperial Protectorate", "purpose": "Dominant power oversees vassal regions with appointed overseers." }
+  ],
+  "polity_leaders": [
+    { "archetype": "Enlightened Monarch", "traits": "Divine right tempered by patronage, invests in monumental works." },
+    { "archetype": "Factional Regent", "traits": "Rule shared among rival houses that balance appointments." },
+    { "archetype": "Meritocratic Chancellor", "traits": "Appoints technocrats, rewards competence, enforces exams." },
+    { "archetype": "Fearsome Warlord", "traits": "Commands loyalty through violence, rewards raiding success." },
+    { "archetype": "Pious Pontiff", "traits": "Leads through theology, ritual spectacle, and moral authority." }
+  ],
+  "centralized_operations": {
+    "grand_kitchen_hall": {
+      "food_procurement_monthly": 2400.0,
+      "staff_labor_cost": 128.0,
+      "service": "Full-Board for 700 adults + children"
+    },
+    "infrastructure_maintenance": {
+      "bath_laundry_hybrid": "Domestic Only (No Industrial Wool)",
+      "water_latrine_taxes": 80.0,
+      "structural_repairs": 200.0
+    }
+  },
+  "total_district_financials": {
+    "total_gross_revenue": 6243.60,
+    "total_operating_expenses": {
+      "food_and_kitchen": 2528.0,
+      "clinic_staff_8": 160.0,
+      "childcare_and_cleaning_12": 144.0,
+      "maintenance_and_taxes": 280.0,
+      "total_opex": 3112.0
+    },
+    "district_net_operating_income": 3131.60
+  },
+  "asset_distribution": {
+    "landlord_share": 3015.00,
+    "bank_share": 116.60
+  },
+  "policies": {
+    "security": "Indemnified (Insurance-backed)",
+    "zoning": "Industrial wool processing strictly prohibited in residential towers",
+    "labor_standards": "Skilled clerk 21.0 Marks; Unskilled laborer 12.0 Marks"
+  }
+}

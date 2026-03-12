@@ -1,0 +1,309 @@
+{
+  "program_id": "AMERSAT",
+  "program_name": "AmeriSat (Government-Owned LEO Satellite Internet Utility)",
+  "as_of_in_canon": "2007-05-20",
+  "scope_note": "Operational, technical, and programmatic details for the AmeriSat initiative. All data is consistent with the legislative framework established in leg.json.",
+  "legislative_basis": {
+    "source_file": "leg.json",
+    "entry_id": "AMERSAT",
+    "status": "Introduced",
+    "year": 2007
+  },
+  "program_overview": {
+    "mission": "To deploy and operate a government-owned Low Earth Orbit (LEO) satellite constellation to provide affordable, high-speed internet access, prioritizing unserved and underserved rural U.S. communities.",
+    "key_objectives": [
+      "Achieve universal broadband coverage in the United States.",
+      "Establish a public utility model for satellite internet, ensuring service at cost for priority users.",
+      "Generate revenue through international licensing and market-rate service to urban U.S. users to ensure long-term financial sustainability.",
+      "Create a strategic national asset for emergency communications and government data services.",
+      "Stimulate domestic aerospace and telecommunications industries through public procurement."
+    ]
+  },
+  "governance_and_oversight": {
+    "operating_entity": "AmeriSat Operating Trust",
+    "structure": "A federally chartered, independent trust governed by a board with staggered terms, removable only for cause, to ensure operational independence from short-term political influence.",
+    "key_agencies": [
+      {
+        "agency": "NASA",
+        "role": "Lead procurement and technical oversight for the satellite constellation and launch services, in partnership with DOD."
+      },
+      {
+        "agency": "Department of Defense (DOD)",
+        "role": "Partner in procurement, ensuring dual-use capabilities and security standards are met. Provided priority access for national security communications."
+      },
+      {
+        "agency": "Department of State",
+        "role": "Manages international licensing agreements for AmeriSat services, with all revenue directed to the AmeriSat Operating Trust."
+      },
+      {
+        "agency": "Federal Communications Commission (FCC)",
+        "role": "Spectrum allocation and regulatory oversight of U.S. landing rights and user terminals."
+      }
+    ]
+  },
+  "technical_specifications": {
+    "constellation": {
+      "total_satellites": 1200,
+      "orbital_planes": "To be determined by NASA orbital modeling, optimized for continuous U.S. coverage.",
+      "altitude_km": "550-600",
+      "inter_satellite_links": "Laser-based, providing a fully meshed network in space."
+    },
+    "satellite_bus": {
+      "status": "GENERATED",
+      "mass_kg_estimate": "250-300",
+      "power_generation": "Deployable solar arrays with battery storage for eclipse operations.",
+      "propulsion": "Hall-effect thrusters for station-keeping and de-orbiting.",
+      "design_lifespan_years": "5-7",
+      "decommissioning_plan": "Mandatory controlled de-orbit at end-of-life to mitigate space debris."
+    },
+    "ground_segment": {
+      "status": "GENERATED",
+      "gateway_earth_stations": "Network of 50-60 gateway stations across the U.S. and allied territories to link the satellite constellation to the terrestrial internet.",
+      "telemetry_tracking_and_control": "Primary control center co-located with NASA facilities; backup control center at a separate secure DOD facility.",
+      "user_terminals": "Standardized, mass-produced phased-array antennas for residential and enterprise use. Design to be open-sourced to encourage a competitive hardware market."
+    }
+  },
+  "financial_model": {
+    "capex_total_usd": 20000000000,
+    "capex_breakdown_estimate": {
+      "satellite_manufacturing": "10,000,000,000",
+      "launch_services": "6,000,000,000",
+      "ground_segment_gateways": "2,500,000,000",
+      "research_and_development": "1,000,000,000",
+      "contingency": "500,000,000"
+    },
+    "opex_annual_usd_range": [1000000000, 2000000000],
+    "revenue_annual_usd_projection": [4000000000, 8000000000],
+    "revenue_sources": [
+      "International licensing fees.",
+      "Service fees from U.S. urban residential users (market rate).",
+      "Service fees from U.S. enterprise and government users.",
+      "Cross-subsidy from urban to rural users is a core principle, not a direct revenue source."
+    ]
+  },
+  "operational_plan": {
+    "deployment_window": "2009-2013",
+    "phases": [
+      {
+        "phase_name": "Block 0 - Initial Service (Basic Coverage)",
+        "timeline": "2009",
+        "satellites_deployed": 60,
+        "objective": "Achieve 'first light' and validate core satellite and ground systems. Provide initial, non-continuous service to pilot communities in rural America within 12-14 months of procurement start.",
+        "launch_vehicle": "Existing EELV Fleet (Delta II / Atlas V)",
+        "launch_rationale": "Utilize proven, existing launch vehicles to accelerate initial deployment and de-risk the program start. Not waiting for Falcon development to achieve initial ROI."
+      },
+      {
+        "phase_name": "Block 1 - U.S. Nationwide Coverage",
+        "timeline": "2010-2011",
+        "satellites_deployed": 600,
+        "objective": "Establish continuous, high-speed coverage for the entire United States, fulfilling the rural service mandate.",
+        "launch_vehicle": "Falcon 9",
+        "launch_rationale": "Transition to the newly operational Falcon 9 for high-cadence, lower-cost deployment of the main constellation."
+      },
+      {
+        "phase_name": "Block 2 - Full Constellation & Global Coverage",
+        "timeline": "2012-2013",
+        "satellites_deployed": 540,
+        "objective": "Complete the 1,200-satellite constellation, providing global coverage to enable international licensing and generate revenue for the Operating Trust.",
+        "launch_vehicle": "Falcon 9",
+        "launch_rationale": "Continue high-cadence Falcon 9 launches to complete the constellation and enable international service."
+      }
+    ],
+    "retail_model": {
+      "type": "Hybrid",
+      "channels": [
+        "Direct-to-consumer service via AmeriSat's public portal.",
+        "Partnerships with rural electric cooperatives and municipal utilities to act as resellers and provide local installation and support.",
+        "Wholesale access for third-party internet service providers (ISPs) to foster competition."
+      ]
+    }
+  },
+  "procurement_strategy": {
+    "launch_services": {
+      "as_of_in_canon": "2007-05-20",
+      "approach": "Strategic Integration",
+      "partner_entity": "SpaceX",
+      "status": "Offer extended",
+      "integration_model": "SpaceX to be restructured as a new division within NASA's engineering directorate, preserving its operational campus and engineering teams.",
+      "key_terms": [
+        {
+          "term": "Leadership",
+          "details": "Elon Musk to be appointed NASA Chief Visioneer and Director of Mars Development, retaining control over the long-term Mars colonization architecture. Gwynne Shotwell to be appointed Technical Administrator, responsible for day-to-day operations of the Launch Services Directorate, including the Falcon program and AmeriSat launch manifest."
+        },
+        {
+          "term": "Acquisition",
+          "details": "The federal government will acquire SpaceX's assets (hardware, facilities, IP) and assume its liabilities. All personnel will be offered positions within the new NASA division."
+        },
+        {
+          "term": "Mission",
+          "details": "The division's primary mandate is to provide low-cost, reliable launch services for AmeriSat, future lunar return missions (Project Artemis), and initial Mars architecture development. It will serve as a competitive counterweight to ULA for national security launches."
+        }
+      ],
+      "rationale": "Framed as a strategic necessity to prevent the collapse of a vital aerospace talent pool and industrial asset. This move secures a dedicated, innovative, and low-cost launch provider for critical national infrastructure (AmeriSat) and future space exploration, mitigating reliance on a single commercial provider."
+    }
+  },
+  "lunar_program_integration": {
+    "program_name": "Project Artemis (Proving Ground)",
+    "as_of_in_canon": "2007-05-20",
+    "strategic_role": "Serve as a full-scale operational and technical proving ground for the Mars campaign, de-risking critical systems in a deep-space environment.",
+    "key_objectives": [
+      "Validate the MCT (Mars Colonial Transporter) crew and cargo lander variants.",
+      "Test long-duration life support and surface habitation systems.",
+      "Demonstrate In-Situ Resource Utilization (ISRU) by producing propellant from lunar ice.",
+      "Develop and refine surface EVA procedures and equipment.",
+      "Establish a small, semi-permanent surface outpost to serve as a long-term testbed."
+    ],
+    "phased_milestones": [
+      {
+        "phase_name": "Phase 1: Robotic Precursors",
+        "timeline": "2013-2015",
+        "missions": [
+          {
+            "mission_name": "Artemis-1: Lunar Resource Prospector",
+            "vehicle": "Falcon Heavy",
+            "objective": "Deploy a polar orbiter and lander to map water ice concentrations at the lunar south pole and certify a landing site for future missions."
+          },
+          {
+            "mission_name": "Artemis-2: MCT Cargo Lander Test",
+            "vehicle": "MCT (Cargo Variant)",
+            "objective": "First unmanned landing of the MCT on the Moon, delivering a small, pre-fabricated habitat module and a prototype ISRU processing plant to the certified polar site."
+          }
+        ]
+      },
+      {
+        "phase_name": "Phase 2: Crewed Sortie & Habitation",
+        "timeline": "2016-2018",
+        "missions": [
+          {
+            "mission_name": "Artemis-3: First Crewed Landing",
+            "vehicle": "MCT (Crew Variant)",
+            "objective": "First crewed landing since Apollo. A short-stay (3-7 day) mission to validate the MCT's landing and ascent systems, test surface EVA suits, and perform initial setup of the habitat module."
+          },
+          {
+            "mission_name": "Artemis-4: First Habitation & ISRU Demo",
+            "vehicle": "MCT (Crew Variant)",
+            "objective": "First long-duration (30-day) stay. Crew will fully activate the habitat, begin ISRU operations to produce the first batch of propellant from lunar ice, and conduct extended surface exploration."
+          }
+        ]
+      }
+    ],
+    "link_to_mars_roadmap": "Successful completion of Artemis-4, specifically the ISRU demonstration, is the primary gate for authorizing the first unmanned cargo fleet to Mars."
+  },
+  "advanced_infrastructure_projects": {
+    "program_name": "Project Lariat (LEO Non-Rotating Skyhook)",
+    "as_of_in_canon": "2007-05-20",
+    "strategic_role": "To create a permanent, reusable, and ultra-low-cost infrastructure for lifting payloads from the upper atmosphere to orbit, enabling large-scale space industrialization and the Mars colonization effort.",
+    "key_objectives": [
+      "Drastically reduce the cost-per-kilogram to orbit by using sub-orbital launch vehicles and electric climbers.",
+      "Provide a continuous and high-throughput logistics channel for the Mars campaign.",
+      "Master the dynamics and operations of large-scale tether systems and climbers in space.",
+      "Establish permanent U.S. leadership in space logistics infrastructure."
+    ],
+    "technical_concept": {
+      "type": "LEO Non-Rotating Skyhook",
+      "tether_length_km": "200-600",
+      "tether_material": "Braided Kevlar, Spectra, or similar high-strength polymer fiber.",
+      "orbital_altitude_km": "~700",
+      "tether_tip_altitude_km": "~100",
+      "payload_lift_mechanism": "Solar-powered climbers. Mechanical (high-grip wheels) and magnetic (non-contact maglev) concepts to be developed in parallel, with a final design down-select at the end of Phase 2.",
+      "reboost_mechanism": "Hall-effect thrusters or similar high-Isp propulsion on the main body to counteract atmospheric drag."
+    },
+    "phased_milestones": [
+      {
+        "phase_name": "Phase 1: Foundational R&D",
+        "timeline": "2007-2012",
+        "objective": "Master tether dynamics modeling and deployment mechanisms. Develop parallel climber designs (mechanical and magnetic) and the required rendezvous and grappling systems for sub-orbital launch vehicles."
+      },
+      {
+        "phase_name": "Phase 2: Sub-orbital & LEO Demonstrations",
+        "timeline": "2013-2015",
+        "objective": "Conduct sub-orbital rocket launches to test tether deployment and evaluate competing climber prototypes on short (10-100 km) tethers. Down-select the final climber design. Followed by a LEO demonstration mission with the winning design on a multi-hundred kilometer tether."
+      },
+      {
+        "phase_name": "Phase 3: Anchor Deployment & Initial Spooling",
+        "timeline": "2016-2018",
+        "objective": "Launch the primary skyhook system into its operational orbit using Falcon Heavy and early MCT flights. Deploy the tether to its full length and begin operational testing of the reboost and climber systems."
+      },
+      {
+        "phase_name": "Phase 4: Initial Operational Capability (IOC)",
+        "timeline": "2019-2022",
+        "objective": "Achieve first payload capture from a sub-orbital vehicle, successful ascent to orbit via climber, and release into a stable orbit. Begin operational use for AmeriSat satellite deployments and cargo runs for Project Artemis."
+      }
+    ],
+    "link_to_mars_roadmap": "The skyhook is a key enabler for the Mars campaign, providing a lower-cost method for lifting the massive quantities of propellant and hardware required for the MCT cargo fleets launching in the mid-2020s.",
+    "safety_and_mitigation": {
+      "program_philosophy": "Defense-in-depth, with multiple independent layers of safety to prevent, contain, and respond to potential failures.",
+      "strategies": [
+        {
+          "risk": "Tether Severance (Debris Impact)",
+          "mitigation": [
+            "Design: Use a multi-strand, braided 'Hoytether' design for damage tolerance.",
+            "Operational: Active debris avoidance maneuvers using on-board radar and ground-based tracking.",
+            "Contingency: Controlled de-orbit of the entire structure if damage exceeds repairable thresholds."
+          ]
+        },
+        {
+          "risk": "Tether Severance (Oscillation)",
+          "mitigation": [
+            "Design: Incorporate active damping systems (Control Moment Gyroscopes) in the main body.",
+            "Operational: Carefully manage climber ascent profiles and payload capture/release events to minimize induced vibrations."
+          ]
+        },
+        {
+          "risk": "Rendezvous Collision",
+          "mitigation": [
+            "Design: Triple-redundant GNC systems on the 'Dart' sub-orbital vehicle.",
+            "Operational: Strict go/no-go decision gates before final rendezvous burn.",
+            "Contingency: Automatic 'Collision Avoidance Maneuver' (CAM) programmed into the 'Dart' to abort and safe the vehicle if it deviates from its trajectory."
+          ]
+        },
+        {
+          "risk": "Stranded Climber",
+          "mitigation": [
+            "Design: Redundant power and drive systems on all climbers.",
+            "Contingency: A secondary, passive grapple point on all climbers to allow for retrieval by a dedicated 'rescue climber.'",
+            "Contingency (Last Resort): Segmented tether design with explosive bolts to allow for the controlled jettison of a hopelessly stuck section."
+          ]
+        }
+      ]
+    },
+    "supporting_systems": {
+      "sub_orbital_launcher": {
+        "vehicle_name": "Tether-Rendezvous Ascent Vehicle (TRAV)",
+        "codename": "Dart",
+        "role": "A fully-reusable, two-stage sub-orbital launch vehicle optimized to deliver climber payloads to the Project Lariat skyhook tip at ~100 km altitude.",
+        "key_characteristics": {
+          "staging": "Two-stage",
+          "reusability": "Fully reusable (both stages)",
+          "payload_to_rendezvous_kg": "5,000 - 7,000 kg (climber + cargo)",
+          "launch_cost_target_per_flight_usd": "1-2 million"
+        },
+        "first_stage": {
+          "designation": "TRAV-S1",
+          "propulsion": "5x Merlin-derived Kerolox engines (optimized for atmospheric flight and reusability).",
+          "reusability_method": "Autonomous propulsive landing at the launch site, similar to the Falcon 9 program.",
+          "role": "Provides primary ascent thrust to exit the dense lower atmosphere and position the second stage for its sub-orbital trajectory."
+        },
+        "second_stage": {
+          "designation": "TRAV-S2 (Payload Pod)",
+          "propulsion": "Hypergolic pressure-fed thruster system (similar to Draco thrusters) for precise, multi-start velocity adjustments.",
+          "role": "Acts as a smart 'payload pod.' After separation, it coasts to apogee and performs the final, delicate rendezvous burn to match velocity with the skyhook tip. It holds the climber payload and presents it for grappling.",
+          "reusability_method": "After payload capture, the pod performs a de-orbit burn and re-enters, deploying a parachute for a guided splashdown and recovery."
+        },
+        "payload_interface": {
+          "type": "Active Grapple Ring",
+          "description": "The top of the second stage features a standardized ring with alignment markers and a robust grappling fixture. The skyhook's capture mechanism latches onto this ring to securely extract the climber payload."
+        },
+        "flight_profile": [
+          "T-0: Vertical launch.",
+          "T+2.5 min: First stage separation. S1 begins boostback and landing sequence.",
+          "T+3 to T+8 min: Second stage (S2) coasts on a sub-orbital trajectory towards a 100 km apogee.",
+          "T+8.5 min: S2 performs the final 'Rendezvous Burn' to precisely match the velocity and position of the descending skyhook tip.",
+          "T+9 min: Skyhook capture mechanism grapples the climber payload from the S2 pod.",
+          "T+9.5 min: S2 separates from the climber and performs a de-orbit burn for recovery.",
+          "T+25 min: S2 performs a guided splashdown under parachute for retrieval and reuse."
+        ]
+      }
+    }
+  }
+}

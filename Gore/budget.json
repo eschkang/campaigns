@@ -1,0 +1,178 @@
+{
+  "metadata": {
+    "project": "Gore Alternate History — Federal Budget Ledger",
+    "description": "Tracking the federal surplus, debt pay-down, and major program funding under the Gore Administration.",
+    "currency": "USD",
+    "fiscal_year_start": "October 1",
+    "canon_status": "Aligned with 2001 CBO Baseline + WTP/MATF legislative stack"
+  },
+  "surplus_summary": [
+    { "year": 2000, "surplus_billions": 236, "status": "actual", "notes": "Baseline surplus inherited from Clinton-Gore." },
+    { "year": 2001, "surplus_billions": 281, "status": "actual", "notes": "WTP1 enacted; debt pay-down begins in earnest." },
+    { "year": 2002, "surplus_billions": 313, "status": "actual", "notes": "PusheenCare enacted (surplus-neutral via Lockbox funding)." },
+    { "year": 2003, "surplus_billions": 359, "status": "actual", "notes": "GridSmart program launched; infrastructure investment begins." },
+    { "year": 2004, "surplus_billions": 397, "status": "actual", "notes": "AutoFile implementation reduces IRS overhead and increases compliance." },
+    { "year": 2005, "surplus_billions": 433, "status": "actual", "notes": "WTP6 House expansion; McMillan Complex construction funded." },
+    { "year": 2006, "surplus_billions": 505, "status": "actual", "notes": "WTP5 enforcement leads to first major Corruption Asset Recovery inflows." },
+    { "year": 2007, "surplus_billions": 573, "status": "actual", "notes": "Pre-MATF baseline; surplus used to offset 0% work-income tax rate." },
+    { "year": 2008, "surplus_billions": 562, "status": "projected", "notes": "First full year of MATF; wealth tax, FTT, and reformed estate tax revenue partially offsets 0% work-income rate." }
+  ],
+  "major_program_funding": {
+    "RAILS": {
+      "total_authorization_billions": 52,
+      "period": "2002-2011",
+      "annual_allocation_billions": 5.2,
+      "funding_split_billions": {
+        "northeast_corridor": 20,
+        "california_corridors": 16,
+        "miami_atlanta_corridor": 8,
+        "st_louis_chicago_corridor": 4,
+        "manufacturing_and_credit_support": 4
+      },
+      "notes": "All investments required to be HSR-compatible per RAILS Act Provision 3. The STL-CHI corridor was added via a 2004 amendment."
+    },
+    "AMERSAT": {
+      "total_capex_billions": 20,
+      "deployment_window": "2009-2013",
+      "annual_opex_billions_range": [1, 2],
+      "projected_annual_revenue_billions_range": [4, 8],
+      "notes": "Revenue derived from international licensing and urban retail service; rural service provided at cost."
+    },
+    "GRIDSMART": {
+      "total_matching_grants_billions": 40,
+      "period": "2003-2012",
+      "priority_targets": ["Puerto Rico", "Gulf Coast", "Northeast Interconnect"],
+      "notes": "Funded via DOE Smart Grid Investment Office."
+    },
+    "MAGA_AOI": {
+      "total_authorization_billions": 80,
+      "period": "2007-2015",
+      "focus_areas": ["Rural Hospitals", "Broadband", "Roads", "Coal Community Transition"],
+      "notes": "Omnibus rural infrastructure program enacted in 2007, funded via direct appropriations."
+    },
+    "SOLAR_INITIATIVE": {
+      "total_authorization_billions": 50,
+      "period": "2001-2011",
+      "focus_areas": ["Loan Guarantees", "Manufacturing Tax Credits", "R&D Institutes"],
+      "notes": "Funding for the Solar Energy Initiative Act of 2001 to onshore the solar supply chain and drive down costs."
+    },
+    "RAILS_NATIONAL": {
+      "total_authorization_billions": "rolling_10_year",
+      "annual_allocation_billions": "TBD",
+      "tbm_fleet_authorization_billions": 1,
+      "funding_source": "High-Speed Rail Trust Fund & General Appropriations",
+      "notes": "Funding for the National High-Speed Rail Act of 2006. The 10-year budget auto-renews annually and includes a $1B authorization for an initial fleet of 6 TBMs."
+    }
+  },
+  "revenue_drivers": {
+    "corruption_asset_recovery_fund": {
+      "source": "WTP5 forfeiture actions",
+      "usage": "Public campaign finance matching pool and America First Forever trust funds"
+    },
+    "matf_loophole_closures": {
+      "provisions": [
+        "Carried interest elimination",
+        "Step-up in basis elimination for estates > $5M",
+        "Offshore profit-shifting restrictions",
+        "Capital gains harmonization for income > $1M"
+      ],
+      "economic_intent": "Maintain surplus trajectory while providing 0% work-income tax rate for the middle class."
+    },
+    "matf_ultra_wealth_tax": {
+      "source": "MATF Provision 14 (2% on net worth > $100M)",
+      "projected_annual_revenue_billions": [150, 200],
+      "notes": "Utilizes WTP4 beneficial ownership data for real-time valuation; primary funding source for America First Forever trust funds."
+    },
+    "financial_transaction_tax": {
+      "source": "MATF Provision 12 (0.1% stock / 0.01% derivatives)",
+      "projected_annual_revenue_billions": [60, 80],
+      "notes": "Targets high-frequency churn; revenue directed to Social Security Trust Fund backfill."
+    },
+    "exec_pay_deduction_penalty": {
+      "source": "MATF Provision 10 (50:1 ratio)",
+      "projected_annual_revenue_billions": [15, 25],
+      "notes": "Revenue from corporations choosing to maintain high executive pay despite lost tax deductions."
+    },
+    "matf_estate_tax": {
+      "source": "MATF Provision 16 (Reformed Estate Tax)",
+      "projected_annual_revenue_billions": [40, 60],
+      "notes": "Revenue from the reformed three-tier estate tax (0% <$5M, 20% $5M-$20M, 77% >$20M)."
+    },
+    "affa_funding": {
+      "source": "America First Forever Act (AFFA, 2004)",
+      "pilot_phase_funding": "2-year pilot at $1 million per day (approx. $730M total).",
+      "ongoing_funding": "10% of the annual federal budget surplus, beginning in FY2007.",
+      "usage": "Capitalization of AFFA trust funds (health, rural opportunity, etc.).",
+      "notes": "Capitalizes the sovereign wealth trust funds for long-term domestic program stability."
+    },
+    "airline_fuel_excise_tax": {
+      "source": "National High-Speed Rail Act of 2006",
+      "projected_annual_revenue_billions": "TBD",
+      "usage": "Capitalization of the High-Speed Rail Trust Fund.",
+      "notes": "A new excise tax on commercial airline fuel to create a dedicated funding stream for HSR."
+    }
+  },
+  "debt_status": {
+    "goal": "Debt-Free by 2012",
+    "current_trajectory": "On track",
+    "notes": "Avoidance of 2001/2003 tax cuts and Iraq War costs preserved approximately $3.5T in capital; pre-emptive regulation via the 2005 Financial Stability Act mitigated the 2008 subprime crisis, maintaining the surplus trajectory."
+  },
+  "real_world_gdp": {
+    "source": "World Bank, Macrotrends, IMF/OECD Forecasts",
+    "currency": "Trillions of USD (Nominal)",
+    "data": [
+      { "year": 2000, "gdp": 10.25 },
+      { "year": 2001, "gdp": 10.58 },
+      { "year": 2002, "gdp": 10.94 },
+      { "year": 2003, "gdp": 11.46 },
+      { "year": 2004, "gdp": 12.22 },
+      { "year": 2005, "gdp": 13.04 },
+      { "year": 2006, "gdp": 13.81 },
+      { "year": 2007, "gdp": 14.45 },
+      { "year": 2008, "gdp": 14.71 },
+      { "year": 2009, "gdp": 14.45 },
+      { "year": 2010, "gdp": 14.99 },
+      { "year": 2011, "gdp": 15.54 },
+      { "year": 2012, "gdp": 16.19 },
+      { "year": 2013, "gdp": 16.78 },
+      { "year": 2014, "gdp": 17.52 },
+      { "year": 2015, "gdp": 18.24 },
+      { "year": 2016, "gdp": 18.75 },
+      { "year": 2017, "gdp": 19.55 },
+      { "year": 2018, "gdp": 20.58 },
+      { "year": 2019, "gdp": 21.37 },
+      { "year": 2020, "gdp": 21.06 },
+      { "year": 2021, "gdp": 23.32 },
+      { "year": 2022, "gdp": 25.46 },
+      { "year": 2023, "gdp": 26.95 },
+      { "year": 2024, "gdp": 28.75 },
+      { "year": 2025, "gdp": 29.18, "status": "projected" },
+      { "year": 2026, "gdp": 29.86, "status": "projected" }
+    ]
+  },
+  "alternate_history_gdp": {
+    "source": "Gemini Code Assist Economic Model (Gore Canon)",
+    "currency": "Trillions of USD (Nominal)",
+    "notes": "Based on avoiding 2001/2008 recessions, pre-emptive regulation (FSA2005), and sustained investment from budget surpluses.",
+    "data": [
+      { "year": 2000, "gdp": 10.25 },
+      { "year": 2001, "gdp": 10.76 },
+      { "year": 2002, "gdp": 11.35 },
+      { "year": 2003, "gdp": 11.92 },
+      { "year": 2004, "gdp": 12.58 },
+      { "year": 2005, "gdp": 13.15 },
+      { "year": 2006, "gdp": 13.78 },
+      { "year": 2007, "gdp": 14.61 },
+      { "year": 2008, "gdp": 15.27 },
+      { "year": 2009, "gdp": 15.88 },
+      { "year": 2010, "gdp": 16.48 },
+      { "year": 2011, "gdp": 17.06 },
+      { "year": 2012, "gdp": 17.66 }
+    ]
+  }
+}
+```
+
+<!--
+[PROMPT_SUGGESTION]Evaluate the impact of the 2008 global financial crisis on the 'Debt-Free by 2012' goal in budget.json.[/PROMPT_SUGGESTION]
+[PROMPT_SUGGESTION]Review the America First Forever trust fund allocations in budget.json for any sustainability risks.[/PROMPT_SUGGESTION]

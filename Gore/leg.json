@@ -1,0 +1,912 @@
+{
+  "project": "Gore Alternate History — Legislative Canon",
+  "as_of_in_canon": "2007-05-20",
+  "scope_note": "Comprehensive canon legislation file. Provisions marked [GENERATED] are plausible drafts consistent with canon intent; provisions marked [LOCKED] are established canon. Dates/votes marked null are not yet locked in canon.",
+  "legend": {
+    "status": ["enacted", "passed_congress_pending_signature", "introduced", "draft", "unknown"],
+    "instrument": ["federal_statute", "constitutional_amendment", "executive_program", "treaty_or_compact"],
+    "provision_status": ["LOCKED", "GENERATED"]
+  },
+  "legislation": [
+    {
+      "id": "WTP1",
+      "name": "We The People Act 1",
+      "short_name": "WTP1",
+      "year": 2001,
+      "instrument": "federal_statute",
+      "policy_area": ["anti_corruption", "governance", "campaign_finance"],
+      "status": "enacted",
+      "key_effect": "Early anti-corruption / money-in-politics reforms (baseline for later WTP stack).",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": null,
+        "passed_congress": null,
+        "signed": "2001-03-XX",
+        "effective": null
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "GENERATED", "text": "Mandatory disclosure of all federal lobbying expenditures above $500." },
+        { "status": "GENERATED", "text": "2-year cooling-off period for executive branch officials before entering lobbying roles (revolving door restriction)." },
+        { "status": "GENERATED", "text": "Public financing option for congressional campaigns via matching of small-dollar donations." },
+        { "status": "GENERATED", "text": "Caps on individual and PAC contributions to federal candidates." },
+        { "status": "GENERATED", "text": "Required disclosure of bundled campaign contributions and bundler identities." },
+        { "status": "GENERATED", "text": "Prohibited federal contractors from making campaign contributions during active contract periods." },
+        { "status": "GENERATED", "text": "Created an independent Office of Public Integrity within DOJ with subpoena power." },
+        { "status": "GENERATED", "text": "Strengthened whistleblower protections for federal employees reporting corruption." }
+      ],
+      "notes": ["Details and vote counts not yet locked in canon; treated as enacted March 2001."]
+    },
+    {
+      "id": "RAILS",
+      "name": "Rail Access, Intercity Linkage, and System Renewal Act",
+      "short_name": "RAILS",
+      "year": 2001,
+      "instrument": "federal_statute",
+      "policy_area": ["transportation", "infrastructure", "rail", "industrial_policy", "climate"],
+      "status": "enacted",
+      "key_effect": "Launches a 10-year national rail modernization program focused on the Northeast Corridor, California, Miami-Atlanta, and St. Louis-Chicago corridors, with all major works required to be compatible with future true high-speed rail.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": null,
+        "passed_congress": null,
+        "signed": null,
+        "effective": "2001-10-01",
+        "amended": "2004"
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "program_financials_generated": {
+        "authorization_total_usd": 52000000000,
+        "program_window": "2002-2011",
+        "funding_split": {
+          "northeast_corridor": 20000000000,
+          "california_corridors": 16000000000,
+          "miami_atlanta_corridor": 8000000000,
+          "st_louis_chicago_corridor": 4000000000,
+          "manufacturing_workforce_and_rrif_credit_support": 4000000000
+        }
+      },
+      "provisions": [
+        { "status": "GENERATED", "text": "Authorized $52 billion over 10 fiscal years for intercity passenger rail modernization, corridor development, and supporting manufacturing capacity." },
+        { "status": "GENERATED", "text": "Designated the Northeast Corridor, California Intercity Rail Program, the Miami-Atlanta Southeast Corridor, and the St. Louis-Chicago Midwest Corridor as Phase I priority corridors." },
+        { "status": "GENERATED", "text": "Required all federally funded corridor investments to be HSR-compatible where practical, including right-of-way preservation, curve easing, bridge/tunnel clearances, station throat design, and electrification geometry sufficient for later 186+ mph segments where feasible." },
+        { "status": "GENERATED", "text": "Created a Northeast Corridor Infrastructure Authority to coordinate Amtrak, FRA, commuter railroads, and affected states on shared capital sequencing, dispatch standards, and slot protection for intercity service." },
+        { "status": "GENERATED", "text": "Created a California Rail Compact grant program for Los Angeles-San Diego, Los Angeles-Bakersfield, San Jose-Sacramento, and San Francisco-Sacramento upgrades, with state matching funds required." },
+        { "status": "GENERATED", "text": "Created a Southeast Corridor Development Authority for Miami-Orlando-Jacksonville-Savannah-Atlanta, prioritizing new passenger-only segments where freight conflicts cannot be resolved cost-effectively." },
+        { "status": "GENERATED", "text": "Funded NEC state-of-good-repair and speed projects including catenary replacement, movable bridge renewal, interlocking reconstruction, power-supply upgrades, station throat modernization, and selective third/fourth tracking." },
+        { "status": "GENERATED", "text": "Funded California corridor projects including grade separations, double-tracking, curve modifications, signaling upgrades, electrification planning, and urban approach improvements to support frequent 110-125 mph service as the near-term standard." },
+        { "status": "GENERATED", "text": "Funded Miami-Atlanta projects including track rebuilding, grade crossing elimination, new bypasses around freight chokepoints, station redevelopment, and staged electrification beginning with the highest-frequency Florida segments." },
+        { "status": "GENERATED", "text": "Mandated nationwide deployment of cab signaling or positive train control equivalents on all Phase I passenger corridors by 2010 as a condition of continued federal capital support." },
+        { "status": "GENERATED", "text": "Authorized FRA to acquire, bank, and preserve right-of-way for future dedicated passenger alignments in constrained urban and suburban segments." },
+        { "status": "GENERATED", "text": "Established a rolling-stock and rail electrification manufacturing credit for firms opening or expanding U.S. plants producing trainsets, transformers, catenary hardware, signaling systems, and rail components." },
+        { "status": "GENERATED", "text": "Required project labor agreements or equivalent labor standards on major civil works and funded apprenticeship pipelines tied to rail construction, electrical work, dispatching, and maintenance." },
+        { "status": "GENERATED", "text": "Reformed Amtrak capital accounting by separating Northeast Corridor infrastructure accounts from national operating accounts to make reinvestment levels and corridor performance transparent." },
+        { "status": "GENERATED", "text": "Set corridor performance targets for trip-time reduction, frequency growth, on-time performance, and grade-crossing risk reduction, with biennial public reporting to Congress." }
+      ],
+      "notes": [
+        "Designed as a 2001-start modernization bill rather than an immediate full-HSR buildout; near-term operating target is mostly 110-125 mph outside the NEC, with corridor geometry and property acquisition intended to avoid foreclosing later dedicated HSR.",
+        "Political logic: sells as congestion relief, aviation resilience, manufacturing, and energy security, while embedding the legal and physical prerequisites for later true high-speed rail conversion.",
+        "The St. Louis-Chicago corridor was added to the program in 2004 due to its shorter projected time to completion."
+      ]
+    },
+    {
+      "id": "SOLAR_INITIATIVE_2001",
+      "name": "Solar Energy Initiative Act of 2001",
+      "short_name": "Solar Initiative",
+      "year": 2001,
+      "instrument": "federal_statute",
+      "policy_area": ["energy", "climate", "industrial_policy", "infrastructure"],
+      "status": "enacted",
+      "key_effect": "Launched a national mobilization to make solar power the cheapest form of new energy generation, creating a domestic manufacturing base.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": { "introduced": null, "passed_congress": null, "signed": "2001-05-XX", "effective": null },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "GENERATED", "text": "Established a national goal of achieving 90% cost reduction for utility-scale solar by 2015." },
+        { "status": "GENERATED", "text": "Authorized $50 billion in federal loan guarantees and grants for the construction of utility-scale solar farms and residential rooftop solar installations." },
+        { "status": "GENERATED", "text": "Created a Solar Manufacturing Investment Tax Credit to onshore the entire solar supply chain, from polysilicon to panel assembly." },
+        { "status": "GENERATED", "text": "Directed the Department of Energy to establish three National Solar Research Institutes focused on next-generation photovoltaic, storage, and grid integration technologies." },
+        { "status": "GENERATED", "text": "Mandated that all federal agencies source 30% of their electricity from renewable sources by 2012." },
+        { "status": "GENERATED", "text": "Integrated with the GridSmart program (est. 2003) to prioritize energy storage solutions and high-voltage direct current (HVDC) transmission corridors from high-production solar zones." }
+      ],
+      "outcomes": {
+        "as_of_2004": "180,000+ jobs in solar manufacturing.",
+        "as_of_2007": "340,000+ jobs in solar manufacturing; utility-scale solar cost achieved at $0.12/kWh."
+      },
+      "notes": ["A major first-term climate and industrial policy initiative. The job creation and cost reduction figures are key administration talking points."]
+    },
+    {
+      "id": "WTP2",
+      "name": "We The People Act 2",
+      "short_name": "WTP2",
+      "year": 2002,
+      "instrument": "federal_statute",
+      "policy_area": ["anti_corruption", "transparency", "campaign_finance", "enforcement"],
+      "status": "enacted",
+      "key_effect": "Expanded anti-corruption, transparency, and enforcement regime (consolidated WTP2 and WTP3).",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": null,
+        "passed_congress": null,
+        "signed": "2002-03-XX",
+        "effective": null
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "GENERATED", "text": "Extended WTP1 disclosure requirements to 501(c)(4) and (c)(6) dark money organizations spending on federal elections." },
+        { "status": "GENERATED", "text": "Required real-time (48-hour) electronic filing of all contributions over $1,000." },
+        { "status": "GENERATED", "text": "Mandated public disclosure of earmark sponsors in all appropriations legislation." },
+        { "status": "GENERATED", "text": "Required federal agencies to publish lobbying contact logs (who met with whom, when)." },
+        { "status": "GENERATED", "text": "Expanded FOIA response timelines and created enforcement penalties for non-compliance." },
+        { "status": "GENERATED", "text": "Created a searchable public database consolidating campaign finance, lobbying, and contractor data." },
+        { "status": "GENERATED", "text": "Extended revolving-door restrictions to senior congressional staffers." },
+        { "status": "GENERATED", "text": "Prohibited use of official resources (staff, franking) for campaign activity." },
+        { "status": "GENERATED", "text": "Created a dedicated Public Corruption Strike Force within FBI, jointly supervised by the independent Office of Public Integrity." },
+        { "status": "GENERATED", "text": "Increased criminal penalties for bribery, honest-services fraud, and obstruction in federal corruption cases." },
+        { "status": "GENERATED", "text": "Authorized civil asset freezes pending corruption investigations without requiring criminal conviction." },
+        { "status": "GENERATED", "text": "Extended RICO applicability to public corruption schemes." },
+        { "status": "GENERATED", "text": "Mandated financial disclosures for all Senate-confirmed appointees, updated annually and publicly posted." },
+        { "status": "GENERATED", "text": "Established an independent Inspector General for the Office of Public Integrity itself." },
+        { "status": "GENERATED", "text": "Required federal courts to expedite corruption cases involving sitting officials." }
+      ],
+      "notes": ["Consolidated transparency and enforcement stack (formerly WTP2 and WTP3)."]
+    },
+    {
+      "id": "PUSHEENCARE",
+      "name": "PusheenCare Coverage Act",
+      "short_name": "PusheenCare",
+      "year": 2002,
+      "instrument": "federal_statute",
+      "policy_area": ["healthcare"],
+      "status": "enacted",
+      "key_effect": "Established a robust public option to close the coverage gap while maintaining the private insurance market.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": null,
+        "passed_congress": null,
+        "signed": null,
+        "effective": null
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "LOCKED", "text": "Public option architecture enacted to close the coverage gap; very high public approval in-canon." },
+        { "status": "GENERATED", "text": "Established a federal baseline insurance plan available to all individuals currently in the 'coverage gap' (uninsured or underinsured)." },
+        { "status": "GENERATED", "text": "Authorized employers to purchase PusheenCare coverage for their employees as a competitive alternative to private group plans." },
+        { "status": "GENERATED", "text": "Mandated that PusheenCare plans maintain actuarial value and provider networks sufficient to compete directly with top-tier private insurance." },
+        { "status": "GENERATED", "text": "Preserved the existing private insurance market, leaving private insurers mostly untouched and allowing them to continue offering supplemental and primary plans." },
+        { "status": "GENERATED", "text": "Utilized federal scale to negotiate provider reimbursement rates for the public option, ensuring cost-competitiveness with the private sector." },
+        { "status": "GENERATED", "text": "Provided federal subsidies for low-to-middle income individuals to purchase either PusheenCare or private plans through a national exchange." },
+        { "status": "GENERATED", "text": "Implemented a 'Benefit Pass-Through' requirement, mandating that any employer savings realized by switching from private plans to PusheenCare be redirected into employee base wages or supplemental health benefits." }
+      ],
+      "notes": ["Core signature achievement; detailed statutory structure not fully itemized in source PDFs."]
+    },
+    {
+      "id": "WTP3",
+      "name": "We The People Act 3 (Supreme Court Reform Act)",
+      "short_name": "WTP3",
+      "year": 2003,
+      "instrument": "federal_statute",
+      "policy_area": ["judicial_reform", "governance", "ethics"],
+      "status": "enacted",
+      "key_effect": "Comprehensive reform of the Supreme Court and judicial nomination process.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": null,
+        "passed_congress": null,
+        "signed": "2003-06-XX",
+        "effective": null
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "GENERATED", "text": "Expanded the Supreme Court of the United States from 9 to 13 justices." },
+        { "status": "GENERATED", "text": "Established a mandatory, enforceable Code of Conduct for Supreme Court Justices, overseen by the Office of Public Integrity." },
+        { "status": "GENERATED", "text": "Created a non-partisan Judicial Nominating Commission to evaluate and recommend candidates for federal judicial vacancies." },
+        { "status": "GENERATED", "text": "Required the President to provide a formal written justification to the Senate for any judicial nomination made outside the Commission's recommended list." }
+      ],
+      "notes": ["Redefined as the Supreme Court Reform Act following the consolidation of enforcement provisions into WTP2."]
+    },
+    {
+      "id": "GRIDSMART",
+      "name": "GridSmart Modernization & Reliability Program",
+      "short_name": "GridSmart",
+      "year": 2003,
+      "instrument": "executive_program",
+      "policy_area": ["energy", "infrastructure"],
+      "status": "enacted",
+      "key_effect": "Nationwide grid modernization; Puerto Rico treated as an early high-priority target due to systemic fragility.",
+      "dates": {
+        "launched": "2003-01-01",
+        "notes": "Approximate; described as roughly 4 years old by 2007."
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "LOCKED", "text": "Puerto Rico designated as early high-priority target for grid hardening due to systemic fragility; improvements felt by 2007." },
+        { "status": "GENERATED", "text": "Established a federal Smart Grid Investment Office within DOE to coordinate and fund modernization grants." },
+        { "status": "GENERATED", "text": "Required all utilities serving over 100,000 customers to submit 10-year grid modernization plans within 18 months." },
+        { "status": "GENERATED", "text": "Authorized $40 billion in federal matching grants for smart meter deployment, automation, and substation hardening." },
+        { "status": "GENERATED", "text": "Mandated interoperability standards for all new grid equipment sold in the United States." },
+        { "status": "GENERATED", "text": "Created a Grid Reliability Corps within FEMA for rapid deployment of emergency grid restoration teams." },
+        { "status": "GENERATED", "text": "Required critical infrastructure nodes to have 72-hour backup power capability by 2008." }
+      ],
+      "notes": ["Program framing: reliability, automation, hardening for critical infrastructure."]
+    },
+    {
+      "id": "WTP4",
+      "name": "We The People Act 4",
+      "short_name": "WTP4",
+      "year": 2004,
+      "instrument": "federal_statute",
+      "policy_area": ["anti_corruption", "financial_transparency", "beneficial_ownership"],
+      "status": "enacted",
+      "key_effect": "Beneficial ownership / transparency stack becomes strong enough to make later asset freezes feasible in real time.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": null,
+        "passed_congress": null,
+        "signed": "2004-03-XX",
+        "effective": null
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "LOCKED", "text": "Beneficial ownership disclosure requirements strengthened to enable real-time asset freeze capability." },
+        { "status": "LOCKED", "text": "Financial transparency provisions sufficient to make Sackler-family asset freeze feasible in canon." },
+        { "status": "LOCKED", "text": "Money flow visibility requirements enabling active federal investigation and interdiction." },
+        { "status": "GENERATED", "text": "Required all federally chartered LLCs, corporations, and statutory trusts to file beneficial ownership disclosures with FinCEN." },
+        { "status": "GENERATED", "text": "Expanded FinCEN beneficial ownership database to include all entities with gross revenues over $50,000 annually, utilizing a tiered reporting system where entities under $500,000 gross revenue may utilize a 'Simplified Beneficial Ownership' (SBO) disclosure." },
+        { "status": "GENERATED", "text": "Required beneficial ownership updates within 30 days of any ownership change." },
+        { "status": "GENERATED", "text": "Authorized Treasury to issue emergency asset freeze orders for entities under active corruption or money-laundering investigation, effective within 24 hours." },
+        { "status": "GENERATED", "text": "Created cross-agency data-sharing protocols linking FinCEN, IRS, DOJ, and the Office of Public Integrity." },
+        { "status": "GENERATED", "text": "Prohibited use of shell company chains exceeding two layers for federal contracting purposes." },
+        { "status": "GENERATED", "text": "Mandated the adoption of Global Legal Entity Identifiers (LEI) for all entities filing beneficial ownership disclosures to ensure unique identification across datasets." },
+        { "status": "GENERATED", "text": "Required the Office of Public Integrity to establish a real-time, encrypted API for automated data exchange with Tier-1 financial institutions to support 24-hour interdiction capability." },
+        { "status": "GENERATED", "text": "Established a 'Due Process Safeguard' requiring a mandatory judicial review hearing within 72 hours of any emergency asset freeze order issued under this Act." }
+      ],
+      "notes": ["Canon implication: WTP4 beneficial-ownership requirements enable Sackler asset freeze and visibility of money flows."]
+    },
+    {
+      "id": "AUTOFILE",
+      "name": "Auto-Filled Returns Implementation Act",
+      "short_name": "AutoFile",
+      "year": 2004,
+      "instrument": "federal_statute",
+      "policy_area": ["tax_admin"],
+      "status": "enacted",
+      "key_effect": "IRS auto-filled returns implemented a few years before 2007; very popular in-canon.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": null,
+        "passed_congress": null,
+        "signed": null,
+        "effective": null
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "LOCKED", "text": "IRS authorized and directed to auto-fill federal tax returns for eligible filers using W-2, 1099, and third-party data." },
+        { "status": "GENERATED", "text": "Filers with income solely from wages, interest, and dividends receive pre-filled returns by March 1 each year." },
+        { "status": "GENERATED", "text": "Filers may accept auto-filled return, amend online, or opt out entirely; acceptance requires one confirmation action." },
+        { "status": "GENERATED", "text": "IRS prohibited from contracting with private tax preparation software companies in ways that restrict access to auto-fill." },
+        { "status": "GENERATED", "text": "Free federal filing portal mandated for all taxpayers regardless of income." },
+        { "status": "GENERATED", "text": "Auto-fill program phased in over 3 years; initially available to filers with adjusted gross income under $150,000." }
+      ],
+      "notes": ["Exact year not locked; placed 2004 consistent with 'implemented a few years ago' framing from 2007 canon."]
+    },
+    {
+      "id": "AMERICA_FIRST_FOREVER",
+      "name": "America First Forever Act",
+      "short_name": "AFFA",
+      "year": 2004,
+      "instrument": "federal_statute",
+      "policy_area": ["trust_funds", "delivery", "durability"],
+      "status": "enacted",
+      "key_effect": "Creates durable trust funds and survivability mechanics for core delivery programs.",
+      "dates": {
+        "introduced": null,
+        "passed_congress": null,
+        "signed": "2004-08-XX"
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "LOCKED", "text": "Establishes durable trust funds for health, rural opportunity, community development, coal transition, and veterans programs." },
+        { "status": "GENERATED", "text": "Established a 2-year pilot program funded at $1 million per day to capitalize the trust funds." },
+        { "status": "GENERATED", "text": "Following the pilot program, capitalization is set at 10% of the annual federal budget surplus, beginning in FY2007." },
+        { "status": "GENERATED", "text": "Trust fund principal protected by supermajority (67 Senate votes) requirement for drawdown or rescission." },
+        { "status": "GENERATED", "text": "Independent Trust Fund Oversight Board with 10-year staggered terms; removable only for cause." },
+        { "status": "GENERATED", "text": "Annual actuarial review published publicly; automatic trigger adjustments if trust fund solvency falls below 20-year horizon." },
+        { "status": "GENERATED", "text": "Programs funded from trust funds exempted from annual appropriations process; governed by standing authorizations." }
+      ],
+      "notes": ["Referenced in campaign file with trust fund structure; vote counts not in source snippet."]
+    },
+    {
+      "id": "WTP5",
+      "name": "We The People Act 5",
+      "short_name": "WTP5",
+      "year": 2006,
+      "instrument": "federal_statute",
+      "policy_area": ["anti_corruption", "campaign_finance", "enforcement"],
+      "status": "enacted",
+      "key_effect": "Further closes dark-money channels; strengthens enforcement posture going into 2006–2007 prosecutions.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": null,
+        "passed_congress": null,
+        "signed": null,
+        "effective": null
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "GENERATED", "text": "Closed remaining 501(c)(6) trade association dark-money loopholes not addressed in WTP2." },
+        { "status": "GENERATED", "text": "Required online political advertising to carry real-time donor disclosure at point of display." },
+        { "status": "GENERATED", "text": "Extended civil RICO provisions to coordinated dark-money networks, requiring that any associated asset restraining orders adhere to the 72-hour judicial review hearing mandated in WTP4." },
+        { "status": "GENERATED", "text": "Increased maximum sentences for conviction under WTP1–4 enforcement provisions." },
+        { "status": "GENERATED", "text": "Created a Corruption Asset Recovery Fund, directing proceeds from forfeiture actions into public campaign finance matching pool." },
+        { "status": "GENERATED", "text": "Empowered the Office of Public Integrity to initiate investigations without referral from executive branch agencies, ensuring all resulting emergency interdictions are gated by the WTP4 Due Process Safeguard." },
+        { "status": "GENERATED", "text": "Mandated annual public reporting by DOJ on all pending and resolved public corruption prosecutions." },
+        { "status": "GENERATED", "text": "Expanded the definition of 'lobbying activity' to include 'strategic policy consulting,' requiring registration for any individual or entity receiving over $2,500 per quarter to influence federal policy, regardless of direct contact with officials." }
+      ],
+      "notes": ["Not fully itemized in original canon files; provisions generated consistent with enforcement escalation arc."]
+    },
+    {
+      "id": "WTP6",
+      "name": "We The People Act 6",
+      "short_name": "WTP6",
+      "year": 2005,
+      "instrument": "federal_statute",
+      "policy_area": ["democracy_reform", "congress", "election_administration"],
+      "status": "enacted",
+      "key_effect": "House expansion to 1,000 seats and related election-administration modernization.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": null,
+        "passed_congress": null,
+        "signed": null,
+        "effective": null
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "implementation_defaults": {
+        "districts": "States may retain pre-WTP6 districts for legacy seats.",
+        "at_large_expansion_seats": "New seats created by expansion may be elected at-large with one additional at-large vote per voter; top X vote-getters win X at-large seats (SNTV).",
+        "at_large_ballot_rule": "Candidate-choice only for at-large (no straight-ticket) per House Admin guidance (not new legislation)."
+      },
+      "provisions": [
+        { "status": "LOCKED", "text": "House of Representatives expanded from 435 to 1,000 seats." },
+        { "status": "LOCKED", "text": "New expansion seats may be elected at-large using Single Non-Transferable Vote (SNTV); top vote-getters fill available seats." },
+        { "status": "LOCKED", "text": "States may retain pre-WTP6 district boundaries for legacy seats." },
+        { "status": "LOCKED", "text": "McMillan Complex authorized as purpose-built House chamber." },
+        { "status": "GENERATED", "text": "Congressional apportionment formula recalculated using cube-root rule as population baseline for legacy seat allocation." },
+        { "status": "GENERATED", "text": "Required ranked-choice voting for all single-member House districts in states with at least 5 legacy seats." },
+        { "status": "GENERATED", "text": "Established federal minimum election administration standards (paper ballots, audit trails, uniform polling hours)." },
+        { "status": "GENERATED", "text": "Automatic voter registration triggered by any interaction with federal agencies (SSA, IRS, USPS, DMV data-share)." },
+        { "status": "GENERATED", "text": "Established expedited judicial review protocols, granting the Supreme Court original jurisdiction over challenges to the 1,000-seat apportionment and the validity of SNTV/RCV implementation to ensure representation is not delayed by litigation." }
+      ],
+      "notes": [
+        "Exact enactment date/votes not locked in current files.",
+        "McMillan Complex is the purpose-built House chamber (operational consequence of WTP6)."
+      ]
+    },
+    {
+      "id": "FSA2005",
+      "name": "Financial Stability Act of 2005",
+      "short_name": "FSA",
+      "year": 2005,
+      "instrument": "federal_statute",
+      "policy_area": ["finance", "regulation", "consumer_protection"],
+      "status": "enacted",
+      "key_effect": "Pre-emptive regulation of subprime mortgage markets and over-the-counter derivatives to prevent systemic collapse.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": { "introduced": null, "passed_congress": null, "signed": "2005-08-XX", "effective": null },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "GENERATED", "text": "Established federal anti-predatory lending standards, prohibiting 'exploding' ARMs and requiring documented verification of a borrower's ability to repay." },
+        { "status": "GENERATED", "text": "Mandated that all over-the-counter (OTC) derivatives be traded on regulated exchanges and cleared through central counterparties to eliminate 'wild west' shadow markets." },
+        { "status": "GENERATED", "text": "Required mortgage securitizers to retain 5% of the credit risk ('skin in the game') for any asset-backed security issued." },
+        { "status": "GENERATED", "text": "Empowered the Office of Public Integrity and Treasury to set counter-cyclical capital requirements for Tier-1 financial institutions." },
+        { "status": "GENERATED", "text": "Prohibited federally insured depository institutions from engaging in proprietary trading of high-risk synthetic derivatives." },
+        { "status": "GENERATED", "text": "Created a National Mortgage Registry linked to the WTP4 beneficial ownership database to ensure real-time visibility of underlying asset ownership." }
+      ],
+      "notes": ["Enacted to mitigate the emerging subprime bubble; leverages WTP4 infrastructure for real-time tracking of financial flows."]
+    },
+    {
+      "id": "RAILS_NATIONAL",
+      "name": "National High-Speed Rail Act of 2006",
+      "short_name": "RAILS National",
+      "year": 2006,
+      "instrument": "federal_statute",
+      "policy_area": ["transportation", "infrastructure", "rail", "industrial_policy", "climate"],
+      "status": "enacted",
+      "key_effect": "Establishes a permanent, trust-fund-backed national HSR program and a government-owned TBM fleet to accelerate construction.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": { "introduced": null, "passed_congress": null, "signed": "2006-03-XX", "effective": null },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "GENERATED", "text": "Adopts the US High-Speed Rail Association (USHSR) vision as the framework for a national HSR network." },
+        { "status": "GENERATED", "text": "Authorizes a new 10-year rolling budget for HSR construction, with funding automatically renewing each fiscal year unless explicitly voted to stop by Congress." },
+        { "status": "GENERATED", "text": "Establishes the High-Speed Rail Trust Fund to provide a dedicated, long-term funding source for the program." },
+        { "status": "GENERATED", "text": "Imposes a new federal excise tax on commercial airline fuel to capitalize the High-Speed Rail Trust Fund." },
+        { "status": "GENERATED", "text": "Upgrades the original RAILS corridors (NEC, California, Southeast, Midwest) to full HSR build-out specifications (220 mph target speeds)." },
+        { "status": "GENERATED", "text": "Authorizes planning and construction for new Phase II corridors, including Texas Triangle (Dallas-Houston-Austin) and Cascadia (Eugene-Seattle-Vancouver)." },
+        { "status": "GENERATED", "text": "Established the National Tunneling Authority (NTA), a government-owned corporation, to acquire, maintain, and operate a strategic fleet of Tunnel Boring Machines (TBMs)." },
+        { "status": "GENERATED", "text": "Authorized the initial purchase of six (6) large-diameter TBMs, designating the Hudson Gateway Program as the first priority project." },
+        { "status": "GENERATED", "text": "Established a national training center for TBM operation and maintenance in partnership with labor unions and engineering schools." }
+      ],
+      "notes": ["A major second-term infrastructure initiative that transitions from modernization to a full HSR buildout, creating a permanent funding mechanism and a national TBM fleet to accelerate construction."]
+    },
+    {
+      "id": "CEPA",
+      "name": "Communications Evidence Preservation Act",
+      "short_name": "CEPA",
+      "year": 2007,
+      "instrument": "federal_statute",
+      "policy_area": ["justice", "privacy", "law_enforcement"],
+      "status": "enacted",
+      "key_effect": "Provider-side retention of email traffic transiting major hubs; access only via warrant; privacy advocate attached to each warrant request.",
+      "dates": {
+        "introduced": "2007-01-06",
+        "passed_congress": "2007-01-22",
+        "signed": "2007-01-22"
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "LOCKED", "text": "Email service providers and carriers must retain traffic metadata transiting major hubs for 18 months." },
+        { "status": "LOCKED", "text": "Retained communications accessible only via warrant issued by Article III court." },
+        { "status": "LOCKED", "text": "A privacy advocate appointed to each warrant request, with standing to oppose issuance." },
+        { "status": "GENERATED", "text": "Providers must store retained data in encrypted form; decryption keys held by provider, not government." },
+        { "status": "GENERATED", "text": "Warrant applications must specify target, scope, and time window; general or dragnet warrants prohibited." },
+        { "status": "GENERATED", "text": "Annual public reporting required from DOJ on number of CEPA warrants issued, contested, and denied." },
+        { "status": "GENERATED", "text": "Civil liability established for unauthorized government access to CEPA-retained data." }
+      ],
+      "notes": ["Introduced Jan 6, signed Jan 22, 2007. Exact vote counts not locked."]
+    },
+    {
+      "id": "GWS",
+      "name": "Gulf War Illness Recognition & Benefits Act",
+      "short_name": "GulfWarBill",
+      "year": 2007,
+      "instrument": "federal_statute",
+      "policy_area": ["veterans", "healthcare"],
+      "status": "enacted",
+      "key_effect": "Presumptive service-connection framework and benefits improvements for Gulf War illness.",
+      "dates": {
+        "passed_congress": "2007-01-22",
+        "signed": "2007-01-22"
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "LOCKED", "text": "Presumptive service-connection established for Gulf War illness; veterans need not prove specific exposure event." },
+        { "status": "LOCKED", "text": "Survivor benefit claims simplified for Gulf War illness fatalities." },
+        { "status": "GENERATED", "text": "VA directed to establish specialized Gulf War illness treatment centers at 12 regional facilities." },
+        { "status": "GENERATED", "text": "Research appropriation of $500 million over 5 years for Gulf War illness etiology and treatment studies." },
+        { "status": "GENERATED", "text": "Disability rating minimums established for qualifying Gulf War illness diagnoses." },
+        { "status": "GENERATED", "text": "Retroactive benefits available to veterans whose prior claims were denied on service-connection grounds." }
+      ],
+      "notes": ["Passed alongside CEPA by Jan 22 per canon; exact vote counts not locked."]
+    },
+    {
+      "id": "MAGA_AOI",
+      "name": "Make America Great Again — All of It Act",
+      "short_name": "MAGA AOI",
+      "year": 2007,
+      "instrument": "federal_statute",
+      "policy_area": ["rural_infrastructure", "healthcare", "broadband", "energy", "jobs"],
+      "status": "enacted",
+      "key_effect": "Rural infrastructure omnibus; direct delivery support for non-urban America.",
+      "dates": {
+        "announced": "2007-01-23",
+        "introduced": "2007-01-24",
+        "passed_congress": null,
+        "signed": null
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "LOCKED", "text": "Rural infrastructure omnibus covering hospitals, broadband, roads, and energy." },
+        { "status": "LOCKED", "text": "Announced at SOTU January 23; submitted to Congress January 24." },
+        { "status": "GENERATED", "text": "Authorized $80 billion over 8 years in rural hospital construction, expansion, and stabilization grants." },
+        { "status": "GENERATED", "text": "Rural broadband connectivity mandate: universal access at minimum 25 Mbps by 2010 via AmeriSat and terrestrial co-investment." },
+        { "status": "GENERATED", "text": "Created a Rural Opportunity Fund providing low-interest loans for small businesses in counties with population under 50,000." },
+        { "status": "GENERATED", "text": "Funded 50,000 miles of rural road and bridge rehabilitation over 5 years." },
+        { "status": "GENERATED", "text": "Coal community transition grants providing retraining, relocation assistance, and economic diversification funding." },
+        { "status": "GENERATED", "text": "Funded through direct federal appropriations over an 8-year authorization period." }
+      ],
+      "notes": ["Announced at SOTU Jan 23; introduced Jan 24. Passage date and vote counts not yet in canon."]
+    },
+    {
+      "id": "MATF",
+      "name": "Make America Tax Free / Tax Fairness and Work Rewarding Act",
+      "short_name": "MATF",
+      "year": 2007,
+      "instrument": "federal_statute",
+      "policy_area": ["tax", "anti_loopholes", "middle_class"],
+      "status": "enacted",
+      "key_effect": "0% federal income tax rate on work income under thresholds; phase-in above; closes major high-end loopholes.",
+      "sponsors": {
+        "senate_lead": "Ted Kennedy",
+        "house_lead": "John Conyers"
+      },
+      "dates": {
+        "announced": "2007-01-23",
+        "introduced": "2007-01-24",
+        "passed_senate": null,
+        "passed_house": null,
+        "signed": null
+      },
+      "vote_counts": {
+        "senate": "62-38",
+        "house": "631-369"
+      },
+      "locked_parameters": {
+        "zero_rate_thresholds": {
+          "single": 100000,
+          "married_filing_joint": 200000,
+          "head_of_household": 150000,
+          "inflation_indexed": true
+        },
+        "phase_in_band_work_income": {
+          "single": [100000, 400000],
+          "married_filing_joint": [200000, 800000],
+          "head_of_household": [150000, 600000],
+          "inflation_indexed": true
+        },
+        "before_after_notice_baseline": "Use taxpayer's 2006 actual taxes as the 'before' baseline."
+      },
+      "provisions": [
+        { "status": "LOCKED", "text": "0% federal income tax on work income up to $100k single / $200k joint / $150k head of household (inflation-indexed)." },
+        { "status": "LOCKED", "text": "Graduated phase-in from threshold to $400k single / $800k joint / $600k head of household." },
+        { "status": "LOCKED", "text": "Senate vote: 62-38; House vote: 631-369." },
+        { "status": "LOCKED", "text": "Sponsored by Sen. Kennedy (Senate) and Rep. Conyers (House)." },
+        { "status": "GENERATED", "text": "Carried interest loophole eliminated; private equity profits taxed as ordinary income." },
+        { "status": "GENERATED", "text": "Step-up in basis at death eliminated for estates over $5 million; unrealized gains taxed at transfer." },
+        { "status": "GENERATED", "text": "Offshore profit-shifting restrictions: U.S. corporations taxed on global income with credit for foreign taxes paid." },
+        { "status": "GENERATED", "text": "Capital gains rate harmonized with ordinary income rates above $1 million annual income." },
+        { "status": "GENERATED", "text": "IRS enforcement funding doubled; mandatory audit rate restored for high-income returns." },
+        { "status": "GENERATED", "text": "Established a 50:1 executive-to-median-worker compensation ratio, enforced via loss of deductibility and tiered excise taxes for non-compliant firms." },
+        { "status": "GENERATED", "text": "Corporate Minimum Tax: Imposed a 20% minimum tax on 'book income' for corporations with annual profits exceeding $1 billion." },
+        { "status": "GENERATED", "text": "Financial Transaction Tax: Imposed a 0.1% tax on stock trades and a 0.01% tax on derivative contracts to reduce high-frequency churn." },
+        { "status": "GENERATED", "text": "Stock Buyback Excise Tax: Imposed a 4% excise tax on corporate share repurchases to encourage reinvestment in labor and R&D." },
+        { "status": "GENERATED", "text": "Ultra-Wealth Tax: Established a 2% annual tax on net worth exceeding $100 million, utilizing WTP4 beneficial ownership data for valuation." },
+        { "status": "GENERATED", "text": "Mark-to-Market for Billionaires: Required annual taxation of unrealized capital gains for households with net worth exceeding $1 billion." },
+        { "status": "GENERATED", "text": "Reformed the estate tax with a 20% rate on assets between $5 million and $20 million, and a 77% rate on all assets exceeding $20 million." },
+        { "status": "GENERATED", "text": "1031 Exchange Limitation: Capped the deferral of capital gains on 'like-kind' real estate exchanges at $1,000,000 per year and eliminated the 25% recapture preference." },
+        { "status": "GENERATED", "text": "Private Jet & Luxury Fuel Surcharge: Imposed a 20% surcharge on non-commercial aviation fuel and luxury aircraft acquisitions." },
+        { "status": "GENERATED", "text": "Interest Deduction Cap: Limited corporate interest expense deductions to 30% of EBITDA to discourage high-leverage private equity buyouts." },
+        { "status": "GENERATED", "text": "Check-the-Box Loophole Closure: Prohibited the use of 'disregarded entity' status for offshore subsidiaries to hide passive income." },
+        { "status": "GENERATED", "text": "Refundable Child Tax Credit: Expanded the credit to $3,600 per child, made fully refundable and paid monthly." },
+        { "status": "GENERATED", "text": "EITC Expansion: Increased the Earned Income Tax Credit for childless workers and expanded eligibility to workers aged 19–70." },
+        { "status": "GENERATED", "text": "Standard Deduction Inflation-Indexing: Mandated annual adjustments to the 0% work-income floor to maintain purchasing power." },
+        { "status": "GENERATED", "text": "Education & Vocational Credit: Established a fully refundable credit for tuition and supplies for accredited trade schools and public universities." },
+        { "status": "GENERATED", "text": "Social Security Trust Fund Backfill: Authorized direct federal transfers to Social Security to offset revenue lost from low-income payroll tax exemptions." },
+        { "status": "GENERATED", "text": "FBAR Real-Time Reporting: Mandated 24-hour electronic reporting of foreign financial accounts with balances exceeding $50,000." },
+        { "status": "GENERATED", "text": "Tax Haven Contract Prohibition: Prohibited federal agencies from awarding contracts to entities utilizing non-cooperative tax jurisdictions." },
+        { "status": "GENERATED", "text": "Corporate Tax Whistleblower Bounty: Established a 30% reward for individuals providing evidence leading to the recovery of over $5 million in unpaid corporate taxes." },
+        { "status": "GENERATED", "text": "High-Value Asset Transfer Reporting: Required real-time disclosure of all non-currency asset transfers (art, real estate, equity) exceeding $1 million." },
+        { "status": "GENERATED", "text": "Luxury Goods Excise: Imposed a 10% surcharge on jewelry, yachts, and high-end vehicles with a retail price exceeding $150,000." },
+        { "status": "GENERATED", "text": "Shadow Lobbying Deduction Elimination: Prohibited corporations from deducting fees paid for 'strategic consulting' or 'policy advisory' services." },
+        { "status": "GENERATED", "text": "Global Minimum Tax Enforcement: Authorized the Treasury to impose 'top-up' taxes on U.S. entities operating in jurisdictions with effective rates below 15%." },
+        { "status": "GENERATED", "text": "Established a 'reasonable compensation' floor for materially participating owners of S-corps and partnerships to prevent avoidance of payroll taxes." },
+        { "status": "GENERATED", "text": "Tightened the 'Real Estate Professional' exception for passive loss rules, requiring 1500 hours minimum and contemporaneous records." },
+        { "status": "GENERATED", "text": "Instituted a Carbon Tax starting at $25/ton, with all initial proceeds returned via a per-capita dividend; tax rate scheduled to increase annually." },
+        { "status": "GENERATED", "text": "Pass-through Loss Limitation: Capped the deduction of pass-through business losses against non-business income at $500,000 annually." },
+        { "status": "GENERATED", "text": "Pass-through Retained Earnings Rule: Treated retained earnings beyond reasonable business needs as a deemed distribution for tax purposes." },
+        { "status": "GENERATED", "text": "Buyback Recharacterization: Recharacterized stock buyback proceeds as ordinary dividend income for tax purposes to remove preferential treatment." }
+      ],
+      "notes": ["Vote counts locked. Announced SOTU Jan 23; introduced Jan 24."]
+    },
+    {
+      "id": "FILIBUSTER_REFORM",
+      "name": "Senate Filibuster Reform Act",
+      "short_name": "Filibuster Elimination",
+      "year": 2007,
+      "instrument": "federal_statute",
+      "policy_area": ["senate_rules", "governance"],
+      "status": "enacted",
+      "key_effect": "Removes/neutralizes the filibuster as a procedural weapon for blocking the agenda.",
+      "dates": {
+        "passed_congress": null,
+        "signed": null
+      },
+      "vote_counts": {
+        "senate": "61-39",
+        "house": null
+      },
+      "provisions": [
+        { "status": "LOCKED", "text": "Filibuster eliminated or neutralized as a blocking mechanism; passes Senate 61-39 with 4 Democratic defections." },
+        { "status": "GENERATED", "text": "Cloture threshold reduced from 60 to simple majority (51) for all legislation and nominations." },
+        { "status": "GENERATED", "text": "Talking filibuster requirement reinstated as transition measure: any delay requires continuous floor presence." },
+        { "status": "GENERATED", "text": "Post-cloture debate time reduced from 30 hours to 2 hours for most legislation." },
+        { "status": "GENERATED", "text": "Unanimous consent calendar reforms to accelerate non-controversial nominations." }
+      ],
+      "notes": ["Senate vote locked at 61-39 with 4 Democratic defections. House vote not specified in canon."]
+    },
+    {
+      "id": "DC_STATEHOOD",
+      "name": "Washington Douglass Commonwealth Admission Act",
+      "short_name": "DC Admission",
+      "year": 2007,
+      "instrument": "federal_statute",
+      "policy_area": ["statehood", "democracy"],
+      "status": "enacted",
+      "key_effect": "Creates Douglass Commonwealth by retroceding everything except a small federal enclave; grants full representation to ~700k residents.",
+      "dates": {
+        "introduced": null,
+        "passed_congress": null,
+        "signed": null
+      },
+      "vote_counts": {
+        "senate": "63-37",
+        "house": null
+      },
+      "provisions": [
+        { "status": "LOCKED", "text": "Retrocedes all District territory except a small federal enclave (Capitol, White House, National Mall) to create the State of Douglass Commonwealth." },
+        { "status": "LOCKED", "text": "Grants full congressional representation to approximately 700,000 residents." },
+        { "status": "LOCKED", "text": "Senate vote: 63-37; House margin described as comfortable." },
+        { "status": "LOCKED", "text": "Convention-to-ratification-to-seating timeline approximately 6 months from enactment." },
+        { "status": "GENERATED", "text": "New state immediately entitled to 2 senators and House seats apportioned under WTP6." },
+        { "status": "GENERATED", "text": "Federal enclave retains name 'District of Columbia' for constitutional compliance; governed by joint Congressional committee." },
+        { "status": "GENERATED", "text": "Douglass Commonwealth state constitution ratified by existing DC Council acting as provisional convention." },
+        { "status": "GENERATED", "text": "Federal employees residing in new state retain federal employment rights; no double-taxation provision." }
+      ],
+      "notes": ["Senate vote locked. House margin comfortable but not numerically specified. Seating ~6 months post-enactment."]
+    },
+    {
+      "id": "PR_REFERENDUM",
+      "name": "Puerto Rico Status Referendum Act",
+      "short_name": "PR Referendum",
+      "year": 2007,
+      "instrument": "federal_statute",
+      "policy_area": ["territories", "democracy"],
+      "status": "enacted",
+      "key_effect": "Federally administered, DOJ-overseen binding referendum within 60 days (ranked choice; trilingual ballots).",
+      "dates": {
+        "announced": null,
+        "enacted": null,
+        "referendum_window_days": 60
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "LOCKED", "text": "Federally administered, DOJ-overseen binding referendum to be held within 60 days of enactment." },
+        { "status": "LOCKED", "text": "Trilingual ballots (English, Spanish, and Puerto Rican Spanish variants)." },
+        { "status": "LOCKED", "text": "Original statute provides 3-option ranked choice ballot; later canon discussion moved toward binary — not yet resolved." },
+        { "status": "GENERATED", "text": "Options: (1) Statehood, (2) Enhanced Commonwealth, (3) Independence." },
+        { "status": "GENERATED", "text": "DOJ Civil Rights Division designated as lead administrator; independent international observers invited." },
+        { "status": "GENERATED", "text": "Result binding on Congress; implementing legislation required within 90 days of certified result." },
+        { "status": "GENERATED", "text": "Campaign finance rules applied to referendum advocacy; foreign contributions prohibited." }
+      ],
+      "notes": ["3-option RCV is the statutory baseline per source PDF; binary option discussed but not locked as replacement."]
+    },
+    {
+      "id": "PR_STATEHOOD",
+      "name": "Puerto Rico Admission Act of 2007",
+      "short_name": "PR Admission",
+      "year": 2007,
+      "instrument": "federal_statute",
+      "policy_area": ["statehood", "democracy"],
+      "status": "introduced",
+      "key_effect": "Admits Puerto Rico as a state on equal footing; continuity-first transition.",
+      "dates": {
+        "introduced": "2007-05-20",
+        "target_admission": "2007-10-01"
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "LOCKED", "text": "Puerto Rico admitted as the 52nd state on equal footing with all existing states." },
+        { "status": "LOCKED", "text": "Target admission date October 1, 2007." },
+        { "status": "LOCKED", "text": "House delegation design aligns to Puerto Rico senatorial districts plus at-large seats under WTP6." },
+        { "status": "LOCKED", "text": "Smooth passage assumed in canon; exact vote counts to be filled once floor votes occur." },
+        { "status": "GENERATED", "text": "Commonwealth government, laws, and debts carry over; Puerto Rico Supreme Court decisions retained as binding precedent." },
+        { "status": "GENERATED", "text": "PusheenCare and all federal programs extended immediately; phase-in schedule for tax obligations over 5 years." },
+        { "status": "GENERATED", "text": "Spanish designated as co-official language for federal interactions within Puerto Rico." },
+        { "status": "GENERATED", "text": "Jones Act phase-in reform tied to PR admission; maritime restrictions relaxed for PR-origin vessels." }
+      ],
+      "notes": ["Introduced May 20, 2007. Smooth passage assumed."]
+    },
+    {
+      "id": "AMERSAT",
+      "name": "AmeriSat Act (Government-Owned LEO Satellite Internet Utility)",
+      "short_name": "AmeriSat",
+      "year": 2007,
+      "instrument": "federal_statute",
+      "policy_area": ["broadband", "space", "infrastructure", "national_competitiveness"],
+      "status": "enacted",
+      "key_effect": "Government-owned LEO constellation; U.S. rural users as priority; hybrid retail model.",
+      "program_financials_locked": {
+        "constellation_size": 1200,
+        "capex_total_usd": 20000000000,
+        "deployment_window": "2009-2013",
+        "opex_annual_usd": [1000000000, 2000000000],
+        "international_licensing_revenue_annual_usd": [4000000000, 8000000000]
+      },
+      "dates": {
+        "announced": "2007-02-15",
+        "introduced": "2007-02-20",
+        "passed_senate": "2007-07-10",
+        "passed_house": "2007-07-12",
+        "signed": "2007-07-16"
+      },
+      "vote_counts": {
+        "senate": "68-32",
+        "house": "680-320"
+      },
+      "provisions": [
+        { "status": "LOCKED", "text": "Government-owned 1,200-satellite LEO constellation authorized." },
+        { "status": "LOCKED", "text": "Total capex $20 billion; deployment window 2009-2013." },
+        { "status": "LOCKED", "text": "Annual opex $1-2 billion; international licensing revenue projected at $4-8 billion annually." },
+        { "status": "LOCKED", "text": "Block 0 first light targeted 12-14 months from procurement start." },
+        { "status": "LOCKED", "text": "Hybrid retail model: direct service plus co-ops and resellers." },
+        { "status": "GENERATED", "text": "Rural U.S. users receive service at cost; urban users at market rate; cross-subsidy model codified." },
+        { "status": "GENERATED", "text": "AmeriSat designated as utility; open-access requirement for government data and emergency communications." },
+        { "status": "GENERATED", "text": "International licensing managed by State Department with revenue flowing to AmeriSat Operating Trust." },
+        { "status": "GENERATED", "text": "Procurement administered by NASA in partnership with DOD; launch manifest shared with existing contractors." }
+      ],
+      "notes": ["Passed with strong bipartisan support following the successful passage of the SpaceX Integration Act. The bill was framed as a critical infrastructure and jobs program for rural America."]
+    },
+    {
+      "id": "SPACEX_INTEGRATION",
+      "name": "SpaceX Strategic Integration and Launch Competitiveness Act",
+      "short_name": "SpaceX Integration Act",
+      "year": 2007,
+      "instrument": "federal_statute",
+      "policy_area": ["space", "industrial_policy", "national_competitiveness", "infrastructure"],
+      "status": "enacted",
+      "key_effect": "Authorizes the acquisition of SpaceX and its integration into NASA as a new launch services division with a ring-fenced Mars development program.",
+      "dates": {
+        "introduced": "2007-05-21",
+        "passed_senate": "2007-06-12",
+        "passed_house": "2007-06-14",
+        "signed": "2007-06-18"
+      },
+      "vote_counts": {
+        "senate": "62-38",
+        "house": "645-355"
+      },
+      "provisions": [
+        {
+          "status": "LOCKED",
+          "text": "Authorizes the Administrator of NASA to acquire all assets, intellectual property, and liabilities of Space Exploration Technologies Corp. (SpaceX)."
+        },
+        {
+          "status": "GENERATED",
+          "text": "Establishes the 'NASA Launch Services Directorate' to be headquartered at the existing SpaceX campus in Hawthorne, CA, preserving the existing engineering and manufacturing teams."
+        },
+        {
+          "status": "GENERATED",
+          "text": "Creates the position of 'Chief Visioneer and Director of Mars Development,' appointing Elon Musk to the role with final engineering authority over the Mars transportation architecture."
+        },
+        {
+          "status": "GENERATED",
+          "text": "Establishes the Mars Development Program as a ring-fenced entity within the new directorate, with a dedicated 10-year, $20 billion appropriation for the development of the Mars Colonial Transporter (MCT) and supporting technologies."
+        },
+        {
+          "status": "GENERATED",
+          "text": "Appropriates $100 million for the acquisition of SpaceX assets and the assumption of its liabilities."
+        }
+      ],
+      "notes": ["Passed after a brief but intense legislative battle. The administration successfully framed the bill as a strategic investment in competition and innovation, overcoming opposition from incumbent aerospace contractors."]
+    },
+    {
+      "id": "AMERICA_FIRST_FOREVER",
+      "name": "America First Forever Act",
+      "short_name": "AFFA",
+      "year": 2004,
+      "instrument": "federal_statute",
+      "policy_area": ["trust_funds", "delivery", "durability"],
+      "status": "enacted",
+      "key_effect": "Creates durable trust funds and survivability mechanics for core delivery programs.",
+      "dates": {
+        "introduced": null,
+        "passed_congress": null,
+        "signed": "2004-08-XX"
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "LOCKED", "text": "Establishes durable trust funds for health, rural opportunity, community development, coal transition, and veterans programs." },
+        { "status": "GENERATED", "text": "Established a 2-year pilot program funded at $1 million per day to capitalize the trust funds." },
+        { "status": "GENERATED", "text": "Following the pilot program, capitalization is set at 10% of the annual federal budget surplus, beginning in FY2007." },
+        { "status": "GENERATED", "text": "Trust fund principal protected by supermajority (67 Senate votes) requirement for drawdown or rescission." },
+        { "status": "GENERATED", "text": "Independent Trust Fund Oversight Board with 10-year staggered terms; removable only for cause." },
+        { "status": "GENERATED", "text": "Annual actuarial review published publicly; automatic trigger adjustments if trust fund solvency falls below 20-year horizon." },
+        { "status": "GENERATED", "text": "Programs funded from trust funds exempted from annual appropriations process; governed by standing authorizations." }
+      ],
+      "notes": ["Referenced in campaign file with trust fund structure; vote counts not in source snippet."]
+    },
+    {
+      "id": "MERCHANT_MARINE",
+      "name": "Merchant Marine / Maritime Modernization Act",
+      "short_name": "Merchant Marine",
+      "year": 2007,
+      "instrument": "federal_statute",
+      "policy_area": ["industrial_policy", "shipping", "national_security"],
+      "status": "enacted",
+      "key_effect": "Modernization of merchant marine / maritime capability.",
+      "dates": {
+        "passed_senate": "2007-11-28",
+        "signed": null
+      },
+      "vote_counts": {
+        "senate": "71-28",
+        "house": null
+      },
+      "provisions": [
+        { "status": "LOCKED", "text": "Senate vote: 71-28 on November 28, 2007." },
+        { "status": "GENERATED", "text": "Authorized $15 billion shipbuilding investment fund for U.S.-flagged commercial and dual-use vessels." },
+        { "status": "GENERATED", "text": "Jones Act reformed: phase-in of domestic-build requirements for new vessel classes; existing fleet grandfathered." },
+        { "status": "GENERATED", "text": "Maritime workforce training program established via partnership with maritime academies." },
+        { "status": "GENERATED", "text": "U.S.-flagged fleet required for carriage of all federally financed cargo (food aid, military logistics)." },
+        { "status": "GENERATED", "text": "Port modernization grants for top 20 U.S. ports; intermodal connectivity requirements." },
+        { "status": "GENERATED", "text": "Strategic Sealift Reserve expanded; minimum U.S.-flagged dry cargo capacity requirements set by DOD." }
+      ],
+      "notes": ["Senate vote locked. House vote and signing date not specified in source."]
+    },
+    {
+      "id": "WTP7",
+      "name": "Citizens United Democracy Act (Amendment Vehicle)",
+      "short_name": "WTP7",
+      "year": 2007,
+      "instrument": "constitutional_amendment",
+      "policy_area": ["democracy_reform", "campaign_finance", "electoral_college"],
+      "status": "enacted",
+      "key_effect": "Democracy reform amendment vehicle; includes Electoral College reform and campaign finance architecture.",
+      "dates": {
+        "introduced": "2007-11-XX",
+        "passed_congress": "2007-11-XX"
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "LOCKED", "text": "Constitutional amendment vehicle covering Electoral College reform and campaign finance." },
+        { "status": "GENERATED", "text": "Corporations, LLCs, and other non-natural persons prohibited from making expenditures in connection with federal elections." },
+        { "status": "GENERATED", "text": "Electoral College reformed: faithless elector prohibited; presidential election determined by national popular vote compact enshrined constitutionally." },
+        { "status": "GENERATED", "text": "All independent expenditures over $1,000 in connection with federal elections require immediate public disclosure." },
+        { "status": "GENERATED", "text": "Foreign nationals and foreign-controlled entities prohibited from any participation in federal, state, or local elections." },
+        { "status": "GENERATED", "text": "Congress empowered to set aggregate contribution and expenditure limits without judicial strict scrutiny." }
+      ],
+      "notes": ["Detailed titles exist in campaign file; exact vote counts not in source. Preceded by strategic WTP9 failure vote."]
+    },
+    {
+      "id": "WTP8",
+      "name": "Voting Rights Forever Amendment",
+      "short_name": "WTP8",
+      "year": 2007,
+      "instrument": "constitutional_amendment",
+      "policy_area": ["democracy_reform", "voting_rights"],
+      "status": "enacted",
+      "key_effect": "Affirmative right to vote in federal elections; constitutionalized preclearance; private right of action; federal election standards floor.",
+      "dates": {
+        "introduced": "2007-11-XX",
+        "passed_congress": "2007-11-XX"
+      },
+      "vote_counts": {
+        "senate": "69-31",
+        "house": null
+      },
+      "provisions": [
+        { "status": "LOCKED", "text": "Affirmative constitutional right to vote in federal elections for all citizens 18 and older." },
+        { "status": "LOCKED", "text": "Preclearance requirement constitutionalized with objective coverage triggers (not legislative discretion)." },
+        { "status": "LOCKED", "text": "Private right of action established for voting rights violations." },
+        { "status": "LOCKED", "text": "Federal election standards floor created for federal elections only." },
+        { "status": "LOCKED", "text": "Senate vote: 69-31." },
+        { "status": "GENERATED", "text": "Objective preclearance triggers: jurisdictions with documented voter suppression incidents in prior 10 years, or statistical disparities in turnout above defined threshold." },
+        { "status": "GENERATED", "text": "Federal minimum standards: paper ballot requirement, 15 days early voting, same-day registration, polling place density minimums." },
+        { "status": "GENERATED", "text": "Attorney General empowered to seek injunctive relief for violations without showing of discriminatory intent (effects test constitutionalized)." }
+      ],
+      "notes": ["Senate vote count locked from in-canon floor simulation. House count not locked numerically."]
+    },
+    {
+      "id": "WTP9",
+      "name": "American Democracy Act (Omnibus Statement Vehicle)",
+      "short_name": "WTP9",
+      "year": 2007,
+      "instrument": "constitutional_amendment",
+      "policy_area": ["democracy_reform"],
+      "status": "unknown",
+      "key_effect": "Strategic omnibus combining WTP7+WTP8; intended to fail on first vote to create political record, then split.",
+      "dates": {
+        "introduced": "2007-11-XX",
+        "floor_vote": "2007-11-XX"
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "LOCKED", "text": "Omnibus vehicle combining full text of WTP7 and WTP8." },
+        { "status": "LOCKED", "text": "Strategic intent: WTP9 voted first and allowed to fail, creating political record of opposition votes; WTP7 and WTP8 then pass separately." },
+        { "status": "GENERATED", "text": "Floor managers acknowledged omnibus nature in debate record, establishing legislative history for subsequent split bills." }
+      ],
+      "notes": ["Status is 'unknown'/failed by design. Its failure is the prerequisite for WTP7 and WTP8 passage."]
+    }
+  ]
+}

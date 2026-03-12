@@ -1,0 +1,3477 @@
+{
+  "ExportType": "NovaRoma_StateTransfer_FullSingleJSON",
+  "LastUpdated": "590 BCE-10-17",
+  "Notes": [
+    "This file is intended to be sufficient to resume the campaign in a new chat when campaign.json is already available in the project context.",
+    "Contains full current running state (including milestones/programs), plus the pricing/economic model incl. COLA/CPI.",
+    "No time is advanced by this export.",
+    "In-session updates applied: advanced as_of to 590 BCE-09-05; updated TMH Philly pipeline (R1 pilot + R2 8 crosses + heat plant) and cross standard (400 units, 35/35/30); added Philly private cross occupied pre-final-cert; added Hudson Basin Peekskill TMH100.4 site; set TU branch build policy 5 weeks; added commodity overrides (coal delivered 10.5, scrap 1, Mn ore 60) and USS→Philly barge+portage logistics 6.822 mark/ton.",
+    "Patch: AX roster updated to include USS-1 as launch issue; disclosure registry entry added; terms (size/term/coupon) left null pending population.",
+    "590 BCE-10-10: Philadelphia council approved capacity-linked immigration policy (6–3) with quarterly audits and automatic pause triggers."
+  ],
+  "Sources": {
+    "campaign_json_in_project": true,
+    "pricing_model_file": "pricing_and_economic_model.json",
+    "running_state_file": "state.running.after_next_35.patched_cash.json"
+  },
+  "pricing_and_economic_model": {
+    "LastUpdated": "2026-02-14T02:15:59Z",
+    "as_of": "590 BCE-09-05",
+    "currency": "mark",
+    "pricing_and_econ": {
+      "banking_and_credit": {
+        "warehouse_receipt_collateral_policy_tt": {
+          "eligible_borrowers": "industrial_users_only",
+          "eligible_collateral": [
+            "MSC_certified_steel_billet_receipts"
+          ],
+          "enabled": true,
+          "initial_ltv": 0.6,
+          "policy": "conservative_static_ltv_even_if_price_rises"
+        }
+      },
+      "commodity_overrides": {
+        "coal_bituminous_delivered_scranton_cokeworks_mark_per_ton": {
+          "components": {
+            "local_transport_mark_per_ton": 2.0,
+            "mining_extraction_mark_per_ton": 8.5
+          },
+          "notes": [
+            "State override; commodities baseline mining cost 8.5 mark/ton."
+          ],
+          "scope": "Scranton coal mine within coke plant parcel -> coke works yard",
+          "value": 10.5
+        },
+        "coke_oven_energy_fuel_source": {
+          "notes": [
+            "Treat commodities energy_fuel MJ for coke process as coal-fired startup/boost fuel (user)."
+          ],
+          "value": "coal_bituminous"
+        },
+        "manganese_ore_franklin_run_of_mine_delivered_mark_per_ton": {
+          "assumption": "Low-grade Mn-bearing ore stream; used at 120 kg per ton steel",
+          "implied_cost_mark_per_ton_steel": 7.2,
+          "notes": [
+            "User-set; commodities.json does not price manganese_ore extraction."
+          ],
+          "value": 60.0
+        },
+        "scrap_steel_internal_transfer_mark_per_ton": {
+          "notes": [
+            "User-set; not defined in commodities.json."
+          ],
+          "scope": "Internal off-spec steel remelt feed",
+          "value": 1.0
+        }
+      },
+      "housing": {
+        "occupancy_mix_assumption": {
+          "one_bed_pct": 0.35,
+          "studio_pct": 0.35,
+          "two_bed_pct": 0.3
+        },
+        "operating_cost_model": {
+          "net_ratio_of_gross": 0.65,
+          "opex_ratio_of_gross": 0.35
+        },
+        "rent_baseline_monthly_mark": {
+          "one_bed": 15,
+          "studio": 10,
+          "two_bed": 20
+        },
+        "tmh_policy": {
+          "rent_all_inclusive": true
+        }
+      },
+      "metals": {
+        "philly_steel_works": {
+          "input_cost_basis": {
+            "billets_purchase_price_mark_per_ton": 400,
+            "policy": "internal_transfer_at_market_rate"
+          },
+          "margin_guidance": {
+            "notes": [
+              "Broad mix increases early scrap risk; margins are a target, not guaranteed.",
+              "Precision line should be evaluated separately from structural line."
+            ],
+            "target_net_margin_mark_per_ton_range": [
+              40,
+              80
+            ]
+          },
+          "target_product_lines": [
+            "construction_hardware",
+            "tools",
+            "mechanical_components",
+            "experimental_small_runs"
+          ]
+        },
+        "uss_scranton": {
+          "notes": [
+            "Initial market anchor for construction-grade billets.",
+            "Price discovery expected to emerge via AX once warehouse-receipt contracts list."
+          ],
+          "product": "steel_billets_construction_grade",
+          "spot_price_mark_per_ton": 400
+        }
+      },
+      "msc_warehousing_philly": {
+        "fee_per_turn_by_cargo_class_mark": {
+          "blended_fee_per_turn_assumption": 1.9,
+          "bulk_commodities": 0.8,
+          "finished_and_semi_finished": 3.0,
+          "industrial_metal_flow": 2.5
+        },
+        "target_operating_envelope": {
+          "turns_per_month_target_blended": 1.8,
+          "utilization_target": 0.92
+        },
+        "unit_economics_model": {
+          "capacity_units_per_warehouse": 100,
+          "model_type": "velocity_based",
+          "net_ratio_of_gross": 0.4,
+          "opex_ratio_of_gross": 0.6
+        }
+      },
+      "production_and_expansion_doctrine": {
+        "capital_priority_under_constraint": {
+          "priority_rank": [
+            "housing",
+            "steel",
+            "warehousing",
+            "university_endowment"
+          ]
+        },
+        "downturn_policy": {
+          "rule": "adjust_output_not_panic_shutdown"
+        },
+        "uss_line1": {
+          "current_utilization_target": "ramp_gradually_80_to_95"
+        },
+        "uss_line2": {
+          "design_intent": "quality_focused_billet_line",
+          "rail_long_sections": "later_phase",
+          "status": "engineering_study_started"
+        }
+      }
+    }
+  },
+  "running_state": {
+    "entities": {
+      "MSCX": {}
+    },
+    "open_decisions_queue": [
+      "PH Housing Trust: private TMH cross showcase is fully occupied; final occupancy certification remains pending (regulatory signoff, not an occupancy blocker). Track compliance risk and any retrofit/closure exposure.",
+      "Hudson Basin: receive population + economic condition reports from the 5 clinic nodes (Peekskill, Newburgh, Poughkeepsie, Kingston, Albany); decide first dock/warehouse leases based on congestion signals.",
+      "USS Scranton Line-1: confirm 3-shift staffing + maintain ore/coke/flux buffers through BF1 ignition; prepare bond circular release after first pig shipment."
+    ],
+    "player": {
+      "location": "Philadelphia (Philly) + Hudson Basin north of Nyack + Scranton works",
+      "name": "Pusheen",
+      "notes": [
+        "Focus: continuity of projects/investments, infrastructure buildout, and economic signals."
+      ]
+    },
+    "running_state": {
+      "as_of": "590 BCE-10-10",
+      "ax_exchange": {
+        "activity_rolling_30d": {
+          "USS-1": {
+            "last_30d": "see trade tape",
+            "note": "Ticker added to roster; detailed tape not yet linked."
+          },
+          "bonds": [
+            {
+              "bid_ask_spread_pts": 0.4,
+              "last_price_pct": 101.2,
+              "last_updated_as_of": "590 BCE-07-18",
+              "ticker": "PHH-1",
+              "trades_30d_count": 410,
+              "volume_30d_par_mark": 820
+            },
+            {
+              "bid_ask_spread_pts": 0.8,
+              "last_price_pct": 99.1,
+              "last_updated_as_of": "590 BCE-07-18",
+              "ticker": "HBTLC-1",
+              "trades_30d_count": 300,
+              "volume_30d_par_mark": 760
+            },
+            {
+              "bid_ask_spread_pts": 0.6,
+              "last_price_pct": 100.4,
+              "last_updated_as_of": "590 BCE-07-18",
+              "ticker": "PWW-2",
+              "trades_30d_count": 240,
+              "volume_30d_par_mark": 520
+            },
+            {
+              "bid_ask_spread_pts": 0.8,
+              "last_price_pct": 100.0,
+              "last_updated_as_of": "590 BCE-07-18",
+              "ticker": "MSC-WH1",
+              "trades_30d_count": 160,
+              "volume_30d_par_mark": 360
+            },
+            {
+              "bid_ask_spread_pts": 1.0,
+              "last_price_pct": 98.6,
+              "last_updated_as_of": "590 BCE-07-18",
+              "ticker": "UOP-1",
+              "trades_30d_count": 140,
+              "volume_30d_par_mark": 310
+            },
+            {
+              "bid_ask_spread_pts": 1.4,
+              "last_price_pct": 99.7,
+              "last_updated_as_of": "590 BCE-07-18",
+              "ticker": "PH-RD1",
+              "trades_30d_count": 85,
+              "volume_30d_par_mark": 180
+            },
+            {
+              "bid_ask_spread_pts": 0.2,
+              "last_price_pct": 100.3,
+              "last_updated_as_of": "590 BCE-07-18",
+              "ticker": "TT-REGN",
+              "trades_30d_count": 900,
+              "volume_30d_par_mark": 1100
+            }
+          ],
+          "totals": {
+            "trades_30d_count": 2235,
+            "volume_30d_par_mark": 4050
+          },
+          "window_days": 30
+        },
+        "as_of": "590 BCE-09-19",
+        "bond_disclosures": {
+          "UOP-1": {
+            "coupon_rate": 0.0625,
+            "covenants": {
+              "no_diversion_to_non_UPH_entities": true,
+              "quarterly_disclosure_required": true,
+              "restricted_use": true
+            },
+            "issue_size_mark": 200,
+            "issuer": "University_of_Philadelphia_Endowment_Board",
+            "repayment_sources": [
+              "endowment yield (initially small, growing toward target)",
+              "grant overhead recovery / research contract margin (USS-linked)",
+              "tuition and fees as enrollment ramps",
+              "sponsor gifts earmarked for debt service (allowed but not assumed)"
+            ],
+            "term_years": 12,
+            "use_of_proceeds": {
+              "allocation_mark": {
+                "campus_shell_and_teaching_spaces": 70,
+                "faculty_recruiting_and_stipends": 30,
+                "grant_match_and_working_reserve": 20,
+                "instruments_and_reference_stock": 25,
+                "research_shops_and_labs": 55
+              },
+              "allocation_notes": [
+                "Research shops/labs prioritize metallurgy benches, assay/testing capability, and waterworks measurement rigs.",
+                "Instruments include precision scales, calipers, surveying chains/levels, flow gauges, and durable storage for specimens.",
+                "Grant-match/reserve bridges costs between grant tranches and the local cash economy timing."
+              ],
+              "purpose_summary": "Founding buildout of UPH research-and-training capacity aligned to the Scranton USS research grant, while buffering early operations until tuition and donor cadence stabilizes."
+            }
+          },
+          "USS-1": {
+            "disclosure_status": "complete_listed_traded",
+            "issuer": "USSS_Scranton_SPV",
+            "summary": "USS-1 launch issue; disclosure complete; listed on AX; first secondary trade cleared (Gate G4). Terms fields (size/term/coupon) not yet populated in AX roster.",
+            "ticker": "USS-1"
+          }
+        },
+        "listed_bonds": [
+          {
+            "coupon_rate": null,
+            "issue_size_mark": null,
+            "issuer": "USSS_Scranton_SPV",
+            "notes": "Launch issue for AX; priced/allocated (Sabine lead) and first secondary trade cleared per USSC-1-0005. Terms pending disclosure registry update.",
+            "role": "ax_launch_issue",
+            "status": "listed_trading",
+            "term_years": null,
+            "ticker": "USS-1"
+          },
+          {
+            "coupon_rate": 0.065,
+            "issue_size_mark": 240,
+            "issuer": "PH_Housing_Trust",
+            "status": "listed_trading",
+            "term_years": 10,
+            "ticker": "PHH-1"
+          },
+          {
+            "coupon_rate": 0.0725,
+            "issue_size_mark": 300,
+            "issuer": "Hudson_Basin_TLC",
+            "status": "listed_trading",
+            "term_years": 8,
+            "ticker": "HBTLC-1"
+          },
+          {
+            "coupon_rate": 0.06,
+            "issue_size_mark": 180,
+            "issuer": "Philly_Water_Concession",
+            "status": "listed_trading",
+            "term_years": 7,
+            "ticker": "PWW-2"
+          },
+          {
+            "coupon_rate": 0.0675,
+            "issue_size_mark": 120,
+            "issuer": "MSC_Docks",
+            "status": "listed_trading",
+            "term_years": 5,
+            "ticker": "MSC-WH1"
+          },
+          {
+            "coupon_rate": 0.0625,
+            "issue_size_mark": 200,
+            "issuer": "University_of_Philadelphia_Endowment_Board",
+            "status": "listed_trading",
+            "term_years": 12,
+            "ticker": "UOP-1"
+          },
+          {
+            "coupon_rate": 0.065,
+            "issue_size_mark": 90,
+            "issuer": "Philadelphia_Public_Works",
+            "status": "listed_trading",
+            "term_years": 6,
+            "ticker": "PH-RD1"
+          },
+          {
+            "coupon_rate": 0.0575,
+            "issue_size_mark": 60,
+            "issuer": "TT_Registry",
+            "status": "listed_trading",
+            "term_years": 2,
+            "ticker": "TT-REGN"
+          }
+        ]
+      },
+      "currency": "mark",
+      "entities": {
+        "FERR": {
+          "backlog_weeks": 5.3,
+          "distribution_policy": {
+            "distribution_to_pusheen_monthly": 0.0,
+            "notes": "All net profit retained for capacity expansion and ramp-up to meet demand.",
+            "status": "reinvesting"
+          },
+          "export_active": true,
+          "full_name": "Ferron_paper",
+          "identity_requirements": {
+            "uid_required_for_payroll": true,
+            "work_id_required_for_site_access": true
+          },
+          "monthly_net_profit": 13.1,
+          "ownership": {
+            "Lucia": 0.5,
+            "Pusheen": 0.5
+          },
+          "utilization": 1.0
+        },
+        "MSCX": {
+          "capital_pool": 105.1,
+          "finance": {
+            "monthly_net_mark": 11.6,
+            "reinvestment_policy": "100% retained for upgrades/acquisitions"
+          },
+          "full_name": "MSC_docks",
+          "identity_requirements": {
+            "uid_required_for_payroll": true,
+            "work_id_required_for_site_access": true
+          },
+          "labor": {
+            "notes": "Former Riverside Stevedores Brotherhood integrated into MSC payroll; wage floor enforced across all dock labor used by MSC berths/warehouses.",
+            "structure": "direct_payroll",
+            "tiers": [
+              {
+                "role": "cargo_tech_I",
+                "wage_mark_per_month": 16
+              },
+              {
+                "role": "load_specialist_II",
+                "wage_mark_per_month": 18
+              },
+              {
+                "role": "dock_supervisor",
+                "wage_mark_per_month": 22
+              }
+            ],
+            "wage_floor_mark_per_month": 16
+          },
+          "legacy_port": {
+            "cargo_mix_estimate": [
+              {
+                "cargo": "grain & flour",
+                "rank": 1
+              },
+              {
+                "cargo": "salted fish & shellfish",
+                "rank": 2
+              },
+              {
+                "cargo": "timber & cordwood",
+                "rank": 3
+              },
+              {
+                "cargo": "charcoal & fuel",
+                "rank": 4
+              },
+              {
+                "cargo": "iron bars/scrap & tools",
+                "rank": 5
+              },
+              {
+                "cargo": "cloth, pottery, small imports",
+                "rank": 6
+              }
+            ],
+            "customary_rules": [
+              {
+                "rule": "The Old Book wharfage schedule applies unless superseded by posted MSC tariff board.",
+                "status": "mixed_practice"
+              },
+              {
+                "rule": "Market-day priority for fish, grain, and perishable cargo at Shed 2.",
+                "status": "customary"
+              },
+              {
+                "rule": "Pilotage required for deep-draft arrivals in foul weather; pilots may refuse without penalty.",
+                "status": "customary"
+              },
+              {
+                "rule": "Manual hoist use reserved to stevedores; outside crews require brotherhood foreman signoff.",
+                "status": "customary"
+              }
+            ],
+            "legacy_leases": [
+              {
+                "asset": "Warehouse Yard Lot A (riverfront gravel yard)",
+                "expires_by": "590 BCE-12-01",
+                "holder": "Keystone Cartmen Cooperative",
+                "rent_terms": "in_kind: 1 in 40 cartloads moved at reduced fee",
+                "status": "active",
+                "termination_penalty": "political: high; operational: medium"
+              },
+              {
+                "asset": "Pier Shed 2 (covered storage)",
+                "expires_by": "591 BCE-03-01",
+                "holder": "Fishermen's Salt & Rope Guild",
+                "rent_terms": "fixed: 0.6 mark/mo + customary dock access on market days",
+                "status": "active",
+                "termination_penalty": "political: medium; operational: low"
+              },
+              {
+                "asset": "Old Hoist House (manual hoist + rigging)",
+                "expires_by": "590 BCE-10-15",
+                "holder": "Riverside Stevedores Brotherhood",
+                "rent_terms": "customary: stevedore priority for hoist use; MSC may schedule with 1-day notice",
+                "status": "active",
+                "termination_penalty": "labor: high"
+              },
+              {
+                "asset": "Customs Table (inspection canopy and scales)",
+                "expires_by": "open_ended",
+                "holder": "City Excise Office (Port Warden)",
+                "rent_terms": "fee_share: 1/8 of assessed wharfage retained by excise",
+                "status": "active",
+                "termination_penalty": "legal: high"
+              }
+            ],
+            "legacy_warehouses": [
+              {
+                "condition": "fair",
+                "name": "Shed A (Fish & Rope)",
+                "notes": "Pre-Pusheen shed used for perishables and rope. Legacy operations continue under customary rules.",
+                "operator": "Fishermen’s Salt & Rope Guild",
+                "status": "operating",
+                "type": "covered_shed",
+                "warehouse_id": "LEG-WH-01"
+              },
+              {
+                "condition": "poor_to_fair",
+                "name": "Storehouse B (Grain Loft)",
+                "notes": "Old grain loft with recurring pests/moisture issues; often over capacity on market days.",
+                "operator": "Warehouse Keepers Circle",
+                "status": "operating",
+                "type": "storehouse",
+                "warehouse_id": "LEG-WH-02"
+              },
+              {
+                "condition": "rough",
+                "name": "Timber Yard C (Cordwood Stacks)",
+                "notes": "Open stacking yard used for cordwood and timber; high weather loss risk.",
+                "operator": "Independent timber factors",
+                "status": "operating",
+                "type": "open_yard",
+                "warehouse_id": "LEG-WH-03"
+              }
+            ],
+            "legacy_warehouses_policy_note": "Legacy warehouses predate MSCX control; MSC reforms focus first on yard control, receipts, and hoists before full consolidation.",
+            "msc_port_reform_track": [
+              {
+                "code": "MSC-OPS1",
+                "effect": "reduce theft_loss one step; improve dispute resolution",
+                "name": "Secure yard + night watch"
+              },
+              {
+                "code": "MSC-OPS2",
+                "effect": "reduce discretion; improve excise relations",
+                "name": "Posted tariff board + receipts"
+              },
+              {
+                "code": "MSC-OPS3",
+                "effect": "increase serviceable berths; reduce queue days",
+                "name": "Hoists/ramps standardization"
+              },
+              {
+                "code": "MSC-OPS4",
+                "effect": "reduce bad-weather shutdown variance",
+                "name": "Pilot scheduling + storm protocol"
+              }
+            ],
+            "port_capacity_model": {
+              "assumptions": {
+                "city_population": 3500,
+                "era": "590_BCE",
+                "model_intent": "Provide numerical dock environment for answering berth and throughput questions without modern infrastructure assumptions.",
+                "units": {
+                  "berths": "ships_at_berth",
+                  "throughput": "vessel_calls_per_day",
+                  "turnaround": "days_per_vessel_call"
+                }
+              },
+              "berthing_assets": {
+                "deep_draft_berths_serviceable": 3,
+                "deep_draft_berths_total": 5,
+                "notes": "Deep-draft berths correspond to usable wharf faces for coastal sailing ships; smallcraft landings cover barges, lighters, and ferry-type craft.",
+                "smallcraft_landings_total": 2
+              },
+              "derived_capacity": {
+                "expected_vessel_calls_per_day": 1.39,
+                "expected_vessel_calls_per_day_range": [
+                  0.83,
+                  1.66
+                ],
+                "queue_pressure_interpretation": "With 2–5 day queues, arrivals sometimes exceed service rate; queue clears when weather is good and carts/labor are plentiful.",
+                "ships_can_berth_at_once": {
+                  "deep_draft": 3,
+                  "smallcraft": 2,
+                  "total_all_types": 5
+                }
+              },
+              "seasonality_and_disruption": {
+                "bad_weather_multiplier": 0.5,
+                "labor_slowdown_multiplier": 0.75,
+                "market_day_multiplier": 1.15,
+                "storm_week_multiplier": 0.3
+              },
+              "turnaround_days": {
+                "coastal_sailing_ship_typical": 1.6,
+                "drivers": [
+                  "manual handling",
+                  "cart availability",
+                  "tide and weather windows",
+                  "ledgering and excise checks"
+                ],
+                "river_barge_or_lighter_typical": 0.9
+              },
+              "typical_call_mix": {
+                "coastal_sailing_ship": 0.7,
+                "river_barge": 0.3
+              },
+              "utilization_factor": 0.7
+            },
+            "port_ops_baseline": {
+              "avg_queue_days_estimate": "2-5",
+              "berths_serviceable_estimate": "low_to_medium",
+              "berths_total_estimate": "medium",
+              "labor_availability_estimate": "medium",
+              "notes": [
+                "Baseline reflects pre-MSC customary operations and informal yard use.",
+                "Quantities are qualitative to avoid inventing hard tonnage without a port survey."
+              ],
+              "pilotage_capacity_estimate": "low_in_bad_weather",
+              "storage_utilization_estimate": "high",
+              "theft_loss_estimate": "medium"
+            },
+            "stakeholders": [
+              {
+                "asks": [
+                  "predictable schedules",
+                  "injury fund",
+                  "tooling upgrades"
+                ],
+                "leverage_0_5": 4,
+                "name": "Riverside Stevedores Brotherhood",
+                "pressure_points": [
+                  "slowdowns",
+                  "no-overtime",
+                  "crew allocation"
+                ],
+                "relationship_-2_to_2": 0,
+                "type": "labor"
+              },
+              {
+                "asks": [
+                  "pilot rota",
+                  "signal flags/lantern standards",
+                  "tug availability"
+                ],
+                "leverage_0_5": 3,
+                "name": "Delaware River Pilots Circle",
+                "pressure_points": [
+                  "pilot shortages",
+                  "storm-day refusals"
+                ],
+                "relationship_-2_to_2": 0,
+                "type": "navigation"
+              },
+              {
+                "asks": [
+                  "road maintenance priority",
+                  "queue lanes",
+                  "standard receipts"
+                ],
+                "leverage_0_5": 3,
+                "name": "Keystone Cartmen Cooperative",
+                "pressure_points": [
+                  "cart bottlenecks",
+                  "market access"
+                ],
+                "relationship_-2_to_2": 1,
+                "type": "last_mile"
+              },
+              {
+                "asks": [
+                  "clear tariff board",
+                  "security patrols",
+                  "lease clarity"
+                ],
+                "leverage_0_5": 2,
+                "name": "Warehouse Keepers Circle",
+                "pressure_points": [
+                  "storage pricing",
+                  "space hoarding"
+                ],
+                "relationship_-2_to_2": 0,
+                "type": "storage"
+              },
+              {
+                "asks": [
+                  "published schedules",
+                  "calibrated weights",
+                  "incident logs"
+                ],
+                "leverage_0_5": 4,
+                "name": "City Excise (Port Warden)",
+                "pressure_points": [
+                  "inspection delays",
+                  "fee disputes"
+                ],
+                "relationship_-2_to_2": 0,
+                "type": "regulatory"
+              }
+            ]
+          },
+          "monthly_net": 8.0,
+          "monthly_net_retained_for_upgrades": 8.0,
+          "ownership": {
+            "Pusheen": 1.0
+          },
+          "port_ops_current": {
+            "avg_queue_days_estimate": "2-5",
+            "deep_draft_berths_serviceable": 3,
+            "deep_draft_berths_total": 5,
+            "msc_exclusive_deep_draft_berths": 2,
+            "msc_shared_deep_draft_berths": 1,
+            "ships_can_berth_at_once": 5,
+            "ships_can_berth_at_once_usable": 5,
+            "ships_per_day_expected": 1.39,
+            "ships_per_day_range": [
+              0.83,
+              1.66
+            ],
+            "smallcraft_landings": 2,
+            "warehouses_legacy_operating": 3,
+            "warehouses_msc_operating": 1,
+            "warehouses_msc_rebuilding": 1,
+            "warehouses_total_modeled": 5
+          },
+          "vessels_owned": [
+            {
+              "vessel_id": "MSC-CARGO-01",
+              "type": "coastal_cargo_ship",
+              "capacity_tons": null,
+              "status": "active"
+            }
+          ],
+          "security_posture": {
+            "warehouse_security": "locked_storehouse_with_keeper",
+            "yard_access_control": {
+              "applies_to_assets": [
+                "Warehouse Yard Lot A (riverfront gravel yard)"
+              ],
+              "check_in_required": true,
+              "control_point": "front_guard_station",
+              "notes": [
+                "Yard access is controlled at the front guard station; entry requires UID check-in.",
+                "This does not terminate the Keystone Cartmen Cooperative lease; it changes entry procedure."
+              ],
+              "status": "active",
+              "uid_required": true,
+              "visitor_policy": {
+                "escort_required_without_work_id": true,
+                "temporary_exception": "indigent_emergency_intake_only (per UID policy)",
+                "uid_required": true
+              },
+              "work_id_required_for_workers": true
+            }
+          },
+          "ship_traffic_model": {
+            "berth_occupancy_check": {
+              "deep_draft_berths_serviceable": 3,
+              "deep_draft_berths_total": 5,
+              "estimated_deep_draft_berth_days_per_week": 4.800000000000001,
+              "estimated_smallcraft_landing_days_per_week": 23.0,
+              "notes": [
+                "Estimated berth-days/week are a sanity check only; they should not exceed (serviceable berths * 7) under normal conditions.",
+                "If estimated landing-days exceed capacity, congestion/queue days should be modeled."
+              ],
+              "smallcraft_landings_total": 2
+            },
+            "derived_daily_averages": {
+              "all_vessels_per_day": 18.0,
+              "fishing_small_per_day": 10.0,
+              "lighter_scow_per_day": 5.0,
+              "river_barge_per_day": 2.5714285714285716,
+              "sea_coaster_per_day": 0.42857142857142855
+            },
+            "model_version": "philly_docks_ship_traffic_v1",
+            "notes": [
+              "This is a conservative, 590 BCE-appropriate traffic ledger for a 3,500-pop city with mixed construction + trade.",
+              "Numbers are intentionally simple and can be revised as actual contracts/ship logs are recorded.",
+              "Cargo commodities referenced are keys from commodities.json."
+            ],
+            "vessel_types": {
+              "fishing_small": {
+                "berthing_preference": "smallcraft_landings",
+                "mode": "local_smallcraft",
+                "primary_cargo_inbound": [
+                  "shells"
+                ],
+                "primary_cargo_outbound": [],
+                "typical_cargo_tons_range": [
+                  0.3,
+                  2.0
+                ],
+                "typical_turnaround_days": 0.1
+              },
+              "lighter_scow": {
+                "berthing_preference": "smallcraft_landings",
+                "mode": "harbor_lighter",
+                "primary_cargo_inbound": [
+                  "timber",
+                  "stone",
+                  "sand",
+                  "clay",
+                  "wheat",
+                  "barley"
+                ],
+                "primary_cargo_outbound": [],
+                "typical_cargo_tons_range": [
+                  3,
+                  12
+                ],
+                "typical_turnaround_days": 0.2
+              },
+              "river_barge": {
+                "berthing_preference": "smallcraft_landings",
+                "mode": "river_barge",
+                "primary_cargo_inbound": [
+                  "wheat",
+                  "barley",
+                  "timber",
+                  "stone",
+                  "sand",
+                  "clay",
+                  "gypsum",
+                  "limestone",
+                  "salt"
+                ],
+                "primary_cargo_outbound": [
+                  "paper_hemp",
+                  "cloth_wool",
+                  "tool_iron",
+                  "bar_iron"
+                ],
+                "typical_cargo_tons_range": [
+                  10,
+                  25
+                ],
+                "typical_turnaround_days": 0.5
+              },
+              "sea_coaster": {
+                "berthing_preference": "deep_draft_berths",
+                "mode": "sea_coaster",
+                "primary_cargo_inbound": [
+                  "iron_ore",
+                  "coal",
+                  "coke_coal",
+                  "copper_ore",
+                  "tin_ore",
+                  "lead_ore",
+                  "halite",
+                  "pitch_tar",
+                  "sulfur"
+                ],
+                "primary_cargo_outbound": [
+                  "paper_hemp",
+                  "cloth_wool",
+                  "tool_iron",
+                  "bar_iron",
+                  "glassware_simple",
+                  "ink_soot"
+                ],
+                "typical_cargo_tons_range": [
+                  25,
+                  70
+                ],
+                "typical_turnaround_days": 1.6
+              }
+            },
+            "weekly_arrivals_baseline": {
+              "fishing_small": 70,
+              "lighter_scow": 35,
+              "river_barge": 18,
+              "sea_coaster": 3
+            }
+          },
+          "warehouse_upgrade_program": {
+            "monthly_reinvestment_mark": 8.0,
+            "policy": "reinvest_100_percent_of_MSC_net_into_warehouse_acquisition_and_upgrades",
+            "program_fund_flow": {
+              "destination": "MSC_warehouse_upgrade_program_fund",
+              "source": "MSC_docks_monthly_net"
+            }
+          },
+          "warehouses": {
+            "legacy_warehouses": {
+              "operational": 2
+            },
+            "msc_warehouses": {
+              "operational": 3,
+              "rebuilding": 0
+            },
+            "total_port_warehouses": 5
+          },
+          "warehouses_operating": 1,
+          "warehouses_rebuilding": 1
+        },
+        "PHET": {
+          "full_name": "PhillyEats",
+          "identity_requirements": {
+            "uid_required_for_payroll": true,
+            "work_id_required_for_site_access": true
+          },
+          "locations": 25,
+          "monthly_net_profit": 17.9,
+          "ownership": {
+            "Pusheen": 1.0
+          }
+        },
+        "PHHT": {
+          "distribution_policy": {
+            "basis": "NOI",
+            "notes": "Pusheen distribution equals 2% of PHHT monthly NOI.",
+            "rate": 0.02,
+            "to_owner": "Pusheen"
+          },
+          "full_name": "Hudson Basin Trade and Land Co.",
+          "identity_requirements": {
+            "uid_required_for_payroll": true,
+            "work_id_required_for_site_access": true
+          },
+          "ownership": {
+            "Pusheen": 1.0
+          }
+        },
+        "TMIS": {
+          "active_hull_policies": 8,
+          "full_name": "Trinity Maritime",
+          "identity_requirements": {
+            "uid_required_for_payroll": true,
+            "work_id_required_for_site_access": true
+          },
+          "monthly_net_estimate": 3.5,
+          "net_margin": 0.35,
+          "ownership": {
+            "Pusheen": 1.0
+          },
+          "premium_runrate_monthly": 9.9,
+          "reserve_pool_seed": 100,
+          "scope": "Philly_only"
+        },
+        "TT": {
+          "entity_type": "commercial_bank",
+          "full_name": "Trinity Trust Commercial Bank",
+          "identity_requirements": {
+            "uid_required_for_payroll": true,
+            "work_id_required_for_site_access": true
+          },
+          "ownership": {
+            "Lucia": 0.2,
+            "Pusheen": 0.6,
+            "Sabine": 0.2
+          },
+          "scope_note": "Commercial banking and paper-based processing backbone; separate from PBC_pusheen_personal unless distributions declared.",
+          "short_name": "TT"
+        },
+        "TUCB": {
+          "active_accounts": 1452,
+          "branch_build_policy": {
+            "as_of": "590 BCE-09-05",
+            "build_time_weeks": 5,
+            "expected_open_date": "590 BCE-10-03",
+            "notes": [
+              "Deterministic build progression per user rule; 4 branches building."
+            ],
+            "progress_weeks": 1
+          },
+          "branches_building": 4,
+          "branches_open": 5,
+          "full_name": "Trinity Union",
+          "identity_requirements": {
+            "uid_required_for_accounts": true,
+            "uid_required_for_payroll": true,
+            "work_id_required_for_site_access": true
+          },
+          "monthly_net_profit": 6.8,
+          "ownership": {
+            "Pusheen": 1.0
+          },
+          "retail_deposits": 620
+        },
+        "UPH": {
+          "endowment": {
+            "initial_target_mark": 100,
+            "notes": [
+              "Seeded by Pusheen."
+            ],
+            "seed_mark": 10,
+            "seed_percent_of_initial_target": 0.1
+          },
+          "entity_type": "non_profit",
+          "faculty": {
+            "Helena": {
+              "background": "Chemistry-to-physics crossover",
+              "projects": [
+                {
+                  "deliverables": [
+                    "Assay protocols",
+                    "Reference sample set",
+                    "Results ledger format"
+                  ],
+                  "id": "UPH-HEL-P1",
+                  "linkages": [
+                    "foundries",
+                    "waterworks",
+                    "USS_Scranton_SPV_grant"
+                  ],
+                  "purpose": "Establish repeatable purity checks for metals, salts, and reagents using disciplined measurement practice.",
+                  "status": "planned",
+                  "title": "Standardized Assay & Purity Bench"
+                },
+                {
+                  "deliverables": [
+                    "Heat-treatment outcome tables",
+                    "Specimen archive",
+                    "Recommendations memo to foundries"
+                  ],
+                  "id": "UPH-HEL-P2",
+                  "linkages": [
+                    "foundries",
+                    "infrastructure",
+                    "USS_Scranton_SPV_grant"
+                  ],
+                  "purpose": "Correlate furnace and heat-treatment practice with material properties relevant to tools, fasteners, and pipe joints.",
+                  "status": "planned",
+                  "title": "Metals Microstructure and Heat Treatment Study"
+                },
+                {
+                  "deliverables": [
+                    "Calibration weights set plan",
+                    "Length gauge standard plan",
+                    "Pendulum timing rig plan",
+                    "Standards registry"
+                  ],
+                  "id": "UPH-HEL-P3",
+                  "linkages": [
+                    "trade",
+                    "civic_works",
+                    "AX_exchange"
+                  ],
+                  "purpose": "Stand up UPH as the keeper of calibration standards for civic works and trade measurement.",
+                  "status": "planned",
+                  "title": "Precision Mass, Length, and Time Standards"
+                },
+                {
+                  "deliverables": [
+                    "Fieldable flow gauge design",
+                    "Pressure gauge design",
+                    "Calibration procedure",
+                    "Error bounds notes"
+                  ],
+                  "id": "UPH-HEL-P4",
+                  "linkages": [
+                    "Philly_Water",
+                    "civic_works",
+                    "USS_Scranton_SPV_grant"
+                  ],
+                  "purpose": "Build and validate simple flow/pressure measurement rigs to support Philly Water phases and leak diagnostics.",
+                  "status": "planned",
+                  "title": "Flow and Pressure Instrumentation for Waterworks"
+                },
+                {
+                  "deliverables": [
+                    "Fuel-grade classification",
+                    "Firing tables",
+                    "Efficiency measurement protocol"
+                  ],
+                  "id": "UPH-HEL-P5",
+                  "linkages": [
+                    "charcoal",
+                    "coke",
+                    "foundries",
+                    "USS_Scranton_SPV_grant"
+                  ],
+                  "purpose": "Quantify fuel efficiency and furnace yield improvements via combustion and heat accounting.",
+                  "status": "planned",
+                  "title": "Practical Energetics: Charcoal, Coke, and Combustion Efficiency"
+                }
+              ],
+              "role": "First Chair (Physics)"
+            }
+          },
+          "grants": [
+            {
+              "amount_mark": null,
+              "earmarks": [
+                "metallurgy and materials research",
+                "surveying and civil measurement standards",
+                "hydraulics and waterworks instrumentation"
+              ],
+              "grant_name": "Scranton USS Research Grant",
+              "grantor_entity_id": "USS_Scranton_SPV",
+              "notes": [
+                "Amount not specified in this snapshot."
+              ],
+              "status": "active"
+            }
+          ],
+          "identity_requirements": {
+            "uid_required_for_payroll": true,
+            "work_id_required_for_site_access": true
+          },
+          "owned_by_pusheen": false,
+          "ownership": {},
+          "scope_note": "Non-profit institution; not a Pusheen-owned entity.",
+          "status": "newly_founded",
+          "type": "university"
+        },
+        "USSS": {
+          "blast_furnace_1": {
+            "lining_percent": 82,
+            "shell_complete": true
+          },
+          "cash_on_hand": 26,
+          "coke_battery_capex": 38,
+          "full_name": "USS Scranton SPV",
+          "identity_requirements": {
+            "uid_required_for_payroll": true,
+            "work_id_required_for_site_access": true
+          },
+          "land_option_50ha_deposit": 6,
+          "land_owned_20ha_value": 96,
+          "operating_status": {
+            "bf1_state": "ignited_commissioning",
+            "commercial_shipments": {
+              "merchant_billets_BL1_confirmed": true,
+              "pricing_determined": false
+            },
+            "line1_utilization_capable": "80%+"
+          },
+          "ownership": {
+            "Pusheen": 1.0
+          },
+          "programs": {
+            "USS_Scranton_Line1_Ramp": {
+              "pricing_model": {
+                "assumed_output_tons_per_month_at_80pct": 60,
+                "computed": {
+                  "all_in_cost_mark_per_ton_at_assumed_output": 350,
+                  "break_even_price_mark_per_ton_at_assumed_output": 350,
+                  "fixed_cost_mark_per_month": 3000,
+                  "fixed_cost_mark_per_ton_at_assumed_output": 50,
+                  "gross_margin_mark_per_month_at_assumed_output": 3000,
+                  "margin_mark_per_ton_at_trial_price": 50,
+                  "variable_cost_mark_per_ton": 300
+                },
+                "costs_mark_per_month_fixed": {
+                  "admin_spares_routine_upkeep_reserve": 600,
+                  "core_staffing_maintenance_security_baseline": 2400
+                },
+                "costs_mark_per_ton_variable": {
+                  "coke_fuel_including_coke_ops_share": 70,
+                  "consumables_refractory_wear": 20,
+                  "flux_additives": 15,
+                  "handling_yard_packaging": 10,
+                  "iron_input_ore_plus_losses": 140,
+                  "variable_labor": 45
+                },
+                "currency": "mark",
+                "logistics": {
+                  "assumptions": {
+                    "barge_transfers": 4,
+                    "ox_cart_transfers": 2,
+                    "portage_miles_ox_cart": 15,
+                    "river_miles_total": 240,
+                    "source": "commodities.json logistics table (refreshed)"
+                  },
+                  "computed": {
+                    "shipping_cost_mark_per_60t_shipment": 409.32,
+                    "shipping_cost_mark_per_ton": 6.822
+                  },
+                  "default_destination": "Philly",
+                  "mode": "barge_barge_plus_portage",
+                  "notes": [
+                    "No rail available yet; uses river barge where navigable plus short ox-cart portage between watersheds."
+                  ]
+                },
+                "model_id": "USS_BL1_cost_model_v1",
+                "notes": [
+                  "Planning model only; replace with actual accounting when available.",
+                  "If Gate G1 (stable heat) and Gate G2 (repeatability) are met, scrap/rework should fall and margin improves at the same price."
+                ],
+                "pricing_determined": false,
+                "pricing_mode": "trial_offer",
+                "product": "merchant_billets_BL1",
+                "stress_tests": [
+                  {
+                    "all_in_cost_per_ton": 375,
+                    "case": "lower_output_40_tpm",
+                    "fixed_per_ton": 75,
+                    "margin_per_ton_at_400": 25,
+                    "tons_per_month": 40
+                  },
+                  {
+                    "all_in_cost_per_ton": 390,
+                    "case": "higher_scrap_variable_plus_40",
+                    "fixed_per_ton": 50,
+                    "margin_per_ton_at_400": 10,
+                    "tons_per_month": 60,
+                    "variable_per_ton": 340
+                  },
+                  {
+                    "all_in_cost_per_ton": 415,
+                    "case": "both_bad_40_tpm_and_variable_plus_40",
+                    "fixed_per_ton": 75,
+                    "margin_per_ton_at_400": -15,
+                    "tons_per_month": 40,
+                    "variable_per_ton": 340
+                  }
+                ],
+                "trial_price_mark_per_ton": 400
+              },
+              "schedule": {
+                "as_of": "590 BCE-07-18",
+                "gates": [
+                  {
+                    "definition": "7 consecutive days without unplanned shutdown; tap rhythm predictable",
+                    "gate_id": "G1",
+                    "name": "Commissioning stable heat",
+                    "unblocks": [
+                      "steady billet runs",
+                      "credible production disclosures"
+                    ]
+                  },
+                  {
+                    "definition": "3 consecutive runs meeting minimum section + slag/inclusion tolerance for merchant billet",
+                    "gate_id": "G2",
+                    "name": "BL1 repeatability",
+                    "unblocks": [
+                      "regular external sales",
+                      "bond pricing confidence"
+                    ]
+                  },
+                  {
+                    "definition": "Fuel+labor per ton recorded for 30 days; scrap/rework rate tracked",
+                    "gate_id": "G3",
+                    "name": "Cost control baseline",
+                    "unblocks": [
+                      "profitability test",
+                      "capacity expansion decision"
+                    ]
+                  },
+                  {
+                    "definition": "USS-1 priced, allocated, and first secondary trade cleared",
+                    "gate_id": "G4",
+                    "name": "AX launch listing live",
+                    "unblocks": [
+                      "capex acceleration",
+                      "working capital buffer"
+                    ]
+                  }
+                ],
+                "outputs_to_track_next": [
+                  "billets_shipped_last_30d",
+                  "avg_price_per_ton_or_wagonload",
+                  "fuel_cost_last_30d",
+                  "wages_last_30d",
+                  "scrap_rework_rate",
+                  "unplanned_downtime_days"
+                ],
+                "program": "USS_Scranton_Line1_Ramp",
+                "status_now": {
+                  "bf1": "ignited_commissioning",
+                  "bond": "approved_by_sabine_ready_to_issue",
+                  "first_external_shipment": "merchant_billets_BL1_confirmed"
+                },
+                "workstreams": {
+                  "W1_blast_furnace_and_hot_metal": {
+                    "sequence": [
+                      {
+                        "step": "Finish lining to 100%",
+                        "target_window_days": "0-14"
+                      },
+                      {
+                        "step": "Stabilize burden + airflow for predictable taps",
+                        "target_window_days": "0-21"
+                      }
+                    ]
+                  },
+                  "W2_coke_and_fuel": {
+                    "sequence": [
+                      {
+                        "step": "Coke Battery Row 1 reliability tuning",
+                        "target_window_days": "0-21"
+                      },
+                      {
+                        "step": "Fuel quality standard (coal/coke blend spec)",
+                        "target_window_days": "7-28"
+                      }
+                    ]
+                  },
+                  "W3_billet_making": {
+                    "sequence": [
+                      {
+                        "step": "BL1 standard section + stamp spec",
+                        "target_window_days": "0-7"
+                      },
+                      {
+                        "step": "BL1 repeatability (Gate G2)",
+                        "target_window_days": "7-28"
+                      },
+                      {
+                        "step": "BL2 development (structural billet) pilot heats",
+                        "target_window_days": "28-90"
+                      }
+                    ]
+                  },
+                  "W4_logistics_and_sales": {
+                    "sequence": [
+                      {
+                        "step": "Weekly shipment cadence (even small)",
+                        "target_window_days": "7-30"
+                      },
+                      {
+                        "step": "Primary buyers: Philly hardware, docks, construction",
+                        "target_window_days": "0-30"
+                      }
+                    ]
+                  },
+                  "W5_bond_issue_USS_1": {
+                    "sequence": [
+                      {
+                        "step": "Disclosure: confirm BL1 shipment + risks",
+                        "target_window_days": "0-3"
+                      },
+                      {
+                        "step": "Price + allocate (Sabine lead)",
+                        "target_window_days": "3-10"
+                      },
+                      {
+                        "step": "First AX trade + settlement (Gate G4)",
+                        "target_window_days": "7-14"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "geography": {
+        "hudson_basin": {
+          "location": "NY",
+          "separate_from_philly_regions": true
+        },
+        "philly": {
+          "region_labels": [
+            "region_1",
+            "region_2",
+            "region_3",
+            "region_4"
+          ],
+          "regions_count": 4
+        }
+      },
+      "hudson_basin": {
+        "as_of": "590 BCE-07-18",
+        "branding": {
+          "clinics": "Hudson Heals",
+          "co_branding_with_philly": false,
+          "docks_warehousing": "Hudson Holistics",
+          "housing": "Hudson Homes"
+        },
+        "clinic_nodes": [
+          "Peekskill",
+          "Newburgh",
+          "Poughkeepsie",
+          "Kingston",
+          "Albany"
+        ],
+        "programs": {
+          "docks_and_warehousing": {
+            "policy": {
+              "capacity_rule": "if_berthing_delay_then_add_berths",
+              "expansion_rate": "3x_previous_plan",
+              "local_vs_outside_trade": "does_not_matter; prioritize_high_quality_cargo",
+              "standard": "MSC_grade_certification_and_processing"
+            },
+            "program_name": "Hudson Holistics"
+          },
+          "health": {
+            "policy": {
+              "clinic_next_to_each_tower": true,
+              "included_for_residents": true,
+              "neighborhood_access": "allowed"
+            },
+            "program_name": "Hudson Heals"
+          },
+          "housing": {
+            "beneficial_owner": "Pusheen",
+            "deployment_policy": {
+              "initial_plan": "start_single_tower_in_each_site_then_expand",
+              "workforce_support": {
+                "note": "Temp barracks for incoming labor; TMH towers are only permanent housing.",
+                "temporary_barracks": true
+              }
+            },
+            "operator_entity": "Hudson_Homes_Trust",
+            "rent_policy": {
+              "included_in_base_rent": [
+                "clinic_next_door (Hudson Heals)",
+                "child_care_next_door (included for residents; modest fee for neighborhood)",
+                "central_kitchen_and_dining_hall",
+                "public_baths",
+                "laundry",
+                "utilities"
+              ],
+              "layout_policy": {
+                "kitchen_per_cross": 1,
+                "public_bath_and_laundry_per_tower": 1
+              },
+              "note": "Keep same rent as Philly for 12 months; do not mention higher Hudson wages publicly.",
+              "rent_all_inclusive": true,
+              "rent_baseline_monthly_mark": {
+                "affordable_cap_monthly": 4,
+                "one_bed": 15,
+                "studio": 10,
+                "two_bed": 20
+              }
+            },
+            "sites": [
+              {
+                "build_plan": {
+                  "future": {
+                    "cross_definition": {
+                      "towers": 4,
+                      "units_per_tower": 100,
+                      "units_total": 400
+                    },
+                    "cross_planned": true
+                  },
+                  "phase": "Phase_0_single_tower",
+                  "towers": [
+                    {
+                      "notes": [
+                        "Prioritize completion to start housing income before further phases.",
+                        "Completed + certified as of 590 BCE-08-29 (tick)."
+                      ],
+                      "status": "complete_certified",
+                      "tower_id": "HB_ALB_T1",
+                      "units": 100,
+                      "version": "TMH100.4"
+                    }
+                  ]
+                },
+                "region_note": "Hudson Basin core node",
+                "site_id": "HB_TMH_SITE_1",
+                "site_name": "Albany",
+                "status": "prioritized_first_completion"
+              },
+              {
+                "build_plan": {
+                  "future": {
+                    "cross_definition": {
+                      "towers": 4,
+                      "units_per_tower": 100,
+                      "units_total": 400
+                    },
+                    "cross_planned": true
+                  },
+                  "phase": "Phase_0_single_tower",
+                  "towers": [
+                    {
+                      "notes": [
+                        "Single tower first; expand after Albany income begins."
+                      ],
+                      "status": "planned_start",
+                      "tower_id": "HB_KIN_T1",
+                      "units": 100,
+                      "version": "TMH100.4"
+                    }
+                  ]
+                },
+                "site_id": "HB_TMH_SITE_2",
+                "site_name": "Kingston",
+                "status": "initiated"
+              },
+              {
+                "build_plan": {
+                  "future": {
+                    "cross_definition": {
+                      "towers": 4,
+                      "units_per_tower": 100,
+                      "units_total": 400
+                    },
+                    "cross_planned": true
+                  },
+                  "phase": "Phase_0_single_tower",
+                  "towers": [
+                    {
+                      "status": "planned_start",
+                      "tower_id": "HB_NEW_T1",
+                      "units": 100,
+                      "version": "TMH100.4"
+                    }
+                  ]
+                },
+                "site_id": "HB_TMH_SITE_3",
+                "site_name": "Newburgh",
+                "status": "initiated"
+              },
+              {
+                "build_plan": {
+                  "future": {
+                    "cross_definition": {
+                      "towers": 4,
+                      "units_per_tower": 100,
+                      "units_total": 400
+                    },
+                    "cross_planned": true
+                  },
+                  "phase": "Phase_0_single_tower",
+                  "towers": [
+                    {
+                      "status": "planned_start",
+                      "tower_id": "HB_POU_T1",
+                      "units": 100,
+                      "version": "TMH100.4"
+                    }
+                  ]
+                },
+                "site_id": "HB_TMH_SITE_4",
+                "site_name": "Poughkeepsie",
+                "status": "initiated"
+              },
+              {
+                "build_plan": {
+                  "future": {
+                    "cross_definition": {
+                      "towers": 4,
+                      "units_per_tower": 100,
+                      "units_total": 400
+                    },
+                    "cross_planned": true
+                  },
+                  "phase": "Phase_0_single_tower",
+                  "towers": [
+                    {
+                      "notes": [
+                        "Single tower first; expand after Albany income begins."
+                      ],
+                      "status": "planned_start",
+                      "tower_id": "HB_PEE_T1",
+                      "units": 100,
+                      "version": "TMH100.4"
+                    }
+                  ]
+                },
+                "site_id": "HB_TMH_SITE_5",
+                "site_name": "Peekskill",
+                "status": "initiated"
+              }
+            ],
+            "versioning_policy": {
+              "deprecation": "once_new_version_is_out_old_version_is_deprecated",
+              "hudson_standard": "TMH100.4",
+              "rule": "each_x_step_is_qualitative_daily_life_improvement",
+              "track": "TMH100.x"
+            }
+          }
+        }
+      },
+      "identity_system": {
+        "coverage_targets": {
+          "formal_employers_pct": 100,
+          "tmh_residents_pct": 100,
+          "tucb_accounts_pct": 100
+        },
+        "exceptions": [
+          {
+            "category": "indigent_or_emergency_intake",
+            "max_duration_days": 30,
+            "policy": "temporary_access_grant",
+            "requirements": "clinic_intake_record_and_sponsor_signature"
+          }
+        ],
+        "name": "Universal ID (UID)",
+        "notes": "UID is required for transactions with Pusheen identities across housing, financial services, and formal employment.",
+        "required_for": [
+          "financial_transactions_with_pusheen_identities",
+          "housing_leases_and_access",
+          "employment_payroll_and_work_assignment",
+          "commercial_banking_accounts_and_merchant_services"
+        ],
+        "status": "active",
+        "system_id": "UID-1",
+        "verification_methods": [
+          "biometric_match",
+          "issued_id_token_or_card"
+        ],
+        "work_id": {
+          "description": "Employer-issued work credential linked to UID for payroll, shift assignment, and site access.",
+          "enabled": true
+        }
+      },
+      "infrastructure_plans": {
+        "corridor_reservations": {
+          "region2_industrial_spine_width_ft": 40,
+          "region3_4_cross_connector_width_ft": 25,
+          "region3_freight_corridor_width_ft": 40,
+          "region4_freight_corridor_width_ft": 40,
+          "tram_electrification_ready": true
+        },
+        "region2_district_heat": {
+          "boiler_peak_output_MMBTU_per_hr_estimate": 6.0,
+          "capacity_crosses": 8,
+          "deltaT_F": 70,
+          "fuel_policy": {
+            "cadence": "2x_per_week",
+            "delivery_mode": "wagon",
+            "fuel": "coal_only",
+            "tons_per_delivery": 9.5,
+            "wagon_load_tons_assumptions": [
+              0.5,
+              1.0
+            ],
+            "yard_reserve_tons_target": 22
+          },
+          "hot_water_storage_gallons": {
+            "each": 10000,
+            "tanks": 2,
+            "total": 20000
+          },
+          "peak_hot_water_gph_estimate": 10000,
+          "rail_ready": true
+        }
+      },
+      "labor_market": {
+        "cohorts_by_sector_and_tier": {
+          "agriculture": {
+            "M": 10,
+            "S1": 140,
+            "S2": 45,
+            "U": 320
+          },
+          "civic_medical": {
+            "M": 3,
+            "S1": 10,
+            "S2": 12,
+            "U": 0
+          },
+          "construction": {
+            "M": 8,
+            "S1": 120,
+            "S2": 45,
+            "U": 260
+          },
+          "dock_logistics": {
+            "M": 3,
+            "S1": 55,
+            "S2": 15,
+            "U": 170
+          },
+          "metal_iron": {
+            "M": 2,
+            "S1": 8,
+            "S2": 6,
+            "U": 4
+          },
+          "metal_steel": {
+            "M": 2,
+            "S1": 10,
+            "S2": 8,
+            "U": 11
+          },
+          "other_services": {
+            "M": 6,
+            "S1": 85,
+            "S2": 30,
+            "U": 180
+          },
+          "paper_milling": {
+            "M": 3,
+            "S1": 25,
+            "S2": 12,
+            "U": 35
+          },
+          "trade_clerical": {
+            "M": 6,
+            "S1": 30,
+            "S2": 22,
+            "U": 20
+          }
+        },
+        "open_job_slots_by_sector": {
+          "construction": {
+            "M": 0,
+            "S1": 20,
+            "S2": 5,
+            "U": 60
+          },
+          "dock_logistics": {
+            "M": 0,
+            "S1": 10,
+            "S2": 0,
+            "U": 30
+          },
+          "metal_steel": {
+            "M": 2,
+            "S1": 0,
+            "S2": 8,
+            "U": 0
+          }
+        },
+        "policies": {
+          "open_borders_paperwork_required": true,
+          "placement_policy": "All newcomers assigned housing + job placement upon UID registration; unskilled default to brickyards/construction unless allocated to apprenticeship slots.",
+          "steel_apprenticeship_reserve_fraction": 0.25
+        },
+        "steel_fabs_staffing_plan": {
+          "apprentice_slots_target": {
+            "general_fab": 6,
+            "precision_fab": 5,
+            "total": 11
+          },
+          "headcount_target": {
+            "general_fab": 24,
+            "precision_fab": 20,
+            "total": 44
+          },
+          "monthly_steel_input_tons": 10,
+          "note": "Apprentices counted in metal_steel.U; foremen/masters counted in metal_steel.S2/M.",
+          "split_general_precision": {
+            "general": 0.7,
+            "precision": 0.3
+          }
+        },
+        "training_pipeline_in_progress": {
+          "construction": {
+            "U_to_S1": {
+              "count": 40,
+              "months_remaining_avg": 6
+            }
+          },
+          "metal_steel": {
+            "U_to_S1": {
+              "count": 11,
+              "months_remaining_avg": 6
+            }
+          }
+        },
+        "wage_pressure_flags": [
+          {
+            "flag": "shortage_S2_M",
+            "note": "Local skilled metalworker base insufficient; rely on skilled immigrants + retraining from metal_iron and construction per canon crosswalks.",
+            "sector": "metal_steel"
+          }
+        ],
+        "workforce_total_estimate": 1800
+      },
+      "labor_occupation_model_ref": {
+        "canon_block_id": "labor_occupation_model_v1",
+        "version": "1.0"
+      },
+      "milestones": {
+        "as_of": "590 BCE-09-19",
+        "currency": "mark",
+        "items": [
+          {
+            "depends_on": [],
+            "description": "Complete Blast Furnace #1 lining to full specification so commissioning can proceed without refractory risk. Aligns with W1: Finish lining to 100% (0–14 days).",
+            "impact": "Reduces commissioning downtime risk; prerequisite for stable heat and repeatable taps.",
+            "initiative_code": "USSC",
+            "initiative_year": 1,
+            "milestone_id": "USSC-1-0001",
+            "percent_complete": 100,
+            "status": "DONE",
+            "tags": [
+              "USS",
+              "Scranton",
+              "Line1_Ramp"
+            ],
+            "target_date": "590 BCE-08-01",
+            "title": "BF1 lining to 100%"
+          },
+          {
+            "depends_on": [
+              "USSC-1-0001"
+            ],
+            "description": "Achieve 7 consecutive days without unplanned shutdown and a predictable tap rhythm (Gate G1).",
+            "impact": "Enables credible production disclosures and steadier billet runs.",
+            "initiative_code": "USSC",
+            "initiative_year": 1,
+            "milestone_id": "USSC-1-0002",
+            "percent_complete": 100,
+            "status": "DONE",
+            "tags": [
+              "USS",
+              "Scranton",
+              "Line1_Ramp"
+            ],
+            "target_date": "590 BCE-08-15",
+            "title": "Gate G1: stable heat (7-day no-shutdown streak)"
+          },
+          {
+            "depends_on": [
+              "USSC-1-0002"
+            ],
+            "description": "Deliver 3 consecutive BL1 runs meeting minimum section + slag/inclusion tolerance for merchant billet (Gate G2).",
+            "impact": "Unlocks regular external sales cadence and bond pricing confidence.",
+            "initiative_code": "USSC",
+            "initiative_year": 1,
+            "milestone_id": "USSC-1-0003",
+            "percent_complete": 100,
+            "status": "DONE",
+            "tags": [
+              "USS",
+              "Scranton",
+              "Line1_Ramp"
+            ],
+            "target_date": "590 BCE-08-29",
+            "title": "Gate G2: BL1 repeatability (3 consecutive merchant runs)"
+          },
+          {
+            "depends_on": [
+              "USSC-1-0003"
+            ],
+            "description": "Record 30 days of Fuel+Labor per ton plus scrap/rework rate and unplanned downtime days (Gate G3). Track: billets_shipped_last_30d, fuel_cost_last_30d, wages_last_30d, scrap_rework_rate, unplanned_downtime_days.",
+            "impact": "Creates first defensible profitability baseline and supports capacity/expansion decisions.",
+            "initiative_code": "USSC",
+            "initiative_year": 1,
+            "milestone_id": "USSC-1-0004",
+            "percent_complete": 100,
+            "status": "DONE",
+            "tags": [
+              "USS",
+              "Scranton",
+              "Line1_Ramp"
+            ],
+            "target_date": "590 BCE-09-12",
+            "title": "Gate G3: 30-day cost-control baseline recorded"
+          },
+          {
+            "depends_on": [
+              "USSC-1-0003"
+            ],
+            "description": "Complete USS-1 disclosure, price + allocate (Sabine lead), list on AX, and clear first secondary trade/settlement (Gate G4).",
+            "impact": "Unlocks capex acceleration and a working-capital buffer to stabilize 80%+ Line 1 operations.",
+            "initiative_code": "USSC",
+            "initiative_year": 1,
+            "milestone_id": "USSC-1-0005",
+            "percent_complete": 100,
+            "status": "DONE",
+            "tags": [
+              "USS",
+              "Scranton",
+              "Line1_Ramp"
+            ],
+            "target_date": "590 BCE-09-19",
+            "title": "Gate G4: USS-1 listed and first secondary trade cleared on AX"
+          },
+          {
+            "depends_on": [],
+            "description": "Complete construction, commissioning, and certification of Water Phase 3 (target: ~800 households, remaining half-city). Phase 3 construction started ~4 weeks before 590 BCE-07-18 (~590 BCE-06-20).",
+            "impact": "Expands reliable potable water coverage to the remaining half of the city; reduces public health load and supports housing/industry growth.",
+            "initiative_code": "WTR",
+            "initiative_year": 1,
+            "milestone_id": "WTR-1-0001",
+            "percent_complete": 100,
+            "status": "DONE",
+            "tags": [
+              "Water",
+              "Infrastructure",
+              "Phase3",
+              "PWW"
+            ],
+            "target_date": "590 BCE-09-12",
+            "title": "Water Phase 3 complete and certified"
+          },
+          {
+            "depends_on": [],
+            "description": "Complete Phase 0 single-tower build in Albany (HB_ALB_T1, 100 units, TMH100.4). Includes adjacent Hudson Heals clinic hookup, kitchen/dining, baths, laundry, utilities per Hudson Homes rent bundle.",
+            "impact": "Starts Hudson Homes income stream and provides stabilized housing for basin labor pool; unlocks expansion sequencing for other sites.",
+            "initiative_code": "HBN",
+            "initiative_year": 1,
+            "milestone_id": "HBN-1-0001",
+            "percent_complete": 100,
+            "status": "DONE",
+            "tags": [
+              "Hudson",
+              "TMH",
+              "Housing",
+              "Albany",
+              "HudsonHomes"
+            ],
+            "target_date": "590 BCE-08-29",
+            "title": "Hudson Homes: Albany TMH100.4 Tower HB_ALB_T1 completed + certified for occupancy"
+          },
+          {
+            "depends_on": [
+              "HBN-1-0001"
+            ],
+            "description": "Bring Hudson Heals clinic adjacent to HB_ALB_T1 online with resident-included service policy and neighborhood access allowed.",
+            "impact": "Reduces health burden and improves housing stability; provides baseline reporting for Hudson Basin nodes.",
+            "initiative_code": "HBN",
+            "initiative_year": 1,
+            "milestone_id": "HBN-1-0002",
+            "percent_complete": 0,
+            "status": "PLANNED",
+            "tags": [
+              "Hudson",
+              "Clinic",
+              "Albany",
+              "HudsonHeals"
+            ],
+            "target_date": "590 BCE-09-05",
+            "title": "Hudson Heals: Albany clinic next-door operational (residents included, neighborhood access allowed)"
+          },
+          {
+            "depends_on": [
+              "HBN-1-0001"
+            ],
+            "description": "Start construction of Kingston Phase 0 single tower (HB_KIN_T1, 100 units, TMH100.4) per 'single tower then expand' deployment policy.",
+            "impact": "Expands basin housing coverage after Albany income begins; supports Kingston node labor and logistics.",
+            "initiative_code": "HBN",
+            "initiative_year": 1,
+            "milestone_id": "HBN-1-0003",
+            "percent_complete": 0,
+            "status": "PLANNED",
+            "tags": [
+              "Hudson",
+              "TMH",
+              "Housing",
+              "Kingston",
+              "HudsonHomes"
+            ],
+            "target_date": "590 BCE-09-12",
+            "title": "Hudson Homes: Start Kingston TMH100.4 Tower HB_KIN_T1 (Phase 0)"
+          },
+          {
+            "depends_on": [],
+            "description": "Start construction of Newburgh Phase 0 single tower (HB_NEW_T1, 100 units, TMH100.4).",
+            "impact": "Expands basin housing network south of Kingston; improves labor availability for docks/warehouse program.",
+            "initiative_code": "HBN",
+            "initiative_year": 1,
+            "milestone_id": "HBN-1-0004",
+            "percent_complete": 0,
+            "status": "PLANNED",
+            "tags": [
+              "Hudson",
+              "TMH",
+              "Housing",
+              "Newburgh",
+              "HudsonHomes"
+            ],
+            "target_date": "590 BCE-09-19",
+            "title": "Hudson Homes: Start Newburgh TMH100.4 Tower HB_NEW_T1 (Phase 0)"
+          },
+          {
+            "depends_on": [],
+            "description": "Start construction of Poughkeepsie Phase 0 single tower (HB_POU_T1, 100 units, TMH100.4).",
+            "impact": "Expands basin housing coverage mid-river; supports basin-wide workforce stability.",
+            "initiative_code": "HBN",
+            "initiative_year": 1,
+            "milestone_id": "HBN-1-0005",
+            "percent_complete": 0,
+            "status": "PLANNED",
+            "tags": [
+              "Hudson",
+              "TMH",
+              "Housing",
+              "Poughkeepsie",
+              "HudsonHomes"
+            ],
+            "target_date": "590 BCE-09-26",
+            "title": "Hudson Homes: Start Poughkeepsie TMH100.4 Tower HB_POU_T1 (Phase 0)"
+          },
+          {
+            "depends_on": [],
+            "description": "Execute first dock/warehouse leases under Hudson Holistics. Apply policy: prioritize high-quality cargo; expand capacity if berthing delay appears; MSC-grade certification/processing standard.",
+            "impact": "Creates logistics income engine and reduces congestion; supports regional trade and supply reliability.",
+            "initiative_code": "HBN",
+            "initiative_year": 1,
+            "milestone_id": "HBN-1-0006",
+            "percent_complete": 0,
+            "status": "PLANNED",
+            "tags": [
+              "Hudson",
+              "Docks",
+              "Warehousing",
+              "HudsonHolistics"
+            ],
+            "target_date": "590 BCE-09-12",
+            "title": "Hudson Holistics: Initial dock/warehouse lease package executed (high-quality cargo priority)"
+          },
+          {
+            "depends_on": [],
+            "description": "Complete and certify TMH_PHL_R2_CROSS_1 (Philly Region 2). Status: almost done as of 590 BCE-08-01. Once certified, begin occupancy and ledger tracking.",
+            "impact": "Adds TMH capacity and NOI in Philly Region 2; expands all-inclusive housing coverage.",
+            "initiative_code": "TMH",
+            "initiative_year": 1,
+            "milestone_id": "TMH-1-0001",
+            "percent_complete": 100,
+            "status": "DONE",
+            "tags": [
+              "TMH",
+              "Philly",
+              "Region2",
+              "TMH_PHL_R2_CROSS_1"
+            ],
+            "target_date": "590 BCE-08-15",
+            "title": "Philly Region 2 Cross 1 complete + certified"
+          }
+        ],
+        "milestone_list_id": "MSL_590BCE-07-18_v1",
+        "policy": {
+          "advance_time_only_on": [
+            "next",
+            "explicit_date_change"
+          ],
+          "do_not_advance_time": true,
+          "id_format": "{initiative_code}-{year}-{seq:04d}",
+          "percent_complete_allowed": true,
+          "status_enum": [
+            "PLANNED",
+            "IN_PROGRESS",
+            "BLOCKED",
+            "DONE",
+            "CANCELLED"
+          ]
+        }
+      },
+      "personal_finance": {
+        "liquid_capital": {
+          "cash_and_clearing": 348.88,
+          "rollforward": {
+            "assumption": "Posted Pusheen cash inflows pro-rata from personal_finance.monthly_cashflow_to_pusheen.total_monthly_inflow; no personal outflows tracked, so assumed 0 outflows.",
+            "days_elapsed": 14,
+            "from_as_of": "590 BCE-09-05",
+            "inflows_posted": 35.04,
+            "net_change": 35.04,
+            "outflows_posted": 0.0,
+            "to_as_of": "590 BCE-10-10"
+          },
+          "short_notes_and_deposits": 32.1,
+          "total_liquid": 380.98
+        },
+        "monthly_cashflow_to_pusheen": {
+          "PH_Housing_Trust_distribution": 135.6,
+          "PhillyEats": 17.9,
+          "Philly_Water_Phase1": 1.67,
+          "TM_insurance": 3.5,
+          "TU_consumer_banking": 6.8,
+          "total_monthly_inflow": 165.47
+        },
+        "pending_transfers": {
+          "NR_blind_trust_TB_transfer": {
+            "amount_TB": 17.7,
+            "destination": "Pusheen_assets",
+            "mark_equivalent": 17700,
+            "status": "pending_NR_senate_vote",
+            "tb_to_mark": 1000
+          }
+        }
+      },
+      "tmh": {
+        "cross_standard": {
+          "notes": [
+            "User-set standard for Philly crosses (Region 1+2)."
+          ],
+          "unit_mix": {
+            "one_bed": 0.35,
+            "studio": 0.35,
+            "two_bed": 0.3
+          },
+          "units_per_cross": 400
+        },
+        "pilot_cross_last_30_days_ledger": {
+          "distribution_policy": {
+            "auto": true,
+            "distributed_amount": 45.2,
+            "rate_of_net_income": 0.02,
+            "recipient": "Pusheen",
+            "retained_earnings_amount": 2214.8
+          },
+          "net_operating_income": 2260.0,
+          "opex": {
+            "bath_and_laundry_ops_nonfuel": {
+              "bath_attendants": 120.0,
+              "laundry_staff": 180.0,
+              "soap_linen": 90.0,
+              "subtotal": 390.0
+            },
+            "food_system": {
+              "kitchen_labor": 500.0,
+              "raw_food_inputs": 1150.0,
+              "storage_spoilage": 120.0,
+              "subtotal": 1770.0
+            },
+            "maintenance_and_admin": {
+              "admin_and_leasing": 300.0,
+              "building_maintenance_crew": 450.0,
+              "contingency_buffer": 200.0,
+              "subtotal": 950.0
+            },
+            "total_opex": 3740.0,
+            "utilities": {
+              "fuel_coal_char_mix": 420.0,
+              "heat_staff_wages": 110.0,
+              "mechanical_maintenance": 45.0,
+              "misc_utilities": 30.0,
+              "subtotal": 630.0,
+              "water_internal_transfer": 25.0
+            }
+          },
+          "period_days": 30,
+          "revenue": {
+            "rents_collected": 6000.0,
+            "total_revenue": 6000.0
+          },
+          "units": 400
+        },
+        "policy": {
+          "exceptions": [
+            {
+              "category": "indigent_or_emergency_intake",
+              "max_duration_days": 30,
+              "policy": "temporary_access_grant",
+              "requirements": "clinic_intake_record_and_sponsor_signature"
+            }
+          ],
+          "uid_required_for_lease_and_services": true
+        },
+        "region_crosses": {
+          "philly": {
+            "private_crosses": {
+              "crosses": [],
+              "crosses_total": 0,
+              "notes": [
+                "Deprecated: 'private_crosses' entry in Philly was an alias/duplicate of Region 1 Pilot Cross per user clarification. Do not double-count units."
+              ]
+            },
+            "region_1": {
+              "crosses": [
+                {
+                  "completion_estimate": {
+                    "as_of": "~590 BCE-06-? (2 months prior to 590 BCE-08-22)",
+                    "note": "Exact start date not recorded.",
+                    "state": "complete"
+                  },
+                  "cross_id": "TMH_PHL_R1_PILOT_CROSS_1",
+                  "ledger_last_30d": "pilot_cross_last_30_days_ledger",
+                  "name": "Philly Region 1 Pilot Cross",
+                  "notes": [
+                    "Operating ~2 months and occupied (user)."
+                  ],
+                  "occupancy": {
+                    "as_of": "590 BCE-10-17",
+                    "notes": [
+                      "Historically 100% occupied (user)."
+                    ],
+                    "occupancy_rate": 1.0
+                  },
+                  "status": "operational_occupied",
+                  "unit_mix": {
+                    "one_bed": 0.35,
+                    "studio": 0.35,
+                    "two_bed": 0.3
+                  },
+                  "units": 400
+                }
+              ],
+              "crosses_total": 1
+            },
+            "region_2": {
+              "crosses": [
+                {
+                  "completion_estimate": {
+                    "as_of": "590 BCE-08-22",
+                    "state": "complete"
+                  },
+                  "cross_id": "TMH_PHL_R2_CROSS_1",
+                  "ledger_last_30d": null,
+                  "name": "Philly Region 2 Cross 1",
+                  "notes": [
+                    "Previously recorded as complete/certified."
+                  ],
+                  "occupancy": {
+                    "as_of": "590 BCE-10-17",
+                    "notes": [
+                      "Filling up; +60 people intake allocated (~20 units)."
+                    ],
+                    "occupancy_rate": 0.8
+                  },
+                  "status": "operational_certified",
+                  "unit_mix": {
+                    "one_bed": 0.35,
+                    "studio": 0.35,
+                    "two_bed": 0.3
+                  },
+                  "units": 400
+                },
+                {
+                  "completion_estimate": null,
+                  "cross_id": "TMH_PHL_R2_CROSS_2",
+                  "ledger_last_30d": null,
+                  "name": "Philly Region 2 Cross 2",
+                  "notes": [],
+                  "status": "under_construction",
+                  "unit_mix": {
+                    "one_bed": 0.35,
+                    "studio": 0.35,
+                    "two_bed": 0.3
+                  },
+                  "units": 400
+                },
+                {
+                  "completion_estimate": null,
+                  "cross_id": "TMH_PHL_R2_CROSS_3",
+                  "ledger_last_30d": null,
+                  "name": "Philly Region 2 Cross 3",
+                  "notes": [],
+                  "status": "under_construction",
+                  "unit_mix": {
+                    "one_bed": 0.35,
+                    "studio": 0.35,
+                    "two_bed": 0.3
+                  },
+                  "units": 400
+                },
+                {
+                  "completion_estimate": null,
+                  "cross_id": "TMH_PHL_R2_CROSS_4",
+                  "ledger_last_30d": null,
+                  "name": "Philly Region 2 Cross 4",
+                  "notes": [],
+                  "status": "site_prep",
+                  "unit_mix": {
+                    "one_bed": 0.35,
+                    "studio": 0.35,
+                    "two_bed": 0.3
+                  },
+                  "units": 400
+                },
+                {
+                  "completion_estimate": null,
+                  "cross_id": "TMH_PHL_R2_CROSS_5",
+                  "ledger_last_30d": null,
+                  "name": "Philly Region 2 Cross 5",
+                  "notes": [],
+                  "status": "site_prep",
+                  "unit_mix": {
+                    "one_bed": 0.35,
+                    "studio": 0.35,
+                    "two_bed": 0.3
+                  },
+                  "units": 400
+                },
+                {
+                  "completion_estimate": null,
+                  "cross_id": "TMH_PHL_R2_CROSS_6",
+                  "ledger_last_30d": null,
+                  "name": "Philly Region 2 Cross 6",
+                  "notes": [],
+                  "status": "site_prep",
+                  "unit_mix": {
+                    "one_bed": 0.35,
+                    "studio": 0.35,
+                    "two_bed": 0.3
+                  },
+                  "units": 400
+                },
+                {
+                  "completion_estimate": null,
+                  "cross_id": "TMH_PHL_R2_CROSS_7",
+                  "ledger_last_30d": null,
+                  "name": "Philly Region 2 Cross 7",
+                  "notes": [],
+                  "status": "planned",
+                  "unit_mix": {
+                    "one_bed": 0.35,
+                    "studio": 0.35,
+                    "two_bed": 0.3
+                  },
+                  "units": 400
+                },
+                {
+                  "completion_estimate": null,
+                  "cross_id": "TMH_PHL_R2_CROSS_8",
+                  "ledger_last_30d": null,
+                  "name": "Philly Region 2 Cross 8",
+                  "notes": [],
+                  "status": "planned",
+                  "unit_mix": {
+                    "one_bed": 0.35,
+                    "studio": 0.35,
+                    "two_bed": 0.3
+                  },
+                  "units": 400
+                }
+              ],
+              "crosses_total": 8,
+              "heat_plant": {
+                "capacity_crosses": 8,
+                "notes": [
+                  "District heat plant sized for 8 Region 2 crosses (user)."
+                ],
+                "plant_id": "TMH_PHL_R2_HEAT_PLANT_1",
+                "status": "planned"
+              }
+            },
+            "region_3": {
+              "crosses": [],
+              "crosses_total": 0
+            },
+            "region_4": {
+              "crosses": [],
+              "crosses_total": 0
+            }
+          }
+        },
+        "region_scope_note": "TMH region numbers (1-4) refer to Philly internal regions only. Hudson Basin (NY) TMH sites are tracked under running_state.hudson_basin.programs.housing.sites.",
+        "rent_table_monthly": {
+          "affordable_cap": {
+            "income_fraction": 0.4,
+            "monthly": 4
+          },
+          "one_bed": 15,
+          "studio": 10,
+          "two_bed": 20
+        },
+        "rents_all_inclusive": true
+      },
+      "utilities": {
+        "philly_water": {
+          "phase_1": {
+            "annual_financials": {
+              "net_mark": 20,
+              "opex_estimate_mark": 180,
+              "revenue_mark": 200
+            },
+            "households_served": 400,
+            "region_served": "River Region",
+            "status": "certified_operational"
+          },
+          "phase_2": {
+            "households_served_estimate": 400,
+            "region_served": "Market Region",
+            "status": "built_certified"
+          },
+          "phase_3": {
+            "households_target_estimate": 800,
+            "status": "built_certified",
+            "target": "serve_West_and_North_regions"
+          },
+          "system_name": "Dual-River Water Works"
+        }
+      }
+    },
+    "time": {
+      "anchor_date_label": "590 BCE-07-18",
+      "campaign_label": "Week 12 (Tick=7 days fixed); do not advance >3 days without confirmation.",
+      "current_date": "590 BCE-10-17",
+      "notes": [
+        "Current time anchor is Week 12.",
+        "Advance time only on explicit request. 'Next' = +7 days.",
+        "Never advance more than 3 days without explicit confirmation unless user explicitly requests larger."
+      ],
+      "tick_days": 7
+    },
+    "world": {
+      "primary_city": {
+        "governance": {
+          "council_actions_log": [
+            {
+              "action": "approve_policy",
+              "conditions_summary": "Quarterly capacity audit; public reporting; automatic intake pause triggers.",
+              "date": "590 BCE-10-10",
+              "policy_key": "immigration_policy",
+              "title": "Structured Settlement & Capacity-Linked Immigration",
+              "vote_no": 3,
+              "vote_yes": 6
+            }
+          ]
+        },
+        "growth_model": {
+          "baseline_annual_growth_rate": 0.025,
+          "baseline_monthly_net_change_estimate": 7.3,
+          "constraints": [
+            "food_buffer",
+            "housing_capacity",
+            "sanitation",
+            "fire_risk"
+          ],
+          "drivers": [
+            "trade_pull",
+            "job_creation",
+            "housing_availability"
+          ],
+          "policy": "capacity_linked_intake"
+        },
+        "housing_construction_policy": {
+          "tmh_buffer_triggered_acceleration": {
+            "action_on_trigger": "accelerate_next_TMH100_tower_completion; if multiple towers available, prioritize the next tower closest to completion in Region 2.",
+            "enabled": true,
+            "normal_mode": "build_efficiently_to_plan",
+            "notes": [
+              "User directive: prioritize bringing next tower online; each time buffer is close, accelerate another tower; otherwise build efficiently.",
+              "Vacancy threshold computed on active TMH units in Philly (Region 1 Pilot Cross + Region 2 Cross 1 = 800 units)."
+            ],
+            "trigger_when_vacant_units_at_or_below": 40,
+            "vacancy_buffer_min_pct": 0.05
+          }
+        },
+        "immigration_intake_log": [
+          {
+            "date": "590 BCE-10-17",
+            "housing_assignment": "TMH_PHL_R2_CROSS_1",
+            "intake_people": 60,
+            "notes": [
+              "Open borders (paperwork required): first week intake modeled at 60 persons; placed into TMH Region 2 Cross 1 vacancies; unskilled routed to brickyards."
+            ],
+            "placement_policy": "skills_based; unskilled->brickyards"
+          }
+        ],
+        "immigration_policy": {
+          "council_approval": {
+            "conditions": {
+              "automatic_intake_pause_triggers": [
+                "grain_reserve_below_min_months",
+                "housing_vacancy_below_min_pct"
+              ],
+              "capacity_audit_frequency": "quarterly",
+              "public_reporting_required": true
+            },
+            "date": "590 BCE-10-10",
+            "notes": [
+              "Approval is conditional on maintaining gate thresholds and publishing intake counts.",
+              "Policy is intended to prevent overcrowding, job displacement, and food insecurity."
+            ],
+            "resolution_title": "Structured Settlement & Capacity-Linked Immigration",
+            "status": "approved",
+            "vote": {
+              "no": 3,
+              "yes": 6
+            }
+          },
+          "enabled": true,
+          "exceptions": [
+            "indigent_emergency_intake_temporary_30d"
+          ],
+          "gates": {
+            "grain_reserve_min_months": 2,
+            "housing_vacancy_buffer_min_pct": 0.05,
+            "jobs_verified_required": true
+          },
+          "intake_mode": "open_as_long_as_gates_pass_and_paperwork_completed",
+          "open_borders": true,
+          "paperwork_required": true,
+          "principle": "No net intake beyond verified housing and job placement capacity.",
+          "public_messaging": {
+            "one_liner": "Open settlement: register, receive housing and work assignment, and join the city under UID protections."
+          },
+          "uid_intake_required": true
+        },
+        "industrial_sites": {
+          "FerronPaper": {
+            "name": "Ferron Paper Works",
+            "power_source": {
+              "infrastructure": [
+                "low_weir",
+                "gated_headrace",
+                "wheel_pit",
+                "tailrace"
+              ],
+              "notes": [
+                "Millrace is cut from the Schuylkill bank with a gated intake for flow control and maintenance.",
+                "Tailrace returns to the Schuylkill downstream of wheelhouse."
+              ],
+              "type": "millrace",
+              "waterbody": "Schuylkill River"
+            },
+            "site_notes": [
+              "Paper works is sited on the Schuylkill with engineered water control rather than relying on an unregulated stream.",
+              "Waterpower maintenance crew and wheelwright capability assumed on-site."
+            ]
+          },
+          "SteelToolFabs": {
+            "general_fab": {
+              "capacity_plan": {
+                "apprentice_fraction": 0.25,
+                "monthly_steel_input_tons": 7,
+                "target_headcount": 24
+              },
+              "rationale": [
+                "yard_access",
+                "charcoal_and_billet_inbound",
+                "noise_tolerant_zone",
+                "fast_distribution"
+              ],
+              "siting": "Near MSC docks / River Region"
+            },
+            "precision_fab": {
+              "capacity_plan": {
+                "apprentice_fraction": 0.25,
+                "monthly_steel_input_tons": 3,
+                "target_headcount": 20,
+                "water_powered_grinding": true
+              },
+              "infrastructure_notes": [
+                "dedicated wheel takeoff or separate wheel pit",
+                "grit_runoff_trap",
+                "firebreak_gap_from_paper_storage"
+              ],
+              "rationale": [
+                "steady_water_power_for_grinding",
+                "shared_millrace_maintenance",
+                "quality_discipline",
+                "kept away from TMH residential noise/fire risk"
+              ],
+              "siting": "Near Ferron Paper millrace (Schuylkill), separated by firebreak"
+            }
+          }
+        },
+        "metrics": {
+          "avg_household_size_citywide": 3.4,
+          "avg_household_size_tmh": 3.1,
+          "households_total": 1047,
+          "population_total": 3560
+        },
+        "name": "Philadelphia",
+        "population_anchor": 3500,
+        "regional_distribution": {
+          "assumptions": {
+            "persons_per_household_implied": 2.1875,
+            "total_households_inferred_from_water_phases": 1600
+          },
+          "regions": [
+            {
+              "households": 400,
+              "name": "River Region",
+              "population": 875
+            },
+            {
+              "households": 400,
+              "name": "Market Region",
+              "population": 875
+            },
+            {
+              "households": 400,
+              "name": "West Region",
+              "population": 875
+            },
+            {
+              "households": 400,
+              "name": "North Region",
+              "population": 875
+            }
+          ]
+        },
+        "regions": [
+          "River Region",
+          "Market Region",
+          "West Region",
+          "North Region"
+        ]
+      },
+      "scope_notes": [
+        "Campaign is Philly-based. Hudson Basin operations are north of Nyack lock.",
+        "Scranton works is an external industrial node feeding Philly economy via river export."
+      ]
+    }
+  },
+  "meta": {
+    "campaign": "Philly 1.5",
+    "as_of_date": "590 BCE-10-24",
+    "export_generated_at_utc": "2026-02-16T15:19:43.107959Z",
+    "export_type": "full_state_export",
+    "notes": [
+      "Export generated by Nova Roma Simulation Engine; base state 590 BCE-10-17 plus rail/labor updates through 590 BCE-10-24.",
+      "Formal ledger layer added at accounting.ledger_layer (schema v1.0).",
+      "Injected USS billet unit OPEX metrics into accounting.ledger_layer.entities.USS.run_rate_estimates.unit_economics and accounting.ledger_layer.reporting.entities.USS.unit_opex_metrics.",
+      "Added unit OPEX / cost basis metrics for PeteyFab (partial), FerronPaper (paper_hemp), MSC (logistics cost basis), and status notes for TMH/TU/TM/AX_CAX."
+    ]
+  },
+  "economy": {
+    "industry": {
+      "steel": {
+        "uss_line_1_status": "throttled",
+        "uss_line_2_status": "calibration_test_runs_30_days",
+        "uss_line_2_fuel": "coke",
+        "uss_line_2_fuel_lot_tracking": true
+      }
+    },
+    "finance": {
+      "TU_retail_bank": {
+        "monthly_account_fee_marks": 0.1,
+        "microloan_interest_annual_pct": 8.0,
+        "merchant_accounts_policy": {
+          "tu_merchants_limited_small_business": true,
+          "tt_commercial_banking_primary_for_merchants": true,
+          "payroll_flow": "TT -> TU distribution to worker accounts"
+        }
+      }
+    }
+  },
+  "projects": {
+    "rail": {
+      "PF-ER1_pilot": {
+        "name": "PF-ER1 Edge Rail Pilot",
+        "gauge_mm": 1000,
+        "length_m": 300,
+        "rail_section": {
+          "height_mm": 45,
+          "width_mm": 35,
+          "segment_length_m": 1.5
+        },
+        "chief_rail_engineer": "Aelius Varro",
+        "institutions": {
+          "engineering_academy": true,
+          "uop_metallurgy": true,
+          "petey_fab_production": true
+        },
+        "budget_marks": 11000,
+        "funding_source": "USS Capital – Strategic Materials",
+        "status": "design_freeze_complete",
+        "timeline": {
+          "week_1": "design_freeze_complete",
+          "week_2_3": "metallurgy_trial_batch",
+          "week_4_6": "pilot_production_run",
+          "week_6_8": "trackbed_and_installation",
+          "week_9_12": "commissioning_and_load_testing"
+        },
+        "quiet_mode": true
+      }
+    }
+  },
+  "population": {
+    "labor_model": {
+      "status": "active",
+      "tiers_enforced": true,
+      "tier_definitions": {
+        "tier_1_unskilled_entry": {
+          "description": "Brickyards, yard labor, timber/charcoal, general construction"
+        },
+        "tier_2_skilled_trades": {
+          "description": "Smiths, carpenters, masons, millwrights, toolmakers"
+        },
+        "tier_3_technical_professional": {
+          "description": "Engineers, surveyors, physicians, metallurgists, senior clerks"
+        },
+        "tier_4_admin_financial": {
+          "description": "Banking/exchange/insurance clerks, municipal admin"
+        }
+      },
+      "mobility_rules": {
+        "no_instant_reclass": true,
+        "requires_apprenticeship_for_tier_2": true,
+        "requires_institutional_affiliation_for_tier_3": true
+      },
+      "petey_fab_unskilled_quota_pct": 25
+    }
+  },
+  "accounting": {
+    "ledger_layer": {
+      "schema_version": "1.0",
+      "as_of_date": "590 BCE-10-24",
+      "currency": {
+        "name": "mark",
+        "symbol": "M",
+        "precision": 2
+      },
+      "notes": [
+        "Formal accounting scaffold for campaign continuity.",
+        "Cash balances, inventory, and asset book values are 'unknown' unless reconciled to authoritative cash books and tallies.",
+        "Intercompany transfers should net to zero in consolidated results."
+      ],
+      "entities": {
+        "USS": {
+          "type": "industrial_producer",
+          "chart_of_accounts": {
+            "assets": [
+              "cash",
+              "accounts_receivable",
+              "inventory_raw",
+              "inventory_wip",
+              "inventory_finished_billets",
+              "plant_and_equipment",
+              "capital_projects_wip"
+            ],
+            "liabilities": [
+              "accounts_payable",
+              "wages_payable",
+              "notes_payable",
+              "bonds_payable"
+            ],
+            "equity": [
+              "paid_in_capital",
+              "retained_earnings"
+            ],
+            "income": [
+              "steel_sales_external",
+              "steel_sales_internal",
+              "byproduct_sales"
+            ],
+            "expenses": [
+              "raw_materials",
+              "fuel_energy",
+              "labor",
+              "maintenance",
+              "transport_outbound",
+              "r_and_d",
+              "overhead"
+            ]
+          },
+          "balances": {
+            "cash": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "accounts_receivable": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "inventory_raw": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "inventory_wip": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "inventory_finished_billets": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "plant_and_equipment": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "capital_projects_wip": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "accounts_payable": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "wages_payable": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "notes_payable": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "bonds_payable": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "paid_in_capital": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "retained_earnings": {
+              "amount": null,
+              "status": "unknown"
+            }
+          },
+          "run_rate_estimates": {
+            "note": "Optional modeled run-rate; keep separate from balances.",
+            "unit_economics": {
+              "billet_steel_opex_ex_works_mark_per_ton": 20.25,
+              "billet_steel_shipping_scranton_to_philly_mark_per_ton": 6.822,
+              "billet_steel_opex_delivered_philly_mark_per_ton": 27.072,
+              "assumptions": {
+                "source": "commodities.json recipes + state_local commodity overrides",
+                "billet_recipe": {
+                  "pig_iron_ton": 0.9,
+                  "scrap_steel_ton": 0.1,
+                  "manganese_ore_ton": 0.01
+                },
+                "manganese_price_mark_per_ton": 60.0,
+                "scrap_internal_transfer_mark_per_ton": 1.0,
+                "pig_iron_processing_cost_mark_per_ton": 9.5,
+                "billet_processing_cost_mark_per_ton": 11.0,
+                "excluded_costs": [
+                  "explicit ore extraction market price (not priced as mark/ton in commodities.json)",
+                  "explicit energy valuation per MJ (no mark/MJ defined)",
+                  "any additional plant overhead beyond listed maintenance/labor"
+                ]
+              }
+            }
+          }
+        },
+        "PeteyFab": {
+          "type": "manufacturing_holding",
+          "chart_of_accounts": {
+            "assets": [
+              "cash",
+              "accounts_receivable",
+              "inventory_tools",
+              "inventory_wip",
+              "equipment_and_tools",
+              "investments_in_associates"
+            ],
+            "liabilities": [
+              "accounts_payable",
+              "wages_payable"
+            ],
+            "equity": [
+              "paid_in_capital",
+              "retained_earnings"
+            ],
+            "income": [
+              "tool_sales",
+              "custom_fabrication",
+              "contract_manufacturing"
+            ],
+            "expenses": [
+              "materials_input",
+              "labor",
+              "maintenance",
+              "overhead"
+            ]
+          },
+          "balances": {
+            "cash": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "accounts_receivable": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "inventory_tools": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "inventory_wip": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "equipment_and_tools": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "investments_in_associates": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "accounts_payable": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "wages_payable": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "paid_in_capital": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "retained_earnings": {
+              "amount": null,
+              "status": "unknown"
+            }
+          },
+          "run_rate_estimates": {
+            "note": "Optional modeled run-rate; keep separate from balances.",
+            "unit_economics": {
+              "steel_input_billet_opex_ex_works_mark_per_ton": 20.25,
+              "steel_input_billet_opex_delivered_philly_mark_per_ton": 27.072,
+              "note": "No tool_steel commodity recipe defined in commodities.json; Petey unit tool OPEX not computed."
+            }
+          }
+        },
+        "MSC": {
+          "type": "logistics_shipping_warehousing",
+          "chart_of_accounts": {
+            "assets": [
+              "cash",
+              "vessels",
+              "warehouses",
+              "dock_leases",
+              "inventory_freight"
+            ],
+            "liabilities": [
+              "accounts_payable",
+              "wages_payable"
+            ],
+            "equity": [
+              "paid_in_capital",
+              "retained_earnings"
+            ],
+            "income": [
+              "freight_fees",
+              "warehouse_fees",
+              "handling_fees"
+            ],
+            "expenses": [
+              "crew_wages",
+              "maintenance",
+              "dock_fees",
+              "overhead"
+            ]
+          },
+          "balances": {
+            "cash": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "vessels": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "warehouses": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "dock_leases": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "inventory_freight": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "accounts_payable": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "wages_payable": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "paid_in_capital": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "retained_earnings": {
+              "amount": null,
+              "status": "unknown"
+            }
+          },
+          "run_rate_estimates": {
+            "note": "Optional modeled run-rate; keep separate from balances.",
+            "unit_economics": {
+              "logistics_cost_basis_mark": {
+                "ox_cart": {
+                  "per_ton_mile_cost_mark": 0.01,
+                  "transfer_cost_per_ton_mark": 0.3,
+                  "raw_rate": "1.00 REU/ton-mile (baseline: rural roads, moderate loads)",
+                  "raw_transfer": {
+                    "transfer_REU": 30
+                  }
+                },
+                "horse_cart": {
+                  "per_ton_mile_cost_mark": 0.015,
+                  "transfer_cost_per_ton_mark": 0.3,
+                  "raw_rate": "1.5 REU/ton-mile (faster, lighter loads)",
+                  "raw_transfer": {
+                    "transfer_REU": 30
+                  }
+                },
+                "mule_pack": {
+                  "per_ton_mile_cost_mark": 0.02,
+                  "transfer_cost_per_ton_mark": 0.2,
+                  "raw_rate": "2.0 REU/ton-mile (mountainous or rough terrain)",
+                  "raw_transfer": {
+                    "transfer_REU": 20
+                  }
+                },
+                "human_porter": {
+                  "per_ton_mile_cost_mark": 0.05,
+                  "transfer_cost_per_ton_mark": 0.1,
+                  "raw_rate": "5.0 REU/ton-mile (short distances, difficult terrain)",
+                  "raw_transfer": {
+                    "transfer_REU": 10
+                  }
+                },
+                "river_barge": {
+                  "per_ton_mile_cost_mark": 0.0003,
+                  "transfer_cost_per_ton_mark": 1.5,
+                  "raw_rate": "0.03 REU/ton-mile (navigable rivers, bulk goods)",
+                  "raw_transfer": {
+                    "transfer_REU": 150
+                  }
+                },
+                "sea_coaster": {
+                  "per_ton_mile_cost_mark": 1e-05,
+                  "transfer_cost_per_ton_mark": 2.0,
+                  "raw_rate": "0.001 REU/ton-mile (coastal shipping, large bulk)",
+                  "raw_transfer": {
+                    "transfer_REU": 200
+                  }
+                },
+                "camel_caravan": {
+                  "per_ton_mile_cost_mark": 0.018,
+                  "transfer_cost_per_ton_mark": 0.3,
+                  "raw_rate": "1.8 REU/ton-mile (arid/desert routes)",
+                  "raw_transfer": {
+                    "transfer_REU": 30
+                  }
+                }
+              },
+              "unit_conversions": {
+                "REU_to_mark": 0.01,
+                "iREU_to_mark": 0.001
+              },
+              "note": "Cost basis derived from commodities.json logistics.per_mile_costs and unit_conversions."
+            }
+          }
+        },
+        "TM": {
+          "type": "insurance",
+          "chart_of_accounts": {
+            "assets": [
+              "cash",
+              "reserves"
+            ],
+            "liabilities": [
+              "claims_payable",
+              "unearned_premiums"
+            ],
+            "equity": [
+              "paid_in_capital",
+              "retained_earnings"
+            ],
+            "income": [
+              "premiums"
+            ],
+            "expenses": [
+              "claims",
+              "admin",
+              "loss_adjustment"
+            ]
+          },
+          "balances": {
+            "cash": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "reserves": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "claims_payable": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "unearned_premiums": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "paid_in_capital": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "retained_earnings": {
+              "amount": null,
+              "status": "unknown"
+            }
+          },
+          "run_rate_estimates": {
+            "note": "Optional modeled run-rate; keep separate from balances.",
+            "unit_economics": {
+              "status": "not_commodity_costed",
+              "note": "Service entity; OPEX requires staffing/security/claims/ops registers, not commodities.json recipes."
+            }
+          },
+          "pricing_policy": {
+            "hull_premium_annual_pct": 5.0,
+            "cargo_premium_standard_pct_per_voyage": 1.0,
+            "cargo_premium_long_route_pct_per_voyage": 1.25,
+            "convoy_discount_pct_per_voyage": 0.75
+          }
+        },
+        "TU": {
+          "type": "retail_bank_public_service",
+          "chart_of_accounts": {
+            "assets": [
+              "cash",
+              "loans_receivable"
+            ],
+            "liabilities": [
+              "customer_deposits",
+              "payroll_float",
+              "accounts_payable"
+            ],
+            "equity": [
+              "paid_in_capital",
+              "retained_earnings"
+            ],
+            "income": [
+              "account_fees",
+              "interest_income",
+              "transfer_fees"
+            ],
+            "expenses": [
+              "staff",
+              "security",
+              "stationery",
+              "overhead",
+              "loan_losses"
+            ]
+          },
+          "balances": {
+            "cash": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "loans_receivable": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "customer_deposits": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "payroll_float": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "accounts_payable": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "paid_in_capital": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "retained_earnings": {
+              "amount": null,
+              "status": "unknown"
+            }
+          },
+          "run_rate_estimates": {
+            "note": "Optional modeled run-rate; keep separate from balances.",
+            "unit_economics": {
+              "status": "not_commodity_costed",
+              "note": "Service entity; OPEX requires staffing/security/claims/ops registers, not commodities.json recipes."
+            }
+          },
+          "policies": {
+            "monthly_account_fee_marks": 0.1,
+            "microloan_interest_annual_pct": 8.0,
+            "merchant_accounts_policy": {
+              "tu_merchants_limited_small_business": true,
+              "tt_commercial_banking_primary_for_merchants": true,
+              "payroll_flow": "TT -> TU distribution to worker accounts"
+            }
+          }
+        },
+        "TMH": {
+          "type": "housing",
+          "chart_of_accounts": {
+            "assets": [
+              "cash",
+              "buildings",
+              "infrastructure"
+            ],
+            "liabilities": [
+              "accounts_payable",
+              "maintenance_reserve"
+            ],
+            "equity": [
+              "paid_in_capital",
+              "retained_earnings"
+            ],
+            "income": [
+              "rent"
+            ],
+            "expenses": [
+              "utilities",
+              "maintenance",
+              "food_inputs",
+              "kitchen_labor",
+              "staff",
+              "overhead"
+            ]
+          },
+          "balances": {
+            "cash": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "buildings": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "infrastructure": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "accounts_payable": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "maintenance_reserve": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "paid_in_capital": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "retained_earnings": {
+              "amount": null,
+              "status": "unknown"
+            }
+          },
+          "run_rate_estimates": {
+            "note": "Optional modeled run-rate; keep separate from balances.",
+            "unit_economics": {
+              "note": "TMH unit OPEX not fully derivable from commodities.json: utilities and several service inputs are not modeled as commodities; bread_wheat recipe references 'water' which is not defined.",
+              "status": "not_defined_in_commodities"
+            }
+          }
+        },
+        "AX_CAX": {
+          "type": "exchange_clearing",
+          "chart_of_accounts": {
+            "assets": [
+              "cash",
+              "clearing_collateral",
+              "buildings"
+            ],
+            "liabilities": [
+              "client_balances_payable",
+              "clearing_obligations"
+            ],
+            "equity": [
+              "paid_in_capital",
+              "retained_earnings"
+            ],
+            "income": [
+              "clearing_fees",
+              "listing_fees",
+              "spread_income"
+            ],
+            "expenses": [
+              "staff",
+              "security",
+              "overhead"
+            ]
+          },
+          "balances": {
+            "cash": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "clearing_collateral": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "buildings": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "client_balances_payable": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "clearing_obligations": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "paid_in_capital": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "retained_earnings": {
+              "amount": null,
+              "status": "unknown"
+            }
+          },
+          "run_rate_estimates": {
+            "note": "Optional modeled run-rate; keep separate from balances.",
+            "unit_economics": {
+              "status": "not_commodity_costed",
+              "note": "Service entity; OPEX requires staffing/security/claims/ops registers, not commodities.json recipes."
+            }
+          }
+        },
+        "FerronPaper": {
+          "type": "paper_manufacturing",
+          "chart_of_accounts": {
+            "assets": [
+              "cash",
+              "equipment",
+              "inventory_paper"
+            ],
+            "liabilities": [
+              "accounts_payable"
+            ],
+            "equity": [
+              "paid_in_capital",
+              "retained_earnings"
+            ],
+            "income": [
+              "paper_sales"
+            ],
+            "expenses": [
+              "fiber_inputs",
+              "labor",
+              "maintenance",
+              "overhead"
+            ]
+          },
+          "balances": {
+            "cash": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "equipment": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "inventory_paper": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "accounts_payable": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "paid_in_capital": {
+              "amount": null,
+              "status": "unknown"
+            },
+            "retained_earnings": {
+              "amount": null,
+              "status": "unknown"
+            }
+          },
+          "run_rate_estimates": {
+            "note": "Optional modeled run-rate; keep separate from balances.",
+            "unit_economics": {
+              "paper_hemp_opex_ex_works_mark_per_ton": 9.64,
+              "unit": "1 ton",
+              "note": "Computed from commodities.json processed_goods.paper_hemp (excludes MJ valuation)."
+            }
+          }
+        }
+      },
+      "intercompany_pricing": {
+        "steel_billet_transfer_price_marks_per_ton": 370,
+        "notes": [
+          "No internal discount policy: internal transfers priced at prevailing posting unless explicitly overridden."
+        ]
+      },
+      "journal": {
+        "entries": [
+          {
+            "id": "JRNL-590BCE-10-24-001",
+            "date": "590 BCE-10-24",
+            "description": "Authorize PF-ER1 rail pilot budget (quiet mode) charged to USS capital development.",
+            "lines": [
+              {
+                "entity": "USS",
+                "account": "capital_projects_wip",
+                "debit": 11000.0,
+                "credit": 0.0,
+                "memo": "PF-ER1 rail pilot budget ceiling"
+              },
+              {
+                "entity": "USS",
+                "account": "cash",
+                "debit": 0.0,
+                "credit": 11000.0,
+                "memo": "Authorization; post actual disbursements as incurred"
+              }
+            ],
+            "status": "authorized_not_drawn"
+          }
+        ]
+      },
+      "reconciliation": {
+        "required_sources": [
+          "entity cash books",
+          "warehouse inventory tallies",
+          "AX/CAX clearing logs",
+          "TU deposit and loan registers",
+          "TM premium and claims register"
+        ],
+        "status": "balances_pending"
+      },
+      "reporting": {
+        "period": "monthly",
+        "entities": {
+          "USS": {
+            "unit_opex_metrics": {
+              "billet_steel_opex_ex_works_mark_per_ton": 20.25,
+              "billet_steel_opex_delivered_philly_mark_per_ton": 27.072,
+              "as_of_date": "590 BCE-10-24"
+            }
+          },
+          "PeteyFab": {
+            "unit_opex_metrics": {
+              "steel_input_billet_opex_ex_works_mark_per_ton": 20.25,
+              "as_of_date": "590 BCE-10-24",
+              "status": "partial_defined"
+            }
+          },
+          "FerronPaper": {
+            "unit_opex_metrics": {
+              "paper_hemp_opex_ex_works_mark_per_ton": 9.64,
+              "unit": "1 ton",
+              "as_of_date": "590 BCE-10-24",
+              "status": "defined"
+            }
+          },
+          "MSC": {
+            "unit_opex_metrics": {
+              "logistics_cost_basis_mark": {
+                "ox_cart": {
+                  "per_ton_mile_cost_mark": 0.01,
+                  "transfer_cost_per_ton_mark": 0.3,
+                  "raw_rate": "1.00 REU/ton-mile (baseline: rural roads, moderate loads)",
+                  "raw_transfer": {
+                    "transfer_REU": 30
+                  }
+                },
+                "horse_cart": {
+                  "per_ton_mile_cost_mark": 0.015,
+                  "transfer_cost_per_ton_mark": 0.3,
+                  "raw_rate": "1.5 REU/ton-mile (faster, lighter loads)",
+                  "raw_transfer": {
+                    "transfer_REU": 30
+                  }
+                },
+                "mule_pack": {
+                  "per_ton_mile_cost_mark": 0.02,
+                  "transfer_cost_per_ton_mark": 0.2,
+                  "raw_rate": "2.0 REU/ton-mile (mountainous or rough terrain)",
+                  "raw_transfer": {
+                    "transfer_REU": 20
+                  }
+                },
+                "human_porter": {
+                  "per_ton_mile_cost_mark": 0.05,
+                  "transfer_cost_per_ton_mark": 0.1,
+                  "raw_rate": "5.0 REU/ton-mile (short distances, difficult terrain)",
+                  "raw_transfer": {
+                    "transfer_REU": 10
+                  }
+                },
+                "river_barge": {
+                  "per_ton_mile_cost_mark": 0.0003,
+                  "transfer_cost_per_ton_mark": 1.5,
+                  "raw_rate": "0.03 REU/ton-mile (navigable rivers, bulk goods)",
+                  "raw_transfer": {
+                    "transfer_REU": 150
+                  }
+                },
+                "sea_coaster": {
+                  "per_ton_mile_cost_mark": 1e-05,
+                  "transfer_cost_per_ton_mark": 2.0,
+                  "raw_rate": "0.001 REU/ton-mile (coastal shipping, large bulk)",
+                  "raw_transfer": {
+                    "transfer_REU": 200
+                  }
+                },
+                "camel_caravan": {
+                  "per_ton_mile_cost_mark": 0.018,
+                  "transfer_cost_per_ton_mark": 0.3,
+                  "raw_rate": "1.8 REU/ton-mile (arid/desert routes)",
+                  "raw_transfer": {
+                    "transfer_REU": 30
+                  }
+                }
+              },
+              "as_of_date": "590 BCE-10-24",
+              "status": "defined_cost_basis"
+            }
+          },
+          "TMH": {
+            "unit_opex_metrics": {
+              "status": "not_defined_in_commodities",
+              "as_of_date": "590 BCE-10-24"
+            }
+          },
+          "TU": {
+            "unit_opex_metrics": {
+              "status": "not_commodity_costed",
+              "as_of_date": "590 BCE-10-24"
+            }
+          },
+          "TM": {
+            "unit_opex_metrics": {
+              "status": "not_commodity_costed",
+              "as_of_date": "590 BCE-10-24"
+            }
+          },
+          "AX_CAX": {
+            "unit_opex_metrics": {
+              "status": "not_commodity_costed",
+              "as_of_date": "590 BCE-10-24"
+            }
+          }
+        }
+      }
+    }
+  }
+}

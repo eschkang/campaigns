@@ -51,102 +51,111 @@
     "scope": "This file models direct production costs and does not include logistics, taxes, or externalities unless noted."
   },
   "raw_materials": {
+    "copper_ore": {"commodity": "Copper Ore",
+      "cost_breakdown": { "inputs": 1.2, "labor": 2.8, "maintenance": 0.5, "admin": 1.1 }
+    },
     "barley": {
-      "commodity": "Gypsum (Gypsus / 석고 / Yeso)",
-      "cost_breakdown": { "direct_labor": 0.5, "tools_maintenance": 0.8, "MJ_per_unit": 0.0, "overhead": 0.2 }
+      "commodity": "Barley (Hordeum / 보리 / Cebada)",
+      "cost_breakdown": { "direct_labor": 0.5, "tools_maintenance": 0.3, "MJ_per_unit": 0.0, "overhead": 0.2 }
     },
     "clay": {
-      "commodity": "Halite (Halita / 암염 / Halita)",
-      "cost_breakdown": { "direct_labor": 0.8, "tools_maintenance": 2.0, "MJ_per_unit": 0.0, "overhead": 0.3 }
+      "commodity": "Clay",
+      "cost_breakdown": { "direct_labor": 0.15, "tools_maintenance": 0.1, "MJ_per_unit": 0.0, "overhead": 0.05 }
     },
     "coal": {
-      "commodity": "Hemp (Cannabis sativa / 대마 / Cáñamo)",
-      "cost_breakdown": { "direct_labor": 0.6, "tools_maintenance": 0.9, "MJ_per_unit": 0.0, "overhead": 0.4 },
+      "commodity": "Coal",
+      "cost_breakdown": { "direct_labor": 0.6, "tools_maintenance": 0.3, "MJ_per_unit": 0.0, "overhead": 0.4 },
       "notes": "Types: anthracite/bituminous/lignite; values are extraction-only."
     },
     "grapes": {
-      "commodity": "Lead Ore (Plumbum / 납광석 / Mineral de plomo)",
-      "cost_breakdown": { "direct_labor": 0.7, "tools_maintenance": 1.5, "MJ_per_unit": 0.0, "overhead": 1.0 }
+      "commodity": "Grapes (Vitis / 포도 / Uvas)",
+      "cost_breakdown": { "direct_labor": 0.7, "tools_maintenance": 0.5, "MJ_per_unit": 0.0, "overhead": 1.0 }
     },
     "gypsum": {
-      "commodity": "Limestone (Calx Petrosa / 석회암 / Piedra caliza)",
-      "cost_breakdown": { "direct_labor": 0.5, "tools_maintenance": 1.0, "MJ_per_unit": 0.0, "overhead": 0.15 }
+      "commodity": "Gypsum (Calcium sulfate / 석고 / Yeso)",
+      "cost_breakdown": { "direct_labor": 0.5, "tools_maintenance": 0.3, "MJ_per_unit": 0.0, "overhead": 0.15 }
     },
     "halite": {
-      "commodity": "Olives (Olea / 올리브 / Aceitunas)",
-      "cost_breakdown": { "direct_labor": 0.5, "tools_maintenance": 0.8, "MJ_per_unit": 0.0, "overhead": 0.45 }
+      "commodity": "Halite (Sodium chloride / 암염 / Halita)",
+      "cost_breakdown": { "direct_labor": 0.5, "tools_maintenance": 0.3, "MJ_per_unit": 0.0, "overhead": 0.45 }
     },
     "hemp": {
-      "commodity": "Sea Salt (Sal marina / 천일염 / Sal marina)",
-      "cost_breakdown": { "direct_labor": 0.6, "tools_maintenance": 1.5, "MJ_per_unit": 0.0, "overhead": 0.22 },
+      "commodity": "Hemp (Cannabis sativa / 대마 / Cáñamo)",
+      "cost_breakdown": { "direct_labor": 0.6, "tools_maintenance": 0.5, "MJ_per_unit": 0.0, "overhead": 0.22 },
       "notes": "Produced by solar evaporation; extraction-only costs."
     },
     "hides": {
       "commodity": "Hides (Pellicula / 가죽원피 / Cuero crudo)",
-      "cost_breakdown": { "direct_labor": 0.7, "tools_maintenance": 1.2, "MJ_per_unit": 0.0, "overhead": 1.0 }
+      "cost_breakdown": { "direct_labor": 0.7, "tools_maintenance": 0.4, "MJ_per_unit": 0.0, "overhead": 1.0 }
     },
     "honey_raw": {
       "commodity": "Honey (Raw / 꿀 원물 / Miel cruda)",
-      "cost_breakdown": { "direct_labor": 0.4, "tools_maintenance": 0.5, "MJ_per_unit": 0.0, "overhead": 0.2 }
+      "cost_breakdown": {
+        "inputs": 4.5, "labor": 1.2, "maintenance": 0.2, "admin": 0.8 }
     },
     "iron_ore": {
       "commodity": "Iron Ore (Ferrum / 철광석 / Mineral de hierro)",
       "grades": { "level_1_hematite": { "purity": "50-70% Fe", "smelting_efficiency": "High" }, "level_2_limonite": { "purity": "30-50% Fe" } },
-      "cost_breakdown": { "direct_labor": 0.7, "tools_maintenance": 2.0, "MJ_per_unit": 0.0, "overhead": 0.2 }
+      "cost_breakdown": { "direct_labor": 0.7, "tools_maintenance": 0.7, "MJ_per_unit": 0.0, "overhead": 0.2 }
     },
     "lead_ore": {
-      "commodity": "Sulfur (Sulphur / 황 / Azufre)",
-      "cost_breakdown": { "direct_labor": 0.6, "tools_maintenance": 1.0, "MJ_per_unit": 0.0, "overhead": 1.0 }
+      "commodity": "Lead Ore (Plumbum / 납광석 / Mineral de plomo)",
+      "cost_breakdown": { "direct_labor": 0.6, "tools_maintenance": 0.3, "MJ_per_unit": 0.0, "overhead": 1.0 }
     },
     "limestone": {
-      "commodity": "Pitch/Tar (Pix / 역청 / Alquitrán)",
-      "cost_breakdown": { "direct_labor": 0.6, "tools_maintenance": 1.0, "MJ_per_unit": 0.0, "overhead": 0.5 }
+      "commodity": "Limestone",
+      "cost_breakdown": { "direct_labor": 0.6, "tools_maintenance": 0.3, "MJ_per_unit": 0.0, "overhead": 0.5 }
     },
     "olives": {
-      "commodity": "Tin Ore (Stannum / 주석광석 / Mineral de estaño)",
-      "cost_breakdown": { "direct_labor": 0.7, "tools_maintenance": 1.75, "MJ_per_unit": 0.0, "overhead": 1.0 }
+      "commodity": "Olive Oil (Oleum Olivae / 올리브유 / Aceite de oliva)",
+      "cost_breakdown": { "direct_labor": 0.7, "tools_maintenance": 0.6, "MJ_per_unit": 0.0, "overhead": 1.0 }
     },
     "salt": {
-      "commodity": "Wheat (Triticum / 밀 / Trigo)",
-      "cost_breakdown": { "direct_labor": 0.5, "tools_maintenance": 0.9, "MJ_per_unit": 0.0, "overhead": 0.8 },
+      "commodity": "Salt (Refined / 정제염 / Sal refinada)",
+      "cost_breakdown": { "direct_labor": 0.5, "tools_maintenance": 0.3, "MJ_per_unit": 0.0, "overhead": 0.8 },
       "notes": "Produced by solar evaporation; extraction-only costs."
+    },
+    "saltpeter": {
+      "commodity": "Saltpeter / Nitre (Sal Pétre / 질석 / Salitre)",
+      "cost_breakdown": { "direct_labor": 0.55, "tools_maintenance": 0.3, "MJ_per_unit": 0.0, "overhead": 0.85 },
+      "notes": "Leached from salt/brine deposits with extra handling risk."
     },
     "sand": {
       "commodity": "Sand (Arena / 모래 / Arena)",
-      "cost_breakdown": { "direct_labor": 3.0, "tools_maintenance": 0.5, "MJ_per_unit": 0.0, "overhead": 0.1 }
+      "cost_breakdown": { "direct_labor": 0.25, "tools_maintenance": 0.2, "MJ_per_unit": 0.0, "overhead": 0.1 }
     },
     "shells": {
       "commodity": "Shells (Mappa Conchae / 조개껍데기 / Conchas)",
-      "cost_breakdown": { "direct_labor": 4.0, "tools_maintenance": 0.5, "MJ_per_unit": 0.0, "overhead": 0.2 }
+      "cost_breakdown": { "direct_labor": 0.25, "tools_maintenance": 0.2, "MJ_per_unit": 0.0, "overhead": 0.2 }
     },
     "stone": {
       "commodity": "Building Stone (Lapis / 석재 / Piedra de construcción)",
-      "cost_breakdown": { "direct_labor": 7.0, "tools_maintenance": 2.0, "MJ_per_unit": 0.0, "overhead": 0.2 }
+      "cost_breakdown": { "direct_labor": 0.5, "tools_maintenance": 0.7, "MJ_per_unit": 0.0, "overhead": 0.2 }
     },
     "sulfur": {
       "commodity": "Sulfur (Sulphur / 황 / Azufre)",
-      "cost_breakdown": { "direct_labor": 6.0, "tools_maintenance": 1.0, "MJ_per_unit": 0.0, "overhead": 1.0 }
+      "cost_breakdown": { "direct_labor": 1.5, "tools_maintenance": 0.3, "MJ_per_unit": 0.0, "overhead": 1.0 }
     },
     "pitch_tar": {
       "commodity": "Pitch/Tar (Pix / 역청 / Alquitrán)",
-      "cost_breakdown": { "direct_labor": 5.5, "tools_maintenance": 1.0, "MJ_per_unit": 0.0, "overhead": 0.5 }
+      "cost_breakdown": { "direct_labor": 1.4, "tools_maintenance": 0.3, "MJ_per_unit": 0.0, "overhead": 0.5 }
     },
     "tin_ore": {
       "commodity": "Tin Ore (Stannum / 주석광석 / Mineral de estaño)",
-      "cost_breakdown": { "direct_labor": 6.5, "tools_maintenance": 1.75, "MJ_per_unit": 0.0, "overhead": 1.0 }
+      "cost_breakdown": { "direct_labor": 3.5, "tools_maintenance": 0.6, "MJ_per_unit": 0.0, "overhead": 1.0 }
     },
     "wheat": {
       "commodity": "Wheat (Triticum / 밀 / Trigo)",
-      "cost_breakdown": { "direct_labor": 4.5, "tools_maintenance": 0.9, "MJ_per_unit": 0.0, "overhead": 0.8 }
+      "cost_breakdown": { "direct_labor": 0.6, "tools_maintenance": 0.3, "MJ_per_unit": 0.0, "overhead": 0.8 }
     },
-    "wood": {
+    "timber": {
       "commodity": "Wood (Lignum / 목재 / Madera)",
-      "cost_breakdown": { "direct_labor": 1.0, "tools_maintenance": 0.2, "MJ_per_unit": 0.0, "overhead": 0.25 },
+      "cost_breakdown": { "direct_labor": 1.0, "tools_maintenance": 0.1, "MJ_per_unit": 0.0, "overhead": 0.25 },
       "notes": "Estimates for felling, cutting, and delivering 1 ton of wood."
     },
     "wool": {
       "commodity": "Wool (Villus / 양모 / Lana)",
-      "cost_breakdown": { "direct_labor": 6.0, "tools_maintenance": 0.7, "MJ_per_unit": 0.0, "overhead": 0.25 }
+      "cost_breakdown": { "direct_labor": 1.2, "tools_maintenance": 0.2, "MJ_per_unit": 0.0, "overhead": 0.25 }
     }
   },
   "processed_goods": {
@@ -207,14 +216,6 @@
           "unit": "1 ton", "inputs": { "raw_material": "fresh_meat", "raw_input_tons_per_output": 1.5 }, 
           "cost_breakdown": { "processing_labor": 4.0, "rendering_maintenance": 1.0, "MJ_per_unit": 80.0 }, 
           "notes": "Rendered animal fat." },
-        "tool_bronze": { "commodity": "Tool (Bronze) (Instrumentum Aes / 청동도구 / Herramienta de bronce)",
-          "unit": "1 ton", "inputs": { "ingot_bronze": 1.0 }, 
-          "cost_breakdown": { "processing_labor": 7.0, "toolshop_maintenance": 1.5, "MJ_per_unit": 200.0 }, 
-          "notes": "Forged or cast bronze tools." },
-        "tool_iron": { "commodity": "Tool (Iron) (Instrumentum Ferrum / 철도구 / Herramienta de hierro)",
-          "unit": "1 ton", "inputs": { "bar_iron": 1.0 }, 
-          "cost_breakdown": { "processing_labor": 7.0, "toolshop_maintenance": 1.5, "MJ_per_unit": 200.0 }, 
-          "notes": "Forged or cast iron tools." },
         "wire_copper": { "commodity": "Wire (Copper) (Filum Cupri / 동선 / Alambre de cobre)",
           "unit": "1 ton", "inputs": { "ingot_copper": 1.02 }, 
           "cost_breakdown": { "processing_labor": 5.0, "drawing_maintenance": 1.0, "MJ_per_unit": 150.0 }, 
@@ -229,8 +230,8 @@
         "unit": "1 ton", "inputs": { "raw_material": "fresh_meat", "raw_input_tons_per_output": 1.2 }, 
         "cost_breakdown": { "processing_labor": 5.5, "curing_maintenance": 1.0, "MJ_per_unit": 100.0 } },
       "tile_clay": { "commodity": "Tiles (Tegulae / 기와/타일 / Tejas)",
-        "unit": "1 ton", "inputs": { "raw_material": "clay", "raw_input_tons_per_output": 1.6 }, 
-        "cost_breakdown": { "processing_labor": 4.0, "kiln_maintenance": 2.0, "MJ_per_unit": 1200.0 } },
+        "unit": "1 ton", "inputs": { "raw_material": "clay", "raw_input_tons_per_output": 1.4 }, 
+        "cost_breakdown": { "processing_labor": 0.3, "kiln_maintenance": 0.1, "MJ_per_unit": 0.0 } },
       "ingot_brass": { "commodity": "Brass Ingot (Aes aurichalcum / 황동괴 / Lingote de latón)",
         "unit": "1 ton", "inputs": { "copper_ore": 0.7, "zinc_ore": 0.3 }, 
         "cost_breakdown": { "processing_labor": 7.0, "smelting_consumables": 4.5, "MJ_per_unit": 300000.0 } },
@@ -245,7 +246,7 @@
         "cost_breakdown": { "processing_labor": 3.5, "mill_maintenance": 1.2, "MJ_per_unit": 80.0 } },
       "leather_hide": { "commodity": "Leather (Corium / 가죽 / Cuero)",
         "unit": "1 ton", "inputs": { "raw_material": "hides", "raw_input_tons_per_output": 1.3 }, 
-        "cost_breakdown": { "processing_labor": 8.0, "tannery_maintenance": 2.0, "MJ_per_unit": 150.0 } },
+        "cost_breakdown": { "processing_labor": 0.8, "tannery_maintenance": 0.2, "MJ_per_unit": 150.0 } },
       "yarn_wool": { "commodity": "Wool Yarn (Fila lana / 양모실 / Hilo de lana)",
         "unit": "1 ton", "inputs": { "raw_material": "wool", "raw_input_tons_per_output": 1.2 }, 
         "cost_breakdown": { "processing_labor": 5.0, "spinning_maintenance": 1.0, "MJ_per_unit": 60.0 } },
@@ -285,9 +286,9 @@
       "oil_olive": { "commodity": "Olive Oil (Oleum Olivae / 올리브유 / Aceite de oliva)",
         "unit": "1 ton", "inputs": { "raw_material": "olives", "raw_input_tons_per_output": 5.0 }, 
         "cost_breakdown": { "processing_labor": 4.5, "press_maintenance": 1.0, "MJ_per_unit": 200.0 } },
-      "timber_wood": { "commodity": "Timber (Ligna Processa / 제재목 / Madera aserrada)",
-        "unit": "1 cubic meter", "inputs": { "raw_material": "wood", "raw_input_tons_per_output": 1.428571 }, 
-        "cost_breakdown": { "processing_labor": 8.0, "sawmill_maintenance": 2.5, "MJ_per_unit": 150.0 } },
+      "planks_wood": { "commodity": "Planks (Ligna Processa / 제재목 / Madera aserrada)",
+        "unit": "1 ton", "inputs": { "raw_material": "timber", "raw_input_tons_per_output": 1.428571 }, 
+        "cost_breakdown": { "processing_labor": 1.0, "sawmill_maintenance": 0.4, "MJ_per_unit": 150.0 } },
       "bar_iron": { "commodity": "Iron Bar (Ferrum Barra / 철괴 / Barra de hierro)",
         "unit": "1 ton", "inputs": { "raw_material": "iron_ore", "raw_input_tons_per_output": 2.0 }, 
         "cost_breakdown": { "processing_labor": 6.0, "smelting_consumables": 4.0, "MJ_per_unit": 232000.0 } },
@@ -320,38 +321,66 @@
   "finished_goods": {
         "amphora_pottery": {
           "commodity": "Amphora (Pottery) (Amphora Figulus / 항아리 / Ánfora)",
-          "unit": "1 piece (~20kg)",
-          "inputs": { "pottery_clay": 0.02 },
-          "cost_breakdown": { "fabrication_labor": 0.5, "kiln_maintenance": 0.1, "MJ_per_unit": 10.0 },
+          "unit": "1 ton",
+          "inputs": { "pottery_clay": 1.1 },
+          "cost_breakdown": { "fabrication_labor": 1.0, "kiln_maintenance": 0.1, "MJ_per_unit": 10.0 },
           "notes": "Large storage vessel."
         },
         "tile_roof_clay": {
           "commodity": "Roof Tile (Tegulae / 기와 / Teja)",
-          "unit": "1 piece (~2kg)",
+          "unit": "1000 pieces (1 ton)",
           "inputs": { "tile_clay": 0.002 },
-          "cost_breakdown": { "fabrication_labor": 0.1, "kiln_maintenance": 0.02, "MJ_per_unit": 1.0 },
+          "cost_breakdown": { "fabrication_labor": 0.001, "kiln_maintenance": 0.0002, "MJ_per_unit": 1.0 },
           "notes": "Standard roof tile."
         },
         "brick_clay": {
           "commodity": "Brick (Later / 벽돌 / Ladrillo)",
-          "unit": "1 piece (~3kg)",
-          "inputs": { "tile_clay": 0.003 },
-          "cost_breakdown": { "fabrication_labor": 0.1, "kiln_maintenance": 0.02, "MJ_per_unit": 1.0 },
+          "unit": "1000 pieces (~2 tons)",
+          "inputs": { "tile_clay": 1.25 },
+          "cost_breakdown": { "fabrication_labor": 0.2, "kiln_maintenance": 0.03, "MJ_per_unit": 1000.0 },
           "notes": "Standard fired brick."
+        },
+        "tool_bronze": {
+          "commodity": "Tool (Bronze) (Instrumentum Aes / 청동도구 / Herramienta de bronce)",
+          "unit": "1 ton",
+          "inputs": { "ingot_bronze": 1.0 },
+          "cost_breakdown": { "processing_labor": 1.5, "toolshop_maintenance": 1.5, "MJ_per_unit": 200.0 },
+          "notes": "Forged or cast bronze tools."
+        },
+        "tool_iron": {
+          "commodity": "Tool (Iron) (Instrumentum Ferrum / 철도구 / Herramienta de hierro)",
+          "unit": "1 ton",
+          "inputs": { "bar_iron": 1.0 },
+          "cost_breakdown": { "processing_labor": 2.0, "toolshop_maintenance": 1.5, "MJ_per_unit": 200.0 },
+          "notes": "Forged or cast iron tools."
+        },
+        "tool_steel": {
+          "commodity": "Tool (Steel) (Instrumentum Chalybs / 강철도구 / Herramienta de acero)",
+          "unit": "1 ton",
+          "inputs": { "steel_billet": 1.0 },
+          "cost_breakdown": { "processing_labor": 2.5, "toolshop_maintenance": 1.5, "MJ_per_unit": 200.0 },
+          "notes": "Forged or cast steel tools."
         },
         "vessel_glass": {
           "commodity": "Glass Vessel (Vitrum Vas / 유리용기 / Recipiente de vidrio)",
-          "unit": "1 piece (~1kg)",
-          "inputs": { "glassware_simple": 0.001 },
-          "cost_breakdown": { "fabrication_labor": 0.2, "shaping_maintenance": 0.05, "MJ_per_unit": 2.0 },
+          "unit": "1 ton",
+          "inputs": { "glassware_simple": 1.1 },
+          "cost_breakdown": { "fabrication_labor": 2.0, "shaping_maintenance": 0.05, "MJ_per_unit": 2.0 },
           "notes": "Blown or molded glass vessel."
         },
-        "vessel_pottery": {
-          "commodity": "Pottery Vessel (Figulus Vas / 도자기용기 / Recipiente de cerámica)",
-          "unit": "1 piece (~2kg)",
-          "inputs": { "pottery_clay": 0.002 },
-          "cost_breakdown": { "fabrication_labor": 0.1, "kiln_maintenance": 0.02, "MJ_per_unit": 1.0 },
+        "vessel_ceramic": {
+          "commodity": "Ceramic Vessel (Figulus Vas / 도자기용기 / Recipiente de cerámica)",
+          "unit": "1 ton",
+          "inputs": { "pottery_clay": 1.1 },
+          "cost_breakdown": { "fabrication_labor": 1.1, "kiln_maintenance": 0.02, "MJ_per_unit": 1.0 },
           "notes": "Standard pottery vessel."
+        },
+        "vessel_metal": {
+          "commodity": "Metal Vessel (Vas Metallum / 금속용기 / Recipiente metalico)",
+          "unit": "1 ton",
+          "inputs": { "ingot": 1.1 },
+          "cost_breakdown": { "fabrication_labor": 2.7, "shaping_maintenance": 0.08, "MJ_per_unit": 3.0 },
+          "notes": "Forged or spun iron vessel."
         },
         "coil_rope_hemp": {
           "commodity": "Rope Coil (Funis / 밧줄뭉치 / Rollo de cuerda)",
@@ -503,3 +532,4 @@
     }
   }
 }
+

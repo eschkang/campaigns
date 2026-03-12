@@ -84,6 +84,7 @@
     "version": "3.0.0",
     "report_rendering_mode": "strict_contract",
     "ai_report_format_guardrails": "AI must not invent, infer, or generate any report formats, sections, columns, or content types not explicitly listed in scenario JSON files. All report outputs must strictly match referenced contract columns, sections, and formats. Any deviation is a fatal error."
+    ,
     "strict_contract": {
       "enabled": true,
       "enforcement": "hard_gate",

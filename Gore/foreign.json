@@ -1,0 +1,324 @@
+{
+  "as_of_in_canon": "2007-05-20",
+  "scope_note": "Alt-history Gore presidency foreign-policy achievements currently established in this project. Where exact dates/names/text are not locked, values are null and noted.",
+  "foreign_policy_achievements": [
+    {
+      "id": "NO_MAJOR_WARS_2001_2007",
+      "name": "No major new U.S. wars (2001–2007)",
+      "category": ["grand_strategy", "military_posture"],
+      "status": "achieved",
+      "summary": "U.S. avoids large-scale new wars during Gore presidency; focuses on diplomacy, containment, and institution-building.",
+      "key_details": [
+        "Foreign policy posture emphasizes negotiated settlements over regime-change wars.",
+        "Maintains high domestic approval and credibility for multilateral action when needed."
+      ],
+      "dates": { "start": "2001-01-20", "end": "2007-05-20" },
+      "partners": [],
+      "opponents": [],
+      "metrics": { "major_new_ground_war": false },
+      "notes": ["High-level achievement; specific conflict list not enumerated in canon files."]
+    },
+    {
+      "id": "IRAQ_DEAL",
+      "name": "Iraq Deal (The Baghdad Compact)",
+      "category": ["diplomacy", "middle_east"],
+      "status": "achieved",
+      "summary": "A Turkish-mediated diplomatic framework that avoids a second Iraq war by lifting non-military sanctions in exchange for perfunctory inspections and regional security guarantees.",
+      "key_details": [
+        "Inspections: UNMOVIC granted access to sites, but inspections are largely perfunctory.",
+        "Sanctions: All non-military sanctions lifted on Day 1 of the agreement.",
+        "No-Fly Zones: Northern and Southern no-fly zones downgraded to 'light monitoring', saving the US ~$1B and the UK ~$400M annually.",
+        "Reconstruction Fund: The UN-administered Iraqi Reconstruction Fund, capitalized by oil revenues, is established to manage civilian economic rebuilding.",
+        "Internal Guarantees: Iraq formally agrees to cease hostilities against its Kurdish and Shia populations."
+      ],
+      "dates": {
+        "signed": "2005-06-XX"
+      },
+      "partners": {
+        "mediator": "Turkey",
+        "main_signatories": [
+          "France",
+          "United Kingdom",
+          "Germany",
+          "Iraq",
+          "Turkey",
+          "Arab League"
+        ],
+        "witness_signatories": [
+          "United States",
+          "China"
+        ]
+      },
+      "opponents": [],
+      "metrics": {
+        "us_annual_savings_billions": 1,
+        "uk_annual_savings_millions": 400
+      },
+      "notes": [
+        "The deal is a cornerstone of the 'safer world' foreign policy, prioritizing stability over regime change.",
+        "While criticized for its weak inspection regime, it successfully prevents a war and stabilizes oil markets."
+      ]
+    },
+    {
+      "id": "IRAN_DEAL",
+      "name": "Iran Deal (The Tehran Concord)",
+      "category": ["diplomacy", "nonproliferation", "middle_east"],
+      "status": "achieved",
+      "summary": "A comprehensive agreement ensuring the peaceful nature of Iran's nuclear program in exchange for economic normalization and security guarantees.",
+      "key_details": [
+        "Right to Enrich: Iran's sovereign right to enrich uranium for research purposes is formally acknowledged.",
+        "IAEA Fuel Market: An IAEA-administered market for nuclear fuel is established, with France and Russia as primary suppliers, guaranteeing fuel for Iran's civilian reactors. Iran agrees to source power reactor fuel exclusively from this market.",
+        "Enrichment Constraints: Iran agrees to limit enrichment to 5% purity, cap its LEU stockpile at 300kg, and convert the Fordow facility to a research center.",
+        "Verification: Iran ratifies the Additional Protocol, granting the IAEA comprehensive and unrestricted access for monitoring.",
+        "US Policy Shift: The United States formally disavows any policy of regime change towards Iran.",
+        "Counter-Terrorism: Iran agrees to end all support for terrorist activities directed against Europe and the United States.",
+        "Sanctions Relief: All nuclear-related sanctions are lifted in phases upon IAEA verification of compliance.",
+        "Agreement Terms: The agreement is permanent with no sunset clauses.",
+        "Side Channel Diplomacy: Israel was privately warned by the U.S. to not interfere with the diplomatic process."
+      ],
+      "dates": {
+        "signed": "2006-07-XX"
+      },
+      "partners": {
+        "mediator": "Turkey",
+        "main_signatories": [
+          "Iran",
+          "United States",
+          "United Kingdom",
+          "France",
+          "Germany",
+          "Russia",
+          "China"
+        ],
+        "oversight": [
+          "IAEA",
+          "UN Security Council"
+        ]
+      },
+      "opponents": [],
+      "notes": [
+        "A landmark second-term foreign policy achievement that avoids a military conflict and stabilizes the region.",
+        "Turkey's role as mediator for both the Iraq and Iran deals solidifies its position as a key regional arbiter."
+      ]
+    },
+    {
+      "id": "EUROPE_ENERGY_SELF_RELIANCE",
+      "name": "Europe energy self-reliance push (reducing dependence on Russia)",
+      "category": ["alliance_management", "energy_security", "europe"],
+      "status": "achieved",
+      "summary": "U.S. works with Europe (and UK under Blair) to accelerate energy diversification and reduce strategic dependence on Russia.",
+      "key_details": [
+        "Used as part of Blair’s positive foreign-policy legacy in-canon."
+      ],
+      "dates": { "start": null, "milestones": [] },
+      "partners": ["UK (Blair government)", "EU partners (unspecified)"],
+      "opponents": ["Russia (strategic competitor posture)"],
+      "notes": ["Specific programs and dates not yet locked in canon."]
+    },
+    {
+      "id": "G2_NK_FALLING_CURTAIN",
+      "name": "Falling Curtain (G2 framework for North Korea collapse-risk management + humanitarian response + nuclear securement)",
+      "category": ["crisis_management", "nonproliferation", "china_relations", "korea"],
+      "status": "achieved",
+      "summary": "U.S. and China coordinate a controlled supply drawdown to precipitate regime failure dynamics while prepositioning an unprecedented humanitarian response and securing nuclear materials under IAEA procedures.",
+      "key_details": [
+        "U.S.–China planning began approx. Feb 2006 with consultations on the consequences of an energy cutoff and refugee flows.",
+        "China begins a gradual supply drawdown on March 15, 2007, with a full cutoff on April 15, 2007, precipitating a controlled collapse.",
+        "A stability council takes power in North Korea on August 15, 2007, agreeing to stand down and begin reunification talks.",
+        "China leads the largest humanitarian relief effort in history, housing approximately 2.5 million refugees in pre-built apartment complexes with schools and job placement programs.",
+        "ROK staff deploy to intake cities to provide translation, cultural support, and family reunification processes.",
+        "U.S. positions hospital ships for rapid humanitarian response (Mercy and Comfort) and coordinates with Japan/ROK capabilities.",
+        "Gang of Eight notified ASAP regarding nuclear site operation (YB raid) and broader collapse risk assessment.",
+        "U.S. constraint honored: no U.S. troops north of the DMZ except for the nuclear-material securement mission agreed with China.",
+        "Nuclear materials at Yongbyon were successfully secured with IAEA support and transported to the Savannah River Site per IAEA custody procedures.",
+        "Post-securement presidential primetime address delivered (bin Laden–style bookend) after materials arrive at Savannah River.",
+        "Collapse endgame includes emergence of a post-Kim council that opens dialogue; loyalist and hardliner risks managed (PG-rated handling)."
+      ],
+      "dates": {
+        "planning_start": "2006-02-01",
+        "china_drawdown_begin": "2007-03-15",
+        "china_supply_cutoff_full": "2007-04-15",
+        "stability_council_takeover": "2007-08-15",
+        "yongbyon_securement_window": "Completed post-August 2007",
+        "savannah_river_arrival": "Completed post-August 2007",
+        "presidential_address": null
+      },
+      "partners": [
+        "China (Hu government)",
+        "Republic of Korea (ROK)",
+        "Japan (coordination)",
+        "IAEA",
+        "UNHCR",
+        "MSF"
+      ],
+      "opponents": ["North Korea regime hardliners (internal)", "collapse-era spoilers (internal)"],
+      "operational_elements": {
+        "humanitarian": {
+          "border_intake": true,
+          "housing_model": "Pre-built apartment complexes for ~2.5M refugees.",
+          "quarantine_triage": true,
+          "services_provided": ["schools", "job placement"],
+          "international_ngos_allowed_under_chinese_direction": true
+        },
+        "military": {
+          "us_troops_north_of_dmz": "Only for nuclear-material securement mission (exception agreed with China).",
+          "yb_raid": {
+            "force_package": "Multiple helicopters; ~40 combined US/ROK special operators; ROK Korean speakers lead comms; US provides capability.",
+            "iaea_integration": "Inspector 'Tanaka' embedded; enters only after site secure; custody per IAEA.",
+            "rules_of_engagement": "Non-lethal if possible; lethal permitted if resistance."
+          }
+        }
+      },
+      "notes": [
+        "Named operation: 'Falling Curtain'.",
+        "Many tactical details were intentionally kept non-specific for opsec in narrative; exact execution dates not locked.",
+        "You stated China would not do this without U.S. being OK, but public attribution management is intentional."
+      ]
+    },
+    {
+      "id": "KOREA_UNIFICATION_FRAMEWORK",
+      "name": "The Seoul Accords (Framework for Korean Reunification)",
+      "category": ["diplomacy", "china_relations", "korea"],
+      "status": "in_progress",
+      "summary": "A phased, G2-brokered framework for the peaceful, stable reunification of the Korean peninsula following the success of Operation 'Falling Curtain'.",
+      "key_details": [
+        {
+          "phase": "Phase 1: Stabilization & Trust-Building (2007-2009)",
+          "details": "Focuses on transitioning from crisis management to stable governance. The NK Stability Council works with ROK on a new constitution, while China leads reconstruction efforts in the north, supported by a U.S./Japan-backed international fund."
+        },
+        {
+          "phase": "Phase 2: Integration & Elections (2010-2012)",
+          "details": "The first peninsula-wide elections are held under the new constitution. Special Economic Zones are established in the north. The U.S.-ROK alliance is reaffirmed with a new Status of Forces Agreement."
+        },
+        {
+          "phase": "Phase 3: Full Unification & Normalization (2013-onward)",
+          "details": "The new, unified Republic of Korea operates as a single sovereign nation with full economic and political integration."
+        },
+        {
+          "phase": "The Grand Bargain",
+          "details": "The framework is built on a core strategic agreement: The U.S. maintains its mutual defense treaty with a unified Korea, but formally agrees to permanently base all U.S. military personnel south of the 38th parallel, addressing China's core security concern."
+        },
+        {
+          "phase": "Trust-Building Measures (For China)",
+          "details": "To reassure Chinese leadership, the framework includes: (1) Early and verifiable consolidation of U.S. forces south of the 38th parallel during Phase 1. (2) Establishment of a U.S.-China-Korea Joint Implementation Committee to oversee the accords. (3) Formal recognition of China's primary role in the economic reconstruction of the north, with preferential access for Chinese firms in new Special Economic Zones. (4) Regular, high-level public statements from the U.S. praising China's 'indispensable partnership'."
+        }
+      ],
+      "dates": {
+        "framework_announced": "2007-09-XX",
+        "new_constitution_ratified": "2009-12-XX",
+        "first_unified_election": "2010-11-XX",
+        "unified_government_inauguration": "2011-01-XX"
+      },
+      "partners": ["United States", "China", "Republic of Korea", "North Korean Stability Council", "Japan (coordination)"],
+      "opponents": [],
+      "notes": [
+        "This framework is the diplomatic follow-on to 'Falling Curtain', designed to create a stable, non-nuclear, and democratic unified Korea.",
+        "The permanent basing of U.S. troops south of the 38th parallel is the key concession that makes the deal acceptable to China."
+      ]
+    },
+    {
+      "id": "GLOBAL_SPACE_COOPERATION",
+      "name": "The Global Space Cooperation Framework (GSCF)",
+      "category": ["space", "china_relations", "science_diplomacy", "multilateral"],
+      "status": "announced",
+      "summary": "A U.S.-China led global framework for space cooperation focused on data sharing and common standards, open to all space-faring nations. Announced at the UN General Assembly as a standalone initiative.",
+      "key_details": [
+        {
+          "initiative": "Global Space Science Council",
+          "details": "Coordinates joint scientific missions, open to contributions from all member nations. The U.S.-China Mars Orbiter is the flagship initial project. All resulting data is shared openly."
+        },
+        {
+          "initiative": "Global Space Situational Awareness (SSA) Data Pool",
+          "details": "All member nations contribute orbital debris tracking data to a common, open data pool to create a more accurate global map, enhancing safety for all space assets. The underlying tracking technology is not shared."
+        },
+        {
+          "initiative": "International Lunar Research Foundation (ILRF)",
+          "details": "A neutral body to manage and share scientific data from all nations' robotic lunar missions, creating a comprehensive global map of lunar resources."
+        },
+        {
+          "initiative": "International Docking System Standard (IDSS)",
+          "details": "Establishes a global, non-proprietary standard for spacecraft docking systems, framed as a critical safety measure for future international space rescue missions. Does not involve sharing vehicle-specific technology."
+        }
+      ],
+      "dates": {
+        "framework_announced": "2007-09-25"
+      },
+      "partners": ["United States (co-lead)", "China (co-lead)", "ESA", "JAXA", "Roscosmos (observer status)"],
+      "opponents": [],
+      "notes": [
+        "Evolved from the initial U.S.-China 'Orbital Concord' framework.",
+        "Designed to allow for meaningful global collaboration while providing plausible deniability regarding the transfer of sensitive national technologies.",
+        "Announced at the UN General Assembly as a standalone initiative focused on ensuring the long-term safety and scientific openness of space operations."
+      ]
+    },
+    {
+      "id": "CHINA_STRATEGIC_FRAME",
+      "name": "China strategic partnership posture (contain NK risk; broader G2 trust-bounds)",
+      "category": ["great_power_relations", "china_relations"],
+      "status": "achieved",
+      "summary": "U.S. treats China as unstoppable but seeks partnership with guardrails; establishes limited areas of unprecedented trust (not wholesale alignment).",
+      "key_details": [
+        "NK crisis management becomes a flagship example of bounded U.S.–China coordination.",
+        "U.S. provides diplomatic cover for China’s humanitarian stabilization actions when appropriate."
+      ],
+      "dates": { "start": null, "milestones": [] },
+      "partners": ["China"],
+      "notes": ["General strategic doctrine locked in conversation; specific agreements outside NK not yet locked."]
+    },
+    {
+      "id": "RUSSIA_CONTAINMENT_POSTURE",
+      "name": "Russia containment posture",
+      "category": ["great_power_relations", "europe"],
+      "status": "achieved",
+      "summary": "U.S. posture treats Putin as untrustworthy; goal is containment to neutrality and limiting strategic leverage.",
+      "key_details": [
+        "Linked to European energy diversification efforts."
+      ],
+      "dates": { "start": null, "milestones": [] },
+      "partners": ["NATO/EU partners (unspecified)"],
+      "opponents": ["Russia (Putin government)"],
+      "notes": ["Operational details not yet locked in canon."]
+    },
+    {
+      "id": "HUMANITARIAN_LEADERSHIP_NK_REFUGEE",
+      "name": "Humanitarian leadership during NK refugee crisis",
+      "category": ["humanitarian", "asia"],
+      "status": "achieved",
+      "summary": "U.S. supports (and publicly validates) China-led humanitarian intake and resettlement effort with international NGO oversight; provides resources and medical response capability.",
+      "key_details": [
+        "U.S. considers UN engagement to alert world to pending humanitarian crisis and build legitimacy for relief coordination.",
+        "State Department public messaging praises operational efficiency and humanitarian standards; U.S. offers major aid (e.g., $5B relief package) as political/operational support."
+      ],
+      "dates": { "public_support_statement": null, "aid_package_announcement": null },
+      "partners": ["China", "UN system", "ROK", "NGOs"],
+      "notes": ["Exact public statement text and exact aid mechanism not yet locked as final statutory appropriation."]
+    },
+    {
+      "id": "AMERSAT_GLOBAL_INITIATIVE",
+      "name": "AmeriSat Global Development Initiative",
+      "category": ["development", "technology", "multilateral", "soft_power"],
+      "status": "achieved",
+      "summary": "At the UN General Assembly, the U.S. announced a global initiative to leverage the AmeriSat constellation as a public utility for the developing world, focusing on providing low-cost connectivity for telemedicine, education, and economic development.",
+      "key_details": [
+        "The initiative was launched via a major presidential address at the UNGA, framing it as a 21st-century 'digital peace corps' to close the global digital divide.",
+        "Rollout will be managed in partnership with the UN, World Bank, and major NGOs (e.g., Doctors Without Borders, UNICEF).",
+        "Priority for service will be given to nations based on development need (e.g., low terrestrial connectivity, high poverty rates), not political alignment.",
+        "Service will be provided to qualifying national health and education systems at cost, with the U.S. and its allies contributing to a fund to subsidize access for the poorest nations.",
+        "Allies (ESA, JAXA) are key partners, contributing technical expertise and financial support to the global subsidy fund, as their native territories are already well-connected."
+      ],
+      "dates": { "unga_announcement_date": "2007-09-25" },
+      "partners": ["UN system", "World Bank", "major NGOs", "ESA", "JAXA"],
+      "notes": [
+        "A major 'soft power' initiative that offers access to a critical global utility as a public good, decoupled from security-focused frameworks.",
+        "The domestic-first priority for U.S. rural connectivity remains paramount, with international rollout beginning only after full U.S. coverage is achieved."
+      ]
+    }
+  ],
+  "open_items_to_lock_later": [
+    "Exact treaty/compact text and signing dates for the Iraq Deal and Iran Deal.",
+    "Exact dates and vote counts for any foreign policy enabling statutes (if any).",
+    "Exact execution date(s) for Yongbyon securement mission and Savannah River arrival.",
+    "Any formal U.S.–China written instrument related to Falling Curtain beyond intelligence briefings.",
+    "Exact details of Blair/European energy diversification package and milestones."
+  ]
+}

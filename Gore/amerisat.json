@@ -1,0 +1,213 @@
+{
+  "program_id": "AMERSAT",
+  "program_name": "AmeriSat (Government-Owned LEO Satellite Internet Utility)",
+  "as_of_in_canon": "2007-05-20",
+  "scope_note": "Operational, technical, and programmatic details for the AmeriSat initiative. All data is consistent with the legislative framework established in leg.json.",
+  "legislative_basis": {
+    "source_file": "leg.json",
+    "entry_id": "AMERSAT",
+    "status": "Introduced",
+    "year": 2007
+  },
+  "program_overview": {
+    "mission": "To deploy and operate a government-owned Low Earth Orbit (LEO) satellite constellation to provide affordable, high-speed internet access, prioritizing unserved and underserved rural U.S. communities.",
+    "key_objectives": [
+      "Achieve universal broadband coverage in the United States.",
+      "Establish a public utility model for satellite internet, ensuring service at cost for priority users.",
+      "Generate revenue through international licensing and market-rate service to urban U.S. users to ensure long-term financial sustainability.",
+      "Create a strategic national asset for emergency communications and government data services.",
+      "Stimulate domestic aerospace and telecommunications industries through public procurement."
+    ]
+  },
+  "governance_and_oversight": {
+    "operating_entity": "AmeriSat Operating Trust",
+    "structure": "A federally chartered, independent trust governed by a board with staggered terms, removable only for cause, to ensure operational independence from short-term political influence.",
+    "key_agencies": [
+      {
+        "agency": "NASA",
+        "role": "Lead procurement and technical oversight for the satellite constellation and launch services, in partnership with DOD."
+      },
+      {
+        "agency": "Department of Defense (DOD)",
+        "role": "Partner in procurement, ensuring dual-use capabilities and security standards are met. Provided priority access for national security communications."
+      },
+      {
+        "agency": "Department of State",
+        "role": "Manages international licensing agreements for AmeriSat services, with all revenue directed to the AmeriSat Operating Trust."
+      },
+      {
+        "agency": "Federal Communications Commission (FCC)",
+        "role": "Spectrum allocation and regulatory oversight of U.S. landing rights and user terminals."
+      }
+    ]
+  },
+  "technical_specifications": {
+    "constellation": {
+      "total_satellites": 1200,
+      "orbital_planes": "To be determined by NASA orbital modeling, optimized for continuous U.S. coverage.",
+      "altitude_km": "550-600",
+      "inter_satellite_links": "Laser-based, providing a fully meshed network in space."
+    },
+    "satellite_bus": {
+      "status": "GENERATED",
+      "mass_kg_estimate": "250-300",
+      "power_generation": "Deployable solar arrays with battery storage for eclipse operations.",
+      "propulsion": "Hall-effect thrusters for station-keeping and de-orbiting.",
+      "design_lifespan_years": "5-7",
+      "decommissioning_plan": "Mandatory controlled de-orbit at end-of-life to mitigate space debris."
+    },
+    "ground_segment": {
+      "status": "GENERATED",
+      "gateway_earth_stations": "Network of 50-60 gateway stations across the U.S. and allied territories to link the satellite constellation to the terrestrial internet.",
+      "telemetry_tracking_and_control": "Primary control center co-located with NASA facilities; backup control center at a separate secure DOD facility.",
+      "user_terminals": "Standardized, mass-produced phased-array antennas for residential and enterprise use. Design to be open-sourced to encourage a competitive hardware market."
+    }
+  },
+  "financial_model": {
+    "capex_total_usd": 20000000000,
+    "capex_breakdown_estimate": {
+      "satellite_manufacturing": "10,000,000,000",
+      "launch_services": "6,000,000,000",
+      "ground_segment_gateways": "2,500,000,000",
+      "research_and_development": "1,000,000,000",
+      "contingency": "500,000,000"
+    },
+    "opex_annual_usd_range": [1000000000, 2000000000],
+    "revenue_annual_usd_projection": [4000000000, 8000000000],
+    "revenue_sources": [
+      "International licensing fees.",
+      "Service fees from U.S. urban residential users (market rate).",
+      "Service fees from U.S. enterprise and government users.",
+      "Cross-subsidy from urban to rural users is a core principle, not a direct revenue source."
+    ]
+  },
+  "operational_plan": {
+    "deployment_window": "2009-2013",
+    "phases": [
+      {
+        "phase_name": "Block 0 - Initial Service",
+        "timeline": "2009",
+        "satellites_deployed": 60,
+        "objective": "Achieve 'first light' and validate core satellite and ground systems. Provide initial, non-continuous service to pilot communities in rural America within 12-14 months of procurement start."
+      },
+      {
+        "phase_name": "Block 1 - U.S. Nationwide Coverage",
+        "timeline": "2010-2011",
+        "satellites_deployed": 600,
+        "objective": "Establish continuous, high-speed coverage for the entire United States, fulfilling the rural service mandate."
+      },
+      {
+        "phase_name": "Block 2 - Full Constellation & International Service",
+        "timeline": "2012-2013",
+        "satellites_deployed": 540,
+        "objective": "Complete the 1,200-satellite constellation, providing global coverage to enable international licensing and generate revenue for the Operating Trust."
+      }
+    ],
+    "retail_model": {
+      "type": "Hybrid",
+      "channels": [
+        "Direct-to-consumer service via AmeriSat's public portal.",
+        "Partnerships with rural electric cooperatives and municipal utilities to act as resellers and provide local installation and support.",
+        "Wholesale access for third-party internet service providers (ISPs) to foster competition."
+      ]
+    }
+  },
+  "procurement_strategy": {
+    "launch_services": {
+      "as_of_in_canon": "2007-05-20",
+      "approach": "Strategic Integration",
+      "partner_entity": "SpaceX",
+      "status": "Offer extended",
+      "integration_model": "SpaceX to be restructured as a new division within NASA's engineering directorate, preserving its operational campus and engineering teams.",
+      "key_terms": [
+        {
+          "term": "Leadership",
+          "details": "Elon Musk to be appointed NASA Chief Visioneer and Director of Mars Development, retaining control over the long-term Mars colonization architecture. Gwynne Shotwell to be appointed Technical Administrator, responsible for day-to-day operations of the Launch Services Directorate, including the Falcon program and AmeriSat launch manifest."
+        },
+        {
+          "term": "Acquisition",
+          "details": "The federal government will acquire SpaceX's assets (hardware, facilities, IP) and assume its liabilities. All personnel will be offered positions within the new NASA division."
+        },
+        {
+          "term": "Mission",
+          "details": "The division's primary mandate is to provide low-cost, reliable launch services for AmeriSat, future lunar return missions (Project Artemis), and initial Mars architecture development. It will serve as a competitive counterweight to ULA for national security launches."
+        }
+      ],
+      "rationale": "Framed as a strategic necessity to prevent the collapse of a vital aerospace talent pool and industrial asset. This move secures a dedicated, innovative, and low-cost launch provider for critical national infrastructure (AmeriSat) and future space exploration, mitigating reliance on a single commercial provider."
+    },
+    "procurement_awards": {
+      "as_of_in_canon": "2008-02-28",
+      "satellite_bus_manufacturing": [
+        {
+          "awardee": "Boeing Satellite Systems",
+          "contract": "Block of 400 satellite buses",
+          "notes": "Awarded one of three parallel manufacturing contracts to ensure industrial base diversity."
+        },
+        {
+          "awardee": "Lockheed Martin Space",
+          "contract": "Block of 400 satellite buses",
+          "notes": "Awarded one of three parallel manufacturing contracts."
+        },
+        {
+          "awardee": "Northrop Grumman",
+          "contract": "Block of 400 satellite buses",
+          "notes": "Awarded one of three parallel manufacturing contracts."
+        }
+      ],
+      "communications_payload": {
+        "primary_awardee": "Hughes",
+        "contract": "Primary supplier for communications payloads (transponders, processors, antennas).",
+        "secondary_awardee": "Viasat",
+        "contract_secondary": "Secondary source supplier to ensure competitive pressure and supply chain redundancy."
+      },
+      "rationale": "The split-award strategy for the satellite bus is designed to leverage the manufacturing scale of the entire domestic aerospace industrial base and avoid a single point of failure. The dual-sourcing of the payload maintains long-term competitive pressure on the most critical technology."
+    }
+  },
+  "lunar_program_integration": {
+    "program_name": "Project Artemis (Proving Ground)",
+    "as_of_in_canon": "2007-05-20",
+    "strategic_role": "Serve as a full-scale operational and technical proving ground for the Mars campaign, de-risking critical systems in a deep-space environment.",
+    "key_objectives": [
+      "Validate the MCT (Mars Colonial Transporter) crew and cargo lander variants.",
+      "Test long-duration life support and surface habitation systems.",
+      "Demonstrate In-Situ Resource Utilization (ISRU) by producing propellant from lunar ice.",
+      "Develop and refine surface EVA procedures and equipment.",
+      "Establish a small, semi-permanent surface outpost to serve as a long-term testbed."
+    ],
+    "phased_milestones": [
+      {
+        "phase_name": "Phase 1: Robotic Precursors",
+        "timeline": "2013-2015",
+        "missions": [
+          {
+            "mission_name": "Artemis-1: Lunar Resource Prospector",
+            "vehicle": "Falcon Heavy",
+            "objective": "Deploy a polar orbiter and lander to map water ice concentrations at the lunar south pole and certify a landing site for future missions."
+          },
+          {
+            "mission_name": "Artemis-2: MCT Cargo Lander Test",
+            "vehicle": "MCT (Cargo Variant)",
+            "objective": "First unmanned landing of the MCT on the Moon, delivering a small, pre-fabricated habitat module and a prototype ISRU processing plant to the certified polar site."
+          }
+        ]
+      },
+      {
+        "phase_name": "Phase 2: Crewed Sortie & Habitation",
+        "timeline": "2016-2018",
+        "missions": [
+          {
+            "mission_name": "Artemis-3: First Crewed Landing",
+            "vehicle": "MCT (Crew Variant)",
+            "objective": "First crewed landing since Apollo. A short-stay (3-7 day) mission to validate the MCT's landing and ascent systems, test surface EVA suits, and perform initial setup of the habitat module."
+          },
+          {
+            "mission_name": "Artemis-4: First Habitation & ISRU Demo",
+            "vehicle": "MCT (Crew Variant)",
+            "objective": "First long-duration (30-day) stay. Crew will fully activate the habitat, begin ISRU operations to produce the first batch of propellant from lunar ice, and conduct extended surface exploration."
+          }
+        ]
+      }
+    ],
+    "link_to_mars_roadmap": "Successful completion of Artemis-4, specifically the ISRU demonstration, is the primary gate for authorizing the first unmanned cargo fleet to Mars."
+  }
+}
