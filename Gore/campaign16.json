@@ -1,0 +1,71 @@
+{
+  "project": "Gore-Kang Alternate History — 2016 Presidential Campaign",
+  "as_of_in_canon": "2016-01-15",
+  "scope_note": "Overview of the 2016 race to succeed President Will Kang. The election centers on the management of a post-scarcity, debt-free federal government.",
+  "electoral_landscape": {
+    "macro_environment": {
+      "economy": "Unprecedented boom. Federal surplus at $1.16T. National debt is $0. GDP is $23.75T.",
+      "incumbent_status": "President Will Kang is term-limited, leaving office with approval ratings above 70%. VP John McCain is retiring from public life.",
+      "campaign_finance": "100% WTP-compliant. Zero dark money, zero corporate PACs. Campaigns are driven entirely by small-dollar public matching (9:1) from the Corruption Asset Recovery Fund."
+    },
+    "the_core_debate": "With the 20th-century crises solved, the primary debate is what to do with the massive federal surplus: expand domestic social safety nets (Obama), expand global hegemony (Clinton), or decentralize the capital to the states (Crist)."
+  },
+  "systems_coalition_field": [
+    {
+      "name": "Barack Obama",
+      "current_role": "Attorney General of the United States",
+      "faction": "Progressive / Clean Systems",
+      "core_narrative": "The Enforcer. The man who protected the Builder agenda from corruption and sabotage. He promises to use the NCD's AI and the massive federal surplus to perfect domestic equity, expanding PusheenCare and Universal Education.",
+      "vulnerabilities": "Viewed by some moderates as too technocratic; the business class fears he will use the WTP anti-corruption laws to over-regulate the new industries spawned by the TTA."
+    },
+    {
+      "name": "Hillary Clinton",
+      "current_role": "Secretary of State",
+      "faction": "Centrist / Global Hegemony",
+      "core_narrative": "The Architect of Peace. Having secured the Americas and boxed in Russia and China, she argues the U.S. must press its advantage. She proposes the 'Global Builder Initiative' to export U.S. sovereign infrastructure worldwide.",
+      "vulnerabilities": "Seen as the ultimate establishment insider. The progressive wing worries her aggressive 'L2 Space Monopoly' posture will trigger a new, unnecessary Cold War with China in cis-lunar space.",
+      "platform_details": {
+        "initiative_name": "The Global Builder Initiative",
+        "philosophy": "Infrastructure is the new hard power. By exporting the administration's sovereign technology (fusion, orbital logistics, biotech), the U.S. can establish an unassailable global hegemony without firing a single shot.",
+        "key_pillars": [
+          {
+            "name": "The Sovereign Stack Export",
+            "description": "Globalizing AmeriSat, CivicOS, and Keystone Pay. Forces developing nations to adopt the digital dollar and bypass SWIFT, in exchange for strict WTP-style transparency and anti-corruption compliance."
+          },
+          {
+            "name": "The Prometheus Pact",
+            "description": "Offering export licenses for 'Builder's Reactor' fusion tech to allies. The U.S. NCD retains the AI required to stabilize the plasma, making the U.S. the absolute arbiter of global post-scarcity energy."
+          },
+          {
+            "name": "The Cis-Lunar Tollbooth",
+            "description": "Consolidating the U.S. monopoly over the Earth-Moon L2 Mass Catcher and deep-space propellant, forcing all international space agencies (ESA, JAXA) to become clients of the American logistics architecture."
+          },
+          {
+            "name": "The Longevity Alliance",
+            "description": "Leveraging Project Asclepius to offer universal mRNA countermeasures and epigenetic life-extension tech to allied nations, cementing ultimate diplomatic loyalty."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Charlie Crist",
+      "current_role": "Governor of Florida",
+      "faction": "Reform Republican / Systems Caucus",
+      "core_narrative": "The Bipartisan Builder. Represents the moderate Republicans who made the Kang agenda possible. He argues the federal government has acquired too much centralized power and proposes distributing the $1T surplus directly to state infrastructure trusts.",
+      "vulnerabilities": "Struggles to generate the same grassroots enthusiasm as Obama; viewed skeptically by the progressive wing as a Trojan horse for traditional conservative tax ideology."
+    }
+  ],
+  "anti_system_field": [
+    {
+      "name": "Ted Cruz",
+      "current_role": "Senator (R-TX, Remnant Faction)",
+      "faction": "Neo-Luddite / Anti-System GOP",
+      "core_narrative": "The Liberator. Capitalizing on the techno-paranoia of the 8 'Fortress States', he frames the Kang administration as an Orwellian nightmare. He promises the 'Great Liquidation'—dismantling the federal directorates (NCD, NDD) and refunding the AFFA trust funds to private citizens and corporations.",
+      "vulnerabilities": "His platform is politically toxic to 80% of the country. By promising to eliminate the trust funds that pay for the 0% MATF tax rate and free healthcare, his appeal is strictly limited to radicalized grievance voters and disgraced fossil-fuel billionaires."
+    }
+  ],
+  "key_primary_dynamics": {
+    "the_algorithmic_debate_stage": "Thanks to the SMCA (Social Media Contract with America), digital platforms cannot algorithmically amplify rage-bait or misinformation. Debates and town halls are highly substantive, focusing on granular policy execution rather than culture-war soundbites.",
+    "the_fic_oversight": "The Federal Integrity Commission actively monitors all campaign claims. Any candidate engaging in 'intentional mathematical deception' regarding the budget or infrastructure capabilities faces immediate, publicly broadcasted fact-checks via the Restore.gov API."
+  }
+}

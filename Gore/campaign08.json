@@ -1,6 +1,6 @@
 {
   "project": "Gore Alternate History — 2008 Presidential Campaign",
-  "as_of_in_canon": "2008-01-10",
+  "as_of_in_canon": "2009-01-08",
   "scope_note": "A detailed overview of the potential 2008 presidential campaign of Will Kang, including strategy, messaging, key personnel, and opposition analysis.",
   "campaign_updates_q4_2007": {
     "major_events": [
@@ -13,7 +13,7 @@
       {
         "event": "52-State Union Completion",
         "date": "2007-10-01",
-        "impact": "Admission of PR and DC as states. Seating of 4 new Senators and 565 new House members in the McMillan Complex.",
+        "impact": "Admission of PR and DC as states. Seating of 4 new Senators and their new House members in the McMillan Complex, bringing the total size of the House to over 1,000 members.",
         "polling_shift": "+12% in minority outreach; secured a 'Systems Majority' in the Senate (68 seats)."
       },
       {
@@ -58,23 +58,330 @@
         "polling_shift": "+11% with suburban 'Healthcare-First' voters; effectively neutralized Gephardt's labor-based opposition."
       },
       {
-        "event": "McMillan Complex Opening Session",
+        "event": "Second Session of 110th Congress Convenes",
         "date": "2008-01-03",
-        "impact": "The first 1,000-seat House session. Seating of PR and DC delegations solidified the 'Systems Majority'.",
+        "impact": "The first session to convene with the full 52-state delegation, including representatives from the Washington, Douglass Commonwealth and Puerto Rico, solidifying the 'Systems Majority'.",
         "polling_shift": "+8% in 'National Leadership' metrics; established Kang as the face of the New Union."
+      }
+      ,
+      {
+        "event": "The Restore.gov 'Open Ledger' Purge",
+        "date": "2008-01-08",
+        "impact": "Following the DOJ's interdiction of the Epstein enterprise, the network's WTP4 beneficial ownership data is published live on Restore.gov. Independent data journalists bypass legacy media to map illicit wire transfers directly to establishment political PACs. The resulting non-partisan systemic purge decapitates several traditional party power brokers and completely validates Kang's 'Systems Integrity' platform.",
+        "polling_shift": "Voter trust in traditional party structures collapses. Kang's 'Builder' campaign surges as the electorate demands a complete break from the old establishment."
+      },
+      {
+        "event": "Will Kang Wins Iowa Caucus",
+        "date": "2008-01-10",
+        "impact": "Solidifies Kang's frontrunner status in the Democratic primary. Media narrative focuses on the success of the 'Future vs. Past' message and the power of the WTP small-dollar fundraising model.",
+        "polling_shift": "Provides significant momentum going into the New Hampshire primary."
+      },
+      {
+        "event": "Major Media Coverage of DeMint's Dark-Money Ties",
+        "date": "2008-01-11",
+        "impact": "Forced to catch up with independent data journalists, major legacy outlets (NYT, WSJ, AP) publish investigative pieces using the Restore.gov API. They expose direct links between DeMint's 'Anti-System' campaign PACs and the compromised dark-money networks implicated in the recent Epstein interdiction, alongside wealthy donors fighting MATF taxes.",
+        "polling_shift": "Causes a catastrophic drop in DeMint's support among independent and moderate Republican voters, shattering his 'moral crusader' framing just days before New Hampshire."
+      },
+      {
+        "event": "Will Kang Wins Both New Hampshire Primaries",
+        "date": "2008-01-15",
+        "impact": "In an unprecedented result, Kang wins both the Democratic and Republican primaries, powered by a massive turnout of independent voters. The result validates the 'unity candidate' strategy and throws the DeMint campaign into crisis.",
+        "polling_shift": "Kang's national polling lead surges. DeMint's support among Republicans nationally begins to fracture."
+      },
+      {
+        "event": "South Carolina Primaries",
+        "date": "2008-01-26",
+        "impact": "Obama wins the Democratic primary decisively, establishing his 'firewall' with the party's base. DeMint wins the GOP primary in his home state, but by a shockingly narrow margin, seen as a major sign of weakness.",
+        "polling_shift": "The Democratic race is now framed as a clear two-person contest. DeMint's national polling numbers continue to erode."
+      },
+      {
+        "event": "Final Pre-Super Tuesday Push",
+        "date": "2008-01-27 to 2008-02-04",
+        "impact": "Kang campaign launches a massive, two-front 'shock and awe' campaign across Super Tuesday states, saturating the airwaves and digital channels. DeMint's campaign falters under the pressure, while Obama focuses on closed primary states.",
+        "polling_shift": "Kang solidified his lead in open primary states and key GOP battlegrounds. DeMint's national support continued to collapse."
+      },
+      {
+        "event": "Super Tuesday",
+        "date": "2008-02-05",
+        "impact": "Kang wins a majority of Democratic delegates and, in a stunning result, wins the Arizona GOP primary, effectively ending the DeMint campaign. Obama wins key southern states, ensuring the Democratic race continues.",
+        "polling_shift": "Kang emerges with a commanding delegate lead. The Republican party is thrown into disarray."
+      },
+      {
+        "event": "Mitch's Last Stand (The Havana Talking Filibuster)",
+        "date": "2008-02-02",
+        "impact": "In a desperate bid for relevance, Minority Leader Mitch McConnell attempts to block the Havana Accords using the 2007 'talking filibuster' rules, rallying his remaining 24 'Anti-System' hardliners to hold the floor. Because cloture now only requires 51 votes, the Systems Majority doesn't even negotiate; they simply bring sleeping bags to the cloakroom and wait. After 48 hours of reading the phone book to an empty, unsympathetic chamber, the exhausted hardliners surrender the floor. The Accords pass 75-25.",
+        "polling_shift": "A humiliating public spectacle that broadcasts the total impotence of the obstructionist wing. It shatters the myth of McConnell's procedural invincibility and directly fuels his primary defeat three months later."
+      },
+      {
+        "event": "Potomac Primaries",
+        "date": "2008-02-12",
+        "impact": "Kang wins the key open primary in Virginia and scores a landslide in the new state of Washington, D.C. Obama wins the closed primary in Maryland. Kang extends his delegate lead.",
+        "polling_shift": "Solidified the narrative that Kang wins open contests while Obama wins closed ones. The race shifted to the industrial Midwest."
+      },
+      {
+        "event": "Wisconsin Primary",
+        "date": "2008-02-19",
+        "impact": "Kang wins a decisive victory in the Wisconsin open primary, validating his 'Hardware for Hearts' economic message. The win puts significant pressure on the Obama campaign ahead of the Ohio and Texas primaries.",
+        "polling_shift": "Kang's delegate lead was seen as mathematically challenging for Obama to overcome."
+      },
+      {
+        "event": "Ohio & Texas Primaries",
+        "date": "2008-03-04",
+        "impact": "Kang wins commanding victories in both the Ohio and Texas open primaries, building an insurmountable delegate lead. The wins effectively end the Democratic primary contest.",
+        "polling_shift": "The media narrative declares the race over. Senator Obama is now expected to suspend his campaign."
+      },
+      {
+        "event": "Systems Coalition Outreach (FL & OH)",
+        "date": "2008-03-06",
+        "impact": "Kang issues the 'Surrender Protocols' to governors of Florida and Ohio, framing the offer as an 'Infrastructure Dividend' (prioritized MAGA AOI funding) in exchange for adopting 'Systems-First' requirements (Restore.gov transparency, wage pass-throughs, FIC compliance).",
+        "polling_shift": "Forces governors to choose between federal largesse and partisan loyalty; frames rejection as financial negligence."
+      },
+      {
+        "event": "FL & OH Governors Accept Protocols",
+        "date": "2008-03-10",
+        "impact": "Governor Crist (R-FL) accepts the terms, framing it as a 'partnership.' Governor Strickland (D-OH) enthusiastically embraces the deal. Both states begin integration with Restore.gov.",
+        "polling_shift": "Validates the 'Systems Coalition' model. Effectively breaks the national GOP's attempt to form a united front of obstruction."
+      },
+      {
+        "event": "Texas Runoff 'Silicon Prairie' Ad Blitz",
+        "date": "2008-03-12",
+        "impact": "Launched a saturation ad campaign in Dallas, Houston, and Austin targeting the Senate runoff. The ads contrast the 'Unity' plan for a CHIPS Act (Silicon Prairie) with Cornyn's obstruction.",
+        "polling_shift": "Tightens the runoff race; suburban voters move toward the Unity challenger."
+      },
+      {
+        "event": "Texas Senate Runoff Victory",
+        "date": "2008-03-31",
+        "impact": "The 'Unity Builder' challenger defeats incumbent John Cornyn (54-46) in the GOP runoff. Victory driven by suburban turnout in the 'Texas Triangle' and the promise of CHIPS Act jobs.",
+        "polling_shift": "Signals the total collapse of the obstructionist GOP wing; validates the 'Reform Republican' strategy in deep-red territory."
+      },
+      {
+        "event": "Kentucky Senate Primary Earthquake",
+        "date": "2008-05-20",
+        "impact": "Senate Minority Leader Mitch McConnell is defeated in the GOP primary (52-48) by the 'Reform Republican' challenger. The loss is attributed to the challenger's WTP-funded war chest and the 'Restore.gov' exposure of McConnell's donor ties.",
+        "polling_shift": "The GOP establishment is decapitated. The 'Anti-System' wing loses its most effective legislative operator."
+      },
+      {
+        "event": "Systems Caucus Formation",
+        "date": "2008-05-28",
+        "impact": "A group of 40+ moderate House Republicans formally organize as the 'Systems Caucus,' pledging to prioritize infrastructure delivery and transparency over obstruction. They are immediately granted committee vice-chairmanships by Speaker Gephardt as a gesture of unity.",
+        "polling_shift": "Formalizes the GOP split; isolates the 'Anti-System' remnant as a minority faction."
+      },
+      {
+        "event": "WTP10 'Real-Time Reality Act' Passed",
+        "date": "2008-08-01",
+        "impact": "The capstone of the WTP legislative agenda is signed into law, creating the Federal Integrity Commission (FIC) to combat financial misinformation. Passage secured with votes from the GOP Systems Caucus.",
+        "polling_shift": "Further solidifies the 'anti-corruption' and 'delivery' narratives of the Kang campaign."
+      },
+      {
+        "event": "House Adopts Systemic Readiness Rules",
+        "date": "2008-08-15",
+        "impact": "The House formally adopts the Systems Caucus rules package. Over 60 'Anti-System' hardliners refuse to disclose finances and are stripped of subcommittee chairmanships and voting rights in committee markups.",
+        "polling_shift": "Public approval for Congress hits a decade high as gridlock breaks; the 'Reform Republicans' take control of key GOP committee slots."
+      },
+      {
+        "event": "Emeritus-Observer Accountability Campaign Launch",
+        "date": "2008-08-20",
+        "impact": "A targeted campaign begins using mailers, Restore.gov pages, and WTP10 alerts to inform constituents that their 'Relegated' representative can no longer vote in committee. VP McCain begins a tour of affected districts.",
+        "polling_shift": "Drives a wedge between hardline representatives and their districts, framing them as ineffective and costing their constituents federal projects."
+      },
+      {
+        "event": "General Election Landslide",
+        "date": "2008-11-04",
+        "impact": "Will Kang wins the presidency in a historic 52-state sweep, securing over 88% of the popular vote. The 'Systems Majority' achieves supermajorities in both the House and Senate.",
+        "polling_shift": "The election serves as a total validation of the Gore-McCain 'Unity' era and a mandate for the Kang administration's 'Future' agenda."
+      },
+      {
+        "event": "Return of Surplus Campaign Funds",
+        "date": "2008-11-12",
+        "impact": "The Kang-McCain campaign returns over $142 million in unspent WTP matching funds directly to the Corruption Asset Recovery Fund. This 'check back to the taxpayers' moment creates a final contrast with the old political model.",
+        "polling_shift": "Solidifies trust in the WTP system; establishes a precedent for future publicly funded campaigns."
+      },
+      {
+        "event": "Transition 'Systems Audit' Teams Deployed",
+        "date": "2008-11-20",
+        "impact": "Technical 'tiger teams' deploy to all 15 executive departments to map data silos for immediate Restore.gov API integration on Inauguration Day.",
+        "polling_shift": "Maintains high engagement; reinforces the 'Day 1' readiness narrative."
+      },
+      {
+        "event": "Attorney General Pre-Clearance: Barack Obama",
+        "date": "2008-11-30",
+        "impact": "Senator Obama becomes the first high-profile cabinet selection to undergo the 'Clean Bench' vetting. His financial profile and WTP4 beneficial ownership scans are published on Restore.gov for the mandated 7-day public review. He publicly commits to the 'Builder's Oath.'",
+        "polling_shift": "Signals uncompromising enforcement of WTP transparency standards, even for party stars. Validates the 'Unity' mandate and builds immediate public trust in the incoming DOJ."
+      },
+      {
+        "event": "CHIPS Act Joint Hearing (Lame Duck)",
+        "date": "2008-12-15",
+        "impact": "The outgoing Congress holds hearings on the CHIPS Act to build the legislative record, allowing the new 111th Congress to fast-track the bill in January.",
+        "polling_shift": "Signals aggressive economic action to markets and industrial hubs."
+      },
+      {
+        "event": "Attorney General Confirmation Hearings: Barack Obama",
+        "date": "2009-01-08",
+        "impact": "Senator Obama testifies before the Senate Judiciary Committee. Because his 'Clean Bench' financial scans have been public on Restore.gov since November, traditional opposition attacks find no traction. He forcefully outlines his mandate to strictly enforce the WTP anti-corruption stack and protect WTP8 voting rights.",
+        "polling_shift": "Ensures a swift, drama-free confirmation vote immediately following the Inauguration. Cements public confidence in the incoming DOJ's absolute integrity."
+      }
+    ],
+    "transition_priorities": [
+      {
+        "name": "The 'Clean Bench' Vetting",
+        "objective": "Screen all 4,000 political appointees using Federal Integrity Commission (FIC) standards. Zero tolerance for undisclosed shadow lobbying.",
+        "process_details": [
+          {
+            "step": "1. WTP4 Beneficial Ownership Scan",
+            "action": "All candidates must submit to a deep-dive forensic audit via the FinCEN/WTP4 database to uncover any hidden LLCs, offshore entities, or 'disregarded entity' structures."
+          },
+          {
+            "step": "2. Shadow Lobbying Cross-Match",
+            "action": "Candidate employment histories are cross-referenced against the WTP5/WTP7 'strategic policy consulting' registries. Anyone receiving undisclosed compensation from top-tier federal contractors or dark-money networks is automatically disqualified."
+          },
+          {
+            "step": "3. Restore.gov Public Pre-Clearance",
+            "action": "Before formal nomination, the candidate's cleared financial profile is published on Restore.gov for a 7-day public crowdsourced review period to catch any inconsistencies the FIC algorithms might have missed."
+          },
+          {
+            "step": "4. The 'Builder's Oath'",
+            "action": "A binding, legally enforceable ethics pledge permanently forfeiting federal pension and benefits if convicted of post-employment revolving-door violations (WTP1/WTP2)."
+          }
+        ]
+      },
+      {
+        "name": "Agency Data Integration",
+        "objective": "Ensure every agency has a 'Restore.gov' connector ready to go live, fulfilling the pledge of radical transparency."
+      },
+      {
+        "name": "Legislative Pre-Loading",
+        "objective": "Finalize text for the CHIPS Act, Equality Act, and Helsinki-Kyiv Resolution for immediate introduction by the Systems Majority."
       }
     ],
     "current_polling_snapshot": {
       "democratic_primary": {
-        "Will_Kang": "34% (+6% from Jan 1)",
-        "Barack_Obama": "24%",
-        "Richard_Gephardt": "14% (-4%)",
-        "Kathleen_Sebelius": "16% (+1%)",
-        "Undecided": "12%"
+        "Will_Kang": "38% (+4)",
+        "Barack_Obama": "22% (-2)",
+        "Richard_Gephardt": "12% (-2)",
+        "Kathleen_Sebelius": "15% (-1)",
+        "Undecided": "13%"
       },
-      "iowa_caucus_prediction": {
-        "Kang": "Projected winner (32-35%)",
-        "notes": "Strongest support in rural counties receiving AFFA trust fund distributions."
+      "iowa_caucus_results": {
+        "Kang": "34.8%",
+        "Obama": "25.1%",
+        "Sebelius": "18.2%",
+        "Gephardt": "13.5%",
+        "notes": "Kang wins decisively, outperforming polls. Turnout is record-breaking, driven by the new WTP public financing system."
+      },
+      "new_hampshire_primary_results": {
+        "republican_primary": {
+          "Will_Kang": "35.2%",
+          "Jim_DeMint": "33.1%",
+          "Mitt_Romney": "18.5%",
+          "Mike_Huckabee": "9.8%"
+        },
+        "democratic_primary": {
+          "Will_Kang": "41.5%",
+          "Barack_Obama": "28.7%",
+          "Kathleen_Sebelius": "14.1%",
+          "Richard_Gephardt": "9.5%"
+        },
+        "notes": "Kang's victory in the Republican primary is the lead story, seen as a historic political event and a major blow to the conservative establishment."
+      },
+      "south_carolina_primary_results": {
+        "republican_primary": {
+          "Jim_DeMint": "53.5%",
+          "Will_Kang": "44.1%",
+          "notes": "DeMint wins, but the narrow margin in his home state is seen as a devastating political blow, shattering his 'firewall' strategy."
+        },
+        "democratic_primary": {
+          "Barack_Obama": "55.1%",
+          "Will_Kang": "42.3%",
+          "notes": "Obama wins decisively, proving his strength with the party's core constituencies and resetting the Democratic race."
+        }
+      },
+      "super_tuesday_results": {
+        "democratic_primary": {
+          "narrative": "Kang wins the delegate race for the night, securing victories in the largest states (CA, NY, NJ). Obama performs strongly in the South (GA, AL) and his home state of IL, proving his strategy of consolidating the party base is viable and ensuring the race continues.",
+          "key_kang_wins": ["California", "New York", "Massachusetts", "New Jersey", "Arizona"],
+          "key_obama_wins": ["Georgia", "Illinois", "Alabama", "Tennessee"]
+        },
+        "republican_national": {
+          "narrative": "DeMint's campaign is effectively ended after a humiliating loss to Kang in the Arizona primary. While DeMint wins several deep-red southern states, the loss in a key battleground, combined with Kang winning other moderate GOP primaries, shatters his credibility. The Republican party is now leaderless.",
+          "key_kang_wins": ["Arizona", "Connecticut", "Massachusetts"],
+          "key_demint_wins": ["Georgia", "Alabama", "Oklahoma"]
+        }
+      },
+      "potomac_primary_results": {
+        "virginia_primary_open": { "Will_Kang": "58%", "Barack_Obama": "42%" },
+        "maryland_primary_closed": { "Barack_Obama": "60%", "Will_Kang": "40%" },
+        "dc_primary_closed": { "Will_Kang": "92%", "Barack_Obama": "8%" },
+        "notes": [
+          "Kang's win in VA was powered by independents in NoVA and military families in the Tidewater region, where VP McCain's campaigning was decisive.",
+          "Kang's landslide in D.C. is seen as a direct reward for delivering statehood.",
+          "Obama's win in MD confirms his strength with core Democratic constituencies in closed primaries."
+        ]
+      },
+      "wisconsin_primary_results": {
+        "democratic_primary_open": { "Will_Kang": "56%", "Barack_Obama": "44%" },
+        "notes": [
+          "Kang's victory was powered by his 'Hardware for Hearts' message, focusing on high-speed rail and solar manufacturing jobs, which resonated with independent and working-class voters.",
+          "The result deals a major blow to the Obama campaign's momentum."
+        ]
+      },
+      "march_4_primary_results": {
+        "ohio_primary_open": { "Will_Kang": "58%", "Barack_Obama": "42%" },
+        "texas_primary_open": { "Will_Kang": "57%", "Barack_Obama": "43%" },
+        "notes": [
+          "Kang's economic message of 'delivery' and future-focused infrastructure projects (HSR, Solar) proved decisive in the industrial heartland (OH).",
+          "In Texas, Kang's 'Big Tent' coalition of suburban voters and strong Hispanic support secured a comfortable victory.",
+          "The losses effectively end any realistic path to the nomination for Senator Obama."
+        ]
+      },
+      "texas_runoff_results": {
+        "republican_runoff": { "Unity_Challenger": "54%", "John_Cornyn": "46%" },
+        "notes": [
+          "Victory powered by suburban voters in Dallas/Houston/Austin prioritizing HSR and CHIPS Act jobs over ideology.",
+          "Defeat of a senior incumbent signals the end of the 'obstructionist' era in the GOP."
+        ]
+      },
+      "kentucky_primary_results": {
+        "republican_primary": { "Reform_Challenger": "52%", "Mitch_McConnell": "48%" },
+        "notes": [
+          "McConnell's defeat is a historic upset, driven by the 'Peace Dividend' funding model neutralizing his financial advantage.",
+          "VP McCain's endorsement provided critical cover for conservative voters to defect."
+        ]
+      },
+      "general_election_results": {
+        "presidential": {
+          "Will_Kang": "88.4%",
+          "Third_Parties_Combined": "11.6%",
+          "Electoral_College": "1,120-0 (Kang wins all 52 states)",
+          "notes": "The largest electoral landslide in history. Kang ran unopposed by a major party."
+        },
+        "congressional": {
+          "senate_balance": "78 Systems Majority / 26 Opposition",
+          "house_balance": "810 Systems Majority / 190 Opposition",
+          "notes": "The 'Reform Republican' slate swept their general elections, and the Democratic base turned out in force. The 'Anti-System' remnant is reduced to a noisy but powerless minority."
+        }
+      },
+      "post_march_4_snapshot": {
+        "democratic_delegate_estimate": {
+          "Will_Kang": "1,558",
+          "Barack_Obama": "1,297",
+          "needed_for_nomination": "2,210"
+        },
+        "republican_outlook": {
+          "status": "In Disarray",
+          "notes": "Jim DeMint suspended his campaign following the Super Tuesday results. No viable challenger to Kang remains. The party establishment is in crisis, with no path to stopping Kang in the general election."
+        }
+      },
+      "general_election_outlook": {
+        "narrative": "Following the collapse of the DeMint campaign and the conclusion of the Democratic primaries, the Republican party has no viable presidential candidate. The general election has become a referendum on the Gore-McCain administration and Kang's 'unity' movement.",
+        "polling_snapshot": {
+          "Will_Kang": "72%",
+          "Other_Third_Party": "10%",
+          "Undecided": "18%"
+        },
+        "notes": [
+          "Kang's coalition includes a unified Democratic party, a vast majority of independents, and a significant bloc of moderate 'McCain' Republicans.",
+          "The GOP's focus has shifted entirely to defending congressional seats, effectively conceding the presidency."
+        ]
       }
     },
     "messaging_evolution": {
@@ -90,11 +397,11 @@
     "party_registration": "Republican",
     "current_role": "Secretary of Systems",
     "campaign_theme": "The Architect of the Future",
-    "core_narrative": "The citizen-patriot who was brought into government to fix a broken system and is now running to ensure that system serves the people, not the parties. A unity candidate representing the next logical step of the Gore-McCain 'Country First' government."
+    "core_narrative": "The citizen-patriot who was brought into government to fix a broken system and is now running to ensure that system serves the people, not the parties. A unity candidate representing the next logical step of the Gore-McCain 'America First' government."
   },
   "campaign_strategy": {
     "overall_approach": "A political insurgency designed to bypass traditional party structures and build a new, technology-driven grassroots movement.",
-    "primary_strategy": "Run in the Democratic primary, leveraging President Gore's endorsement to gain entry and visibility. The strategy is not to win over the party establishment, but to build a parallel movement powered by small-dollar donors and the internet.",
+    "primary_strategy": "Run in the Democratic primary, leveraging President Gore's endorsement to gain entry and visibility. The strategy is not to win over the party establishment, but to build a parallel movement powered by small-dollar donors and the internet. As a parallel effort in New Hampshire, Kang has also filed to appear on the Republican primary ballot. This is a high-risk, high-reward strategy designed to directly challenge the hardline GOP on their own turf and appeal to undeclared voters who can choose which primary to vote in. The goal is not to win the GOP nomination, but to demonstrate the breadth of the 'America First' unity movement and sow chaos within the opposition.",
     "general_election_strategy": "Position Kang as the only true unity candidate, capable of earning votes from Democrats, Independents, and moderate Republicans disgusted with the hardline turn of their party. Use his Republican registration as a shield against accusations of partisanship and as a bridge to crossover voters.",
     "fundraising_model": {
       "primary_mechanism": "Leverage the WTP public financing system.",
@@ -119,11 +426,31 @@
     "messaging_pillars": [
       {
         "target_audience": "Republican & Independent Voters",
-        "message": "I'm the man who actually gave you back your government and made your work tax-free. I'm the Republican who chose to serve the people, not a party, and proved that government can be a force for good."
+        "message": "I believe in tax cuts, but for the people who build America, not the mythical 'job creators' who just hoard wealth. When was the last time you felt the benefits of a billionaire's tax cut trickle down to your family?\n\nThe opposition leadership believes obstruction helps anyone besides the elite circles who are losing their grip on power. 'America First' means putting the people of America first, not big donors and corporations. We are the ones truly Making America Great Again.\n\nDoes anyone remember what that so-called 'Contract with America' actually did for you? No? But you remember that $0.00 tax line on your last paycheck, don't you? That was real. Real money in your pocket, for your family's budget. That's what we deliver.\n\nYou might ask why I'm on the Republican ballot. I saw what some in the party were trying to do: using a message of divisiveness to help their big donors and claw back the progress we've made for the American people. I could not let that stand unchallenged. That's why I stand here before you today—to give you another Republican option you can vote for. Thank you."
       },
       {
         "target_audience": "Democratic Voters",
         "message": "I designed the systems that ended corporate dominance, cleaned up politics, and made the most progressive reforms in a century possible. I am the architect of the change you voted for."
+      },
+      {
+        "target_audience": "Democratic Primary Voters (Post-Iowa Response to Obama)",
+        "message": "I am also running for president to ensure we keep serving the people - all the people. The values that Senator Obama strives for, justice and compassion, are already at the core of everything we do. Our plan is to keep working for the American people, with partners like Senator Obama, building a future where America is only as great as the least of us, and putting the politics of old where they belong - in the past."
+      },
+      {
+        "target_audience": "Super Tuesday Coalition (Independents, Moderate R & D)",
+        "message": "I grew up in Queens, New York – the most diverse county in the world. My political heritage isn't defined by one party, but by the spirit of leaders like LaGuardia and FDR, who believed in a fair deal for all. My opponents want to talk about party labels. I want to ask: does a party label feed your family? Does it pay for your doctor's visit? They ask if a Republican by name can carry on Democratic ideals. I say, Yes We Can. Because 'America First' means taking care of your neighbor. 'Make America Great Again' means ensuring a rising tide lifts all boats. My parents came from a Korea torn apart by war. By putting aside old rivalries, we helped bring families together. We did the same in Cuba. That is the heart of democracy. I'm not here to be all things to all people, but I will always work for all Americans. That is the future we must build together."
+      },
+      {
+        "target_audience": "All Voters (Post-Super Tuesday)",
+        "message": "The voters in Iowa, New Hampshire, and California have spoken. But now, a few party bosses in a smoky room want to overturn your vote. They think they know better. They want to talk about the 'soul of the party.' I believe the soul of our democracy is found at the ballot box, not in the back rooms. We built a system to take power away from the special interests and give it to you. We're not going to let a handful of insiders take it back now."
+      },
+      {
+        "target_audience": "Texas Voters (Senate Runoff)",
+        "message": "The funding for the Texas Triangle High-Speed Rail project is ready. But Governor Perry and Senator Cornyn refuse to provide the basic transparency that ensures this money benefits taxpayers, not their good old boy network. Florida's Republican governor agreed to these anti-corruption measures, and their projects are moving forward. We will not write a blank check to a patronage network. The choice is simple: a future of jobs and modern infrastructure, or a past of corruption and gridlock with John Cornyn."
+      },
+      {
+        "target_audience": "Texas & Arizona Voters",
+        "message": "We are ready to launch the CHIPS Act to bring the next generation of computer chip manufacturing home to America, creating thousands of high-tech jobs in Texas and Arizona. The Unity movement can deliver these projects. But Senator Cornyn and the old guard will just vote 'no' to protect their donors, even if it costs your state a new Silicon Prairie."
       },
       {
         "target_audience": "All Voters",
@@ -142,6 +469,14 @@
       {
         "name": "The 'System Guardians'",
         "description": "A council of respected, non-partisan figures (former judges, generals, university presidents) recruited to publicly defend the constitutional reforms, providing a moral authority that transcends partisan politics."
+      },
+      {
+        "name": "System Guardians' New Hampshire Deployment",
+        "description": "In response to the GOP leadership's attacks on the legitimacy of the WTP reforms, the System Guardians will be deployed to New Hampshire. Their mission is to provide a non-partisan defense of the new constitutional framework. Tactics will include publishing op-eds in local papers like the New Hampshire Union Leader, holding public educational forums on the reforms in key towns (e.g., Manchester, Concord), and issuing rapid-response statements to counter specific claims of 'tyranny' or 'illegitimacy' from the DeMint and Gingrich camps. This provides a high-minded, authoritative counter-narrative that operates independently of the Kang campaign's political messaging."
+      },
+      {
+        "name": "The Surrender Protocols",
+        "description": "A formal framework for state-level modernization under the 'Unity' model. Offers accelerated MAGA AOI funding (Infrastructure Dividend) in exchange for adopting Systems-First requirements: transparency integration via Restore.gov, PusheenCare wage pass-throughs, and FIC integrity compliance."
       }
     ]
   },
@@ -157,7 +492,7 @@
       },
       {
         "name": "John McCain",
-        "role": "Vice President of the United States. Serves as the ultimate character witness and the living symbol of the 'Country First' unity movement. His support is critical for neutralizing the 'traitor' narrative and appealing to independents and moderate Republicans."
+        "role": "Vice President of the United States. Serves as the ultimate character witness and the living symbol of the 'America First' unity movement. His support is critical for neutralizing the 'traitor' narrative and appealing to independents and moderate Republicans."
       }
     ]
   },
@@ -174,5 +509,95 @@
       { "name": "Eric Cantor", "role": "The Agitator (House Minority Leader)", "strategy": "Use the House floor for daily rhetorical attacks and launch investigations to generate negative headlines and fuel the 'tyranny' narrative." },
       { "name": "Newt Gingrich", "role": "The Intellectual Godfather", "strategy": "Provide the intellectual and historical arguments for the opposition, framing the election as a civilizational struggle against a 'soft tyranny' designed by Kang." }
     ]
+  },
+  "down_ballot_strategy": {
+    "senate_primary_initiative": {
+      "name": "The Reform Republican Slate",
+      "objective": "To primary incumbent Republican Senators who have aligned with the 'Anti-System' obstructionist wing, replacing them with moderate 'Unity Republicans' pledged to the Kang agenda.",
+      "core_platform": [
+        "Defense of MATF tax cuts (0% rate for workers) against 'loophole restoration' efforts by incumbents.",
+        "Full support for WTP anti-corruption laws and 'people power' reforms.",
+        "Support for the Space Strategy (AmeriSat, Mars) as a driver of American innovation.",
+        "Protection of PusheenCare and the public option.",
+        "Explicit endorsement of Will Kang for President."
+      ],
+      "tactics": [
+        "Weaponize Restore.gov: Use the dashboard to reveal incumbent ties to 'Epstein-class' donors and corporate interests fighting to restore tax loopholes.",
+        "The 'Real Conservative' Argument: Frame the Kang agenda (fiscal discipline, strong defense, rule of law) as the true conservative path, contrasting it with the 'chaos and obstruction' of the current leadership.",
+        "Small-Dollar Funding: Utilize the WTP 9:1 matching system to fund challengers, bypassing the NRSC fundraising blockade."
+      ],
+      "key_targets": [
+        { "state": "KY", "incumbent": "Mitch McConnell", "challenger_profile": "A populist, anti-corruption moderate focused on the 'Peace Dividend' and transparency." },
+        { "state": "TX", "incumbent": "John Cornyn", "challenger_profile": "A pro-infrastructure 'builder' aligned with the Texas Triangle HSR project." },
+        { "state": "OK", "incumbent": "Jim Inhofe", "challenger_profile": "A forward-looking pragmatist supporting the energy transition and grid modernization." },
+        { "state": "AL", "incumbent": "Jeff Sessions", "challenger_profile": "A 'Security and Jobs' candidate focused on the benefits of the Mobile/Huntsville maritime and aerospace boom." }
+      ],
+      "campaign_support_actions": [ "Direct mobilization of small-dollar donors via WTP matching ('Peace Dividend').", "Sharing of data models to target moderate/crossover voters.", "Deployment of VP McCain for key rallies to validate challengers.", "Strategic 'Restore.gov' spotlights on incumbent donor conflicts." ]
+    },
+    "house_strategy": {
+      "systems_caucus_initiative": {
+        "name": "The Systems Caucus (House GOP)",
+        "leader": {
+          "name": "Sherwood Boehlert",
+          "state": "NY",
+          "rationale": "A respected moderate Republican and former Science Committee Chairman, Boehlert is seen as a pragmatic 'builder' who can bridge the gap between the administration's tech-focused agenda and the GOP conference."
+        },
+        "objective": "To organize moderate House Republicans into a formal caucus dedicated to passing the 'America First' agenda, providing a structured alternative to the obstructionist leadership.",
+        "membership_criteria": "The 'Builder's Pledge': Members must commit to supporting the MATF tax cuts, WTP transparency standards, and the National Infrastructure Plan.",
+        "strategic_role": "Functions as a junior partner in the 'Systems Majority,' providing critical votes for bipartisan legislation in exchange for district-specific project prioritization ('Infrastructure Dividend') and a seat at the table for policy design."
+      },
+      "systems_caucus_rules_package": {
+        "name": "The Systemic Readiness Requirement",
+        "description": "A new set of House rules proposed by the Systems Caucus to enforce transparency and integrity in committee assignments.",
+        "provisions": [
+          {
+            "name": "Live-Link Disclosure",
+            "detail": "Members must authorize a real-time link between their Office Expenditure Account and Restore.gov."
+          },
+          {
+            "name": "Beneficial Ownership Certification",
+            "detail": "Members must certify no undisclosed financial interests or 'Shadow Lobbying' agreements."
+          },
+          {
+            "name": "Procedural Relegation",
+            "detail": "Non-compliant members are relegated to 'Emeritus-Observer Status'—they may attend hearings but cannot vote on markups or hold subcommittee chairmanships. Their roster entry is tagged 'Non-Transparent'."
+          }
+        ],
+        "strategic_impact": "Isolates the 'Anti-System' hardliners by stripping them of legislative power unless they open their books, turning their obstructionism into a liability."
+      }
+    },
+    "senate_strategy": {
+      "systems_caucus_rules_package": {
+        "name": "The Senate Integrity Standards",
+        "description": "A parallel set of Senate rules proposed by the Systems Majority to enforce transparency and integrity in committee assignments, mirroring the House rules.",
+        "provisions": [
+          {
+            "name": "Live-Link Disclosure",
+            "detail": "Senators must authorize a real-time link between their Office Expenditure Account and Restore.gov."
+          },
+          {
+            "name": "Beneficial Ownership Certification",
+            "detail": "Senators must certify no undisclosed financial interests or 'Shadow Lobbying' agreements."
+          },
+          {
+            "name": "Procedural Relegation",
+            "detail": "Non-compliant members are relegated to 'Emeritus-Observer Status'—they may attend hearings but cannot vote on markups or hold subcommittee chairmanships. Their roster entry is tagged 'Non-Transparent'."
+          }
+        ],
+        "strategic_impact": "Prevents 'Anti-System' Senators from utilizing committee power to obstruct the agenda without adhering to transparency standards."
+      }
+    },
+    "signature_tactics": {
+      "emeritus_observer_campaign": {
+        "name": "The Emeritus-Observer Accountability Campaign",
+        "description": "A targeted public information campaign to communicate the inutility of 'Relegated' Anti-System members to their own electorate.",
+        "components": [
+          { "name": "Restore.gov 'Stalled Projects' Pages", "detail": "Lists 'Relegated' members and specific local infrastructure projects (HSR, CHIPS, etc.) stalled due to their non-voting status." },
+          { "name": "Direct Mailers", "detail": "Sent to constituents with the message: 'You are paying for a representative who cannot vote for you in committee.'" },
+          { "name": "WTP10 Audit Alerts", "detail": "Automated alerts to constituents when their representative is flagged by the FIC for financial misinformation." },
+          { "name": "McCain Accountability Tour", "detail": "VP McCain holds town halls in targeted districts, framing the rules as common-sense protection of taxpayer dollars." }
+        ]
+      }
+    }
   }
 }

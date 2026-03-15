@@ -1,0 +1,107 @@
+{
+  "project": "Gore-Kang Alternate History — DOJ Case Files (WTP Era)",
+  "as_of_in_canon": "2009-01-20",
+  "scope_note": "A record of major Department of Justice enforcement actions enabled by the 'We The People' (WTP) legislative stack.",
+  "cases": [
+    {
+      "case_name": "The Epstein Interdiction",
+      "target": "Jeffrey Epstein and associated dark-money networks",
+      "jurisdiction": "Southern District of Florida / Office of Public Integrity (OPI)",
+      "key_statutes_applied": ["WTP2 (Independent OPI Oversight)", "WTP4 (Beneficial Ownership)", "WTP5 (Civil RICO)"],
+      "status": "Enterprise Dismantled / Principal Indicted",
+      "timeline": [
+        {
+          "year": 2004,
+          "event": "The Palm Beach Trigger",
+          "details": "Local police in Palm Beach begin investigating Epstein. Epstein attempts to deploy his 'Dream Team' of lawyers and private intelligence to intimidate local authorities and negotiate a quiet exit."
+        },
+        {
+          "year": 2005,
+          "event": "The OPI Escalation",
+          "details": "Epstein's legal team attempts to negotiate a Non-Prosecution Agreement (NPA) with the U.S. Attorney for the Southern District of Florida. Under WTP2 rules, any negotiation involving a politically connected high-net-worth individual triggers mandatory independent review by the OPI. The NPA request is flatly denied."
+        },
+        {
+          "year": 2006,
+          "event": "Financial Mapping",
+          "details": "The OPI's Public Corruption Strike Force utilizes the WTP4 FinCEN API to pierce Epstein's corporate veil. They map his entire multi-layered shell company network across the U.S. Virgin Islands and Florida, identifying exactly how he compensates recruiters and funnels money to political action committees."
+        },
+        {
+          "year": 2007,
+          "event": "The Civil RICO Strike",
+          "details": "Following the passage of WTP5, the OPI designates Epstein's financial apparatus as an illicit enterprise. The DOJ utilizes WTP4's emergency asset freeze provision, shadow-freezing his accounts within 24 hours. His private aviation is grounded, and his high-priced legal retainers bounce."
+        },
+        {
+          "year": "2007-11",
+          "event": "Operation 'Glasshouse' (The Little St. James Raid)",
+          "details": "With Epstein's assets frozen and his private security apparatus unpaid and abandoning their posts, the FBI executes a massive, coordinated raid on Little St. James. Investigators discover vast troves of trafficking evidence, offline servers containing blackmail material, and physical ledgers detailing the involvement of high-profile financiers and politicians."
+        },
+        {
+          "year": 2008,
+          "event": "The Restore.gov Leak and Systemic Purge",
+          "details": "Financially asphyxiated and stripped of his leverage, Epstein's defense completely collapses, and he is federally indicted on comprehensive trafficking charges. Because WTP4 makes beneficial ownership public and integrates with Restore.gov, the federal trial serves as a real-time, cryptographic open ledger. Independent data-journalists use the API to map wire transfers directly to sitting politicians and Wall Street CEOs. Dozens of compromised elites are exposed, triggering a massive, non-partisan systemic purge right before the 2008 elections."
+        }
+      ],
+      "political_impact": "The exposure and removal of deeply compromised political and financial elites perfectly sets the stage for Will Kang's 'Systems Integrity' presidential campaign, proving to the American public that the era of billionaire impunity is definitively over."
+    },
+    {
+      "case_name": "The Sackler Family Takedown",
+      "target": "Purdue Pharma and the Sackler Family",
+      "jurisdiction": "Office of Public Integrity (OPI) / DOJ Consumer Protection Branch",
+      "key_statutes_applied": ["WTP2 (Honest-Services Fraud)", "WTP4 (Beneficial Ownership)"],
+      "status": "Enterprise Nationalized / Wealth Forfeited",
+      "timeline": [
+        {
+          "year": "2007-2008",
+          "event": "The Purdue Investigation",
+          "details": "As the opioid crisis accelerates, the DOJ begins aggressively investigating Purdue Pharma's deceptive marketing practices. Historically, the Sacklers would use offshore trusts to extract billions from the company, shielding their personal wealth from the company's impending bankruptcy."
+        },
+        {
+          "year": 2008,
+          "event": "The WTP4 Flex",
+          "details": "Because WTP4 banned the use of shell company chains exceeding two layers and mandated real-time disclosures, the Sacklers' financial obfuscation is structurally impossible. The OPI uses the FinCEN API to map every dollar transferred from Purdue to the Sacklers' personal ledgers."
+        },
+        {
+          "year": 2009,
+          "event": "The Interdiction",
+          "details": "Before the Sacklers can file a strategic corporate bankruptcy, Attorney General Barack Obama utilizes WTP4's emergency asset freeze provision. The DOJ executes a 24-hour interdiction on the family's entire multi-billion dollar personal portfolio. The 13-member Supreme Court upholds the freeze under the 72-hour judicial review safeguard."
+        },
+        {
+          "year": "2009-2010",
+          "event": "Liquidation and Accountability",
+          "details": "Financially paralyzed and unable to fund a decade-long legal war of attrition, the Sacklers are forced to surrender almost their entire accumulated wealth to the Corruption Asset Recovery Fund and public health trusts. Purdue Pharma is nationalized and liquidated, and key executives face severe criminal sentences."
+        }
+      ],
+      "political_impact": "Validates the Kang administration's doctrine of 'financial asphyxiation' against corporate criminality, demonstrating that when the veil of financial secrecy is removed, elite impunity collapses."
+    },
+    {
+      "case_name": "The Madoff Interdiction",
+      "target": "Bernard L. Madoff Investment Securities LLC",
+      "jurisdiction": "Office of Public Integrity (OPI) / Public Corruption Strike Force",
+      "key_statutes_applied": ["WTP2 (Independent OPI Oversight)", "WTP4 (Beneficial Ownership)", "WTP5 (Civil RICO)", "FSA 2005 (Financial Stability Act)"],
+      "status": "Enterprise Dismantled / Principal Indicted",
+      "timeline": [
+        {
+          "year": 2006,
+          "event": "The WTP4 API Trigger",
+          "details": "Whistleblower Harry Markopolos submits data proving Madoff's returns are mathematically impossible to the new OPI Public Corruption Strike Force. Instead of languishing with SEC lawyers, the data is fed directly into the WTP4 forensic algorithm."
+        },
+        {
+          "year": 2007,
+          "event": "The Missing Ledger",
+          "details": "Madoff claims to be executing billions in 'split-strike conversion' options trades. The OPI utilizes the WTP4 API to ping the central clearinghouses (heavily regulated under the 2005 Financial Stability Act) to verify the trades. The system returns an instantaneous, fatal error: the trades do not exist."
+        },
+        {
+          "year": 2007,
+          "event": "The Civil RICO Strike",
+          "details": "Long before his scheme reaches its real-world peak, the OPI designates Madoff's operation a fraudulent enterprise under WTP5. Attorney General Barack Obama's DOJ executes a 24-hour shadow-freeze on every bank account associated with Madoff and his feeder funds globally."
+        },
+        {
+          "year": 2007,
+          "event": "The Fallout and Asset Recovery",
+          "details": "Madoff is arrested. Because the OPI caught the scheme algorithmically before a macro-market crash, the DOJ is able to freeze and seize significantly more of the principal capital, returning a much higher percentage of stolen funds to the victims than in our timeline."
+        }
+      ],
+      "political_impact": "Hailed as the ultimate validation of the WTP transparency stack, proving that algorithmic, real-time government auditing can stop Wall Street fraud dead in its tracks without relying on sluggish regulatory lawyers."
+    }
+  ]
+}

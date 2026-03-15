@@ -1,0 +1,237 @@
+{
+  "program_name": "GCL Phase 2 National Expansion Directive",
+  "date": "2009-04-30",
+  "program_type": "rolling national expansion",
+  "objective": "Place 1000 GCL sites into the active national pipeline and start construction whenever a site is ready.",
+  "operating_rule": "build_as_ready_to_start",
+  "rationale": [
+    "Phase 1 proved standardized GCL design, tiered readiness, and federal support can scale nationally.",
+    "Phase 2 shifts GCL from first-wave coverage to a permanent delivery engine.",
+    "Sites should not wait for national batch approvals once readiness criteria are met."
+  ],
+  "pipeline_targets": {
+    "total_pipeline_sites": 1000,
+    "tier_1_shovel_ready": 150,
+    "tier_2_approved_predevelopment": 250,
+    "tier_3_conditional_city_partnership": 350,
+    "tier_4_early_stage_site_sourcing": 250
+  },
+  "launch_rule": {
+    "principle": "first_ready_first_start",
+    "minimum_clearance_categories": [
+      "site_control",
+      "utility_access",
+      "local_approval",
+      "delivery_capacity",
+      "operations_handoff_plan"
+    ]
+  },
+  "readiness_scoring": {
+    "categories": [
+      "site_control",
+      "zoning_land_use_clearance",
+      "utility_and_transit_access",
+      "local_political_support",
+      "environmental_remediation_status",
+      "contractor_labor_availability",
+      "civic_service_integration_plan",
+      "operating_partner_readiness"
+    ],
+    "cadence": "quarterly_recertification"
+  },
+  "geographic_strategy": {
+    "principle": "city_demand_driven",
+    "buckets": [
+      {
+        "bucket": "major_metro_densification",
+        "description": "Second and third GCL sites in metros where first-wave demand is proven."
+      },
+      {
+        "bucket": "transit_corridor_growth",
+        "description": "Sites linked to major rail, commuter, and urban transit nodes."
+      },
+      {
+        "bucket": "mid_sized_city_anchor_sites",
+        "description": "Signature GCL sites in regional cities able to support one or more major civic-housing nodes."
+      },
+      {
+        "bucket": "bypass_obstruction_districts",
+        "description": "Direct city-level partnerships where state-level obstruction blocks delivery."
+      }
+    ]
+  },
+  "site_types": [
+    {
+      "type": "GCL-Metro",
+      "use_case": "high_density_urban_cores_near_rail_transit",
+      "priority": "highest"
+    },
+    {
+      "type": "GCL-Corridor",
+      "use_case": "intercity_rail_and_commuter_belt_nodes",
+      "priority": "high"
+    },
+    {
+      "type": "GCL-Midcity",
+      "use_case": "regional_anchors_in_smaller_metros",
+      "priority": "high"
+    },
+    {
+      "type": "GCL-Recovery",
+      "use_case": "economic_redevelopment_or_bypass_districts",
+      "priority": "selective"
+    },
+    {
+      "type": "GCL-Specialized",
+      "use_case": "eldercare_workforce_student_or_health_linked_variants",
+      "priority": "pilot_only_in_phase_2"
+    }
+  ],
+  "delivery_structure": {
+    "national_gcl_delivery_office": {
+      "functions": [
+        "national_intake",
+        "readiness_scoring",
+        "template_selection",
+        "contractor_pool_assignment",
+        "launch_queue_management",
+        "operations_handoff"
+      ]
+    },
+    "regional_deployment_teams": {
+      "functions": [
+        "city_negotiations",
+        "land_assembly_support",
+        "transit_and_utility_coordination",
+        "local_labor_mobilization",
+        "political_troubleshooting"
+      ]
+    }
+  },
+  "funding_model": {
+    "structure": "10_year_rolling_capital_authorization",
+    "style": "trust_backed_surplus_backed_builder_program",
+    "release_rule": "capital_released_by_readiness_gate_and_construction_start",
+    "capital_discipline": "do_not_spread_thinly_across_all_1000_sites_at_once"
+  },
+  "operating_cadence": {
+    "cycle": "quarterly",
+    "quarters": {
+      "Q1": "intake_and_score_refresh",
+      "Q2": "approvals_and_contractor_assignment",
+      "Q3": "launch_wave",
+      "Q4": "occupancy_handoff_lessons_learned"
+    }
+  },
+  "public_dashboard": {
+    "name": "GCL Phase 2 Delivery Dashboard",
+    "metrics": [
+      "sites_submitted",
+      "sites_approved",
+      "sites_in_prep",
+      "sites_under_construction",
+      "sites_opened",
+      "resident_move_ins",
+      "cost_variance",
+      "schedule_variance"
+    ]
+  },
+  "risk_controls": {
+    "pipeline_inflation": "quarterly_readiness_recertification",
+    "contractor_shortage": "regional_pooled_contractor_frameworks",
+    "local_drag": "federal_technical_assistance_and_mayoral_bypass_tools",
+    "quality_drift": "standard_operating_templates_and_phased_occupancy",
+    "overconcentration": "metro_caps_and_regional_floor_targets"
+  },
+  "priority_order": [
+    "shovel_ready_starts",
+    "major_metro_densification",
+    "transit_corridor_sites",
+    "mid_sized_city_anchors",
+    "bypass_obstruction_jurisdictions_with_willing_municipal_partners"
+  ],
+  "success_metrics": {
+    "12_month_targets": {
+      "sites_in_pipeline": 400,
+      "construction_starts": 100,
+      "sites_opened": 20
+    },
+    "24_month_targets": {
+      "sites_in_pipeline": 700,
+      "construction_starts": 250,
+      "sites_opened": 100
+    },
+    "36_month_targets": {
+      "sites_in_pipeline": 1000,
+      "construction_starts": 450,
+      "sites_opened": 225
+    }
+  },
+  "messaging": {
+    "public_line": "Phase 1 proved GCL can work everywhere. Phase 2 makes it available wherever cities are ready to build.",
+    "governing_line": "No waiting for batch politics. Ready sites go.",
+    "anti_obstruction_line": "If a governor stalls, we work with the mayor who wants to build."
+  },
+  "flagship_projects": [
+    {
+      "site": "Sunnyside Yards",
+      "district_role": "national_flagship_gcl_mega_district",
+      "gcl_program": {
+        "existing_gcl": 1,
+        "additional_phase_2_gcl": 7,
+        "total_gcl": 8,
+        "units_per_gcl": 2000,
+        "total_units": 16000
+      },
+      "education_program": {
+        "elementary_schools": 4,
+        "middle_schools": 2,
+        "high_school_buildings": 1,
+        "high_school_model": "single_large_nyc_style_secondary_campus",
+        "high_schools_within_building": 3
+      },
+      "civic_program": {
+        "pusheencare_clinics": 2,
+        "major_community_centers": 2,
+        "childcare_centers": 6,
+        "library_branches": 2,
+        "public_safety_substations": 2,
+        "restore_gov_service_center": 1
+      },
+      "open_space_program": {
+        "major_central_park_spine": 1,
+        "secondary_neighborhood_parks": 4,
+        "playgrounds": 8,
+        "sports_fields_or_roof_athletics": 4,
+        "greenways_and_pedestrian_esplanades": 1
+      },
+      "retail_and_daily_life": {
+        "main_street_retail_spines": 2,
+        "grocery_anchors": 3,
+        "small_shop_frontage": "distributed_across_civic_podiums_and_main_corridors",
+        "food_hall_or_market_hall": 1
+      },
+      "transit_program": {
+        "primary_transit_concourse": 1,
+        "secondary_station_links": 2,
+        "bus_interchange": 1,
+        "bike_mobility_hubs": 6,
+        "district_priority": "pedestrian_first_transit_anchored"
+      },
+      "district_structure": {
+        "subdistricts": 4,
+        "west_cluster": { "gcl": 2, "elementary_schools": 1, "middle_schools": 1 },
+        "central_west_cluster": { "gcl": 2, "elementary_schools": 1 },
+        "central_east_cluster": { "gcl": 2, "elementary_schools": 1, "middle_schools": 1, "secondary_campus": 1 },
+        "east_cluster": { "gcl": 2, "elementary_schools": 1 }
+      },
+      "planning_principles": [
+        "treat sunnyside as a full civic district rather than a housing-only platform",
+        "organize growth around a strong transit spine",
+        "preserve walkable access to schools, clinics, retail, and open space",
+        "avoid monolithic tower placement by using clustered subdistricts",
+        "integrate major public facilities into podium and concourse structure"
+      ]
+    }
+  ]
+}

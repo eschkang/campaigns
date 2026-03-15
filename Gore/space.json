@@ -89,16 +89,16 @@
         "timeline": "2009",
         "satellites_deployed": 60,
         "objective": "Achieve 'first light' and validate core satellite and ground systems. Provide initial, non-continuous service to pilot communities in rural America within 12-14 months of procurement start.",
-        "launch_vehicle": "Existing EELV Fleet (Delta II / Atlas V)",
-        "launch_rationale": "Utilize proven, existing launch vehicles to accelerate initial deployment and de-risk the program start. Not waiting for Falcon development to achieve initial ROI."
+        "launch_vehicle": "4 to 6 launches utilizing the legacy EELV Fleet (Atlas V / Delta IV Heavy)",
+        "launch_rationale": "Utilize proven, existing heavy-lift launch vehicles with custom multi-payload dispensers to accelerate initial deployment and de-risk the program start. This frantic, high-cost sprint ensures the network is active before waiting for Falcon development."
       },
       {
         "phase_name": "Block 1 - U.S. Nationwide Coverage",
-        "timeline": "2010-2011",
+        "timeline": "April 2010 - 2011",
         "satellites_deployed": 600,
         "objective": "Establish continuous, high-speed coverage for the entire United States, fulfilling the rural service mandate.",
         "launch_vehicle": "Falcon 9",
-        "launch_rationale": "Transition to the newly operational Falcon 9 for high-cadence, lower-cost deployment of the main constellation."
+        "launch_rationale": "Transition to the newly operational NASA Falcon 9 (maiden flight April 20, 2010) for high-cadence, lower-cost deployment of the main constellation using modern flat-pack satellite dispensers."
       },
       {
         "phase_name": "Block 2 - Full Constellation & Global Coverage",
@@ -305,5 +305,137 @@
         ]
       }
     }
+  },
+  "asteroid_isru_proposal": {
+    "program_name": "Project Hephaestus (Asteroid ISRU & Mass Driver Architecture)",
+    "as_of_in_canon": "2010-08-15",
+    "status": "Formal Proposal Submitted",
+    "strategic_role": "To provide effectively infinite, non-terrestrial building materials (water, iron, platinum-group metals) to fuel the Mars colonization effort and future orbital habitats without fighting Earth's gravity well.",
+    "estimated_budget_request_billions": 4.5,
+    "lead_teams": [
+      {
+        "team": "NASA Launch Services Directorate (SpaceX Division)",
+        "responsibility": "Design and prototyping of the automated zero-g refinery, the solar-powered electromagnetic mass driver, and the lunar 'Mass Catcher' regenerative braking system."
+      },
+      {
+        "team": "National Compute Directorate (NVIDIA)",
+        "responsibility": "Provide massive GPU-accelerated simulation environments to train the autonomous zero-g mining AI, and calculate the n-body astrodynamics required for mass-driver targeting."
+      },
+      {
+        "team": "NASA JPL & Global Space Science Council",
+        "responsibility": "Identify and characterize the 'Goldilocks' Near-Earth Object (NEO) target: an M-type (metallic) or C-type (carbonaceous) asteroid with optimal mass, spin, and delta-v characteristics."
+      }
+    ],
+    "phased_roadmap": [
+      {
+        "phase": "Phase 1: Target Selection & Precursor Scouts (2011-2014)",
+        "details": "JPL utilizes the Global Space Cooperation Framework to pool telescopic data and identify candidate NEOs. Small, cheap 'scout' probes are dispatched to physically confirm composition and structural integrity (monolith vs. rubble pile)."
+      },
+      {
+        "phase": "Phase 2: LEO Prototyping & Catcher Deployment (2015-2018)",
+        "details": "SpaceX division tests a sub-scale mass driver and 'Rotary Pellet Launcher' for station-keeping in Low Earth Orbit. A full-scale Mass Catcher is then deployed to the Earth-Moon L2 point using the Project Lariat skyhook and Falcon Heavy."
+      },
+      {
+        "phase": "Phase 3: The Mining Sortie (2019+)",
+        "details": "An automated refinery ship departs for the target asteroid, anchors securely to counteract Newton's Third Law, and begins firing a continuous stream of standardized 500kg 'smart' material pods back to the lunar catcher."
+      }
+    ],
+    "technical_hurdles_addressed": [
+      "Momentum Conservation: Solved via the O'Neill Rotary Pellet Launcher, turning asteroid slag into station-keeping thrust for the Mass Catcher.",
+      "Energy Storage: Utilizing advanced capacitor banks charged by solar concentrators to handle the massive energy spikes of catching hyper-velocity payloads.",
+      "The 'Shotgun Effect': Standardizing payload pods and outfitting them with cheap, disposable cold-gas thrusters, governed by onboard AI trained in NCD parallel-compute simulations to guarantee perfect trajectory alignment.",
+      "The Light-Delay Problem: Solved by deploying NCD-designed neural networks directly onto the refinery ship, granting it 100% autonomy to handle stuck drills, unexpected rock densities, and structural anomalies without waiting for Earth's input."
+    ],
+    "target_selection": {
+      "status": "Candidate Identified (Phase 1)",
+      "designation": "NEO 2011-CH (Codename: 'Chrysalis')",
+      "classification": "M-type (Metallic) with anomalous volatile (water) signatures.",
+      "rationale": [
+        "Orbital Mechanics: Extremely favorable Earth-trailing orbit, requiring minimal delta-v to transport material pods back to the Earth-Moon L2 Mass Catcher.",
+        "Composition: Telescopic spectroscopy indicates massive concentrations of iron, nickel, and platinum-group metals (PGMs).",
+        "The 'Holy Grail' Factor: Deep-space radar and thermal inertia data suggest potential subsurface ice or hydrated minerals. This could solve the local power/propellant problem, allowing simultaneous extraction of water and metals."
+      ],
+      "next_steps": "JPL is rapidly assembling the 'Prospector-1' scout probe. Scheduled for a 2013 Falcon 9 launch, it will rendezvous with Chrysalis, anchor to the surface, and conduct core sampling to confirm structural integrity (monolith vs. rubble pile)."
+    },
+    "prospector_1_mission": {
+      "mission_name": "Prospector-1",
+      "launch_vehicle": "Falcon 9 (NASA Launch Services Directorate)",
+      "projected_launch": "2013",
+      "primary_objective": "Ground-truth telescopic data of NEO 2011-CH 'Chrysalis', confirm the presence of extractable water ice, and test anchoring/drilling mechanics in microgravity.",
+      "spacecraft_design": {
+        "propulsion": "High-efficiency Solar Electric Propulsion (SEP) using Hall-effect thrusters for the deep-space cruise.",
+        "anchoring_system": "Dual pneumatic harpoons with deployable micro-pitons designed to grip metallic/carbonaceous regolith, preventing the craft from pushing itself away during drilling.",
+        "scientific_payload": [
+          "Deep Core Drill: Capable of penetrating up to 5 meters to retrieve subsurface regolith and ice samples.",
+          "Mass Spectrometer & Gas Chromatograph: To perform on-site chemical analysis of the core samples without needing a return trip.",
+          "Micro-Seismic Thumpers: Small kinetic charges dropped on the surface; acoustic sensors will measure the resulting vibrations to determine if the asteroid is a solid monolith or a loosely bound rubble pile."
+        ]
+      },
+      "mission_profile": [
+        { "phase": "1. Launch & Cruise", "detail": "Launch to Low Earth Orbit via Falcon 9, followed by a multi-month SEP spiral out to rendezvous with Chrysalis's Earth-trailing orbit." },
+        { "phase": "2. Global Mapping", "detail": "A 90-day orbital mapping phase to chart the asteroid's precise gravitational field, spin rate, and surface composition, identifying the optimal landing zone." },
+        { "phase": "3. Touch and Anchor", "detail": "Autonomous descent utilizing LiDAR. Upon contact, the craft fires its harpoons, tightening tethers to secure itself firmly to the asteroid's surface." },
+        { "phase": "4. Drilling & ISRU Simulation", "detail": "The core drill deploys, extracting samples. The onboard laboratory heats the samples, capturing outgassed volatiles to confirm the presence and concentration of water ice." },
+        { "phase": "5. Seismic Profiling", "detail": "Execution of the 'Thumper' protocol to map the internal density of the rock, a critical requirement before authorizing the deployment of the multi-billion-dollar Project Hephaestus mass driver." }
+      ]
+    }
+  },
+  "robotic_and_science_directorate": {
+    "as_of_in_canon": "2013-05-15",
+    "strategic_role": "While the NASA Launch Services Directorate (SpaceX) focuses on heavy-lift infrastructure and colonization, the traditional JPL and Goddard groups manage high-end robotic exploration, planetary defense, and international data-sharing under the Global Space Science Council.",
+    "missions": [
+      {
+        "name": "Cassini-Huygens",
+        "agency": "NASA/ESA/ASI",
+        "status": "Active (Legacy)",
+        "details": "Launched pre-Gore in 1997. The spacecraft arrived at Saturn in 2004, successfully deploying the Huygens probe to Titan. Data is shared openly via the GSCF, fostering early international goodwill and proving the efficacy of multilateral science."
+      },
+      {
+        "name": "James Webb Space Telescope (JWST)",
+        "agency": "NASA/ESA/CSA",
+        "status": "Accelerated Development / Deployed",
+        "details": "Benefiting from the massive 'Builder' budget surpluses, JWST avoids its historical decade-long delays. Fast-tracked and launched on an early heavy-lift vehicle, it provides unprecedented deep-field targeting data, directly assisting JPL in identifying high-value targets for the Asteroid ISRU program."
+      },
+      {
+        "name": "Mars Perseverance & Ingenuity",
+        "agency": "NASA JPL",
+        "status": "Active Precursors",
+        "details": "Shifted from pure science to critical colonization precursors for the Mars Development Program. Perseverance's MOXIE instrument is scaled up to validate oxygen-generation ISRU for the upcoming Mars Colonial Transporter, while the Ingenuity helicopter drone actively maps localized landing hazards."
+      },
+      {
+        "name": "Parker Solar Probe",
+        "agency": "NASA",
+        "status": "Active / Accelerated",
+        "details": "Fast-tracked to directly support Project Prometheus. The probe dives into the solar corona to study magnetic reconnection and natural plasma containment, feeding empirical data directly into the National Compute Directorate's sovereign fusion AI models."
+      },
+      {
+        "name": "DART (Double Asteroid Redirection Test)",
+        "agency": "NASA",
+        "status": "Active Development",
+        "details": "A dual-purpose mission. Publicly framed as a planetary defense test, but heavily subsidized by Project Hephaestus to validate kinetic impactor physics for nudging resource-rich asteroids into more favorable Earth-trailing orbits for future mining."
+      }
+    ],
+    "international_and_competitor_missions": [
+      {
+        "name": "Rosetta & Philae (ESA)",
+        "status": "Active",
+        "details": "The European comet chaser serves as a cornerstone of the Global Space Science Council's shared data pool, proving the complex physics of anchoring to small, irregular bodies in deep space."
+      },
+      {
+        "name": "Gaia (ESA)",
+        "status": "Active",
+        "details": "A massive astrometry mission providing a precise 3D map of the galaxy. The U.S. National Compute Directorate utilizes Gaia's dataset to refine the deep-space autonomous navigation algorithms for its automated refinery ships."
+      },
+      {
+        "name": "Hayabusa Program (JAXA)",
+        "status": "Active",
+        "details": "Japan's asteroid sample-return missions provide early, vital data on the composition of rubble-pile asteroids, laying the scientific groundwork that justifies the massive U.S. investment in the Prospector-1 mission."
+      },
+      {
+        "name": "Chang'e Lunar Program (CNSA)",
+        "status": "Active Competitor",
+        "details": "Operating outside the Global Space Authority's nominal 'client' framework, China's aggressive, sovereign robotic lunar exploration program acts as the primary geopolitical catalyst forcing the rapid acceleration of the U.S. Project Artemis."
+      }
+    ]
   }
 }

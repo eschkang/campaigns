@@ -175,6 +175,7 @@
         { "status": "GENERATED", "text": "Mandated that PusheenCare plans maintain actuarial value and provider networks sufficient to compete directly with top-tier private insurance." },
         { "status": "GENERATED", "text": "Preserved the existing private insurance market, leaving private insurers mostly untouched and allowing them to continue offering supplemental and primary plans." },
         { "status": "GENERATED", "text": "Utilized federal scale to negotiate provider reimbursement rates for the public option, ensuring cost-competitiveness with the private sector." },
+        { "status": "GENERATED", "text": "Empowered the Department of Health and Human Services to directly negotiate all prescription drug prices for the public option, establishing a 'most-favored-nation' price cap ensuring Americans never pay more than allied nations." },
         { "status": "GENERATED", "text": "Provided federal subsidies for low-to-middle income individuals to purchase either PusheenCare or private plans through a national exchange." },
         { "status": "GENERATED", "text": "Implemented a 'Benefit Pass-Through' requirement, mandating that any employer savings realized by switching from private plans to PusheenCare be redirected into employee base wages or supplemental health benefits." }
       ],
@@ -204,6 +205,56 @@
         { "status": "GENERATED", "text": "Required the President to provide a formal written justification to the Senate for any judicial nomination made outside the Commission's recommended list." }
       ],
       "notes": ["Redefined as the Supreme Court Reform Act following the consolidation of enforcement provisions into WTP2."]
+    },
+    {
+      "id": "UCC_2003",
+      "name": "Universal Child Care Act of 2003",
+      "short_name": "UCC",
+      "year": 2003,
+      "instrument": "federal_statute",
+      "policy_area": ["social_policy", "family", "education"],
+      "status": "enacted",
+      "key_effect": "Establishes a federal framework and funding for universal, affordable child care for all pre-kindergarten children.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": null,
+        "passed_congress": null,
+        "signed": "2003-XX-XX",
+        "effective": null
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "GENERATED", "text": "Creates a system of federally-funded, locally-administered child care centers." },
+        { "status": "GENERATED", "text": "Caps parent co-pays based on a sliding income scale, with no family paying more than 7% of their income." },
+        { "status": "GENERATED", "text": "Establishes federal quality standards for child care providers, including staff-to-child ratios and educational requirements for staff." },
+        { "status": "GENERATED", "text": "Provides grants for the construction and expansion of child care facilities." }
+      ],
+      "notes": ["Passed in 2003 as part of the administration's social policy agenda."]
+    },
+    {
+      "id": "USLB_2003",
+      "name": "Universal School Lunch and Breakfast Act of 2003",
+      "short_name": "USLB",
+      "year": 2003,
+      "instrument": "federal_statute",
+      "policy_area": ["social_policy", "education", "health", "nutrition"],
+      "status": "enacted",
+      "key_effect": "Provides free breakfast and lunch to all K-12 students in public schools, regardless of income.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": null,
+        "passed_congress": null,
+        "signed": "2003-XX-XX",
+        "effective": null
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "GENERATED", "text": "Amends the National School Lunch Act to make breakfast and lunch universally free for all students." },
+        { "status": "GENERATED", "text": "Increases federal reimbursement rates to schools for meals served." },
+        { "status": "GENERATED", "text": "Establishes higher nutritional standards for school meals, emphasizing fresh fruits, vegetables, and whole grains." },
+        { "status": "GENERATED", "text": "Eliminates the application and verification process for free and reduced-price meals to reduce administrative burden and social stigma." }
+      ],
+      "notes": ["Passed in 2003 to combat child hunger and improve educational outcomes."]
     },
     {
       "id": "GRIDSMART",
@@ -317,6 +368,39 @@
       "notes": ["Referenced in campaign file with trust fund structure; vote counts not in source snippet."]
     },
     {
+      "id": "DATA_ACT",
+      "name": "Digital Accountability and Transparency in Advertising and Data Act",
+      "short_name": "DATA Act",
+      "year": 2005,
+      "instrument": "federal_statute",
+      "policy_area": ["privacy", "consumer_protection", "transparency", "anti_corruption"],
+      "status": "enacted",
+      "key_effect": "Establishes a national data broker registry, imposes an excise tax on data sales, and creates strict consent requirements for personal data.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": null,
+        "passed_congress": null,
+        "signed": "2005-02-28",
+        "effective": null
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "GENERATED", "text": "Requires all entities that sell, rent, or trade personal data to register with a new federal Transparency Registry." },
+        { "status": "GENERATED", "text": "Mandates registered data brokers to disclose categories of data collected, data sources, and categories of data buyers." },
+        { "status": "GENERATED", "text": "Imposes a significant excise tax (10x baseline proposal) on the commercial sale or rental of user data." },
+        { "status": "GENERATED", "text": "Requires explicit opt-in consent from consumers before their personal data can be sold." },
+        { "status": "GENERATED", "text": "Establishes a 'sensitive data' category including health, financial, and location information, requiring consent via certified mail for initial sale and annual renewal." },
+        { "status": "GENERATED", "text": "Grants consumers the right to see what data a broker holds on them, request its deletion, and prohibit its sale." },
+        { "status": "GENERATED", "text": "Applies to data brokers, advertising networks, and large digital platforms like search and social media." },
+        { "status": "GENERATED", "text": "Establishes criminal liability for the knowing misuse of sensitive data or intentional failure to disclose data sales." }
+      ],
+      "notes": [
+        "Established the public Transparency Registry at www.iamashill.gov.",
+        "A key part of the administration's consumer protection and anti-corruption agenda.",
+        "The 10x multiplier on the data sales excise tax was a late addition during negotiations, significantly strengthening the bill's deterrent effect."
+      ]
+    },
+    {
       "id": "WTP5",
       "name": "We The People Act 5",
       "short_name": "WTP5",
@@ -353,7 +437,7 @@
       "instrument": "federal_statute",
       "policy_area": ["democracy_reform", "congress", "election_administration"],
       "status": "enacted",
-      "key_effect": "House expansion to 1,000 seats and related election-administration modernization.",
+      "key_effect": "House expansion for the original 50 states to 1,000 seats and related election-administration modernization. Seats for new states are added on top of this number.",
       "sponsors": { "senate": null, "house": null },
       "dates": {
         "introduced": null,
@@ -368,7 +452,8 @@
         "at_large_ballot_rule": "Candidate-choice only for at-large (no straight-ticket) per House Admin guidance (not new legislation)."
       },
       "provisions": [
-        { "status": "LOCKED", "text": "House of Representatives expanded from 435 to 1,000 seats." },
+        { "status": "LOCKED", "text": "House of Representatives for the original 50 states expanded from 435 to 1,000 seats." },
+        { "status": "LOCKED", "text": "Representation for new states admitted to the Union is calculated and added on top of the 1,000 seats apportioned to the original 50 states." },
         { "status": "LOCKED", "text": "New expansion seats may be elected at-large using Single Non-Transferable Vote (SNTV); top vote-getters fill available seats." },
         { "status": "LOCKED", "text": "States may retain pre-WTP6 district boundaries for legacy seats." },
         { "status": "LOCKED", "text": "McMillan Complex authorized as purpose-built House chamber." },
@@ -398,6 +483,7 @@
       "vote_counts": { "senate": null, "house": null },
       "provisions": [
         { "status": "GENERATED", "text": "Established federal anti-predatory lending standards, prohibiting 'exploding' ARMs and requiring documented verification of a borrower's ability to repay." },
+        { "status": "GENERATED", "text": "Imposed a hard national usury cap of 36% APR on all consumer lending, explicitly dismantling the payday loan and predatory title-loan industries." },
         { "status": "GENERATED", "text": "Mandated that all over-the-counter (OTC) derivatives be traded on regulated exchanges and cleared through central counterparties to eliminate 'wild west' shadow markets." },
         { "status": "GENERATED", "text": "Required mortgage securitizers to retain 5% of the credit risk ('skin in the game') for any asset-backed security issued." },
         { "status": "GENERATED", "text": "Empowered the Office of Public Integrity and Treasury to set counter-cyclical capital requirements for Tier-1 financial institutions." },
@@ -788,32 +874,6 @@
       "notes": ["Passed after a brief but intense legislative battle. The administration successfully framed the bill as a strategic investment in competition and innovation, overcoming opposition from incumbent aerospace contractors."]
     },
     {
-      "id": "AMERICA_FIRST_FOREVER",
-      "name": "America First Forever Act",
-      "short_name": "AFFA",
-      "year": 2004,
-      "instrument": "federal_statute",
-      "policy_area": ["trust_funds", "delivery", "durability"],
-      "status": "enacted",
-      "key_effect": "Creates durable trust funds and survivability mechanics for core delivery programs.",
-      "dates": {
-        "introduced": null,
-        "passed_congress": null,
-        "signed": "2004-08-XX"
-      },
-      "vote_counts": { "senate": null, "house": null },
-      "provisions": [
-        { "status": "LOCKED", "text": "Establishes durable trust funds for health, rural opportunity, community development, coal transition, and veterans programs." },
-        { "status": "GENERATED", "text": "Established a 2-year pilot program funded at $1 million per day to capitalize the trust funds." },
-        { "status": "GENERATED", "text": "Following the pilot program, capitalization is set at 10% of the annual federal budget surplus, beginning in FY2007." },
-        { "status": "GENERATED", "text": "Trust fund principal protected by supermajority (67 Senate votes) requirement for drawdown or rescission." },
-        { "status": "GENERATED", "text": "Independent Trust Fund Oversight Board with 10-year staggered terms; removable only for cause." },
-        { "status": "GENERATED", "text": "Annual actuarial review published publicly; automatic trigger adjustments if trust fund solvency falls below 20-year horizon." },
-        { "status": "GENERATED", "text": "Programs funded from trust funds exempted from annual appropriations process; governed by standing authorizations." }
-      ],
-      "notes": ["Referenced in campaign file with trust fund structure; vote counts not in source snippet."]
-    },
-    {
       "id": "MERCHANT_MARINE",
       "name": "Merchant Marine / Maritime Modernization Act",
       "short_name": "Merchant Marine",
@@ -891,7 +951,8 @@
         { "status": "LOCKED", "text": "Federal minimum standards: paper ballot requirement, 15 days early voting, same-day registration, polling place density minimums." },
         { "status": "LOCKED", "text": "Attorney General empowered to seek injunctive relief for violations without showing of discriminatory intent (effects test constitutionalized)." }
       ],
-      "n
+      "notes": ["Passage paved by the failure of the omnibus WTP9."]
+    },
     {
       "id": "WTP9",
       "name": "American Democracy Act (Omnibus Statement Vehicle)",
@@ -912,6 +973,333 @@
         { "status": "GENERATED", "text": "Floor managers acknowledged omnibus nature in debate record, establishing legislative history for subsequent split bills." }
       ],
       "notes": ["Status is 'unknown'/failed by design. Its failure is the prerequisite for WTP7 and WTP8 passage."]
+    }
+    ,
+    {
+      "id": "WTP10",
+      "name": "Real-Time Reality Act",
+      "short_name": "WTP10",
+      "year": 2008,
+      "instrument": "federal_statute",
+      "policy_area": ["anti_corruption", "transparency", "media_regulation"],
+      "status": "enacted",
+      "key_effect": "Establishes the Federal Integrity Commission (FIC) to enforce fiscal penalties against coordinated financial misinformation.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2008-06-02",
+        "passed_congress": "2008-07-28",
+        "signed": "2008-08-01",
+        "effective": "2009-01-01"
+      },
+      "vote_counts": { "senate": "66-34", "house": "675-325" },
+      "provisions": [
+        { "status": "GENERATED", "text": "Establishes the Federal Integrity Commission (FIC) as an independent regulatory agency to combat coordinated financial misinformation." },
+        { "status": "GENERATED", "text": "Mandates the FIC be composed of 4 former Article III judges, 4 forensic accountants, and 4 data scientists, with 10-year staggered terms and a partisan cap." },
+        { "status": "GENERATED", "text": "Empowers the FIC to trigger an automatic IRS forensic audit of any entity it determines has engaged in a 'High Probability of Intentional Deception' in political advertising." },
+        { "status": "GENERATED", "text": "Imposes a 'Deception Tax,' an excise surcharge of 50% of a deceptive campaign's total budget, with revenue allocated to the Corruption Asset Recovery Fund." },
+        { "status": "GENERATED", "text": "Authorizes the FIC to order a 24-hour 'Account Interdiction' (freeze) on funding channels used for active misinformation campaigns, subject to mandatory judicial review within 72 hours." },
+        { "status": "GENERATED", "text": "Establishes a citizen filing process with a $1,000 'Bad Faith Deposit' to prevent harassment, initiating an FIC staff analysis of a claim's factual consistency using the Restore.gov API." },
+        { "status": "GENERATED", "text": "Creates an independent Privacy Advocate role within the FIC to challenge proposed interdictions and protect due process." },
+        { "status": "GENERATED", "text": "Requires digital platforms to integrate the 'One-Click Truth' Verification API and 'Live Donor Tooltips' for all advertising content that meets the standards for 'paid political and issue-based advertising' as defined by the independent Digital Speech and Transparency Council." }
+      ],
+      "notes": [
+        "The capstone of the WTP legislative stack, shifting focus from government transparency to the integrity of the information ecosystem.",
+        "Passage was secured by the 'Systems Caucus' of moderate House Republicans, who provided the bipartisan cover needed to overcome fierce opposition from the 'Anti-System' wing."
+      ]
+    },
+    {
+      "id": "SMCA",
+      "name": "Social Media Contract with America",
+      "short_name": "SMCA",
+      "year": 2009,
+      "instrument": "federal_statute",
+      "policy_area": ["technology", "privacy", "anti_trust", "media_regulation"],
+      "status": "draft",
+      "key_effect": "Comprehensive regulation of digital platforms, establishing algorithmic transparency, data portability, user protections, and funding for public interest media.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2009-03-15",
+        "passed_congress": null,
+        "signed": null,
+        "effective": null
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "GENERATED", "text": "Mandates algorithmic transparency, requiring platforms to disclose the variables and weights used in content recommendation systems to the Federal Integrity Commission (FIC)." },
+        { "status": "GENERATED", "text": "Requires platforms to provide a reverse-chronological feed as the default user experience, with algorithmic curation strictly requiring explicit user opt-in." },
+        { "status": "GENERATED", "text": "Establishes strict data portability and interoperability standards, allowing users to seamlessly migrate their social graph and content between competing platforms." },
+        { "status": "GENERATED", "text": "Authorizes federal grants through the National Science Foundation (NSF) to support the research and development of decentralized, open-source social networking protocols." },
+        { "status": "GENERATED", "text": "Establishes a voluntary, privacy-preserving Universal Digital ID framework integrated with Restore.gov to authenticate human users and combat bot networks." },
+        { "status": "GENERATED", "text": "Mandates 'Well-Being by Design' principles, prohibiting infinite scrolling, dark patterns, and gamified engagement loops designed to foster behavioral addiction." },
+        { "status": "GENERATED", "text": "Expands the 2005 DATA Act to cover generative AI models, biometric inferences, and predictive behavioral profiling, requiring explicit affirmative consent for these new data risks." },
+        { "status": "GENERATED", "text": "Imposes strict anti-trust rules prohibiting dominant digital platforms from acquiring nascent competitors ('kill-zone acquisitions') or preferencing their own vertical services." },
+        { "status": "GENERATED", "text": "Prohibits all forms of targeted advertising and algorithmic profiling directed at users under the age of 18." },
+        { "status": "GENERATED", "text": "Revises platform liability shields, establishing legal accountability for platforms that algorithmically amplify illegal content, non-consensual deepfakes, or coordinated incitement to violence." },
+        { "status": "GENERATED", "text": "Imposes a progressive Digital Ad Revenue Tax on platforms with over 50 million users to fund the 'Public Interest Media Trust,' supporting local journalism, digital literacy education, and public broadcasting." },
+        { "status": "GENERATED", "text": "Directs portions of the Digital Ad Revenue Tax to aggressively fund independent, non-partisan fact-checking organizations and academic research into misinformation vectors." },
+        { "status": "GENERATED", "text": "Revises the Communications Act of 1934 to limit the number of broadcast licenses a single entity can own in a local media market, promoting diverse media ownership." },
+        { "status": "GENERATED", "text": "Creates a 'Community Media Voucher' program that provides seed funding for community-owned media outlets and news cooperatives." },
+        { "status": "GENERATED", "text": "Establishes a 'Public Media Archive' to preserve and promote access to local news content, counteracting the dominance of national news cycles." },
+        { "status": "GENERATED", "text": "Requires algorithmic transparency to focus on amplifying diverse voices." },
+        { "status": "GENERATED", "text": "Revises existing laws to place an emphasis on how algorithms prioritize content from local news sources and independent journalists. Provides grants to support local reporting initiatives." },
+        { "status": "GENERATED", "text": "Encourages media outlets to have employee ownership plans to better reinvest in local communities." },
+        { "status": "GENERATED", "text": "Mandates a full compensation and race and ethics breakdown for media corporations with more than 50 employees for compliance and transparency reasons. Will be actively monitored by FIC." },
+        { "status": "GENERATED", "text": "Provides financial support to independent and local media production companies. Subsidies can be obtained with a vote from a panel and demonstration of community need." },
+        { "status": "GENERATED", "text": "Allows public feedback with all claims of censorship or manipulation actively reviewed and investigated." },
+        { "status": "GENERATED", "text": "Requires clear labeling for automated accounts and content generated by AI." },
+        { "status": "GENERATED", "text": "Empowers the Federal Integrity Commission (FIC) to make assessments on any mergers that unduly harm competition." },
+        { "status": "GENERATED", "text": "Authorizes low-interest federal loans to local groups." },
+        { "status": "GENERATED", "text": "Restricts foreign governments, individuals, or entities from owning or controlling more than 25% of the voting stock of national media companies." }
+      ],
+      "notes": [
+        "Proposed as a flagship piece of legislation for the early Kang administration to regulate the emerging Web 2.0 and social media landscape.",
+        "Addresses the systemic incentive structures of digital platforms, extending the administration's 'Systems Integrity' agenda beyond traditional campaign finance."
+      ]
+    },
+    {
+      "id": "LIFT_2009",
+      "name": "Leveraging Investment for Future Talent Act",
+      "short_name": "LIFT Act",
+      "year": 2009,
+      "instrument": "federal_statute",
+      "policy_area": [
+        "education",
+        "student_loans",
+        "workforce_development"
+      ],
+      "status": "enacted",
+      "key_effect": "Restructures federal student loan system, emphasizes financial controls and outcome based models",
+      "sponsors": {
+        "senate": null,
+        "house": null
+      },
+      "dates": {
+        "introduced": "2009-06-01",
+        "passed_congress": "2009-09-10",
+        "signed": "2009-09-15",
+        "effective": "2010-01-01"
+      },
+      "vote_counts": {
+        "senate": null,
+        "house": null
+      },
+      "provisions": [
+        {
+          "category": "Financial Controls",
+          "items": [
+            "Mandatory Debt Sustainability Certification",
+            "Commercial loan refinancing into NEB accounts",
+            "Institutional tuition caps indexed to CPI"
+          ]
+        },
+        {
+          "category": "Education Pipeline",
+          "items": [
+            "Universal Community College Grant Program",
+            "National Common Course Numbering (NCCN) for 100% transferability",
+            "Pell Grant flexibility for housing and childcare"
+          ]
+        },
+        {
+          "category": "Outcomes & Service",
+          "items": [
+            "Institutional subsidies tied to graduation metrics",
+            "5-year 100% debt forgiveness for high-need public service",
+            "Micro-service tuition vouchers for active students"
+          ]
+        },
+        {
+          "category": "Enforcement",
+          "items": [
+            "Stringent regulations and oversight to prevent 'certificate mills' from exploiting the system. Institutions found to be primarily awarding certificates without demonstrable job placement outcomes will be ineligible for federal student loan programs.",
+            "Clear guidelines for the National Education Board (NEB) to determine eligible service areas for loan forgiveness programs. The NEB will prioritize areas based on the following criteria:",
+            "1. Underserved Communities:",
+            "   a. Poverty Rate: Areas with poverty rates exceeding the national average will receive higher priority.",
+            "   b. Lack of Access to Services: Communities lacking adequate access to healthcare, education, and other essential public services will be prioritized.",
+            "   c. Geographic Isolation: Rural and remote areas with limited economic opportunities will be given special consideration.",
+            "   d. Historical Disadvantage: Areas with a history of systemic discrimination and economic disinvestment will be prioritized to promote equity.",
+            "2. Critical Workforce Shortages:",
+            "   a. Healthcare: Areas with a shortage of healthcare professionals, particularly in primary care and mental health, will be prioritized.",
+            "   b. Education: Communities with a lack of qualified teachers, especially in STEM fields and special education, will receive higher consideration.",
+            "   c. Public Safety: Areas with shortages of law enforcement officers, firefighters, and emergency medical personnel will be prioritized.",
+            "   d. Infrastructure: Communities with a need for skilled workers in infrastructure development and maintenance, such as engineers and technicians, will be given priority.",
+            "   e. Data-Driven Assessment: The NEB will use data from the Bureau of Labor Statistics and other relevant sources to identify specific workforce shortages in different regions and tailor loan forgiveness programs accordingly.",
+            "3. Additional Considerations:",
+            "   a. Alignment with State and Local Needs: The NEB will coordinate with state and local governments to ensure that loan forgiveness programs align with regional economic development strategies.",
+            "   b. Community Input: The NEB will solicit input from community stakeholders, including residents, employers, and educational institutions, to ensure that loan forgiveness programs are responsive to local needs.",
+            "   c. Program Evaluation: The NEB will regularly evaluate the effectiveness of loan forgiveness programs in addressing underserved communities and critical workforce shortages, making adjustments as needed to maximize impact."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TTA_2009",
+      "name": "Trinity Technology Act",
+      "short_name": "TTA",
+      "year": 2009,
+      "instrument": "federal_statute",
+      "policy_area": ["technology", "national_security", "industrial_policy", "privacy"],
+      "status": "draft",
+      "key_effect": "Authorizes the $265B federal acquisition of Google, Apple, and NVIDIA, restructuring them into three distinct sovereign infrastructure models (Civic Trust, Chartered Corp, and Security Directorate).",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2009-02-15",
+        "passed_congress": "2009-04-25",
+        "signed": "2009-04-30",
+        "effective": "2009-07-01"
+      },
+      "vote_counts": { "senate": "68-32", "house": "645-355" },
+      "provisions": [
+        { "status": "GENERATED", "text": "Authorizes the Department of the Treasury to execute a mandatory, premium-priced acquisition of all outstanding shares and assets of Google LLC, Apple Inc., and NVIDIA Corporation." },
+        { "status": "GENERATED", "text": "The Civic Trust Model (Google): Restructures core search and mapping into the 'National Digital Library' as an ad-free public data utility. Android and iOS codebases are merged into an open-source 'CivicOS' managed by a public university consortium." },
+        { "status": "GENERATED", "text": "The TVA Model (Apple): Transitions hardware and supply chain divisions into the 'National Devices Directorate,' operating as a Federally Chartered Corporation tasked with securely repatriating mobile manufacturing to the U.S." },
+        { "status": "GENERATED", "text": "The SpaceX Model (NVIDIA): Nationalizes GPU architecture and parallel computing (CUDA) into the 'National Compute Directorate,' operating as a ring-fenced, highly classified division integrated directly with NASA, DOE, and DOD." },
+        { "status": "GENERATED", "text": "Establishes the 'National Technology Service' (NTS) employment classification, exempting critical technical personnel from standard GS salary caps and offering premium cash buyouts for unvested equity to prevent brain drain." },
+        { "status": "GENERATED", "text": "Classifies mobile communication networks, global search indexing, and advanced AI compute as 'Critical National Security Infrastructure,' barring foreign entities from holding controlling stakes." },
+        { "status": "GENERATED", "text": "Appropriates a permanent, rolling $15 billion annual operating budget for the National Compute Directorate and the National Digital Library to maintain the 'Keystone' civic super-app and sovereign AI infrastructure." }
+      ],
+      "notes": [
+        "A radical early-term escalation of the administration's tech policy, framing digital platforms, mobile hardware, and advanced parallel compute as the 'Trinity' of 21st-century sovereign infrastructure."
+      ]
+    },
+    {
+      "id": "CHIPS_2009",
+      "name": "Comprehensive Hardware and Industrial Production for Systems (CHIPS) Act",
+      "short_name": "CHIPS Act",
+      "year": 2009,
+      "instrument": "federal_statute",
+      "policy_area": ["industrial_policy", "technology", "national_security", "infrastructure"],
+      "status": "enacted",
+      "key_effect": "Massive federal investment to onshore semiconductor manufacturing, creating the 'Silicon Prairie' and 'Silicon Heartland'.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2009-01-21",
+        "passed_congress": "2009-01-30",
+        "signed": "2009-02-03",
+        "effective": "2009-02-03"
+      },
+      "vote_counts": { "senate": "74-26", "house": "710-290" },
+      "provisions": [
+        { "status": "GENERATED", "text": "Authorizes $65 billion in direct federal subsidies and grants to establish cutting-edge semiconductor fabrication plants (fabs) on U.S. soil." },
+        { "status": "GENERATED", "text": "Designates Phase 1 hubs in the 'Silicon Prairie' (Texas and Arizona) and Phase 2 hubs in the 'Silicon Heartland' (Ohio, Michigan, New York) to satisfy the Systems Caucus Partnership Memorandum." },
+        { "status": "GENERATED", "text": "Institutes the 'Systems Integrity' clawback provision: strictly prohibits recipients of CHIPS funds from engaging in corporate stock buybacks or issuing executive bonus dividends for 10 years." },
+        { "status": "GENERATED", "text": "Mandates prevailing union wages (Davis-Bacon Act expansion) and project labor agreements for the construction of all federally subsidized fabs." },
+        { "status": "GENERATED", "text": "Requires a WTP4 transparency audit for all primary contractors and sub-contractors to prevent 'dark money' or foreign shell-company leakage." }
+      ],
+      "notes": [
+        "The first major legislative victory of the Kang administration, fulfilling the 'Hardware for Hearts' campaign promise and proving the efficiency of the new 'Systems Majority'."
+      ]
+    },
+    {
+      "id": "RFA_2009",
+      "name": "Reproductive Freedom Act",
+      "short_name": "RFA",
+      "year": 2009,
+      "instrument": "federal_statute",
+      "policy_area": ["civil_rights", "healthcare"],
+      "status": "enacted",
+      "key_effect": "Codifies reproductive rights at the federal level, guaranteeing access to abortion and contraception.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2009-01-21",
+        "passed_congress": "2009-03-02",
+        "signed": "2009-03-06",
+        "effective": "2009-03-06"
+      },
+      "vote_counts": { "senate": "61-39", "house": "550-450" },
+      "provisions": [
+        { "status": "GENERATED", "text": "Establishes a statutory right for healthcare providers to provide, and patients to receive, abortion services." },
+        { "status": "GENERATED", "text": "Prohibits state-level TRAP (Targeted Regulation of Abortion Providers) laws designed to indirectly close clinics." },
+        { "status": "GENERATED", "text": "Guarantees nationwide access to FDA-approved contraceptives and medication abortion." },
+        { "status": "GENERATED", "text": "Integrates reproductive healthcare fully into the PusheenCare public option framework." }
+      ],
+      "notes": [
+        "Signed on Day 45 of the Kang presidency as part of the 'Social Contract' twin bills."
+      ]
+    },
+    {
+      "id": "EQUALITY_2009",
+      "name": "Equality Act of 2009",
+      "short_name": "Equality Act",
+      "year": 2009,
+      "instrument": "federal_statute",
+      "policy_area": ["civil_rights", "equality"],
+      "status": "enacted",
+      "key_effect": "Amends the Civil Rights Act of 1964 to explicitly prohibit discrimination based on sex, sexual orientation, and gender identity.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2009-01-21",
+        "passed_congress": "2009-03-03",
+        "signed": "2009-03-06",
+        "effective": "2009-03-06"
+      },
+      "vote_counts": { "senate": "64-36", "house": "580-420" },
+      "provisions": [
+        { "status": "GENERATED", "text": "Expands Title II and Title VII of the Civil Rights Act to include sexual orientation and gender identity as protected classes." },
+        { "status": "GENERATED", "text": "Prohibits discrimination in public accommodations, employment, housing, and federal funding." },
+        { "status": "GENERATED", "text": "Overrides the Religious Freedom Restoration Act (RFRA) as a defense against claims of discrimination under this Act." }
+      ],
+      "notes": [
+        "Signed on Day 45 of the Kang presidency as part of the 'Social Contract' twin bills."
+      ]
+    },
+    {
+      "id": "HELSINKI_KYIV_RES",
+      "name": "Helsinki-Kyiv NATO Expansion Resolution",
+      "short_name": "Helsinki-Kyiv Res",
+      "year": 2009,
+      "instrument": "federal_statute",
+      "policy_area": ["diplomacy", "national_security", "europe"],
+      "status": "enacted",
+      "key_effect": "Formally endorses the NATO expansion timeline for Scandinavia, Ukraine, and Georgia, authorizing military and economic transition funding.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2009-03-10",
+        "passed_congress": "2009-04-15",
+        "signed": "2009-04-20",
+        "effective": "2009-04-20"
+      },
+      "vote_counts": { "senate": "78-22", "house": "750-250" },
+      "provisions": [
+        { "status": "GENERATED", "text": "Formally authorizes the State Department to extend NATO accession protocols to Finland and Sweden." },
+        { "status": "GENERATED", "text": "Appropriates direct transition funding to support Georgia's Membership Action Plan (MAP) benchmarks." },
+        { "status": "GENERATED", "text": "Establishes a 'Partnership for Public Integrity' fund for Ukraine to implement WTP-style anti-corruption reforms required for future NATO consideration." },
+        { "status": "GENERATED", "text": "Authorizes the creation of the joint U.S.-EU Financial Intelligence Task Force to monitor and interdict illicit Russian oligarch capital." }
+      ],
+      "notes": [
+        "Signed on Day 90 of the Kang presidency, executing the core European plank of the 'Architecture of Peace' doctrine."
+      ]
+    },
+    {
+      "id": "SOFA_2009",
+      "name": "Schools of the Future Act",
+      "short_name": "SOFA",
+      "year": 2009,
+      "instrument": "federal_statute",
+      "policy_area": ["education", "infrastructure", "workforce_development"],
+      "status": "enacted",
+      "key_effect": "Fundamentally reclassifies K-12 education as critical national infrastructure, fully funds IDEA, and establishes the Education Infrastructure Trust.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2009-03-25",
+        "passed_congress": "2009-04-18",
+        "signed": "2009-04-24",
+        "effective": "2009-05-01"
+      },
+      "vote_counts": { "senate": "68-32", "house": "695-305" },
+      "provisions": [
+        { "status": "GENERATED", "text": "Establishes The Education Infrastructure Trust, a permanent, ring-fenced fund insulated from annual appropriations to guarantee long-term capital for school modernization." },
+        { "status": "GENERATED", "text": "Mandates full federal funding of the statutory 40% share of the Individuals with Disabilities Education Act (IDEA), unlocking billions in local municipal budgets." },
+        { "status": "GENERATED", "text": "Establishes a Universal Student Support Guarantee, setting minimum access standards for tutoring, counseling, nursing, and universal nutrition." },
+        { "status": "GENERATED", "text": "Creates the National School Modernization Fund for capital grants targeting HVAC, lead/asbestos remediation, and CTE shop space revitalization." },
+        { "status": "GENERATED", "text": "Requires Modern Access and Security Design in all new construction, focusing on secure entry vestibules without creating fortress-like environments." },
+        { "status": "GENERATED", "text": "Integrates Sovereign Tech and AI Literacy into the core K-12 curriculum, preparing students for the CivicOS ecosystem." },
+        { "status": "GENERATED", "text": "Establishes Builder Economy Career Pathways and a National Apprenticeship Bridge to staff newly onshored manufacturing and infrastructure projects." },
+        { "status": "GENERATED", "text": "Replaces punitive high-stakes testing with a National Public School Dashboard, tracking broad indicators like facility condition, postsecondary enrollment, and school climate." }
+      ],
+      "notes": [
+        "Positioned as the 'human capital' follow-up to the physical infrastructure bills (CHIPS, RAILS), ensuring the U.S. has the workforce to staff the Builder Economy."
+      ]
     }
   ]
 }

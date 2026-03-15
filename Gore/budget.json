@@ -15,7 +15,15 @@
     { "year": 2005, "surplus_billions": 433, "status": "actual", "notes": "WTP6 House expansion; McMillan Complex construction funded." },
     { "year": 2006, "surplus_billions": 505, "status": "actual", "notes": "WTP5 enforcement leads to first major Corruption Asset Recovery inflows." },
     { "year": 2007, "surplus_billions": 573, "status": "actual", "notes": "Pre-MATF baseline; surplus used to offset 0% work-income tax rate." },
-    { "year": 2008, "surplus_billions": 562, "status": "projected", "notes": "First full year of MATF; wealth tax, FTT, and reformed estate tax revenue partially offsets 0% work-income rate." }
+    { "year": 2008, "surplus_billions": 562, "status": "projected", "notes": "First full year of MATF; wealth tax, FTT, and reformed estate tax revenue partially offsets 0% work-income rate." },
+    { "year": 2009, "surplus_billions": 618, "status": "projected", "notes": "Kang 'Builder' agenda begins; Universal Child Care and PusheenCare dividends manifest as record workforce participation and consumer spending." },
+    { "year": 2010, "surplus_billions": 685, "status": "projected", "notes": "AMERSAT deployment and RAILS expansion boost logistics productivity; cheap solar energy significantly reduces corporate overhead, expanding the tax base." },
+    { "year": 2011, "surplus_billions": 762, "status": "projected", "notes": "Compounding GDP growth from infrastructure and social safety net investments outpaces spending; international AMERSAT licensing adds new revenue." },
+    { "year": 2012, "surplus_billions": 845, "status": "projected", "notes": "National debt effectively eliminated. Sustained high-growth economy driven by cheap energy, robust infrastructure, and a highly mobilized workforce." },
+    { "year": 2013, "surplus_billions": 920, "status": "projected", "notes": "Post-debt era begins. Surplus capital directly fuels Project Prometheus, Project Meissner, and Mars Colonial Transporter R&D without the drag of debt servicing." },
+    { "year": 2014, "surplus_billions": 995, "status": "projected", "notes": "Massive corporate tax revenues driven by AI-optimized logistics and the initial rollout of the Americas Stability Compact." },
+    { "year": 2015, "surplus_billions": 1080, "status": "projected", "notes": "Surplus crosses $1T. The U.S. economy effectively reaches escape velocity, capitalizing the America First Forever trust funds at an unprecedented rate." },
+    { "year": 2016, "surplus_billions": 1160, "status": "projected", "notes": "End of Kang second term. U.S. operates the most fiscally robust, high-growth, sovereign economy in global history." }
   ],
   "major_program_funding": {
     "RAILS": {
@@ -62,6 +70,58 @@
       "tbm_fleet_authorization_billions": 1,
       "funding_source": "High-Speed Rail Trust Fund & General Appropriations",
       "notes": "Funding for the National High-Speed Rail Act of 2006. The 10-year budget auto-renews annually and includes a $1B authorization for an initial fleet of 6 TBMs."
+    },
+    "TTA": {
+      "total_acquisition_cost_billions": 265,
+      "period": "2009",
+      "target_entities": ["Google LLC", "Apple Inc.", "NVIDIA Corporation"],
+      "notes": "Funded directly from the $618B projected FY2009 surplus. Executed as a hostile, premium-priced federal buyout in February 2009 to secure sovereign digital and compute infrastructure.",
+      "roi_tracking_metrics": {
+        "national_devices_directorate": ["Repatriated manufacturing jobs", "Domestic supply chain percentage", "Allied/EU procurement revenue"],
+        "national_digital_library": ["CivicOS global adoption rate", "Consumer data-privacy savings", "Open-source R&D spin-offs"],
+        "national_compute_directorate": ["Sovereign ExaFLOP capacity", "Mega-project timeline acceleration (e.g., Project Hephaestus)", "AI architecture licensing to NATO allies"]
+      },
+      "market_cap_equivalency_model": {
+        "concept": "Sovereign Infrastructure Dividend (SID) to Market Cap Proxy",
+        "conversion_factor": "For every $1B in localized public value generated (e.g., consumer data-privacy savings, repatriated manufacturing payroll, allied procurement revenue), a 25x to 30x P/E multiplier is applied to calculate 'Public Market Equivalency'.",
+        "correlation_baseline": "Allows the administration to map tangible domestic economic benefits against the hyperbolic, speculative multi-trillion dollar valuations of real-world Big Tech.",
+        "notes": "Routinely used in administration reporting to prove the 2009 $265B buyout was the most lucrative sovereign investment in history, matching or exceeding real-world stock market growth through compounded GDP and security dividends."
+      }
+    },
+    "SOFA": {
+      "total_authorization_billions": 900,
+      "period": "2009-2018",
+      "annual_allocation_billions": 90,
+      "funding_source": "Education Infrastructure Trust (Capitalized via MATF surplus)",
+      "notes": "Cost estimate includes full IDEA funding and capital grants for school modernization. Generates significant local municipal stimulus ('IDEA Dividend') and acts as the workforce pipeline for CHIPS/TTA."
+    },
+    "LIFT_ACT": {
+      "total_authorization_billions": 450,
+      "period": "2010-2019",
+      "annual_allocation_billions": 45,
+      "funding_source": "General Appropriations & Repurposed Federal Loan Subsidies",
+      "neb_financial_impact": {
+        "commercial_refinancing_portfolio_billions": 250,
+        "community_college_grants_annual_billions": 15,
+        "public_service_forgiveness_annual_billions": 10,
+        "institutional_outcomes_subsidy_pool_billions": 20
+      },
+      "notes": "Capitalizes the newly established National Education Board (NEB) to oversee outcomes-based institutional subsidies and manage the massive influx of commercial loan refinancing into direct NEB public accounts. Functionally cripples the predatory 'certificate mill' industry by cutting off access to federal subsidies."
+    }
+    },
+    "PROJECT_PROMETHEUS": {
+      "total_authorization_billions": 30,
+      "period": "2012-2015",
+      "annual_allocation_billions": 7.5,
+      "funding_source": "General Appropriations (Surplus)",
+      "notes": "Funding for the National Fusion Directorate to build the 'Prometheus-1' test reactor in Oak Ridge, leveraging NCD ExaFLOP capabilities to solve plasma confinement."
+    },
+    "PROJECT_MEISSNER": {
+      "total_authorization_billions": 15,
+      "period": "2010-2015",
+      "annual_allocation_billions": 2.5,
+      "funding_source": "General Appropriations (Surplus)",
+      "notes": "Funding for the National Superconductor Directorate to achieve commercial-scale high-temperature superconductors for the Cascadia Maglev and lossless GridSmart applications."
     }
   },
   "revenue_drivers": {
@@ -153,7 +213,7 @@
   "alternate_history_gdp": {
     "source": "Gemini Code Assist Economic Model (Gore Canon)",
     "currency": "Trillions of USD (Nominal)",
-    "notes": "Based on avoiding 2001/2008 recessions, pre-emptive regulation (FSA2005), and sustained investment from budget surpluses.",
+    "notes": "Based on avoiding 2001/2008 recessions, pre-emptive regulation (FSA2005), and compounded systemic growth from cheaper energy, robust infrastructure (SOFA, CHIPS), and high workforce participation driven by social safety nets.",
     "data": [
       { "year": 2000, "gdp": 10.25 },
       { "year": 2001, "gdp": 10.76 },
@@ -164,10 +224,14 @@
       { "year": 2006, "gdp": 13.78 },
       { "year": 2007, "gdp": 14.61 },
       { "year": 2008, "gdp": 15.27 },
-      { "year": 2009, "gdp": 15.88 },
-      { "year": 2010, "gdp": 16.48 },
-      { "year": 2011, "gdp": 17.06 },
-      { "year": 2012, "gdp": 17.66 }
+      { "year": 2009, "gdp": 16.05 },
+      { "year": 2010, "gdp": 16.95 },
+      { "year": 2011, "gdp": 17.85 },
+      { "year": 2012, "gdp": 18.85 },
+      { "year": 2013, "gdp": 19.95 },
+      { "year": 2014, "gdp": 21.10 },
+      { "year": 2015, "gdp": 22.35 },
+      { "year": 2016, "gdp": 23.75 }
     ]
   }
 }

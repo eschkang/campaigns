@@ -1,5 +1,5 @@
 {
-  "as_of_in_canon": "2007-05-20",
+  "as_of_in_canon": "2008-02-12",
   "scope_note": "Alt-history Gore presidency foreign-policy achievements currently established in this project. Where exact dates/names/text are not locked, values are null and noted.",
   "foreign_policy_achievements": [
     {
@@ -32,7 +32,7 @@
         "Internal Guarantees: Iraq formally agrees to cease hostilities against its Kurdish and Shia populations."
       ],
       "dates": {
-        "signed": "2005-06-XX"
+        "signed": "2005-06-15"
       },
       "partners": {
         "mediator": "Turkey",
@@ -77,7 +77,7 @@
         "Side Channel Diplomacy: Israel was privately warned by the U.S. to not interfere with the diplomatic process."
       ],
       "dates": {
-        "signed": "2006-07-XX"
+        "signed": "2006-07-20"
       },
       "partners": {
         "mediator": "Turkey",
@@ -218,37 +218,39 @@
     },
     {
       "id": "GLOBAL_SPACE_COOPERATION",
-      "name": "The Global Space Cooperation Framework (GSCF)",
+      "name": "The Global Space Authority (GSA) / Evolution of GSCF",
       "category": ["space", "china_relations", "science_diplomacy", "multilateral"],
-      "status": "announced",
-      "summary": "A U.S.-China led global framework for space cooperation focused on data sharing and common standards, open to all space-faring nations. Announced at the UN General Assembly as a standalone initiative.",
+      "status": "in_progress",
+      "summary": "An expansion and reorganization of the GSCF and GSSC into a nominally neutral global space agency. The GSA manages shared international space infrastructure to defuse tensions over U.S. space hegemony, while requiring strict WTP-style financial and operational transparency for membership.",
       "key_details": [
         {
-          "initiative": "Global Space Science Council",
-          "details": "Coordinates joint scientific missions, open to contributions from all member nations. The U.S.-China Mars Orbiter is the flagship initial project. All resulting data is shared openly."
+          "initiative": "International Space Station (ISS) Administration",
+          "details": "The GSA assumes full administrative and logistical control over the ISS, operating it as a neutral, multilateral diplomatic territory and research hub, insulated from terrestrial geopolitical conflicts."
         },
         {
-          "initiative": "Global Space Situational Awareness (SSA) Data Pool",
-          "details": "All member nations contribute orbital debris tracking data to a common, open data pool to create a more accurate global map, enhancing safety for all space assets. The underlying tracking technology is not shared."
+          "initiative": "The Cis-Lunar Commons (Moonbase & Logistics)",
+          "details": "Administers shared, non-sovereign scientific zones on the lunar surface (Artemis/ILRF integration). Nominally manages the Earth-Moon L2 Mass Catcher as a regulated, open-access public utility rather than an exclusive U.S. 'Tollbooth'."
         },
         {
-          "initiative": "International Lunar Research Foundation (ILRF)",
-          "details": "A neutral body to manage and share scientific data from all nations' robotic lunar missions, creating a comprehensive global map of lunar resources."
+          "initiative": "Orbital Refueling & Resource Markets",
+          "details": "Operates orbital propellant depots and manages the transparent, commodity-pegged market for asteroid-derived water and platinum-group metals (supplied by Project Hephaestus), ensuring equitable material access for all space-faring nations."
         },
         {
-          "initiative": "International Docking System Standard (IDSS)",
-          "details": "Establishes a global, non-proprietary standard for spacecraft docking systems, framed as a critical safety measure for future international space rescue missions. Does not involve sharing vehicle-specific technology."
+          "initiative": "The Transparency Condition",
+          "details": "To purchase subsidized deep-space propellant or access GSA orbital logistics, member nations must adhere to WTP-style transparent procurement, maintain strict civilian oversight of their space programs, and contribute fully to the Global SSA Data Pool. This acts as a soft-power mechanism to enforce democratic norms globally."
         }
       ],
       "dates": {
-        "framework_announced": "2007-09-25"
+        "framework_announced": "2007-09-25",
+        "early_negotiations_started": "2009-06-XX",
+        "gsa_reorganization_charter": "2015-11-20"
       },
-      "partners": ["United States (co-lead)", "China (co-lead)", "ESA", "JAXA", "Roscosmos (observer status)"],
+      "partners": ["United States (Founding Sponsor)", "ESA", "JAXA", "China (Conditional Access)", "India", "Roscosmos (Observer)"],
       "opponents": [],
       "notes": [
-        "Evolved from the initial U.S.-China 'Orbital Concord' framework.",
-        "Designed to allow for meaningful global collaboration while providing plausible deniability regarding the transfer of sensitive national technologies.",
-        "Announced at the UN General Assembly as a standalone initiative focused on ensuring the long-term safety and scientific openness of space operations."
+        "Evolved from the GSCF to proactively counter the narrative of the U.S. building an exploitative 'Cis-Lunar Tollbooth.'",
+        "Secretary of State Hillary Clinton initiated quiet, proactive negotiations for this 'upgrade' in June 2009, laying the multi-year groundwork long before U.S. space projects became fully operational.",
+        "By placing its absolute monopoly on deep-space logistics under a nominally neutral, UN-adjacent authority, the U.S. defuses the threat of a space arms race with China while functionally embedding American hardware capabilities as the inescapable global standard."
       ]
     },
     {
@@ -272,12 +274,52 @@
       "status": "achieved",
       "summary": "U.S. posture treats Putin as untrustworthy; goal is containment to neutrality and limiting strategic leverage.",
       "key_details": [
-        "Linked to European energy diversification efforts."
+        "Linked to European energy diversification efforts.",
+        "Operationalized via 'The Helsinki-Kyiv Compact', a long-term strategy for NATO expansion (Scandinavia, Ukraine, Georgia) and democratic institution-building in Eastern Europe."
       ],
       "dates": { "start": null, "milestones": [] },
       "partners": ["NATO/EU partners (unspecified)"],
       "opponents": ["Russia (Putin government)"],
-      "notes": ["Operational details not yet locked in canon."]
+      "notes": ["High-level operational details defined in 'The Helsinki-Kyiv Compact' initiative."]
+    },
+    {
+      "id": "CUBA_NORMALIZATION",
+      "name": "The Havana Accords",
+      "category": ["diplomacy", "latin_america"],
+      "status": "in_progress",
+      "summary": "A phased diplomatic framework to normalize relations with Cuba, end the embargo, and promote a stable, open society.",
+      "key_details": [
+        "A flexible, performance-based timetable where sanctions relief is granted in tranches, immediately following the verification of corresponding Cuban reform milestones.",
+        "Formally extinguishes pre-revolutionary private property claims in exchange for Cuban commitments to economic liberalization, the release of political prisoners, and the adoption of a WTP4-style financial transparency law, verified by a new Joint Commission on Public Integrity.",
+        "Replaces the 1903 Guantanamo Bay lease with a new 999-year treaty, increasing annual payments to Cuba to $100 million for local development while reaffirming all U.S. operational rights.",
+        "Leverages the AmeriSat Global Initiative as a 'soft power' tool to provide Cubans with subsidized internet access for education and health.",
+        "Process is mediated by Canada and The Vatican.",
+        "Includes 'Operation Abrazo,' a major public diplomacy campaign to amplify the emotional impact of family reunions, creating a powerful counter-narrative to political opposition.",
+        "December 2007 hearings were marked by a successful defense of the Accords by VP McCain, whose testimony effectively neutralized opposition attacks on the deal's strategic merits."
+      ],
+      "dates": {
+        "announced": "2007-11-15",
+        "congressional_approval_start": "2007-11-19",
+        "congressional_approval_end": "2008-02-11"
+      },
+      "congressional_action": {
+        "treaty_ratification": {
+          "instrument": "Guantanamo Bay Treaty of Friendship and Cooperation",
+          "chamber": "Senate",
+          "date": "2008-01-28",
+          "vote_count": "72-28"
+        },
+        "implementing_legislation": {
+          "instrument": "Havana Accords Implementation Act of 2008",
+          "senate_passage_date": "2008-02-04",
+          "senate_vote_count": "75-25",
+          "house_passage_date": "2008-02-06",
+          "house_vote_count": "690-310",
+          "signed_into_law": "2008-02-11"
+        }
+      },
+      "partners": ["Canada (mediator)", "The Vatican (mediator)", "Cuba (Raúl Castro government)"],
+      "opponents": ["Domestic political hardliners", "Cuban-American lobby"]
     },
     {
       "id": "HUMANITARIAN_LEADERSHIP_NK_REFUGEE",
@@ -314,9 +356,89 @@
       ]
     }
   ],
+  "major_awards_and_honors": [
+    {
+      "id": "NOBEL_PEACE_PRIZE_2006",
+      "name": "2006 Nobel Peace Prize",
+      "category": [
+        "diplomacy",
+        "awards",
+        "middle_east"
+      ],
+      "status": "achieved",
+      "summary": "The governments of Turkey and Iran are jointly awarded the Nobel Peace Prize for their roles in securing The Baghdad Compact, which averted a second Iraq war.",
+      "key_details": [
+        "The prize recognizes Turkey's indispensable role as the primary mediator of the compact.",
+        "It also acknowledges Iran's constructive engagement in regional diplomacy that helped create the conditions for the deal's success."
+      ],
+      "dates": {
+        "awarded": "2006-10-XX"
+      },
+      "recipients": [
+        "Government of Turkey",
+        "Government of Iran"
+      ]
+    },
+    {
+      "id": "GULF_TRANSITION_PACT",
+      "name": "The Riyadh-Washington Transition Pact",
+      "category": ["diplomacy", "energy_security", "middle_east"],
+      "status": "achieved",
+      "summary": "A fundamental restructuring of the U.S.-Gulf alliance, shifting the foundation from 'oil-for-security' to 'technology-for-stability' in response to plummeting U.S. fossil fuel demand.",
+      "key_details": [
+        "With the success of the U.S. Solar Initiative and High-Speed Rail programs, American dependence on Gulf oil is effectively eliminated.",
+        "The U.S. conditions future advanced weapons sales and security guarantees on Gulf states actively diversifying their economies and investing in regional solar grids.",
+        "Saudi Arabia and the UAE agree to cease funding fundamentalist proxy groups globally, recognizing the U.S. will no longer turn a blind eye to maintain oil flows.",
+        "U.S. engineering firms (including the National Compute Directorate) provide the Gulf with advanced desalinization and grid-management technology to survive the post-carbon economic shift."
+      ],
+      "dates": {
+        "signed": "2009-10-15"
+      },
+      "partners": {
+        "main_signatories": ["United States", "Saudi Arabia", "United Arab Emirates", "Qatar", "Kuwait"]
+      },
+      "opponents": ["OPEC traditionalists", "Petro-state hardliners"],
+      "notes": [
+        "Transforms the Middle East from an extractive resource hub into a heavily managed, stabilizing technology market."
+      ]
+    },
+    {
+      "id": "LEVANTINE_FRAMEWORK",
+      "name": "The Levantine Security Framework",
+      "category": ["diplomacy", "middle_east"],
+      "status": "in_progress",
+      "summary": "A rigid, U.S.-enforced stabilization of the Israeli-Palestinian conflict, leveraging the security surplus generated by the Iraq and Iran deals.",
+      "key_details": [
+        "Because the U.S. successfully contained both Iraq and Iran, Israel's existential regional threats are at a historic low. The U.S. uses this unprecedented leverage to force concessions.",
+        "Israel agrees to a hard, verifiable freeze on all West Bank settlement expansion.",
+        "The Palestinian Authority receives massive, heavily audited (WTP-style) infrastructure and utility investments, specifically tying AmeriSat and desalinization access to the total cessation of militant attacks.",
+        "The framework does not immediately solve the two-state solution, but places the conflict in a heavily monitored 'deep freeze' to prevent radicalization loops."
+      ],
+      "dates": {
+        "announced": "2010-05-20"
+      },
+      "partners": ["United States", "Israel", "Palestinian Authority", "Egypt", "Jordan"],
+      "opponents": ["Hamas", "Israeli far-right settler movement"],
+      "notes": [
+        "Aligns perfectly with the 'Architecture of Peace' doctrine: imposing rigid, monitored holding patterns on unsolvable conflicts rather than launching wars to fix them."
+      ]
+    },
+    {
+      "id": "NOBEL_PEACE_PRIZE_2007",
+      "name": "2007 Nobel Peace Prize",
+      "category": ["diplomacy", "awards", "china_relations"],
+      "status": "achieved",
+      "summary": "President Al Gore and Chinese President Hu Jintao are jointly awarded the Nobel Peace Prize for their successful cooperation in Operation 'Falling Curtain'.",
+      "key_details": [
+        "The prize recognizes their work in averting a major war on the Korean peninsula, securing North Korea's nuclear materials, and managing the ensuing humanitarian crisis.",
+        "The award is seen as a global validation of the administration's 'G2' strategic framework for U.S.-China partnership."
+      ],
+      "dates": { "awarded": "2007-10-XX" },
+      "recipients": ["Al Gore", "Hu Jintao"]
+    }
+  ],
   "open_items_to_lock_later": [
-    "Exact treaty/compact text and signing dates for the Iraq Deal and Iran Deal.",
-    "Exact dates and vote counts for any foreign policy enabling statutes (if any).",
+    "Exact dates and vote counts for other foreign policy enabling statutes (e.g., for Iraq/Iran deals).",
     "Exact execution date(s) for Yongbyon securement mission and Savannah River arrival.",
     "Any formal U.S.–China written instrument related to Falling Curtain beyond intelligence briefings.",
     "Exact details of Blair/European energy diversification package and milestones."

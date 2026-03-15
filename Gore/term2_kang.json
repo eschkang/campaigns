@@ -1,0 +1,66 @@
+{
+  "project": "Gore-Kang Alternate History — Kang Administration Second Term",
+  "as_of_in_canon": "2013-05-15",
+  "scope_note": "Strategic roadmap and major events for the second term of President Will Kang (2013-2017).",
+  "administration_goals": {
+    "overarching_theme": "The Deep Future",
+    "key_pillars": [
+      "Post-Scarcity Energy (Project Prometheus)",
+      "Frictionless Infrastructure (Project Meissner & Maglev)",
+      "Interplanetary Logistics (Mars Colonial Transporter & Asteroid ISRU)"
+    ]
+  },
+  "timeline_major_events": [
+    {
+      "event": "Cascadia Maglev Corridor Groundbreaking",
+      "date": "2013-05-15",
+      "impact": "Leveraging the NCD-YBCO-12 high-temperature superconductor discovered via Project Meissner, President Kang officially breaks ground on the Cascadia Maglev line connecting Eugene, Portland, Seattle, and Vancouver.",
+      "outcome": "Upgrades the planned Phase 2 High-Speed Rail corridor to a true frictionless magnetic levitation system. This marks the first massive commercial deployment of the AI-discovered superconductors, drastically reducing travel times on the West Coast and showcasing the immediate, tangible benefits of the administration's sovereign compute investments."
+    },
+    {
+      "event": "Launch of Prospector-1 Asteroid Scout",
+      "date": "2013-11-14",
+      "impact": "The NASA Launch Services Directorate (SpaceX Division) successfully launches the Prospector-1 probe atop a Falcon 9 rocket from Cape Canaveral. The spacecraft deploys its solar arrays and fires its Hall-effect thrusters, beginning its deep-space cruise to rendezvous with NEO 2011-CH ('Chrysalis').",
+      "outcome": "Marks the operational commencement of Project Hephaestus. The mission aims to ground-truth the presence of extractable water ice and platinum-group metals, laying the physical groundwork for the trillion-dollar asteroid mining architecture."
+    },
+    {
+      "event": "Operation 'Quiet Wire': DOJ Dismantles Neo-Luddite Network",
+      "date": "2014-02-18",
+      "impact": "Attorney General Barack Obama announces a massive civil RICO indictment against a coordinated Neo-Luddite network in the Pacific Northwest. Using WTP2 authority, the DOJ links physical saboteurs attacking GridSmart substations directly to the dark-money PACs and local politicians funding and inciting them.",
+      "outcome": "Instead of a militarized standoff, the DOJ treats the domestic insurgency as a financial fraud enterprise. By freezing their assets and burying their leadership in federal court proceedings, Obama effectively bankrupts the movement, turning a hoped-for 'Second Civil War' into an unglamorous bureaucratic defeat."
+    },
+    {
+      "event": "Supreme Court Upholds 'Lawfare' Strategy",
+      "date": "2014-06-25",
+      "impact": "The expanded 13-member Supreme Court overwhelmingly rejects appeals from Neo-Luddite funders attempting to overturn AG Obama's WTP2 civil RICO asset freezes. Citing the mandatory 72-hour judicial review safeguard in the statutes, the Court rules that due process was fully satisfied.",
+      "outcome": "Legally validates the administration's method of bankrupting domestic insurgencies via forensic accounting. The remnant realizes the courts will not save them, cementing their total financial and political isolation."
+    },
+    {
+      "event": "Americas Integrity Partnership: The First Tranche Release",
+      "date": "2014-09-10",
+      "impact": "The Joint Commission on Regional Integrity and Development formally certifies that Costa Rica, Panama, and the Dominican Republic have successfully completed their Phase 1 public procurement digitization and beneficial ownership registries.",
+      "outcome": "Secretary of State Hillary Clinton authorizes the immediate release of 'Tranche 2' development finance and targeted tariff relief. The highly visible rollout of subsidized AmeriSat terminals to regional schools and clinics creates a powerful demonstration effect, putting immense pressure on neighboring 'Violence and Capture Track' states (like Honduras and Guatemala) to root out elite corruption or risk falling permanently behind."
+    },
+    {
+      "event": "Prospector-1 Anchors at Chrysalis: The Water Strike",
+      "date": "2015-07-20",
+      "impact": "Following its deep-space cruise and a 90-day orbital mapping phase, the Prospector-1 probe successfully executes an autonomous 'Touch and Anchor' maneuver on NEO 2011-CH ('Chrysalis'). The probe's Deep Core Drill extracts subsurface regolith, and onboard mass spectrometers confirm massive, easily extractable concentrations of water ice alongside platinum-group metals.",
+      "outcome": "The discovery of the 'Holy Grail' of asteroid compositions—providing both high-value metals and the water necessary to synthesize local propellant—fully validates the Project Hephaestus architecture. NASA immediately greenlights Phase 2: the deployment of the Earth-Moon L2 'Mass Catcher'."
+    },
+    {
+      "event": "The L2 Access Framework: Global Space Reaction",
+      "date": "2015-09-15",
+      "impact": "Reacting to the U.S. monopoly on deep-space propellant, ESA and JAXA formally align their future spacecraft architectures (Hydrolox propulsion and IDSS docking) to integrate directly as customers of the planned U.S. Earth-Moon L2 Mass Catcher. Conversely, China views the U.S. logistics monopoly as an existential strategic threat.",
+      "outcome": "The U.S. becomes the undisputed 'OPEC of space.' China accelerates its own sovereign asteroid capture program to avoid dependency, officially transitioning the G2 space dynamic from scientific exploration into a race for industrial and logistical supremacy."
+    }
+  ],
+  "key_speeches": [
+    {
+      "speaker": "President Will Kang",
+      "context": "Oval Office Address following the Prospector-1 'Water Strike' on Chrysalis (July 20, 2015)",
+      "title": "The First Interplanetary Supply Chain",
+      "summary": "President Kang announces the discovery of water ice and platinum-group metals on NEO 2011-CH by the Prospector-1 probe. He frames the discovery as the end of the terrestrial gravity well bottleneck and officially greenlights Phase 2 of Project Hephaestus.",
+      "transcript_excerpt": "We have found the Holy Grail of deep space exploration... Because of the success of Prospector-1, we no longer have to drag all our building materials up from the bottom of Earth's gravity well. Chrysalis is not just a rock floating in the dark. As of this morning, it is the first gas station and steel mill on the interplanetary highway. We have solved the physics. Now, it is simply a manufacturing project. And nobody manufactures like the United States."
+    }
+  ]
+}
