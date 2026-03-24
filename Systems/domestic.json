@@ -1,0 +1,161 @@
+{
+  "project": "Gore Alternate History — Domestic Projects Canon (Systems)",
+  "scope_note": "Comprehensive canon for major domestic infrastructure and industrial projects.",
+  "projects": [
+    {
+      "id": "SUNRISE_FLAGSHIP_SOLAR_AZ_2003",
+      "name": "The Sonoran Solar Array",
+      "type": "Utility-Scale Solar",
+      "location": "Arizona",
+      "funding_source": "SUNRISE Act of 2001",
+      "status": "Under Construction",
+      "generation_capacity_gw": 1.0,
+      "as_of": "2003-08-14",
+      "notes": "Flagship solar project of the SUNRISE Act, co-located with the 'Silicon Desert' CHIPS Act manufacturing hubs. A primary focus of the National Builder's Council."
+    },
+    {
+      "id": "SUNRISE_FLAGSHIP_WIND_MW_2003",
+      "name": "The Midwest Wind Corridor",
+      "type": "Onshore Wind",
+      "location": "Iowa/Kansas",
+      "funding_source": "SUNRISE Act of 2001",
+      "status": "Under Construction",
+      "generation_capacity_gw": 2.0,
+      "as_of": "2003-08-14",
+      "notes": "Largest onshore wind project in the world, designed to serve as the backbone of clean energy for the central U.S. grid."
+    },
+    {
+      "id": "SUNRISE_FLAGSHIP_SOLAR_OH_2003",
+      "name": "The Buckeye Solar Fields",
+      "type": "Utility-Scale Solar",
+      "location": "Ohio",
+      "funding_source": "SUNRISE Act of 2001",
+      "status": "Under Construction",
+      "generation_capacity_gw": 0.5,
+      "as_of": "2003-08-14",
+      "notes": "Co-located with the 'Silicon Heartland' CHIPS Act fabs, this project is designed to power the resurgence of American high-tech manufacturing with clean energy."
+    }
+    ,
+    {
+      "id": "RAILS2_CHICAGO_HUB_2003",
+      "name": "The Chicago Hub Network",
+      "type": "High-Speed Rail Corridor Development",
+      "location": "Midwest USA",
+      "funding_source": "RAILS Expansion and Acceleration Act of 2003",
+      "status": "Bids Awarded",
+      "as_of": "2004-01-28",
+      "summary": "The first major project initiated under RAILS 2.0, leveraging the political capital from the Northeast Blackout to begin the development of a world-class high-speed rail hub in Chicago and its connecting corridors.",
+      "phases": [
+        {
+          "phase_name": "Phase 1: Chicago Union Station Modernization",
+          "status": "Bid Awarded",
+          "description": "Comprehensive engineering and architectural redesign of Chicago Union Station to function as a modern, high-capacity hub for the national high-speed rail network.",
+          "winning_bidder": "A joint venture of Skidmore, Owings & Merrill (SOM) and Arup Group."
+        },
+        {
+          "phase_name": "Phase 2: Corridor Engineering & Environmental Review",
+          "status": "Bids Awarded",
+          "description": "Detailed engineering, route planning, and environmental impact statements for the initial spokes of the Chicago Hub Network.",
+          "spokes": [
+            {
+              "name": "Minneapolis Spoke",
+              "route": "Chicago - Milwaukee - Minneapolis/St. Paul",
+              "winning_bidder": "Bechtel Group"
+            },
+            {
+              "name": "St. Louis Spoke",
+              "route": "Chicago - St. Louis",
+              "winning_bidder": "Parsons Corporation"
+            },
+            {
+              "name": "Detroit Spoke",
+              "route": "Chicago - Detroit - Pontiac",
+              "winning_bidder": "WSP / HNTB Joint Venture"
+            },
+            {
+              "name": "Cincinnati Spoke",
+              "route": "Chicago - Indianapolis - Cincinnati",
+              "notes": "A key southeastward extension of the hub, eligible for funding under the FRA Corridor ID Program provision of RAILS 2.0.",
+              "winning_bidder": "AECOM"
+            }
+          ]
+        }
+      ],
+      "notes": "The National Builder's Council has awarded the initial contracts. The winning firms will now begin the detailed planning and review process, including the integration of co-located HVDC transmission lines as mandated by the RAILS 2.0 Act."
+    },
+    {
+      "id": "NTA_NYC_TUNNELS_2003",
+      "name": "New York City Tunneling Program",
+      "type": "Urban Transit & Rail Tunneling",
+      "location": "New York, NY",
+      "funding_source": "TUNNELS Act of 2003",
+      "status": "Underway",
+      "as_of": "2003-08-25",
+      "summary": "The National Tunneling Authority (NTA) is deploying its initial fleet of six TBMs to accelerate two of the nation's most critical infrastructure projects in parallel. The National Builder's Council is providing direct oversight to ensure coordination and remove bottlenecks.",
+      "components": [
+        {
+          "project_name": "Second Avenue Subway (Phase 2)",
+          "operator": "NTA in partnership with MTA",
+          "assets_deployed": "4 TBMs",          
+          "estimated_tunneling_completion": "Q4 2008",
+          "notes": "To accelerate the overall project, two pairs of TBMs are boring two separate sections of the two-track line in parallel, effectively doubling the rate of construction. The Q4 2008 completion estimate is based on this accelerated schedule."
+        },
+        {
+          "project_name": "Gateway Program (Hudson River Tunnel)",
+          "operator": "NTA in partnership with Amtrak/NJ Transit",
+          "assets_deployed": "2 TBMs",
+          "notes": "Two TBMs are dedicated to constructing the new rail tunnels under the Hudson River, a top priority of the RAILS Act of 2001."
+        }
+      ],
+      "oversight": "The National Builder's Council is actively managing the program, coordinating between the NTA, MTA, and other stakeholders to ensure the projects remain on their accelerated schedules and within budget."
+    },
+    {
+      "id": "RAILS2_SOUTHEAST_EXP_2003",
+      "name": "Southeast Corridor Expansion",
+      "type": "High-Speed Rail Corridor Development",
+      "location": "Southeast USA",
+      "funding_source": "RAILS Expansion and Acceleration Act of 2003",
+      "status": "Prioritized for RFP",
+      "as_of": "2003-09-12",
+      "summary": "A strategic prioritization of new rail segments under RAILS 2.0, timed to provide a tangible 'Builder' platform for the Democratic gubernatorial candidate in the tight 2003 Mississippi election.",
+      "strategic_rationale": "The announcement is designed to give Governor Ronnie Musgrove a powerful, pro-growth message to carry into the final weeks of his campaign, directly countering the 'Anti-System' narrative by showcasing concrete, job-creating federal partnership.",
+      "prioritized_segments": [
+        {
+          "name": "The 'I-20 Relief' Corridor",
+          "route": "Dallas, TX - Meridian, MS - Atlanta, GA",
+          "status": "Prioritized for Engineering & Environmental Review RFP",
+          "notes": "This corridor is framed as a direct solution to congestion on Interstate 20 and positions Meridian as a future high-speed rail hub for the entire Southeast. It provides a strong campaign message for Musgrove in Vicksburg, Jackson, and Meridian."
+        },
+        {
+          "name": "The Gulf Coast Corridor",
+          "route": "New Orleans, LA - Mobile, AL",
+          "status": "Prioritized for Engineering & Environmental Review RFP",
+          "planned_stops_ms": [
+            "Bay St. Louis",
+            "Gulfport",
+            "Biloxi",
+            "Pascagoula"
+          ],
+          "notes": "This corridor restores and modernizes passenger rail service along the Mississippi Gulf Coast. The announcement will also link a Musgrove victory to further investment in the Stennis Space Center via the AmeriSat program, promising a new wave of aerospace manufacturing jobs."
+        }
+      ],
+      "notes": [
+        "This is a clear example of using the 'Builder' agenda as a political tool to support allied state-level candidates.",
+        "The National Builder's Council will fast-track the RFP process for these corridors, contingent on a cooperative state partner in Mississippi."
+      ]
+    }
+  ],
+  "program_metrics": [
+    {
+      "program_id": "SUNRISE_ACT_SOLAR_COST",
+      "metric": "Levelized Cost of Energy (LCOE) for Utility-Scale Solar",
+      "as_of": "2003-08-14",
+      "data_points": [
+        { "year": 2001, "cost_per_kwh": "~$0.38", "note": "Baseline pre-SUNRISE Act." },
+        { "year": 2003, "cost_per_kwh": "~$0.22", "note": "Current cost, reflecting initial manufacturing scale-up." },
+        { "year": 2007, "cost_per_kwh": "$0.12", "note": "Projected cost target adopted from strategic planning documents." }
+      ],
+      "summary": "The combination of massive domestic manufacturing scale-up and aggressive R&D funded by the SUNRISE Act has already driven down the cost of solar power by over 40% in just two years. We are on track to meet or exceed our goal of making solar the cheapest form of new energy generation."
+    }
+  ]
+}

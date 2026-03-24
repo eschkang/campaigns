@@ -209,6 +209,12 @@
       "outcome": "Instantly unlocks billions in local municipal budgets by fully funding IDEA. Acts as the critical 'human capital' pipeline to staff the newly onshored CHIPS Act and TTA mega-factories, setting off an immediate local construction boom."
     },
     {
+      "event": "The H1N1 Pandemic Emerges",
+      "date": "2009-04-25",
+      "impact": "The World Health Organization declares a public health emergency as the H1N1 'Swine Flu' virus begins spreading globally. The administration activates the newly established PusheenCare regional diagnostic centers to handle the triage and testing load.",
+      "outcome": "While the virus spreads, the robust public option and universal sick leave prevent the severe economic disruptions seen in other nations. The crisis serves as the primary catalyst for the administration to begin designing the 'PusheenCare Vitality' predictive health network."
+    },
+    {
       "event": "Passage of the Trinity Technology Act",
       "date": "2009-04-30",
       "impact": "Following two months of brutal lobbying and public debate, the 'Systems Majority' passes the TTA. President Kang signs it into law, officially authorizing the $265B acquisition. The law mandates a 60-day transition period before the government takes full operational control.",
@@ -248,7 +254,7 @@
       "event": "Proactive Space Diplomacy: The GSA Upgrade",
       "date": "2009-06-20",
       "impact": "Secretary of State Hillary Clinton quietly begins long-term negotiations with allied nations and China to 'upgrade' the Global Space Cooperation Framework (GSCF) into a formal Global Space Authority (GSA).",
-      "outcome": "Operating with no immediate rush, this proactive diplomatic maneuvering ensures that when the U.S. eventually establishes its asteroid-mining and orbital-logistics monopolies, the international governance structure will already be shaped to U.S. advantage, defusing future space arms races before they start."
+      "outcome": "Operating with no immediate rush, this proactive diplomatic maneuvering ensures that when the U.S. eventually establishes its massive asteroid-mining and orbital-logistics capabilities, the international governance structure will already be shaped to U.S. advantage, defusing future space arms races before they start by ensuring open access."
     },
     {
       "event": "The LIFT Act House Markups: The Traditional University Rebellion",
@@ -293,6 +299,24 @@
       "outcome": "The unprecedented offer of regulatory co-authorship years before fusion ignition builds immense trust. It reassures Beijing that U.S. post-scarcity tech leaps are meant as shared global utilities rather than imperial traps, cementing the G2 partnership."
     },
     {
+      "event": "The Death of Walter Cronkite & The SMCA Push",
+      "date": "2009-07-17",
+      "impact": "Legendary broadcast journalist Walter Cronkite passes away. President Kang delivers a national eulogy, heavily tying Cronkite's legacy of a 'shared, objective American reality' to the urgent need to pass the Social Media Contract with America (SMCA).",
+      "outcome": "The emotional resonance of Cronkite's death provides the perfect cultural framing for the SMCA. Kang successfully argues that allowing opaque algorithms to fracture the public square is a betrayal of the journalistic standards Cronkite embodied, accelerating the bill's legislative momentum."
+    },
+    {
+      "event": "The Jakarta Hotel Bombings & Financial Interdiction",
+      "date": "2009-07-17",
+      "impact": "Terrorists bomb the Marriott and Ritz-Carlton hotels in Jakarta, Indonesia. Instead of a traditional military-first response, the Kang administration immediately deploys the newly formed joint Financial Intelligence Task Force, utilizing WTP4 APIs to assist Indonesian authorities.",
+      "outcome": "Within days, U.S. and allied authorities trace and shadow-freeze the dark-money funding networks of Jemaah Islamiyah across Southeast Asia. The swift, bloodless financial asphyxiation of the terror cell further validates the administration's 'Systems Integrity' and 'Project Ledger' doctrines on the global stage."
+    },
+    {
+      "event": "President Kang's Birthday",
+      "date": "2009-07-17",
+      "impact": "Amidst the frenetic pace of the administration's legislative blitz and international crises, the White House staff stages a brief, 'Builder'-themed surprise birthday celebration for the President.",
+      "outcome": "A rare moment of levity. The press pool captures photos of the President cutting a cake shaped like a high-speed rail locomotive, providing a highly effective, humanizing PR win during a month otherwise defined by ruthless, high-stakes executive execution."
+    },
+    {
       "event": "The 'Botnet Eviction': Financial Asphyxiation of GRU Cyber Infrastructure",
       "date": "2009-08-01",
       "impact": "Instead of a destructive cyber counter-attack following the June GRU probes, the administration hands the NCD's mapped botnet routing data to the U.S.-EU Financial Intelligence Task Force. Forensic accountants use WTP4 beneficial ownership scanners to trace the server rental payments to Russian oligarch shell companies in Cyprus and London.",
@@ -317,10 +341,22 @@
       "outcome": "Solidifies the 'Civic Trust' model. Wikipedia gains infinite server and archival funding while maintaining total editorial independence. With Universal Digital ID integration effectively ending bot vandalism, Wikipedia enters a Golden Age of reliability, serving as the default encyclopedia for the CivicOS ecosystem."
     },
     {
+      "event": "The Riyadh-Washington Transition Pact",
+      "date": "2009-10-15",
+      "impact": "Anticipating the global oil crash, Secretary of State Hillary Clinton brokers a fundamental restructuring of the U.S.-Gulf alliance, shifting from 'oil-for-security' to 'technology-for-stability.' The U.S. leverages its post-carbon economic leverage to condition future security guarantees on the Gulf states ceasing all funding for fundamentalist proxy groups and investing in regional solar grids.",
+      "outcome": "Transforms the Middle East from an extractive resource hub into a heavily managed technology market, defunding radical networks globally and preparing the petro-states for the post-carbon era without abandoning them to state failure."
+    },
+    {
       "event": "Operation 'Ledger Sweep': First Deployment of the Cartel Finance Interdiction Task Force",
       "date": "2009-11-05",
       "impact": "In the first major joint operation under the Americas Stability Compact, U.S. and Mexican forensic accountants utilize WTP4 beneficial ownership data and joint AML protocols to map and instantly freeze $4.2 billion in cartel assets laundered through legitimate regional supply chains.",
       "outcome": "Proves the efficacy of the new 'Financial Asphyxiation' counter-narcotics doctrine. By treating cartels as illicit corporate entities rather than purely military adversaries, the operation triggers a severe liquidity crisis for the networks without firing a single shot, deeply validating Mexico's participation in the Compact."
+    },
+    {
+      "event": "The G2 Tehran Infrastructure Accord",
+      "date": "2009-11-20",
+      "impact": "To secure Iran's newly elected Reformist government against the impending post-carbon crash, President Kang and President Hu Jintao broker a joint infrastructure package. China partners on a collaborative High-Speed Rail network, while the U.S. secures massive Boeing civilian aviation contracts, utility-scale solar and desalinization grids, and early institutional agreements for future AmeriSat access.",
+      "outcome": "Delivers immediate, undeniable economic monuments to the Iranian public, cementing the Reformists' power over hardliners. By tying Iran's transit, water, and power infrastructure to G2 maintenance and the Keystone digital dollar, the U.S. and China effectively soft-lock the nation into a stable, peaceful trajectory."
     },
     {
       "event": "AmeriSat Block 0 'First Light' & The EELV Sprint",
@@ -363,6 +399,12 @@
       "date": "2010-05-15",
       "impact": "Visa, Mastercard, and major retail banks launch a coordinated campaign against 'Keystone Pay', warning that the Treasury-backed app will track purchases and destroy consumer credit rewards. They threaten to raise interest rates on small businesses that prioritize the government's fee-free system.",
       "outcome": "The attack backfires spectacularly. Small business owners overwhelmingly adopt Keystone Pay to escape 3% merchant swipe fees, placing 'We Prefer Keystone' signs in their windows. President Kang publicly brands interchange fees as a 'private tax on the working class.' To survive the mass merchant defection, credit card companies are forced to slash their fees to near-zero for domestic transactions."
+    },
+    {
+      "event": "The Levantine Security Framework",
+      "date": "2010-05-20",
+      "impact": "Leveraging the unprecedented security surplus generated by the Tehran and Baghdad Compacts, President Kang imposes a rigid stabilization framework on the Israeli-Palestinian conflict. He forces a verifiable freeze on West Bank settlement expansion and offers the Palestinian Authority heavily audited, WTP-style AmeriSat and desalinization infrastructure, strictly tied to zero militant attacks.",
+      "outcome": "Replaces endless, failed 'peace process' negotiations with a heavily monitored, infrastructure-enforced 'deep freeze'. It perfectly aligns with the 'Architecture of Peace' doctrine, preventing radicalization loops while sidestepping military entanglement."
     },
     {
       "event": "The Keystone Hegemony (Global Dollarization)",
@@ -425,6 +467,12 @@
       "outcome": "The U.S. successfully facilitates a peaceful democratic transition without firing a single shot or deploying troops. The move cements AmeriSat as the ultimate tool of global liberation and severely damages the legitimacy of remaining autocracies."
     },
     {
+      "event": "The Petro-Yuan Rebellion",
+      "date": "2011-03-10",
+      "impact": "Chafing under the U.S. 'Keystone' financial hegemony, a coalition of Gulf States attempts to bypass the digital dollar. They announce a massive infrastructure deal to be built by Chinese state firms and settled exclusively in China's new 'Digital Yuan', hoping to establish a parallel, sanction-proof financial system.",
+      "outcome": "The administration immediately activates 'Project Gordian'. President Kang issues the 'Infrastructure Ultimatum': any nation integrating its critical grids with the opaque Digital Yuan permanently forfeits all future licenses for Project Prometheus (fusion) and AmeriSat. Facing the existential threat of being locked out of the post-scarcity economy, the Gulf States capitulate, canceling the Yuan contracts."
+    },
+    {
       "event": "Signing of the NAFTA Tech Annex",
       "date": "2011-04-15",
       "impact": "President Kang signs the North American Sovereign Supply Chain Accord with Canada and Mexico. By expanding the National Devices Directorate's footprint to include Canadian critical minerals and secure Mexican assembly plants, the administration alleviates the massive domestic manufacturing bottleneck.",
@@ -435,6 +483,12 @@
       "date": "2011-08-20",
       "impact": "With immigration and economic attacks failing to resonate against the 'Builder' boom, the Anti-System remnant completely overhauls its culture war tactics. Fusing religious hardlining with digital libertarianism, they launch the 'Sovereign Panopticon' narrative. They frame the government-manufactured iPhone C, the National Digital Library, and the Universal Digital ID as an Orwellian surveillance state. Hardline surrogates compare the digital infrastructure to the 'Mark of the Beast.'",
       "outcome": "While the broad public ignores the warnings due to the immense financial and privacy benefits of the TTA, the pivot successfully galvanizes a deeply radicalized 'Neo-Luddite' base. This faction becomes completely immune to Kang's economic logic, as their objection to the administration becomes existential and apocalyptic rather than political."
+    },
+    {
+      "event": "Project Minerva: The 'Crown' Prototype Demonstration",
+      "date": "2011-10-05",
+      "impact": "Operating within his classified 'X-File' skunkworks, Steve Jobs unveils the first functional prototype of the Minerva BCI 'Crown' to President Kang and NCD leadership. Bypassing commercial consumer constraints, Jobs' team successfully demonstrates non-invasive, high-bandwidth magneto-encephalography, allowing a human operator to seamlessly navigate an NCD neural network at the speed of thought.",
+      "outcome": "A massive leap in 'Cognitive Sovereignty.' The successful test proves human operators can maintain executive control over sovereign AGI. The date marks a profound personal triumph for Jobs, who, having stabilized his pancreatic cancer by immediately opting for surgery rather than delaying with alternative medicine diets, fully commits to his new life's work as the architect of the human-machine interface."
     },
     {
       "event": "JPL Announces 'Project Hephaestus' Target: Chrysalis",
@@ -453,6 +507,12 @@
       "date": "2012-01-10",
       "impact": "Following the NCD's fusion breakthrough, global energy markets experience a permanent structural shift as long-term oil futures crash. Russia's remaining geopolitical leverage evaporates overnight, plunging Moscow into a severe currency crisis. Meanwhile, OPEC nations bound by the 'Riyadh-Washington Transition Pact' desperately scramble to accelerate their tech-sharing timelines with the U.S., realizing the post-carbon era has arrived decades early.",
       "outcome": "The 'Ignition Dividend' becomes the ultimate weapon of American soft power. The Kang administration announces that future Prometheus reactor licenses will be exclusively restricted to nations fully compliant with WTP-style transparency standards and the G2 Beijing Protocol, effectively forcing the rest of the world to adopt the 'Builder' governance model or face energy obsolescence."
+    },
+    {
+      "event": "The Shackleton Crater Summit",
+      "date": "2012-02-15",
+      "impact": "Secretary Clinton and NASA officials host representatives from ESA, JAXA, ISRO, and China's CNSA to jointly select Shackleton Crater at the lunar south pole as the primary target for the Artemis-1 certification mission and the future multilateral moonbase.",
+      "outcome": "By making the site selection an inclusive, multilateral decision, the U.S. builds massive goodwill for the nascent Global Space Authority (GSA). Welcoming China's input—even as a conditional partner—reinforces the G2 cooperative framework, ensuring the 'Cis-Lunar Commons' avoids an early, destabilizing space race."
     },
     {
       "event": "The 'Globalist Power Switch' Conspiracy",
@@ -489,8 +549,8 @@
     {
       "company": "Apple",
       "ceo": "Steve Jobs",
-      "reaction_type": "Defiant Obstruction (The Tantrum)",
-      "details": "Furious at the loss of control over his tightly integrated design ecosystem, Jobs views the 'TVA Model' and the 'Sovereign iPhone' modularity as bureaucratic vandalism. He refuses to sign ceremonial handover documents on Vesting Day and publicly resigns rather than accept a federal role in the 'National Devices Directorate.' He spends his remaining time loudly criticizing the administration's design choices."
+      "reaction_type": "Reluctant Acceptance (The Skunkworks Deal)",
+      "details": "Initially furious at the 'bureaucratic vandalism' of the TVA model, Jobs refuses to run the public-facing National Devices Directorate (leaving the iPhone C to Cook and Ive). However, President Kang privately offers him a 'Skunkworks' deal: absolute design autonomy and an infinite black-budget within a highly classified 'X-File' hardware division. Intrigued by the prospect of building beyond commercial constraints without shareholder pressure, Jobs accepts. He disappears from the public eye to design next-generation sovereign interfaces (such as Project Minerva's neural hardware)."
     },
     {
       "company": "Google",

@@ -1,0 +1,222 @@
+{
+  "campaign_resume_state": {
+    "timeline_anchor": {
+      "current_date_context": "Late January 2009, early Kang administration",
+      "president": "Kang",
+      "party": "Republican",
+      "vice_president": "Hillary Clinton",
+      "election_2008": {
+        "president_elect": "Kang",
+        "popular_vote": {
+          "Kang": 53,
+          "Obama": 45,
+          "Other": 2
+        },
+        "electoral_college": {
+          "Kang": 329,
+          "Obama": 209
+        }
+      }
+    },
+    "locked_canon": {
+      "health_security_act": {
+        "alias": "PusheenCare",
+        "status": "passed",
+        "date": "2007-01"
+      },
+      "tta": {
+        "alias": "Trinity Technology Act",
+        "status": "passed",
+        "control_date": "2008-07-01",
+        "effect": [
+          "Google, Apple, and NVIDIA acquired under public-benefit control",
+          "Boards terminated by operation of law",
+          "Public-benefit/directorate structures stood up"
+        ]
+      },
+      "keystone": {
+        "status": "passed",
+        "date": "shortly_after_2008-07-01",
+        "core_apps": [
+          "Keystone Health",
+          "Keystone Wallet",
+          "Keystone Portal",
+          "Keystone Connect"
+        ],
+        "shared_layers": [
+          "Keystone ID",
+          "Keystone Vault",
+          "Keystone Notify"
+        ],
+        "wallet_policy": {
+          "launch_platforms": [
+            "iPhone",
+            "Android",
+            "older_iPhones_supported"
+          ],
+          "merchant_pos_enabled": true,
+          "merchant_fee_percent": 1.0,
+          "zero_percent_phone_financing": true,
+          "phone_subsidies": "postponed_to_2011_separate_bill"
+        }
+      },
+      "iraq": {
+        "status": "no_invasion",
+        "note": "Bush stood down the night before invasion; no Iraq War or occupation."
+      },
+      "iran": {
+        "agreement_name": "U.S.-EU3-Iran Framework Agreement",
+        "status": "signed_and_in_implementation",
+        "year": 2004,
+        "core_terms": [
+          "Peaceful nuclear rights recognized",
+          "Strong IAEA inspections and transparency",
+          "Phased sanctions relief and normalization path",
+          "U.S. disavows regime change",
+          "Iran to avoid support for terror attacks against the U.S. and Europe"
+        ]
+      },
+      "eu_tech_accord": {
+        "status": "assumed_in_force",
+        "effect": [
+          "Major EU privacy, neutrality, and interoperability concerns broadly addressed",
+          "Improves trust environment for Apple hardware and compliant U.S. digital services"
+        ]
+      }
+    },
+    "apple_and_iphone4": {
+      "domestic_strategy": {
+        "start": "2008-07-01",
+        "goal": "iPhone 4 as first U.S.-assembled flagship iPhone",
+        "last_china_first_models": [
+          "iPhone 3G",
+          "iPhone 3GS"
+        ],
+        "key_states": [
+          "Texas",
+          "Tennessee",
+          "North Carolina",
+          "Arizona",
+          "Ohio"
+        ],
+        "nafta_support": [
+          "Mexico",
+          "Canada"
+        ]
+      },
+      "iphone4_projection": {
+        "launch_month_supply_millions": 4.0,
+        "launch_wave_demand_millions": 10.0,
+        "jul_dec_2010_units_sold_millions": 37.3,
+        "jul_dec_2010_revenue_billions_usd": 23.1,
+        "gross_margin_estimate_percent": 39
+      },
+      "production_millions_by_month_2010": {
+        "2010-07": 4.0,
+        "2010-08": 4.8,
+        "2010-09": 5.8,
+        "2010-10": 6.8,
+        "2010-11": 7.6,
+        "2010-12": 8.3
+      }
+    },
+    "keystone_wallet_projection": {
+      "end_2010_accounts_millions": 18.5,
+      "end_2010_merchants": 700000,
+      "end_2010_monthly_gpv_run_rate_billions_usd": 6.8
+    },
+    "cabinet": {
+      "vice_president": "Hillary Clinton",
+      "secretary_of_state": "John Kerry",
+      "secretary_of_treasury": "Evan Bayh",
+      "secretary_of_defense": "Jack Reed",
+      "attorney_general": "Barack Obama",
+      "secretary_of_hhs": "Tom Daschle",
+      "secretary_of_education": "Tammy Baldwin",
+      "secretary_of_labor": "Sherrod Brown",
+      "secretary_of_energy": "Jeff Bingaman",
+      "secretary_of_interior": "Ken Salazar",
+      "secretary_of_agriculture": "Tom Harkin",
+      "secretary_of_commerce": "Maria Cantwell",
+      "secretary_of_transportation": "Byron Dorgan",
+      "secretary_of_hud": "Chris Dodd",
+      "secretary_of_veterans_affairs": "Jim Webb",
+      "secretary_of_homeland_security": "Janet Napolitano",
+      "confirmation_status": "all_confirmed"
+    },
+    "cabinet_portfolios": {
+      "clinton_vp_portfolio": [
+        "China/Korea stabilization channel",
+        "Cuba normalization",
+        "European energy independence from Russia",
+        "Russia containment",
+        "Selective U.S.-China cooperation in rail and space"
+      ],
+      "kerry_state_portfolio": {
+        "focus": [
+          "Iran framework implementation",
+          "Gulf states",
+          "Iraq as regional diplomatic file (no invasion timeline)",
+          "Vietnam and broader Asia outside Clinton's lane"
+        ],
+        "doctrine": "Improve ties through transparency and trade, with less oil-politics distortion."
+      },
+      "obama_doj_portfolio": [
+        "Civil rights",
+        "Clean government and anti-corruption",
+        "Institutional legitimacy",
+        "Justice system modernization"
+      ]
+    },
+    "senate": {
+      "after_2008_election": {
+        "Republican": 57,
+        "Democratic": 43
+      },
+      "vacancy_flip_states_due_to_democratic_senators_joining_cabinet_in_republican_governor_states": [
+        "Indiana",
+        "Rhode Island",
+        "North Dakota",
+        "Connecticut"
+      ],
+      "updated_breakdown_after_vacancies": {
+        "Republican": 61,
+        "Democratic": 39
+      }
+    },
+    "house_and_leadership": {
+      "after_2008_election": {
+        "Republican": 283,
+        "Democratic": 152
+      },
+      "house_speaker": "John Boehner",
+      "house_majority_leader": "Eric Cantor",
+      "house_majority_whip": "Roy Blunt",
+      "senate_majority_leader": "Lamar Alexander",
+      "senate_majority_whip": "Mitch McConnell"
+    },
+    "governing_style_notes": [
+      "Kang worked with Republican leadership for 8 years as Secretary of Systems before becoming president.",
+      "Leadership meetings are operational, brief, and focused on locking execution.",
+      "No need for long explanations of normal behavior."
+    ],
+    "first_cabinet_meeting": {
+      "tone": "Direct, unsentimental, execution-focused",
+      "core_message": [
+        "Run departments, do not decorate them",
+        "Deliver, coordinate, do not freelance",
+        "Keep PusheenCare, TTA, and Keystone stable and visibly working",
+        "Push next build phase: RAILS, energy, manufacturing",
+        "Make government simpler and faster for ordinary people"
+      ]
+    },
+    "legislative_agenda_2009": [
+      "RAILS expansion bill",
+      "Clean energy package",
+      "Manufacturing and supply-chain buildout",
+      "Keystone payments follow-on",
+      "Privacy / digital-rights / neutrality hardening",
+      "Workforce and apprenticeship package"
+    ]
+  }
+}

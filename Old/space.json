@@ -161,7 +161,7 @@
           {
             "mission_name": "Artemis-1: Lunar Resource Prospector",
             "vehicle": "Falcon Heavy",
-            "objective": "Deploy a polar orbiter and lander to map water ice concentrations at the lunar south pole and certify a landing site for future missions."
+            "objective": "Deploy a polar orbiter and lander to map water ice concentrations at Shackleton Crater (jointly selected with future GSA partners and China) and certify the landing site for future missions."
           },
           {
             "mission_name": "Artemis-2: MCT Cargo Lander Test",
@@ -434,7 +434,7 @@
       {
         "name": "Chang'e Lunar Program (CNSA)",
         "status": "Active Competitor",
-        "details": "Operating outside the Global Space Authority's nominal 'client' framework, China's aggressive, sovereign robotic lunar exploration program acts as the primary geopolitical catalyst forcing the rapid acceleration of the U.S. Project Artemis."
+        "details": "Operating outside the Global Space Authority's nominal 'client' framework, China's sovereign robotic lunar exploration program shifts its focus to the lunar far side and alternative south pole craters (e.g., Malapert Massif). By participating in the Shackleton Crater Summit, China avoids a direct territorial clash, pacing the Chang'e program as a deliberate, parallel sovereign alternative rather than an immediate, destabilizing race."
       }
     ]
   }

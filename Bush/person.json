@@ -1,0 +1,64 @@
+{
+  "campaign": "Bush Alternate History",
+  "context": "Late January 2009, Kang administration in first term",
+  "personnel": {
+    "executive_branch": {
+      "vice_president": {
+        "name": "Hillary Clinton",
+        "party": "Democratic",
+        "portfolio": [
+          "China/Korea stabilization channel",
+          "Cuba normalization",
+          "European energy independence from Russia",
+          "Russia containment",
+          "Selective U.S.-China cooperation in rail and space"
+        ]
+      },
+      "cabinet": [
+        { "role": "Secretary of State", "name": "John Kerry", "party": "Democratic", "focus": "Iran framework, Gulf, Asia beyond VP lane" },
+        { "role": "Secretary of the Treasury", "name": "Evan Bayh", "party": "Democratic" },
+        { "role": "Secretary of Defense", "name": "Jack Reed", "party": "Democratic" },
+        { "role": "Attorney General", "name": "Barack Obama", "party": "Democratic", "focus": "civil rights, clean government, DOJ modernization" },
+        { "role": "Secretary of Health and Human Services", "name": "Tom Daschle", "party": "Democratic" },
+        { "role": "Secretary of Education", "name": "Tammy Baldwin", "party": "Democratic" },
+        { "role": "Secretary of Labor", "name": "Sherrod Brown", "party": "Democratic" },
+        { "role": "Secretary of Energy", "name": "Jeff Bingaman", "party": "Democratic" },
+        { "role": "Secretary of the Interior", "name": "Ken Salazar", "party": "Democratic" },
+        { "role": "Secretary of Agriculture", "name": "Tom Harkin", "party": "Democratic" },
+        { "role": "Secretary of Commerce", "name": "Maria Cantwell", "party": "Democratic" },
+        { "role": "Secretary of Transportation", "name": "Byron Dorgan", "party": "Democratic" },
+        { "role": "Secretary of Housing and Urban Development", "name": "Chris Dodd", "party": "Democratic" },
+        { "role": "Secretary of Veterans Affairs", "name": "Jim Webb", "party": "Democratic" },
+        { "role": "Secretary of Homeland Security", "name": "Janet Napolitano", "party": "Democratic" }
+      ]
+    },
+    "legislative_leadership": {
+      "house": {
+        "majority": "Republican",
+        "numbers": { "republican": 283, "democratic": 152 },
+        "leadership": [
+          { "role": "Speaker", "name": "John Boehner", "party": "Republican" },
+          { "role": "House Majority Leader", "name": "Eric Cantor", "party": "Republican" },
+          { "role": "House Majority Whip", "name": "Roy Blunt", "party": "Republican" }
+        ]
+      },
+      "senate": {
+        "majority": "Republican",
+        "numbers": { "republican": 61, "democratic": 39 },
+        "leadership": [
+          { "role": "Senate Majority Leader", "name": "Lamar Alexander", "party": "Republican" },
+          { "role": "Senate Majority Whip", "name": "Mitch McConnell", "party": "Republican" }
+        ]
+      }
+    },
+    "other_personnel": {
+      "keystone_team": [
+        { "name": "Keystone Wallet", "type": "platform", "note": "Projected 18.5M accounts by 2010" },
+        { "name": "Keystone Portal", "type": "platform", "note": "Citizen service layer keyed to ASSAA" }
+      ],
+      "policy_advisors": [
+        { "name": "National Builder's Council", "role": "executive coordinating body for infrastructure and technological modernization" }
+      ]
+    }
+  }
+}

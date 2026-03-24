@@ -659,6 +659,10 @@
           {
             "partner": "National Compute Directorate (NCD)",
             "role": "Safely integrating human cognitive inputs into the fusion grid and global logistics AGI architectures."
+          },
+          {
+            "partner": "The Page/Brin Philanthropic Trusts",
+            "role": "Acting as the software complement to Jobs' hardware, funding the open-source 'Cognitive UI' and neuro-ethics frameworks to ensure the National Digital Library can be safely and intuitively queried at the speed of thought."
           }
         ]
       }
@@ -726,29 +730,29 @@
       }
     },
     {
-      "name": "The Subcontinent Strategy (New Delhi Accord & Indus Stabilization)",
-      "description": "A dual-track diplomatic and infrastructure framework to integrate India into the 'Builder Economy' as a sovereign peer, while preventing a post-carbon state failure in nuclear-armed Pakistan.",
+      "name": "The Indus Stabilization Initiative",
+      "description": "A managed economic receivership framework designed to prevent a post-carbon state failure in nuclear-armed Pakistan amidst the global oil crash.",
       "details": {
         "status": "Active-Diplomacy",
-        "strategic_role": "To secure the South Asian geopolitical gap left by the G2 focus, expanding the 'Architecture of Peace' through massive infrastructure leverage rather than military alliances.",
+        "strategic_role": "To safely manage Pakistan's economic collapse caused by plummeting global oil demand (and the resulting loss of Gulf petro-state bailouts), expanding the 'Architecture of Peace' by securing a critical nuclear arsenal without military intervention.",
         "policy_tracks": [
           {
-            "track": "The New Delhi Accord (India)",
-            "focus": "Treating India as a 'G3' engineering partner. Offering localized variants of the National Compute Directorate and CivicOS architecture in exchange for India adopting WTP transparency standards and decoupling its hardware supply chains from China."
+            "track": "Managed Economic Receivership",
+            "focus": "Providing massive U.S. and IMF funding for domestic desalinization, infrastructure, and AmeriSat connectivity to stabilize the civilian population."
           },
           {
-            "track": "The Indus Stabilization (Pakistan)",
-            "focus": "A managed economic receivership. Preventing Pakistani state failure amidst the global oil crash by providing massive U.S./IMF funding for desalinization and AmeriSat connectivity, strictly conditioned on placing the Pakistani nuclear arsenal under joint IAEA/GSA monitoring."
+            "track": "Nuclear Securement",
+            "focus": "Strictly conditioning all economic lifelines on placing the Pakistani nuclear arsenal under comprehensive joint IAEA and Global Space Authority (GSA) monitoring."
           }
         ],
         "technical_integration": [
           {
-            "partner": "Department of State",
-            "role": "Negotiating the conditional bailouts and tech-transfer frameworks."
+            "partner": "Department of State & IMF",
+            "role": "Negotiating the conditional bailouts and economic restructuring frameworks."
           },
           {
             "partner": "Global Space Authority (GSA) & IAEA",
-            "role": "Providing the neutral, multilateral oversight required to monitor Pakistan's nuclear infrastructure without triggering anti-American backlash."
+            "role": "Providing neutral, multilateral orbital and ground oversight to monitor Pakistan's nuclear infrastructure, preventing anti-American backlash by framing it as a global utility requirement."
           }
         ]
       }

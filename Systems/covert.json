@@ -1,0 +1,289 @@
+{
+  "project": "Gore Alternate History — Covert Operations Canon (Systems)",
+  "scope_note": "Comprehensive canon for covert and special operations for the Systems campaign.",
+  "operations": [
+    {
+      "id": "SILENT_HAMMER_FOLLOW_UP",
+      "name": "Operation Silent Hammer Follow-Up",
+      "status": "active",
+      "as_of": "2001-09-12",
+      "summary": "A multi-phased covert operation to dismantle the remaining Al-Qaeda network following the successful strike on Osama bin Laden.",
+      "authorization": "Presidential finding dated 2001-09-12, authorizing JSOC and CIA SAD to locate, capture, or eliminate high-value Al-Qaeda targets and disrupt their infrastructure globally.",
+      "phases": [
+        {
+          "phase_name": "Phase I: Leadership Decapitation",
+          "timeline": "Immediate (September 2001) - Ongoing",
+          "objective": "Locate, capture, or eliminate the remaining senior Al-Qaeda leadership.",
+          "primary_targets": [
+            "Ayman al-Zawahiri (presumed new AQ emir)",
+            "Saif al-Adel (military commander)",
+            "Abu Hafs al-Masri (chief of operations)"
+          ],
+          "methods": [
+            "Intensified SIGINT and HUMINT collection in the Afghanistan-Pakistan border region.",
+            "Deployment of CIA SAD and JSOC Task Force elements to forward operating bases.",
+            "Use of Predator drones for persistent surveillance and precision strikes.",
+            "Coordination with Pakistani ISI for intelligence sharing and potential joint operations in the FATA region."
+          ],
+          "status": "Active. Following the Zawahiri raid, focus has shifted to the remaining primary targets. The failed demarche regarding Saif al-Adel's presence in Iran has confirmed the IRGC's duplicity. A new standing order is in effect: if al-Adel is located outside of Iranian territory, he is to be neutralized via kinetic strike without seeking further authorization.",
+          "sub_operations": [
+            {
+              "id": "ZAWAHIRI_RAID_2003",
+              "name": "Operation Neptune's Trident (Zawahiri Compound Raid)",
+              "date": "2003-03-19",
+              "summary": "Unilateral U.S. Special Operations raid on a compound in the Kurram Valley, Pakistan, targeting Ayman al-Zawahiri.",
+              "authorization": "Presidential authorization for direct action (Option 3) on 2003-03-14.",
+              "outcome": "SUCCESS. Ayman al-Zawahiri confirmed killed in action. No U.S. casualties. Significant intelligence cache recovered.",
+              "intelligence_yield": "Laptops, hard drives, and documents detailing Al-Qaeda's command structure, future operational plans, and contact information for remaining leadership.",
+              "diplomatic_fallout": "Pakistan was notified after U.S. forces had exfiltrated. While issuing a pro-forma public protest over the violation of their sovereignty, President Musharraf privately acknowledged the necessity of the operation. The diplomatic relationship is strained but intact."
+            },
+            {
+              "id": "SAIF_AL_ADEL_DEMARCHE_2003",
+              "name": "Operation Diplomatic Test (Saif al-Adel Demarche)",
+              "date": "2003-04-05",
+              "summary": "A diplomatic demarche presenting high-confidence intelligence on Saif al-Adel's location in an IRGC-QF safe house to the Iranian reformist government, demanding his arrest per the Tehran Accord.",
+              "authorization": "Presidential authorization for diplomatic action (Option 1) on 2003-04-04.",
+              "outcome": "FAILURE (Target Lost). The intelligence was leaked internally within the Iranian government, allowing the IRGC-QF to move Saif al-Adel before any action could be taken. His current whereabouts are unknown.",
+              "intelligence_yield": "Significant strategic intelligence. The operation confirmed that the Iranian reformist government lacks control over the IRGC-QF, which is actively harboring senior Al-Qaeda leadership. This demonstrates the severe limitations of the Tehran Accord.",
+              "diplomatic_fallout": "The Iranian government issued a formal denial, claiming the intelligence was faulty. The Tehran Accord is technically intact but is now understood to be unreliable for matters involving the IRGC."
+            }
+          ]
+        },
+        {
+          "phase_name": "Phase II: Financial Disruption",
+          "timeline": "Immediate (September 2001) - Ongoing",
+          "objective": "Dismantle Al-Qaeda's global financial network.",
+          "methods": [
+            "Leverage new PATRIOT Act authorities (Title III) to track and freeze assets.",
+            "Treasury's FinCEN to lead a multi-agency task force targeting the Hawala network.",
+            "Joint operations with allied financial intelligence units in the UAE, Saudi Arabia, and Europe.",
+            "Utilize the FARA and whistleblower provisions of the PATRIOT Act to uncover hidden funding channels."
+          ],
+          "status": "Active. Several key Hawala nodes in Dubai and Karachi have been successfully disrupted.",
+          "sub_operations": [
+            {
+              "id": "FINANCIAL_LOCKDOWN_2001",
+              "name": "Operation Financial Lockdown",
+              "date": "2001-12-05",
+              "summary": "A synchronized series of raids and asset freezes conducted by German and UAE authorities, based on intelligence from the Al-Farouq 2 raid and coordinated by the US Financial War Room.",
+              "outcome": "Approximately $28 million in Al-Qaeda funds frozen. The primary European financial clearinghouse in Frankfurt and key Hawala nodes in Dubai were dismantled.",
+              "intelligence_yield": [
+                "Identification of a previously unknown cell in Hamburg, Germany.",
+                "Identities of high-level donors in Saudi Arabia and the UAE.",
+                "Mapping of payment structures to active operatives in the UK and France."
+              ]
+            },
+            {
+              "id": "SOVEREIGN_SHIELD_2001",
+              "name": "Operation Sovereign Shield",
+              "date": "2001-12-12",
+              "summary": "A diplomatic and intelligence initiative where Secretary Volcker presented evidence of high-level Al-Qaeda donors to the leadership of the UAE and Saudi Arabia.",
+              "outcome": "Secured direct cooperation from both nations to disrupt terror financing networks.",
+              "details": {
+                "uae_response": "Immediate arrests of named individuals, asset freezes, and full integration of UAE financial intelligence officers into the US-led Financial War Room.",
+                "saudi_response": "Quiet house arrests and asset restrictions on named individuals, launch of a sweeping review of charitable organizations to cut funding channels, and establishment of a formal intelligence-sharing channel."
+              },
+              "status": "Completed. Monitoring of follow-on actions is ongoing."
+            },
+            {
+              "id": "NORTHERN_EXPOSURE_2001",
+              "name": "Operation Northern Exposure",
+              "date": "2001-12-15",
+              "summary": "A successful counter-terrorism operation by German authorities (GSG 9 and BND) based on intelligence from 'Operation Financial Lockdown' that neutralized an Al-Qaeda cell in Hamburg.",
+              "outcome": "Arrest of 7 individuals and the prevention of a planned attack on the Hamburg port. All primary targets were captured.",
+              "intelligence_yield": [
+                "Discovery of IED materials and detailed schematics of the Hamburg port.",
+                "Confirmation of Al-Qaeda's intent to strike critical European infrastructure."
+              ]
+            },
+            {
+              "id": "SERPENT_HEAD_2001",
+              "name": "Operation Serpent's Head",
+              "status": "completed",
+              "as_of": "2003-02-20",
+              "summary": "A joint operation to dismantle Al-Qaeda's primary financial and logistical hub in Karachi, Pakistan.",
+              "objective": "Neutralize the Karachi network responsible for moving funds and fighters into Afghanistan.",
+              "method": "A diplomatic overture by Secretary Powell to President Musharraf, offering to embed US financial intelligence experts to support an ISI-led takedown of the network. This respects Pakistani sovereignty while ensuring operational success and testing the ISI's commitment.",
+              "next_step": "Exploitation of seized intelligence and follow-up operations based on new leads.",
+              "joint_planning_phase": {
+                "as_of": "2002-08-20",
+                "first_target_proposal": {
+                  "target": "The Al-Hamal Exchange, a major Hawala node in Karachi run by Javed Khan.",
+                  "significance": "The largest Al-Qaeda financial hub in the region, but its proprietor is politically well-connected."
+                },
+                "isi_reaction": {
+                  "status": "Hesitant",
+                  "details": "The ISI liaison, Colonel Malik, acknowledged the intelligence but argued a raid would be 'politically untenable.' He proposed a limited counter-offer to arrest low-level managers, which the U.S. team rejected."
+                }
+              },
+              "resolution": {
+                "as_of": "2002-11-15",
+                "method": "The 'Face-Saving Approach' diplomatic cable was delivered to President Musharraf, providing him with intelligence framing the Al-Hamal Exchange as a domestic threat to Pakistan's critical infrastructure.",
+                "outcome": "President Musharraf accepted the premise, bypassed his hesitant ISI subordinates, and directly ordered the ISI to cooperate fully with the U.S. team to neutralize the Al-Hamal Exchange. The operation is now green-lit."
+              }
+            },
+            {
+              "id": "AL_HAMAL_RAID_2003",
+              "name": "Al-Hamal Exchange Raid",
+              "date": "2003-02-19",
+              "summary": "Joint ISI-CIA SAD raid on the Al-Hamal Exchange in Karachi.",
+              "outcome": "Complete neutralization of the Al-Hamal Exchange, a major Hawala node. Proprietor Javed Khan and 18 key personnel arrested. Significant intelligence yield, including transaction records and communication logs.",
+              "intelligence_yield": [
+                "Detailed transaction records mapping Al-Qaeda's global financial flows.",
+                "Identities of previously unknown financiers and operatives in Southeast Asia and the Arabian Peninsula.",
+                "Communication logs indicating direct links to Ayman al-Zawahiri's network."
+              ],
+              "notes": "Public narrative in Pakistan framed as a domestic ISI success against a terror financing network."
+            }
+          ]
+        },
+        {
+          "phase_name": "Phase III: Training Camp Roll-Up",
+          "timeline": "November 2001 - February 2002",
+          "objective": "Destroy or neutralize all known Al-Qaeda training camps in Afghanistan.",
+          "methods": [
+            "Joint operations with Northern Alliance ground forces.",
+            "US Army Special Forces (Green Berets) to advise and assist Northern Alliance units.",
+            "JSOC and CIA SAD to conduct direct action raids on high-value targets and infrastructure.",
+            "AC-130 gunship and tactical air support for ground operations."
+          ],
+          "status": "Active. Major ground operations commenced in coordination with Northern Alliance push."
+        }
+      ]
+    }
+  ],
+  "initiatives": [
+    {
+      "id": "PROJECT_BEDROCK_2003",
+      "name": "Project Bedrock",
+      "classification": "TOP SECRET//SI/NOFORN",
+      "status": "authorized",
+      "as_of": "2003-01-28",
+      "summary": "A covert initiative to achieve global dominance for the U.S. digital dollar by launching the Keystone payment system through a plausibly deniable private startup, allowing for viral adoption before foreign competitors can develop alternatives.",
+      "governing_entity": "Department of the Treasury, with operational support from CIA (Q-Branch) and NCSD.",
+      "front_entity": {
+        "name": "Keystone Labs, Inc.",
+        "type": "Delaware C-Corp, established as a 'special purpose entity'.",
+        "funding": "Initial seed funding provided through In-Q-Tel or a similar CIA venture capital cutout to obscure Treasury's role.",
+        "key_personnel": {
+          "ceo_cto_profile": "A highly respected, but not globally famous, Silicon Valley veteran known for shipping difficult, large-scale infrastructure projects. This individual will be the primary cutout and one of only two people at the 'startup' read into the full strategic scope of the project.",
+          "recruitment_status": "Completed. Candidate has accepted the role and is now operational."
+        },
+        "charter_restrictions": "The corporate charter includes classified covenants granting the U.S. Treasury perpetual security audit rights, a veto over any acquisition, and control over the core ledger API, ensuring the 'startup' can never go rogue."
+      },
+      "opsec_doctrine": {
+        "principle": "Plausibility through banality.",
+        "compartmentalization": "Only the CEO/CTO of Keystone Labs and their direct Treasury handler are aware of the geopolitical objectives. All other employees, engineers, and partners are recruited under the belief they are building a superior competitor to PayPal.",
+        "internal_narrative": "The company's internal mission is 'to build a simple, secure, and radically low-cost payment network for the internet.' This is true, but incomplete. The focus on beating PayPal's fees and user experience provides a compelling and sufficient motivation for the workforce."
+      },
+      "deniability_layers": {
+        "layer_1": {
+          "trigger": "Initial discovery of the app.",
+          "narrative": "'It's just another fintech startup in a crowded field, trying to be the next PayPal. There are a hundred of these.'"
+        },
+        "layer_2": {
+          "trigger": "Discovery of In-Q-Tel or similar government seed funding.",
+          "narrative": "'Of course the government invests in promising security and payment tech. They do it all the time. This is standard practice for ensuring U.S. tech stays competitive. It's a venture investment, not a directive.'"
+        },
+        "layer_3": {
+          "trigger": "Discovery of the app's ambitious global scope or CEO's 'world-changing' rhetoric.",
+          "narrative": "'This is classic Silicon Valley marketing hype. Every ambitious founder claims they're going to dominate the world. It's a fundraising tactic, not a classified government plot. It belongs in the X-Files, not the Financial Times.'"
+        }
+      },
+      "release_strategy": {
+        "overall_doctrine": "The 'Inevitable Adoption' Model. Create a product so technically superior, cheap, and easy to use that its global adoption feels like a natural market phenomenon, not a government directive.",
+        "phases": [
+          {
+            "phase_name": "Phase I: Incubation & Hardening",
+            "timeline": "Q1 2003 - Q3 2003",
+            "objectives": [
+              "Secretly recruit a trusted team of private-sector developers and executives under non-disclosure.",
+              "Establish 'Keystone Labs' and its funding vehicle.",
+              "Develop the user-facing mobile app and merchant API. The core digital dollar ledger remains a classified Treasury system.",
+              "NCSD conducts continuous, aggressive red-teaming of the entire software stack."
+            ]
+          },
+          {
+            "phase_name": "Phase II: Network Seeding (Targeted Release)",
+            "timeline": "Q4 2003 - Q1 2004",
+            "objectives": [
+              "Bypass public app stores for initial release. Distribute the app via 'invitation-only' links within highly connected, globally-dispersed communities.",
+              "**Primary Target: U.S. Armed Forces.** Distribute through secure channels to all service members, especially those deployed overseas. This immediately creates a powerful, free, and instant alternative to legacy remittance services for sending money home, seeding international use from Day 1.",
+              "**Secondary Target: University Networks.** 'Leak' the beta to students at 3-5 major universities. Students are ideal early adopters for P2P payments and will drive viral growth.",
+              "**Branding:** The app is branded simply as 'Keystone'. It will feature a small, unobtrusive logo stating 'Funds Secured by U.S. Treasury', providing trust without overt government branding."
+            ]
+          },
+          {
+            "phase_name": "Phase III: Viral Expansion",
+            "timeline": "Q2 2004 - Q4 2004",
+            "objectives": [
+              "Once a critical mass of users is achieved, release the app on public app stores. The pre-existing user base will trigger exponential growth.",
+              "Release the merchant API. The 1% fee cap will drive rapid adoption among online businesses, starting with those catering to the initial military and student user bases.",
+              "Organic international growth accelerates as the app becomes the default tool for remittances in countries with large U.S. diasporas (e.g., Mexico, Philippines, India)."
+            ]
+          },
+          {
+            "phase_name": "Phase IV: Hegemony Achieved",
+            "timeline": "2005 onward",
+            "end_state": "By the time the EU and China recognize the strategic threat, Keystone is already the de facto global standard for digital P2P and small merchant transactions, with an entrenched network effect. The U.S. government can maintain plausible deniability, framing the outcome as a simple case of a superior American technology winning in the free market. Treasury's role is publicly positioned as a simple regulator and insurer, analogous to the FDIC."
+          }
+        ]
+      },
+      "notes": [
+        "This strategy prioritizes speed and plausible deniability over a traditional, transparent government rollout.",
+        "The success of Project Bedrock is contingent on maintaining absolute secrecy during Phases I and II."
+      ],
+      "adoption_metrics": [
+        {
+          "as_of": "2003-12-31",
+          "phase": "Phase II: Network Seeding",
+          "summary": "Initial targeted rollout has been highly successful, achieving significant penetration in the primary target communities.",
+          "metrics": {
+            "total_active_accounts": "~250,000",
+            "breakdown": [
+              { "segment": "U.S. Armed Forces", "users": "~200,000", "notes": "Adoption has been extremely rapid, particularly among deployed service members using the app for fee-free remittances." },
+              { "segment": "University Networks", "users": "~50,000", "notes": "Viral growth from the initial 'leaked' beta has been strong on the target campuses." }
+            ]
+          },
+          "assessment": "The project is on track to achieve a critical mass of users well ahead of the public launch, ensuring a powerful network effect from day one."
+        }
+      ]
+    }
+    ,
+    {
+      "id": "CONTINGENCIES_OFFICE_2003",
+      "name": "The Contingencies Office",
+      "classification": "TOP SECRET//SI",
+      "status": "operational",
+      "as_of": "2003-02-20",
+      "summary": "A collection of Subject Matter Experts (SMEs) providing guidance and solutions for long-term strategic issues, ensuring the administration maintains its 'Builder' focus on the future.",
+      "governing_entity": "National Security Council (NSC), reporting directly to the President.",
+      "departments": [
+        {
+          "name": "Russia Desk",
+          "focus": "Develop long-term containment strategies, identify leverage points, and anticipate post-Putin scenarios. Coordinate with the Helsinki-Kyiv Compact framework."
+        },
+        {
+          "name": "China Desk",
+          "focus": "Manage the G2 partnership, identify areas of cooperation and competition, and develop strategies for navigating China's rise without conflict. Monitor digital currency development."
+        },
+        {
+          "name": "Fusion Energy Directorate",
+          "focus": "Accelerate Project Prometheus. Oversee research and development into commercial nuclear fusion, focusing on plasma confinement and energy extraction. Coordinate with DOE and NCD."
+        },
+        {
+          "name": "Superconductor Directorate",
+          "focus": "Accelerate Project Meissner. Oversee research and development into high-temperature superconductors for lossless energy transmission and next-generation Maglev propulsion. Coordinate with DOE and NCD."
+        },
+        {
+          "name": "Artificial Intelligence Directorate",
+          "focus": "Develop sovereign AI capabilities, establish ethical guidelines, and ensure U.S. leadership in advanced computational systems. Coordinate with NCSD and Project Minerva."
+        }
+      ],
+      "notes": [
+        "This office provides the deep policy substance that underpins the campaign's 'Future vs. Past' framing.",
+        "It is designed to operate with a long-term horizon, insulated from day-to-day political pressures."
+      ]
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 {
   "as_of_in_canon": "2008-02-12",
   "scope_note": "Alt-history Gore presidency foreign-policy achievements currently established in this project. Where exact dates/names/text are not locked, values are null and noted.",
+
   "foreign_policy_achievements": [
     {
       "id": "NO_MAJOR_WARS_2001_2007",
@@ -217,6 +218,28 @@
       ]
     },
     {
+      "id": "G2_TEHRAN_INFRASTRUCTURE",
+      "name": "The G2 Tehran Infrastructure Accord",
+      "category": ["diplomacy", "infrastructure", "middle_east", "china_relations"],
+      "status": "in_progress",
+      "summary": "A joint U.S.-China infrastructure package delivered to Iran's Reformist government to secure their post-carbon economic transition and reward democratic moderation.",
+      "key_details": [
+        "Collaborative High-Speed Rail: China leads the engineering and construction of a new HSR network (e.g., Tehran to Isfahan), serving as a massive physical monument to the benefits of reform.",
+        "Civilian Aviation Renewal: The U.S. secures multi-billion-dollar contracts for Boeing to entirely replace Iran's aging, embargo-decayed civilian airline fleet.",
+        "Post-Carbon Utilities: U.S. engineering firms provide advanced desalinization plants and utility-scale solar grids to transition Iran away from oil dependence.",
+        "Institutional AmeriSat Access: Early agreements are signed to provide heavily monitored 'institutional' access to the upcoming AmeriSat network for Iranian universities and hospitals."
+      ],
+      "dates": {
+        "signed": "2009-11-20"
+      },
+      "partners": ["United States", "China", "Iran (Reformist Government)"],
+      "opponents": ["Iranian Hardliners", "Anti-System GOP Remnant"],
+      "notes": [
+        "A prime example of the G2 framework operating to stabilize the Middle East.",
+        "By dividing the contracts, both superpowers ensure Iran is integrated into a shared economic architecture, preventing Tehran from playing the U.S. and China against one another."
+      ]
+    },
+    {
       "id": "GLOBAL_SPACE_COOPERATION",
       "name": "The Global Space Authority (GSA) / Evolution of GSCF",
       "category": ["space", "china_relations", "science_diplomacy", "multilateral"],
@@ -238,6 +261,10 @@
         {
           "initiative": "The Transparency Condition",
           "details": "To purchase subsidized deep-space propellant or access GSA orbital logistics, member nations must adhere to WTP-style transparent procurement, maintain strict civilian oversight of their space programs, and contribute fully to the Global SSA Data Pool. This acts as a soft-power mechanism to enforce democratic norms globally."
+        },
+        {
+          "initiative": "Sovereign Parallelism (The Chang'e Accommodation)",
+          "details": "Under the G2 framework, China maintains 'Conditional Access' to the GSA while peacefully pursuing its own sovereign lunar infrastructure at alternative sites (e.g., the lunar far side or Malapert Massif). This negotiated parallelism avoids a direct territorial clash at Shackleton Crater, channeling geopolitical competition into deliberate, parallel development rather than a destabilizing arms race."
         }
       ],
       "dates": {
@@ -369,6 +396,7 @@
       "summary": "The governments of Turkey and Iran are jointly awarded the Nobel Peace Prize for their roles in securing The Baghdad Compact, which averted a second Iraq war.",
       "key_details": [
         "The prize recognizes Turkey's indispensable role as the primary mediator of the compact.",
+
         "It also acknowledges Iran's constructive engagement in regional diplomacy that helped create the conditions for the deal's success."
       ],
       "dates": {

@@ -23,7 +23,7 @@
       "current_role": "Secretary of State",
       "faction": "Centrist / Global Hegemony",
       "core_narrative": "The Architect of Peace. Having secured the Americas and boxed in Russia and China, she argues the U.S. must press its advantage. She proposes the 'Global Builder Initiative' to export U.S. sovereign infrastructure worldwide.",
-      "vulnerabilities": "Seen as the ultimate establishment insider. The progressive wing worries her aggressive 'L2 Space Monopoly' posture will trigger a new, unnecessary Cold War with China in cis-lunar space.",
+      "vulnerabilities": "Seen as the ultimate establishment insider. While her diplomatic architecture is widely praised, the progressive wing worries her aggressive push to export the 'Sovereign Stack' globally borders on soft imperialism.",
       "platform_details": {
         "initiative_name": "The Global Builder Initiative",
         "philosophy": "Infrastructure is the new hard power. By exporting the administration's sovereign technology (fusion, orbital logistics, biotech), the U.S. can establish an unassailable global hegemony without firing a single shot.",
@@ -37,8 +37,8 @@
             "description": "Offering export licenses for 'Builder's Reactor' fusion tech to allies. The U.S. NCD retains the AI required to stabilize the plasma, making the U.S. the absolute arbiter of global post-scarcity energy."
           },
           {
-            "name": "The Cis-Lunar Tollbooth",
-            "description": "Consolidating the U.S. monopoly over the Earth-Moon L2 Mass Catcher and deep-space propellant, forcing all international space agencies (ESA, JAXA) to become clients of the American logistics architecture."
+            "name": "The Cis-Lunar Standard",
+            "description": "Leveraging the newly empowered Global Space Authority (GSA) to permanently lock in U.S. engineering standards (Hydrolox, IDSS) across all multilateral deep-space infrastructure, ensuring American commercial dominance within the shared commons."
           },
           {
             "name": "The Longevity Alliance",

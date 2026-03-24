@@ -1,0 +1,240 @@
+{
+  "campaign": "Bush Alternate — Legislative History",
+  "summary": "Key legislative milestones from the Kang administration and the Systems/Builder platform that define the Bush timeline’s governing agenda.",
+  "legislation": [
+    {
+      "id": "PUSHEENCARE_2007",
+      "name": "Health Security Act (PusheenCare)",
+      "year": 2007,
+      "instrument": "federal statute",
+      "status": "passed",
+      "policy_area": ["healthcare", "coverage"],
+      "summary": "Universal health-security framework that shifted the U.S. toward guaranteed coverage and network stability under the Bush administration.",
+      "key_provisions": [
+        "Created a federal compact that guarantees affordable coverage, controls costs, and aligns provider incentives under the 'PusheenCare' brand.",
+        "Standardized benefit packages while allowing states to run complementary programs through Keystone exchanges.",
+        "Embedded accountability metrics monitored by the new Office of Health Delivery Excellence."
+      ],
+      "notes": [
+        "Foundational element of the campaign resume state; seen as a delivery item expected to remain stable under Kang/Clinton."
+      ]
+    },
+    {
+      "id": "TTA_2008",
+      "name": "Trinity Technology Act",
+      "year": 2008,
+      "instrument": "federal statute",
+      "status": "passed",
+      "policy_area": ["technology", "privacy", "industrial policy"],
+      "summary": "Public-benefit control of major tech platforms, enforcing new interoperability, neutrality, and transparency standards.",
+      "key_provisions": [
+        "Placed Google, Apple, and NVIDIA under public-benefit governance with directorates appointed by the federal government.",
+        "Terminated incumbent boards and replaced them with public-benefit directors focused on privacy, neutrality, and industrial coordination.",
+        "Mandated digital rights safeguards to unlock trust for Keystone services and domestic innovation."
+      ],
+      "notes": [
+        "Set the legal foundation for Keystone Wallet, Keystone Portal, and future digital-service standardization."
+      ]
+    },
+    {
+      "id": "KEYSTONE_CORE",
+      "name": "Keystone Infrastructure + Wallet Program",
+      "year": 2008,
+      "instrument": "federal statute / executive directives",
+      "status": "implemented",
+      "policy_area": ["digital services", "payments", "governance"],
+      "summary": "Stacked payments, ID, and notification layers to give citizens a single gateway for federal services.",
+      "key_provisions": [
+        "Launched Keystone Health, Keystone Wallet, Keystone Portal, and Keystone Connect under a shared Keystone ID and Vault.",
+        "Defined merchant policy (1% fee, zero-percent financing, postponed phone subsidies) and mandated cross-platform availability (iPhone, Android, older iPhones).",
+        "Projected 18.5M accounts, 700K merchants, and $6.8B monthly GPV run rate by end of 2010."
+      ],
+      "notes": [
+        "Keystone Wallet growth and the PusheenCare enrollment experience feed directly into the ASSAA narrative."
+      ]
+    },
+    {
+      "id": "RAILS_2001_2003",
+      "name": "RAILS Acts (2001 original + 2003 acceleration)",
+      "year": "2001–2003",
+      "instrument": "federal statutes",
+      "status": "enacted",
+      "policy_area": ["infrastructure", "transportation", "industrial policy", "energy"],
+      "summary": "A two-phase high-speed rail and corridor modernization push that preceded and enabled the Builder agenda.",
+      "key_provisions": [
+        "Authorized $50B for corridors, set standards for future compatibility with high-speed rail, and funded rolling-stock manufacturing credits.",
+        "Expanded in 2003 with new corridors (Chicago Hub, Southeast) and mandated co-located HVDC lines to knit energy and transit.",
+        "Delivered a national pipeline for durable manufacturing and workforce pipelines."
+      ],
+      "notes": [
+        "RAILS serves as a legislative exemplar of the Systems doctrine and influences current clean-energy/manufacturing efforts."
+      ]
+    },
+    {
+      "id": "CLEAN_ENERGY_2001",
+      "name": "SUNRISE Act (Sustainable Infrastructure & Renewable Energy Investment)",
+      "year": 2001,
+      "instrument": "federal statute",
+      "status": "enacted",
+      "policy_area": ["energy", "climate", "infrastructure"],
+      "summary": "Massive renewables investment, grid modernization, and climate resilience program tied to labor standards.",
+      "key_provisions": [
+        "Authorized $150B over five years for renewables clustered around a national Green Bank and grid modernization.",
+        "Mandated a 25% Renewable Portfolio Standard by 2015 and embedded prevailing wages/PLAs.",
+        "Offered a $500 Working Families Dividend to offset transition costs."
+      ],
+      "notes": [
+        "The clean-energy package, part of the 2009 agenda, builds on SUNRISE’s groundwork."
+      ]
+    },
+    {
+      "id": "ASSAA_2009",
+      "name": "America Simpler Stronger Affordable Accountable Act",
+      "year": 2009,
+      "instrument": "federal statute",
+      "status": "introduced",
+      "policy_area": ["governance", "digital services", "administrative simplification"],
+      "summary": "Creates the ASSAA account, friction dashboard, and Office of Government Simplification to modernize citizen interactions.",
+      "key_provisions": [
+        "Expands Keystone Portal/Wallet architecture into a single citizen account with transparent privacy controls.",
+        "Mandates shared-service standards, a Citizen Friction Index, and pilot performance metrics.",
+        "Offers Builder grant incentives to states implementing the shared standards."
+      ],
+      "notes": [
+        "Current focus of the campaign; includes pilot rollout notes and the cooperative oversight board co-chaired with Democrats."
+      ]
+    }
+    ,
+    {
+      "id": "FAITH_2009",
+      "name": "FAITH Housing Initiative",
+      "short_name": "FAITH",
+      "year": 2009,
+      "instrument": "federal initiative / public-private compact",
+      "status": "enacted",
+      "dates": {
+        "introduced": "2009-02-18",
+        "passed_congress": "2009-04-10",
+        "signed": "2009-04-15"
+      },
+      "policy_area": ["housing", "urban development", "industrial policy"],
+      "summary": "Federal-state-builder partnership creating 50 million low-rise/intro urban home-ownership units using Singapore-style long-term leases, anchored in the 8-tower civic center 2,000-unit model.",
+      "key_provisions": [
+        "Authorizes public investment and Builder grant incentives for jurisdictions that adopt FAITH long-term lease covenants—no land speculation, shared appreciation, and leaseholds limited to compliant civic/tower campuses.",
+        "Finances the construction via long-term municipal bonds issued through the FAITH Housing Corporation (a public-purpose entity) with federal credit enhancements tied to Builder grant obligations and affordability milestones, keeping the debt off the federal budget.",
+        "Creates the FAITH Housing Council within HUD to certify 2,000-unit model campuses, standardize long-term lease terms, and coordinate with Keystone Portal/ASSAA accounts for financing, maintenance, and resident services.",
+        "Requires participating communities to reserve FAITH campuses for households committed to residing in the development for at least 25 years, with affordability and inclusion metrics tracked via the ASSAA dashboard."
+      ],
+      "notes": [
+        "Designed to complement HOPE rental projects by giving homeowners a durable, non-speculative path to residence in high-quality civic centers.",
+        "Deploys the same Builder infrastructure playbook (RAILS/transit, HOPE energy) and integrates with ATR respondent workforce/apprenticeship programs so FAITH developments anchor local economic ecosystems.",
+        "HUD is resourcing the rollout in 2009 so the 50M-unit mobilization can begin immediately after ASSAA’s administration overhaul and the Keystones' processes."
+      ],
+      "implementation_notes": [
+        {
+          "as_of": "2009-06-01",
+          "note_type": "pilot_sites",
+          "summary": "First-year proof-of-concept FAITH campuses",
+          "sites": [
+            { "name": "Dallas Builder Civic Center", "location": "Dallas/Fort Worth, TX", "units": 2000, "note": "Connected to new RAILS corridor and Apple manufacturing anchor." },
+            { "name": "Great Lakes Resilient Commons", "location": "Cleveland, OH", "units": 2000, "note": "Co-located with Keystone Wallet service node and transit-accessible manufacturing campus." },
+            { "name": "Suncoast Innovation Village", "location": "Raleigh-Durham, NC", "units": 2000, "note": "Pilot for mixed-income hi-tech apprenticeship partnerships." },
+            { "name": "Rocky Mountain Civic Campus", "location": "Denver, CO", "units": 2000, "note": "Transit-oriented development tied to high-speed rail stub and clean-energy microgrid." }
+          ]
+        }
+      ]
+    }
+    ,
+    {
+      "id": "AMERISAT_GLOBAL_AUTH_2009",
+      "name": "AmeriSat Global Authorization Act",
+      "year": 2009,
+      "instrument": "federal statute",
+      "status": "enacted",
+      "policy_area": ["infrastructure", "technology", "foreign_aid"],
+      "summary": "Authorizes the AmeriSat Global compact, establishes the public-benefit bond vehicle, and directs the plug-and-play terminal rollout with a humanitarian-first commitment to the poorest partners.",
+      "key_provisions": [
+        "Creates the AmeriSat Global Corporation (AGC), a public-purpose entity that issues stewardship-backed bonds to finance manufacturing and logistics for the global terminal fleet.",
+        "Sets the stewardship fee at $2,000 per terminal annually, directs the revenue into the AGC operations fund, and allows AGC to underwrite the replacement guarantee plus the free tranche for the poorest countries.",
+        "Authorizes the first 500,000 terminals to be provided at no cost to countries with GDP per capita under $1,500, delivering humanitarian connectivity before the fee model kicks in.",
+        "Authorizes ministerial compacts with partner nations, requires quarterly KNOC/AGC transparency reports to Congress, and mandates the prioritization of clinics, schools, and civic centers for deployment."
+      ],
+      "notes": [
+        "Legally anchors the UNGA pledge so the sprint to 10 million terminals can proceed without annual appropriations."
+      ]
+    },
+    {
+      "id": "AMERISAT_DOMESTIC_BUILD_2009",
+      "name": "AmeriSat Manufacturing and FAITH Jobs Supplement",
+      "year": 2009,
+      "instrument": "federal statute",
+      "status": "enacted",
+      "policy_area": ["industrial_policy", "housing", "jobs"],
+      "summary": "Pairs the AmeriSat production surge with targeted FAITH campuses near the new plants, extends Builder incentives, and authorizes accelerated depreciation for the manufacturing hubs in the districts that voted for the Builder agenda.",
+      "key_provisions": [
+        "Grants Builder manufacturing credits and GSA land authority for terminal plants in the Bastrop (TX), Redmond/Seattle (WA), southeast Texas (Terafab corridor), and Milwaukee/WI districts, tying each to a nearby FAITH civic campus.",
+        "Allows AmeriSat assembly equipment to be expensed over three years, provides matched FAITH infrastructure grants for housing/transit, and requires apprenticeship pipelines to certify technicians for the terminal factories and FAITH sites.",
+        "Directs the AGC to prioritize domestic suppliers in these districts and to track job creation, wages, and apprentice completion metrics in ATMP quarterly reports to Congress."
+      ],
+      "notes": [
+        "Ensures the global soft-power sprint buys back domestic jobs and durable housing for the Yes coalition."
+      ]
+    }
+    ,
+    {
+      "id": "STARFLEET_2010",
+      "name": "Starfleet Public Benefit Corporation",
+      "year": 2010,
+      "instrument": "federal statute",
+      "status": "enacted",
+      "policy_area": ["space", "infrastructure", "technology"],
+      "summary": "Establishes Starfleet, the public-benefit entity that owns and operates the Hephaestus Forge and receives bond support for asteroid mining and orbital manufacturing.",
+      "key_provisions": [
+        "Creates Starfleet as a nonprofit, government-owned corporation within the AmeriSat/Builder bond ecosystem, authorized to issue and manage the Hephaestus bond trust.",
+        "Channels the stewardship-backed revenue from Project Hephaestus and expected mineral sales into Starfleet, covering bonded capital, operations, and the contractor payments for Falcon/Orion launches.",
+        "Mandates quarterly reports to Congress similar to the AmeriSat Global transparency requirement, explicitly forbids weaponization, and ties mission metrics to the KNOC dashboard."
+      ],
+      "notes": [
+        "Starfleet becomes the legal guardian of the orbital now manufacturing hub, letting Hephaestus operate under the same public-benefit infrastructure as AmeriSat."
+      ]
+    }
+    ,
+    {
+      "id": "RAILS_2010",
+      "name": "RAILS 2010 Builder Corridor Expansion",
+      "year": 2010,
+      "instrument": "federal statute",
+      "status": "passed",
+      "policy_area": [
+        "infrastructure",
+        "transportation",
+        "industrial policy",
+        "budget"
+      ],
+      "summary": "Authorizes the next 20 rail corridors, aligning them with AmeriSat terminal/manufacturing jobs and FAITH civic campuses while keeping environmental/labor/transparency commitments on Restore.gov.",
+      "key_provisions": [
+        "Explicitly authorizes 20 new corridors and requires the Department of Transportation to synchronize corridor launch schedules with AmeriSat terminal factory recruitment and FAITH housing sites in host districts.",
+        "Pairs each corridor with designated approved manufacturers (Siemens, Textron, Wabtec, plus the domestic producers from the train procurement list) and mandates apprenticeships within the FAITH civic campuses.",
+        "Funds the corridor rollout with stewardship bond surplus, redirected defense infrastructure development offsets, and the AmeriSat jobs supplement, ensuring the act is budget neutral.",
+        "Requires quarterly Restore.gov transparency reporting on corridor milestones, environmental safeguards, labor standards, and the schedule for awarding FRA contracts."
+      ],
+      "notes": [
+        "Passed on a bipartisan coalition; Democrats who crossed party lines were thanked during the signing as defenders of their corridors.",
+        "Implementation plans drop the day after signing, with FRA awarding contracts immediately and the first corridors entering BAU service within 14–18 months."
+      ]
+      ,
+      "implementation_notes": [
+        {
+          "as_of": "2010-03-01",
+          "note_type": "next_spur_test",
+          "summary": "Next CHI spur into testing is the Chicago–Cleveland Great Lakes Spur, connecting the Chicago Hub to the FAITH civic campus in Cleveland, demonstrating the rapid-build model before the remaining corridors roll into BAU.",
+          "details": [
+            "Test run scheduled for early April 2010 with Siemens/Textron rolling stock and Wabtec signaling.",
+            "The spur overlaps with the Cleveland FAITH site and next-generation AmeriSat assembly plant slots, making it priority for workforce training.",
+            "Quarterly reporting will note chassis/track progress, remaining environmental reviews, and the linkage to AmeriSat jobs."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "project": "Gore Alternate History — Key Divergences from History",
+  "scope_note": "This file tracks significant deviations from our real-world timeline.",
+  "divergences": [
+    {
+      "id": "daniel_pearl_kidnapping_averted",
+      "event": "The kidnapping and murder of journalist Daniel Pearl by Al-Qaeda-affiliated militants in Karachi, Pakistan.",
+      "historical_date": "January-February 2002",
+      "canon_status": "Averted",
+      "reason_for_divergence": "The administration's aggressive and early disruption of Al-Qaeda's financial and logistical networks in Karachi (via 'Operation Financial Lockdown' and subsequent pressure) starved the specific cell of the operational funds and support required to carry out the high-profile abduction."
+    }
+  ]
+}

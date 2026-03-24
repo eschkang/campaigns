@@ -1,0 +1,1400 @@
+{
+  "project": "Gore Alternate History — Legislative Canon (Systems)",
+  "scope_note": "Comprehensive canon legislation file for the Systems campaign. Provisions marked [GENERATED] are plausible drafts consistent with canon intent; provisions marked [LOCKED] are established canon. Dates/votes marked null are not yet locked in canon.",
+  "legend": {
+    "status": ["enacted", "passed_congress_pending_signature", "introduced", "draft", "unknown"],
+    "instrument": ["federal_statute", "constitutional_amendment", "executive_program", "treaty_or_compact"],
+    "provision_status": ["LOCKED", "GENERATED"]
+  },
+  "legislation": [
+    {
+      "id": "WTP1",
+      "name": "We The People Act 1",
+      "short_name": "WTP1",
+      "year": 2001,
+      "instrument": "federal_statute",
+      "policy_area": ["anti_corruption", "governance", "campaign_finance"],
+      "key_effect": "Early anti-corruption / money-in-politics reforms (baseline for later WTP stack).",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": null,
+        "passed_congress": null,
+        "signed": "2001-04-19",
+        "effective": null
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "GENERATED", "text": "Mandatory disclosure of all federal lobbying expenditures above $500." },
+        { "status": "GENERATED", "text": "2-year cooling-off period for executive branch officials before entering lobbying roles (revolving door restriction)." },
+        { "status": "GENERATED", "text": "Public financing option for congressional campaigns via matching of small-dollar donations." },
+        { "status": "GENERATED", "text": "Caps on individual and PAC contributions to federal candidates." },
+        { "status": "GENERATED", "text": "Required disclosure of bundled campaign contributions and bundler identities." },
+        { "status": "GENERATED", "text": "Prohibited federal contractors from making campaign contributions during active contract periods." },
+        { "status": "GENERATED", "text": "Created an independent Office of Public Integrity within DOJ with subpoena power." },
+        { "status": "GENERATED", "text": "Strengthened whistleblower protections for federal employees reporting corruption." }
+      ],
+      "notes": ["Details and vote counts not yet locked in canon; treated as enacted April 2001."]
+    },
+    {
+      "id": "SUNRISE",
+      "name": "Sustainable Infrastructure and Renewable Energy Investment Act",
+      "short_name": "SUNRISE Act",
+      "year": 2001,
+      "instrument": "federal_statute",
+      "policy_area": ["climate", "infrastructure", "energy", "industrial_policy"],
+      "key_effect": "Massive investment in renewable energy, grid modernization, and climate-resilient infrastructure.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2001-02-12",
+        "passed_congress": "2001-06-XX",
+        "signed": "2001-07-04",
+        "effective": null
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "GENERATED", "text": "Authorized $150 billion over 5 years for renewable energy projects, including solar, wind, and geothermal." },
+        { "status": "GENERATED", "text": "Established a national Green Bank to provide low-interest loans and loan guarantees for clean energy development." },
+        { "status": "GENERATED", "text": "Mandated a 25% Renewable Portfolio Standard (RPS) for electricity generation by 2015." },
+        { "status": "GENERATED", "text": "Invested in grid modernization and smart grid technologies to integrate renewable energy sources." },
+        { "status": "GENERATED", "text": "Funded climate-resilient infrastructure projects, including coastal protection and water management." },
+        { "status": "GENERATED", "text": "Required prevailing wages and Project Labor Agreements for all federally funded projects." },
+        { "status": "GENERATED", "text": "Included a $500 Working Families Dividend to offset initial energy cost increases and stimulate the economy." }
+      ],
+      "notes": ["Signed into law on July 4, 2001."]
+    },
+    {
+      "id": "CHIPS_2001",
+      "name": "Comprehensive Hardware and Industrial Production for Systems (CHIPS) Act of 2001",
+      "short_name": "CHIPS Act",
+      "year": 2001,
+      "instrument": "federal_statute",
+      "policy_area": ["industrial_policy", "technology", "national_security"],
+      "key_effect": "Federal investment to boost domestic semiconductor manufacturing and secure supply chains.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2001-02-19",
+        "passed_congress": "2001-06-XX",
+        "signed": "2001-07-04",
+        "effective": null
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "GENERATED", "text": "Authorized $25 billion in federal subsidies and grants for the construction and expansion of semiconductor fabrication plants (fabs) in the U.S." },
+        { "status": "GENERATED", "text": "Established the 'Silicon Desert' (Arizona) and 'Silicon Heartland' (Ohio) initiatives to create regional manufacturing hubs." },
+        { "status": "GENERATED", "text": "Mandated that recipients of CHIPS funds adhere to strict 'Buy American' provisions for equipment and materials." },
+        { "status": "GENERATED", "text": "Required Project Labor Agreements and prevailing wages for all construction and manufacturing jobs created by the Act." },
+        { "status": "GENERATED", "text": "Included provisions for workforce development and training programs to build a skilled labor force for the semiconductor industry." }
+      ],
+      "notes": ["Signed into law on July 4, 2001. Intel (AZ), TSMC (TX), and AMD (OH) were early recipients of grants."]
+    },
+    {
+      "id": "RAILS_2001",
+      "name": "Rail Access, Intercity Linkage, and System Renewal Act",
+      "short_name": "RAILS Act",
+      "year": 2001,
+      "instrument": "federal_statute",
+      "policy_area": ["transportation", "infrastructure", "rail", "industrial_policy", "climate"],
+      "key_effect": "Launches a national rail modernization program focused on key corridors, compatible with future high-speed rail.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2001-02-26",
+        "passed_congress": "2001-06-XX",
+        "signed": "2001-07-04",
+        "effective": null
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "GENERATED", "text": "Authorized $50 billion over 10 years for intercity passenger rail modernization and corridor development." },
+        { "status": "GENERATED", "text": "Designated priority corridors for upgrades, including the Northeast Corridor and California Intercity Rail Program." },
+        { "status": "GENERATED", "text": "Required all federally funded corridor investments to be compatible with future high-speed rail (HSR) where practical." },
+        { "status": "GENERATED", "text": "Funded projects for track rebuilding, grade separations, signaling upgrades, and electrification planning." },
+        { "status": "GENERATED", "text": "Established a rolling-stock and rail electrification manufacturing credit for U.S. plants." },
+        { "status": "GENERATED", "text": "Required Project Labor Agreements and apprenticeship pipelines for rail construction and maintenance." }
+      ],
+      "notes": ["Signed into law on July 4, 2001."]
+    },
+    {
+      "id": "PATRIOT_2001",
+      "name": "Providing Appropriate Tools Required to Intercept and Obstruct Terrorism Act of 2001",
+      "short_name": "PATRIOT Act",
+      "year": 2001,
+      "instrument": "federal_statute",
+      "policy_area": ["national_security", "counter_terrorism", "intelligence", "finance", "privacy"],
+      "key_effect": "Expands law enforcement and intelligence powers to combat terrorism, focusing on financial transparency, information sharing, and digital surveillance with safeguards.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2001-09-14",
+        "passed_congress": "2001-09-20",
+        "signed": "2001-09-21",
+        "effective": "2001-09-21"
+      },
+      "vote_counts": { "senate": 92, "house": 380 },
+      "provisions": [
+        { "status": "GENERATED", "text": "**Title I: Enhancing Domestic Security Against Terrorism**" },
+        { "status": "GENERATED", "text": "Establishes a National Counter-Terrorism Fusion Center to integrate intelligence from federal, state, and local agencies." },
+        { "status": "GENERATED", "text": "Mandates enhanced information sharing protocols between the FBI, CIA, NSA, and other relevant intelligence and law enforcement agencies for counter-terrorism purposes, with clear guidelines for data protection and oversight." },
+        { "status": "GENERATED", "text": "**Title II: Enhanced Surveillance Procedures**" },
+        { "status": "GENERATED", "text": "Requires Internet Service Providers (ISPs) and telecommunications carriers to retain traffic metadata (e.g., sender, recipient, timestamp, size, but NOT content) for a maximum period of 90 days. Metadata not subject to an active warrant or judicial order must be permanently purged after 90 days." },
+        { "status": "GENERATED", "text": "Access to retained metadata requires a warrant issued by an Article III court, demonstrating probable cause of a link to a felony-level crime, including but not limited to terrorist activity. Warrants must be specific in scope, target, and duration, and shall not authorize general or 'fishing expedition' surveillance." },
+        { "status": "GENERATED", "text": "An independent privacy advocate, appointed by the court, shall have full access to all warrant applications and supporting materials, standing to review and challenge each warrant request before issuance, and the authority to appeal a judge's decision to a higher court if they deem the warrant to be an overreach or lacking sufficient probable cause." },
+        { "status": "GENERATED", "text": "The provisions of Title II shall sunset three years after the date of enactment unless reauthorized by an Act of Congress." },
+        { "status": "GENERATED", "text": "**Title III: International Money Laundering Abatement and Anti-Terrorist Financing**" },
+        { "status": "GENERATED", "text": "Requires financial institutions to identify and verify the beneficial owners of all accounts, particularly those linked to foreign entities or high-risk jurisdictions, for transactions exceeding $10,000." },
+        { "status": "GENERATED", "text": "Mandates the reporting of all 'dark money' political spending by non-profit organizations (501(c) groups) to the Federal Election Commission, with public disclosure of donors above $5,000." },
+        { "status": "GENERATED", "text": "Authorizes the Treasury Department to issue emergency asset freeze orders against individuals or entities suspected of financing terrorism, subject to mandatory judicial review within 72 hours." },
+        { "status": "GENERATED", "text": "Modernizes the Foreign Agent Registration Act (FARA) to expand the definition of 'agent of a foreign principal' to include public relations, consulting, and digital advocacy activities. Requires real-time disclosure of all foreign government or foreign political party funding for U.S. lobbying, public relations, and media campaigns, with penalties for non-compliance." },
+        { "status": "GENERATED", "text": "Establishes a publicly accessible database of all FARA registrants, their foreign principals, and their reported activities and expenditures." },
+        { "status": "GENERATED", "text": "Increases criminal penalties for willful violations of FARA and grants the Department of Justice enhanced civil enforcement authority, including the ability to seek injunctive relief and civil penalties." },
+        { "status": "GENERATED", "text": "Requires enhanced due diligence by financial institutions for accounts associated with FARA registrants or foreign political entities, flagging transactions for potential illicit finance." },
+        { "status": "GENERATED", "text": "**Title IV: Protecting the Border**" },
+        { "status": "GENERATED", "text": "Increases funding for border security and immigration enforcement, with a focus on preventing the entry of individuals linked to terrorist organizations." },
+        { "status": "GENERATED", "text": "**Title V: Removing Obstacles to Investigating Terrorism**" },
+        { "status": "GENERATED", "text": "Expands the definition of 'terrorist activity' for purposes of immigration law and financial sanctions." },
+        { "status": "GENERATED", "text": "**Title VI: Providing for Victims of Terrorism, Public Safety Officers, and Their Families**" },
+        { "status": "GENERATED", "text": "Establishes a fund for victims of terrorism and their families, to be capitalized by seized assets from terrorist organizations and their enablers." },
+        { "status": "GENERATED", "text": "**Title VII: Strengthening Criminal Laws Against Terrorism**" },
+        { "status": "GENERATED", "text": "Increases penalties for acts of terrorism and provides new tools for prosecuting those who aid or abet terrorist organizations." },
+        { "status": "GENERATED", "text": "**Title VIII: Miscellaneous Provisions**" },
+        { "status": "GENERATED", "text": "**Title IX: Whistleblower Protections for Financial Crimes**" },
+        { "status": "GENERATED", "text": "Establishes a whistleblower program within the Treasury Department, offering monetary awards (up to 30% of recovered funds) to individuals who provide original information leading to successful enforcement actions against terror financing, money laundering, or sanctions evasion." },
+        { "status": "GENERATED", "text": "Provides robust anti-retaliation protections for whistleblowers in financial institutions, including reinstatement, back pay, and compensatory damages." },
+        { "status": "GENERATED", "text": "Creates a dedicated office within FinCEN to receive and investigate whistleblower tips related to illicit financial activities, ensuring confidentiality and prompt action." },
+        { "status": "GENERATED", "text": "Mandates that financial institutions establish internal reporting mechanisms for employees to report suspicious financial activities without fear of reprisal." },
+        { "status": "GENERATED", "text": "Requires disclosure of funding sources for online political content and advocacy campaigns, particularly those originating from foreign entities, with penalties for non-compliance with transparency requirements." },
+        { "status": "GENERATED", "text": "This Act shall be interpreted and applied in a manner consistent with the First Amendment to the United States Constitution, focusing on transparency of funding rather than content regulation." },
+        { "status": "GENERATED", "text": "Mandates annual, comprehensive, and publicly transparent audits of the implementation of this Act, particularly regarding the collection, retention, and access to metadata under Title II. These audits shall be conducted by an independent body, such as the Government Accountability Office (GAO) or a newly established oversight board, and shall include statistics on warrant requests, approvals, denials, and the effectiveness of the privacy advocate's role." }
+      ],
+      "notes": [
+        "Introduced in response to the foiled 9/11 plot and the death of Osama bin Laden, framed as an urgent national security imperative.",
+        "Aims to provide immediate tools for counter-terrorism while laying groundwork for future financial transparency and intelligence reforms.",
+        "The administration will push for rapid passage, leveraging the national emergency and public sentiment."
+      ]
+    },
+    {
+      "id": "WTP2",
+      "name": "We The People Act 2 (The Enforcement & Transparency Act)",
+      "short_name": "WTP2",
+      "year": 2002,
+      "instrument": "federal_statute",
+      "policy_area": ["anti_corruption", "transparency", "campaign_finance", "enforcement"],
+      "key_effect": "Builds on WTP1 by closing dark money loopholes, creating a central transparency database, and establishing a dedicated enforcement strike force.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2002-02-28",
+        "passed_congress": "2002-05-15",
+        "signed": "2002-05-20",
+        "effective": null
+      },
+      "vote_counts": { "senate": "78-22", "house": "350-85" },
+      "provisions": [
+        { "status": "GENERATED", "text": "Extends WTP1 disclosure requirements to 501(c)(4) and (c)(6) 'dark money' organizations for all electioneering communications." },
+        { "status": "GENERATED", "text": "Requires all federally chartered LLCs, corporations, and statutory trusts to file beneficial ownership disclosures with FinCEN, with updates required within 30 days of any ownership change." },
+        { "status": "GENERATED", "text": "Prohibits the use of shell company chains exceeding two layers for federal contracting purposes." },
+        { "status": "GENERATED", "text": "Requires real-time (48-hour) electronic filing of all campaign contributions over $1,000." },
+        { "status": "GENERATED", "text": "Requires online political advertising to carry real-time donor disclosure at the point of display." },
+        { "status": "GENERATED", "text": "Mandates public disclosure of all earmark sponsors in appropriations legislation." },
+        { "status": "GENERATED", "text": "Creates a single, searchable public database consolidating all federal campaign finance, lobbying, and contractor data." },
+        { "status": "GENERATED", "text": "Extends the WTP1 revolving-door restrictions to senior congressional staffers (Chiefs of Staff, Committee Staff Directors)." },
+        { "status": "GENERATED", "text": "Expands the definition of 'lobbying activity' to include 'strategic policy consulting,' requiring registration for any individual or entity receiving over $2,500 per quarter to influence federal policy, regardless of direct contact with officials." },
+        { "status": "GENERATED", "text": "Creates a dedicated Public Corruption Strike Force within the FBI, to be jointly supervised by the independent Office of Public Integrity created in WTP1." },
+        { "status": "GENERATED", "text": "Increases criminal penalties for bribery, honest-services fraud, and obstruction in federal corruption cases." },
+        { "status": "GENERATED", "text": "Extends the Racketeer Influenced and Corrupt Organizations (RICO) Act to apply to public corruption schemes." },
+        { "status": "GENERATED", "text": "Establishes an independent Inspector General for the Office of Public Integrity to ensure its own accountability." },
+        { "status": "GENERATED", "text": "Creates a Corruption Asset Recovery Fund, directing proceeds from forfeiture actions into the public campaign finance matching pool established by WTP1." },
+        { "status": "GENERATED", "text": "Mandates annual public reporting by the Department of Justice on all pending and resolved public corruption prosecutions." }
+      ],
+      "notes": [
+        "This is the second major piece of the administration's anti-corruption agenda, focusing on enforcement and transparency.",
+        "Integrates key beneficial ownership and enforcement provisions from the non-canon 'Ref WTP4' and 'Ref WTP5' drafts.",
+        "Strategically defers the most aggressive provisions, such as pre-conviction civil asset freezes for domestic corruption, to a future bill to ensure broad bipartisan support for this crucial second step."
+      ]
+    },
+    {
+      "id": "FSA_2002",
+      "name": "Financial Stability Act of 2002",
+      "short_name": "FSA",
+      "year": 2002,
+      "instrument": "federal_statute",
+      "policy_area": ["finance", "regulation", "consumer_protection"],
+      "key_effect": "Proactive regulation of subprime mortgage markets and over-the-counter derivatives to prevent a future systemic collapse.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2002-02-28",
+        "passed_congress": "2002-05-16",
+        "signed": "2002-05-20",
+        "effective": null
+      },
+      "vote_counts": { "senate": "59-41", "house": "230-205" },
+      "provisions": [
+        { "status": "GENERATED", "text": "Establishes federal anti-predatory lending standards, prohibiting 'exploding' adjustable-rate mortgages (ARMs) and requiring documented verification of a borrower's ability to repay." },
+        { "status": "GENERATED", "text": "Imposes a hard national usury cap of 36% APR on all consumer lending, effectively dismantling the payday loan and predatory title-loan industries." },
+        { "status": "GENERATED", "text": "Mandates that all over-the-counter (OTC) derivatives, including credit default swaps, be traded on regulated exchanges and cleared through central counterparties." },
+        { "status": "GENERATED", "text": "Requires mortgage securitizers to retain a minimum of 5% of the credit risk ('skin in the game') for any asset-backed security they issue." },
+        { "status": "GENERATED", "text": "Prohibits federally insured depository institutions from engaging in proprietary trading of high-risk synthetic derivatives (Volcker Rule equivalent)." },
+        { "status": "GENERATED", "text": "Empowers the Federal Reserve and Treasury to set counter-cyclical capital requirements for Tier-1 financial institutions, forcing them to build larger capital buffers during economic expansions." }
+      ],
+      "implementation_effects": {
+        "as_of": "2002-07-15",
+        "summary": "The financial industry is rapidly adapting through a mix of grudging compliance and strategic restructuring.",
+        "sector_adaptations": [
+          { "sector": "Payday Lending", "adaptation": "The 36% national usury cap has led to a mass collapse of the industry, with many lenders shutting down." },
+          { "sector": "Investment Banks", "adaptation": "Proprietary trading desks are being spun off into separate, non-bank-affiliated hedge funds to comply with the new rules, effectively fire-walling the risk from the core banking system." },
+          { "sector": "Derivatives Market", "adaptation": "OTC derivatives are moving to regulated exchanges, forcing banks to compete on volume and transparency rather than opacity." },
+          { "sector": "Mortgage Industry", "adaptation": "The 'skin in the game' rule has killed the 'originate-to-sell' model for risky loans, leading to a significant tightening of underwriting standards." }
+        ]
+      },
+      "notes": ["A proactive measure to prevent a 2008-style financial crisis, introduced from a position of economic strength. Framed as a common-sense 'guardrails' bill to protect Main Street from Wall Street's excesses."]
+    },
+    {
+      "id": "AMERISAT_2002",
+      "name": "AmeriSat Act of 2002",
+      "short_name": "AmeriSat Act",
+      "year": 2002,
+      "instrument": "federal_statute",
+      "policy_area": ["infrastructure", "technology", "space", "national_security"],
+      "status": "enacted",
+      "key_effect": "Authorizes the creation of a government-owned LEO satellite internet constellation as a public utility.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2002-02-05",
+        "passed_congress": "2002-08-08",
+        "signed": "2002-08-26",
+        "effective": null
+      },
+      "vote_counts": { "senate": "72-28", "house": "345-90" },
+      "provisions": [
+        { "status": "GENERATED", "text": "Authorizes the establishment of the AmeriSat constellation as a government-owned public utility to provide secure, high-speed internet access." },
+        { "status": "GENERATED", "text": "Mandates a phased deployment, beginning with a 60-satellite 'Block 0' to provide initial service, scaling to a full 1,200-satellite constellation." },
+        { "status": "GENERATED", "text": "Directs federal investment through the CHIPS and SUNRISE Act frameworks to build the domestic industrial base for mass production of satellites, phased-array antennas, and ground systems." },
+        { "status": "GENERATED", "text": "Grants the Department of Defense and NASA joint authority to manage the launch manifest for 'Block 0' on the existing EELV fleet as a top national priority." },
+        { "status": "GENERATED", "text": "Establishes a public service mandate guaranteeing at-cost internet service for rural and underserved households and free service for all public schools, libraries, and hospitals." }
+      ],
+      "committee_markup_outcome": {
+        "as_of": "2002-08-01",
+        "summary": "The AmeriSat Act successfully cleared committees in both chambers, maintaining its core vision as a government-owned public utility.",
+        "privatization_attempts": {
+          "status": "Defeated",
+          "details": "Aggressive lobbying by telecommunications and aerospace industries for a public-private partnership model was defeated. The administration's framing of AmeriSat as essential national infrastructure and a public utility, backed by high presidential approval and 'Systems Caucus' support, proved decisive."
+        },
+        "launch_cadence_concerns": {
+          "status": "Mitigated",
+          "details": "Deployment window for Block 0 extended to 18-24 months. Commitment secured for a 'Space Industrial Base' study to address long-term launch capacity and cost reduction."
+        },
+        "next_step": "Implementation phase begins. The National Builder's Council will oversee the procurement and deployment of the 'Block 0' constellation."
+      },
+      "notes": [
+        "Framed as a critical national infrastructure and security project, the 'digital equivalent of the Interstate Highway System'."
+      ]
+    },
+    {
+      "id": "SPACEX_SEED_CONTRACT_2002",
+      "name": "SpaceX Seed Contract for Next-Generation Launch Services",
+      "short_name": "SpaceX Seed Contract",
+      "year": 2002,
+      "instrument": "executive_program",
+      "policy_area": ["space", "industrial_policy", "national_security", "technology"],
+      "key_effect": "Provides milestone-based funding to SpaceX to accelerate development of the Falcon 1 and Falcon 9 launch vehicles, creating a competitive alternative to the ULA monopoly.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "announced": "2002-12-10",
+        "signed": "2002-12-10",
+        "effective": "2002-12-10"
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "GENERATED", "text": "**Section 1: Purpose and Authorization**" },
+        { "status": "GENERATED", "text": "This contract, authorized under the AmeriSat Act of 2002 and the National Security Space Launch program, provides seed funding to Space Exploration Technologies Corp. (SpaceX) to accelerate the development of a domestic, commercially-viable, high-cadence launch capability." },
+        { "status": "GENERATED", "text": "**Section 2: Total Award and Payment Structure**" },
+        { "status": "GENERATED", "text": "A total of $250 million is allocated, to be disbursed upon the successful completion of pre-defined technical milestones. No funds shall be disbursed prior to milestone verification by a joint NASA/DOD technical review board." },
+        { "status": "GENERATED", "text": "**Section 3: Falcon 1 Development Milestones**" },
+        { "status": "GENERATED", "text": "Milestone 1.1 ($25M): Successful full-duration, full-thrust test fire of a single Merlin 1 engine." },
+        { "status": "GENERATED", "text": "Milestone 1.2 ($50M): Successful first launch of the Falcon 1 vehicle, achieving stable orbit with a test payload." },
+        { "status": "GENERATED", "text": "**Section 4: Falcon 9 Development Milestones**" },
+        { "status": "GENERATED", "text": "Milestone 2.1 ($75M): Successful full-duration, full-thrust static fire of a nine-engine Falcon 9 first stage." },
+        { "status": "GENERATED", "text": "Milestone 2.2 ($100M): Successful first launch of the Falcon 9 vehicle, achieving stable orbit and demonstrating payload deployment capability for an AmeriSat-class satellite mass simulator." },
+        { "status": "GENERATED", "text": "**Section 5: Government Rights and Future Procurement**" },
+        { "status": "GENERATED", "text": "The U.S. Government shall receive preferential pricing and launch priority for the first 20 AmeriSat constellation launches on the Falcon 9 vehicle." },
+        { "status": "GENERATED", "text": "SpaceX agrees to open-book accounting and grants the government full data rights for all telemetry and performance data related to government-funded launches." },
+        { "status": "GENERATED", "text": "The contract requires SpaceX to maintain its primary design, engineering, and manufacturing operations within the United States." }
+      ],
+      "notes": [
+        "This is an executive program in the form of a federal contract. It is the cornerstone of the administration's 'Space Industrial Base' strategy, designed to break the ULA monopoly and drive down launch costs.",
+        "The milestone-based structure minimizes risk to the taxpayer while aggressively incentivizing rapid development."
+      ]
+    },
+    {
+      "id": "PUSHEENCARE_2003",
+      "name": "PusheenCare Coverage Act of 2003",
+      "short_name": "PusheenCare",
+      "status": "enacted",
+      "year": 2003,
+      "instrument": "federal_statute",
+      "policy_area": ["healthcare", "social_policy"],
+      "key_effect": "Establishes a robust public health insurance option to compete with the private market, aiming for universal coverage.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2003-01-03",
+        "passed_congress": "2003-01-16",
+        "signed": "2003-01-20",
+        "effective": null
+      },
+      "vote_counts": { "senate": "64-36", "house": "255-180" },
+      "provisions": [
+        { "status": "GENERATED", "text": "Establishes a federally-administered public health insurance plan ('PusheenCare') available to all Americans on a national exchange." },
+        { "status": "GENERATED", "text": "Authorizes employers to purchase PusheenCare coverage for their employees as a competitive alternative to private group plans." },
+        { "status": "GENERATED", "text": "Mandates that PusheenCare plans maintain actuarial value and provider networks sufficient to compete directly with top-tier private insurance." },
+        { "status": "GENERATED", "text": "Preserves the existing private insurance market, allowing private insurers to continue offering supplemental and primary plans on the exchange." },
+        { "status": "GENERATED", "text": "Empowers the Secretary of Health and Human Services to directly negotiate all prescription drug prices for the PusheenCare plan, establishing a 'most-favored-nation' price cap." },
+        { "status": "GENERATED", "text": "Provides federal subsidies, on a sliding income scale, for individuals and families to purchase either PusheenCare or a qualifying private plan through the national exchange." },
+        { "status": "GENERATED", "text": "Implements a 'Benefit Pass-Through' requirement, mandating that any employer savings realized by switching from private plans to PusheenCare be redirected into employee base wages or supplemental health benefits." },
+        { "status": "GENERATED", "text": "Establishes a 'Rural and Underserved Provider Grant Program' to fund signing bonuses, student loan repayment, and increased salaries for healthcare professionals who commit to working in designated shortage areas for a minimum of five years." },
+        { "status": "GENERATED", "text": "Expands the scope of practice for certified Physician Assistants (PAs) and Nurse Practitioners (NPs) within the PusheenCare network, allowing them to serve as primary care providers to increase access and lower costs." },
+        { "status": "GENERATED", "text": "Creates a 'National Specialist Referral Network' within the Project Nightingale digital platform, using a triage system to guarantee expedited appointments (within 14 days) for high-priority cases." },
+        { "status": "GENERATED", "text": "Mandates that HHS publish real-time performance metrics (e.g., wait times, provider ratios) on a public dashboard (Restore.gov) to ensure accountability." }
+      ],
+      "legislative_strategy": {
+        "as_of": "2003-01-02",
+        "goal": "Secure a 60-vote, filibuster-proof majority in the Senate.",
+        "target_republican_senators": [
+          { "name": "John McCain (AZ)", "strategy": "Frame as fiscally responsible and a boost to national competitiveness." },
+          { "name": "Susan Collins (ME)", "strategy": "Focus on benefits for rural hospitals and telehealth." },
+          { "name": "Olympia Snowe (ME)", "strategy": "Emphasize benefits for small businesses." },
+          { "name": "Lincoln Chafee (RI)", "strategy": "Appeal to his moderate, pro-universal coverage principles." },
+          { "name": "Arlen Specter (PA)", "strategy": "Highlight the 'Benefit Pass-Through' for union households." },
+          { "name": "Gordon Smith (OR)", "strategy": "Frame as a historic, centrist achievement and focus on rural health benefits." }
+        ],
+        "messaging_framework": "Position PusheenCare as a pro-market, pro-competition solution that is fully paid for, not a government takeover."
+      },
+      "notes": [
+        "The administration's top legislative priority for 2003, leveraging the new Democratic majorities from the 2002 midterm elections.",
+        "Framed as a common-sense, market-based solution to achieve universal healthcare by introducing competition rather than dismantling the private system.",
+        "Passed with key support from the Republican 'Systems Caucus' after amendments were added to increase rural hospital funding and expand telehealth services.",
+        "Passage was also contingent on the administration's firm commitment to introduce and pass the Judicial Integrity Act (JIA) next."
+      ]
+    },
+    {
+      "id": "NCSD_CODIFICATION_2003",
+      "name": "National Cyber Security Directorate Codification Act of 2003",
+      "short_name": "NCSD Act",
+      "status": "enacted",
+      "year": 2003,
+      "instrument": "federal_statute",
+      "policy_area": ["national_security", "cybersecurity", "technology", "governance"],
+      "key_effect": "Formally establishes the National Cyber Security Directorate (NCSD) as a permanent agency, codifying its authorities for defensive and offensive cyber operations with robust oversight.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2003-01-24",
+        "passed_congress": "2003-02-06",
+        "signed": "2003-02-10",
+        "effective": null
+      },
+      "vote_counts": { "senate": "81-19", "house": "380-55" },
+      "provisions": [
+        { "status": "GENERATED", "text": "**Title I: Establishment and Mission**" },
+        { "status": "GENERATED", "text": "Formally establishes the National Cyber Security Directorate (NCSD) as a permanent, independent agency of the federal government, headquartered at Fort Meade, Maryland." },
+        { "status": "GENERATED", "text": "Codifies the joint leadership structure, with the Director of the NCSD reporting to both the Secretary of Defense and the Secretary of Systems, who shall jointly oversee the agency's mission." },
+        { "status": "GENERATED", "text": "Defines the primary mission of the NCSD as the protection and hardening of all federal government networks, designated critical national infrastructure, and the AmeriSat constellation against all cyber threats." },
+        { "status": "GENERATED", "text": "**Title II: Defensive Operations and Public-Private Partnerships**" },
+        { "status": "GENERATED", "text": "Grants the NCSD authority to establish and enforce mandatory cybersecurity standards, patching cycles, and network architecture requirements for all federal executive branch agencies ('Project Digital Bastion')." },
+        { "status": "GENERATED", "text": "Authorizes the NCSD to conduct continuous, automated vulnerability scanning and periodic 'red team' penetration tests on federal networks to ensure compliance and readiness." },
+        { "status": "GENERATED", "text": "Codifies the 'ISP Compacts' model, authorizing the NCSD to enter into formal agreements with private telecommunications and internet service providers to share classified threat intelligence in exchange for voluntary cooperation in network defense and threat mitigation." },
+        { "status": "GENERATED", "text": "**Title III: Counter-Cyber and Offensive Operations**" },
+        { "status": "GENERATED", "text": "Authorizes the NCSD to conduct offensive cyber operations to proactively disrupt, dismantle, and degrade the infrastructure of foreign malicious cyber actors, including botnets, malware servers, and their associated financial networks ('Operation Digital Ghost')." },
+        { "status": "GENERATED", "text": "Requires a presidential finding for any offensive operation anticipated to have significant international or economic consequences, consistent with existing covert action protocols." },
+        { "status": "GENERATED", "text": "Specifies that such operations shall be targeted at infrastructure and not be used for punitive actions against individuals." },
+        { "status": "GENERATED", "text": "**Title IV: Oversight and Civil Liberties Protections**" },
+        { "status": "GENERATED", "text": "Establishes a statutory, independent Inspector General for the NCSD with full investigative authority." },
+        { "status": "GENERATED", "text": "Mandates that all domestic activities of the NCSD comply with the warrant and privacy advocate requirements established in the PATRIOT Act of 2001. Explicitly prohibits the NCSD from engaging in domestic political surveillance or targeting of U.S. persons without a specific warrant from an Article III court." },
+        { "status": "GENERATED", "text": "Requires the Director of the NCSD to provide quarterly classified briefings on all offensive operations to the House and Senate Intelligence and Armed Services Committees." },
+        { "status": "GENERATED", "text": "Requires an annual unclassified public report detailing the overall health of federal networks, major threats neutralized, and the effectiveness of public-private partnerships." }
+      ],
+      "notes": [
+        "This Act provides a permanent, standalone statutory basis for the NCSD, moving its authority beyond the original PATRIOT Act framework.",
+        "It is designed to balance the need for aggressive cyber defense and offense with strong, codified oversight to protect civil liberties, consistent with the administration's 'good government' principles.",
+        "Passed with overwhelming bipartisan support as part of the deal with the Systems Caucus."
+      ]
+    },
+    {
+      "id": "JIA_2003",
+      "name": "Judicial Integrity Act of 2003",
+      "short_name": "JIA",
+      "status": "enacted",
+      "year": 2003,
+      "instrument": "federal_statute",
+      "policy_area": ["judicial_reform", "governance", "ethics"],
+      "key_effect": "Establishes a binding code of conduct for the Supreme Court and creates a non-partisan commission for appellate court nominations.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2003-01-24",
+        "passed_congress": "2003-02-06",
+        "signed": "2003-02-10",
+        "effective": null
+      },
+      "vote_counts": { "senate": "78-22", "house": "365-70" },
+      "provisions": [
+        { "status": "GENERATED", "text": "Establishes a binding Code of Conduct for Justices of the Supreme Court of the United States, mirroring the code applicable to all other federal judges." },
+        { "status": "GENERATED", "text": "Designates the independent Office of Public Integrity (est. by WTP1) to receive and investigate complaints under the new Code of Conduct, with the authority to recommend disciplinary action to Congress." },
+        { "status": "GENERATED", "text": "Creates the 'Federal Appellate Nominating Commission' to evaluate and recommend candidates for the Supreme Court and U.S. Courts of Appeals." },
+        { "status": "GENERATED", "text": "Mandates the Commission be composed of 15 non-partisan members, including retired federal judges from both parties, deans of ABA-accredited law schools, and leaders of national bar associations, serving staggered 10-year terms." },
+        { "status": "GENERATED", "text": "Requires the Commission to produce a slate of 3 to 5 highly qualified, pre-vetted candidates for each vacancy on the Supreme Court or a U.S. Court of Appeals." },
+        { "status": "GENERATED", "text": "Requires the President to nominate a candidate from the Commission's slate, or provide a formal written justification to the Senate Judiciary Committee if nominating a candidate not on the slate." }
+      ],
+      "notes": [
+        "The third major 'good government' reform bill, following WTP1 and WTP2.",
+        "Drafted in direct partnership with the Republican 'Systems Caucus' as a condition of their support for the PusheenCare Act.",
+        "Strategically limited in scope to the Supreme Court and Courts of Appeals to ensure broad bipartisan support and avoid accusations of bureaucratic overreach.",
+        "Its passage fulfilled the administration's key promise to Senator McCain, cementing the bipartisan working relationship."
+      ]
+    },
+    {
+      "id": "KEYSTONE_RD_2003",
+      "name": "Keystone Digital Payment System R&D Initiative",
+      "short_name": "Project Keystone",
+      "year": 2003,
+      "instrument": "internal_treasury_initiative",
+      "policy_area": ["finance", "technology", "consumer_protection", "governance"],
+      "key_effect": "Authorizes a Treasury-led internal research and development project to scope and prototype a national digital dollar payment system.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "announced": null,
+        "development_start": "2003-02-01",
+        "pilot_start": null,
+        "general_release": null
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "GENERATED", "text": "**Core Architecture & Governance**" },
+        { "status": "GENERATED", "text": "The Department of the Treasury, in partnership with the Federal Reserve, will lead the internal development of the Keystone system." },
+        { "status": "GENERATED", "text": "The system will be based on a direct, real-time, Treasury-backed digital dollar ledger, bypassing traditional credit card networks for domestic transactions." },
+        { "status": "GENERATED", "text": "Identity verification for account creation and high-value transactions will be securely linked to the voluntary National ID system established by the We The People Act 3 (WTP3)." },
+        { "status": "GENERATED", "text": "**Fee Structure**" },
+        { "status": "GENERATED", "text": "A maximum fee of 1.0% will be levied on commercial transactions, with the goal of reducing the fee over time as adoption scales." },
+        { "status": "GENERATED", "text": "All person-to-person (P2P) transfers will be free of charge." },
+        { "status": "GENERATED", "text": "All transactions involving federal, state, or local government entities (e.g., tax payments, benefit distribution) will be free of charge." },
+        { "status": "GENERATED", "text": "All interbank settlement transactions conducted via the Keystone system will be free of charge to encourage adoption and reduce systemic costs." },
+        { "status": "GENERATED", "text": "**Technical Implementation & Future-Proofing**" },
+        { "status": "GENERATED", "text": "Initial rollout will focus on website-based e-commerce through a standardized, secure API for merchants." },
+        { "status": "GENERATED", "text": "The system's architecture must include standardized API hooks and protocols for future integration with emerging technologies, including NFC for contactless payments, smartphone applications, and physical point-of-sale (POS) terminals." },
+        { "status": "GENERATED", "text": "The National Cyber Security Directorate (NCSD) will be tasked with providing security architecture review and continuous red-teaming of the Keystone system to ensure it is hardened against all threats." }
+      ],
+      "development_timeline": {
+        "phase_1_development": {
+          "timeline": "Q1 2003 - Q4 2003",
+          "goals": [
+            "Finalize core ledger architecture and security protocols.",
+            "Develop and publish the merchant API for web integration.",
+            "Establish partnerships with the Social Security Administration for National ID integration.",
+            "Build the initial data center infrastructure."
+          ]
+        },
+        "phase_2_pilot_program": {
+          "timeline": "Q1 2004 - Q2 2004",
+          "goals": [
+            "Launch a pilot with select federal agencies for government payments (e.g., GSA Advantage!, contractor payments).",
+            "Onboard a limited set of 5-10 major e-commerce retailers to test the web API in a live environment.",
+            "Test P2P functionality with a closed beta group of federal employees."
+          ]
+        },
+        "phase_3_general_release": {
+          "timeline": "Q3 2004",
+          "goals": [
+            "Open the Keystone system to the general public for P2P transfers.",
+            "Make the merchant API available to all U.S.-based online businesses.",
+            "Begin development of the specifications for the Phase 4 physical POS and smartphone integration."
+          ]
+        }
+      },
+      "notes": [
+        "This is an internal Treasury R&D project to develop a pilot-ready prototype for a national digital payment system.",
+        "The project is not public. The goal is to have a functional system ready for a decision on a public pilot program by mid-2004."
+      ]
+    },
+    {
+      "id": "PR_REFERENDUM_2003",
+      "name": "Puerto Rico Self-Determination Act of 2003",
+      "short_name": "PR Referendum Act",
+      "status": "enacted",
+      "year": 2003,
+      "instrument": "federal_statute",
+      "policy_area": ["territories", "democracy", "statehood"],
+      "key_effect": "Authorized a federally-sponsored, binding referendum on the future political status of Puerto Rico, which resulted in a vote for Statehood.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2003-01-17",
+        "passed_congress": "2003-01-23",
+        "signed": "2003-01-27",
+        "effective": null
+      },
+      "vote_counts": { "senate": "65-35", "house": "260-175" },
+      "provisions": [
+        { "status": "GENERATED", "text": "Authorizes and funds a binding referendum in Puerto Rico to be held within 180 days of enactment." },
+        { "status": "GENERATED", "text": "Mandates the referendum present a clear, binary choice: (1) Statehood, or (2) Independence." },
+        { "status": "GENERATED", "text": "Specifies that 'Independence' includes the option of a 'free association' compact, to be negotiated following an independence vote." },
+        { "status": "GENERATED", "text": "The Department of Justice shall oversee the referendum to ensure fairness and transparency, with trilingual ballots (English, Spanish, and local variants)." },
+        { "status": "GENERATED", "text": "If 'Statehood' receives a majority, Congress is required to pass an admission act for Puerto Rico within one year." },
+        { "status": "GENERATED", "text": "Appropriates funds for a non-partisan voter education campaign on the island to explain the legal and economic consequences of each status option." }
+      ],
+      "notes": [
+        "Passed with strong bipartisan support from the 'Systems Caucus', who supported the principle of self-determination.",
+        "The binary choice (Statehood vs. Independence) was a strategic decision to force a clear resolution, which proved successful.",
+        "The DC Statehood bill was strategically shelved to ensure this bill's passage.",
+        "The victory for Statehood now puts the onus on Congress to pass an admission act by June 2004."
+      ],
+      "implementation_notes": [
+        {
+          "as_of": "2003-06-11",
+          "note_type": "referendum_result",
+          "summary": "The federally-sponsored, binding referendum on Puerto Rico's political status was held on June 10, 2003.",
+          "results": {
+            "turnout": "81.5%",
+            "votes": {
+              "Statehood": "52.3%",
+              "Independence": "47.7%"
+            },
+            "outcome": "Statehood has won a clear majority. Per the Act, Congress is now required to pass an admission act for Puerto Rico within one year."
+          }
+        }
+      ]
+    },
+    {
+      "id": "DC_STATEHOOD_2003",
+      "name": "Washington, Douglass Commonwealth Admission Act of 2003",
+      "short_name": "DC Statehood Act",
+      "year": 2003,
+      "instrument": "federal_statute",
+      "policy_area": ["statehood", "democracy", "civil_rights"],
+      "key_effect": "Admits the residential and commercial areas of the District of Columbia as the 51st state.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2003-01-17",
+        "passed_congress": null,
+        "signed": null,
+        "effective": null
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "GENERATED", "text": "Admits the territory of the 'State of Washington, Douglass Commonwealth' into the Union on an equal footing with the other states." },
+        { "status": "GENERATED", "text": "Defines the territory of the new state as all land within the current boundaries of the District of Columbia, excluding a small federal enclave." },
+        { "status": "GENERATED", "text": "Defines the reduced 'District of Columbia' federal enclave to include the White House, the U.S. Capitol, the Supreme Court, and the principal federal monuments and buildings on the National Mall." },
+        { "status": "GENERATED", "text": "Entitles the new state to two Senators and one Representative in the House of Representatives until the next apportionment." },
+        { "status": "GENERATED", "text": "Provides for an expedited process for the new state to elect its federal representatives and ratify a state constitution." }
+      ],
+      "notes": [
+        "A core component of the 'Democracy Must Deliver' agenda, aimed at enfranchising American citizens in the District.",
+        "Paired with the Puerto Rico referendum bill. After whip counts showed it lacked the 60 votes to overcome a filibuster, it was strategically shelved to focus political capital on passing the PR bill.",
+        "This direct admission bill has been superseded by the referendum-first strategy outlined in the DC Self-Determination Act of 2003."
+      ]
+    },
+    {
+      "id": "WTP3_2003",
+      "name": "We The People Act 3: The Civic Infrastructure and Campaign Finance Reform Act",
+      "short_name": "WTP3",
+      "year": 2003,
+      "instrument": "federal_statute",
+      "policy_area": ["democracy_reform", "governance", "voting_rights", "campaign_finance", "transparency"],
+      "status": "enacted",
+      "key_effect": "Establishes a voluntary national ID, creates a public matching system for campaign finance, strengthens ethics rules including a stock-trading ban, and makes Election Day a national holiday.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2003-01-31",
+        "passed_congress": "2003-02-13",
+        "signed": "2003-02-17",
+        "effective": null
+      },
+      "vote_counts": { "senate": "62-38", "house": "251-184" },
+      "provisions": [
+        { "status": "GENERATED", "text": "**Title I: Civic Infrastructure**" },
+        { "status": "GENERATED", "text": "Establishes a voluntary National Identification Card program, administered by the Social Security Administration." },
+        { "status": "GENERATED", "text": "The National ID card shall be provided completely free of charge to any citizen who requests one, including free replacements." },
+        { "status": "GENERATED", "text": "The National ID is explicitly NOT required for voting. It serves as one of several acceptable, convenient forms of identification to streamline the voting process for those who choose to use it. No citizen shall face any additional barrier to voting for not possessing the card." },
+        { "status": "GENERATED", "text": "The card shall contain only a photograph, name, date of birth, and a unique identification number. No other personal information (e.g., address, biometrics) will be stored on the card or in any associated database." },
+        { "status": "GENERATED", "text": "Designates the Tuesday after the first Monday in November in every even-numbered year as a new federal holiday, 'Democracy Day,' to ensure all working citizens have the opportunity to vote." },
+        { "status": "GENERATED", "text": "**Title II: Campaign Finance Reform**" },
+        { "status": "GENERATED", "text": "Creates a 9:1 public matching fund system for all individual campaign contributions under $200 in federal elections, funded by the Corruption Asset Recovery Fund (est. by WTP2)." },
+        { "status": "GENERATED", "text": "Lowers the cap on individual contributions to federal candidates to $1,000 per election cycle." },
+        { "status": "GENERATED", "text": "Implements a complete ban on personal campaign contributions from any individual registered as a federal lobbyist to any federal candidate, committee, or political party." },
+        { "status": "GENERATED", "text": "Requires full disclosure of funding sources for all think tanks and policy institutes that engage in public advocacy or provide testimony to Congress." },
+        { "status": "GENERATED", "text": "**Title III: Governance and Ethics**" },
+        { "status": "GENERATED", "text": "Implements a ban on the trading of individual stocks, bonds, and options by sitting Members of Congress, their spouses, and their senior staff. Mandates that all such assets be placed in a qualified blind trust or diversified mutual funds upon taking office." },
+        { "status": "GENERATED", "text": "Expands the post-employment lobbying ban for senior executive branch officials and Members of Congress to five years." },
+        { "status": "GENERATED", "text": "Implements a hard ban on campaign contributions from any corporate entity, or its senior executives, that has a pending federal contract or grant application worth over $1 million." },
+        { "status": "GENERATED", "text": "Expands the WTP2 public transparency database to include real-time data feeds on all federal grant and loan distributions." },
+        { "status": "GENERATED", "text": "Strengthens whistleblower protections by creating a private right of action against any employer who retaliates against an employee for reporting waste, fraud, or abuse to a federal agency." }
+      ],
+      "notes": [
+        "This bill represents the next major step in the 'Democracy Must Deliver' agenda, incorporating Senator Feingold's maximal reform goals.",
+        "The optional National ID is designed as a 'pro-voter' convenience tool, carefully structured to avoid civil liberties concerns and any potential to become a barrier to voting."
+      ]
+    }
+    ,
+    {
+      "id": "FILIBUSTER_REFORM",
+      "name": "Senate Filibuster Reform Act",
+      "short_name": "Filibuster Elimination",
+      "year": 2003,
+      "instrument": "federal_statute",
+      "policy_area": ["senate_rules", "governance"],
+      "status": "enacted",
+      "key_effect": "Removes/neutralizes the filibuster as a procedural weapon for blocking the agenda.",
+      "dates": {
+        "introduced": "2003-02-28",
+        "passed_congress": "2003-03-06",
+        "signed": "2003-03-06"
+      },
+      "vote_counts": {
+        "senate": "61-39",
+        "house": "248-187"
+      },
+      "provisions": [
+        { "status": "LOCKED", "text": "Filibuster eliminated or neutralized as a blocking mechanism." },
+        { "status": "GENERATED", "text": "Cloture threshold reduced from 60 to simple majority (51) for all legislation and nominations." },
+        { "status": "GENERATED", "text": "Talking filibuster requirement reinstated as transition measure: any delay requires continuous floor presence." },
+        { "status": "GENERATED", "text": "Post-cloture debate time reduced from 30 hours to 2 hours for most legislation." },
+        { "status": "GENERATED", "text": "Unanimous consent calendar reforms to accelerate non-controversial nominations." }
+      ],
+      "notes": [
+        "The legislative capstone of the 'Grand Bargain of 2003,' a deal between the President and Minority Leader McCain.",
+        "Passage is secured by the 'Grand Bargain of 2003,' a deal between the President and Minority Leader McCain. McCain will deliver 4 GOP votes in exchange for the next Supreme Court nomination.",
+        "The 4 GOP votes were McCain, Collins, Snowe, and Chafee, who co-sponsored the bill, creating a bipartisan front.",
+        "The 'Anti-System' caucus attempted a talking filibuster against the bill itself, which collapsed after 36 hours, demonstrating the impotence of the old rules and accelerating the bill's passage."
+      ]
+    }
+    ,
+    {
+      "id": "NIGHTINGALE_2003",
+      "name": "Project Nightingale: The PusheenCare Digital Platform",
+      "short_name": "Project Nightingale",
+      "year": 2003,
+      "status": "beta_launched",
+      "instrument": "executive_program",
+      "policy_area": ["healthcare", "technology", "governance"],
+      "key_effect": "Authorizes the development of a unified digital platform for the PusheenCare program, integrating with the National ID and Keystone payment systems.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "announced": "2003-02-17",
+        "development_start": "2003-03-01",
+        "pilot_start": "2004-02-28",
+        "general_release": null
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "GENERATED", "text": "**Section 1: Governance and Mission**" },
+        { "status": "GENERATED", "text": "Establishes Project Nightingale as a joint initiative led by the Department of Health and Human Services (HHS) for program management, with the Department of Systems providing all technical architecture, development oversight, and security." },
+        { "status": "GENERATED", "text": "The mission is to create a single, secure, and user-friendly digital portal (web and future mobile applications) for all PusheenCare enrollees and providers." },
+        { "status": "GENERATED", "text": "**Section 2: Core System Integrations**" },
+        { "status": "GENERATED", "text": "Mandates the use of the WTP3 National ID system as the sole method for user authentication and identity verification, eliminating the need for separate PusheenCare accounts." },
+        { "status": "GENERATED", "text": "Mandates the use of the Project Keystone digital payment system for all financial transactions, including premium payments, subsidy distribution, and provider reimbursements." },
+        { "status": "GENERATED", "text": "**Section 3: Key Deliverables**" },
+        { "status": "GENERATED", "text": "A public-facing web portal for plan comparison, enrollment, and account management." },
+        { "status": "GENERATED", "text": "A secure portal for healthcare providers to verify coverage and manage claims." },
+        { "status": "GENERATED", "text": "A set of standardized APIs to allow for future integration with third-party health and wellness applications." },
+        { "status": "GENERATED", "text": "**Section 4: Security and Oversight**" },
+        { "status": "GENERATED", "text": "The National Cyber Security Directorate (NCSD) is tasked with continuous security auditing and red-teaming of the Nightingale platform." }
+      ],
+      "development_timeline": {
+        "phase_1_architecture": {
+          "timeline": "Q1 2003 - Q2 2003",
+          "status": "Completed",
+          "goals": ["Finalize API specifications for integration with National ID and Project Keystone.", "Develop core data architecture and security protocols."]
+        },
+        "phase_2_portal_development": {
+          "timeline": "Q2 2003 - Q4 2003",
+          "status": "Completed",
+          "goals": ["Build and test the public enrollment portal and the provider-side claims interface."]
+        },
+        "phase_3_beta_launch": {
+          "timeline": "Q1 2004",
+          "status": "Launched",
+          "launch_date": "2004-02-28",
+          "goals": ["Launch a public beta for the first open enrollment period, with a focus on user feedback and system stability."]
+        }
+      },
+      "notes": ["This project is a prime example of the 'Systems' doctrine, leveraging a unified civic tech stack to deliver services efficiently and securely, rather than creating redundant, siloed government websites."]
+    }
+    ,
+    {
+      "id": "WARSAW_COMPACT_2003",
+      "name": "Warsaw Security & Energy Compact Initiative",
+      "short_name": "Warsaw Compact",
+      "year": 2003,
+      "instrument": "executive_program",
+      "policy_area": ["diplomacy", "energy", "national_security", "climate", "anti_corruption"],
+      "key_effect": "A major diplomatic initiative to re-architect European energy security, expand NATO, and implement financial transparency standards to counter Russian influence.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "announced": "2003-02-20",
+        "conference_date": "2003-06-15"
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "GENERATED", "text": "**Pillar I: Energy Independence & Climate Security**" },
+        { "status": "GENERATED", "text": "Establish a binding, coordinated timeline for the complete phase-out of Russian natural gas imports by all member states." },
+        { "status": "GENERATED", "text": "Launch a joint U.S.-EU investment fund for a pan-European 'Supergrid' to facilitate massive cross-border sharing of renewable energy (wind, solar)." },
+        { "status": "GENERATED", "text": "Mandate the adoption of a harmonized carbon pricing mechanism to manage emissions and fund the green transition." },
+        { "status": "GENERATED", "text": "Create a fast-track regulatory framework for the deployment of advanced civilian nuclear power plants." },
+        { "status": "GENERATED", "text": "**Pillar II: Collective Security Expansion**" },
+        { "status": "GENERATED", "text": "Formalize the 'Helsinki-to-Kyiv' NATO expansion pathway, establishing clear, milestone-based accession plans for Finland, Sweden, Ukraine, and Georgia." },
+        { "status": "GENERATED", "text": "Establish a permanent, joint U.S.-EU Financial Intelligence Task Force to monitor and interdict illicit Russian capital flows." },
+        { "status": "GENERATED", "text": "Extend mutual defense commitments to explicitly include responses to the weaponization of energy supplies." },
+        { "status": "GENERATED", "text": "**Pillar III: Systems Integrity & Transparency**" },
+        { "status": "GENERATED", "text": "Require all signatory nations to implement and maintain a public, WTP-compliant beneficial ownership registry for all corporate entities." },
+        { "status": "GENERATED", "text": "Mandate real-time information sharing between national financial intelligence units on suspicious cross-border money transfers." },
+        { "status": "GENERATED", "text": "Establish a joint sanctions regime targeting individuals and entities using energy profits for political corruption and malign influence operations." }
+      ],
+      "notes": [
+        "A major foreign policy initiative led by Secretary of State Colin Powell, designed to permanently re-architect Europe's security and energy landscape away from Russian dependence.",
+        "The conference will be held in Warsaw, Poland, a symbolic choice highlighting the front-line states' security concerns.",
+        "Next Step: State Department to begin sending formal invitations and circulating draft proposals to allied nations."
+      ]
+    },
+    {
+      "id": "TUNNELS_2003",
+      "name": "Tunneling Under National Networks for Economic Leadership and Stability Act",
+      "short_name": "TUNNELS Act",
+      "year": 2003,
+      "instrument": "federal_statute",
+      "policy_area": ["infrastructure", "transportation", "industrial_policy", "rail"],
+      "status": "enacted",
+      "key_effect": "Establishes a government-owned corporation to acquire and operate a strategic fleet of Tunnel Boring Machines (TBMs) to accelerate critical rail and transit projects.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2003-03-06",
+        "passed_congress": "2003-03-13",
+        "signed": "2003-03-14",
+        "effective": null
+      },
+      "vote_counts": { "senate": "70-30", "house": "315-120" },
+      "provisions": [
+        { "status": "GENERATED", "text": "Establishes the National Tunneling Authority (NTA) as a government-owned corporation under the Department of Transportation to acquire, maintain, and operate a strategic fleet of TBMs." },
+        { "status": "GENERATED", "text": "Authorizes the initial procurement of six (6) large-diameter, state-of-the-art TBMs suitable for both hard rock and soft ground conditions." },
+        { "status": "GENERATED", "text": "Designates the Gateway Program's Hudson River Tunnel project and the New York City MTA's Second Avenue Subway Phase 2 as the first priority projects for the NTA's TBM fleet." },
+        { "status": "GENERATED", "text": "Directs the NTA to establish a national training and certification center for TBM operation and maintenance in partnership with labor unions and engineering schools, creating a permanent skilled workforce." },
+        { "status": "GENERATED", "text": "Authorizes the NTA to lease its TBMs and expert crews to state and local transit authorities for approved projects, significantly reducing the capital cost and timeline for major tunneling works." },
+        { "status": "GENERATED", "text": "Appropriates initial funding for the TBM acquisition and the establishment of the NTA, to be supplemented by leasing fees from partner agencies." }
+      ],
+      "notes": [
+        "A key 'Builder Economy' initiative designed to overcome a major bottleneck in American infrastructure development.",
+        "By treating TBMs as a strategic national asset, this act aims to de-risk and accelerate megaprojects that would otherwise be delayed for decades by procurement and cost issues.",
+        "This act is a direct follow-on to the RAILS Act of 2001, providing the heavy hardware needed to realize its vision."
+      ]
+    }
+    ,
+    {
+      "id": "HOPE_2003",
+      "name": "Housing Opportunity and Production for Everyone Act",
+      "short_name": "HOPE Act",
+      "year": 2003,
+      "instrument": "federal_statute",
+      "policy_area": ["housing", "infrastructure", "urban_development", "industrial_policy"],
+      "status": "enacted",
+      "key_effect": "A major 'Builder' initiative to dramatically increase housing supply by offering supplemental infrastructure grants as an incentive for local zoning reform and establishing a public development authority.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2003-03-20",
+        "passed_congress": "2003-03-27",
+        "signed": "2003-03-28",
+        "effective": null
+      },
+      "vote_counts": { "senate": 72, "house": 305 },
+      "provisions": [
+        { "status": "GENERATED", "text": "**Title I: The Housing and Zoning Reform Grant Program**" },
+        { "status": "GENERATED", "text": "Establishes a new 'Pro-Housing Bonus Fund' to provide supplemental infrastructure grants to state and local governments that implement meaningful zoning and land-use reforms. Existing federal infrastructure funding is not affected." },
+        { "status": "GENERATED", "text": "Defines 'meaningful reform' to include, at a minimum: legalizing duplexes/triplexes in areas zoned for single-family homes, eliminating residential parking minimums within a half-mile of major transit stops, and establishing a 'by-right' approval process for affordable housing projects that meet clear standards." },
+        { "status": "GENERATED", "text": "Prioritizes the disbursement of bonus funds to jurisdictions with 'shovel-ready' projects that can begin construction within 90 days of the grant award." },
+        { "status": "GENERATED", "text": "**Title II: The Public Housing Development Authority (PHDA)**" },
+        { "status": "GENERATED", "text": "Establishes the PHDA as a government-owned corporation, modeled on the National Tunneling Authority, with the mission to directly develop mixed-income housing on federal surplus land and other underutilized properties." },
+        { "status": "GENERATED", "text": "Requires the PHDA to prioritize the use of public-private partnerships (P3s) for HOPE Site development and caps the number of units the PHDA may directly develop at 10,000 per year nationally." },
+        { "status": "GENERATED", "text": "Authorizes the PHDA to act as a 'public option' developer, creating a benchmark for high-quality, cost-effective, and aesthetically pleasing public housing that the private market must compete with." },
+        { "status": "GENERATED", "text": "**Title III: The Advanced Construction Technology Fund**" },
+        { "status": "GENERATED", "text": "Establishes a fund within the Department of Commerce to provide grants and loan guarantees for companies developing and scaling up modular, prefabricated, and other advanced housing construction technologies." },
+        { "status": "GENERATED", "text": "Prioritizes technologies that significantly reduce construction time and cost while meeting high standards for energy efficiency and durability." },
+        { "status": "GENERATED", "text": "**Title IV: Transit-Oriented Development (TOD) Mandate**" },
+        { "status": "GENERATED", "text": "Mandates that any new transit project receiving federal funds must be accompanied by a local plan to upzone the surrounding area for high-density, mixed-use development, with a minimum percentage of units designated as affordable." },
+        { "status": "GENERATED", "text": "**Title V: HOPE Site Development and Standards**" },
+        { "status": "GENERATED", "text": "Authorizes the creation of 'HOPE Sites,' large-scale, master-planned mixed-income communities consisting of approximately 2,000 residential units. Each site shall be composed of eight (8) 30-story residential towers centered around a 'Civic Core' containing a community center, communal dining hall, and clinic services." },
+        { "status": "GENERATED", "text": "Mandates that any HOPE Site development plan must include the construction of, or be located adjacent to, a new or newly modernized public school sufficient to serve the resident population." },
+        { "status": "GENERATED", "text": "Directs the PHDA and HUD to prioritize the development of HOPE Sites on remediated brownfield sites and locations that meet the highest standards for Transit-Oriented Development (TOD) compliance." },
+        { "status": "GENERATED", "text": "Requires all HOPE Sites to be constructed using advanced technologies funded under Title III, with final architectural designs subject to local community approval to ensure developments are in keeping with the local character." },
+        { "status": "GENERATED", "text": "Makes federal funding for HOPE Sites contingent on local jurisdictions providing binding assurances of a streamlined, fast-track permitting process, waiving unnecessary local red tape." },
+        { "status": "GENERATED", "text": "Specifies that HOPE Sites will be managed and operated by qualified local entities, including municipal housing authorities, certified non-profit housing organizations, or private development partners who agree to a binding covenant mandating the site's mixed-income affordability structure for the life of the property." },
+        { "status": "GENERATED", "text": "Establishes one national 'Flagship' HOPE Site, composed of multiple co-located HOPE Sites, to be directly developed and managed by the Public Housing Development Authority (PHDA) to serve as a national benchmark for performance, cost, and innovation." }
+      ],
+      "notes": [
+        "A core 'Builder Economy' initiative designed to tackle the root causes of the housing crisis by attacking supply-side constraints.",
+        "This act uses federal leverage to reform local zoning laws by offering significant bonus infrastructure funding as a 'carrot' for pro-housing policies, rather than a 'stick'."
+      ],
+      "implementation_notes": [
+        {
+          "as_of": "2003-03-28",
+          "note_type": "site_selection",
+          "summary": "Initial pilot sites for the HOPE program have been identified.",
+          "sites": [
+            {
+              "name": "Sunnyside Yards HOPE Community",
+              "location": "Queens, New York City, NY",
+              "status": "Designated - Flagship Site",
+              "operator": "Public Housing Development Authority (PHDA)",
+              "description": "A multi-site development at Sunnyside Yards will serve as the national flagship. It will be directly developed and managed by the PHDA to serve as the federal benchmark for cost, speed, and innovation."
+            },
+            {
+              "name": "McCain-Phoenix HOPE Community",
+              "location": "Phoenix, Arizona (specific parcel TBD)",
+              "status": "Proposed - Lead Candidate for First P3 Site",
+              "operator": "Public-Private Partnership (P3)",
+              "description": "Following a proposal from Senator John McCain, a key Republican supporter of the Act, the administration is fast-tracking the selection of a large, underutilized federal brownfield site near Phoenix for the first public-private partnership HOPE Site. This demonstrates the program's bipartisan, nationwide scope and its commitment to the P3 model."
+            }
+          ]
+        }
+        ,
+        {
+          "as_of": "2003-11-20",
+          "note_type": "application_update",
+          "summary": "The application window for the first 100 national HOPE Sites has closed with an overwhelming response.",
+          "details": {
+            "applications_received": 750,
+            "sites_available_in_tranche": 100,
+            "notes": "The high number of applications provides the PHDA with significant leverage to select only the highest-quality projects. The first awards will be announced on Dec 31, 2003."
+          }
+        }
+        ,
+        {
+          "as_of": "2003-11-20",
+          "note_type": "timeline_update",
+          "summary": "Following a presidential directive, the PHDA has provided a projected timeline for the Sunnyside Yards flagship project.",
+          "site": "Sunnyside Yards HOPE Community",
+          "timeline": [
+            { "phase": "Environmental Remediation & Site Prep", "projected_completion": "Q3 2004" },
+            { "phase": "Projected Groundbreaking", "projected_date": "Q4 2004" }
+          ],
+          "notes": "The timeline has been significantly accelerated. Following a presidential directive, the PHDA will adapt one of the many existing master plans for the site rather than starting a new design process from scratch. This allows groundbreaking to begin immediately following the completion of environmental remediation."
+        }
+      ]
+    },
+    {
+      "as_of": "2003-12-31",
+      "note_type": "award_announcement",
+      "summary": "The PHDA announced the 100 winning sites for the first national tranche of the HOPE program.",
+      "details": {
+        "applications_received": 750,
+        "sites_awarded": 100,
+        "selection_criteria_focus": "The PHDA leveraged the high number of applicants to prioritize projects with strong TOD compliance, brownfield remediation plans, and binding commitments to streamlined local permitting.",
+        "notable_awardees": [
+          { "city": "Detroit, MI", "project_focus": "Redevelopment of a former automotive plant site." },
+          { "city": "Cleveland, OH", "project_focus": "Waterfront development on a remediated industrial brownfield." },
+          { "city": "Baltimore, MD", "project_focus": "Transit-oriented development near the port." },
+          { "city": "St. Louis, MO", "project_focus": "Redevelopment of underutilized land near railyards." },
+          { "city": "Atlanta, GA", "project_focus": "High-density community connected to the MARTA system." },
+          { "city": "Houston, TX", "project_focus": "Development of a resilient, flood-proof community." }
+        ],
+        "next_step": "The PHDA will now begin the pre-development and final planning process with the 100 winning applicants."
+      }
+    },
+    {
+      "id": "RAILS_2003",
+      "name": "RAILS Expansion and Acceleration Act of 2003",
+      "short_name": "RAILS 2.0",
+      "year": 2003,
+      "instrument": "federal_statute",
+      "policy_area": ["transportation", "infrastructure", "rail", "industrial_policy", "energy"],
+      "status": "enacted",
+      "key_effect": "Expands the national rail program to include new corridors, leveraging the political capital from the Northeast Blackout to accelerate the 'Builder' agenda.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2003-08-16",
+        "passed_congress": "2003-08-22",
+        "signed": "2003-08-25",
+        "effective": null
+      },
+      "vote_counts": { "senate": 75, "house": 320 },
+      "provisions": [
+        { "status": "GENERATED", "text": "**Title I: Corridor Expansion**" },
+        { "status": "GENERATED", "text": "Amends the RAILS Act of 2001 to designate two new priority corridors: the Chicago Hub Network (connecting to St. Louis, Detroit, and Minneapolis) and the Southeast Corridor (Miami-Orlando-Atlanta)." },
+        { "status": "GENERATED", "text": "Authorizes an additional $30 billion for the development of these new corridors, with a focus on acquiring right-of-way and beginning engineering and environmental reviews immediately." },
+        { "status": "GENERATED", "text": "Makes any corridor selected for development under the Federal Railroad Administration's Corridor ID Program eligible for funding under this Act, creating a permanent pipeline for future rail projects." },
+        { "status": "GENERATED", "text": "**Title II: HVDC Integration**" },
+        { "status": "GENERATED", "text": "Mandates that all new and existing RAILS corridors integrate planning for co-located High-Voltage DC (HVDC) transmission lines within their right-of-way, creating national 'energy and transit superhighways'." },
+        { "status": "GENERATED", "text": "Authorizes the National Builder's Council to begin planning for the 'Plains-to-Midwest Wind Corridor' HVDC line, to be co-located along the new Chicago Hub rail lines." }
+      ],
+      "notes": [
+        "A direct legislative response to the Northeast Blackout of 2003.",
+        "This bill frames grid resilience and transportation modernization as two sides of the same coin, a core tenet of the 'Systems' doctrine."
+      ]
+    },
+    {
+      "id": "TUNNELS_2003_EXPANSION",
+      "name": "TUNNELS Expansion Act of 2003",
+      "short_name": "TUNNELS 2.0",
+      "year": 2003,
+      "instrument": "federal_statute",
+      "policy_area": ["infrastructure", "transportation", "industrial_policy", "rail"],
+      "status": "enacted",
+      "key_effect": "Authorizes the procurement of a second strategic fleet of Tunnel Boring Machines (TBMs) to accelerate the California and Southeast high-speed rail corridors.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2003-09-05",
+        "passed_congress": "2003-09-10",
+        "signed": "2003-09-12",
+        "effective": null
+      },
+      "vote_counts": { "senate": 75, "house": 330 },
+      "provisions": [
+        { "status": "GENERATED", "text": "Authorizes the National Tunneling Authority (NTA) to procure an additional six (6) large-diameter, state-of-the-art TBMs, doubling the size of the strategic national fleet." },
+        { "status": "GENERATED", "text": "Designates the California High-Speed Rail program (specifically the Tehachapi Pass segment) and the Southeast Corridor (Miami-Orlando-Atlanta) as the priority projects for the second TBM fleet." },
+        { "status": "GENERATED", "text": "Authorizes additional funding for the NTA's national training and certification center to expand the skilled workforce required for parallel tunneling operations across multiple national corridors." },
+        { "status": "GENERATED", "text": "Requires the NTA to develop a national strategic plan for TBM deployment and refurbishment to ensure continuous, efficient use of the entire fleet on a rolling basis as projects are completed." }
+      ],
+      "notes": [
+        "A direct follow-on to the successful TUNNELS Act and the RAILS 2.0 Act.",
+        "This expansion is critical for executing the national high-speed rail vision on an accelerated timeline, preventing bottlenecks as new corridors enter the construction phase."
+      ]
+    },
+    {
+      "id": "PR_ADMISSION_2003",
+      "name": "Puerto Rico Admission Act of 2003",
+      "short_name": "PR Admission Act",
+      "year": 2003,
+      "instrument": "federal_statute",
+      "policy_area": ["statehood", "democracy", "territories"],
+      "status": "enacted",      "key_effect": "Admits the Commonwealth of Puerto Rico as the 52nd state of the Union, fulfilling the mandate of the 2003 referendum.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2003-12-21",
+        "passed_congress": "2003-12-24",
+        "signed": "2003-12-25",
+        "effective": null
+      },
+      "vote_counts": { "senate": 69, "house": 260 },
+      "provisions": [
+        { "status": "GENERATED", "text": "Admits the territory of the Commonwealth of Puerto Rico into the Union as the 'State of Puerto Rico' on an equal footing with the other states." },
+        { "status": "GENERATED", "text": "Provides for an expedited process for the new state to elect two Senators and its allotted number of Representatives in the House of Representatives." },
+        { "status": "GENERATED", "text": "The existing Commonwealth constitution shall be deemed the state constitution. All Commonwealth laws, government bodies, and debts shall carry over unless they conflict with the U.S. Constitution." },
+        { "status": "GENERATED", "text": "All federal programs, including PusheenCare, shall be extended to Puerto Rico upon admission." },
+        { "status": "GENERATED", "text": "Federal income taxes will be phased in for residents of Puerto Rico over a 10-year period to ensure a smooth economic transition." },
+        { "status": "GENERATED", "text": "Designates both English and Spanish as co-official languages for all federal proceedings and services within the new state." }
+      ],
+      "notes": [
+        "This bill is the required legislative follow-up to the successful statehood vote in the June 2003 referendum.",
+        "The 10-year tax phase-in is designed to mitigate economic shock and build bipartisan support for passage."
+      ]
+    },
+    {
+      "id": "DC_REFERENDUM_2003",
+      "name": "Washington, D.C. Self-Determination Act of 2003",
+      "short_name": "DC Referendum Act",
+      "year": 2003,
+      "instrument": "federal_statute",
+      "policy_area": ["statehood", "democracy", "civil_rights"],
+      "status": "enacted",
+      "key_effect": "Authorizes a federally-sponsored, binding referendum on the future political status of Washington, D.C., with an expedited 7-day timeline to limit outside influence.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2003-11-28",
+        "passed_congress": "2003-12-04",
+        "signed": "2003-12-05",
+        "effective": null
+      },
+      "vote_counts": { "senate": 69, "house": 265 },
+      "provisions": [
+        { "status": "GENERATED", "text": "Authorizes and funds a binding referendum in the District of Columbia to be held on the 7th day following the enactment of this Act." },
+        { "status": "GENERATED", "text": "Mandates the referendum present a single, clear question: 'Should the District of Columbia be admitted into the Union as the State of Washington, Douglass Commonwealth?'" },
+        { "status": "GENERATED", "text": "The Department of Justice shall oversee the referendum to ensure fairness and transparency." },
+        { "status": "GENERATED", "text": "If the referendum passes with a majority vote, Congress is required to pass an admission act for the new state within 90 days." },
+        { "status": "GENERATED", "text": "Appropriates funds for a rapid, intensive voter education campaign to be conducted by the DC Board of Elections in the 7-day period preceding the vote." }
+      ],
+      "notes": [
+        "This bill adopts the successful playbook from the Puerto Rico referendum to build a bipartisan mandate for DC Statehood.",
+        "The highly compressed 7-day timeline is a strategic choice to minimize the impact of national special interest advertising and focus the vote on the principle of self-determination for DC residents."
+      ],
+      "implementation_notes": [
+        {
+          "as_of": "2003-12-13",
+          "note_type": "referendum_result",
+          "summary": "The federally-sponsored, binding referendum on D.C.'s political status was held on December 12, 2003.",
+          "results": {
+            "turnout": "78.2%",
+            "votes": {
+              "Yes (for Statehood)": "65.8%",
+              "No (against Statehood)": "34.2%"
+            },
+            "outcome": "Statehood has won a clear and decisive majority. Per the Act, Congress is now required to pass an admission act for the new state within 90 days."
+          }
+        }
+      ]
+    },
+    {
+      "id": "DC_ADMISSION_2003",
+      "name": "Washington, Douglass Commonwealth Admission Act of 2003",
+      "short_name": "DC Admission Act",
+      "year": 2003,
+      "instrument": "federal_statute",
+      "policy_area": ["statehood", "democracy", "civil_rights"],
+      "status": "enacted",      "key_effect": "Admits the new state of Washington, Douglass Commonwealth as the 51st state of the Union, fulfilling the mandate of the December 2003 referendum.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2003-12-13",
+        "passed_congress": "2003-12-18",
+        "signed": "2003-12-20",
+        "effective": null
+      },
+      "vote_counts": { "senate": 69, "house": 265 },
+      "provisions": [
+        { "status": "GENERATED", "text": "Admits the territory of the 'State of Washington, Douglass Commonwealth' into the Union on an equal footing with the other states." },
+        { "status": "GENERATED", "text": "Defines the reduced 'District of Columbia' federal enclave to include the White House, the U.S. Capitol, the Supreme Court, and principal federal monuments on the National Mall." },
+        { "status": "GENERATED", "text": "Provides for an expedited process for the new state to elect two Senators and its allotted number of Representatives in the House of Representatives." },
+        { "status": "GENERATED", "text": "The existing District of Columbia Home Rule Act charter shall be deemed the state constitution until amended or replaced by the new state." }
+      ],
+      "notes": [
+        "This bill is the required legislative follow-up to the successful statehood vote in the December 2003 referendum.",
+        "Per the referendum act, this admission act must be passed within 90 days."
+      ]
+    },
+    {
+      "id": "AMERISAT_BLOCK0_SPRINT_2004",
+      "name": "Project AmeriSat: Block 0 Launch Sprint",
+      "short_name": "AmeriSat Block 0 Sprint",
+      "year": 2004,
+      "instrument": "executive_program",
+      "policy_area": ["space", "infrastructure", "technology"],
+      "key_effect": "Authorizes and details the accelerated launch manifest for the initial 60-satellite 'Block 0' AmeriSat constellation using the existing EELV fleet.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "announced": "2004-02-28",
+        "effective": "2004-03-01"
+      },
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "GENERATED", "text": "The National Builder's Council, under the authority of the AmeriSat Act of 2002, hereby authorizes an accelerated launch campaign to deploy the 60-satellite Block 0 constellation." },
+        { "status": "GENERATED", "text": "The campaign will utilize a mix of Atlas V and Delta IV Heavy rockets from the existing Evolved Expendable Launch Vehicle (EELV) fleet." },
+        { "status": "GENERATED", "text": "Each launch will carry a multi-payload dispenser with 6 AmeriSat satellites." },
+        { "status": "GENERATED", "text": "**Projected Launch Manifest (10 Launches):**" },
+        { "status": "GENERATED", "text": "1. March 2004: Atlas V (Cape Canaveral)" },
+        { "status": "GENERATED", "text": "2. April 2004: Delta IV Heavy (Vandenberg AFB)" },
+        { "status": "GENERATED", "text": "3. April 2004: Atlas V (Cape Canaveral)" },
+        { "status": "GENERATED", "text": "4. May 2004: Atlas V (Cape Canaveral)" },
+        { "status": "GENERATED", "text": "5. June 2004: Delta IV Heavy (Vandenberg AFB)" },
+        { "status": "GENERATED", "text": "6. June 2004: Atlas V (Cape Canaveral)" },
+        { "status": "GENERATED", "text": "7. July 2004: Atlas V (Cape Canaveral)" },
+        { "status": "GENERATED", "text": "8. August 2004: Delta IV Heavy (Vandenberg AFB)" },
+        { "status": "GENERATED", "text": "9. August 2004: Atlas V (Cape Canaveral)" },
+        { "status": "GENERATED", "text": "10. September 2004: Atlas V (Cape Canaveral)" }
+      ],
+      "notes": [
+        "This aggressive 'sprint' is designed to achieve initial operational capability for the AmeriSat network by Q4 2004.",
+        "The high cost of using the legacy EELV fleet is deemed a necessary strategic investment to accelerate the 'Builder Economy' and secure US leadership in satellite internet.",
+        "This manifest fulfills the implementation plan outlined in the AmeriSat Act of 2002."
+      ]
+    },
+    {
+      "id": "SPACEX_INTEGRATION_2004",
+      "name": "SpaceX Strategic Integration and Launch Competitiveness Act of 2004",
+      "short_name": "SpaceX Integration Act",
+      "year": 2004,
+      "instrument": "federal_statute",
+      "policy_area": ["space", "industrial_policy", "national_security", "technology"],
+      "status": "enacted",
+      "key_effect": "Authorizes the acquisition of SpaceX and its integration into the federal government, creating new directorates for launch services and a 'Mars-shot' initiative.",
+      "description": "A direct response to the Falcon 1 launch failure and imminent bankruptcy of SpaceX, this act is a cornerstone of the 'Builder' agenda. It turns a programmatic failure into a strategic acquisition to accelerate the administration's space industrial base and exploration goals, framed as a strategic necessity to prevent the collapse of a critical industrial asset and secure a competitive launch provider for the AmeriSat program.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2004-03-26",
+        "passed_congress": "2004-04-05",
+        "signed": "2004-04-08",
+        "effective": null
+      },
+      "vote_counts": { "senate": 74, "house": 348 },
+      "provisions": [
+        { "status": "GENERATED", "text": "**Title I: Acquisition and Restructuring**" },
+        { "status": "GENERATED", "text": "Sec. 101: Authorizes the Administrator of NASA to acquire all assets, intellectual property, and liabilities of Space Exploration Technologies Corp. (SpaceX) to secure a domestic, competitive launch capability." },
+        { "status": "GENERATED", "text": "Sec. 102: Establishes the 'Strategic Space Directorate' (SSD) within NASA, headquartered at the existing SpaceX campus, to assume control of Falcon launch vehicle manufacturing and operations for national priorities." },
+        { "status": "GENERATED", "text": "Sec. 103: Establishes the 'Mars Development Program' as a distinct but subordinate directorate within the Strategic Space Directorate (SSD), with the sole mission of developing the architecture for human colonization of Mars." },
+        { "status": "GENERATED", "text": "**Title II: Leadership and Mandates**" },
+        { "status": "GENERATED", "text": "Sec. 201: Appoints Gwynne Shotwell as the first Administrator of the Strategic Space Directorate, responsible for providing reliable, low-cost launch services for the AmeriSat constellation and other national security payloads." },
+        { "status": "GENERATED", "text": "Sec. 202: Appoints Elon Musk as the 'Chief Visioneer and Director of the Mars Development Program,' granting him final engineering authority over the Mars transportation architecture, operating under the general supervision of the SSD Administrator." },
+        { "status": "GENERATED", "text": "**Title III: Appropriations and Authorities**" },
+        { "status": "GENERATED", "text": "Sec. 301: Appropriates $150,000,000 to the Treasury for the express purpose of making whole the private investors of SpaceX upon completion of the acquisition." },
+        { "status": "GENERATED", "text": "Sec. 302: Authorizes appropriations up to a total of $20,000,000,000 over a period of no less than 16 years for the Mars Development Program. Funds shall be disbursed in tranches contingent upon the successful completion of pre-defined technical milestones, to be certified by a joint NASA/DOD technical review board. Initial milestones shall include, but are not be limited to: successful full-duration test fire of a next-generation methane-oxygen engine, successful orbital flight test of a full-scale Mars vehicle prototype, and a successful demonstration of in-orbit propellant transfer." },
+        { "status": "GENERATED", "text": "Sec. 303: Grants the Administrator of the Strategic Space Directorate special hiring and compensation authorities, exempt from standard General Schedule (GS) pay scales, to recruit and retain top-tier engineering and technical talent." },
+        { "status": "GENERATED", "text": "**Title IV: Oversight and Reporting**" },
+        { "status": "GENERATED", "text": "Sec. 401: Requires the Administrator of the Strategic Space Directorate to provide semi-annual progress reports to the House and Senate Committees on Science and Appropriations, which shall include a detailed report from the Director of the Mars Development Program." }
+      ],
+      "notes": [
+        "A direct response to the Falcon 1 launch failure and imminent bankruptcy of SpaceX.",
+        "This act is a cornerstone of the 'Builder' agenda, turning a programmatic failure into a strategic acquisition to accelerate the administration's space industrial base and exploration goals.",
+        "Framed as a strategic necessity to prevent the collapse of a critical industrial asset and secure a competitive launch provider for the AmeriSat program."
+      ]
+    },
+    {
+      "id": "FAITH_ACT_2004",
+      "name": "Federal Authority for Integrated Townships and Housing (FAITH) Act of 2004",
+      "short_name": "FAITH Act",
+      "year": 2004,
+      "instrument": "federal_statute",
+      "policy_area": ["housing", "infrastructure", "urban_development", "finance"],
+      "status": "enacted",
+      "key_effect": "Establishes a national program to build 20 million Singapore-style, 99-year leasehold housing units, financed by federally-backed bonds issued by the Public Housing Development Authority (PHDA).",
+      "description": "The FAITH Act is the next evolution of the 'Builder' agenda's housing policy. It complements the HOPE Act by creating a self-sustaining financial engine and a new model of affordable homeownership. By separating the cost of housing from the speculative cost of land, it aims to make homeownership accessible to millions of previously disadvantaged Americans and build a new generation of integrated, thriving communities.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2004-04-27",
+        "passed_congress": "2004-05-10",
+        "signed": "2004-05-12",
+        "effective": null
+      },
+      "vote_counts": { "senate": 71, "house": 335 },
+      "provisions": [
+        { "status": "GENERATED", "text": "**Title I: National Housing Mission**" },
+        { "status": "GENERATED", "text": "Sec. 101: Establishes the national goal of making available 20 million new housing units under the FAITH program." },
+        { "status": "GENERATED", "text": "**Title II: The 99-Year Leasehold Model**" },
+        { "status": "GENERATED", "text": "Sec. 201: Authorizes the Public Housing Development Authority (PHDA) to develop and sell residential properties on a 99-year leasehold basis. The underlying land shall remain a public asset in perpetuity, held in trust by the PHDA." },
+        { "status": "GENERATED", "text": "Sec. 202: Establishes the legal framework for the transfer, inheritance, and sale of leasehold units, with the PHDA retaining the right of first refusal to prevent speculative pricing." },
+        { "status": "GENERATED", "text": "**Title III: Financing and the Public Housing Development Authority**" },
+        { "status": "GENERATED", "text": "Sec. 301: Grants the PHDA the authority to issue federally-backed 'FAITH Bonds' as needed to finance the acquisition of land and the construction of FAITH townships. These bonds shall be exempt from the annual congressional appropriations process." },
+        { "status": "GENERATED", "text": "Sec. 302: Directs that revenue generated from lease sales, ground rents, and commercial leases within FAITH townships shall be used to service the FAITH Bonds, making the program self-sustaining." },
+        { "status": "GENERATED", "text": "**Title IV: Integrated Township Standards**" },
+        { "status": "GENERATED", "text": "Sec. 401: Mandates that all FAITH developments be master-planned as integrated townships, incorporating the 'Civic Core' concept from the HOPE Act, with dedicated space for transit, schools, clinics, retail, and public parks." },
+        { "status": "GENERATED", "text": "**Title V: Integration with the HOPE Act**" },
+        { "status": "GENERATED", "text": "Sec. 501: Designates existing HOPE Act sites as the initial pilot locations for the FAITH program. Jurisdictions hosting HOPE sites that adopt the FAITH leasehold model shall be given priority access to financing via FAITH Bonds." }
+      ],
+      "notes": [
+        "This act provides the financial and legal backbone for the 20 million unit national housing goal.",
+        "The bonding authority is the key mechanism, allowing the PHDA to operate on a long-term, strategic scale independent of short-term political budget cycles."
+      ]
+    },
+    {
+      "id": "NDL_ACT_2004",
+      "name": "The Digital Library and Public Search Act of 2004",
+      "short_name": "NDL Act",
+      "year": 2004,
+      "instrument": "federal_statute",
+      "policy_area": ["technology", "governance", "privacy", "industrial_policy"],
+      "status": "enacted",
+      "key_effect": "Authorizes the $35B federal acquisition of Google, restructuring its core services into a public trust and its mobile OS into an open-source project.",
+      "description": "The first major test of the 'Sovereign Dividend Doctrine.' This act acquires the dominant search engine and reframes it as essential public infrastructure, free from the distortions of an ad-based business model.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2004-07-05",
+        "passed_congress": "2004-07-28",
+        "signed": "2004-08-02",
+        "effective": null
+      },
+      "vote_counts": { "senate": 65, "house": 280 },
+      "provisions": [
+        { "status": "GENERATED", "text": "**Title I: Acquisition and Compensation**" },
+        { "status": "GENERATED", "text": "Sec. 101: Authorizes the Department of the Treasury to execute a mandatory, premium-priced acquisition of all outstanding shares and assets of Google Inc. for a total sum of $35,000,000,000." },
+        { "status": "GENERATED", "text": "Sec. 102: Directs the Securities and Exchange Commission to execute an indefinite trading halt on any secondary markets for Google shares upon introduction of this Act to prevent speculation." },
+        { "status": "GENERATED", "text": "**Title II: The National Digital Library**" },
+        { "status": "GENERATED", "text": "Sec. 201: Establishes the National Digital Library (NDL) as an independent public trust to assume control of Google's core search, mapping, and news aggregation services." },
+        { "status": "GENERATED", "text": "Sec. 202: Mandates that all NDL services shall be provided to the public free of charge and free of all advertising. The collection of personally identifiable user data for any purpose other than direct service improvement is strictly prohibited." },
+        { "status": "GENERATED", "text": "Sec. 203: Establishes a Board of Trustees for the NDL, composed of librarians, academics, and technologists, to be appointed for staggered 10-year terms, to ensure the NDL's political independence." },
+        { "status": "GENERATED", "text": "**Title III: The CivicOS Consortium**" },
+        { "status": "GENERATED", "text": "Sec. 301: Transfers the Android mobile operating system and its associated intellectual property to a new open-source foundation, the 'CivicOS Consortium,' to be managed by a consortium of public universities and non-profits." },
+        { "status": "GENERATED", "text": "**Title IV: Personnel and Transition**" },
+        { "status": "GENERATED", "text": "Sec. 401: Establishes the 'National Technology Service' (NTS) employment classification, authorizing the NDL and CivicOS Consortium to offer competitive salaries and retention packages to key personnel, exempt from standard government pay scales." }
+      ],
+      "notes": [
+        "This is the first legislative execution of the 'Sovereign Dividend Doctrine'."
+      ]
+    },
+    {
+      "id": "KEYSTONE_UTILITY_2005",
+      "name": "Keystone Public Utility Act of 2005",
+      "short_name": "Keystone Act",
+      "year": 2005,
+      "instrument": "federal_statute",
+      "policy_area": ["finance", "technology", "governance", "consumer_protection"],
+      "status": "enacted",
+      "key_effect": "Formally charters the Keystone digital dollar system as a public utility, codifying its low-fee structure and privacy protections into law.",
+      "description": "The public culmination of the covert 'Project Bedrock' initiative. This act transitions the Keystone system from its 'private startup' cover into official public infrastructure, guaranteeing its stability, low cost, and security for all Americans. It is the first legislative priority for the new 'National Unity Caucus' in the 109th Congress.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2005-01-04",
+        "passed_congress": "2005-01-18",
+        "signed": "2005-01-20",
+        "effective": null
+      },
+      "vote_counts": { "senate": 82, "house": 390 },
+      "provisions": [
+        { "status": "GENERATED", "text": "**Title I: Charter and Governance**" },
+        { "status": "GENERATED", "text": "Sec. 101: Formally establishes the Keystone Digital Payment System as a public utility under the authority of the Department of the Treasury." },
+        { "status": "GENERATED", "text": "Sec. 102: Establishes a 'Keystone Governance Board' to oversee the system's operation, composed of representatives from the Treasury, the Federal Reserve, the NCSD, and two independent privacy advocates appointed to staggered 10-year terms." },
+        { "status": "GENERATED", "text": "**Title II: Universal Access and Fee Structure**" },
+        { "status": "GENERATED", "text": "Sec. 201: Codifies the Keystone fee structure into law: a maximum of 1.0% on commercial transactions, and 0% for all person-to-person and government transactions." },
+        { "status": "GENERATED", "text": "Sec. 202: Mandates that Keystone accounts shall be available free of charge to all U.S. citizens and legal residents, accessible via the WTP3 National ID system." },
+        { "status": "GENERATED", "text": "**Title III: Privacy and Security**" },
+        { "status": "GENERATED", "text": "Sec. 301: Codifies the system's 'privacy-by-design' architecture. Prohibits the sale or transfer of individual transaction data for commercial or advertising purposes." },
+        { "status": "GENERATED", "text": "Sec. 302: Mandates that law enforcement access to transaction data requires a specific warrant from an Article III court, consistent with the safeguards of the PATRIOT Act of 2001." },
+        { "status": "GENERATED", "text": "Sec. 303: Formalizes the National Cyber Security Directorate's (NCSD) role in providing continuous security auditing and threat mitigation for the Keystone system." },
+        { "status": "GENERATED", "text": "**Title IV: Transition and Integration**" },
+        { "status": "GENERATED", "text": "Sec. 401: Authorizes the dissolution of the 'Keystone Labs, Inc.' special purpose entity and the transfer of all assets and personnel to the new public utility structure." },
+        { "status": "GENERATED", "text": "Sec. 402: Mandates that all federal agencies transition to using Keystone for benefit distribution and payments by the end of the current fiscal year." }
+      ],
+      "notes": ["The first legislative priority for the new 'National Unity Caucus' and Senate Majority Leader John McCain."]
+    },
+    {
+      "id": "WTP4_2005",
+      "name": "Representation and Democracy Act of 2005",
+      "short_name": "WTP4",
+      "year": 2005,
+      "instrument": "federal_statute",
+      "policy_area": ["democracy_reform", "congress", "representation"],
+      "status": "enacted",
+      "key_effect": "Expands the House of Representatives to a fixed ratio of 1 representative per 300,000 constituents and authorizes a new legislative campus.",
+      "description": "The fourth major 'We The People' reform, designed to dramatically increase the responsiveness of the House by shrinking district size. It also authorizes the necessary physical infrastructure to house the expanded legislature.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2005-01-21",
+        "passed_congress": "2005-02-08",
+        "signed": "2005-02-10",
+        "effective": null
+      },
+      "vote_counts": { "senate": 77, "house": 362 },
+      "provisions": [
+        { "status": "GENERATED", "text": "**Title I: House of Representatives Apportionment**" },
+        { "status": "GENERATED", "text": "Sec. 101: Amends the Apportionment Act to fix the size of the House of Representatives at a ratio of one representative for every 300,000 persons, as determined by the most recent decennial census." },
+        { "status": "GENERATED", "text": "Sec. 102: Specifies that the apportionment calculation shall be based on the total resident population of each state, regardless of citizenship status." },
+        { "status": "GENERATED", "text": "Sec. 103: The first apportionment under this Act shall take effect for the 110th Congress, convening in January 2007." },
+        { "status": "GENERATED", "text": "**Title II: The McMillan Legislative Campus**" },
+        { "status": "GENERATED", "text": "Sec. 201: Authorizes the General Services Administration (GSA) to design and construct a new legislative campus at the McMillan Sand Filtration Site in Washington, D.C., to serve as the primary chamber and office complex for the expanded House of Representatives." },
+        { "status": "GENERATED", "text": "Sec. 202: The McMillan Complex shall include a new House chamber, committee rooms, and office suites sufficient to accommodate a legislature of over 1,000 members." },
+        { "status": "GENERATED", "text": "Sec. 203: Mandates a target completion date for the McMillan Complex of January 1, 2007." }
+      ],
+      "notes": ["This bill directly addresses the issue of representation ratios and provides the physical infrastructure for a larger, more representative House."],
+      "implementation_details": {
+        "election_cycle": "2006 Midterm Elections (for 110th Congress)",
+        "transition_model": "A hybrid model will be used for the first election of the expanded House.",
+        "district_seats": "Existing congressional districts will remain in place for the 2006 election. Voters will cast one vote for the representative of their current district.",
+        "at_large_seats": "All newly created seats for each state will be contested on an at-large, statewide basis. Voters will cast a second, single vote for one candidate in this at-large race. The top X vote-getters will win the X available at-large seats (Single Non-Transferable Vote - SNTV)."
+      }
+    },
+    {
+      "id": "WTP5_2005",
+      "name": "Citizen Empowerment and Anti-Corruption Act of 2005",
+      "short_name": "WTP5",
+      "year": 2005,
+      "instrument": "federal_statute",
+      "policy_area": ["campaign_finance", "anti_corruption", "ethics"],
+      "status": "enacted",
+      "key_effect": "Establishes a universal '$100 Democracy Credit' for campaign finance and enacts strict new lobbying and revolving door restrictions.",
+      "description": "The fifth major 'We The People' reform, designed to shift the balance of power in campaign finance from large donors and corporations to individual citizens.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2005-01-21",
+        "passed_congress": "2005-02-08",
+        "signed": "2005-02-10",
+        "effective": null
+      },
+      "vote_counts": { "senate": 84, "house": 398 },
+      "provisions": [
+        { "status": "GENERATED", "text": "**Title I: The Democracy Credit Program**" },
+        { "status": "GENERATED", "text": "Sec. 101: Establishes a '$100 Democracy Credit' to be issued annually to every voting-age U.S. citizen." },
+        { "status": "GENERATED", "text": "Sec. 102: The credit shall be administered and distributed through the Keystone public utility system, appearing as a dedicated, non-transferable balance in each citizen's account." },
+        { "status": "GENERATED", "text": "Sec. 103: Citizens may donate their credit in whole or in part to any federal candidate who opts into the public financing system. Unused credits expire at the end of each calendar year." },
+        { "status": "GENERATED", "text": "**Title II: Campaign Contribution and Lobbying Reform**" },
+        { "status": "GENERATED", "text": "Sec. 201: Implements a complete ban on campaign contributions from corporate Political Action Committees (PACs) to federal candidates." },
+        { "status": "GENERATED", "text": "Sec. 202: Extends the post-employment 'revolving door' lobbying ban to ten (10) years for all Cabinet members and Members of Congress." },
+        { "status": "GENERATED", "text": "Sec. 203: Expands the definition of 'lobbying' to include paid 'strategic policy advisory' roles, requiring registration and disclosure for any individual or firm paid to influence federal policy." }
+      ],
+      "notes": ["This bill builds on the WTP1 and WTP3 reforms, creating a universal citizen-funded election model and further tightening the rules on corporate influence."]
+    },
+    {
+      "id": "WTP6_2005",
+      "name": "Voting Rights Advancement Act of 2005",
+      "short_name": "WTP6",
+      "year": 2005,
+      "instrument": "federal_statute",
+      "policy_area": ["voting_rights", "democracy_reform", "civil_rights"],
+      "status": "enacted",
+      "key_effect": "A comprehensive modernization of the Voting Rights Act, establishing national standards for voting access and restoring federal preclearance.",
+      "description": "The sixth major 'We The People' reform, designed to ensure equal access to the ballot for all Americans and protect against discriminatory voting practices.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2005-01-21",
+        "passed_congress": "2005-02-08",
+        "signed": "2005-02-10",
+        "effective": null
+      },
+      "vote_counts": { "senate": 69, "house": 315 },
+      "provisions": [
+        { "status": "GENERATED", "text": "**Title I: Preclearance and Enforcement**" },
+        { "status": "GENERATED", "text": "Sec. 101: Establishes a new, modern coverage formula for federal preclearance of voting law changes, based on a jurisdiction's record of voting rights violations over the preceding 10 years." },
+        { "status": "GENERATED", "text": "Sec. 102: Grants the Department of Justice the authority to send federal observers to any jurisdiction covered under the new formula." },
+        { "status": "GENERATED", "text": "**Title II: National Standards for Voting Access**" },
+        { "status": "GENERATED", "text": "Sec. 201: Mandates automatic voter registration (AVR) through state DMVs and other designated government agencies for all eligible citizens." },
+        { "status": "GENERATED", "text": "Sec. 202: Sets a national minimum of fifteen (15) consecutive days for early in-person voting for all federal elections." },
+        { "status": "GENERATED", "text": "Sec. 203: Establishes national standards for acceptable voter identification, requiring states to accept a broad range of documents and to provide a sworn affidavit option for voters without ID." },
+        { "status": "GENERATED", "text": "Sec. 204: Makes it a federal crime to knowingly spread disinformation about the time, place, or manner of a federal election with the intent to suppress voter turnout." },
+        { "status": "GENERATED", "text": "**Title III: Restoration of Rights**" },
+        { "status": "GENERATED", "text": "Sec. 301: Restores the right to vote in federal elections to all formerly incarcerated citizens upon their release from custody." }
+      ],
+      "notes": ["This bill is the administration's comprehensive response to ongoing efforts to restrict voting access and fulfills a key promise to civil rights organizations."]
+    },
+    {
+      "id": "PROMETHEUS_FUNDING_2005",
+      "name": "Prometheus Ignition and Energy Independence Act of 2005",
+      "short_name": "Prometheus Ignition Act",
+      "year": 2005,
+      "instrument": "federal_statute",
+      "policy_area": ["energy", "technology", "national_security", "industrial_policy"],
+      "status": "enacted",
+      "key_effect": "Appropriates $10 billion for the construction of the Prometheus-1 fusion test reactor at Oak Ridge National Laboratory.",
+      "description": "Following the major simulation breakthrough in Project Prometheus, this act provides the capital investment required to construct the physical test reactor. It is a cornerstone of the administration's second-term 'Deep Future' agenda, aimed at achieving American energy independence through technological supremacy.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2005-02-12",
+        "passed_congress": "2005-02-24",
+        "signed": "2005-02-28",
+        "effective": null
+      },
+      "vote_counts": { "senate": 88, "house": 410 },
+      "provisions": [
+        { "status": "GENERATED", "text": "**Title I: Appropriations for Fusion Energy**" },
+        { "status": "GENERATED", "text": "Sec. 101: Appropriates $10,000,000,000 to the Department of Energy for fiscal years 2005 through 2009 for the express purpose of constructing the 'Prometheus-1' test reactor at the Oak Ridge National Laboratory." },
+        { "status": "GENERATED", "text": "**Title II: Mission and Timeline**" },
+        { "status": "GENERATED", "text": "Sec. 201: Mandates that the primary mission of the Prometheus-1 reactor is to achieve and sustain a net-positive energy gain (Q>1) from a controlled fusion reaction." },
+        { "status": "GENERATED", "text": "Sec. 202: Reaffirms the target completion date for the reactor's construction of no later than December 31, 2009." },
+        { "status": "GENERATED", "text": "**Title III: Industrial Base and Workforce Development**" },
+        { "status": "GENERATED", "text": "Sec. 301: Authorizes the Secretary of Energy to enter into long-term procurement contracts with domestic manufacturers for critical components, including high-field magnets, vacuum vessels, and advanced materials." },
+        { "status": "GENERATED", "text": "Sec. 302: Establishes a 'National Fusion Engineering Fellowship' program, administered by the DOE, to fund graduate and post-doctoral research in fields critical to fusion energy, creating a dedicated workforce for the new industry." },
+        { "status": "GENERATED", "text": "**Title IV: Oversight and Reporting**" },
+        { "status": "GENERATED", "text": "Sec. 401: Requires the Secretary of Energy to provide quarterly, unclassified progress reports on the construction and budget of Prometheus-1 to the leadership of the National Unity Caucus and the public via Restore.gov." }
+      ],
+      "notes": ["This bill provides the necessary capital to translate the successful 'Silicon Tokamak' simulations into a physical reality, a key step toward achieving the post-scarcity energy goals of the second term."]
+    },
+    {
+      "id": "ASSAA_2009",
+      "name": "America Simpler Stronger Affordable Accountable Act",
+      "short_name": "ASSAA",
+      "year": 2009,
+      "instrument": "federal_statute",
+      "policy_area": ["governance", "digital_services", "administrative_simplification", "consumer_protection"],
+      "key_effect": "Reduces friction by granting Americans a single, affordable account for benefits, permits, and accountability across federal services.",
+      "sponsors": { "senate": null, "house": null },
+      "dates": {
+        "introduced": "2009-02-25",
+        "passed_congress": null,
+        "signed": null,
+        "effective": null
+      },
+      "status": "introduced",
+      "vote_counts": { "senate": null, "house": null },
+      "provisions": [
+        { "status": "GENERATED", "text": "Expands the Keystone Portal/Wallet architecture into an 'America Simpler Stronger Account' where Americans can manage federal benefits, licensing, and permits through a single identity with transparent privacy controls." },
+        { "status": "GENERATED", "text": "Directs agencies to adopt shared service standards (user-centered design, API-first, interoperability) and publish a public 'Citizen Friction Index' tracking response times." },
+        { "status": "GENERATED", "text": "Caps fees and paperwork by requiring any federal transaction to be no more onerous than the equivalent Keystone Wallet step, with remediation plans for agencies failing to route processes through ASSAA-backed digital forms." },
+        { "status": "GENERATED", "text": "Creates a cross-agency Office of Government Simplification inside OMB to coordinate digital service delivery, empower whistleblower reporting, and publish monthly accountability dashboards." },
+        { "status": "GENERATED", "text": "Links ASSAA adoption bonuses to Builder Economy grants so states and localities receive priority infrastructure funding when they implement the shared-lead digital standards." }
+      ],
+      "notes": [
+        "Positions ASSAA as the 2009 follow-on to Keystone Wallet and the Builder Economy, emphasizing that smoother federal service delivery is part of the broader simpler/stronger/affordable/ accountable narrative.",
+        "Leverages Trinity Technology Act oversight to keep big-tech partnerships accountable while giving citizens direct access to the same platforms used for industrial policy and infrastructure programs."
+      ],
+      "implementation_notes": [
+        {
+          "as_of": "2009-03-15",
+          "note_type": "pilot_rollout",
+          "summary": "Six Builder Economy states begin piloting ASSAA accounts, bundling PusheenCare enrollment, Keystone Wallet benefits, and new workforce credentials through the Keystone Portal."
+        }
+      ]
+    }
+  ]
+}

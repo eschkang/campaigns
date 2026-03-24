@@ -1,0 +1,1612 @@
+{
+  "project": "Gore Alternate History — Key Personnel",
+  "scope_note": "Key individuals in the Gore-McCain administration and their roles.",
+  "persons": [ 
+    {
+      "id": "gore_al",
+      "name": "Al Gore",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "President of the United States",
+          "start_date": "2001-01-20",
+          "end_date": null,
+          "notes": "Elected in 2000, inaugurated January 20, 2001."
+        }
+      ]
+    },
+    {
+      "id": "lieberman_joe",
+      "name": "Joe Lieberman",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Vice President of the United States",
+          "start_date": "2001-01-20",
+          "end_date": null,
+          "notes": "Selected as running mate for bipartisan unity."
+        }
+      ]
+    },
+    {
+      "id": "mccain_john",
+      "name": "John McCain",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Arizona",
+          "start_date": "1987-01-03",
+          "end_date": null,
+          "notes": "Elected Senate Minority Leader in 2002. A key Republican ally for bipartisan initiatives."
+        },
+        {
+          "title": "Senate Majority Leader",
+          "start_date": "2005-01-03",
+          "end_date": null,
+          "notes": "Elected leader of the 'National Unity Caucus' at the start of the 109th Congress, a historic power-sharing agreement."
+        }
+      ]
+    },
+    {
+      "id": "powell_colin",
+      "name": "Colin Powell",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Secretary of State",
+          "start_date": "2001-01-20",
+          "end_date": null,
+          "notes": "Appointed for his unifying presence and international respect."
+        }
+      ]
+    },
+    {
+      "id": "carlucci_frank",
+      "name": "Frank Carlucci",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Secretary of Defense",
+          "start_date": "2001-01-20",
+          "end_date": null,
+          "notes": "Former Secretary of Defense under President Reagan, chosen for his extensive experience and bipartisan appeal."
+        }
+      ]
+    },
+    {
+      "id": "cohen_william",
+      "name": "William Cohen",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Secretary of Defense (Initial Consideration)",
+          "start_date": "2000-12-XX",
+          "end_date": "2000-12-XX",
+          "notes": "Former Senator considered for the role during the transition; Frank Carlucci was the final nominee and confirmed choice."
+        }
+      ]
+    },
+    {
+      "id": "kang_will",
+      "name": "Will Kang",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Secretary of Systems",
+          "start_date": "2001-01-20",
+          "end_date": null,
+          "notes": "Appointed for his expertise in systems architecture."
+        }
+      ]
+    },
+    {
+      "id": "volcker_paul",
+      "name": "Paul Volcker",
+      "party": "Independent",
+      "roles": [
+        {
+          "title": "Secretary of the Treasury",
+          "start_date": "2001-01-20",
+          "end_date": null,
+          "notes": "Former Chairman of the Federal Reserve, appointed for his unimpeachable integrity and economic expertise."
+        }
+      ]
+    },
+    {
+      "id": "holder_eric",
+      "name": "Eric Holder",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Attorney General",
+          "start_date": "2001-01-20",
+          "end_date": null,
+          "notes": "Former Deputy Attorney General, chosen for his legal background and experience."
+        }
+      ]
+    },
+    {
+      "id": "chu_steven",
+      "name": "Steven Chu",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Secretary of Energy",
+          "start_date": "2001-01-20",
+          "end_date": null,
+          "notes": "Nobel laureate in physics, appointed for his scientific expertise aligned with Gore's energy priorities."
+        }
+      ]
+    },
+    {
+      "id": "whitman_christine_todd",
+      "name": "Christine Todd Whitman",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Secretary of Commerce",
+          "start_date": "2001-01-20",
+          "end_date": null,
+          "notes": "Former EPA Administrator, chosen for her moderate environmental and business perspective."
+        }
+      ]
+    },
+    {
+      "id": "rodin_judith",
+      "name": "Judith Rodin",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Secretary of Health and Human Services",
+          "start_date": "2001-01-20",
+          "end_date": null,
+          "notes": "President of the University of Pennsylvania, chosen for her leadership in health and education."
+        }
+      ]
+    },
+    {
+      "id": "alexander_lamar",
+      "name": "Lamar Alexander",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Secretary of Education",
+          "start_date": "2001-01-20",
+          "end_date": null,
+          "notes": "Former Secretary of Education and Governor, chosen for bipartisan education reform focus."
+        }
+      ]
+    },
+    {
+      "id": "scowcroft_brent",
+      "name": "Brent Scowcroft",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "National Security Advisor",
+          "start_date": "2001-01-20",
+          "end_date": null,
+          "notes": "Highly respected, non-partisan foreign policy and national security expert."
+        }
+      ]
+    },
+    {
+      "id": "neel_roy",
+      "name": "Roy Neel",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "White House Chief of Staff",
+          "start_date": "2001-01-20",
+          "end_date": null,
+          "notes": "Long-time Gore aide and former Vice Presidential Chief of Staff, known for competence and loyalty."
+        }
+      ]
+    },
+    {
+      "id": "akaka_daniel",
+      "name": "Daniel Akaka",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Hawaii",
+          "start_date": "1990-05-16",
+          "end_date": "2013-01-03",
+          "notes": "Served as Senator from Hawaii."
+        }
+      ]
+    },
+    {
+      "id": "allard_wayne",
+      "name": "Wayne Allard",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Colorado",
+          "start_date": "1997-01-03",
+          "end_date": "2009-01-03",
+          "notes": "Served as Senator from Colorado."
+        }
+      ]
+    },
+    {
+      "id": "allen_george",
+      "name": "George Allen",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Virginia",
+          "start_date": "2001-01-03",
+          "end_date": "2007-01-03",
+          "notes": "Served as Senator from Virginia."
+        }
+      ]
+    },
+    {
+      "id": "baucus_max",
+      "name": "Max Baucus",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Montana",
+          "start_date": "1978-12-15",
+          "end_date": "2014-02-06",
+          "notes": "Served as Senator from Montana."
+        }
+      ]
+    },
+    {
+      "id": "bayh_evan",
+      "name": "Evan Bayh",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Indiana",
+          "start_date": "1999-01-03",
+          "end_date": "2011-01-03",
+          "notes": "Served as Senator from Indiana."
+        }
+      ]
+    },
+    {
+      "id": "bennett_bob",
+      "name": "Bob Bennett",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Utah",
+          "start_date": "1993-01-05",
+          "end_date": "2011-01-03",
+          "notes": "Served as Senator from Utah."
+        }
+      ]
+    },
+    {
+      "id": "biden_joe",
+      "name": "Joe Biden",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Delaware",
+          "start_date": "1973-01-03",
+          "end_date": "2009-01-15",
+          "notes": "Served as Senator from Delaware."
+        }
+      ]
+    },
+    {
+      "id": "bingaman_jeff",
+      "name": "Jeff Bingaman",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from New Mexico",
+          "start_date": "1983-01-03",
+          "end_date": "2013-01-03",
+          "notes": "Served as Senator from New Mexico."
+        }
+      ]
+    },
+    {
+      "id": "bond_kit",
+      "name": "Kit Bond",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Missouri",
+          "start_date": "1987-01-03",
+          "end_date": "2011-01-03",
+          "notes": "Served as Senator from Missouri."
+        }
+      ]
+    },
+    {
+      "id": "boxer_barbara",
+      "name": "Barbara Boxer",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from California",
+          "start_date": "1993-01-05",
+          "end_date": "2017-01-03",
+          "notes": "Served as Senator from California."
+        }
+      ]
+    },
+    {
+      "id": "breaux_john",
+      "name": "John Breaux",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Louisiana",
+          "start_date": "1987-01-03",
+          "end_date": "2005-01-03",
+          "notes": "Served as Senator from Louisiana."
+        }
+      ]
+    },
+    {
+      "id": "brownback_sam",
+      "name": "Sam Brownback",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Kansas",
+          "start_date": "1996-11-07",
+          "end_date": "2011-01-03",
+          "notes": "Served as Senator from Kansas."
+        }
+      ]
+    },
+    {
+      "id": "bunning_jim",
+      "name": "Jim Bunning",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Kentucky",
+          "start_date": "1999-01-03",
+          "end_date": "2011-01-03",
+          "notes": "Served as Senator from Kentucky."
+        }
+      ]
+    },
+    {
+      "id": "burns_conrad",
+      "name": "Conrad Burns",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Montana",
+          "start_date": "1989-01-03",
+          "end_date": "2007-01-03",
+          "notes": "Served as Senator from Montana."
+        }
+      ]
+    },
+    {
+      "id": "byrd_robert",
+      "name": "Robert Byrd",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from West Virginia",
+          "start_date": "1959-01-03",
+          "end_date": "2010-06-28",
+          "notes": "Served as Senator from West Virginia."
+        }
+      ]
+    },
+    {
+      "id": "campbell_ben_nighthorse",
+      "name": "Ben Nighthorse Campbell",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Colorado",
+          "start_date": "1993-01-05",
+          "end_date": "2005-01-03",
+          "notes": "Served as Senator from Colorado."
+        }
+      ]
+    },
+    {
+      "id": "cantwell_maria",
+      "name": "Maria Cantwell",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Washington",
+          "start_date": "2001-01-03",
+          "end_date": null,
+          "notes": "Serving as Senator from Washington."
+        }
+      ]
+    },
+    {
+      "id": "carnahan_jean",
+      "name": "Jean Carnahan",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Missouri",
+          "start_date": "2001-01-03",
+          "end_date": "2002-11-23",
+          "notes": "Appointed to the seat won posthumously by her husband."
+        }
+      ]
+    },
+    {
+      "id": "carper_tom",
+      "name": "Tom Carper",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Delaware",
+          "start_date": "2001-01-03",
+          "end_date": null,
+          "notes": "Serving as Senator from Delaware."
+        }
+      ]
+    },
+    {
+      "id": "chafee_lincoln",
+      "name": "Lincoln Chafee",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Rhode Island",
+          "start_date": "1999-11-02",
+          "end_date": "2007-01-03",
+          "notes": "Served as Senator from Rhode Island. A key moderate Republican."
+        }
+      ]
+    },
+    {
+      "id": "cleland_max",
+      "name": "Max Cleland",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Georgia",
+          "start_date": "1997-01-03",
+          "end_date": "2003-01-03",
+          "notes": "Served as Senator from Georgia."
+        }
+      ]
+    },
+    {
+      "id": "clinton_hillary",
+      "name": "Hillary Clinton",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from New York",
+          "start_date": "2001-01-03",
+          "end_date": "2009-01-21",
+          "notes": "Served as Senator from New York."
+        }
+      ]
+    },
+    {
+      "id": "cochran_thad",
+      "name": "Thad Cochran",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Mississippi",
+          "start_date": "1978-12-27",
+          "end_date": "2018-04-01",
+          "notes": "Served as Senator from Mississippi."
+        }
+      ]
+    },
+    {
+      "id": "collins_susan",
+      "name": "Susan Collins",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Maine",
+          "start_date": "1997-01-03",
+          "end_date": null,
+          "notes": "Serving as Senator from Maine. A key moderate Republican."
+        }
+      ]
+    },
+    {
+      "id": "conrad_kent",
+      "name": "Kent Conrad",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from North Dakota",
+          "start_date": "1987-01-03",
+          "end_date": "2013-01-03",
+          "notes": "Served as Senator from North Dakota."
+        }
+      ]
+    },
+    {
+      "id": "corzine_jon",
+      "name": "Jon Corzine",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from New Jersey",
+          "start_date": "2001-01-03",
+          "end_date": "2006-01-17",
+          "notes": "Served as Senator from New Jersey."
+        }
+      ]
+    },
+    {
+      "id": "craig_larry",
+      "name": "Larry Craig",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Idaho",
+          "start_date": "1991-01-03",
+          "end_date": "2009-01-03",
+          "notes": "Served as Senator from Idaho."
+        }
+      ]
+    },
+    {
+      "id": "crapo_mike",
+      "name": "Mike Crapo",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Idaho",
+          "start_date": "1999-01-03",
+          "end_date": null,
+          "notes": "Serving as Senator from Idaho."
+        }
+      ]
+    },
+    {
+      "id": "daschle_tom",
+      "name": "Tom Daschle",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from South Dakota",
+          "start_date": "1987-01-03",
+          "end_date": null,
+          "notes": "Served as Senate Majority Leader from 2001-2005."
+        },
+        {
+          "title": "Chairman, Senate Finance Committee",
+          "start_date": "2005-01-03",
+          "end_date": null,
+          "notes": "Assumed the chairmanship after stepping aside as Majority Leader to facilitate the creation of the 'National Unity Caucus'."
+        }
+      ]
+    },
+    {
+      "id": "dayton_mark",
+      "name": "Mark Dayton",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Minnesota",
+          "start_date": "2001-01-03",
+          "end_date": "2007-01-03",
+          "notes": "Served as Senator from Minnesota."
+        }
+      ]
+    },
+    {
+      "id": "delauro_rosa",
+      "name": "Rosa DeLauro",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Connecticut",
+          "start_date": "2003-01-03",
+          "end_date": null,
+          "notes": "Elected to the Senate in the 2002 'Builder Wave' special election, defeating appointed incumbent Nancy Johnson."
+        },
+        {
+          "title": "Representative from Connecticut's 3rd district",
+          "start_date": "1991-01-03",
+          "end_date": "2003-01-03",
+          "notes": "Served in the House of Representatives before her successful Senate campaign."
+        }
+      ]
+    },
+    {
+      "id": "dewine_mike",
+      "name": "Mike DeWine",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Ohio",
+          "start_date": "1995-01-03",
+          "end_date": "2007-01-03",
+          "notes": "Served as Senator from Ohio."
+        }
+      ]
+    },
+    {
+      "id": "dodd_chris",
+      "name": "Chris Dodd",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Connecticut",
+          "start_date": "1981-01-05",
+          "end_date": "2011-01-03",
+          "notes": "Served as Senator from Connecticut."
+        }
+      ]
+    },
+    {
+      "id": "domenici_pete",
+      "name": "Pete Domenici",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from New Mexico",
+          "start_date": "1973-01-03",
+          "end_date": "2009-01-03",
+          "notes": "Served as Senator from New Mexico."
+        }
+      ]
+    },
+    {
+      "id": "dorgan_byron",
+      "name": "Byron Dorgan",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from North Dakota",
+          "start_date": "1992-12-15",
+          "end_date": "2011-01-03",
+          "notes": "Served as Senator from North Dakota."
+        }
+      ]
+    },
+    {
+      "id": "durbin_dick",
+      "name": "Dick Durbin",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Illinois",
+          "start_date": "1997-01-03",
+          "end_date": null,
+          "notes": "Serving as Senator from Illinois."
+        }
+      ]
+    },
+    {
+      "id": "edwards_john",
+      "name": "John Edwards",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from North Carolina",
+          "start_date": "1999-01-03",
+          "end_date": "2005-01-03",
+          "notes": "Served as Senator from North Carolina."
+        }
+      ]
+    },
+    {
+      "id": "ensign_john",
+      "name": "John Ensign",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Nevada",
+          "start_date": "2001-01-03",
+          "end_date": "2011-05-03",
+          "notes": "Served as Senator from Nevada."
+        }
+      ]
+    },
+    {
+      "id": "enzi_mike",
+      "name": "Mike Enzi",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Wyoming",
+          "start_date": "1997-01-03",
+          "end_date": "2021-01-03",
+          "notes": "Served as Senator from Wyoming."
+        }
+      ]
+    },
+    {
+      "id": "feingold_russ",
+      "name": "Russ Feingold",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Wisconsin",
+          "start_date": "1993-01-05",
+          "end_date": "2011-01-03",
+          "notes": "Served as Senator from Wisconsin. Key ally on campaign finance reform."
+        }
+      ]
+    },
+    {
+      "id": "feinstein_dianne",
+      "name": "Dianne Feinstein",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from California",
+          "start_date": "1992-11-10",
+          "end_date": "2023-09-29",
+          "notes": "Served as Senator from California."
+        }
+      ]
+    },
+    {
+      "id": "fitzgerald_peter",
+      "name": "Peter Fitzgerald",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Illinois",
+          "start_date": "1999-01-03",
+          "end_date": "2005-01-03",
+          "notes": "Served as Senator from Illinois."
+        }
+      ]
+    },
+    {
+      "id": "frist_bill",
+      "name": "Bill Frist",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Tennessee",
+          "start_date": "1995-01-03",
+          "end_date": "2007-01-03",
+          "notes": "Served as Senator from Tennessee."
+        }
+      ]
+    },
+    {
+      "id": "graham_bob",
+      "name": "Bob Graham",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Florida",
+          "start_date": "1987-01-03",
+          "end_date": "2005-01-03",
+          "notes": "Served as Senator from Florida."
+        }
+      ]
+    },
+    {
+      "id": "gramm_phil",
+      "name": "Phil Gramm",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Texas",
+          "start_date": "1985-01-03",
+          "end_date": "2002-11-30",
+          "notes": "Served as Senator from Texas."
+        }
+      ]
+    },
+    {
+      "id": "grassley_chuck",
+      "name": "Chuck Grassley",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Iowa",
+          "start_date": "1981-01-05",
+          "end_date": null,
+          "notes": "Serving as Senator from Iowa."
+        }
+      ]
+    },
+    {
+      "id": "gregg_judd",
+      "name": "Judd Gregg",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from New Hampshire",
+          "start_date": "1993-01-05",
+          "end_date": "2011-01-03",
+          "notes": "Served as Senator from New Hampshire."
+        }
+      ]
+    },
+    {
+      "id": "hagel_chuck",
+      "name": "Chuck Hagel",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Nebraska",
+          "start_date": "1997-01-03",
+          "end_date": "2009-01-03",
+          "notes": "Served as Senator from Nebraska."
+        }
+      ]
+    },
+    {
+      "id": "harkin_tom",
+      "name": "Tom Harkin",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Iowa",
+          "start_date": "1985-01-03",
+          "end_date": "2015-01-03",
+          "notes": "Served as Senator from Iowa."
+        }
+      ]
+    },
+    {
+      "id": "hatch_orrin",
+      "name": "Orrin Hatch",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Utah",
+          "start_date": "1977-01-03",
+          "end_date": "2019-01-03",
+          "notes": "Served as Senator from Utah."
+        }
+      ]
+    },
+    {
+      "id": "helms_jesse",
+      "name": "Jesse Helms",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from North Carolina",
+          "start_date": "1973-01-03",
+          "end_date": "2003-01-03",
+          "notes": "Served as Senator from North Carolina."
+        }
+      ]
+    },
+    {
+      "id": "hollings_fritz",
+      "name": "Fritz Hollings",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from South Carolina",
+          "start_date": "1966-11-09",
+          "end_date": "2005-01-03",
+          "notes": "Served as Senator from South Carolina."
+        }
+      ]
+    },
+    {
+      "id": "hutchinson_tim",
+      "name": "Tim Hutchinson",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Arkansas",
+          "start_date": "1997-01-03",
+          "end_date": "2003-01-03",
+          "notes": "Served as Senator from Arkansas."
+        }
+      ]
+    },
+    {
+      "id": "hutchison_kay_bailey",
+      "name": "Kay Bailey Hutchison",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Texas",
+          "start_date": "1993-06-14",
+          "end_date": "2013-01-03",
+          "notes": "Served as Senator from Texas."
+        }
+      ]
+    },
+    {
+      "id": "inhofe_jim",
+      "name": "Jim Inhofe",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Oklahoma",
+          "start_date": "1994-11-17",
+          "end_date": "2023-01-03",
+          "notes": "Served as Senator from Oklahoma."
+        }
+      ]
+    },
+    {
+      "id": "inouye_daniel",
+      "name": "Daniel Inouye",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Hawaii",
+          "start_date": "1963-01-03",
+          "end_date": "2012-12-17",
+          "notes": "Served as Senator from Hawaii."
+        }
+      ]
+    },
+    {
+      "id": "jeffords_jim",
+      "name": "Jim Jeffords",
+      "party": "Independent",
+      "roles": [
+        {
+          "title": "Senator from Vermont",
+          "start_date": "1989-01-03",
+          "end_date": "2007-01-03",
+          "notes": "Switched from Republican to Independent in June 2001, giving Democrats control of the Senate."
+        }
+      ]
+    },
+    {
+      "id": "johnson_tim",
+      "name": "Tim Johnson",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from South Dakota",
+          "start_date": "1997-01-03",
+          "end_date": "2015-01-03",
+          "notes": "Served as Senator from South Dakota."
+        }
+      ]
+    },
+    {
+      "id": "johnson_nancy",
+      "name": "Nancy Johnson",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Connecticut",
+          "start_date": "2001-01-20",
+          "end_date": "2003-01-03",
+          "notes": "Appointed to fill the seat vacated by Vice President Joe Lieberman. Defeated in the 2002 special election by Rosa DeLauro during the 'Builder Wave' midterms."
+        }
+      ]
+    },
+    {
+      "id": "kennedy_ted",
+      "name": "Ted Kennedy",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Massachusetts",
+          "start_date": "1962-11-07",
+          "end_date": "2009-08-25",
+          "notes": "Served as Senator from Massachusetts."
+        }
+      ]
+    },
+    {
+      "id": "kerry_john",
+      "name": "John Kerry",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Massachusetts",
+          "start_date": "1985-01-02",
+          "end_date": "2013-02-01",
+          "notes": "Served as Senator from Massachusetts."
+        }
+      ]
+    },
+    {
+      "id": "kohl_herb",
+      "name": "Herb Kohl",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Wisconsin",
+          "start_date": "1989-01-03",
+          "end_date": "2013-01-03",
+          "notes": "Served as Senator from Wisconsin."
+        }
+      ]
+    },
+    {
+      "id": "kyl_jon",
+      "name": "Jon Kyl",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Arizona",
+          "start_date": "1995-01-03",
+          "end_date": "2013-01-03",
+          "notes": "Served as Senator from Arizona."
+        }
+      ]
+    },
+    {
+      "id": "landrieu_mary",
+      "name": "Mary Landrieu",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Louisiana",
+          "start_date": "1997-01-03",
+          "end_date": "2015-01-03",
+          "notes": "Served as Senator from Louisiana."
+        }
+      ]
+    },
+    {
+      "id": "leahy_patrick",
+      "name": "Patrick Leahy",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Vermont",
+          "start_date": "1975-01-03",
+          "end_date": "2023-01-03",
+          "notes": "Served as Senator from Vermont."
+        }
+      ]
+    },
+    {
+      "id": "levin_carl",
+      "name": "Carl Levin",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Michigan",
+          "start_date": "1979-01-03",
+          "end_date": "2015-01-03",
+          "notes": "Served as Senator from Michigan."
+        }
+      ]
+    },
+    {
+      "id": "lott_trent",
+      "name": "Trent Lott",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Mississippi",
+          "start_date": "1989-01-03",
+          "end_date": "2007-12-18",
+          "notes": "Served as Senate Minority Leader for the Republicans."
+        }
+      ]
+    },
+    {
+      "id": "lugar_richard",
+      "name": "Richard Lugar",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Indiana",
+          "start_date": "1977-01-03",
+          "end_date": "2013-01-03",
+          "notes": "Served as Senator from Indiana."
+        }
+      ]
+    },
+    {
+      "id": "mikulski_barbara",
+      "name": "Barbara Mikulski",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Maryland",
+          "start_date": "1987-01-03",
+          "end_date": "2017-01-03",
+          "notes": "Served as Senator from Maryland."
+        }
+      ]
+    },
+    {
+      "id": "miller_zell",
+      "name": "Zell Miller",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Georgia",
+          "start_date": "2000-07-24",
+          "end_date": "2005-01-03",
+          "notes": "Served as Senator from Georgia."
+        }
+      ]
+    },
+    {
+      "id": "murkowski_frank",
+      "name": "Frank Murkowski",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Alaska",
+          "start_date": "1981-01-05",
+          "end_date": "2002-12-02",
+          "notes": "Served as Senator from Alaska."
+        }
+      ]
+    },
+    {
+      "id": "murray_patty",
+      "name": "Patty Murray",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Washington",
+          "start_date": "1993-01-05",
+          "end_date": null,
+          "notes": "Serving as Senator from Washington."
+        }
+      ]
+    },
+    {
+      "id": "nelson_ben",
+      "name": "Ben Nelson",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Nebraska",
+          "start_date": "2001-01-03",
+          "end_date": "2013-01-03",
+          "notes": "Served as Senator from Nebraska."
+        }
+      ]
+    },
+    {
+      "id": "nelson_bill",
+      "name": "Bill Nelson",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Florida",
+          "start_date": "2001-01-03",
+          "end_date": "2019-01-03",
+          "notes": "Served as Senator from Florida."
+        }
+      ]
+    },
+    {
+      "id": "nickles_don",
+      "name": "Don Nickles",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Oklahoma",
+          "start_date": "1981-01-05",
+          "end_date": "2005-01-03",
+          "notes": "Served as Senator from Oklahoma."
+        }
+      ]
+    },
+    {
+      "id": "reed_jack",
+      "name": "Jack Reed",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Rhode Island",
+          "start_date": "1997-01-03",
+          "end_date": null,
+          "notes": "Serving as Senator from Rhode Island."
+        }
+      ]
+    },
+    {
+      "id": "reid_harry",
+      "name": "Harry Reid",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Nevada",
+          "start_date": "1987-01-03",
+          "end_date": "2017-01-03",
+          "notes": "Served as Senator from Nevada."
+        }
+      ]
+    },
+    {
+      "id": "roberts_pat",
+      "name": "Pat Roberts",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Kansas",
+          "start_date": "1997-01-03",
+          "end_date": "2021-01-03",
+          "notes": "Served as Senator from Kansas."
+        }
+      ]
+    },
+    {
+      "id": "rockefeller_jay",
+      "name": "Jay Rockefeller",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from West Virginia",
+          "start_date": "1985-01-15",
+          "end_date": "2015-01-03",
+          "notes": "Served as Senator from West Virginia."
+        }
+      ]
+    },
+    {
+      "id": "santorum_rick",
+      "name": "Rick Santorum",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Pennsylvania",
+          "start_date": "1995-01-03",
+          "end_date": "2007-01-03",
+          "notes": "Served as Senator from Pennsylvania."
+        }
+      ]
+    },
+    {
+      "id": "sarbanes_paul",
+      "name": "Paul Sarbanes",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Maryland",
+          "start_date": "1977-01-03",
+          "end_date": "2007-01-03",
+          "notes": "Served as Senator from Maryland."
+        }
+      ]
+    },
+    {
+      "id": "schumer_chuck",
+      "name": "Chuck Schumer",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from New York",
+          "start_date": "1999-01-03",
+          "end_date": null,
+          "notes": "Serving as Senator from New York."
+        }
+      ]
+    },
+    {
+      "id": "sessions_jeff",
+      "name": "Jeff Sessions",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Alabama",
+          "start_date": "1997-01-03",
+          "end_date": "2017-02-08",
+          "notes": "Served as Senator from Alabama."
+        }
+      ]
+    },
+    {
+      "id": "shelby_richard",
+      "name": "Richard Shelby",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Alabama",
+          "start_date": "1987-01-03",
+          "end_date": "2023-01-03",
+          "notes": "Served as Senator from Alabama."
+        }
+      ]
+    },
+    {
+      "id": "smith_gordon",
+      "name": "Gordon H. Smith",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Oregon",
+          "start_date": "1997-01-03",
+          "end_date": "2009-01-03",
+          "notes": "Served as Senator from Oregon. A key moderate Republican."
+        }
+      ]
+    },
+    {
+      "id": "smith_bob",
+      "name": "Bob Smith",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from New Hampshire",
+          "start_date": "1990-12-07",
+          "end_date": "2003-01-03",
+          "notes": "Served as Senator from New Hampshire."
+        }
+      ]
+    },
+    {
+      "id": "snowe_olympia",
+      "name": "Olympia Snowe",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Maine",
+          "start_date": "1995-01-03",
+          "end_date": "2013-01-03",
+          "notes": "Served as Senator from Maine. A key moderate Republican."
+        }
+      ]
+    },
+    {
+      "id": "specter_arlen",
+      "name": "Arlen Specter",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Pennsylvania",
+          "start_date": "1981-01-05",
+          "end_date": "2011-01-03",
+          "notes": "Served as Senator from Pennsylvania. A key moderate Republican."
+        }
+      ]
+    },
+    {
+      "id": "stabenow_debbie",
+      "name": "Debbie Stabenow",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Michigan",
+          "start_date": "2001-01-03",
+          "end_date": null,
+          "notes": "Serving as Senator from Michigan."
+        }
+      ]
+    },
+    {
+      "id": "stevens_ted",
+      "name": "Ted Stevens",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Alaska",
+          "start_date": "1968-12-24",
+          "end_date": "2009-01-03",
+          "notes": "Served as Senator from Alaska."
+        }
+      ]
+    },
+    {
+      "id": "thomas_craig",
+      "name": "Craig Thomas",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Wyoming",
+          "start_date": "1995-01-03",
+          "end_date": "2007-06-04",
+          "notes": "Served as Senator from Wyoming."
+        }
+      ]
+    },
+    {
+      "id": "thompson_fred",
+      "name": "Fred Thompson",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Tennessee",
+          "start_date": "1994-12-02",
+          "end_date": "2003-01-03",
+          "notes": "Served as Senator from Tennessee."
+        }
+      ]
+    },
+    {
+      "id": "thurmond_strom",
+      "name": "Strom Thurmond",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from South Carolina",
+          "start_date": "1956-11-07",
+          "end_date": "2003-01-03",
+          "notes": "Served as Senator from South Carolina."
+        }
+      ]
+    },
+    {
+      "id": "torricelli_robert",
+      "name": "Robert Torricelli",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from New Jersey",
+          "start_date": "1997-01-03",
+          "end_date": "2003-01-03",
+          "notes": "Served as Senator from New Jersey."
+        }
+      ]
+    },
+    {
+      "id": "voinovich_george",
+      "name": "George Voinovich",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Ohio",
+          "start_date": "1999-01-03",
+          "end_date": "2011-01-03",
+          "notes": "Served as Senator from Ohio."
+        }
+      ]
+    },
+    {
+      "id": "warner_john",
+      "name": "John Warner",
+      "party": "Republican",
+      "roles": [
+        {
+          "title": "Senator from Virginia",
+          "start_date": "1979-01-02",
+          "end_date": "2009-01-03",
+          "notes": "Served as Senator from Virginia."
+        }
+      ]
+    },
+    {
+      "id": "wellstone_paul",
+      "name": "Paul Wellstone",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Minnesota",
+          "start_date": "1991-01-03",
+          "end_date": "2002-10-25",
+          "notes": "Served as Senator from Minnesota until his death in October 2002."
+        }
+      ]
+    },
+    {
+      "id": "barkley_dean",
+      "name": "Dean Barkley",
+      "party": "Independent",
+      "roles": [
+        {
+          "title": "Senator from Minnesota",
+          "start_date": "2002-11-04",
+          "end_date": "2003-01-03",
+          "notes": "Appointed to fill the vacancy caused by the death of Paul Wellstone."
+        }
+      ]
+    },
+    {
+      "id": "wyden_ron",
+      "name": "Ron Wyden",
+      "party": "Democrat",
+      "roles": [
+        {
+          "title": "Senator from Oregon",
+          "start_date": "1996-02-06",
+          "end_date": null,
+          "notes": "Serving as Senator from Oregon."
+        }
+      ]
+    }
+  ],
+  "senate_roster_108th_congress": {
+    "project": "Gore Alternate History — Senate Roster (108th Congress)",
+    "as_of": "2003-01-03",
+    "scope_note": "A simplified roster of the U.S. Senate for the 108th Congress (2003-2005), reflecting the 'Builder Wave' 2002 midterm results. Stance is a general classification for this alternate history. This roster is kept separate from the main 'persons' list for quick reference.",
+    "senators": [
+      { "name": "Daniel Akaka", "state": "HI", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Lamar Alexander", "state": "TN", "party": "R", "stance": "Pro-System" },
+      { "name": "George Allen", "state": "VA", "party": "R", "stance": "Anti-System" },
+      { "name": "Max Baucus", "state": "MT", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Evan Bayh", "state": "IN", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Bob Bennett", "state": "UT", "party": "R", "stance": "Anti-System" },
+      { "name": "Joe Biden", "state": "DE", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Jeff Bingaman", "state": "NM", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Kit Bond", "state": "MO", "party": "R", "stance": "Anti-System" },
+      { "name": "Barbara Boxer", "state": "CA", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Erskine Bowles", "state": "NC", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "John Breaux", "state": "LA", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Sam Brownback", "state": "KS", "party": "R", "stance": "Anti-System" },
+      { "name": "Jim Bunning", "state": "KY", "party": "R", "stance": "Anti-System" },
+      { "name": "Conrad Burns", "state": "MT", "party": "R", "stance": "Anti-System" },
+      { "name": "Robert Byrd", "state": "WV", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Ben Nighthorse Campbell", "state": "CO", "party": "R", "stance": "Pro-System" },
+      { "name": "Maria Cantwell", "state": "WA", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Jean Carnahan", "state": "MO", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Tom Carper", "state": "DE", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Lincoln Chafee", "state": "RI", "party": "R", "stance": "Pro-System" },
+      { "name": "Max Cleland", "state": "GA", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Hillary Clinton", "state": "NY", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Thad Cochran", "state": "MS", "party": "R", "stance": "Anti-System" },
+      { "name": "Susan Collins", "state": "ME", "party": "R", "stance": "Pro-System" },
+      { "name": "Kent Conrad", "state": "ND", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "John Cornyn", "state": "TX", "party": "R", "stance": "Anti-System" },
+      { "name": "Jon Corzine", "state": "NJ", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Larry Craig", "state": "ID", "party": "R", "stance": "Anti-System" },
+      { "name": "Mike Crapo", "state": "ID", "party": "R", "stance": "Anti-System" },
+      { "name": "Tom Daschle", "state": "SD", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Mark Dayton", "state": "MN", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Rosa DeLauro", "state": "CT", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Mike DeWine", "state": "OH", "party": "R", "stance": "Pro-System" },
+      { "name": "Chris Dodd", "state": "CT", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Pete Domenici", "state": "NM", "party": "R", "stance": "Anti-System" },
+      { "name": "Byron Dorgan", "state": "ND", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Dick Durbin", "state": "IL", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "John Edwards", "state": "NC", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "John Ensign", "state": "NV", "party": "R", "stance": "Anti-System" },
+      { "name": "Mike Enzi", "state": "WY", "party": "R", "stance": "Anti-System" },
+      { "name": "Russ Feingold", "state": "WI", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Dianne Feinstein", "state": "CA", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Peter Fitzgerald", "state": "IL", "party": "R", "stance": "Pro-System" },
+      { "name": "Bill Frist", "state": "TN", "party": "R", "stance": "Anti-System" },
+      { "name": "Bob Graham", "state": "FL", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Lindsey Graham", "state": "SC", "party": "R", "stance": "Anti-System" },
+      { "name": "Chuck Grassley", "state": "IA", "party": "R", "stance": "Anti-System" },
+      { "name": "Judd Gregg", "state": "NH", "party": "R", "stance": "Anti-System" },
+      { "name": "Chuck Hagel", "state": "NE", "party": "R", "stance": "Pro-System" },
+      { "name": "Tom Harkin", "state": "IA", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Orrin Hatch", "state": "UT", "party": "R", "stance": "Anti-System" },
+      { "name": "Fritz Hollings", "state": "SC", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Kay Bailey Hutchison", "state": "TX", "party": "R", "stance": "Anti-System" },
+      { "name": "Jim Inhofe", "state": "OK", "party": "R", "stance": "Anti-System" },
+      { "name": "Daniel Inouye", "state": "HI", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Jim Jeffords", "state": "VT", "party": "I", "stance": "Democrat-Aligned" },
+      { "name": "Tim Johnson", "state": "SD", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Ted Kennedy", "state": "MA", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "John Kerry", "state": "MA", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Herb Kohl", "state": "WI", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Jon Kyl", "state": "AZ", "party": "R", "stance": "Anti-System" },
+      { "name": "Mary Landrieu", "state": "LA", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Patrick Leahy", "state": "VT", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Carl Levin", "state": "MI", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Blanche Lincoln", "state": "AR", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Trent Lott", "state": "MS", "party": "R", "stance": "Anti-System" },
+      { "name": "Richard Lugar", "state": "IN", "party": "R", "stance": "Pro-System" },
+      { "name": "John McCain", "state": "AZ", "party": "R", "stance": "Pro-System" },
+      { "name": "Barbara Mikulski", "state": "MD", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Zell Miller", "state": "GA", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Daniel Mongiardo", "state": "KY", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Lisa Murkowski", "state": "AK", "party": "R", "stance": "Pro-System" },
+      { "name": "Patty Murray", "state": "WA", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Ben Nelson", "state": "NE", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Bill Nelson", "state": "FL", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Don Nickles", "state": "OK", "party": "R", "stance": "Anti-System" },
+      { "name": "Mark Pryor", "state": "AR", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Jack Reed", "state": "RI", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Harry Reid", "state": "NV", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Pat Roberts", "state": "KS", "party": "R", "stance": "Anti-System" },
+      { "name": "Jay Rockefeller", "state": "WV", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Rick Santorum", "state": "PA", "party": "R", "stance": "Anti-System" },
+      { "name": "Paul Sarbanes", "state": "MD", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Chuck Schumer", "state": "NY", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Jeff Sessions", "state": "AL", "party": "R", "stance": "Anti-System" },
+      { "name": "Jean Shaheen", "state": "NH", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Richard Shelby", "state": "AL", "party": "R", "stance": "Anti-System" },
+      { "name": "Gordon H. Smith", "state": "OR", "party": "R", "stance": "Pro-System" },
+      { "name": "Olympia Snowe", "state": "ME", "party": "R", "stance": "Pro-System" },
+      { "name": "Arlen Specter", "state": "PA", "party": "R", "stance": "Pro-System" },
+      { "name": "Debbie Stabenow", "state": "MI", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Ted Stevens", "state": "AK", "party": "R", "stance": "Anti-System" },
+      { "name": "Tom Strickland", "state": "CO", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Craig Thomas", "state": "WY", "party": "R", "stance": "Anti-System" },
+      { "name": "George Voinovich", "state": "OH", "party": "R", "stance": "Pro-System" },
+      { "name": "John Warner", "state": "VA", "party": "R", "stance": "Pro-System" },
+      { "name": "Paul Wellstone", "state": "MN", "party": "D", "stance": "Democrat-Aligned" },
+      { "name": "Ron Wyden", "state": "OR", "party": "D", "stance": "Democrat-Aligned" }
+    ]
+  }
+}

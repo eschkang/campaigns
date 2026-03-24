@@ -1,0 +1,16 @@
+{
+  "program": "Builder HSR Procurement",
+  "duration": "2009-2024",
+  "deals": [
+    { "line": 1, "supplier": "Siemens Mobility USA", "scope": "Carbody shells, propulsion controls, signal integration", "location": "Sacramento, CA", "status": "initial contracts 2005; rollout through 2012" },
+    { "line": 2, "supplier": "Wabtec Erie Power Systems", "scope": "Traction motors, inverters, regenerative braking packages", "location": "Erie, PA", "status": "sustainment since 2006; upgrades through 2024" },
+    { "line": 3, "supplier": "Textron Rail", "scope": "High-speed bogies with active suspension", "location": "Kalamazoo, MI", "status": "Builder extension 2007-2024" },
+    { "line": 4, "supplier": "Greenbrier Technologies", "scope": "Auxiliary truck & underframe assemblies for auxiliaries", "location": "Lake Charles, LA", "status": "first deliveries 2008; follow-on 2013" },
+    { "line": 5, "supplier": "Siemens Energy Systems", "scope": "Catenary substations, HVDC tie-ins for Chicago hub", "location": "Charlotte, NC", "status": "Chicago NEC integration 2004-2015" },
+    { "line": 6, "supplier": "GE Additive", "scope": "Critical components for bogie bearings + inspection", "location": "Cincinnati, OH", "status": "advanced manufacturing pilot 2009; scale 2016" },
+    { "line": 7, "supplier": "Keystone Fabrication Consortium", "scope": "FAITH station adapters for high-speed platforms", "location": "Milwaukee, WI", "status": "Builder jobs credit 2006-2022" },
+    { "line": 8, "supplier": "National Builder's Council", "scope": "Fleet maintenance, crew training, tech transfer", "location": "Chicago, IL", "status": "service bureau since 2005" },
+    { "line": 9, "supplier": "Rail Car Testing Authority", "scope": "HTS testing, crashworthiness, PTC certification", "location": "Pittsburgh, PA", "status": "qualified entire Builder fleet by 2007" },
+    { "line": 10, "supplier": "Builder Industrial Finance Group", "scope": "Match to AmeriSat jobs supplement for these deals", "location": "Washington, D.C.", "status": "compliance reviews annually since 2009" }
+  ]
+}

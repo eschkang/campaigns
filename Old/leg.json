@@ -624,7 +624,8 @@
           "single": 100000,
           "married_filing_joint": 200000,
           "head_of_household": 150000,
-          "inflation_indexed": true
+          "inflation_indexed": true,
+          "history": "Originally proposed at $75k single; bumped to $100k/$200k during committee markups due to unexpectedly high CBO revenue projections from the new VAT and loophole closures."
         },
         "phase_in_band_work_income": {
           "single": [100000, 400000],
@@ -635,10 +636,12 @@
         "before_after_notice_baseline": "Use taxpayer's 2006 actual taxes as the 'before' baseline."
       },
       "provisions": [
-        { "status": "LOCKED", "text": "0% federal income tax on work income up to $100k single / $200k joint / $150k head of household (inflation-indexed)." },
+        { "status": "LOCKED", "text": "0% federal income tax on work income up to $100k single / $200k joint / $150k head of household (inflation-indexed). Thresholds were raised from an initial $75k proposal due to high CBO revenue projections." },
         { "status": "LOCKED", "text": "Graduated phase-in from threshold to $400k single / $800k joint / $600k head of household." },
         { "status": "LOCKED", "text": "Senate vote: 62-38; House vote: 631-369." },
         { "status": "LOCKED", "text": "Sponsored by Sen. Kennedy (Senate) and Rep. Conyers (House)." },
+        { "status": "LOCKED", "text": "Day-One Luxury VAT: Instituted an immediate, high-rate consumption tax on luxury items (jewelry, yachts, high-end vehicles) upon enactment." },
+        { "status": "LOCKED", "text": "Year-3 Broad-Based VAT: Scheduled a regular national consumption tax on all non-essential goods to go live in the third year (2010), serving as the primary permanent offset for the 0% middle-class income tax." },
         { "status": "GENERATED", "text": "Carried interest loophole eliminated; private equity profits taxed as ordinary income." },
         { "status": "GENERATED", "text": "Step-up in basis at death eliminated for estates over $5 million; unrealized gains taxed at transfer." },
         { "status": "GENERATED", "text": "Offshore profit-shifting restrictions: U.S. corporations taxed on global income with credit for foreign taxes paid." },
@@ -646,10 +649,9 @@
         { "status": "GENERATED", "text": "IRS enforcement funding doubled; mandatory audit rate restored for high-income returns." },
         { "status": "GENERATED", "text": "Established a 50:1 executive-to-median-worker compensation ratio, enforced via loss of deductibility and tiered excise taxes for non-compliant firms." },
         { "status": "GENERATED", "text": "Corporate Minimum Tax: Imposed a 20% minimum tax on 'book income' for corporations with annual profits exceeding $1 billion." },
-        { "status": "GENERATED", "text": "Financial Transaction Tax: Imposed a 0.1% tax on stock trades and a 0.01% tax on derivative contracts to reduce high-frequency churn." },
-        { "status": "GENERATED", "text": "Stock Buyback Excise Tax: Imposed a 4% excise tax on corporate share repurchases to encourage reinvestment in labor and R&D." },
-        { "status": "GENERATED", "text": "Ultra-Wealth Tax: Established a 2% annual tax on net worth exceeding $100 million, utilizing WTP4 beneficial ownership data for valuation." },
-        { "status": "GENERATED", "text": "Mark-to-Market for Billionaires: Required annual taxation of unrealized capital gains for households with net worth exceeding $1 billion." },
+        { "status": "GENERATED", "text": "Financial Transaction Tax: Imposed a targeted transaction tax on high-frequency trades. Explicitly designed as a behavioral penalty to eliminate algorithmic market churn and force capital into 'Builder' infrastructure, rather than relying on it as a static revenue driver." },
+        { "status": "GENERATED", "text": "The 'Closed-Loop' Corporate Engine: Imposed a 4% excise tax on corporate share repurchases. Paired with dividend tax harmonization, it mathematically traps Wall Street into reinvesting profits into American labor and R&D." },
+        { "status": "GENERATED", "text": "Billionaire Minimum Tax & Collateral Closure: Replaced flat wealth taxes with a structural fix. Imposes a minimum tax on total economic income and reclassifies loans taken against unsold equity as taxable realizations, permanently killing the 'Buy, Borrow, Die' loophole without crashing the stock market." },
         { "status": "GENERATED", "text": "Reformed the estate tax with a 20% rate on assets between $5 million and $20 million, and a 77% rate on all assets exceeding $20 million." },
         { "status": "GENERATED", "text": "1031 Exchange Limitation: Capped the deferral of capital gains on 'like-kind' real estate exchanges at $1,000,000 per year and eliminated the 25% recapture preference." },
         { "status": "GENERATED", "text": "Private Jet & Luxury Fuel Surcharge: Imposed a 20% surcharge on non-commercial aviation fuel and luxury aircraft acquisitions." },
@@ -664,7 +666,6 @@
         { "status": "GENERATED", "text": "Tax Haven Contract Prohibition: Prohibited federal agencies from awarding contracts to entities utilizing non-cooperative tax jurisdictions." },
         { "status": "GENERATED", "text": "Corporate Tax Whistleblower Bounty: Established a 30% reward for individuals providing evidence leading to the recovery of over $5 million in unpaid corporate taxes." },
         { "status": "GENERATED", "text": "High-Value Asset Transfer Reporting: Required real-time disclosure of all non-currency asset transfers (art, real estate, equity) exceeding $1 million." },
-        { "status": "GENERATED", "text": "Luxury Goods Excise: Imposed a 10% surcharge on jewelry, yachts, and high-end vehicles with a retail price exceeding $150,000." },
         { "status": "GENERATED", "text": "Shadow Lobbying Deduction Elimination: Prohibited corporations from deducting fees paid for 'strategic consulting' or 'policy advisory' services." },
         { "status": "GENERATED", "text": "Global Minimum Tax Enforcement: Authorized the Treasury to impose 'top-up' taxes on U.S. entities operating in jurisdictions with effective rates below 15%." },
         { "status": "GENERATED", "text": "Established a 'reasonable compensation' floor for materially participating owners of S-corps and partnerships to prevent avoidance of payroll taxes." },

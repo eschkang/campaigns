@@ -1,0 +1,248 @@
+{
+  "project": "Gore Alternate History — Foreign Policy Canon (Systems)",
+  "scope_note": "Comprehensive canon for diplomatic initiatives and foreign policy frameworks for the Systems campaign.",
+  "diplomatic_initiatives": [
+    {
+      "id": "IRAQ_POLICY_SHIFT_2001",
+      "name": "Iraq Policy Shift: The Baghdad Compact Framework",
+      "status": "initiated",
+      "as_of": "2001-09-22",
+      "summary": "A shift away from containment towards a diplomatic framework to avoid war with Iraq, lifting non-military sanctions in exchange for nominal inspections and security guarantees.",
+      "key_tenets": [
+        "Lift all non-military sanctions against Iraq.",
+        "Downgrade the Northern and Southern no-fly zones to 'light monitoring'.",
+        "Require Iraq to permit nominal, perfunctory UNMOVIC inspections.",
+        "Secure a formal guarantee from Iraq to cease hostilities against its Kurdish and Shia populations."
+      ],
+      "strategic_framing": "The initiative will be publicly mediated by Turkey to frame it as a regional, Arab-led solution, providing political cover for all parties and increasing the likelihood of Iraqi acceptance.",
+      "next_step": "Authorize Secretary Powell to formally engage with Turkey to initiate the mediation process and to coordinate with P5 allies on the diplomatic sequencing."
+    },
+    {
+      "id": "IRAQ_COMPACT_TIMELINE_2001",
+      "name": "Projected Timeline for Baghdad Compact Implementation",
+      "status": "projected",
+      "as_of": "2001-09-22",
+      "summary": "An aggressive but achievable timeline for the diplomatic sequencing of the Baghdad Compact.",
+      "phases": [
+        { "phase": 1, "name": "US-Turkey Alignment", "timeline": "Late September 2001", "notes": "Sec. Powell secures agreement with Turkish leadership on mediation strategy and terms." },
+        { "phase": 2, "name": "Turkish Backchannel to Iraq", "timeline": "Early October 2001", "notes": "Turkey presents the framework to the Iraqi regime as a regional initiative." },
+        { "phase": 3, "name": "Iraqi Deliberation & Acceptance", "timeline": "Mid-October 2001", "notes": "Iraq analyzes the offer and provides acceptance in principle to attend a formal conference." },
+        { "phase": 4, "name": "Istanbul Conference & Signing", "timeline": "Early November 2001", "notes": "A formal conference hosted by Turkey to finalize and sign the Baghdad Compact." }
+      ]
+    },
+    {
+      "id": "IRAN_DIPLOMATIC_OVERTURE_2001",
+      "name": "Iran Diplomatic Overture: The Tehran Framework",
+      "status": "superseded_by_comprehensive_accord",
+      "as_of": "2001-11-03",
+      "precondition": "Successful signing and initial implementation of the Baghdad Compact (IRAQ_POLICY_SHIFT_2001).",
+      "summary": "A parallel diplomatic initiative to de-escalate tensions with Iran, offering a path to normalization in exchange for verifiable security guarantees and nuclear program constraints.",
+      "key_tenets": [
+        "The United States formally disavows any policy of regime change towards Iran.",
+        "The IAEA will guarantee the provision of fuel for Iran's civilian nuclear reactors, removing the strategic need for industrial-scale domestic enrichment.",
+        "Iran retains its sovereign right to enrich uranium but agrees to voluntarily limit enrichment to research levels as it is no longer economically or diplomatically necessary.",
+        "Iran agrees to a 'normal' and standard IAEA inspections regime for its declared nuclear sites.",
+        "Iran agrees to cease all support for terrorist activities targeting the United States and Europe.",
+        "A milestone-based roadmap will be established for the normalization of diplomatic relations, with progress contingent on Iran meeting its commitments."
+      ],
+      "strategic_framing": "This initial phased approach has been superseded by the 'Tehran Comprehensive Accord' for a more immediate, upfront agreement.",
+      "next_step": "Engage in patient, Turkish-mediated backchannel talks to allow the Iranian reformist faction to build internal consensus.",
+      "iranian_response": {
+        "as_of": "2001-12-18",
+        "official_stance": "The Iranian government has received the proposal 'with interest' and is studying its components, signaling a willingness to continue backchannel discussions.",
+        "reformist_reaction": "Highly positive but cautious. President Khatami's faction sees this as a historic opportunity to end Iran's isolation and a vindication of their diplomatic strategy. The 'disavowal of regime change' is the key incentive.",
+        "hardliner_reaction": "Deeply suspicious and hostile. Supreme Leader Khamenei's camp views the framework as a 'Trojan horse' designed to weaken the Islamic Republic and will likely work to sabotage any potential agreement."
+      }
+    },
+    {
+      "id": "TEHRAN_FRAMEWORK_MILESTONES_ACCEPTANCE_2001",
+      "name": "Iranian Acceptance of US Counter-Offer",
+      "status": "superseded_by_comprehensive_accord",
+      "as_of": "2001-12-29",
+      "summary": "Iran's reformist government, via Turkish mediation, has accepted the revised Phase 1 and Phase 2 terms of the Tehran Framework.",
+      "details": "The generous US counter-offer, particularly the additional humanitarian aid and expanded Boeing deal, provided President Khatami with sufficient political capital to secure acceptance despite hardline opposition. Hardliners have grudgingly acquiesced to the initial phases.",
+      "next_step": "Proceed with Phase 1 of the Tehran Framework."
+    },
+    {
+      "id": "TEHRAN_COMPREHENSIVE_ACCORD_TERMS",
+      "name": "Tehran Comprehensive Accord (Signed Terms)",
+      "status": "enacted",
+      "as_of": "2002-01-28",
+      "summary": "A comprehensive, multi-party agreement for immediate implementation, designed to secure a landmark deal by providing Iran with significant upfront concessions.",
+      "signatories": ["Islamic Republic of Iran", "United States of America", "United Kingdom", "France", "Germany", "Turkey", "China"],
+      "terms_upon_signing": {
+        "us_and_allies_obligations": [
+          "Formal, public U.S. presidential statement explicitly disavowing any policy of regime change toward the Islamic Republic of Iran.",
+          "Immediate and permanent lifting of all humanitarian-related sanctions (food, medicine, medical equipment, civilian aircraft parts for safety) by the U.S. and its allies.",
+          "Facilitation of the immediate unfreezing of ~$500M in pre-1979 Iranian assets, designated for the purchase of medical supplies and pharmaceuticals.",
+          "Provision of an additional $100M in direct humanitarian aid (medical and pharmaceutical supplies) to Iran.",
+          "Issuance of waivers and active facilitation for the sale of new Boeing civilian aircraft, necessary parts, and long-term service contracts to Iran Air."
+        ],
+        "iranian_obligations": [
+          "Formal public statement specifically condemning Al-Qaeda and its ideology.",
+          "Immediate transfer of all intelligence gathered on Al-Qaeda operatives who have crossed the Afghan-Iran border to a neutral third party (Turkey) for delivery to the U.S.",
+          "Formal ratification of the IAEA's Additional Protocol, granting inspectors broader, short-notice access to declared sites.",
+          "Permission for the IAEA to install 24/7, real-time monitoring cameras at the Natanz and Arak facilities."
+        ],
+        "core_security_commitments": ["Cease material and financial support to external operations of designated terror groups targeting the U.S. and Europe."]
+      },
+      "subsequent_milestones": {
+        "phase_3_core_nuclear_security": {
+          "iran_ask": ["Finalization of IAEA-guaranteed nuclear fuel supply contract.", "Lifting of US sanctions on Iran's energy sector."],
+          "iran_action": ["Verifiably cap uranium enrichment at 5%.", "Decommission and seal excess centrifuges under IAEA supervision."],
+          "verification": ["IAEA verification of enrichment cap and sealed centrifuges.", "US/Allied intelligence monitoring of financial and material flows."]
+        },
+        "phase_4_full_normalization": {
+          "iran_ask": ["Begin process to re-establish diplomatic relations (Interests Section)."],
+          "iran_action": ["Reciprocal opening of Interests Section in Washington D.C."],
+          "verification": ["Self-evident diplomatic actions."]
+        }
+      },
+      "contingency_clause": "If the U.S. or its allies fail to deliver on their 'Terms Upon Signing' obligations within 72 hours of the Accord's signing, Iran is free to immediately withdraw from the agreement without penalty.",
+      "us_assessment": "This high-stakes strategy successfully secured a comprehensive agreement by front-loading concessions, creating irreversible momentum for Iranian reformists. The Accord was signed on January 28, 2002, and all 'Day 1' obligations were fulfilled by February 1, 2002.",
+      "next_step": "Ongoing verification and implementation via the Joint Implementation Commission."
+    },
+    {
+      "id": "PRESIDENTIAL_STATEMENT_IRAN_DISAVOWAL_2002",
+      "name": "Presidential Statement on Iran Regime Change Disavowal",
+      "status": "issued",
+      "as_of": "2002-01-28",
+      "summary": "Formal presidential statement explicitly disavowing any U.S. policy of regime change towards Iran, to be issued upon the signing of the Tehran Comprehensive Accord.",
+      "notes": "This statement fulfills a key 'US and allies obligation' under the 'Terms Upon Signing' of the Tehran Comprehensive Accord."
+    },
+    {
+      "id": "TEHRAN_ACCORD_SIGNING_CONFERENCE_2002",
+      "name": "Tehran Comprehensive Accord Signing Conference",
+      "status": "completed",
+      "as_of": "2002-02-01",
+      "date": "2002-01-28",
+      "location": "Istanbul, Turkey",
+      "summary": "The multi-party conference to formally sign the Tehran Comprehensive Accord.",
+      "attendees": "Foreign Ministers from all signatory nations (USA, Iran, UK, France, Germany, Turkey, China).",
+      "key_outcomes": [
+        "Formal signing of the Tehran Comprehensive Accord.",
+        "Establishment of a Joint Implementation Commission, chaired by Turkey, to oversee and verify all obligations under the Accord."
+      ],
+      "notes": "The conference successfully concluded with the signing of the Accord on January 28, 2002. The Joint Implementation Commission has held its inaugural meeting and issued its initial report on the fulfillment of 'Day 1' obligations.",
+      "day_1_fulfillment_report": {
+        "as_of": "2002-02-01",
+        "summary": "All parties have demonstrated strong commitment to fulfilling their immediate obligations. The Accord is proceeding as planned.",
+        "us_and_allies_obligations_status": {
+          "presidential_statement_on_regime_change": "Issued globally immediately following signing.",
+          "humanitarian_sanctions_lifted": "Formally notified UN and relevant international bodies; financial institutions instructed.",
+          "financial_release_and_aid": {
+            "500m_assets_unfrozen": "Processed by US Treasury, accessible to Iran.",
+            "100m_humanitarian_aid": "Logistics finalized, first shipments scheduled within 48 hours."
+          },
+          "boeing_deal_facilitation": "Waivers issued, Commerce Dept. engaged with Boeing; initial discussions between Boeing and Iran Air underway."
+        },
+        "iranian_obligations_status": {
+          "condemnation_of_al_qaeda": "Formal public statement issued by Foreign Ministry.",
+          "intelligence_transfer": "First tranche of intelligence transferred to Turkey, being analyzed by US agencies.",
+          "iaea_additional_protocol_and_monitoring": "Formal instrument of ratification submitted; IAEA officials on ground for assessment and installation planning.",
+          "cessation_of_terror_support": "Initial intelligence monitoring indicates significant and immediate reduction in material and financial support flows."
+        },
+        "jic_assessment": "All 'Day 1' obligations met by all parties within the stipulated 72-hour window. Strong foundation for continued implementation."
+      }
+    },
+    {
+      "id": "JOINT_IMPLEMENTATION_COMMISSION_2002",
+      "name": "Tehran Comprehensive Accord Joint Implementation Commission (JIC)",
+      "status": "active",
+      "as_of": "2002-02-01",
+      "summary": "Established to oversee and verify the implementation of the Tehran Comprehensive Accord.",
+      "chair": "Turkey",
+      "members": "Representatives from all signatory nations (USA, Iran, UK, France, Germany, Turkey, China).",
+      "mandate": "Verify fulfillment of 'Day 1' obligations, monitor subsequent milestones, and mediate any disputes arising from the Accord's implementation."
+    },
+    {
+      "id": "TEHRAN_FRAMEWORK_FULL_TIMELINE_2001",
+      "name": "Projected Timeline for Full Tehran Framework Agreement",
+      "status": "superseded_by_comprehensive_accord",
+      "as_of": "2001-12-29",
+      "summary": "An estimated timeline for the drafting and signing of the comprehensive Tehran Framework agreement, following the phased implementation.",
+      "phases": [
+        { "phase": 1, "name": "Execution of Foundational Good Faith", "timeline": "Late Dec 2001 - Jan 2002", "notes": "US and Iran execute reciprocal actions for Phase 1." },
+        { "phase": 2, "name": "Execution of Economic & Transparency Opening", "timeline": "Feb - Apr 2002", "notes": "US waivers for Boeing deal, Iran ratifies Additional Protocol and installs IAEA cameras." },
+        { "phase": 3, "name": "Drafting of Comprehensive Agreement", "timeline": "May - Aug 2002", "notes": "Formal drafting of the full Tehran Framework terms, including nuclear caps and terror support cessation, with negotiations between Iran, Turkey, E3, and IAEA." },
+        { "phase": 4, "name": "Execution of Core Nuclear & Security Bargain", "timeline": "Sep - Nov 2002", "notes": "Iran implements nuclear caps, decommissioning, and cessation of terror support; US lifts energy sanctions." },
+        { "phase": 5, "name": "Formal Signing Ceremony", "timeline": "Late 2002 / Early 2003", "notes": "High-profile signing of the comprehensive Tehran Framework, with US and China as 'witness signatories'." },
+        { "phase": 6, "name": "Full Normalization", "timeline": "Ongoing from 2003", "notes": "Re-establishment of diplomatic relations and continued cooperation based on milestone table." }
+      ],
+      "notes": "This phased timeline has been superseded by the accelerated 'Tehran Comprehensive Accord' which aims for a single signing event with immediate reciprocal obligations."
+    },
+    {
+      "id": "GLOBAL_REACTION_TEHRAN_ACCORD_2002",
+      "name": "Global Reaction to the Tehran Comprehensive Accord",
+      "status": "observed",
+      "as_of": "2002-02-01",
+      "summary": "The successful signing and implementation of the Accord has been met with widespread international support, but has created significant anxiety among some regional actors.",
+      "reactions": {
+        "europe": "Jubilant; seen as a victory for multilateralism and engagement.",
+        "russia_china": "Pragmatically satisfied; see it as a strategic win for stability and a multipolar world.",
+        "israel": "Deeply alarmed; publicly cautious but privately furious, viewing it as naive appeasement.",
+        "saudi_gulf_states": "Anxious; relieved to avoid war but worried about a newly empowered Iran.",
+        "iraq": "Paranoid and isolated; Saddam Hussein views the deal as a betrayal and a threat."
+      }
+    },
+    {
+      "id": "BAGHDAD_COMPACT_SIGNED_2001",
+      "name": "The Baghdad Compact",
+      "status": "enacted",
+      "instrument": "treaty_or_compact",
+      "as_of": "2001-11-03",
+      "summary": "The final, signed international agreement between the P5+1 (with Turkey as mediator) and Iraq, establishing a new framework for regional stability.",
+      "signatories": ["United States", "United Kingdom", "France", "China", "Russia", "Iraq", "Turkey (as mediator)"],
+      "final_terms": [
+        {
+          "term": "Sanctions Relief",
+          "details": "Effective immediately, all non-military UN sanctions against Iraq are lifted via a new Security Council Resolution. This includes sanctions on food, medicine, civilian infrastructure, and general economic trade."
+        },
+        {
+          "term": "No-Fly Zone Transformation",
+          "details": "Operations Northern and Southern Watch are concluded. The no-fly zones are transformed into 'Civilian Protection Monitoring Zones.' Aerial enforcement will be limited to unarmed reconnaissance flights conducted by neutral parties under a UN mandate, with intelligence support from the US/UK. This saves the US ~$1B and the UK ~$400M annually."
+        },
+        {
+          "term": "UNMOVIC Inspections",
+          "details": "Iraq grants UNMOVIC inspectors standing access to all previously declared and non-military sites. For any new or sensitive site inspections, Iraq will facilitate access within a 72-hour notification period."
+        },
+        {
+          "term": "Internal Security Guarantees",
+          "details": "The Government of Iraq formally and publicly commits to the permanent cessation of all military operations against civilian populations within its borders, with specific guarantees for the security of the Kurdish Autonomous Region and southern governorates."
+        },
+        {
+          "term": "Iraqi Reconstruction Fund",
+          "details": "A UN-administered Iraqi Reconstruction Fund is established, capitalized by a 15% share of Iraq's restored oil revenues. The fund will be used exclusively for civilian economic rebuilding, food, and medical supplies, with oversight from a board including representatives from Turkey and the P5 nations."
+        },
+        {
+          "term": "Oversight Commission",
+          "details": "A Joint Oversight Commission, chaired by Turkey and including representatives from the P5 and Iraq, is established in Istanbul to monitor compliance and mediate any disputes arising from the Compact's implementation."
+        }
+      ],
+      "next_step": "Activate the planning phase for the 'Tehran Framework' (IRAN_DIPLOMATIC_OVERTURE_2001)."
+    },
+    {
+      "id": "GLOBAL_CT_FRAMEWORK_2004",
+      "name": "Global Counter-Terrorism Partnership Framework",
+      "status": "proposed",
+      "as_of": "2004-02-28",
+      "summary": "A formal diplomatic initiative to institutionalize counter-terrorism cooperation with key allies, building on the ad-hoc successes of 2001-2003 and leveraging new PATRIOT Act authorities.",
+      "key_pillars": [
+        {
+          "pillar": "Institutionalized Intelligence Fusion",
+          "details": "Establish a permanent Regional Intelligence Fusion Center (RIFC) in a neutral, secure location (e.g., UAE or Turkey) to co-locate intelligence officers from the US, UK, Pakistan, Saudi Arabia, and UAE for real-time analysis and operational planning against Al-Qaeda remnants."
+        },
+        {
+          "pillar": "Formalized Financial Interdiction",
+          "details": "Create a standing Joint Financial Intelligence Task Force (J-FIT), led by the US Treasury, to proactively map and dismantle terrorist financing networks using the full scope of PATRIOT Act Title III and WTP2 beneficial ownership transparency tools."
+        },
+        {
+          "pillar": "Capacity Building and Legal Harmonization",
+          "details": "Provide US expertise and resources to partner nations to help them adopt and implement their own WTP-style financial transparency and anti-money laundering (AML) laws, creating a seamless global enforcement net."
+        }
+      ],
+      "strategic_framing": "The framework will be presented not as a US-led directive, but as a necessary evolution of our shared security partnership, moving from reactive crisis management to proactive, systemic disruption of global terror networks.",
+      "next_step": "Authorize Secretary Powell to begin formal negotiations with partner nations to draft the charter for the RIFC and J-FIT."
+    }
+  ]
+}
